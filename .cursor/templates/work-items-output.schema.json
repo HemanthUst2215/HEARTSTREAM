@@ -1,0 +1,86 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "heartstream/work-items-output.schema.json",
+  "title": "HeartStream Work Items JSON",
+  "type": "object",
+  "required": ["meta", "summary", "workItems"],
+  "properties": {
+    "meta": {
+      "type": "object",
+      "required": ["sourceFile", "generatedAt", "rowCount", "columns"],
+      "properties": {
+        "sourceFile": { "type": "string" },
+        "generatedAt": { "type": "string", "format": "date-time" },
+        "rowCount": { "type": "integer", "minimum": 0 },
+        "columns": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "summary": {
+      "type": "object",
+      "required": ["byState", "byWorkItemType"],
+      "properties": {
+        "byState": { "type": "object", "additionalProperties": { "type": "integer" } },
+        "byWorkItemType": { "type": "object", "additionalProperties": { "type": "integer" } },
+        "byIterationPath": { "type": "object", "additionalProperties": { "type": "integer" } }
+      }
+    },
+    "workItems": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "workItemId",
+          "title",
+          "workItemType",
+          "state",
+          "source"
+        ],
+        "properties": {
+          "workItemId": { "type": "integer" },
+          "workItemCode": { "type": ["string", "null"] },
+          "title": { "type": "string" },
+          "displayTitle": { "type": "string" },
+          "workItemType": { "type": "string" },
+          "state": { "type": "string" },
+          "parent": {
+            "type": "object",
+            "properties": {
+              "workItemId": { "type": ["integer", "null"] }
+            }
+          },
+          "relatedLinkCount": { "type": ["integer", "null"] },
+          "areaPath": {
+            "type": "object",
+            "properties": {
+              "raw": { "type": "string" },
+              "segments": { "type": "array", "items": { "type": "string" } }
+            }
+          },
+          "iterationPath": {
+            "type": "object",
+            "properties": {
+              "raw": { "type": "string" },
+              "segments": { "type": "array", "items": { "type": "string" } }
+            }
+          },
+          "description": {
+            "type": "object",
+            "properties": {
+              "plainText": { "type": "string" },
+              "summary": { "type": "string" },
+              "htmlDecoded": { "type": "boolean" }
+            }
+          },
+          "source": {
+            "type": "object",
+            "required": ["rowNumber", "id"],
+            "properties": {
+              "rowNumber": { "type": "integer", "minimum": 2 },
+              "id": { "type": "string" }
+            }
+          }
+        }
+      }
+    }
+  }
+}

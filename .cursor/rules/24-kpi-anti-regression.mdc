@@ -1,0 +1,12 @@
+---
+description: Hard KPI anti-regression gates
+alwaysApply: false
+globs: "docs/quality/kpi-validations/**"
+---
+
+# KPI anti-regression
+
+Do not declare Done or Green on KPI-02 without a JaCoCo/Istanbul/Vitest report path.
+Do not declare Green on KPI-03 if in-scope stories lack a traceability matrix.
+Do not declare Green on dependency health with unwaived high/critical CVEs.
+0 unwaived high CVEs when this rule is in scope.

@@ -1,0 +1,10 @@
+---
+description: Figma DS to MUI
+globs: "src/theme/**,src/components/**"
+alwaysApply: false
+---
+
+# Figma to MUI
+
+MUI `styled()`; atomic design; zero raw CSS files beyond globals; do not clone reference apps.
+Require a Figma URL with `node-id`. Screenshots use `/ingest-figma-sketch`. Process maps use the whiteboard skill.

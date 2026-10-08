@@ -1,0 +1,8 @@
+---
+description: DR
+alwaysApply: false
+---
+
+# Resilience and DR
+
+RTO/RPO; backup/restore; failure injection notes.

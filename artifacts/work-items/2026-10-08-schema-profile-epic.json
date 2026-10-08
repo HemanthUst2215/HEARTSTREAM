@@ -1,0 +1,25 @@
+{
+  "sourceFile": "C:\\Users\\308279\\Documents\\HEARTSTREAM-1\\EPIC.csv",
+  "rowCount": 17,
+  "columns": [
+    "State",
+    "ID",
+    "Work Item Type",
+    "Title",
+    "Description",
+    "Parent",
+    "Related Link Count",
+    "Area Path",
+    "Iteration Path"
+  ],
+  "required_missing": [],
+  "extra_columns": [],
+  "distinct_counts": {
+    "State": {
+      "New": 17
+    },
+    "Work Item Type": {
+      "Epic": 17
+    }
+  }
+}

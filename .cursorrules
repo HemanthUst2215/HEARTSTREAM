@@ -1,0 +1,71 @@
+# Cursor AI Factory — Governance (always-on)
+
+This repository ships a **portable, enterprise-grade AI SDLC factory** for Cursor. Catalog lock: **19 primary agents**. Absorbed specialists are modes, check gates, or `.cursor/subagents/` — not extra peer primaries.
+
+Do **not** assume a vendor, warehouse, optical, AS400, or HIPAA domain. Fill `.cursor/config.yaml` before generating product code.
+
+Hard guarantees are enforced by `.cursor/hooks/` and git hooks (`.githooks/`) in addition to these rules. Cursor also loads `.cursor/rules/*.mdc` (`alwaysApply` / `globs`).
+
+---
+
+## 1. Prime directives
+
+1. **Provenance over invention.** Never invent business behavior, domain rules, UI copy, API fields, DDL columns, or error semantics. Cite a source or register `ASSUMPTION-<id>`. Uncited behavior is blocked from Ready.
+2. **Plan → Act → Validate → Refine** (build/quality) or **Plan → Act → Observe → Reflect** (intake/reverse). Max 3 is a ceiling: iteration 1 Validate/Observe pass → stop. Refine/Reflect only from findings. Escalate after iteration 3 with a documented gap.
+3. **Resolve before ask.** When a governed plan, sprint plan, or story artifact is supplied, load plan + manifest + logs first. Ask only about Open critical gaps or `TBD` bindings. Skill: `.cursor/skills/plan-as-input/`. Protocol: `.cursor/templates/plan-as-input-protocol.md`.
+4. **Least privilege.** Destructive or irreversible actions require a human gate. Secrets never enter code, logs, prompts, or artifacts.
+5. **Everything is an artifact.** Persist output to a versioned file with timestamp, iteration count, and validation summary. Write `artifacts/audit/<YYYY-MM-DD>-<agent>-<task>.md`. Only `harness-updater` writes `docs/harness/**`.
+6. **Traceability.** Rule → story → contract/DDL/UI → code → test → evidence.
+
+## 2. Locked execute spine
+
+Public execute commands (do **not** add `/generate-backend`, `/generate-frontend`, or `/wire-*`):
+
+```
+/implement-api → /implement-ui → /expand-test-coverage → [human: test-package Approved] → /run-tests → /run-eval → /review-changes → /application-summary
+```
+
+Batch: `/deliver-sprint` (same spine after plan **Approved**; **STOP** after expand Pending Approval).  
+Surgical: `/apply-requirements`. Reactive: `/fix-issue` (human **proceed** before implement).
+
+Operator map: [CURSOR-FLOW.md](CURSOR-FLOW.md).
+
+## 3. Orchestration
+
+- Route slash commands through **orchestrator-agent** (`.cursor/agents/orchestrator-agent.md`) by **explicit name**. Do not rely on description-match auto-delegation across specialists.
+- Spawn other primaries from `.cursor/agents/*.md` via the Cursor **Task** tool by explicit name (or the command's listed primary).
+- Spawn specialists from `.cursor/subagents/<name>.md` as the task spec. Specialists must not be selected as slash-command primaries.
+- Prefer a **Skill** (`.cursor/skills/`) for reusable procedure; a hook (`.cursor/hooks/`) or git hook for a hard invariant.
+- Subagent returns structured IO + confidence; parent rejects below-gate output (max 3).
+- Java API/tests: templates own structure; persist vars; `tools/templates/render_check.py` must PASS. Agent-owned only per hybrid_policy.
+
+## 4. Model routing
+
+Use the operator's Cursor model picker. Do not hardcode a vendor model into product code or factory contracts.
+
+- Stronger / reasoning model — orchestrator, intake judgment, review, security, release, quality coordination.
+- Default coding model — implementation and artifact generation.
+- Keep collectors and formatters mechanical — no invented metrics or fabricated coverage.
+
+## 5. Human gates (do not auto-proceed)
+
+- `/generate-brd` → BRD Accepted (or waiver in `docs/harness/decisions.md`)
+- `/plan-sprint` / `/plan-governed-stories` / `/plan-bounded-context` → plan **Approved**
+- `/expand-test-coverage` → test-package **Approved** before `/run-tests`
+- `/fix-issue` Phase 1 → human **proceed**
+- `/prepare-cutover` → data-owner sign-off before destructive apply
+- Production rollout → release owner
+- Any `deny`/`ask` permission, secret access, or destructive op
+
+## 6. Imported always-on rules
+
+These `.mdc` files use `alwaysApply: true` (Cursor loads them automatically):
+
+- `.cursor/rules/00-global-governance.mdc`
+- `.cursor/rules/01-project-context.mdc`
+- `.cursor/rules/02-security-and-compliance.mdc`
+- `.cursor/rules/07-testing-and-quality.mdc`
+- `.cursor/rules/09-agent-orchestration.mdc`
+- `.cursor/rules/11-intake-planning-governance.mdc`
+- `.cursor/rules/22-behavior-provenance-and-anti-invention.mdc`
+- `.cursor/rules/30-production-fix-governance.mdc`

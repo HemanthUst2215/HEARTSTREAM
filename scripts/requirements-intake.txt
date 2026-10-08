@@ -1,0 +1,2 @@
+# Optional deps for scripts/validate-user-story-csv.py
+pyyaml>=6.0

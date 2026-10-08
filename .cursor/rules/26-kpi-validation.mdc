@@ -1,0 +1,11 @@
+---
+description: 12-KPI catalog and evidence hierarchy
+alwaysApply: false
+globs: "docs/quality/kpi-validations/**"
+---
+
+# KPI validation
+
+Evidence hierarchy: tools > structured review > LLM narrative.
+LLM cannot override Red on security (KPI-01), coverage (KPI-02), or dependency health (KPI-09).
+Assess all 12 KPIs or mark N/A with rationale. Verdicts: GO / GO_WITH_CONDITIONS / NO_GO.

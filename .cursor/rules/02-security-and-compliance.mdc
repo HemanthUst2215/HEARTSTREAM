@@ -1,0 +1,14 @@
+---
+description: Security baseline OWASP, secrets, least privilege
+alwaysApply: true
+---
+
+# Security Baseline
+
+- Never hardcode secrets, keys, tokens, or credentials.
+- Validate and sanitize all external inputs.
+- Encrypt data in transit and at rest in target designs.
+- Mask PII/PHI in logs, traces, audits, and test artifacts.
+- AuthN/Z coverage for protected APIs; audit logging for sensitive actions.
+- Follow OWASP Top 10; dependency and SAST evidence before merge.
+- Dedicated evidence packs: `/sast-scan`, `/dast-scan` (operator-owned localhost/staging only), `/threat-profile`. Never write exploits, PoCs, or attack payloads.

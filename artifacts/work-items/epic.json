@@ -1,0 +1,643 @@
+{
+  "meta": {
+    "sourceFile": "C:\\Users\\308279\\Documents\\HEARTSTREAM-1\\EPIC.csv",
+    "generatedAt": "2026-10-08T09:15:59.798635+00:00",
+    "rowCount": 17,
+    "columns": [
+      "State",
+      "ID",
+      "Work Item Type",
+      "Title",
+      "Description",
+      "Parent",
+      "Related Link Count",
+      "Area Path",
+      "Iteration Path"
+    ]
+  },
+  "summary": {
+    "byState": {
+      "New": 17
+    },
+    "byWorkItemType": {
+      "Epic": 17
+    },
+    "byIterationPath": {
+      "Day 2 IT Program\\Sprint 0": 17
+    }
+  },
+  "workItems": [
+    {
+      "workItemId": 67742,
+      "workItemCode": null,
+      "title": "17. Procure to Pay",
+      "displayTitle": "17. Procure to Pay",
+      "workItemType": "Epic",
+      "state": "New",
+      "parent": {
+        "workItemId": null
+      },
+      "relatedLinkCount": 7,
+      "areaPath": {
+        "raw": "Day 2 IT Program\\HeartStream\\Business E2E flow",
+        "segments": [
+          "Day 2 IT Program",
+          "HeartStream",
+          "Business E2E flow"
+        ]
+      },
+      "iterationPath": {
+        "raw": "Day 2 IT Program\\Sprint 0",
+        "segments": [
+          "Day 2 IT Program",
+          "Sprint 0"
+        ]
+      },
+      "description": {
+        "plainText": "",
+        "summary": "",
+        "htmlDecoded": false
+      },
+      "source": {
+        "rowNumber": 2,
+        "id": "67742"
+      }
+    },
+    {
+      "workItemId": 67476,
+      "workItemCode": null,
+      "title": "16. Ecommerce (B2B & B2C)",
+      "displayTitle": "16. Ecommerce (B2B & B2C)",
+      "workItemType": "Epic",
+      "state": "New",
+      "parent": {
+        "workItemId": null
+      },
+      "relatedLinkCount": 12,
+      "areaPath": {
+        "raw": "Day 2 IT Program\\HeartStream\\Business E2E flow",
+        "segments": [
+          "Day 2 IT Program",
+          "HeartStream",
+          "Business E2E flow"
+        ]
+      },
+      "iterationPath": {
+        "raw": "Day 2 IT Program\\Sprint 0",
+        "segments": [
+          "Day 2 IT Program",
+          "Sprint 0"
+        ]
+      },
+      "description": {
+        "plainText": "",
+        "summary": "",
+        "htmlDecoded": false
+      },
+      "source": {
+        "rowNumber": 3,
+        "id": "67476"
+      }
+    },
+    {
+      "workItemId": 67722,
+      "workItemCode": null,
+      "title": "15. Brick & Mortar Retailers",
+      "displayTitle": "15. Brick & Mortar Retailers",
+      "workItemType": "Epic",
+      "state": "New",
+      "parent": {
+        "workItemId": null
+      },
+      "relatedLinkCount": 18,
+      "areaPath": {
+        "raw": "Day 2 IT Program\\HeartStream\\Business E2E flow",
+        "segments": [
+          "Day 2 IT Program",
+          "HeartStream",
+          "Business E2E flow"
+        ]
+      },
+      "iterationPath": {
+        "raw": "Day 2 IT Program\\Sprint 0",
+        "segments": [
+          "Day 2 IT Program",
+          "Sprint 0"
+        ]
+      },
+      "description": {
+        "plainText": "",
+        "summary": "",
+        "htmlDecoded": false
+      },
+      "source": {
+        "rowNumber": 4,
+        "id": "67722"
+      }
+    },
+    {
+      "workItemId": 67700,
+      "workItemCode": null,
+      "title": "14. Affiliates Programs",
+      "displayTitle": "14. Affiliates Programs",
+      "workItemType": "Epic",
+      "state": "New",
+      "parent": {
+        "workItemId": null
+      },
+      "relatedLinkCount": 1,
+      "areaPath": {
+        "raw": "Day 2 IT Program\\HeartStream\\Business E2E flow",
+        "segments": [
+          "Day 2 IT Program",
+          "HeartStream",
+          "Business E2E flow"
+        ]
+      },
+      "iterationPath": {
+        "raw": "Day 2 IT Program\\Sprint 0",
+        "segments": [
+          "Day 2 IT Program",
+          "Sprint 0"
+        ]
+      },
+      "description": {
+        "plainText": "",
+        "summary": "",
+        "htmlDecoded": false
+      },
+      "source": {
+        "rowNumber": 5,
+        "id": "67700"
+      }
+    },
+    {
+      "workItemId": 67680,
+      "workItemCode": null,
+      "title": "13. Social Commerce",
+      "displayTitle": "13. Social Commerce",
+      "workItemType": "Epic",
+      "state": "New",
+      "parent": {
+        "workItemId": null
+      },
+      "relatedLinkCount": 1,
+      "areaPath": {
+        "raw": "Day 2 IT Program\\HeartStream\\Business E2E flow",
+        "segments": [
+          "Day 2 IT Program",
+          "HeartStream",
+          "Business E2E flow"
+        ]
+      },
+      "iterationPath": {
+        "raw": "Day 2 IT Program\\Sprint 0",
+        "segments": [
+          "Day 2 IT Program",
+          "Sprint 0"
+        ]
+      },
+      "description": {
+        "plainText": "",
+        "summary": "",
+        "htmlDecoded": false
+      },
+      "source": {
+        "rowNumber": 6,
+        "id": "67680"
+      }
+    },
+    {
+      "workItemId": 67669,
+      "workItemCode": null,
+      "title": "12. Subscription via PO",
+      "displayTitle": "12. Subscription via PO",
+      "workItemType": "Epic",
+      "state": "New",
+      "parent": {
+        "workItemId": null
+      },
+      "relatedLinkCount": 9,
+      "areaPath": {
+        "raw": "Day 2 IT Program\\HeartStream\\Business E2E flow",
+        "segments": [
+          "Day 2 IT Program",
+          "HeartStream",
+          "Business E2E flow"
+        ]
+      },
+      "iterationPath": {
+        "raw": "Day 2 IT Program\\Sprint 0",
+        "segments": [
+          "Day 2 IT Program",
+          "Sprint 0"
+        ]
+      },
+      "description": {
+        "plainText": "",
+        "summary": "",
+        "htmlDecoded": false
+      },
+      "source": {
+        "rowNumber": 7,
+        "id": "67669"
+      }
+    },
+    {
+      "workItemId": 67660,
+      "workItemCode": null,
+      "title": "11. Subscription Renewal (Non-Auto)",
+      "displayTitle": "11. Subscription Renewal (Non-Auto)",
+      "workItemType": "Epic",
+      "state": "New",
+      "parent": {
+        "workItemId": null
+      },
+      "relatedLinkCount": 7,
+      "areaPath": {
+        "raw": "Day 2 IT Program\\HeartStream\\Business E2E flow",
+        "segments": [
+          "Day 2 IT Program",
+          "HeartStream",
+          "Business E2E flow"
+        ]
+      },
+      "iterationPath": {
+        "raw": "Day 2 IT Program\\Sprint 0",
+        "segments": [
+          "Day 2 IT Program",
+          "Sprint 0"
+        ]
+      },
+      "description": {
+        "plainText": "",
+        "summary": "",
+        "htmlDecoded": false
+      },
+      "source": {
+        "rowNumber": 8,
+        "id": "67660"
+      }
+    },
+    {
+      "workItemId": 67650,
+      "workItemCode": null,
+      "title": "10. Auto-renewal Subscription",
+      "displayTitle": "10. Auto-renewal Subscription",
+      "workItemType": "Epic",
+      "state": "New",
+      "parent": {
+        "workItemId": null
+      },
+      "relatedLinkCount": 8,
+      "areaPath": {
+        "raw": "Day 2 IT Program\\HeartStream\\Business E2E flow",
+        "segments": [
+          "Day 2 IT Program",
+          "HeartStream",
+          "Business E2E flow"
+        ]
+      },
+      "iterationPath": {
+        "raw": "Day 2 IT Program\\Sprint 0",
+        "segments": [
+          "Day 2 IT Program",
+          "Sprint 0"
+        ]
+      },
+      "description": {
+        "plainText": "",
+        "summary": "",
+        "htmlDecoded": false
+      },
+      "source": {
+        "rowNumber": 9,
+        "id": "67650"
+      }
+    },
+    {
+      "workItemId": 67635,
+      "workItemCode": null,
+      "title": "09. Software Upgrade",
+      "displayTitle": "09. Software Upgrade",
+      "workItemType": "Epic",
+      "state": "New",
+      "parent": {
+        "workItemId": null
+      },
+      "relatedLinkCount": 13,
+      "areaPath": {
+        "raw": "Day 2 IT Program\\HeartStream\\Business E2E flow",
+        "segments": [
+          "Day 2 IT Program",
+          "HeartStream",
+          "Business E2E flow"
+        ]
+      },
+      "iterationPath": {
+        "raw": "Day 2 IT Program\\Sprint 0",
+        "segments": [
+          "Day 2 IT Program",
+          "Sprint 0"
+        ]
+      },
+      "description": {
+        "plainText": "",
+        "summary": "",
+        "htmlDecoded": false
+      },
+      "source": {
+        "rowNumber": 10,
+        "id": "67635"
+      }
+    },
+    {
+      "workItemId": 67621,
+      "workItemCode": null,
+      "title": "08. B2C App Purchase",
+      "displayTitle": "08. B2C App Purchase",
+      "workItemType": "Epic",
+      "state": "New",
+      "parent": {
+        "workItemId": null
+      },
+      "relatedLinkCount": 12,
+      "areaPath": {
+        "raw": "Day 2 IT Program\\HeartStream\\Business E2E flow",
+        "segments": [
+          "Day 2 IT Program",
+          "HeartStream",
+          "Business E2E flow"
+        ]
+      },
+      "iterationPath": {
+        "raw": "Day 2 IT Program\\Sprint 0",
+        "segments": [
+          "Day 2 IT Program",
+          "Sprint 0"
+        ]
+      },
+      "description": {
+        "plainText": "",
+        "summary": "",
+        "htmlDecoded": false
+      },
+      "source": {
+        "rowNumber": 11,
+        "id": "67621"
+      }
+    },
+    {
+      "workItemId": 67607,
+      "workItemCode": null,
+      "title": "07. B2C AED Shop",
+      "displayTitle": "07. B2C AED Shop",
+      "workItemType": "Epic",
+      "state": "New",
+      "parent": {
+        "workItemId": null
+      },
+      "relatedLinkCount": 10,
+      "areaPath": {
+        "raw": "Day 2 IT Program\\HeartStream\\Business E2E flow",
+        "segments": [
+          "Day 2 IT Program",
+          "HeartStream",
+          "Business E2E flow"
+        ]
+      },
+      "iterationPath": {
+        "raw": "Day 2 IT Program\\Sprint 0",
+        "segments": [
+          "Day 2 IT Program",
+          "Sprint 0"
+        ]
+      },
+      "description": {
+        "plainText": "",
+        "summary": "",
+        "htmlDecoded": false
+      },
+      "source": {
+        "rowNumber": 12,
+        "id": "67607"
+      }
+    },
+    {
+      "workItemId": 67596,
+      "workItemCode": null,
+      "title": "06. B2B Service Support ALS",
+      "displayTitle": "06. B2B Service Support ALS",
+      "workItemType": "Epic",
+      "state": "New",
+      "parent": {
+        "workItemId": null
+      },
+      "relatedLinkCount": 9,
+      "areaPath": {
+        "raw": "Day 2 IT Program\\HeartStream\\Business E2E flow",
+        "segments": [
+          "Day 2 IT Program",
+          "HeartStream",
+          "Business E2E flow"
+        ]
+      },
+      "iterationPath": {
+        "raw": "Day 2 IT Program\\Sprint 0",
+        "segments": [
+          "Day 2 IT Program",
+          "Sprint 0"
+        ]
+      },
+      "description": {
+        "plainText": "",
+        "summary": "",
+        "htmlDecoded": false
+      },
+      "source": {
+        "rowNumber": 13,
+        "id": "67596"
+      }
+    },
+    {
+      "workItemId": 67583,
+      "workItemCode": null,
+      "title": "05. B2B Service Request AED",
+      "displayTitle": "05. B2B Service Request AED",
+      "workItemType": "Epic",
+      "state": "New",
+      "parent": {
+        "workItemId": null
+      },
+      "relatedLinkCount": 11,
+      "areaPath": {
+        "raw": "Day 2 IT Program\\HeartStream\\Business E2E flow",
+        "segments": [
+          "Day 2 IT Program",
+          "HeartStream",
+          "Business E2E flow"
+        ]
+      },
+      "iterationPath": {
+        "raw": "Day 2 IT Program\\Sprint 0",
+        "segments": [
+          "Day 2 IT Program",
+          "Sprint 0"
+        ]
+      },
+      "description": {
+        "plainText": "",
+        "summary": "",
+        "htmlDecoded": false
+      },
+      "source": {
+        "rowNumber": 14,
+        "id": "67583"
+      }
+    },
+    {
+      "workItemId": 67572,
+      "workItemCode": null,
+      "title": "04. Service Support",
+      "displayTitle": "04. Service Support",
+      "workItemType": "Epic",
+      "state": "New",
+      "parent": {
+        "workItemId": null
+      },
+      "relatedLinkCount": 9,
+      "areaPath": {
+        "raw": "Day 2 IT Program\\HeartStream\\Business E2E flow",
+        "segments": [
+          "Day 2 IT Program",
+          "HeartStream",
+          "Business E2E flow"
+        ]
+      },
+      "iterationPath": {
+        "raw": "Day 2 IT Program\\Sprint 0",
+        "segments": [
+          "Day 2 IT Program",
+          "Sprint 0"
+        ]
+      },
+      "description": {
+        "plainText": "",
+        "summary": "",
+        "htmlDecoded": false
+      },
+      "source": {
+        "rowNumber": 15,
+        "id": "67572"
+      }
+    },
+    {
+      "workItemId": 67557,
+      "workItemCode": null,
+      "title": "03. B2B Direct Service & Solution Delivery",
+      "displayTitle": "03. B2B Direct Service & Solution Delivery",
+      "workItemType": "Epic",
+      "state": "New",
+      "parent": {
+        "workItemId": null
+      },
+      "relatedLinkCount": 12,
+      "areaPath": {
+        "raw": "Day 2 IT Program\\HeartStream\\Business E2E flow",
+        "segments": [
+          "Day 2 IT Program",
+          "HeartStream",
+          "Business E2E flow"
+        ]
+      },
+      "iterationPath": {
+        "raw": "Day 2 IT Program\\Sprint 0",
+        "segments": [
+          "Day 2 IT Program",
+          "Sprint 0"
+        ]
+      },
+      "description": {
+        "plainText": "",
+        "summary": "",
+        "htmlDecoded": false
+      },
+      "source": {
+        "rowNumber": 16,
+        "id": "67557"
+      }
+    },
+    {
+      "workItemId": 67462,
+      "workItemCode": null,
+      "title": "02. B2B Direct Through Reseller",
+      "displayTitle": "02. B2B Direct Through Reseller",
+      "workItemType": "Epic",
+      "state": "New",
+      "parent": {
+        "workItemId": null
+      },
+      "relatedLinkCount": 23,
+      "areaPath": {
+        "raw": "Day 2 IT Program\\HeartStream\\Business E2E flow",
+        "segments": [
+          "Day 2 IT Program",
+          "HeartStream",
+          "Business E2E flow"
+        ]
+      },
+      "iterationPath": {
+        "raw": "Day 2 IT Program\\Sprint 0",
+        "segments": [
+          "Day 2 IT Program",
+          "Sprint 0"
+        ]
+      },
+      "description": {
+        "plainText": "<div>This process illustrates the end-to-end\nreseller sales lifecycle, from partner\nrecruitment and enablement through\ncustomer acquisition, sales execution,\nfulfilment, financial processing, and rebate\nsettlement<br> </div>",
+        "summary": "<div>This process illustrates the end-to-end reseller sales lifecycle, from partner recruitment and enablement through customer acquisition, sales execution, fulfilment, financial processing, and rebate settlement<br> </div>",
+        "htmlDecoded": false
+      },
+      "source": {
+        "rowNumber": 17,
+        "id": "67462"
+      }
+    },
+    {
+      "workItemId": 67461,
+      "workItemCode": null,
+      "title": "01. B2B Direct Sales",
+      "displayTitle": "01. B2B Direct Sales",
+      "workItemType": "Epic",
+      "state": "New",
+      "parent": {
+        "workItemId": null
+      },
+      "relatedLinkCount": 18,
+      "areaPath": {
+        "raw": "Day 2 IT Program\\HeartStream\\Business E2E flow",
+        "segments": [
+          "Day 2 IT Program",
+          "HeartStream",
+          "Business E2E flow"
+        ]
+      },
+      "iterationPath": {
+        "raw": "Day 2 IT Program\\Sprint 0",
+        "segments": [
+          "Day 2 IT Program",
+          "Sprint 0"
+        ]
+      },
+      "description": {
+        "plainText": "<div>This process illustrates the end-to-end B2B\nDirect Sales journey, spanning customer\nacquisition, sales conversion, order\nexecution, fulfilment, financial processing,\nand installed base creation within the\nHeartstream ecosystem </div>",
+        "summary": "<div>This process illustrates the end-to-end B2B Direct Sales journey, spanning customer acquisition, sales conversion, order execution, fulfilment, financial processing, and installed base creation within the Heartstream ecosystem </div>",
+        "htmlDecoded": false
+      },
+      "source": {
+        "rowNumber": 18,
+        "id": "67461"
+      }
+    }
+  ]
+}

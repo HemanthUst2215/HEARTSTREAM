@@ -1,0 +1,244 @@
+# ADO User Story CSV Rulebook (permanent runtime contract)
+# Bootstrap: derived once from workshop export WS-68405 during /generate-user-stories-from-transcript factory setup.
+# Runtime agents MUST load this file only — never read or require the original bootstrap CSV.
+
+schema_version: "1.0"
+rulebook_id: "ado-user-story-csv-v1"
+status: Active
+
+provenance:
+  behavior_id: RB-USCSV-001
+  statement: Column layout, work item taxonomy, and narrative formats for ADO-compatible user story CSV export.
+  source_path: "factory-setup"
+  source_locator: "WS-68405.csv (one-time bootstrap; not a runtime input)"
+  confidence: explicit
+
+csv:
+  encoding: utf-8
+  delimiter: ","
+  quote_char: '"'
+  line_ending: "\n"
+  include_header_row: true
+  column_order:
+    - ID
+    - Work Item Type
+    - Title
+    - Description
+    - Task Type1
+    - MoM updated and attached
+    - Action items identified and Tasks created
+    - Related Feature identified and linked in ADO
+    - SOW Annexure ID identified
+    - Annexure ID1
+    - Data Migration needs identified and Tasks created
+    - Area Path
+    - Start Date
+    - Acceptance Criteria
+    - Fit Gap Status
+
+work_item_types:
+  allowed:
+    - Workshop
+    - Epic
+    - Feature
+    - User Story
+    - Task
+    - Issue
+    - Risk
+  transcript_output_default: User Story
+  hierarchy:
+    description: >
+      Workshop (session container) → User Story (implementable requirement). Epic and Feature are not authored from the
+      transcript; matching catalog Epic/Feature rows are inserted with their existing `ID` values.
+      Task, Issue, and Risk are supporting ADO types when cited in transcript; do not invent them without transcript evidence.
+    parent_linking:
+      user_story_parent: Feature
+      feature_parent: Epic
+      note: "Mapping copies matched catalog Epic/Feature rows (with existing IDs) into the public Excel. Do not invent titles from the transcript."
+
+title_formats:
+  workshop: 'NN. <Domain> - <Workshop IDs> - <DD>/Mon/YYYY'
+  epic: 'NN. <Epic name>'
+  feature: 'N. <Feature name>'
+  user_story: '<Short imperative capability title; no "As a user" prefix in Title>'
+  task: '<Action item text>'
+  issue: '<Issue short name>'
+  risk: '<Risk short name>'
+
+user_story:
+  description_format:
+    pattern: "As a <role>, I need to <need>, so that <benefit>."
+    rules:
+      - Role uses business language (e.g., account manager, user, partner operations).
+      - Need states one testable capability; avoid stacking unrelated needs in one story.
+      - Benefit states outcome for the business or user; cite transcript phrasing when possible.
+      - May include HTML fragments only when transcript or approved glossary uses rich text; prefer plain text for new stories.
+  title_vs_description:
+    title: Capability headline only.
+    description: Full user-story sentence(s); never duplicate Title-only content without the As-a/I-need/so-that structure.
+
+acceptance_criteria:
+  column: Acceptance Criteria
+  format:
+    - Use ASCII hyphen bullets: each line starts with "- " (hyphen + space).
+    - Do not use Unicode bullet U+2022 (•) in new output.
+    - One observable outcome per bullet; testable without implementation detail.
+    - Prefer plain text; legacy bootstrap exports may have shown • or HTML; new output uses "- " only.
+  placement: Acceptance Criteria column only — not embedded in Description for User Story rows.
+  multiline_in_cell: true
+  rule: >
+    Put each criterion on its own line prefixed with "- " inside the Acceptance Criteria cell (RFC4180 quoted field).
+    Do not concatenate all bullets into one line separated only by spaces.
+
+transcript_authoring:
+  create_from_transcript:
+    - Workshop
+    - User Story
+    - Task
+    - Issue
+    - Risk
+  do_not_create:
+    - Epic
+    - Feature
+  note: >
+    Do not invent Epic or Feature titles from the transcript. After stories are authored, mapping
+    writes the matching existing Epic and Feature records from artifacts/work-items JSON into the
+    public Excel with their ADO IDs in the `ID` column (no extra EPIC ID / FEATURE ID columns).
+
+ado_export_layout:
+  row_order:
+    - Workshop
+    - Epic
+    - Feature
+    - User Story
+    - Issue
+    - Risk
+    - Task
+  workshop_row:
+    rule: First data row; Title matches workshop naming pattern; Area Path and Start Date populated when known.
+  epic_feature_rows:
+    rule: >
+      Transcript working CSV has no Epic/Feature rows. The public Excel inserts matched catalog
+      Epic then Feature rows (ID = workItemId, Title/Description from JSON) before User Stories.
+  user_story_rows:
+    area_path: leave blank unless transcript assigns a specific ADO area to the story
+    description: Full As-a / I-need-to / so-that sentence only in Description
+    acceptance_criteria: Bulleted lines in Acceptance Criteria column only
+  issue_risk_rows:
+    description: "Risk / Impact / Mitigation as separate lines in Description"
+    acceptance_criteria: leave blank
+    area_path: populate when workshop area is known (e.g. Day 2\CRM)
+
+epic_and_feature:
+  epic:
+    description: Multi-line narrative of end-to-end process scope; may use newlines in Description cell (CSV-quoted).
+  feature:
+    description: >
+      Structured narrative: Input / Activities / Output sections separated by semicolons or newlines as in reference export.
+      Annexure ID1 populated when SOW annexure is cited.
+    area_path_examples:
+      - "Day 2\\Business E2E flow"
+      - "Day 2\\CRM"
+
+priority_conventions:
+  present_in_reference_export: false
+  rule: >
+    Do not add Priority, MoSCoW, or Rank columns. Prioritization is expressed via workshop sequencing, Epic/Feature numbering,
+    and human review — not via extra CSV columns.
+
+story_point_conventions:
+  present_in_reference_export: false
+  rule: Do not add Story Points or Effort columns unless the rulebook is superseded by an approved harness decision.
+
+fit_gap:
+  column: Fit Gap Status
+  usage: Populate when transcript or workshop notes state fit/gap disposition; otherwise leave empty.
+  workshop_tasks: Action items may reference fit-gap updates in ADO; capture disposition in this column when stated.
+
+workshop_governance_columns:
+  yes_no_values: ["Yes", ""]
+  columns:
+    - MoM updated and attached
+    - Action items identified and Tasks created
+    - Related Feature identified and linked in ADO
+    - SOW Annexure ID identified
+    - Data Migration needs identified and Tasks created
+  rule: Populate Yes only on Workshop rows when transcript explicitly confirms; leave blank for User Story rows unless transcript states otherwise.
+
+task_type1:
+  allowed_values:
+    - Workshop Action item
+    - QA
+  rule: Populate only for Task rows when transcript classifies the action; leave blank for User Story rows.
+
+area_path:
+  format: 'Day 2\\<Area> or Day 2\\<Area>\\<Subarea>'
+  examples:
+    - "Day 2\\CRM"
+    - "Day 2\\Business E2E flow"
+    - "Day 2\\Testing\\CRM"
+  rule: Use backslash as in ADO Area Path; match transcript module/workstream when stated.
+
+start_date:
+  format: "DD-MM-YYYY HH:MM"
+  example: "28-09-2026 08:00"
+  rule: Populate when transcript provides workshop or task schedule; otherwise leave blank.
+
+required_fields:
+  User Story:
+    required: [Work Item Type, Title, Description, Acceptance Criteria]
+    optional: [ID, Area Path, Fit Gap Status]
+    area_path_default: empty
+  Epic:
+    required: [Work Item Type, Title, Description]
+  Feature:
+    required: [Work Item Type, Title, Description]
+    optional: [Annexure ID1, Area Path]
+  Workshop:
+    required: [Work Item Type, Title, Description, Area Path]
+    optional: [Start Date, workshop_governance_columns]
+  Task:
+    required: [Work Item Type, Title]
+    optional: [Task Type1, Area Path, Start Date, Description]
+  Issue:
+    required: [Work Item Type, Title, Description]
+  Risk:
+    required: [Work Item Type, Title, Description]
+
+id_column:
+  column: ID
+  rule: >
+    Leave ID blank for newly generated rows (ADO assigns on import). Never fabricate numeric IDs.
+    If transcript cites an existing ADO ID, include it only when explicitly stated.
+
+formatting_standards:
+  - RFC4180 CSV quoting; escape internal double quotes by doubling.
+  - Preserve exact header spelling and column order from column_order.
+  - No BOM on output unless operator import tool requires it (default no BOM).
+  - Do not add or remove columns at runtime.
+
+business_terminology:
+  glossary_refs:
+    - Partner / channel / PRM / ZINFI when cited in transcript
+    - D365 CE and D365 F&O (Finance and Operations) for CRM/ERP boundaries
+    - HeartStream region and legal entity
+    - Fit-gap, MoM, SOW Annexure, WS-CE workshop identifiers
+  rule: Use domain terms only when supported by transcript or approved glossary; register ASSUMPTION-xxx when inferring a term.
+
+validation:
+  script: scripts/validate-user-story-csv.py
+  writer_script: scripts/ado_user_story_csv.py
+  layout_module: scripts/ado_user_story_csv_layout.py
+  regression_tests: scripts/test_ado_user_story_csv_layout.py
+  rulebook_pointer: docs/intake/user-story-csv-rulebook.yaml
+  mandatory_flow: >
+    Agents must not hand-author CSV text. Persist row objects to JSON, then run
+    `python scripts/ado_user_story_csv.py write --json <rows.json> --out <out.csv>`,
+    then `python scripts/validate-user-story-csv.py --csv <out.csv>`. Exit non-zero blocks Done.
+
+output_paths:
+  working_csv: "artifacts/intake/.pipeline/<YYYY-MM-DD>-user-stories-working.csv"
+  public_xlsx: "artifacts/intake/<YYYY-MM-DD>-user-stories-from-transcript.xlsx"
+  invest_scorecard: "artifacts/intake/<YYYY-MM-DD>-invest-scorecard.csv"
+  extraction_notes: "artifacts/intake/<YYYY-MM-DD>-transcript-story-extraction.md"
+  validation_report: "artifacts/intake/<YYYY-MM-DD>-user-story-csv-validation.json"

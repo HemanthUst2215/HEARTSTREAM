@@ -1,0 +1,858 @@
+{
+  "generatedAt": "2026-10-08T10:28:53.348611+00:00",
+  "sourceCsv": "artifacts\\intake\\.pipeline\\2026-10-08-user-stories-working.csv",
+  "threshold": 62.0,
+  "margin": 8.0,
+  "requireBothEpicAndFeature": true,
+  "catalogCounts": {
+    "Epic": 19,
+    "Feature": 221,
+    "Workshop": 119
+  },
+  "userStoryCount": 29,
+  "matched": 3,
+  "unmatched": 26,
+  "stories": [
+    {
+      "csvRow": 3,
+      "title": "Sync approved partner record from Zinfi to CRM only after onboarding is finalized",
+      "status": "unmatched",
+      "pair": "no_feature",
+      "catalogFeatureTitle": "",
+      "catalogEpicTitle": "",
+      "epicId": "",
+      "featureId": "",
+      "workshopId": "",
+      "feature": {
+        "id": "",
+        "title": "",
+        "score": 0.0,
+        "rationale": "below_threshold (40.0 < 62.0)"
+      },
+      "epic": {
+        "id": "",
+        "title": "",
+        "score": 0,
+        "rationale": "skipped (no unique catalog feature)"
+      },
+      "workshop": {
+        "id": "",
+        "title": "01. Sales - CE Record to Report UST Led Workshop - 28/Sep/2026",
+        "score": 20.2,
+        "rationale": "below_threshold (20.2 < 62.0)"
+      }
+    },
+    {
+      "csvRow": 4,
+      "title": "Scope partner record visibility to originating legal entity",
+      "status": "unmatched",
+      "pair": "no_feature",
+      "catalogFeatureTitle": "",
+      "catalogEpicTitle": "",
+      "epicId": "",
+      "featureId": "",
+      "workshopId": "",
+      "feature": {
+        "id": "",
+        "title": "",
+        "score": 0.0,
+        "rationale": "below_threshold (0.0 < 62.0)"
+      },
+      "epic": {
+        "id": "",
+        "title": "",
+        "score": 0,
+        "rationale": "skipped (no unique catalog feature)"
+      },
+      "workshop": {
+        "id": "",
+        "title": "01. Sales - CE Record to Report UST Led Workshop - 28/Sep/2026",
+        "score": 20.2,
+        "rationale": "below_threshold (20.2 < 62.0)"
+      }
+    },
+    {
+      "csvRow": 5,
+      "title": "Assign single record owner with legal-entity-wide read visibility",
+      "status": "unmatched",
+      "pair": "no_feature",
+      "catalogFeatureTitle": "",
+      "catalogEpicTitle": "",
+      "epicId": "",
+      "featureId": "",
+      "workshopId": "",
+      "feature": {
+        "id": "",
+        "title": "",
+        "score": 0.0,
+        "rationale": "below_threshold (0.0 < 62.0)"
+      },
+      "epic": {
+        "id": "",
+        "title": "",
+        "score": 0,
+        "rationale": "skipped (no unique catalog feature)"
+      },
+      "workshop": {
+        "id": "",
+        "title": "01. Sales - CE Record to Report UST Led Workshop - 28/Sep/2026",
+        "score": 20.2,
+        "rationale": "below_threshold (20.2 < 62.0)"
+      }
+    },
+    {
+      "csvRow": 6,
+      "title": "Enforce read-only partner record with approval-based edit exception",
+      "status": "unmatched",
+      "pair": "no_feature",
+      "catalogFeatureTitle": "",
+      "catalogEpicTitle": "",
+      "epicId": "",
+      "featureId": "",
+      "workshopId": "",
+      "feature": {
+        "id": "",
+        "title": "",
+        "score": 0.0,
+        "rationale": "below_threshold (0.0 < 62.0)"
+      },
+      "epic": {
+        "id": "",
+        "title": "",
+        "score": 0,
+        "rationale": "skipped (no unique catalog feature)"
+      },
+      "workshop": {
+        "id": "",
+        "title": "01. Sales - CE Record to Report UST Led Workshop - 28/Sep/2026",
+        "score": 20.2,
+        "rationale": "below_threshold (20.2 < 62.0)"
+      }
+    },
+    {
+      "csvRow": 7,
+      "title": "Sync partner training completion status to CRM",
+      "status": "unmatched",
+      "pair": "no_feature",
+      "catalogFeatureTitle": "",
+      "catalogEpicTitle": "",
+      "epicId": "",
+      "featureId": "",
+      "workshopId": "",
+      "feature": {
+        "id": "",
+        "title": "",
+        "score": 0.0,
+        "rationale": "below_threshold (42.0 < 62.0)"
+      },
+      "epic": {
+        "id": "",
+        "title": "",
+        "score": 0,
+        "rationale": "skipped (no unique catalog feature)"
+      },
+      "workshop": {
+        "id": "",
+        "title": "01. Sales - CE Record to Report UST Led Workshop - 28/Sep/2026",
+        "score": 20.2,
+        "rationale": "below_threshold (20.2 < 62.0)"
+      }
+    },
+    {
+      "csvRow": 8,
+      "title": "Capture required account-planning data points in CRM",
+      "status": "unmatched",
+      "pair": "no_feature",
+      "catalogFeatureTitle": "",
+      "catalogEpicTitle": "",
+      "epicId": "",
+      "featureId": "",
+      "workshopId": "",
+      "feature": {
+        "id": "",
+        "title": "",
+        "score": 0.0,
+        "rationale": "below_threshold (17.1 < 62.0)"
+      },
+      "epic": {
+        "id": "",
+        "title": "",
+        "score": 0,
+        "rationale": "skipped (no unique catalog feature)"
+      },
+      "workshop": {
+        "id": "",
+        "title": "01. Sales - CE Record to Report UST Led Workshop - 28/Sep/2026",
+        "score": 20.2,
+        "rationale": "below_threshold (20.2 < 62.0)"
+      }
+    },
+    {
+      "csvRow": 9,
+      "title": "Create and distribute leads from CRM to partners via Zinfi",
+      "status": "unmatched",
+      "pair": "no_feature",
+      "catalogFeatureTitle": "",
+      "catalogEpicTitle": "",
+      "epicId": "",
+      "featureId": "",
+      "workshopId": "",
+      "feature": {
+        "id": "",
+        "title": "",
+        "score": 0.0,
+        "rationale": "below_threshold (0.0 < 62.0)"
+      },
+      "epic": {
+        "id": "",
+        "title": "",
+        "score": 0,
+        "rationale": "skipped (no unique catalog feature)"
+      },
+      "workshop": {
+        "id": "",
+        "title": "01. Sales - CE Record to Report UST Led Workshop - 28/Sep/2026",
+        "score": 20.2,
+        "rationale": "below_threshold (20.2 < 62.0)"
+      }
+    },
+    {
+      "csvRow": 10,
+      "title": "Allow account managers to create and maintain their own leads",
+      "status": "unmatched",
+      "pair": "no_feature",
+      "catalogFeatureTitle": "",
+      "catalogEpicTitle": "",
+      "epicId": "",
+      "featureId": "",
+      "workshopId": "",
+      "feature": {
+        "id": "",
+        "title": "",
+        "score": 0.0,
+        "rationale": "below_threshold (0.0 < 62.0)"
+      },
+      "epic": {
+        "id": "",
+        "title": "",
+        "score": 0,
+        "rationale": "skipped (no unique catalog feature)"
+      },
+      "workshop": {
+        "id": "",
+        "title": "01. Sales - CE Record to Report UST Led Workshop - 28/Sep/2026",
+        "score": 20.2,
+        "rationale": "below_threshold (20.2 < 62.0)"
+      }
+    },
+    {
+      "csvRow": 11,
+      "title": "Allow partners to optionally register their own leads in Zinfi",
+      "status": "unmatched",
+      "pair": "no_feature",
+      "catalogFeatureTitle": "",
+      "catalogEpicTitle": "",
+      "epicId": "",
+      "featureId": "",
+      "workshopId": "",
+      "feature": {
+        "id": "",
+        "title": "",
+        "score": 0.0,
+        "rationale": "below_threshold (0.0 < 62.0)"
+      },
+      "epic": {
+        "id": "",
+        "title": "",
+        "score": 0,
+        "rationale": "skipped (no unique catalog feature)"
+      },
+      "workshop": {
+        "id": "",
+        "title": "01. Sales - CE Record to Report UST Led Workshop - 28/Sep/2026",
+        "score": 20.2,
+        "rationale": "below_threshold (20.2 < 62.0)"
+      }
+    },
+    {
+      "csvRow": 12,
+      "title": "Share opportunity notes and customer communication between partner and Heartstream users",
+      "status": "unmatched",
+      "pair": "no_feature",
+      "catalogFeatureTitle": "",
+      "catalogEpicTitle": "",
+      "epicId": "",
+      "featureId": "",
+      "workshopId": "",
+      "feature": {
+        "id": "",
+        "title": "",
+        "score": 0.0,
+        "rationale": "below_threshold (14.6 < 62.0)"
+      },
+      "epic": {
+        "id": "",
+        "title": "",
+        "score": 0,
+        "rationale": "skipped (no unique catalog feature)"
+      },
+      "workshop": {
+        "id": "",
+        "title": "01. Sales - CE Record to Report UST Led Workshop - 28/Sep/2026",
+        "score": 20.2,
+        "rationale": "below_threshold (20.2 < 62.0)"
+      }
+    },
+    {
+      "csvRow": 13,
+      "title": "Configure a global opportunity pipeline with standard stages",
+      "status": "unmatched",
+      "pair": "no_feature",
+      "catalogFeatureTitle": "",
+      "catalogEpicTitle": "",
+      "epicId": "",
+      "featureId": "",
+      "workshopId": "",
+      "feature": {
+        "id": "",
+        "title": "",
+        "score": 0.0,
+        "rationale": "below_threshold (0.0 < 62.0)"
+      },
+      "epic": {
+        "id": "",
+        "title": "",
+        "score": 0,
+        "rationale": "skipped (no unique catalog feature)"
+      },
+      "workshop": {
+        "id": "",
+        "title": "01. Sales - CE Record to Report UST Led Workshop - 28/Sep/2026",
+        "score": 20.2,
+        "rationale": "below_threshold (20.2 < 62.0)"
+      }
+    },
+    {
+      "csvRow": 14,
+      "title": "Prevent duplicate deal registration for the same customer opportunity",
+      "status": "unmatched",
+      "pair": "no_feature",
+      "catalogFeatureTitle": "",
+      "catalogEpicTitle": "",
+      "epicId": "",
+      "featureId": "",
+      "workshopId": "",
+      "feature": {
+        "id": "",
+        "title": "",
+        "score": 0.0,
+        "rationale": "below_threshold (0.0 < 62.0)"
+      },
+      "epic": {
+        "id": "",
+        "title": "",
+        "score": 0,
+        "rationale": "skipped (no unique catalog feature)"
+      },
+      "workshop": {
+        "id": "",
+        "title": "01. Sales - CE Record to Report UST Led Workshop - 28/Sep/2026",
+        "score": 20.2,
+        "rationale": "below_threshold (20.2 < 62.0)"
+      }
+    },
+    {
+      "csvRow": 15,
+      "title": "Flag an opportunity as a registered deal by product/solution category",
+      "status": "unmatched",
+      "pair": "no_feature",
+      "catalogFeatureTitle": "",
+      "catalogEpicTitle": "",
+      "epicId": "",
+      "featureId": "",
+      "workshopId": "",
+      "feature": {
+        "id": "",
+        "title": "",
+        "score": 0.0,
+        "rationale": "below_threshold (0.0 < 62.0)"
+      },
+      "epic": {
+        "id": "",
+        "title": "",
+        "score": 0,
+        "rationale": "skipped (no unique catalog feature)"
+      },
+      "workshop": {
+        "id": "",
+        "title": "01. Sales - CE Record to Report UST Led Workshop - 28/Sep/2026",
+        "score": 20.2,
+        "rationale": "below_threshold (20.2 < 62.0)"
+      }
+    },
+    {
+      "csvRow": 16,
+      "title": "Capture reseller sales-partner contract terms",
+      "status": "unmatched",
+      "pair": "no_feature",
+      "catalogFeatureTitle": "",
+      "catalogEpicTitle": "",
+      "epicId": "",
+      "featureId": "",
+      "workshopId": "",
+      "feature": {
+        "id": "",
+        "title": "",
+        "score": 0.0,
+        "rationale": "below_threshold (21.4 < 62.0)"
+      },
+      "epic": {
+        "id": "",
+        "title": "",
+        "score": 0,
+        "rationale": "skipped (no unique catalog feature)"
+      },
+      "workshop": {
+        "id": "",
+        "title": "01. Sales - CE Record to Report UST Led Workshop - 28/Sep/2026",
+        "score": 20.2,
+        "rationale": "below_threshold (20.2 < 62.0)"
+      }
+    },
+    {
+      "csvRow": 17,
+      "title": "Capture service-partner contract terms including spare-part discounts and SLA",
+      "status": "matched",
+      "pair": "matched",
+      "catalogFeatureTitle": "2. Service Contract Management",
+      "catalogEpicTitle": "03. B2B Direct Service & Solution Delivery",
+      "epicId": "67557",
+      "featureId": "67560",
+      "workshopId": "",
+      "feature": {
+        "id": "67560",
+        "title": "2. Service Contract Management",
+        "score": 0.0,
+        "rationale": "strong (80.0)"
+      },
+      "epic": {
+        "id": "67557",
+        "title": "03. B2B Direct Service & Solution Delivery",
+        "score": 100.0,
+        "rationale": "parent of feature 67560"
+      },
+      "workshop": {
+        "id": "",
+        "title": "01. Sales - CE Record to Report UST Led Workshop - 28/Sep/2026",
+        "score": 20.2,
+        "rationale": "below_threshold (20.2 < 62.0)"
+      }
+    },
+    {
+      "csvRow": 18,
+      "title": "Enforce minimum and maximum contract duration by partner type",
+      "status": "unmatched",
+      "pair": "no_feature",
+      "catalogFeatureTitle": "",
+      "catalogEpicTitle": "",
+      "epicId": "",
+      "featureId": "",
+      "workshopId": "",
+      "feature": {
+        "id": "",
+        "title": "",
+        "score": 0.0,
+        "rationale": "below_threshold (20.9 < 62.0)"
+      },
+      "epic": {
+        "id": "",
+        "title": "",
+        "score": 0,
+        "rationale": "skipped (no unique catalog feature)"
+      },
+      "workshop": {
+        "id": "",
+        "title": "01. Sales - CE Record to Report UST Led Workshop - 28/Sep/2026",
+        "score": 20.2,
+        "rationale": "below_threshold (20.2 < 62.0)"
+      }
+    },
+    {
+      "csvRow": 19,
+      "title": "Support mid-contract list price updates with notice period",
+      "status": "unmatched",
+      "pair": "no_feature",
+      "catalogFeatureTitle": "",
+      "catalogEpicTitle": "",
+      "epicId": "",
+      "featureId": "",
+      "workshopId": "",
+      "feature": {
+        "id": "",
+        "title": "",
+        "score": 0.0,
+        "rationale": "below_threshold (20.5 < 62.0)"
+      },
+      "epic": {
+        "id": "",
+        "title": "",
+        "score": 0,
+        "rationale": "skipped (no unique catalog feature)"
+      },
+      "workshop": {
+        "id": "",
+        "title": "01. Sales - CE Record to Report UST Led Workshop - 28/Sep/2026",
+        "score": 20.2,
+        "rationale": "below_threshold (20.2 < 62.0)"
+      }
+    },
+    {
+      "csvRow": 20,
+      "title": "Share finalized contract and approvals with the partner in Zinfi",
+      "status": "unmatched",
+      "pair": "no_feature",
+      "catalogFeatureTitle": "",
+      "catalogEpicTitle": "",
+      "epicId": "",
+      "featureId": "",
+      "workshopId": "",
+      "feature": {
+        "id": "",
+        "title": "",
+        "score": 0.0,
+        "rationale": "below_threshold (18.1 < 62.0)"
+      },
+      "epic": {
+        "id": "",
+        "title": "",
+        "score": 0,
+        "rationale": "skipped (no unique catalog feature)"
+      },
+      "workshop": {
+        "id": "",
+        "title": "01. Sales - CE Record to Report UST Led Workshop - 28/Sep/2026",
+        "score": 20.2,
+        "rationale": "below_threshold (20.2 < 62.0)"
+      }
+    },
+    {
+      "csvRow": 21,
+      "title": "Derive quote pricing from the partner's active contract",
+      "status": "unmatched",
+      "pair": "no_feature",
+      "catalogFeatureTitle": "",
+      "catalogEpicTitle": "",
+      "epicId": "",
+      "featureId": "",
+      "workshopId": "",
+      "feature": {
+        "id": "",
+        "title": "",
+        "score": 0.0,
+        "rationale": "below_threshold (13.8 < 62.0)"
+      },
+      "epic": {
+        "id": "",
+        "title": "",
+        "score": 0,
+        "rationale": "skipped (no unique catalog feature)"
+      },
+      "workshop": {
+        "id": "",
+        "title": "01. Sales - CE Record to Report UST Led Workshop - 28/Sep/2026",
+        "score": 20.2,
+        "rationale": "below_threshold (20.2 < 62.0)"
+      }
+    },
+    {
+      "csvRow": 22,
+      "title": "Route additional discount beyond contract through tiered approval",
+      "status": "unmatched",
+      "pair": "no_feature",
+      "catalogFeatureTitle": "",
+      "catalogEpicTitle": "",
+      "epicId": "",
+      "featureId": "",
+      "workshopId": "",
+      "feature": {
+        "id": "",
+        "title": "",
+        "score": 0.0,
+        "rationale": "below_threshold (20.0 < 62.0)"
+      },
+      "epic": {
+        "id": "",
+        "title": "",
+        "score": 0,
+        "rationale": "skipped (no unique catalog feature)"
+      },
+      "workshop": {
+        "id": "",
+        "title": "01. Sales - CE Record to Report UST Led Workshop - 28/Sep/2026",
+        "score": 20.2,
+        "rationale": "below_threshold (20.2 < 62.0)"
+      }
+    },
+    {
+      "csvRow": 23,
+      "title": "Allow quote creation without a full opportunity for low-value items",
+      "status": "unmatched",
+      "pair": "no_feature",
+      "catalogFeatureTitle": "",
+      "catalogEpicTitle": "",
+      "epicId": "",
+      "featureId": "",
+      "workshopId": "",
+      "feature": {
+        "id": "",
+        "title": "",
+        "score": 0.0,
+        "rationale": "below_threshold (0.0 < 62.0)"
+      },
+      "epic": {
+        "id": "",
+        "title": "",
+        "score": 0,
+        "rationale": "skipped (no unique catalog feature)"
+      },
+      "workshop": {
+        "id": "",
+        "title": "01. Sales - CE Record to Report UST Led Workshop - 28/Sep/2026",
+        "score": 20.2,
+        "rationale": "below_threshold (20.2 < 62.0)"
+      }
+    },
+    {
+      "csvRow": 24,
+      "title": "Convert approved quote into a confirmed sales order",
+      "status": "unmatched",
+      "pair": "no_feature",
+      "catalogFeatureTitle": "",
+      "catalogEpicTitle": "",
+      "epicId": "",
+      "featureId": "",
+      "workshopId": "",
+      "feature": {
+        "id": "",
+        "title": "",
+        "score": 0.0,
+        "rationale": "below_threshold (0.0 < 62.0)"
+      },
+      "epic": {
+        "id": "",
+        "title": "",
+        "score": 0,
+        "rationale": "skipped (no unique catalog feature)"
+      },
+      "workshop": {
+        "id": "",
+        "title": "01. Sales - CE Record to Report UST Led Workshop - 28/Sep/2026",
+        "score": 20.2,
+        "rationale": "below_threshold (20.2 < 62.0)"
+      }
+    },
+    {
+      "csvRow": 25,
+      "title": "Require Requested Delivery Date before fulfillment starts",
+      "status": "unmatched",
+      "pair": "no_feature",
+      "catalogFeatureTitle": "",
+      "catalogEpicTitle": "",
+      "epicId": "",
+      "featureId": "",
+      "workshopId": "",
+      "feature": {
+        "id": "",
+        "title": "",
+        "score": 0.0,
+        "rationale": "below_threshold (0.0 < 62.0)"
+      },
+      "epic": {
+        "id": "",
+        "title": "",
+        "score": 0,
+        "rationale": "skipped (no unique catalog feature)"
+      },
+      "workshop": {
+        "id": "",
+        "title": "01. Sales - CE Record to Report UST Led Workshop - 28/Sep/2026",
+        "score": 20.2,
+        "rationale": "below_threshold (20.2 < 62.0)"
+      }
+    },
+    {
+      "csvRow": 26,
+      "title": "Re-trigger approval on pricing or configuration revision, not on date-only changes",
+      "status": "unmatched",
+      "pair": "no_feature",
+      "catalogFeatureTitle": "",
+      "catalogEpicTitle": "",
+      "epicId": "",
+      "featureId": "",
+      "workshopId": "",
+      "feature": {
+        "id": "",
+        "title": "",
+        "score": 0.0,
+        "rationale": "below_threshold (0.0 < 62.0)"
+      },
+      "epic": {
+        "id": "",
+        "title": "",
+        "score": 0,
+        "rationale": "skipped (no unique catalog feature)"
+      },
+      "workshop": {
+        "id": "",
+        "title": "01. Sales - CE Record to Report UST Led Workshop - 28/Sep/2026",
+        "score": 20.2,
+        "rationale": "below_threshold (20.2 < 62.0)"
+      }
+    },
+    {
+      "csvRow": 27,
+      "title": "Lock order from cancellation and edit after a defined fulfillment status",
+      "status": "unmatched",
+      "pair": "no_feature",
+      "catalogFeatureTitle": "",
+      "catalogEpicTitle": "",
+      "epicId": "",
+      "featureId": "",
+      "workshopId": "",
+      "feature": {
+        "id": "",
+        "title": "",
+        "score": 0.0,
+        "rationale": "below_threshold (0.0 < 62.0)"
+      },
+      "epic": {
+        "id": "",
+        "title": "",
+        "score": 0,
+        "rationale": "skipped (no unique catalog feature)"
+      },
+      "workshop": {
+        "id": "",
+        "title": "01. Sales - CE Record to Report UST Led Workshop - 28/Sep/2026",
+        "score": 20.2,
+        "rationale": "below_threshold (20.2 < 62.0)"
+      }
+    },
+    {
+      "csvRow": 28,
+      "title": "Capture and provide required customs/shipment documents for applicable regions",
+      "status": "unmatched",
+      "pair": "no_feature",
+      "catalogFeatureTitle": "",
+      "catalogEpicTitle": "",
+      "epicId": "",
+      "featureId": "",
+      "workshopId": "",
+      "feature": {
+        "id": "",
+        "title": "",
+        "score": 0.0,
+        "rationale": "below_threshold (14.9 < 62.0)"
+      },
+      "epic": {
+        "id": "",
+        "title": "",
+        "score": 0,
+        "rationale": "skipped (no unique catalog feature)"
+      },
+      "workshop": {
+        "id": "",
+        "title": "01. Sales - CE Record to Report UST Led Workshop - 28/Sep/2026",
+        "score": 20.2,
+        "rationale": "below_threshold (20.2 < 62.0)"
+      }
+    },
+    {
+      "csvRow": 29,
+      "title": "Create install base record on delivery for serialized hardware",
+      "status": "matched",
+      "pair": "matched",
+      "catalogFeatureTitle": "4. Install Base Management",
+      "catalogEpicTitle": "03. B2B Direct Service & Solution Delivery",
+      "epicId": "67557",
+      "featureId": "67562",
+      "workshopId": "",
+      "feature": {
+        "id": "67562",
+        "title": "4. Install Base Management",
+        "score": 0.0,
+        "rationale": "strong (98.0)"
+      },
+      "epic": {
+        "id": "67557",
+        "title": "03. B2B Direct Service & Solution Delivery",
+        "score": 100.0,
+        "rationale": "parent of feature 67562"
+      },
+      "workshop": {
+        "id": "",
+        "title": "01. Sales - CE Record to Report UST Led Workshop - 28/Sep/2026",
+        "score": 20.2,
+        "rationale": "below_threshold (20.2 < 62.0)"
+      }
+    },
+    {
+      "csvRow": 30,
+      "title": "Allow partner-initiated install base location change request via Zinfi",
+      "status": "matched",
+      "pair": "matched",
+      "catalogFeatureTitle": "4. Install Base Management",
+      "catalogEpicTitle": "03. B2B Direct Service & Solution Delivery",
+      "epicId": "67557",
+      "featureId": "67562",
+      "workshopId": "",
+      "feature": {
+        "id": "67562",
+        "title": "4. Install Base Management",
+        "score": 0.0,
+        "rationale": "strong (98.0)"
+      },
+      "epic": {
+        "id": "67557",
+        "title": "03. B2B Direct Service & Solution Delivery",
+        "score": 100.0,
+        "rationale": "parent of feature 67562"
+      },
+      "workshop": {
+        "id": "",
+        "title": "01. Sales - CE Record to Report UST Led Workshop - 28/Sep/2026",
+        "score": 20.2,
+        "rationale": "below_threshold (20.2 < 62.0)"
+      }
+    },
+    {
+      "csvRow": 31,
+      "title": "Synchronize partner-raised case escalation from Zinfi to CRM for triage",
+      "status": "unmatched",
+      "pair": "no_feature",
+      "catalogFeatureTitle": "",
+      "catalogEpicTitle": "",
+      "epicId": "",
+      "featureId": "",
+      "workshopId": "",
+      "feature": {
+        "id": "",
+        "title": "",
+        "score": 0.0,
+        "rationale": "below_threshold (0.0 < 62.0)"
+      },
+      "epic": {
+        "id": "",
+        "title": "",
+        "score": 0,
+        "rationale": "skipped (no unique catalog feature)"
+      },
+      "workshop": {
+        "id": "",
+        "title": "01. Sales - CE Record to Report UST Led Workshop - 28/Sep/2026",
+        "score": 20.2,
+        "rationale": "below_threshold (20.2 < 62.0)"
+      }
+    }
+  ]
+}

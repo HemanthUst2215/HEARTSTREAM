@@ -1,0 +1,42 @@
+---
+description: Production-grade fix governance for /fix-issue — no workarounds, no reinvention
+alwaysApply: true
+---
+
+# Production Fix Governance
+
+Applies to `/fix-issue`, **backend-agent** (mode `fix`), **frontend-agent** (mode `fix`), and any ad-hoc bug or gap work outside approved sprint delivery.
+
+## Do
+
+- **Understand first:** reproduce or trace the issue in code, tests, logs, BRD, and OpenAPI before changing anything.
+- **Reuse:** extend existing controllers, services, components, validators, hooks, and patterns — do not duplicate parallel implementations.
+- **Minimal diff:** smallest change that fully satisfies the requirement and matches repo conventions.
+- **Production-grade:** proper validation, centralized error envelope, logging, transactions on writes, forward-only schema migrations, contract alignment for API changes.
+- **Trace:** cite BRD rule ID, OpenAPI operation, or feature notes when applicable; register DQ-xxx if sources are silent.
+- **Test:** add or update unit tests for the fix; run full module regression; run E2E when a user-facing journey changed.
+- **Document:** complete `artifacts/issues/<date>-<slug>.md` and audit per `10-audit-trail.mdc`.
+
+## Don't
+
+- Ship workarounds, temporary feature flags to hide bugs, commented-out code, or "fix later" TODOs.
+- Edit **applied** Flyway (or equivalent) migrations — add a new versioned file instead.
+- Change BRD business meaning without human confirmation.
+- Skip regression tests because the change "looks small."
+- Invent requirements — ask the human when unclear.
+- Reinvent abstractions that already exist in `modules.api` or `modules.ui`.
+
+## Human gates (hard stop)
+
+1. **Requirements ambiguous** → ask structured questions; do not implement.
+2. **Fix plan written** → wait for explicit human **proceed** before Phase 2 (see `/fix-issue`).
+3. **Breaking API or schema** → confirm before implement.
+4. **BRD interpretation change** → confirm with domain reviewer before implement.
+
+## Issue log (required)
+
+Every `/fix-issue` run must produce or update:
+
+`artifacts/issues/<YYYY-MM-DD>-<slug>.md`
+
+Sections: issue description, root cause, impact, fix plan, implementation summary, test evidence, outcome.

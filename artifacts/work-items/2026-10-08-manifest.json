@@ -1,0 +1,59 @@
+{
+  "command": "/process-work-items-csv",
+  "date": "2026-10-08",
+  "mode": "full",
+  "sources": [
+    {
+      "path": "Workshop items.csv",
+      "rowCount": 121,
+      "scan": { "exitCode": 0, "result": "CLEAN" }
+    },
+    {
+      "path": "EPIC.csv",
+      "rowCount": 17,
+      "scan": { "exitCode": 0, "result": "CLEAN" }
+    },
+    {
+      "path": "Feature.csv",
+      "rowCount": 221,
+      "scan": { "exitCode": 0, "result": "CLEAN" }
+    }
+  ],
+  "outputs": [
+    {
+      "source": "Workshop items.csv",
+      "json": "artifacts/work-items/work-items.json",
+      "summaryMd": "artifacts/work-items/work-items-summary.md",
+      "schemaProfile": "artifacts/work-items/2026-10-08-schema-profile.json",
+      "validationReport": "artifacts/work-items/2026-10-08-validation-report.json",
+      "rowCount": 121,
+      "validationVerdict": "PASS"
+    },
+    {
+      "source": "EPIC.csv",
+      "json": "artifacts/work-items/epic.json",
+      "summaryMd": "artifacts/work-items/epic-summary.md",
+      "schemaProfile": "artifacts/work-items/2026-10-08-schema-profile-epic.json",
+      "validationReport": "artifacts/work-items/2026-10-08-validation-report-epic.json",
+      "rowCount": 17,
+      "validationVerdict": "PASS"
+    },
+    {
+      "source": "Feature.csv",
+      "json": "artifacts/work-items/feature.json",
+      "summaryMd": "artifacts/work-items/feature-summary.md",
+      "schemaProfile": "artifacts/work-items/2026-10-08-schema-profile-feature.json",
+      "validationReport": "artifacts/work-items/2026-10-08-validation-report-feature.json",
+      "rowCount": 221,
+      "validationVerdict": "PASS",
+      "outputPathGate": {
+        "jsonSummary": "CLEAR",
+        "audit": "CONFLICT → new file artifacts/audit/2026-10-08-process-work-items-csv-v3.md"
+      }
+    }
+  ],
+  "notes": [
+    "One CSV → one JSON; no merge across Workshop / EPIC / Feature.",
+    "Per-stem validation and schema-profile files used so dated shared reports are not silently clobbered."
+  ]
+}

@@ -1,0 +1,15 @@
+---
+description: Agent delegation, loops, plan-as-input
+alwaysApply: true
+---
+
+# Agent Orchestration
+
+- Slash commands → orchestrator-agent → primary agent → subagents.
+- Execute spine: implement-api → implement-ui → expand-test-coverage → **[human: test-package Approved]** → run-tests → run-eval → review-changes → application-summary.
+- Build/quality loop: Plan → Act → Validate → Refine. Intake/reverse: Plan → Act → Observe → Reflect. Max 3 is a ceiling: iteration 1 Validate/Observe pass → stop; do not run remaining iterations. Refine/Reflect only from findings. Never skip Validate/Observe. Escalate with audit gaps after iteration 3.
+- Resolve-before-ask when a governed or sprint plan is supplied. Load `.cursor/skills/plan-as-input/SKILL.md` then `.cursor/templates/plan-as-input-protocol.md`.
+- After resolve-before-ask, register remaining gaps as Open DQ with owner. Do not invent. Do not STOP for a clarification round except human gates (BRD Accepted, plan Approved, `/fix-issue` proceed, test-package Approved, cutover, production). Still refuse when a Required input is absent.
+- Persist artifacts as files. Honor `.cursor/scope.yaml`.
+- Java API/tests: templates own structure; persist vars; `tools/templates/render_check.py` must PASS. Agent-owned only per hybrid_policy.
+- Human gates: BRD stays **Draft — Pending Domain Review** until Accepted or waiver; plans stay **Proposed — Pending Approval**; orchestrator refuses `/deliver-sprint` and implement-* until Approved; `/expand-test-coverage` stops at test-package **Pending Approval**; `/run-tests` refused until Approved; `/fix-issue` waits for human **proceed**. Agents cannot self-approve.

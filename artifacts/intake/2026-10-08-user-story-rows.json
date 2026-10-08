@@ -1,0 +1,201 @@
+[
+  {
+    "Work Item Type": "Workshop",
+    "Title": "01. Sales - CE Record to Report UST Led Workshop - 28/Sep/2026",
+    "Description": "Business process workshop to validate and align on how the partner life cycle process will operate across Zinfi (PRM platform) and Dynamics 365 CE: partner onboarding, lead and opportunity management, deal registration, partner visibility, account planning, contracting, quotation, order fulfillment, install base, and training/case management. Business process alignment only; detailed design/solution deferred to subsequent fit-gap and solutioning sessions.",
+    "Area Path": "Day 2\\CRM",
+    "Start Date": "28-09-2026 08:00"
+  },
+  {
+    "Work Item Type": "User Story",
+    "Title": "Sync approved partner record from Zinfi to CRM only after onboarding is finalized",
+    "Description": "As a CRM solution owner, I need to sync a partner account and contact record from Zinfi to Dynamics 365 CRM only after the partner's onboarding is finalized (due diligence, required training, and contract signature complete), so that CRM only reflects authorized, business-ready partners.",
+    "Acceptance Criteria": "- Partner record is not created in CRM until Zinfi onboarding status is Approved\n- Approved partner triggers creation of an account record and associated contact record in CRM\n- Partner account number in Zinfi is linked to the corresponding CRM account number"
+  },
+  {
+    "Work Item Type": "User Story",
+    "Title": "Scope partner record visibility to originating legal entity",
+    "Description": "As a Dynamics CRM user, I need to scope a synced partner record's visibility to the legal entity associated with the partner's originating region, so that partner data is not exposed across unrelated legal entities.",
+    "Acceptance Criteria": "- Partner record created from a given region is synced to and visible only in the corresponding CRM legal entity\n- Users logged into a different legal entity cannot see the partner record\n- One partner maps to exactly one legal entity for the current scope (no multi-region partners)"
+  },
+  {
+    "Work Item Type": "User Story",
+    "Title": "Assign single record owner with legal-entity-wide read visibility",
+    "Description": "As a sales operations lead, I need to assign a single owner (the approving channel/account manager or team) to the synced partner record while keeping it viewable by all CRM users within that legal entity, so that accountability is clear without restricting day-to-day visibility.",
+    "Acceptance Criteria": "- Partner record has exactly one owner (user or team) assigned on sync\n- Any authenticated CRM user within the partner's legal entity can view the record\n- Only the assigned owner (or an approved exception) can edit the record"
+  },
+  {
+    "Work Item Type": "User Story",
+    "Title": "Enforce read-only partner record with approval-based edit exception",
+    "Description": "As a CRM administrator, I need to enforce the synced partner record as read-only for all users by default, so that master partner data is not modified without oversight; a future approval flow may grant the record owner edit rights.",
+    "Acceptance Criteria": "- Partner record fields are non-editable for all CRM users immediately after sync\n- Adding a new partner location/warehouse is treated as a new record, not an edit to the existing partner record\n- Any future edit capability for the record owner is gated behind an approval flow (not direct open edit)"
+  },
+  {
+    "Work Item Type": "User Story",
+    "Title": "Sync partner training completion status to CRM",
+    "Description": "As a partner onboarding reviewer, I need to synchronize the partner's required training completion status from Zinfi to Dynamics 365 CRM, so that training completion can be confirmed as part of the onboarding approval without duplicating the learning management system in CRM.",
+    "Acceptance Criteria": "- Training status values recorded in Zinfi are synchronized to a training status field on the CRM partner record\n- CRM does not store training content or course detail, only status"
+  },
+  {
+    "Work Item Type": "User Story",
+    "Title": "Capture required account-planning data points in CRM",
+    "Description": "As a sales operations lead, I need to capture in Dynamics 365 CRM only the account-planning data points required for CRM-side visibility (with full planning performed in Zinfi), so that CRM remains the system of record for required data without duplicating the full planning workflow.",
+    "Acceptance Criteria": "- Account planning workflow (creation, approval) is performed in Zinfi, not CRM\n- CRM stores only the data points confirmed as required for CRM visibility (detailed data points to be defined in a follow-up session; registered as DQ until confirmed)"
+  },
+  {
+    "Work Item Type": "User Story",
+    "Title": "Create and distribute leads from CRM to partners via Zinfi",
+    "Description": "As a Heartstream sales or marketing team member, I need to create a lead in Dynamics 365 CRM and have it synchronized to Zinfi for the assigned partner, so that partners can act on leads generated by Heartstream without needing direct CRM access.",
+    "Acceptance Criteria": "- Lead created in CRM by sales or marketing is synchronized to Zinfi and visible to the assigned partner\n- Lead progress/status updates made by the partner in Zinfi are synchronized back to CRM\n- CRM reporting can show whether a distributed lead was closed and the outcome"
+  },
+  {
+    "Work Item Type": "User Story",
+    "Title": "Allow account managers to create and maintain their own leads",
+    "Description": "As an account manager, I need to create and maintain leads I identify directly in the field, so that I am not dependent on the marketing team to record leads I generate through prospecting.",
+    "Acceptance Criteria": "- Account manager can create a new lead record directly in CRM\n- Self-created leads follow the same distribution and synchronization process as marketing-sourced leads"
+  },
+  {
+    "Work Item Type": "User Story",
+    "Title": "Allow partners to optionally register their own leads in Zinfi",
+    "Description": "As a partner, I need to register a lead I generated myself directly in Zinfi, so that leads I find independently are also tracked and visible to Heartstream, in addition to leads assigned to me.",
+    "Acceptance Criteria": "- Partner can create a new lead record in Zinfi without a Heartstream-assigned source\n- Partner-created lead is synchronized to CRM for visibility\n- Adoption/volume of partner-originated leads is uncertain (registered as DQ-001; not a blocking condition)"
+  },
+  {
+    "Work Item Type": "User Story",
+    "Title": "Share opportunity notes and customer communication between partner and Heartstream users",
+    "Description": "As a partner or Heartstream team member collaborating on an opportunity, I need to share notes and customer communications added by either side with both parties, so that we avoid duplicate or conflicting outreach to the same customer.",
+    "Acceptance Criteria": "- Notes added to an opportunity by a partner (in Zinfi) are visible to Heartstream users (in CRM) and vice versa\n- Customer-facing communication logged by either party is visible to the other party on the same opportunity record"
+  },
+  {
+    "Work Item Type": "User Story",
+    "Title": "Configure a global opportunity pipeline with standard stages",
+    "Description": "As a sales operations lead, I need to configure a globally standardized set of opportunity stages for the phase 1 implementation, so that opportunity progress is tracked consistently while allowing future configuration changes without development effort.",
+    "Acceptance Criteria": "- Opportunity pipeline stages are configured globally for phase 1 (no per-region stage variation at launch)\n- Stage names and count can be modified via configuration without custom development\n- Each stage can require mandatory information to be captured before the user can progress to the next stage"
+  },
+  {
+    "Work Item Type": "User Story",
+    "Title": "Prevent duplicate deal registration for the same customer opportunity",
+    "Description": "As a partner or Heartstream channel manager, I need to prevent a second partner from registering a deal against a customer that already has a registered deal (professional business line), so that channel conflicts over the same deal are avoided.",
+    "Acceptance Criteria": "- Attempting to register a deal against a customer that already has an active registered deal returns a blocking notification\n- The blocking check applies at deal registration (and, for large/professional deals, at opportunity creation) rather than only at deal conversion\n- Existing registered deal remains assigned to the original registering partner"
+  },
+  {
+    "Work Item Type": "User Story",
+    "Title": "Flag an opportunity as a registered deal by product/solution category",
+    "Description": "As a sales operations lead, I need to flag an opportunity as a deal registration (versus a standard opportunity) based on the selected product or solution category, so that professional-line deals are automatically subject to single-partner registration rules while AED-line opportunities can have multiple partners.",
+    "Acceptance Criteria": "- Opportunity records a product/solution category selection\n- Selecting a category configured as a registered-deal category applies the single-partner deal-registration restriction\n- Selecting a category not configured for deal registration allows multiple partners on the same opportunity"
+  },
+  {
+    "Work Item Type": "User Story",
+    "Title": "Capture reseller sales-partner contract terms",
+    "Description": "As a contracts team member, I need to record a sales-partner contract capturing the product categories the partner is authorized to sell along with applicable discounts and rebates, so that quotations and orders for that partner can be priced correctly.",
+    "Acceptance Criteria": "- Contract record stores the product categories/items the partner is authorized to distribute\n- Contract record stores discount and rebate terms, which may vary by product group or specific material\n- Contract record stores the resulting list-price-derived pricing used for quotations"
+  },
+  {
+    "Work Item Type": "User Story",
+    "Title": "Capture service-partner contract terms including spare-part discounts and SLA",
+    "Description": "As a contracts team member, I need to record a service-partner contract capturing spare-part discount terms and applicable SLA timelines, so that service partners are correctly priced and held to agreed service levels.",
+    "Acceptance Criteria": "- Service contract record stores discount terms for spare/consumable parts\n- Service contract record stores SLA timelines/agreements applicable to the partner\n- Service contract record supports multi-year post-warranty service contracts linked to specific device serial numbers"
+  },
+  {
+    "Work Item Type": "User Story",
+    "Title": "Enforce minimum and maximum contract duration by partner type",
+    "Description": "As a contracts team member, I need to enforce contract durations within the agreed minimum and maximum (reseller: 1 to 3 years; direct customer: up to 5 years), so that contracts are created within approved business limits.",
+    "Acceptance Criteria": "- Reseller contract duration can be set between 1 and 3 years\n- Direct customer contract duration can be set up to 5 years\n- Contract record stores the agreed start and end dates reflecting the selected duration"
+  },
+  {
+    "Work Item Type": "User Story",
+    "Title": "Support mid-contract list price updates with notice period",
+    "Description": "As a contracts team member, I need to support indexing (increasing) list prices during an active contract term with a defined notice period communicated to the partner, so that pricing updates are applied correctly and partners are informed ahead of time.",
+    "Acceptance Criteria": "- List price on an active contract can be updated during the contract term\n- Updated pricing is not effective until the configured notice period (e.g., 60 days) has elapsed from notification\n- Partner receives notification of the updated price file at the start of the notice period"
+  },
+  {
+    "Work Item Type": "User Story",
+    "Title": "Share finalized contract and approvals with the partner in Zinfi",
+    "Description": "As a partner, I need to view my finalized contract terms and approval status in Zinfi, so that I can reference agreed pricing and terms when working opportunities and quotations.",
+    "Acceptance Criteria": "- Finalized contract is made visible to the partner in Zinfi after internal approval\n- Partner can view the contract's discount, rebate, and product-category terms through Zinfi"
+  },
+  {
+    "Work Item Type": "User Story",
+    "Title": "Derive quote pricing from the partner's active contract",
+    "Description": "As a partner or sales user creating a quote, I need to derive the quote's pricing automatically from the associated partner's active contract terms, so that quotations are consistent with agreed contractual pricing without manual lookup.",
+    "Acceptance Criteria": "- Quote line pricing defaults to the price derived from the partner's active contract\n- Quote is linked to the opportunity and, through it, to the contracted partner"
+  },
+  {
+    "Work Item Type": "User Story",
+    "Title": "Route additional discount beyond contract through tiered approval",
+    "Description": "As a sales or partner user requesting a discount beyond the contracted price, I need to route the request through a tiered approval chain (account manager, then regional sales director, then head of finance, depending on discount size), so that discounts beyond contract are properly authorized before the quote proceeds.",
+    "Acceptance Criteria": "- Discount within the contracted terms requires no additional approval\n- Discount above contract up to a configured threshold requires account manager approval\n- Discount above the next threshold requires regional sales director approval\n- Discount above the highest threshold requires head of finance approval\n- Approver receives a timely notification of a pending discount approval"
+  },
+  {
+    "Work Item Type": "User Story",
+    "Title": "Allow quote creation without a full opportunity for low-value items",
+    "Description": "As a sales or partner user quoting a single low-value item (e.g., one battery or case of paper), I need to create a quote against a shell/placeholder opportunity instead of a full new opportunity, so that small transactions are not burdened by unnecessary opportunity creation overhead.",
+    "Acceptance Criteria": "- A quote can be created and associated with a shell/placeholder opportunity rather than requiring a new full opportunity each time\n- Exact workflow mechanics for shell-opportunity quoting are to be solutioned in a follow-up session (registered as DQ-007)"
+  },
+  {
+    "Work Item Type": "User Story",
+    "Title": "Convert approved quote into a confirmed sales order",
+    "Description": "As a partner or sales user, I need to convert an approved quote into a confirmed sales order in Dynamics 365 CRM, so that the order can flow downstream to the F&O system for fulfillment.",
+    "Acceptance Criteria": "- Only an approved quote can be converted into a confirmed sales order\n- Confirmed sales order is transmitted from CRM to the F&O system for fulfillment"
+  },
+  {
+    "Work Item Type": "User Story",
+    "Title": "Require Requested Delivery Date before fulfillment starts",
+    "Description": "As a partner converting a quote to an order, I need to provide a Requested Delivery Date (RDD) on the order before fulfillment begins, so that Heartstream schedules delivery according to the customer's actual need date.",
+    "Acceptance Criteria": "- Requested Delivery Date is a mandatory field on the sales order prior to fulfillment start\n- Order supports splitting line items with different requested delivery dates for partial/staggered shipments"
+  },
+  {
+    "Work Item Type": "User Story",
+    "Title": "Re-trigger approval on pricing or configuration revision, not on date-only changes",
+    "Description": "As an approver, I need to re-trigger the discount approval flow when a revision to an unconfirmed quote or order changes pricing or configuration, while a change limited to the requested delivery date does not require re-approval, so that approval effort is focused on changes that affect commercial terms.",
+    "Acceptance Criteria": "- Editing price or product configuration on an unconfirmed quote/order re-triggers the approval workflow\n- Editing only the requested delivery date on an unconfirmed quote/order does not re-trigger approval\n- Revisions are only permitted prior to sales order confirmation"
+  },
+  {
+    "Work Item Type": "User Story",
+    "Title": "Lock order from cancellation and edit after a defined fulfillment status",
+    "Description": "As a supply chain or order management stakeholder, I need to block cancellation or edit requests on a sales order once it reaches a defined fulfillment status, so that orders already in production or shipment cannot be disrupted within the application.",
+    "Acceptance Criteria": "- Order status is updated in CRM and Zinfi based on status changes received from the ERP/supply chain system\n- Once the order reaches the configured lock status, cancellation and edit actions are blocked in the application\n- Attempted cancellation/edit requests after the lock status are rejected with a clear message"
+  },
+  {
+    "Work Item Type": "User Story",
+    "Title": "Capture and provide required customs/shipment documents for applicable regions",
+    "Description": "As a partner responsible for customs clearing in a region requiring it, I need to receive the required shipment documents (such as a signed invoice, certificate of origin, packing list, or product sheets) identified by the system for my shipment, so that customs clearing proceeds without delay.",
+    "Acceptance Criteria": "- System identifies the required document set for the shipment's destination region\n- Required documents are made available to the partner alongside the shipment confirmation\n- Document requirements vary by region and can be configured accordingly"
+  },
+  {
+    "Work Item Type": "User Story",
+    "Title": "Create install base record on delivery for serialized hardware",
+    "Description": "As a compliance and service stakeholder, I need to create an install base record for serialized hardware at the agreed trigger milestone (preferably delivery rather than shipment), so that the install base reflects an accurate location the customer actually received the product.",
+    "Acceptance Criteria": "- Install base record is created against the confirmed serial number at the agreed trigger (delivery preferred; exact trigger per product type pending confirmation per DQ-003)\n- Install base record permanently retains the original order and ship-to location, even after later location updates"
+  },
+  {
+    "Work Item Type": "User Story",
+    "Title": "Allow partner-initiated install base location change request via Zinfi",
+    "Description": "As a partner, I need to submit a request via Zinfi to update the current location or end-customer information for a serial number I am aware of, so that Heartstream's install base stays accurate for compliance and service purposes without me having direct edit access.",
+    "Acceptance Criteria": "- Partner can submit a location/customer change request against a serial number from Zinfi\n- Partner does not have direct edit access to the install base record; the request must be reviewed and applied by the owning CRM team\n- Owning CRM team for applying the change is to be confirmed (registered as DQ-004)"
+  },
+  {
+    "Work Item Type": "User Story",
+    "Title": "Synchronize partner-raised case escalation from Zinfi to CRM for triage",
+    "Description": "As a partner who cannot resolve an initial customer case directly, I need to raise an escalation request from Zinfi that synchronizes to Dynamics 365 CRM, so that it is triaged by the appropriate Heartstream team.",
+    "Acceptance Criteria": "- Partner can raise a case escalation request from Zinfi when direct resolution is not possible\n- Escalation request is synchronized to CRM and made available for triage\n- Detailed triage/ownership workflow to be defined in the dedicated case-management session"
+  },
+  {
+    "Work Item Type": "Task",
+    "Title": "Circulate detailed minutes of meeting and record open/parking-lot items in ADO",
+    "Task Type1": "Workshop Action item",
+    "Area Path": "Day 2\\CRM"
+  },
+  {
+    "Work Item Type": "Issue",
+    "Title": "Direct customer contract model undefined",
+    "Description": "Risk: Direct customer (hospital/EMS/GPO) contracts, including multi-year fixed pricing with scheduled price increases, were raised but not detailed in this session (2:06:12-2:08:37).\nImpact: Design and solutioning for direct sales contracts cannot proceed without this definition; North America direct sales volume is significant (half-to-all direct for hospital/EMS).\nMitigation: Dedicated follow-up session on direct sales contracts requested by the customer team; register as DQ-002 pending that session.",
+    "Area Path": "Day 2\\CRM"
+  },
+  {
+    "Work Item Type": "Issue",
+    "Title": "North America contracted direct-sales rep system access undecided",
+    "Description": "Risk: Contracted direct-sales reps in North America were found to not have Dynamics CRM access (named-user licensing); the workflow for how they will place direct orders (via Zinfi vs. another channel) was not finalized (2:22:29-2:23:51).\nImpact: Direct sales order entry process for North America cannot be solutioned until this is resolved.\nMitigation: Facilitator to confirm the workflow in a follow-up and communicate before finalizing; registered as DQ-005.",
+    "Area Path": "Day 2\\CRM"
+  }
+]

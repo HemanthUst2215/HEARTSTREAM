@@ -1,0 +1,13 @@
+---
+description: Intake and planning human gates
+alwaysApply: true
+---
+
+# Intake and Planning Governance
+
+- `/generate-brd` output status is **Draft — Pending Domain Review**. Do not run `/plan-sprint` until Accepted or an explicit waiver is in `docs/harness/decisions.md`.
+- `/plan-sprint` and `/plan-governed-stories` output **Proposed — Pending Approval**. Orchestrator refuses `/deliver-sprint` and implement-* batch until Approved.
+- Cite sources for every FR/BR/story behavior. Inferences get DQ-ids.
+- Never auto-run deliver after generate-brd.
+- `/fix-issue` waits for explicit human **proceed** on the fix plan before implementation. Ad-hoc bugs are not sprint SP items — do not route them through `/deliver-sprint`.
+- `/expand-test-coverage` writes `docs/quality/test-package-review.md` as **Pending Approval**. Orchestrator refuses `/run-tests` (and `/deliver-sprint` resume) until a human sets **Approved** or a dated waiver exists in `docs/harness/decisions.md`. Agents cannot self-approve test packages.

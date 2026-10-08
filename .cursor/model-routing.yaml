@@ -1,0 +1,110 @@
+# Optional model routing matrix for the Cursor factory.
+#
+# Enable:  cp .cursor/model-routing.yaml.example .cursor/model-routing.yaml
+# Disable: rm .cursor/model-routing.yaml   → Task spawns inherit the operator model picker
+#
+# Resolution (most specific wins):
+#   overrides.subagents → overrides.agents → tier_by_command → tier_by_agent → defaults.unmatched
+#
+# Use Cursor Task `model` slugs only. Omit or delete this file to skip matrix routing.
+
+schema_version: "1.0"
+enabled: true
+
+defaults:
+  unmatched: inherit
+
+tiers:
+  reasoning:
+    model: claude-opus-4-7-thinking-xhigh
+  coding:
+    model: composer-2.5-fast
+  mechanical:
+    model: gemini-3-flash
+
+tier_by_agent:
+  orchestrator-agent: reasoning
+  requirements-agent: reasoning
+  reverse-engineering-agent: reasoning
+  planner-agent: reasoning
+  quality-agent: reasoning
+  security-agent: reasoning
+  code-review-agent: reasoning
+  release-agent: reasoning
+  sre-agent: reasoning
+  business-analyst-agent: coding
+  backend-agent: coding
+  frontend-agent: coding
+  api-agent: coding
+  data-agent: coding
+  infra-agent: coding
+  change-agent: coding
+  test-agent: coding
+  documentation-agent: coding
+  handoff-agent: mechanical
+
+tier_by_command:
+  generate-brd: reasoning
+  plan-governed-stories: reasoning
+  plan-sprint: reasoning
+  plan-bounded-context: reasoning
+  deliver-sprint: reasoning
+  fix-issue: reasoning
+  expand-test-coverage: reasoning
+  run-eval: reasoning
+  review-changes: reasoning
+  review-code: reasoning
+  close-eval-gaps: reasoning
+  validate-kpi-metrics: reasoning
+  compliance-check: reasoning
+  threat-profile: reasoning
+  sast-scan: reasoning
+  dast-scan: reasoning
+  prepare-cutover: reasoning
+  generate-user-stories-from-transcript: reasoning
+  ingest-figma-sketch: coding
+  figma-to-nextjs: coding
+  implement-api: coding
+  implement-ui: coding
+  apply-requirements: coding
+  run-tests: coding
+  validate-api-endpoints: coding
+  generate-infra: coding
+  generate-github-workflow: coding
+  generate-python-module: coding
+  generate-docs: coding
+  cleanup-code: coding
+  performance-test: coding
+  application-summary: coding
+  pr-assist: coding
+  daily-handoff: mechanical
+  sprint-handoff: mechanical
+
+overrides:
+  agents:
+    eval-agent: reasoning
+    work-item-mapping-agent: reasoning
+  subagents:
+    audit-trail-writer: mechanical
+    java-static-metrics-collector: mechanical
+    nextjs-static-metrics-collector: mechanical
+    test-results-recorder: mechanical
+    pr-summary-writer: mechanical
+    doc-structure-planner: mechanical
+    db-script-doc-writer: mechanical
+    br-coverage-validator: reasoning
+    eval-agent: reasoning
+    invest-validator: reasoning
+    schema-coverage-validator: reasoning
+    coverage-analyzer: reasoning
+    security-scanner: reasoning
+    security-reviewer: reasoning
+    release-readiness-checker: reasoning
+    kpi-threshold-gate: reasoning
+    pii-control-checker: reasoning
+    dr-readiness-checker: reasoning
+    project-validator: reasoning
+    user-story-csv-compliance-validator: mechanical
+    ado-user-story-csv-writer: coding
+    transcript-story-extractor: reasoning
+    user-story-csv-rulebook-author: reasoning

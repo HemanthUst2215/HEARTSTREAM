@@ -1,0 +1,4390 @@
+{
+  "meta": {
+    "sourceFile": "C:\\Users\\308279\\Documents\\HEARTSTREAM-1\\Workshop items.csv",
+    "generatedAt": "2026-10-08T09:13:50.682464+00:00",
+    "rowCount": 121,
+    "columns": [
+      "State",
+      "ID",
+      "Work Item Type",
+      "Title",
+      "Description",
+      "Parent",
+      "Related Link Count",
+      "Area Path",
+      "Iteration Path"
+    ]
+  },
+  "summary": {
+    "byState": {
+      "In Progress": 1,
+      "In Review": 1,
+      "New": 119
+    },
+    "byWorkItemType": {
+      "Epic": 2,
+      "Workshop": 119
+    },
+    "byIterationPath": {
+      "Day 2 IT Program\\Sprint 0": 121
+    }
+  },
+  "workItems": [
+    {
+      "workItemId": 68411,
+      "workItemCode": "WS-CE-40",
+      "title": "Web store / e-commerce",
+      "displayTitle": "WS-CE-40 — Web store / e-commerce",
+      "workItemType": "Workshop",
+      "state": "New",
+      "parent": {
+        "workItemId": 68372
+      },
+      "relatedLinkCount": 1,
+      "areaPath": {
+        "raw": "Day 2 IT Program\\HeartStream\\Workshop",
+        "segments": [
+          "Day 2 IT Program",
+          "HeartStream",
+          "Workshop"
+        ]
+      },
+      "iterationPath": {
+        "raw": "Day 2 IT Program\\Sprint 0",
+        "segments": [
+          "Day 2 IT Program",
+          "Sprint 0"
+        ]
+      },
+      "description": {
+        "plainText": "Customer Service – Service Resolution: Reseller Portal\n\nProvides a self-service portal for resellers to access support services, submit and track cases, manage service requests, view warranties and entitlements, access knowledge resources, and collaborate with support teams, improving service efficiency, transparency, and partner experience.",
+        "summary": "Customer Service – Service Resolution: Reseller Portal",
+        "htmlDecoded": false
+      },
+      "source": {
+        "rowNumber": 2,
+        "id": "68411"
+      }
+    },
+    {
+      "workItemId": 68410,
+      "workItemCode": "WS-CE-39",
+      "title": "Reseller Portal",
+      "displayTitle": "WS-CE-39 — Reseller Portal",
+      "workItemType": "Workshop",
+      "state": "New",
+      "parent": {
+        "workItemId": 68372
+      },
+      "relatedLinkCount": 1,
+      "areaPath": {
+        "raw": "Day 2 IT Program\\HeartStream\\Workshop",
+        "segments": [
+          "Day 2 IT Program",
+          "HeartStream",
+          "Workshop"
+        ]
+      },
+      "iterationPath": {
+        "raw": "Day 2 IT Program\\Sprint 0",
+        "segments": [
+          "Day 2 IT Program",
+          "Sprint 0"
+        ]
+      },
+      "description": {
+        "plainText": "D365 Customer Service enables support agents to efficiently resolve customer issues by managing cases, knowledge articles, service-level agreements (SLAs), and customer interactions in a single platform.",
+        "summary": "D365 Customer Service enables support agents to efficiently resolve customer issues by managing cases, knowledge articles, service-level agreements (SLAs), and customer interactions in a single platform.",
+        "htmlDecoded": false
+      },
+      "source": {
+        "rowNumber": 3,
+        "id": "68410"
+      }
+    },
+    {
+      "workItemId": 68406,
+      "workItemCode": "WS-CE-38",
+      "title": "Partner Business Planning",
+      "displayTitle": "WS-CE-38 — Partner Business Planning",
+      "workItemType": "Workshop",
+      "state": "New",
+      "parent": {
+        "workItemId": 68372
+      },
+      "relatedLinkCount": 1,
+      "areaPath": {
+        "raw": "Day 2 IT Program\\HeartStream\\Workshop",
+        "segments": [
+          "Day 2 IT Program",
+          "HeartStream",
+          "Workshop"
+        ]
+      },
+      "iterationPath": {
+        "raw": "Day 2 IT Program\\Sprint 0",
+        "segments": [
+          "Day 2 IT Program",
+          "Sprint 0"
+        ]
+      },
+      "description": {
+        "plainText": "The primary goal of R2R is to ensure that all business transactions are accurately recorded\nPartner Business Planning (D365)\n\nSupports collaborative planning and alignment with partners by managing joint business goals, sales targets, forecasts, performance tracking, and strategic initiatives within Dynamics 365. This enables improved partner engagement, accountability, revenue growth, and execution of shared business objectives.",
+        "summary": "The primary goal of R2R is to ensure that all business transactions are accurately recorded Partner Business Planning (D365)",
+        "htmlDecoded": false
+      },
+      "source": {
+        "rowNumber": 4,
+        "id": "68406"
+      }
+    },
+    {
+      "workItemId": 68405,
+      "workItemCode": "WS-CE-37",
+      "title": "Distributor & Reseller Integration",
+      "displayTitle": "WS-CE-37 — Distributor & Reseller Integration",
+      "workItemType": "Workshop",
+      "state": "New",
+      "parent": {
+        "workItemId": 68372
+      },
+      "relatedLinkCount": 1,
+      "areaPath": {
+        "raw": "Day 2 IT Program\\HeartStream\\Workshop",
+        "segments": [
+          "Day 2 IT Program",
+          "HeartStream",
+          "Workshop"
+        ]
+      },
+      "iterationPath": {
+        "raw": "Day 2 IT Program\\Sprint 0",
+        "segments": [
+          "Day 2 IT Program",
+          "Sprint 0"
+        ]
+      },
+      "description": {
+        "plainText": "ZINFI PRM (Partner Relationship Management)\n\nManages the end-to-end partner ecosystem by supporting partner onboarding, recruitment, enablement, business planning, lead distribution, deal registration, incentive management, training, collaboration, and performance tracking. It helps organizations strengthen partner engagement, improve channel sales effectiveness, and drive partner-led revenue growth through a centralized partner management platform.",
+        "summary": "ZINFI PRM (Partner Relationship Management)",
+        "htmlDecoded": false
+      },
+      "source": {
+        "rowNumber": 5,
+        "id": "68405"
+      }
+    },
+    {
+      "workItemId": 68515,
+      "workItemCode": "WS-CE-36",
+      "title": "API & integration governance",
+      "displayTitle": "WS-CE-36 — API & integration governance",
+      "workItemType": "Workshop",
+      "state": "New",
+      "parent": {
+        "workItemId": 68372
+      },
+      "relatedLinkCount": 1,
+      "areaPath": {
+        "raw": "Day 2 IT Program\\HeartStream\\Workshop",
+        "segments": [
+          "Day 2 IT Program",
+          "HeartStream",
+          "Workshop"
+        ]
+      },
+      "iterationPath": {
+        "raw": "Day 2 IT Program\\Sprint 0",
+        "segments": [
+          "Day 2 IT Program",
+          "Sprint 0"
+        ]
+      },
+      "description": {
+        "plainText": "API & Integration Governance\n\nOversees the design, security, monitoring, and management of APIs and system integrations to ensure reliable data exchange, compliance, and enterprise-wide interoperability.",
+        "summary": "API & Integration Governance",
+        "htmlDecoded": true
+      },
+      "source": {
+        "rowNumber": 6,
+        "id": "68515"
+      }
+    },
+    {
+      "workItemId": 68513,
+      "workItemCode": "WS-CE-34",
+      "title": "B2C IFU distribution & support mgmt",
+      "displayTitle": "WS-CE-34 — B2C IFU distribution & support mgmt",
+      "workItemType": "Workshop",
+      "state": "New",
+      "parent": {
+        "workItemId": 68372
+      },
+      "relatedLinkCount": 1,
+      "areaPath": {
+        "raw": "Day 2 IT Program\\HeartStream\\Workshop",
+        "segments": [
+          "Day 2 IT Program",
+          "HeartStream",
+          "Workshop"
+        ]
+      },
+      "iterationPath": {
+        "raw": "Day 2 IT Program\\Sprint 0",
+        "segments": [
+          "Day 2 IT Program",
+          "Sprint 0"
+        ]
+      },
+      "description": {
+        "plainText": "B2C IFU Distribution & Support Management\n\nCoordinates the distribution of Instructions for Use (IFU) materials and related customer support activities to ensure proper product usage, compliance, and customer satisfaction.",
+        "summary": "B2C IFU Distribution & Support Management",
+        "htmlDecoded": true
+      },
+      "source": {
+        "rowNumber": 7,
+        "id": "68513"
+      }
+    },
+    {
+      "workItemId": 68511,
+      "workItemCode": "WS-CE-33",
+      "title": "Knowledge mgmt lifecycle governance",
+      "displayTitle": "WS-CE-33 — Knowledge mgmt lifecycle governance",
+      "workItemType": "Workshop",
+      "state": "New",
+      "parent": {
+        "workItemId": 68372
+      },
+      "relatedLinkCount": 1,
+      "areaPath": {
+        "raw": "Day 2 IT Program\\HeartStream\\Workshop",
+        "segments": [
+          "Day 2 IT Program",
+          "HeartStream",
+          "Workshop"
+        ]
+      },
+      "iterationPath": {
+        "raw": "Day 2 IT Program\\Sprint 0",
+        "segments": [
+          "Day 2 IT Program",
+          "Sprint 0"
+        ]
+      },
+      "description": {
+        "plainText": "Knowledge Management Lifecycle Governance\n\nManages the creation, review, publication, maintenance, and retirement of knowledge assets to ensure accurate and accessible service information.",
+        "summary": "Knowledge Management Lifecycle Governance",
+        "htmlDecoded": false
+      },
+      "source": {
+        "rowNumber": 8,
+        "id": "68511"
+      }
+    },
+    {
+      "workItemId": 68510,
+      "workItemCode": "WS-CE-32",
+      "title": "Service analytics & operational insights",
+      "displayTitle": "WS-CE-32 — Service analytics & operational insights",
+      "workItemType": "Workshop",
+      "state": "New",
+      "parent": {
+        "workItemId": 68372
+      },
+      "relatedLinkCount": 1,
+      "areaPath": {
+        "raw": "Day 2 IT Program\\HeartStream\\Workshop",
+        "segments": [
+          "Day 2 IT Program",
+          "HeartStream",
+          "Workshop"
+        ]
+      },
+      "iterationPath": {
+        "raw": "Day 2 IT Program\\Sprint 0",
+        "segments": [
+          "Day 2 IT Program",
+          "Sprint 0"
+        ]
+      },
+      "description": {
+        "plainText": "Service Analytics & Operational Insights\n\nProvides reporting, performance metrics, and analytical insights into service operations to support decision-making, optimize processes, and improve service outcomes.",
+        "summary": "Service Analytics & Operational Insights",
+        "htmlDecoded": true
+      },
+      "source": {
+        "rowNumber": 9,
+        "id": "68510"
+      }
+    },
+    {
+      "workItemId": 68507,
+      "workItemCode": "WS-CE-31",
+      "title": "Custoemr feedback & requirements capture",
+      "displayTitle": "WS-CE-31 — Custoemr feedback & requirements capture",
+      "workItemType": "Workshop",
+      "state": "New",
+      "parent": {
+        "workItemId": 68372
+      },
+      "relatedLinkCount": 1,
+      "areaPath": {
+        "raw": "Day 2 IT Program\\HeartStream\\Workshop",
+        "segments": [
+          "Day 2 IT Program",
+          "HeartStream",
+          "Workshop"
+        ]
+      },
+      "iterationPath": {
+        "raw": "Day 2 IT Program\\Sprint 0",
+        "segments": [
+          "Day 2 IT Program",
+          "Sprint 0"
+        ]
+      },
+      "description": {
+        "plainText": "Customer Feedback & Requirements Capture\n\nCollects, tracks, and analyzes customer feedback, needs, and requirements to support product improvements, service enhancements, and informed business decisions.",
+        "summary": "Customer Feedback & Requirements Capture",
+        "htmlDecoded": true
+      },
+      "source": {
+        "rowNumber": 10,
+        "id": "68507"
+      }
+    },
+    {
+      "workItemId": 68505,
+      "workItemCode": "WS-CE-30 & WS",
+      "title": "CE 30-A - Fieldd change order (FCO) lifecycle mgmt",
+      "displayTitle": "WS-CE-30 & WS — CE 30-A - Fieldd change order (FCO) lifecycle mgmt",
+      "workItemType": "Workshop",
+      "state": "New",
+      "parent": {
+        "workItemId": 68372
+      },
+      "relatedLinkCount": 1,
+      "areaPath": {
+        "raw": "Day 2 IT Program\\HeartStream\\Workshop",
+        "segments": [
+          "Day 2 IT Program",
+          "HeartStream",
+          "Workshop"
+        ]
+      },
+      "iterationPath": {
+        "raw": "Day 2 IT Program\\Sprint 0",
+        "segments": [
+          "Day 2 IT Program",
+          "Sprint 0"
+        ]
+      },
+      "description": {
+        "plainText": "Field Change Order (FCO) Lifecycle Management\n\nControls the planning, approval, implementation, and tracking of field change orders to ensure product modifications are executed consistently and compliantly.",
+        "summary": "Field Change Order (FCO) Lifecycle Management",
+        "htmlDecoded": false
+      },
+      "source": {
+        "rowNumber": 11,
+        "id": "68505"
+      }
+    },
+    {
+      "workItemId": 68504,
+      "workItemCode": "WS-CE-29",
+      "title": "Preventive maintenance planning & execution",
+      "displayTitle": "WS-CE-29 — Preventive maintenance planning & execution",
+      "workItemType": "Workshop",
+      "state": "New",
+      "parent": {
+        "workItemId": 68372
+      },
+      "relatedLinkCount": 1,
+      "areaPath": {
+        "raw": "Day 2 IT Program\\HeartStream\\Workshop",
+        "segments": [
+          "Day 2 IT Program",
+          "HeartStream",
+          "Workshop"
+        ]
+      },
+      "iterationPath": {
+        "raw": "Day 2 IT Program\\Sprint 0",
+        "segments": [
+          "Day 2 IT Program",
+          "Sprint 0"
+        ]
+      },
+      "description": {
+        "plainText": "Preventive Maintenance Planning & Execution\n\nPlans and executes proactive maintenance activities to reduce equipment downtime, improve asset reliability, and extend product life.e",
+        "summary": "Preventive Maintenance Planning & Execution",
+        "htmlDecoded": true
+      },
+      "source": {
+        "rowNumber": 12,
+        "id": "68504"
+      }
+    },
+    {
+      "workItemId": 68503,
+      "workItemCode": "WS-CE-28",
+      "title": "A - Returns, exchanges & order exception mgmt",
+      "displayTitle": "WS-CE-28 — A - Returns, exchanges & order exception mgmt",
+      "workItemType": "Workshop",
+      "state": "New",
+      "parent": {
+        "workItemId": 68372
+      },
+      "relatedLinkCount": 1,
+      "areaPath": {
+        "raw": "Day 2 IT Program\\HeartStream\\Workshop",
+        "segments": [
+          "Day 2 IT Program",
+          "HeartStream",
+          "Workshop"
+        ]
+      },
+      "iterationPath": {
+        "raw": "Day 2 IT Program\\Sprint 0",
+        "segments": [
+          "Day 2 IT Program",
+          "Sprint 0"
+        ]
+      },
+      "description": {
+        "plainText": "Returns, Exchanges & Order Exception Management\n\nManages customer returns, product exchanges, and order exceptions to ensure efficient resolution, accurate processing, and a positive customer experience.",
+        "summary": "Returns, Exchanges & Order Exception Management",
+        "htmlDecoded": true
+      },
+      "source": {
+        "rowNumber": 13,
+        "id": "68503"
+      }
+    },
+    {
+      "workItemId": 68502,
+      "workItemCode": "WS-CE-28",
+      "title": "Service parts request & exception mgmt",
+      "displayTitle": "WS-CE-28 — Service parts request & exception mgmt",
+      "workItemType": "Workshop",
+      "state": "New",
+      "parent": {
+        "workItemId": 68372
+      },
+      "relatedLinkCount": 1,
+      "areaPath": {
+        "raw": "Day 2 IT Program\\HeartStream\\Workshop",
+        "segments": [
+          "Day 2 IT Program",
+          "HeartStream",
+          "Workshop"
+        ]
+      },
+      "iterationPath": {
+        "raw": "Day 2 IT Program\\Sprint 0",
+        "segments": [
+          "Day 2 IT Program",
+          "Sprint 0"
+        ]
+      },
+      "description": {
+        "plainText": "Service Parts Request & Exception Management\n\nCoordinates service parts ordering, allocation, and exception handling to ensure timely availability of components needed for service activities.",
+        "summary": "Service Parts Request & Exception Management",
+        "htmlDecoded": true
+      },
+      "source": {
+        "rowNumber": 14,
+        "id": "68502"
+      }
+    },
+    {
+      "workItemId": 68501,
+      "workItemCode": "WS-CE-27",
+      "title": "Field service schedudling & communications",
+      "displayTitle": "WS-CE-27 — Field service schedudling & communications",
+      "workItemType": "Workshop",
+      "state": "New",
+      "parent": {
+        "workItemId": 68372
+      },
+      "relatedLinkCount": 1,
+      "areaPath": {
+        "raw": "Day 2 IT Program\\HeartStream\\Workshop",
+        "segments": [
+          "Day 2 IT Program",
+          "HeartStream",
+          "Workshop"
+        ]
+      },
+      "iterationPath": {
+        "raw": "Day 2 IT Program\\Sprint 0",
+        "segments": [
+          "Day 2 IT Program",
+          "Sprint 0"
+        ]
+      },
+      "description": {
+        "plainText": "Field Service Scheduling & Communications\n\nOptimizes field technician scheduling, dispatching, and customer communications to improve resource utilization and service delivery effectiveness.",
+        "summary": "Field Service Scheduling & Communications",
+        "htmlDecoded": true
+      },
+      "source": {
+        "rowNumber": 15,
+        "id": "68501"
+      }
+    },
+    {
+      "workItemId": 68496,
+      "workItemCode": "WS-CE-26",
+      "title": "Service contract lifecycle mgmt",
+      "displayTitle": "WS-CE-26 — Service contract lifecycle mgmt",
+      "workItemType": "Workshop",
+      "state": "New",
+      "parent": {
+        "workItemId": 68372
+      },
+      "relatedLinkCount": 1,
+      "areaPath": {
+        "raw": "Day 2 IT Program\\HeartStream\\Workshop",
+        "segments": [
+          "Day 2 IT Program",
+          "HeartStream",
+          "Workshop"
+        ]
+      },
+      "iterationPath": {
+        "raw": "Day 2 IT Program\\Sprint 0",
+        "segments": [
+          "Day 2 IT Program",
+          "Sprint 0"
+        ]
+      },
+      "description": {
+        "plainText": "Service Contract Lifecycle Management\n\nManages service contracts from creation and renewal through modification and termination, ensuring compliance with agreed service obligations.",
+        "summary": "Service Contract Lifecycle Management",
+        "htmlDecoded": false
+      },
+      "source": {
+        "rowNumber": 16,
+        "id": "68496"
+      }
+    },
+    {
+      "workItemId": 68495,
+      "workItemCode": "WS-CE-25",
+      "title": "Warranty claims mgmt",
+      "displayTitle": "WS-CE-25 — Warranty claims mgmt",
+      "workItemType": "Workshop",
+      "state": "New",
+      "parent": {
+        "workItemId": 68372
+      },
+      "relatedLinkCount": 1,
+      "areaPath": {
+        "raw": "Day 2 IT Program\\HeartStream\\Workshop",
+        "segments": [
+          "Day 2 IT Program",
+          "HeartStream",
+          "Workshop"
+        ]
+      },
+      "iterationPath": {
+        "raw": "Day 2 IT Program\\Sprint 0",
+        "segments": [
+          "Day 2 IT Program",
+          "Sprint 0"
+        ]
+      },
+      "description": {
+        "plainText": "Warranty Claims Management\n\nAdministers warranty claim submission, validation, approval, and settlement processes to ensure accurate and efficient claim resolution",
+        "summary": "Warranty Claims Management",
+        "htmlDecoded": false
+      },
+      "source": {
+        "rowNumber": 17,
+        "id": "68495"
+      }
+    },
+    {
+      "workItemId": 68493,
+      "workItemCode": "WS-CE-24",
+      "title": "Product release readiness & launch governance",
+      "displayTitle": "WS-CE-24 — Product release readiness & launch governance",
+      "workItemType": "Workshop",
+      "state": "New",
+      "parent": {
+        "workItemId": 68372
+      },
+      "relatedLinkCount": 1,
+      "areaPath": {
+        "raw": "Day 2 IT Program\\HeartStream\\Workshop",
+        "segments": [
+          "Day 2 IT Program",
+          "HeartStream",
+          "Workshop"
+        ]
+      },
+      "iterationPath": {
+        "raw": "Day 2 IT Program\\Sprint 0",
+        "segments": [
+          "Day 2 IT Program",
+          "Sprint 0"
+        ]
+      },
+      "description": {
+        "plainText": "Product Release Readiness & Launch Governance\n\nEnsures products are validated, approved, and operationally ready for launch by managing release criteria, stakeholder approvals, compliance checks, and launch governance activities.",
+        "summary": "Product Release Readiness & Launch Governance",
+        "htmlDecoded": true
+      },
+      "source": {
+        "rowNumber": 18,
+        "id": "68493"
+      }
+    },
+    {
+      "workItemId": 68491,
+      "workItemCode": "WS-CE-23",
+      "title": "A - Service quality, compliance & performance mgmt",
+      "displayTitle": "WS-CE-23 — A - Service quality, compliance & performance mgmt",
+      "workItemType": "Workshop",
+      "state": "New",
+      "parent": {
+        "workItemId": 68372
+      },
+      "relatedLinkCount": 1,
+      "areaPath": {
+        "raw": "Day 2 IT Program\\HeartStream\\Workshop",
+        "segments": [
+          "Day 2 IT Program",
+          "HeartStream",
+          "Workshop"
+        ]
+      },
+      "iterationPath": {
+        "raw": "Day 2 IT Program\\Sprint 0",
+        "segments": [
+          "Day 2 IT Program",
+          "Sprint 0"
+        ]
+      },
+      "description": {
+        "plainText": "2B Service Delivery Orchestration\n\nCoordinates service delivery activities across teams, partners, and systems to ensure effective execution of contractual and operational service commitments.",
+        "summary": "2B Service Delivery Orchestration",
+        "htmlDecoded": false
+      },
+      "source": {
+        "rowNumber": 19,
+        "id": "68491"
+      }
+    },
+    {
+      "workItemId": 68490,
+      "workItemCode": "WS-CE-23",
+      "title": "Service quality, compliance & performance mgmt",
+      "displayTitle": "WS-CE-23 — Service quality, compliance & performance mgmt",
+      "workItemType": "Workshop",
+      "state": "New",
+      "parent": {
+        "workItemId": 68372
+      },
+      "relatedLinkCount": 1,
+      "areaPath": {
+        "raw": "Day 2 IT Program\\HeartStream\\Workshop",
+        "segments": [
+          "Day 2 IT Program",
+          "HeartStream",
+          "Workshop"
+        ]
+      },
+      "iterationPath": {
+        "raw": "Day 2 IT Program\\Sprint 0",
+        "segments": [
+          "Day 2 IT Program",
+          "Sprint 0"
+        ]
+      },
+      "description": {
+        "plainText": "2B Service Delivery Orchestration\n\nCoordinates service delivery activities across teams, partners, and systems to ensure effective execution of contractual and operational service commitments.",
+        "summary": "2B Service Delivery Orchestration",
+        "htmlDecoded": false
+      },
+      "source": {
+        "rowNumber": 20,
+        "id": "68490"
+      }
+    },
+    {
+      "workItemId": 68489,
+      "workItemCode": "WS-CE-22",
+      "title": "B2B service delivery orchestration",
+      "displayTitle": "WS-CE-22 — B2B service delivery orchestration",
+      "workItemType": "Workshop",
+      "state": "New",
+      "parent": {
+        "workItemId": 68372
+      },
+      "relatedLinkCount": 1,
+      "areaPath": {
+        "raw": "Day 2 IT Program\\HeartStream\\Workshop",
+        "segments": [
+          "Day 2 IT Program",
+          "HeartStream",
+          "Workshop"
+        ]
+      },
+      "iterationPath": {
+        "raw": "Day 2 IT Program\\Sprint 0",
+        "segments": [
+          "Day 2 IT Program",
+          "Sprint 0"
+        ]
+      },
+      "description": {
+        "plainText": "2B Service Delivery Orchestration\n\nCoordinates service delivery activities across teams, partners, and systems to ensure effective execution of contractual and operational service commitments.",
+        "summary": "2B Service Delivery Orchestration",
+        "htmlDecoded": false
+      },
+      "source": {
+        "rowNumber": 21,
+        "id": "68489"
+      }
+    },
+    {
+      "workItemId": 68488,
+      "workItemCode": "WS-CE-21",
+      "title": "B2B service request-to-resolution orchestration",
+      "displayTitle": "WS-CE-21 — B2B service request-to-resolution orchestration",
+      "workItemType": "Workshop",
+      "state": "New",
+      "parent": {
+        "workItemId": 68372
+      },
+      "relatedLinkCount": 1,
+      "areaPath": {
+        "raw": "Day 2 IT Program\\HeartStream\\Workshop",
+        "segments": [
+          "Day 2 IT Program",
+          "HeartStream",
+          "Workshop"
+        ]
+      },
+      "iterationPath": {
+        "raw": "Day 2 IT Program\\Sprint 0",
+        "segments": [
+          "Day 2 IT Program",
+          "Sprint 0"
+        ]
+      },
+      "description": {
+        "plainText": "B2B Service Request-to-Resolution Orchestration\n\nManages the complete lifecycle of business customer support requests, enabling structured workflows, stakeholder collaboration, and timely issue resolution.",
+        "summary": "B2B Service Request-to-Resolution Orchestration",
+        "htmlDecoded": false
+      },
+      "source": {
+        "rowNumber": 22,
+        "id": "68488"
+      }
+    },
+    {
+      "workItemId": 68486,
+      "workItemCode": "WS-CE-20",
+      "title": "A - B2C service request-to-resolution orchestration",
+      "displayTitle": "WS-CE-20 — A - B2C service request-to-resolution orchestration",
+      "workItemType": "Workshop",
+      "state": "New",
+      "parent": {
+        "workItemId": 68372
+      },
+      "relatedLinkCount": 1,
+      "areaPath": {
+        "raw": "Day 2 IT Program\\HeartStream\\Workshop",
+        "segments": [
+          "Day 2 IT Program",
+          "HeartStream",
+          "Workshop"
+        ]
+      },
+      "iterationPath": {
+        "raw": "Day 2 IT Program\\Sprint 0",
+        "segments": [
+          "Day 2 IT Program",
+          "Sprint 0"
+        ]
+      },
+      "description": {
+        "plainText": "B2C Service Request-to-Resolution Orchestration\n\nCoordinates the end-to-end resolution of consumer service requests, ensuring a seamless customer experience from issue reporting through resolution.",
+        "summary": "B2C Service Request-to-Resolution Orchestration",
+        "htmlDecoded": false
+      },
+      "source": {
+        "rowNumber": 23,
+        "id": "68486"
+      }
+    },
+    {
+      "workItemId": 68485,
+      "workItemCode": "WS-CE-20",
+      "title": "B2B/B2C support segmentation & routing",
+      "displayTitle": "WS-CE-20 — B2B/B2C support segmentation & routing",
+      "workItemType": "Workshop",
+      "state": "New",
+      "parent": {
+        "workItemId": 68372
+      },
+      "relatedLinkCount": 1,
+      "areaPath": {
+        "raw": "Day 2 IT Program\\HeartStream\\Workshop",
+        "segments": [
+          "Day 2 IT Program",
+          "HeartStream",
+          "Workshop"
+        ]
+      },
+      "iterationPath": {
+        "raw": "Day 2 IT Program\\Sprint 0",
+        "segments": [
+          "Day 2 IT Program",
+          "Sprint 0"
+        ]
+      },
+      "description": {
+        "plainText": "B2B/B2C Support Segmentation & Routing\n\nIntelligently segments and routes support requests based on customer type, issue complexity, and service requirements to ensure efficient and appropriate handling.",
+        "summary": "B2B/B2C Support Segmentation & Routing",
+        "htmlDecoded": true
+      },
+      "source": {
+        "rowNumber": 24,
+        "id": "68485"
+      }
+    },
+    {
+      "workItemId": 68482,
+      "workItemCode": "WS-CE-19",
+      "title": "Customer 360 & interaction timeline mgmt",
+      "displayTitle": "WS-CE-19 — Customer 360 & interaction timeline mgmt",
+      "workItemType": "Workshop",
+      "state": "New",
+      "parent": {
+        "workItemId": 68372
+      },
+      "relatedLinkCount": 1,
+      "areaPath": {
+        "raw": "Day 2 IT Program\\HeartStream\\Workshop",
+        "segments": [
+          "Day 2 IT Program",
+          "HeartStream",
+          "Workshop"
+        ]
+      },
+      "iterationPath": {
+        "raw": "Day 2 IT Program\\Sprint 0",
+        "segments": [
+          "Day 2 IT Program",
+          "Sprint 0"
+        ]
+      },
+      "description": {
+        "plainText": "Customer 360 & Interaction Timeline Management\n\nProvides a unified view of customer information and historical interactions, enabling service teams to deliver personalized, context-driven support experiences.",
+        "summary": "Customer 360 & Interaction Timeline Management",
+        "htmlDecoded": true
+      },
+      "source": {
+        "rowNumber": 25,
+        "id": "68482"
+      }
+    },
+    {
+      "workItemId": 68478,
+      "workItemCode": "WS-CE-18",
+      "title": "A - AI-enabled self-service & agent assistance",
+      "displayTitle": "WS-CE-18 — A - AI-enabled self-service & agent assistance",
+      "workItemType": "Workshop",
+      "state": "New",
+      "parent": {
+        "workItemId": 68372
+      },
+      "relatedLinkCount": 1,
+      "areaPath": {
+        "raw": "Day 2 IT Program\\HeartStream\\Workshop",
+        "segments": [
+          "Day 2 IT Program",
+          "HeartStream",
+          "Workshop"
+        ]
+      },
+      "iterationPath": {
+        "raw": "Day 2 IT Program\\Sprint 0",
+        "segments": [
+          "Day 2 IT Program",
+          "Sprint 0"
+        ]
+      },
+      "description": {
+        "plainText": "AI-Enabled Self-Service & Agent Assistance\n\nLeverages AI-powered tools to provide customer self-service capabilities and real-time agent assistance, improving issue resolution speed, service quality, and support efficiency.",
+        "summary": "AI-Enabled Self-Service & Agent Assistance",
+        "htmlDecoded": true
+      },
+      "source": {
+        "rowNumber": 26,
+        "id": "68478"
+      }
+    },
+    {
+      "workItemId": 68477,
+      "workItemCode": "WS-CE-18",
+      "title": "Warranty registration & entitlement activation",
+      "displayTitle": "WS-CE-18 — Warranty registration & entitlement activation",
+      "workItemType": "Workshop",
+      "state": "New",
+      "parent": {
+        "workItemId": 68372
+      },
+      "relatedLinkCount": 1,
+      "areaPath": {
+        "raw": "Day 2 IT Program\\HeartStream\\Workshop",
+        "segments": [
+          "Day 2 IT Program",
+          "HeartStream",
+          "Workshop"
+        ]
+      },
+      "iterationPath": {
+        "raw": "Day 2 IT Program\\Sprint 0",
+        "segments": [
+          "Day 2 IT Program",
+          "Sprint 0"
+        ]
+      },
+      "description": {
+        "plainText": "Warranty Registration & Entitlement Activation\n\nManages product warranty registration and entitlement activation processes, ensuring customers receive the appropriate coverage, support rights, and service benefits throughout the product lifecycle.",
+        "summary": "Warranty Registration & Entitlement Activation",
+        "htmlDecoded": true
+      },
+      "source": {
+        "rowNumber": 27,
+        "id": "68477"
+      }
+    },
+    {
+      "workItemId": 68471,
+      "workItemCode": "WS-CE-17",
+      "title": "A - Omnichannel routing & bot-to-agent handoff",
+      "displayTitle": "WS-CE-17 — A - Omnichannel routing & bot-to-agent handoff",
+      "workItemType": "Workshop",
+      "state": "New",
+      "parent": {
+        "workItemId": 68372
+      },
+      "relatedLinkCount": 1,
+      "areaPath": {
+        "raw": "Day 2 IT Program\\HeartStream\\Workshop",
+        "segments": [
+          "Day 2 IT Program",
+          "HeartStream",
+          "Workshop"
+        ]
+      },
+      "iterationPath": {
+        "raw": "Day 2 IT Program\\Sprint 0",
+        "segments": [
+          "Day 2 IT Program",
+          "Sprint 0"
+        ]
+      },
+      "description": {
+        "plainText": "Customer Service – Service to Resolution:\n Provides intelligent omnichannel case routing and seamless bot-to-agent handoff to ensure customers are connected to the right support resource quickly, improving resolution efficiency and customer experience.\nOmnichannel Routing & Bot-to-Agent Handoff\n\nIntelligently routes customer interactions across channels such as phone, email, chat, social media, and self-service portals while using skills, availability, and business rules to connect customers with the most appropriate support resource. It also enables seamless escalation from virtual agents or chatbots to live agents with full conversation context, improving resolution speed, service efficiency, and customer experience.",
+        "summary": "Customer Service – Service to Resolution: Provides intelligent omnichannel case routing and seamless bot-to-agent handoff to ensure customers are connected to the right support resource quickly, improving resolution efficiency and customer experience. Omnichannel Routing & Bot-to-Agent Handoff",
+        "htmlDecoded": true
+      },
+      "source": {
+        "rowNumber": 28,
+        "id": "68471"
+      }
+    },
+    {
+      "workItemId": 68470,
+      "workItemCode": "WS-CE-17",
+      "title": "Case automation, SLAs, & complaint handling integration",
+      "displayTitle": "WS-CE-17 — Case automation, SLAs, & complaint handling integration",
+      "workItemType": "Workshop",
+      "state": "New",
+      "parent": {
+        "workItemId": 68372
+      },
+      "relatedLinkCount": 1,
+      "areaPath": {
+        "raw": "Day 2 IT Program\\HeartStream\\Workshop",
+        "segments": [
+          "Day 2 IT Program",
+          "HeartStream",
+          "Workshop"
+        ]
+      },
+      "iterationPath": {
+        "raw": "Day 2 IT Program\\Sprint 0",
+        "segments": [
+          "Day 2 IT Program",
+          "Sprint 0"
+        ]
+      },
+      "description": {
+        "plainText": "Customer Service – Service to Resolution:\n Automates case management, tracks SLA compliance, and integrates complaint handling to enable efficient, timely, and consistent customer issue resolution.",
+        "summary": "Customer Service – Service to Resolution: Automates case management, tracks SLA compliance, and integrates complaint handling to enable efficient, timely, and consistent customer issue resolution.",
+        "htmlDecoded": false
+      },
+      "source": {
+        "rowNumber": 29,
+        "id": "68470"
+      }
+    },
+    {
+      "workItemId": 68466,
+      "workItemCode": "WS-CE-16",
+      "title": "Entitlements & service provisioning orchestration",
+      "displayTitle": "WS-CE-16 — Entitlements & service provisioning orchestration",
+      "workItemType": "Workshop",
+      "state": "New",
+      "parent": {
+        "workItemId": 68372
+      },
+      "relatedLinkCount": 1,
+      "areaPath": {
+        "raw": "Day 2 IT Program\\HeartStream\\Workshop",
+        "segments": [
+          "Day 2 IT Program",
+          "HeartStream",
+          "Workshop"
+        ]
+      },
+      "iterationPath": {
+        "raw": "Day 2 IT Program\\Sprint 0",
+        "segments": [
+          "Day 2 IT Program",
+          "Sprint 0"
+        ]
+      },
+      "description": {
+        "plainText": "Service-to-Resolution is the end-to-end process in Dynamics 365 Customer Service that manages customer issues, inquiries, complaints, and support requests from initial contact through successful resolution and case closure.\n\nEntitlements & Service Provisioning Orchestration: Manages customer entitlements, service rights, and access provisioning by ensuring customers receive the appropriate products, services, support levels, and benefits based on their agreements. It automates the coordination of service activation, access management, and fulfillment processes, improving service delivery efficiency, compliance, and the overall customer experience.",
+        "summary": "Service-to-Resolution is the end-to-end process in Dynamics 365 Customer Service that manages customer issues, inquiries, complaints, and support requests from initial contact through successful resolution and case closure.",
+        "htmlDecoded": true
+      },
+      "source": {
+        "rowNumber": 30,
+        "id": "68466"
+      }
+    },
+    {
+      "workItemId": 68465,
+      "workItemCode": "WS-CE-15",
+      "title": "A - Case handling operating model (queues, skills, routing, hours, policies)",
+      "displayTitle": "WS-CE-15 — A - Case handling operating model (queues, skills, routing, hours, policies)",
+      "workItemType": "Workshop",
+      "state": "New",
+      "parent": {
+        "workItemId": 68372
+      },
+      "relatedLinkCount": 1,
+      "areaPath": {
+        "raw": "Day 2 IT Program\\HeartStream\\Workshop",
+        "segments": [
+          "Day 2 IT Program",
+          "HeartStream",
+          "Workshop"
+        ]
+      },
+      "iterationPath": {
+        "raw": "Day 2 IT Program\\Sprint 0",
+        "segments": [
+          "Day 2 IT Program",
+          "Sprint 0"
+        ]
+      },
+      "description": {
+        "plainText": "Customer Service, Service to Resolution & Case Handling Operating Model: Defines the processes, rules, and governance for managing customer service cases from intake through resolution. It includes queue management, skill-based assignment, intelligent routing, service hours, escalation paths, and service policies to ensure cases are handled efficiently by the right resources, improving resolution times, service quality, and customer satisfaction.",
+        "summary": "Customer Service, Service to Resolution & Case Handling Operating Model: Defines the processes, rules, and governance for managing customer service cases from intake through resolution. It includes queue management, skill-based assignment, intelligent routing, service hours, escalation paths, and service policies to e…",
+        "htmlDecoded": true
+      },
+      "source": {
+        "rowNumber": 31,
+        "id": "68465"
+      }
+    },
+    {
+      "workItemId": 68464,
+      "workItemCode": "WS-CE-15",
+      "title": "Omnichannel case mgmt",
+      "displayTitle": "WS-CE-15 — Omnichannel case mgmt",
+      "workItemType": "Workshop",
+      "state": "New",
+      "parent": {
+        "workItemId": 68372
+      },
+      "relatedLinkCount": 1,
+      "areaPath": {
+        "raw": "Day 2 IT Program\\HeartStream\\Workshop",
+        "segments": [
+          "Day 2 IT Program",
+          "HeartStream",
+          "Workshop"
+        ]
+      },
+      "iterationPath": {
+        "raw": "Day 2 IT Program\\Sprint 0",
+        "segments": [
+          "Day 2 IT Program",
+          "Sprint 0"
+        ]
+      },
+      "description": {
+        "plainText": "Service-to-Resolution is the end-to-end customer support process that manages customer issues, inquiries, and service requests from initial contact through final resolution and case closure.\n\nOmnichannel Case Management: Enables organizations to manage and resolve customer inquiries, service requests, and support cases consistently across multiple channels, including phone, email, chat, web, social media, and self-service portals. It provides a unified view of customer interactions, streamlines case routing and resolution, and improves customer satisfaction through seamless, personalized service experiences.",
+        "summary": "Service-to-Resolution is the end-to-end customer support process that manages customer issues, inquiries, and service requests from initial contact through final resolution and case closure.",
+        "htmlDecoded": false
+      },
+      "source": {
+        "rowNumber": 32,
+        "id": "68464"
+      }
+    },
+    {
+      "workItemId": 68459,
+      "workItemCode": "WS-CE-14",
+      "title": "A - Sales performance & pipeline insights",
+      "displayTitle": "WS-CE-14 — A - Sales performance & pipeline insights",
+      "workItemType": "Workshop",
+      "state": "New",
+      "parent": {
+        "workItemId": 68372
+      },
+      "relatedLinkCount": 1,
+      "areaPath": {
+        "raw": "Day 2 IT Program\\HeartStream\\Workshop",
+        "segments": [
+          "Day 2 IT Program",
+          "HeartStream",
+          "Workshop"
+        ]
+      },
+      "iterationPath": {
+        "raw": "Day 2 IT Program\\Sprint 0",
+        "segments": [
+          "Day 2 IT Program",
+          "Sprint 0"
+        ]
+      },
+      "description": {
+        "plainText": "Sales Performance & Pipeline Insights: Provides visibility into sales performance, pipeline health, forecast accuracy, and revenue trends through analytics, dashboards, and reporting. It enables sales leaders and teams to monitor opportunity progression, identify risks and growth opportunities, optimize sales activities, and make data-driven decisions to improve conversion rates and achieve business targets.",
+        "summary": "Sales Performance & Pipeline Insights: Provides visibility into sales performance, pipeline health, forecast accuracy, and revenue trends through analytics, dashboards, and reporting. It enables sales leaders and teams to monitor opportunity progression, identify risks and growth opportunities, optimize sales activiti…",
+        "htmlDecoded": true
+      },
+      "source": {
+        "rowNumber": 33,
+        "id": "68459"
+      }
+    },
+    {
+      "workItemId": 68458,
+      "workItemCode": "WS-CE-14",
+      "title": "Commercial education program mgmt",
+      "displayTitle": "WS-CE-14 — Commercial education program mgmt",
+      "workItemType": "Workshop",
+      "state": "New",
+      "parent": {
+        "workItemId": 68372
+      },
+      "relatedLinkCount": 1,
+      "areaPath": {
+        "raw": "Day 2 IT Program\\HeartStream\\Workshop",
+        "segments": [
+          "Day 2 IT Program",
+          "HeartStream",
+          "Workshop"
+        ]
+      },
+      "iterationPath": {
+        "raw": "Day 2 IT Program\\Sprint 0",
+        "segments": [
+          "Day 2 IT Program",
+          "Sprint 0"
+        ]
+      },
+      "description": {
+        "plainText": "Commercial Education Program Management: Supports the planning, development, delivery, and governance of training programs for commercial teams, partners, and customers. It ensures stakeholders are equipped with the knowledge, skills, tools, and best practices needed to effectively sell, support, and adopt products and services, driving business performance, compliance, and customer success.",
+        "summary": "Commercial Education Program Management: Supports the planning, development, delivery, and governance of training programs for commercial teams, partners, and customers. It ensures stakeholders are equipped with the knowledge, skills, tools, and best practices needed to effectively sell, support, and adopt products an…",
+        "htmlDecoded": false
+      },
+      "source": {
+        "rowNumber": 34,
+        "id": "68458"
+      }
+    },
+    {
+      "workItemId": 68457,
+      "workItemCode": "WS-CE-13",
+      "title": "Service billing & revenue governance",
+      "displayTitle": "WS-CE-13 — Service billing & revenue governance",
+      "workItemType": "Workshop",
+      "state": "New",
+      "parent": {
+        "workItemId": 68372
+      },
+      "relatedLinkCount": 1,
+      "areaPath": {
+        "raw": "Day 2 IT Program\\HeartStream\\Workshop",
+        "segments": [
+          "Day 2 IT Program",
+          "HeartStream",
+          "Workshop"
+        ]
+      },
+      "iterationPath": {
+        "raw": "Day 2 IT Program\\Sprint 0",
+        "segments": [
+          "Day 2 IT Program",
+          "Sprint 0"
+        ]
+      },
+      "description": {
+        "plainText": "Sales, Opportunity to Order & Service Billing and Revenue Governance: Supports the conversion of sales opportunities into customer orders while managing service billing and revenue-related controls. It ensures accurate invoicing, compliance with pricing and contractual agreements, effective revenue tracking, and governance processes that promote financial accuracy, operational consistency, and revenue realization.",
+        "summary": "Sales, Opportunity to Order & Service Billing and Revenue Governance: Supports the conversion of sales opportunities into customer orders while managing service billing and revenue-related controls. It ensures accurate invoicing, compliance with pricing and contractual agreements, effective revenue tracking, and gover…",
+        "htmlDecoded": true
+      },
+      "source": {
+        "rowNumber": 35,
+        "id": "68457"
+      }
+    },
+    {
+      "workItemId": 68452,
+      "workItemCode": "WS-CE-12",
+      "title": "A - Professional services delivery & commercial mgmt",
+      "displayTitle": "WS-CE-12 — A - Professional services delivery & commercial mgmt",
+      "workItemType": "Workshop",
+      "state": "New",
+      "parent": {
+        "workItemId": 68372
+      },
+      "relatedLinkCount": 1,
+      "areaPath": {
+        "raw": "Day 2 IT Program\\HeartStream\\Workshop",
+        "segments": [
+          "Day 2 IT Program",
+          "HeartStream",
+          "Workshop"
+        ]
+      },
+      "iterationPath": {
+        "raw": "Day 2 IT Program\\Sprint 0",
+        "segments": [
+          "Day 2 IT Program",
+          "Sprint 0"
+        ]
+      },
+      "description": {
+        "plainText": "Sales, Order to Cash & Professional Services Delivery and Commercial Management: Supports the planning, execution, and management of professional services engagements, including resource utilization, project delivery, contract compliance, billing, and revenue tracking. It ensures services are delivered efficiently, commercial commitments are met, and financial performance is optimized throughout the order-to-cash lifecycle.",
+        "summary": "Sales, Order to Cash & Professional Services Delivery and Commercial Management: Supports the planning, execution, and management of professional services engagements, including resource utilization, project delivery, contract compliance, billing, and revenue tracking. It ensures services are delivered efficiently, co…",
+        "htmlDecoded": true
+      },
+      "source": {
+        "rowNumber": 36,
+        "id": "68452"
+      }
+    },
+    {
+      "workItemId": 68451,
+      "workItemCode": "WS-CE-12",
+      "title": "Professional services quoting & approvals mgmt",
+      "displayTitle": "WS-CE-12 — Professional services quoting & approvals mgmt",
+      "workItemType": "Workshop",
+      "state": "New",
+      "parent": {
+        "workItemId": 68372
+      },
+      "relatedLinkCount": 1,
+      "areaPath": {
+        "raw": "Day 2 IT Program\\HeartStream\\Workshop",
+        "segments": [
+          "Day 2 IT Program",
+          "HeartStream",
+          "Workshop"
+        ]
+      },
+      "iterationPath": {
+        "raw": "Day 2 IT Program\\Sprint 0",
+        "segments": [
+          "Day 2 IT Program",
+          "Sprint 0"
+        ]
+      },
+      "description": {
+        "plainText": "Sales, Quote to Cash & Professional Services Quoting and Approvals Management: Supports the creation, review, approval, and management of professional services quotations, including pricing, resource estimates, project scope, and contractual terms. It streamlines approval workflows and ensures accurate quote-to-cash execution, helping organizations improve revenue realization, governance, and customer satisfaction.",
+        "summary": "Sales, Quote to Cash & Professional Services Quoting and Approvals Management: Supports the creation, review, approval, and management of professional services quotations, including pricing, resource estimates, project scope, and contractual terms. It streamlines approval workflows and ensures accurate quote-to-cash e…",
+        "htmlDecoded": true
+      },
+      "source": {
+        "rowNumber": 37,
+        "id": "68451"
+      }
+    },
+    {
+      "workItemId": 68450,
+      "workItemCode": "WS-CE-11",
+      "title": "A - Software entitlements * license lifecycle mgmt",
+      "displayTitle": "WS-CE-11 — A - Software entitlements * license lifecycle mgmt",
+      "workItemType": "Workshop",
+      "state": "New",
+      "parent": {
+        "workItemId": 68372
+      },
+      "relatedLinkCount": 1,
+      "areaPath": {
+        "raw": "Day 2 IT Program\\HeartStream\\Workshop",
+        "segments": [
+          "Day 2 IT Program",
+          "HeartStream",
+          "Workshop"
+        ]
+      },
+      "iterationPath": {
+        "raw": "Day 2 IT Program\\Sprint 0",
+        "segments": [
+          "Day 2 IT Program",
+          "Sprint 0"
+        ]
+      },
+      "description": {
+        "plainText": "Sales, Order to Cash & Software Entitlements/License Lifecycle Management: Manages the complete lifecycle of software licenses and entitlements, from purchase and activation through renewals, upgrades, modifications, and expiration. It ensures customers receive the appropriate product access and usage rights while supporting accurate order processing, billing, compliance, and revenue management throughout the order-to-cash process.",
+        "summary": "Sales, Order to Cash & Software Entitlements/License Lifecycle Management: Manages the complete lifecycle of software licenses and entitlements, from purchase and activation through renewals, upgrades, modifications, and expiration. It ensures customers receive the appropriate product access and usage rights while sup…",
+        "htmlDecoded": true
+      },
+      "source": {
+        "rowNumber": 38,
+        "id": "68450"
+      }
+    },
+    {
+      "workItemId": 68449,
+      "workItemCode": "WS-CE-11",
+      "title": "Installoed base lifecycle & data quality mgmt",
+      "displayTitle": "WS-CE-11 — Installoed base lifecycle & data quality mgmt",
+      "workItemType": "Workshop",
+      "state": "New",
+      "parent": {
+        "workItemId": 68372
+      },
+      "relatedLinkCount": 1,
+      "areaPath": {
+        "raw": "Day 2 IT Program\\HeartStream\\Workshop",
+        "segments": [
+          "Day 2 IT Program",
+          "HeartStream",
+          "Workshop"
+        ]
+      },
+      "iterationPath": {
+        "raw": "Day 2 IT Program\\Sprint 0",
+        "segments": [
+          "Day 2 IT Program",
+          "Sprint 0"
+        ]
+      },
+      "description": {
+        "plainText": "Sales, Service to Resolution & Installed Base Lifecycle/Data Quality Management: Supports the management of customer-owned products and assets throughout their lifecycle, from installation and maintenance to replacement and retirement. It ensures accurate installed base records and high-quality customer and asset data, enabling efficient service delivery, faster issue resolution, improved customer satisfaction, and informed decision-making.\nIn Dynamics 365 Customer Service, this process helps organizations deliver consistent support, meet SLAs, and improve customer satisfaction.",
+        "summary": "Sales, Service to Resolution & Installed Base Lifecycle/Data Quality Management: Supports the management of customer-owned products and assets throughout their lifecycle, from installation and maintenance to replacement and retirement. It ensures accurate installed base records and high-quality customer and asset data…",
+        "htmlDecoded": true
+      },
+      "source": {
+        "rowNumber": 39,
+        "id": "68449"
+      }
+    },
+    {
+      "workItemId": 68447,
+      "workItemCode": "WS-CE-10",
+      "title": "A - Sales order-to-cash governance",
+      "displayTitle": "WS-CE-10 — A - Sales order-to-cash governance",
+      "workItemType": "Workshop",
+      "state": "New",
+      "parent": {
+        "workItemId": 68372
+      },
+      "relatedLinkCount": 1,
+      "areaPath": {
+        "raw": "Day 2 IT Program\\HeartStream\\Workshop",
+        "segments": [
+          "Day 2 IT Program",
+          "HeartStream",
+          "Workshop"
+        ]
+      },
+      "iterationPath": {
+        "raw": "Day 2 IT Program\\Sprint 0",
+        "segments": [
+          "Day 2 IT Program",
+          "Sprint 0"
+        ]
+      },
+      "description": {
+        "plainText": "Sales, Order to Cash & Sales Order-to-Cash Governance: Establishes the policies, controls, workflows, and oversight required to manage the end-to-end sales order-to-cash process. It ensures accurate order processing, compliance with business rules, effective risk management, timely invoicing and payment collection, and consistent execution across sales, finance, and operations functions.",
+        "summary": "Sales, Order to Cash & Sales Order-to-Cash Governance: Establishes the policies, controls, workflows, and oversight required to manage the end-to-end sales order-to-cash process. It ensures accurate order processing, compliance with business rules, effective risk management, timely invoicing and payment collection, an…",
+        "htmlDecoded": true
+      },
+      "source": {
+        "rowNumber": 40,
+        "id": "68447"
+      }
+    },
+    {
+      "workItemId": 68446,
+      "workItemCode": "WS-CE-10",
+      "title": "Sales order & subscriptino lifecycle mgmt",
+      "displayTitle": "WS-CE-10 — Sales order & subscriptino lifecycle mgmt",
+      "workItemType": "Workshop",
+      "state": "New",
+      "parent": {
+        "workItemId": 68372
+      },
+      "relatedLinkCount": 1,
+      "areaPath": {
+        "raw": "Day 2 IT Program\\HeartStream\\Workshop",
+        "segments": [
+          "Day 2 IT Program",
+          "HeartStream",
+          "Workshop"
+        ]
+      },
+      "iterationPath": {
+        "raw": "Day 2 IT Program\\Sprint 0",
+        "segments": [
+          "Day 2 IT Program",
+          "Sprint 0"
+        ]
+      },
+      "description": {
+        "plainText": "Sales, Order to Cash & Sales Order/Subscription Lifecycle Management: Supports the end-to-end process from customer order creation through fulfillment, invoicing, payment collection, and revenue recognition. It also manages the complete subscription lifecycle, including activation, renewals, upgrades, changes, and cancellations, ensuring efficient order processing, recurring revenue management, and a seamless customer experience.",
+        "summary": "Sales, Order to Cash & Sales Order/Subscription Lifecycle Management: Supports the end-to-end process from customer order creation through fulfillment, invoicing, payment collection, and revenue recognition. It also manages the complete subscription lifecycle, including activation, renewals, upgrades, changes, and can…",
+        "htmlDecoded": true
+      },
+      "source": {
+        "rowNumber": 41,
+        "id": "68446"
+      }
+    },
+    {
+      "workItemId": 68441,
+      "workItemCode": "WS-CE-09",
+      "title": "A - Quotation-to-order governance (quote, negotiate, approve, sign-off)",
+      "displayTitle": "WS-CE-09 — A - Quotation-to-order governance (quote, negotiate, approve, sign-off)",
+      "workItemType": "Workshop",
+      "state": "New",
+      "parent": {
+        "workItemId": 68372
+      },
+      "relatedLinkCount": 1,
+      "areaPath": {
+        "raw": "Day 2 IT Program\\HeartStream\\Workshop",
+        "segments": [
+          "Day 2 IT Program",
+          "HeartStream",
+          "Workshop"
+        ]
+      },
+      "iterationPath": {
+        "raw": "Day 2 IT Program\\Sprint 0",
+        "segments": [
+          "Day 2 IT Program",
+          "Sprint 0"
+        ]
+      },
+      "description": {
+        "plainText": "Quote-to-Cash (Q2C) in Dynamics 365 Sales is the end-to-end process of converting a customer opportunity into a quote, securing customer acceptance, creating an order, fulfilling the order, invoicing the customer, and collecting payment.",
+        "summary": "Quote-to-Cash (Q2C) in Dynamics 365 Sales is the end-to-end process of converting a customer opportunity into a quote, securing customer acceptance, creating an order, fulfilling the order, invoicing the customer, and collecting payment.",
+        "htmlDecoded": false
+      },
+      "source": {
+        "rowNumber": 42,
+        "id": "68441"
+      }
+    },
+    {
+      "workItemId": 68440,
+      "workItemCode": "WS-CE-09",
+      "title": "Opportunity-to-close orchestration (upsell/cross-sell/relationship nurture)",
+      "displayTitle": "WS-CE-09 — Opportunity-to-close orchestration (upsell/cross-sell/relationship nurture)",
+      "workItemType": "Workshop",
+      "state": "New",
+      "parent": {
+        "workItemId": 68372
+      },
+      "relatedLinkCount": 1,
+      "areaPath": {
+        "raw": "Day 2 IT Program\\HeartStream\\Workshop",
+        "segments": [
+          "Day 2 IT Program",
+          "HeartStream",
+          "Workshop"
+        ]
+      },
+      "iterationPath": {
+        "raw": "Day 2 IT Program\\Sprint 0",
+        "segments": [
+          "Day 2 IT Program",
+          "Sprint 0"
+        ]
+      },
+      "description": {
+        "plainText": "Sales Opportunity to Order & Opportunity-to-Close Orchestration: Manages the process of converting qualified sales opportunities into customer orders by guiding deals through the sales cycle, including pricing, proposals, approvals, and order creation. Opportunity-to-close orchestration supports upsell and cross-sell activities, relationship nurturing, and targeted customer engagement to maximize revenue, improve customer retention, and increase deal conversion rates.",
+        "summary": "Sales Opportunity to Order & Opportunity-to-Close Orchestration: Manages the process of converting qualified sales opportunities into customer orders by guiding deals through the sales cycle, including pricing, proposals, approvals, and order creation. Opportunity-to-close orchestration supports upsell and cross-sell…",
+        "htmlDecoded": true
+      },
+      "source": {
+        "rowNumber": 43,
+        "id": "68440"
+      }
+    },
+    {
+      "workItemId": 68439,
+      "workItemCode": "WS-CE-08",
+      "title": "Customer success outcomes & adoption mgmt",
+      "displayTitle": "WS-CE-08 — Customer success outcomes & adoption mgmt",
+      "workItemType": "Workshop",
+      "state": "New",
+      "parent": {
+        "workItemId": 68372
+      },
+      "relatedLinkCount": 1,
+      "areaPath": {
+        "raw": "Day 2 IT Program\\HeartStream\\Workshop",
+        "segments": [
+          "Day 2 IT Program",
+          "HeartStream",
+          "Workshop"
+        ]
+      },
+      "iterationPath": {
+        "raw": "Day 2 IT Program\\Sprint 0",
+        "segments": [
+          "Day 2 IT Program",
+          "Sprint 0"
+        ]
+      },
+      "description": {
+        "plainText": "Opportunity-to-Order is the sales process that transforms a qualified sales opportunity into a confirmed customer order. It begins after the sales team has identified a viable deal and ends when the customer accepts the quote and a sales order is created\n\nCustomer Success Outcomes & Adoption Management\n\nMonitors customer adoption, usage, satisfaction, and business outcomes to ensure customers realize the expected value from products and services. It supports onboarding, engagement, health tracking, retention, and success planning activities to drive customer satisfaction, long-term adoption, renewal, and growth.",
+        "summary": "Opportunity-to-Order is the sales process that transforms a qualified sales opportunity into a confirmed customer order. It begins after the sales team has identified a viable deal and ends when the customer accepts the quote and a sales order is created",
+        "htmlDecoded": true
+      },
+      "source": {
+        "rowNumber": 44,
+        "id": "68439"
+      }
+    },
+    {
+      "workItemId": 68438,
+      "workItemCode": "WS-CE-08",
+      "title": "Contact & account mgmt (customer master)",
+      "displayTitle": "WS-CE-08 — Contact & account mgmt (customer master)",
+      "workItemType": "Workshop",
+      "state": "New",
+      "parent": {
+        "workItemId": 68372
+      },
+      "relatedLinkCount": 1,
+      "areaPath": {
+        "raw": "Day 2 IT Program\\HeartStream\\Workshop",
+        "segments": [
+          "Day 2 IT Program",
+          "HeartStream",
+          "Workshop"
+        ]
+      },
+      "iterationPath": {
+        "raw": "Day 2 IT Program\\Sprint 0",
+        "segments": [
+          "Day 2 IT Program",
+          "Sprint 0"
+        ]
+      },
+      "description": {
+        "plainText": "Sales, Lead to Opportunity & Contact/Account Management (Customer Master): Enables sales teams to capture, qualify, and convert leads into opportunities while maintaining a centralized customer master record for accounts and contacts. This provides a single source of truth for customer information, improves relationship management, supports sales activities, and ensures accurate, consistent customer data across the organization.",
+        "summary": "Sales, Lead to Opportunity & Contact/Account Management (Customer Master): Enables sales teams to capture, qualify, and convert leads into opportunities while maintaining a centralized customer master record for accounts and contacts. This provides a single source of truth for customer information, improves relationsh…",
+        "htmlDecoded": true
+      },
+      "source": {
+        "rowNumber": 45,
+        "id": "68438"
+      }
+    },
+    {
+      "workItemId": 68436,
+      "workItemCode": "WS-CE-07",
+      "title": "A - Lead scoring & qualification",
+      "displayTitle": "WS-CE-07 — A - Lead scoring & qualification",
+      "workItemType": "Workshop",
+      "state": "New",
+      "parent": {
+        "workItemId": 68372
+      },
+      "relatedLinkCount": 1,
+      "areaPath": {
+        "raw": "Day 2 IT Program\\HeartStream\\Workshop",
+        "segments": [
+          "Day 2 IT Program",
+          "HeartStream",
+          "Workshop"
+        ]
+      },
+      "iterationPath": {
+        "raw": "Day 2 IT Program\\Sprint 0",
+        "segments": [
+          "Day 2 IT Program",
+          "Sprint 0"
+        ]
+      },
+      "description": {
+        "plainText": "Sales, Lead to Opportunity & Lead Scoring/Qualification: Enables sales teams to capture, track, and nurture prospective customers through the sales pipeline, converting qualified leads into revenue-generating opportunities. Lead scoring and qualification use predefined criteria, customer behaviors, and engagement data to prioritize high-potential prospects, improve sales efficiency, and increase conversion rates",
+        "summary": "Sales, Lead to Opportunity & Lead Scoring/Qualification: Enables sales teams to capture, track, and nurture prospective customers through the sales pipeline, converting qualified leads into revenue-generating opportunities. Lead scoring and qualification use predefined criteria, customer behaviors, and engagement data…",
+        "htmlDecoded": true
+      },
+      "source": {
+        "rowNumber": 46,
+        "id": "68436"
+      }
+    },
+    {
+      "workItemId": 68435,
+      "workItemCode": "WS-CE-07",
+      "title": "Sales enablement content distribution",
+      "displayTitle": "WS-CE-07 — Sales enablement content distribution",
+      "workItemType": "Workshop",
+      "state": "New",
+      "parent": {
+        "workItemId": 68372
+      },
+      "relatedLinkCount": 1,
+      "areaPath": {
+        "raw": "Day 2 IT Program\\HeartStream\\Workshop",
+        "segments": [
+          "Day 2 IT Program",
+          "HeartStream",
+          "Workshop"
+        ]
+      },
+      "iterationPath": {
+        "raw": "Day 2 IT Program\\Sprint 0",
+        "segments": [
+          "Day 2 IT Program",
+          "Sprint 0"
+        ]
+      },
+      "description": {
+        "plainText": "Sales Enablement Content Distribution\n\nManages the creation, organization, distribution, and accessibility of sales content, including product information, presentations, training materials, and marketing assets. This ensures sales teams and partners have timely access to consistent, approved content that improves sales readiness, customer engagement, and revenue generation.",
+        "summary": "Sales Enablement Content Distribution",
+        "htmlDecoded": false
+      },
+      "source": {
+        "rowNumber": 47,
+        "id": "68435"
+      }
+    },
+    {
+      "workItemId": 68429,
+      "workItemCode": "WS-CE-06",
+      "title": "A - Partner/customer training communications & access enablement",
+      "displayTitle": "WS-CE-06 — A - Partner/customer training communications & access enablement",
+      "workItemType": "Workshop",
+      "state": "New",
+      "parent": {
+        "workItemId": 68372
+      },
+      "relatedLinkCount": 1,
+      "areaPath": {
+        "raw": "Day 2 IT Program\\HeartStream\\Workshop",
+        "segments": [
+          "Day 2 IT Program",
+          "HeartStream",
+          "Workshop"
+        ]
+      },
+      "iterationPath": {
+        "raw": "Day 2 IT Program\\Sprint 0",
+        "segments": [
+          "Day 2 IT Program",
+          "Sprint 0"
+        ]
+      },
+      "description": {
+        "plainText": "Lead to Opportunity: Manages the end-to-end process of capturing, qualifying, nurturing, and converting leads into sales opportunities, providing visibility into the sales pipeline and enabling effective engagement with prospective customers.\n\nPartner/Customer Training Communications & Access Enablement: Facilitates the delivery of training, communications, and access provisioning to partners and customers, ensuring they have the knowledge, tools, and appropriate system access needed to effectively adopt, use, and support business processes and solutions.",
+        "summary": "Lead to Opportunity: Manages the end-to-end process of capturing, qualifying, nurturing, and converting leads into sales opportunities, providing visibility into the sales pipeline and enabling effective engagement with prospective customers.",
+        "htmlDecoded": true
+      },
+      "source": {
+        "rowNumber": 48,
+        "id": "68429"
+      }
+    },
+    {
+      "workItemId": 68428,
+      "workItemCode": "WS-CE-06",
+      "title": "Post-activation engagement & reputation monitoring",
+      "displayTitle": "WS-CE-06 — Post-activation engagement & reputation monitoring",
+      "workItemType": "Workshop",
+      "state": "New",
+      "parent": {
+        "workItemId": 68372
+      },
+      "relatedLinkCount": 1,
+      "areaPath": {
+        "raw": "Day 2 IT Program\\HeartStream\\Workshop",
+        "segments": [
+          "Day 2 IT Program",
+          "HeartStream",
+          "Workshop"
+        ]
+      },
+      "iterationPath": {
+        "raw": "Day 2 IT Program\\Sprint 0",
+        "segments": [
+          "Day 2 IT Program",
+          "Sprint 0"
+        ]
+      },
+      "description": {
+        "plainText": "Post-Activation Engagement & Reputation Monitoring\n\nManages ongoing customer engagement after product purchase or service activation while monitoring customer sentiment, feedback, reviews, and brand reputation. This helps improve customer retention, strengthen brand perception, identify service improvement opportunities, and drive long-term customer loyalty.",
+        "summary": "Post-Activation Engagement & Reputation Monitoring",
+        "htmlDecoded": true
+      },
+      "source": {
+        "rowNumber": 49,
+        "id": "68428"
+      }
+    },
+    {
+      "workItemId": 68426,
+      "workItemCode": "WS-CE-05",
+      "title": "A - Strategic plan of record (SPoR) governance",
+      "displayTitle": "WS-CE-05 — A - Strategic plan of record (SPoR) governance",
+      "workItemType": "Workshop",
+      "state": "New",
+      "parent": {
+        "workItemId": 68372
+      },
+      "relatedLinkCount": 1,
+      "areaPath": {
+        "raw": "Day 2 IT Program\\HeartStream\\Workshop",
+        "segments": [
+          "Day 2 IT Program",
+          "HeartStream",
+          "Workshop"
+        ]
+      },
+      "iterationPath": {
+        "raw": "Day 2 IT Program\\Sprint 0",
+        "segments": [
+          "Day 2 IT Program",
+          "Sprint 0"
+        ]
+      },
+      "description": {
+        "plainText": "Customer Insights: Provides a unified 360-degree view of customers by consolidating data from multiple sources, enabling customer segmentation, behavioral insights, personalization, and data-driven engagement to improve customer acquisition, retention, and satisfaction.\n\nRecord to Report (R2R): An end-to-end financial management process that captures, processes, and consolidates financial transactions, supports period-end close activities, and delivers accurate financial reporting, compliance, and actionable business insights.\n\nStrategic Plan of Record (SPoR) Governance: Establishes the processes, controls, and decision-making framework to manage, monitor, and align strategic initiatives, priorities, and investments with organizational objectives, ensuring accountability, transparency, and effective execution of business strategy.",
+        "summary": "Customer Insights: Provides a unified 360-degree view of customers by consolidating data from multiple sources, enabling customer segmentation, behavioral insights, personalization, and data-driven engagement to improve customer acquisition, retention, and satisfaction.",
+        "htmlDecoded": false
+      },
+      "source": {
+        "rowNumber": 50,
+        "id": "68426"
+      }
+    },
+    {
+      "workItemId": 68425,
+      "workItemCode": "WS-CE-05",
+      "title": "Marketing performance analytics & insights",
+      "displayTitle": "WS-CE-05 — Marketing performance analytics & insights",
+      "workItemType": "Workshop",
+      "state": "New",
+      "parent": {
+        "workItemId": 68372
+      },
+      "relatedLinkCount": 1,
+      "areaPath": {
+        "raw": "Day 2 IT Program\\HeartStream\\Workshop",
+        "segments": [
+          "Day 2 IT Program",
+          "HeartStream",
+          "Workshop"
+        ]
+      },
+      "iterationPath": {
+        "raw": "Day 2 IT Program\\Sprint 0",
+        "segments": [
+          "Day 2 IT Program",
+          "Sprint 0"
+        ]
+      },
+      "description": {
+        "plainText": "Dynamics 365 Customer Insights supports the Record-to-Report (R2R) process by transforming customer, marketing, sales, service, and commerce data into business insights, predictive analytics, profitability analysis, and executive reporting. While it is not a financial ledger system, it provides customer intelligence that enriches management and financial reporting",
+        "summary": "Dynamics 365 Customer Insights supports the Record-to-Report (R2R) process by transforming customer, marketing, sales, service, and commerce data into business insights, predictive analytics, profitability analysis, and executive reporting. While it is not a financial ledger system, it provides customer intelligence t…",
+        "htmlDecoded": false
+      },
+      "source": {
+        "rowNumber": 51,
+        "id": "68425"
+      }
+    },
+    {
+      "workItemId": 68424,
+      "workItemCode": "WS-CE-04",
+      "title": "A  - Campaign experimentation & personalization\nConfiguration of agreed customer journey",
+      "displayTitle": "WS-CE-04 — A  - Campaign experimentation & personalization\nConfiguration of agreed customer journey",
+      "workItemType": "Workshop",
+      "state": "New",
+      "parent": {
+        "workItemId": 68372
+      },
+      "relatedLinkCount": 1,
+      "areaPath": {
+        "raw": "Day 2 IT Program\\HeartStream\\Workshop",
+        "segments": [
+          "Day 2 IT Program",
+          "HeartStream",
+          "Workshop"
+        ]
+      },
+      "iterationPath": {
+        "raw": "Day 2 IT Program\\Sprint 0",
+        "segments": [
+          "Day 2 IT Program",
+          "Sprint 0"
+        ]
+      },
+      "description": {
+        "plainText": "Campaign Experimentation & Personalization and Customer Journey Configuration: Dynamics 365 Customer Insights - Journeys enables organizations to design and configure agreed customer journeys across marketing and sales touchpoints. It supports campaign experimentation through A/B testing and personalized communications based on customer profiles, behaviors, and preferences, ensuring targeted engagement, improved conversion rates, and a consistent customer experience from lead generation through customer retention.",
+        "summary": "Campaign Experimentation & Personalization and Customer Journey Configuration: Dynamics 365 Customer Insights - Journeys enables organizations to design and configure agreed customer journeys across marketing and sales touchpoints. It supports campaign experimentation through A/B testing and personalized communication…",
+        "htmlDecoded": true
+      },
+      "source": {
+        "rowNumber": 52,
+        "id": "68424"
+      }
+    },
+    {
+      "workItemId": 68423,
+      "workItemCode": "WS-CE-04",
+      "title": "Digital experience journey orchestration",
+      "displayTitle": "WS-CE-04 — Digital experience journey orchestration",
+      "workItemType": "Workshop",
+      "state": "New",
+      "parent": {
+        "workItemId": 68372
+      },
+      "relatedLinkCount": 1,
+      "areaPath": {
+        "raw": "Day 2 IT Program\\HeartStream\\Workshop",
+        "segments": [
+          "Day 2 IT Program",
+          "HeartStream",
+          "Workshop"
+        ]
+      },
+      "iterationPath": {
+        "raw": "Day 2 IT Program\\Sprint 0",
+        "segments": [
+          "Day 2 IT Program",
+          "Sprint 0"
+        ]
+      },
+      "description": {
+        "plainText": "Dynamics 365 Customer Insights supports the Lead-to-Opportunity process by unifying customer and prospect data, creating intelligent audience segments, scoring and qualifying leads, and passing high-value leads to Dynamics 365 Sales for opportunity management. It helps marketing and sales teams work from a common customer view and improve lead conversion rates.",
+        "summary": "Dynamics 365 Customer Insights supports the Lead-to-Opportunity process by unifying customer and prospect data, creating intelligent audience segments, scoring and qualifying leads, and passing high-value leads to Dynamics 365 Sales for opportunity management. It helps marketing and sales teams work from a common cust…",
+        "htmlDecoded": false
+      },
+      "source": {
+        "rowNumber": 53,
+        "id": "68423"
+      }
+    },
+    {
+      "workItemId": 68418,
+      "workItemCode": "WS-CE-03",
+      "title": "Campaign objective governance",
+      "displayTitle": "WS-CE-03 — Campaign objective governance",
+      "workItemType": "Workshop",
+      "state": "New",
+      "parent": {
+        "workItemId": 68372
+      },
+      "relatedLinkCount": 1,
+      "areaPath": {
+        "raw": "Day 2 IT Program\\HeartStream\\Workshop",
+        "segments": [
+          "Day 2 IT Program",
+          "HeartStream",
+          "Workshop"
+        ]
+      },
+      "iterationPath": {
+        "raw": "Day 2 IT Program\\Sprint 0",
+        "segments": [
+          "Day 2 IT Program",
+          "Sprint 0"
+        ]
+      },
+      "description": {
+        "plainText": "Dynamics 365 Customer Insights supports the Lead-to-Opportunity process by unifying customer and prospect data, creating intelligent audience segments, scoring and qualifying leads, and passing high-value leads to Dynamics 365 Sales for opportunity management. It helps marketing and sales teams work from a common customer view and improve lead conversion rates.",
+        "summary": "Dynamics 365 Customer Insights supports the Lead-to-Opportunity process by unifying customer and prospect data, creating intelligent audience segments, scoring and qualifying leads, and passing high-value leads to Dynamics 365 Sales for opportunity management. It helps marketing and sales teams work from a common cust…",
+        "htmlDecoded": false
+      },
+      "source": {
+        "rowNumber": 54,
+        "id": "68418"
+      }
+    },
+    {
+      "workItemId": 68417,
+      "workItemCode": "WS-CE-02",
+      "title": "Marketing Research Insights Planning \nGlobal Marketing Content Activation\n Brand Reputation Campaign Management \nMarketing Asset Governance & Campaign Readiness \nMarketing Strategy & Activation Planning",
+      "displayTitle": "WS-CE-02 — Marketing Research Insights Planning \nGlobal Marketing Content Activation\n Brand Reputation Campaign Management \nMarketing Asset Governance & Campaign Readiness \nMarketing Strategy & Activation Planning",
+      "workItemType": "Workshop",
+      "state": "New",
+      "parent": {
+        "workItemId": 68372
+      },
+      "relatedLinkCount": 1,
+      "areaPath": {
+        "raw": "Day 2 IT Program\\HeartStream\\Workshop",
+        "segments": [
+          "Day 2 IT Program",
+          "HeartStream",
+          "Workshop"
+        ]
+      },
+      "iterationPath": {
+        "raw": "Day 2 IT Program\\Sprint 0",
+        "segments": [
+          "Day 2 IT Program",
+          "Sprint 0"
+        ]
+      },
+      "description": {
+        "plainText": "Leverage Customer Insights (Data and Journeys) to identify, nurture, score, and qualify leads, then convert high-potential prospects into Sales Opportunities for revenue generation.\n\nMarketing Research Insights Planning\n\nCollects and analyzes market, customer, and competitive insights to support data-driven marketing strategies, audience targeting, and campaign planning.\n\nGlobal Marketing Content Activation\n\nCoordinates the creation, localization, distribution, and execution of marketing content across regions and channels to ensure consistent brand messaging and engagement.\n\nBrand Reputation Campaign Management\n\nMonitors and manages brand perception through targeted campaigns, customer engagement, and reputation tracking to strengthen brand equity and trust.\n\nMarketing Asset Governance & Campaign Readiness\n\nControls marketing assets, approvals, compliance, and campaign preparation activities to ensure content quality, brand consistency, and launch readiness.\n\nMarketing Strategy & Activation Planning\n\nDefines marketing objectives, audience strategies, budgets, and execution plans to drive awareness, demand generation, customer acquisition, and business growth.",
+        "summary": "Leverage Customer Insights (Data and Journeys) to identify, nurture, score, and qualify leads, then convert high-potential prospects into Sales Opportunities for revenue generation.",
+        "htmlDecoded": true
+      },
+      "source": {
+        "rowNumber": 55,
+        "id": "68417"
+      }
+    },
+    {
+      "workItemId": 68416,
+      "workItemCode": "WS-CE-01",
+      "title": "External Analytics Data Ingestion & Unification",
+      "displayTitle": "WS-CE-01 — External Analytics Data Ingestion & Unification",
+      "workItemType": "Workshop",
+      "state": "New",
+      "parent": {
+        "workItemId": 68372
+      },
+      "relatedLinkCount": 1,
+      "areaPath": {
+        "raw": "Day 2 IT Program\\HeartStream\\Workshop",
+        "segments": [
+          "Day 2 IT Program",
+          "HeartStream",
+          "Workshop"
+        ]
+      },
+      "iterationPath": {
+        "raw": "Day 2 IT Program\\Sprint 0",
+        "segments": [
+          "Day 2 IT Program",
+          "Sprint 0"
+        ]
+      },
+      "description": {
+        "plainText": "While Dynamics 365 Customer Insights is primarily a customer data and engagement platform, it contributes to the Record-to-Report (R2R) process by providing customer analytics, revenue insights, segmentation, customer profitability analysis, and forecasting data that support financial reporting and executive decision-making.\nExternal Analytics Data Ingestion & Unification\n\nIntegrates, consolidates, and harmonizes data from multiple external analytics and business sources into a unified data model, providing a single source of truth for reporting, advanced analytics, performance monitoring, and data-driven decision-making across the organization.",
+        "summary": "While Dynamics 365 Customer Insights is primarily a customer data and engagement platform, it contributes to the Record-to-Report (R2R) process by providing customer analytics, revenue insights, segmentation, customer profitability analysis, and forecasting data that support financial reporting and executive decision-…",
+        "htmlDecoded": true
+      },
+      "source": {
+        "rowNumber": 56,
+        "id": "68416"
+      }
+    },
+    {
+      "workItemId": 68475,
+      "workItemCode": null,
+      "title": "WS-40 - Order-integrated service\nRMA & Warranty Management",
+      "displayTitle": "WS-40 - Order-integrated service\nRMA & Warranty Management",
+      "workItemType": "Workshop",
+      "state": "New",
+      "parent": {
+        "workItemId": 68372
+      },
+      "relatedLinkCount": 1,
+      "areaPath": {
+        "raw": "Day 2 IT Program\\HeartStream\\Workshop",
+        "segments": [
+          "Day 2 IT Program",
+          "HeartStream",
+          "Workshop"
+        ]
+      },
+      "iterationPath": {
+        "raw": "Day 2 IT Program\\Sprint 0",
+        "segments": [
+          "Day 2 IT Program",
+          "Sprint 0"
+        ]
+      },
+      "description": {
+        "plainText": "Order-Integrated Service\n\nIntegrates service processes directly with customer orders, enabling seamless coordination of service entitlements, installations, support, maintenance, and fulfillment activities throughout the order lifecycle. This ensures accurate service delivery, improved customer experience, and end-to-end visibility from order placement to service completion.\n\nRMA & Warranty Management\n\nManages Return Material Authorization (RMA) and warranty processes, including return requests, product inspections, replacements, repairs, claims validation, and warranty coverage tracking. This helps streamline returns, ensure compliance with warranty policies, and improve customer satisfaction.",
+        "summary": "Order-Integrated Service",
+        "htmlDecoded": true
+      },
+      "source": {
+        "rowNumber": 57,
+        "id": "68475"
+      }
+    },
+    {
+      "workItemId": 68399,
+      "workItemCode": null,
+      "title": "WS-40 -  Regulated Product Management",
+      "displayTitle": "WS-40 -  Regulated Product Management",
+      "workItemType": "Workshop",
+      "state": "New",
+      "parent": {
+        "workItemId": 68372
+      },
+      "relatedLinkCount": 1,
+      "areaPath": {
+        "raw": "Day 2 IT Program\\HeartStream\\Workshop",
+        "segments": [
+          "Day 2 IT Program",
+          "HeartStream",
+          "Workshop"
+        ]
+      },
+      "iterationPath": {
+        "raw": "Day 2 IT Program\\Sprint 0",
+        "segments": [
+          "Day 2 IT Program",
+          "Sprint 0"
+        ]
+      },
+      "description": {
+        "plainText": "Regulated Product Management\n\nManages products subject to regulatory requirements, ensuring compliance, traceability, documentation control, and adherence to industry standards and quality regulations.",
+        "summary": "Regulated Product Management",
+        "htmlDecoded": false
+      },
+      "source": {
+        "rowNumber": 58,
+        "id": "68399"
+      }
+    },
+    {
+      "workItemId": 68512,
+      "workItemCode": null,
+      "title": "WS-39 - Third party product & license key mgmt\n-Distributor & reseller integration",
+      "displayTitle": "WS-39 - Third party product & license key mgmt\n-Distributor & reseller integration",
+      "workItemType": "Workshop",
+      "state": "New",
+      "parent": {
+        "workItemId": 68372
+      },
+      "relatedLinkCount": 1,
+      "areaPath": {
+        "raw": "Day 2 IT Program\\HeartStream\\Workshop",
+        "segments": [
+          "Day 2 IT Program",
+          "HeartStream",
+          "Workshop"
+        ]
+      },
+      "iterationPath": {
+        "raw": "Day 2 IT Program\\Sprint 0",
+        "segments": [
+          "Day 2 IT Program",
+          "Sprint 0"
+        ]
+      },
+      "description": {
+        "plainText": "Third-Party Product & License Key Management\n\nManages third-party products, software licenses, and license keys throughout their lifecycle, including provisioning, activation, tracking, renewal, compliance, and entitlement management. This ensures accurate license administration, regulatory compliance, and seamless customer access to licensed products and services.\n\nDistributor & Reseller Integration\n\nIntegrates distributors and resellers into the sales, order, service, and support ecosystem by enabling data sharing, order processing, inventory visibility, lead management, and collaboration. This improves channel efficiency, operational transparency, and partner-driven revenue growth.",
+        "summary": "Third-Party Product & License Key Management",
+        "htmlDecoded": true
+      },
+      "source": {
+        "rowNumber": 59,
+        "id": "68512"
+      }
+    },
+    {
+      "workItemId": 68469,
+      "workItemCode": null,
+      "title": "WS-39 - Supply chain API",
+      "displayTitle": "WS-39 - Supply chain API",
+      "workItemType": "Workshop",
+      "state": "New",
+      "parent": {
+        "workItemId": 68372
+      },
+      "relatedLinkCount": 1,
+      "areaPath": {
+        "raw": "Day 2 IT Program\\HeartStream\\Workshop",
+        "segments": [
+          "Day 2 IT Program",
+          "HeartStream",
+          "Workshop"
+        ]
+      },
+      "iterationPath": {
+        "raw": "Day 2 IT Program\\Sprint 0",
+        "segments": [
+          "Day 2 IT Program",
+          "Sprint 0"
+        ]
+      },
+      "description": {
+        "plainText": "D365 + Azure Integration / Dataverse supports the Order-to-Cash (O2C) process by enabling seamless data exchange between Dynamics 365 applications, external systems, partners, eCommerce platforms, warehouses, banks, and analytics solutions. Dataverse serves as the common business data platform, while Azure provides integration, orchestration, messaging, APIs, and automation.\nSupply Chain API\n\nProvides standardized APIs to connect supply chain systems, partners, and external applications for seamless exchange of inventory, order, shipment, procurement, and logistics data. This enables real-time visibility, process automation, system interoperability, and efficient end-to-end supply chain operations.",
+        "summary": "D365 + Azure Integration / Dataverse supports the Order-to-Cash (O2C) process by enabling seamless data exchange between Dynamics 365 applications, external systems, partners, eCommerce platforms, warehouses, banks, and analytics solutions. Dataverse serves as the common business data platform, while Azure provides in…",
+        "htmlDecoded": false
+      },
+      "source": {
+        "rowNumber": 60,
+        "id": "68469"
+      }
+    },
+    {
+      "workItemId": 68509,
+      "workItemCode": null,
+      "title": "WS-38 - Sales analytics\nCustomer lifetime value analytics",
+      "displayTitle": "WS-38 - Sales analytics\nCustomer lifetime value analytics",
+      "workItemType": "Workshop",
+      "state": "New",
+      "parent": {
+        "workItemId": 68372
+      },
+      "relatedLinkCount": 1,
+      "areaPath": {
+        "raw": "Day 2 IT Program\\HeartStream\\Workshop",
+        "segments": [
+          "Day 2 IT Program",
+          "HeartStream",
+          "Workshop"
+        ]
+      },
+      "iterationPath": {
+        "raw": "Day 2 IT Program\\Sprint 0",
+        "segments": [
+          "Day 2 IT Program",
+          "Sprint 0"
+        ]
+      },
+      "description": {
+        "plainText": "D365, Power BI, Microsoft Fabric, and Copilot together provide an Insight-to-Action capability that transforms operational and financial data into analytics, AI-driven insights, forecasting, and business decisions.\nSales Analytics\n\nProvides visibility into sales performance, pipeline health, revenue trends, forecasting, and customer engagement metrics, enabling data-driven decision-making, improved sales effectiveness, and achievement of business growth objectives.\n\nCustomer Lifetime Value Analytics\n\nAnalyzes customer revenue, profitability, engagement, and retention patterns over time to determine customer lifetime value (CLV), helping organizations optimize customer acquisition, retention, and growth strategies.\nThis layer sits across all business processes:\n\nLead-to-Cash\nOrder-to-Cash\nProcure-to-Pay\nRecord-to-Report\nProject-to-Profit\nMaintain-to-Operate",
+        "summary": "D365, Power BI, Microsoft Fabric, and Copilot together provide an Insight-to-Action capability that transforms operational and financial data into analytics, AI-driven insights, forecasting, and business decisions. Sales Analytics",
+        "htmlDecoded": false
+      },
+      "source": {
+        "rowNumber": 61,
+        "id": "68509"
+      }
+    },
+    {
+      "workItemId": 68432,
+      "workItemCode": null,
+      "title": "WS-37 - Subscription Billing & Payments, B2B and B2C Payment caputre and processing",
+      "displayTitle": "WS-37 - Subscription Billing & Payments, B2B and B2C Payment caputre and processing",
+      "workItemType": "Workshop",
+      "state": "New",
+      "parent": {
+        "workItemId": 68372
+      },
+      "relatedLinkCount": 1,
+      "areaPath": {
+        "raw": "Day 2 IT Program\\HeartStream\\Workshop",
+        "segments": [
+          "Day 2 IT Program",
+          "HeartStream",
+          "Workshop"
+        ]
+      },
+      "iterationPath": {
+        "raw": "Day 2 IT Program\\Sprint 0",
+        "segments": [
+          "Day 2 IT Program",
+          "Sprint 0"
+        ]
+      },
+      "description": {
+        "plainText": "Payments & Tax in Dynamics 365 Commerce manages the collection of customer payments and the calculation of applicable taxes across all commerce channels, including eCommerce, retail stores, call centers, and B2B portals.",
+        "summary": "Payments & Tax in Dynamics 365 Commerce manages the collection of customer payments and the calculation of applicable taxes across all commerce channels, including eCommerce, retail stores, call centers, and B2B portals.",
+        "htmlDecoded": true
+      },
+      "source": {
+        "rowNumber": 62,
+        "id": "68432"
+      }
+    },
+    {
+      "workItemId": 68374,
+      "workItemCode": null,
+      "title": "WS-37 - Medical Device & Data Privacy",
+      "displayTitle": "WS-37 - Medical Device & Data Privacy",
+      "workItemType": "Workshop",
+      "state": "New",
+      "parent": {
+        "workItemId": 68372
+      },
+      "relatedLinkCount": 1,
+      "areaPath": {
+        "raw": "Day 2 IT Program\\HeartStream\\Workshop",
+        "segments": [
+          "Day 2 IT Program",
+          "HeartStream",
+          "Workshop"
+        ]
+      },
+      "iterationPath": {
+        "raw": "Day 2 IT Program\\Sprint 0",
+        "segments": [
+          "Day 2 IT Program",
+          "Sprint 0"
+        ]
+      },
+      "description": {
+        "plainText": "Medical Device & Data Privacy\n\nEnsures compliance with medical device regulations and data privacy requirements by governing product information, customer data handling, and regulatory controls throughout the product lifecycle.",
+        "summary": "Medical Device & Data Privacy",
+        "htmlDecoded": true
+      },
+      "source": {
+        "rowNumber": 63,
+        "id": "68374"
+      }
+    },
+    {
+      "workItemId": 68500,
+      "workItemCode": null,
+      "title": "WS-37 - Global Tax Management \nTax Exemption Management",
+      "displayTitle": "WS-37 - Global Tax Management \nTax Exemption Management",
+      "workItemType": "Workshop",
+      "state": "New",
+      "parent": {
+        "workItemId": 68372
+      },
+      "relatedLinkCount": 1,
+      "areaPath": {
+        "raw": "Day 2 IT Program\\HeartStream\\Workshop",
+        "segments": [
+          "Day 2 IT Program",
+          "HeartStream",
+          "Workshop"
+        ]
+      },
+      "iterationPath": {
+        "raw": "Day 2 IT Program\\Sprint 0",
+        "segments": [
+          "Day 2 IT Program",
+          "Sprint 0"
+        ]
+      },
+      "description": {
+        "plainText": "Payments & Tax in Dynamics 365 Commerce manages customer payment processing, tax calculation, payment settlement, refunds, and financial reconciliation across all commerce channels. It is a critical component of the Order-to-Cash (O2C) process because it converts customer orders into collected revenue while ensuring tax compliance.",
+        "summary": "Payments & Tax in Dynamics 365 Commerce manages customer payment processing, tax calculation, payment settlement, refunds, and financial reconciliation across all commerce channels. It is a critical component of the Order-to-Cash (O2C) process because it converts customer orders into collected revenue while ensuring t…",
+        "htmlDecoded": true
+      },
+      "source": {
+        "rowNumber": 64,
+        "id": "68500"
+      }
+    },
+    {
+      "workItemId": 68430,
+      "workItemCode": null,
+      "title": "WS-36 - Subscription billing back-office\nFrontend subscription mgmt\nHealthcare subscription configuration",
+      "displayTitle": "WS-36 - Subscription billing back-office\nFrontend subscription mgmt\nHealthcare subscription configuration",
+      "workItemType": "Workshop",
+      "state": "New",
+      "parent": {
+        "workItemId": 68372
+      },
+      "relatedLinkCount": 1,
+      "areaPath": {
+        "raw": "Day 2 IT Program\\HeartStream\\Workshop",
+        "segments": [
+          "Day 2 IT Program",
+          "HeartStream",
+          "Workshop"
+        ]
+      },
+      "iterationPath": {
+        "raw": "Day 2 IT Program\\Sprint 0",
+        "segments": [
+          "Day 2 IT Program",
+          "Sprint 0"
+        ]
+      },
+      "description": {
+        "plainText": "Subscription Billing Back-Office: Manages the operational and financial aspects of subscription services, including billing, invoicing, payment processing, renewals, revenue recognition, and subscription lifecycle management to ensure accurate and efficient recurring revenue operations.\n\nFrontend Subscription Management: Provides customer-facing capabilities for managing subscriptions, including enrollment, plan selection, upgrades, downgrades, renewals, cancellations, and self-service account management, delivering a seamless user experience.\n\nHealthcare Subscription Configuration: Enables the setup and management of healthcare-specific subscription models, including plans, pricing, eligibility rules, coverage options, benefits, and regulatory requirements, ensuring subscriptions align with healthcare business and compliance needs.",
+        "summary": "Subscription Billing Back-Office: Manages the operational and financial aspects of subscription services, including billing, invoicing, payment processing, renewals, revenue recognition, and subscription lifecycle management to ensure accurate and efficient recurring revenue operations.",
+        "htmlDecoded": false
+      },
+      "source": {
+        "rowNumber": 65,
+        "id": "68430"
+      }
+    },
+    {
+      "workItemId": 68492,
+      "workItemCode": null,
+      "title": "WS-35 - Device-as-a-service",
+      "displayTitle": "WS-35 - Device-as-a-service",
+      "workItemType": "Workshop",
+      "state": "New",
+      "parent": {
+        "workItemId": 68372
+      },
+      "relatedLinkCount": 1,
+      "areaPath": {
+        "raw": "Day 2 IT Program\\HeartStream\\Workshop",
+        "segments": [
+          "Day 2 IT Program",
+          "HeartStream",
+          "Workshop"
+        ]
+      },
+      "iterationPath": {
+        "raw": "Day 2 IT Program\\Sprint 0",
+        "segments": [
+          "Day 2 IT Program",
+          "Sprint 0"
+        ]
+      },
+      "description": {
+        "plainText": "Device-as-a-Service (DaaS)\n\nManages the end-to-end lifecycle of subscription-based device offerings, including device provisioning, financing, deployment, maintenance, support, replacement, upgrades, returns, and asset recovery. It enables organizations to deliver bundled hardware, software, and services through recurring revenue models while ensuring efficient asset management, customer satisfaction, and service continuity.",
+        "summary": "Device-as-a-Service (DaaS)",
+        "htmlDecoded": false
+      },
+      "source": {
+        "rowNumber": 66,
+        "id": "68492"
+      }
+    },
+    {
+      "workItemId": 68481,
+      "workItemCode": null,
+      "title": "WS-35 - Affiliate & influenced sales",
+      "displayTitle": "WS-35 - Affiliate & influenced sales",
+      "workItemType": "Workshop",
+      "state": "New",
+      "parent": {
+        "workItemId": 68372
+      },
+      "relatedLinkCount": 1,
+      "areaPath": {
+        "raw": "Day 2 IT Program\\HeartStream\\Workshop",
+        "segments": [
+          "Day 2 IT Program",
+          "HeartStream",
+          "Workshop"
+        ]
+      },
+      "iterationPath": {
+        "raw": "Day 2 IT Program\\Sprint 0",
+        "segments": [
+          "Day 2 IT Program",
+          "Sprint 0"
+        ]
+      },
+      "description": {
+        "plainText": "D365 Commerce B2B enables organizations to sell products and services to business customers through a self-service digital commerce portal. It supports the complete Order-to-Cash (O2C) process, from product discovery and ordering through fulfillment, invoicing, and payment collection.",
+        "summary": "D365 Commerce B2B enables organizations to sell products and services to business customers through a self-service digital commerce portal. It supports the complete Order-to-Cash (O2C) process, from product discovery and ordering through fulfillment, invoicing, and payment collection.",
+        "htmlDecoded": false
+      },
+      "source": {
+        "rowNumber": 67,
+        "id": "68481"
+      }
+    },
+    {
+      "workItemId": 68463,
+      "workItemCode": null,
+      "title": "WS-34 - Guest checkout",
+      "displayTitle": "WS-34 - Guest checkout",
+      "workItemType": "Workshop",
+      "state": "New",
+      "parent": {
+        "workItemId": 68372
+      },
+      "relatedLinkCount": 1,
+      "areaPath": {
+        "raw": "Day 2 IT Program\\HeartStream\\Workshop",
+        "segments": [
+          "Day 2 IT Program",
+          "HeartStream",
+          "Workshop"
+        ]
+      },
+      "iterationPath": {
+        "raw": "Day 2 IT Program\\Sprint 0",
+        "segments": [
+          "Day 2 IT Program",
+          "Sprint 0"
+        ]
+      },
+      "description": {
+        "plainText": "D365 Commerce / D365 Sales (CE) Order to Cash - Guest Checkout: Enables customers to complete purchases without creating an account, providing a fast and frictionless buying experience. Guest checkout supports order capture, payment processing, inventory validation, fulfillment, and invoicing within the order-to-cash process, helping increase conversion rates while maintaining efficient order management and customer service capabilities.",
+        "summary": "D365 Commerce / D365 Sales (CE) Order to Cash - Guest Checkout: Enables customers to complete purchases without creating an account, providing a fast and frictionless buying experience. Guest checkout supports order capture, payment processing, inventory validation, fulfillment, and invoicing within the order-to-cash…",
+        "htmlDecoded": false
+      },
+      "source": {
+        "rowNumber": 68,
+        "id": "68463"
+      }
+    },
+    {
+      "workItemId": 68434,
+      "workItemCode": null,
+      "title": "WS-34 - Customer onboarding",
+      "displayTitle": "WS-34 - Customer onboarding",
+      "workItemType": "Workshop",
+      "state": "New",
+      "parent": {
+        "workItemId": 68372
+      },
+      "relatedLinkCount": 1,
+      "areaPath": {
+        "raw": "Day 2 IT Program\\HeartStream\\Workshop",
+        "segments": [
+          "Day 2 IT Program",
+          "HeartStream",
+          "Workshop"
+        ]
+      },
+      "iterationPath": {
+        "raw": "Day 2 IT Program\\Sprint 0",
+        "segments": [
+          "Day 2 IT Program",
+          "Sprint 0"
+        ]
+      },
+      "description": {
+        "plainText": "Customer Onboarding: Manages the end-to-end process of welcoming and enabling new customers by guiding account setup, data collection, access provisioning, training, and initial engagement activities, ensuring a smooth transition, faster adoption, and a positive customer experience.",
+        "summary": "Customer Onboarding: Manages the end-to-end process of welcoming and enabling new customers by guiding account setup, data collection, access provisioning, training, and initial engagement activities, ensuring a smooth transition, faster adoption, and a positive customer experience.",
+        "htmlDecoded": false
+      },
+      "source": {
+        "rowNumber": 69,
+        "id": "68434"
+      }
+    },
+    {
+      "workItemId": 68484,
+      "workItemCode": null,
+      "title": "WS-34 - CRM & D365 suite integration\nGuest customer mgmt",
+      "displayTitle": "WS-34 - CRM & D365 suite integration\nGuest customer mgmt",
+      "workItemType": "Workshop",
+      "state": "New",
+      "parent": {
+        "workItemId": 68372
+      },
+      "relatedLinkCount": 1,
+      "areaPath": {
+        "raw": "Day 2 IT Program\\HeartStream\\Workshop",
+        "segments": [
+          "Day 2 IT Program",
+          "HeartStream",
+          "Workshop"
+        ]
+      },
+      "iterationPath": {
+        "raw": "Day 2 IT Program\\Sprint 0",
+        "segments": [
+          "Day 2 IT Program",
+          "Sprint 0"
+        ]
+      },
+      "description": {
+        "plainText": "CRM & D365 Suite Integration\n\nIntegrates Customer Relationship Management (CRM) capabilities with the broader Dynamics 365 ecosystem to enable seamless data sharing across sales, marketing, customer service, finance, and operations. This provides a unified customer view, improves process efficiency, and supports end-to-end business workflows.\n\nGuest Customer Management\n\nSupports customer interactions and purchases without requiring account creation, enabling guest checkout, order tracking, communication management, and service support while maintaining a streamlined customer experience and capturing essential transaction data.",
+        "summary": "CRM & D365 Suite Integration",
+        "htmlDecoded": true
+      },
+      "source": {
+        "rowNumber": 70,
+        "id": "68484"
+      }
+    },
+    {
+      "workItemId": 68433,
+      "workItemCode": null,
+      "title": "WS-33 - Quotation Management",
+      "displayTitle": "WS-33 - Quotation Management",
+      "workItemType": "Workshop",
+      "state": "New",
+      "parent": {
+        "workItemId": 68372
+      },
+      "relatedLinkCount": 1,
+      "areaPath": {
+        "raw": "Day 2 IT Program\\HeartStream\\Workshop",
+        "segments": [
+          "Day 2 IT Program",
+          "HeartStream",
+          "Workshop"
+        ]
+      },
+      "iterationPath": {
+        "raw": "Day 2 IT Program\\Sprint 0",
+        "segments": [
+          "Day 2 IT Program",
+          "Sprint 0"
+        ]
+      },
+      "description": {
+        "plainText": "D365 Commerce / Intelligent Order Management: Provides a unified platform to manage customer orders across channels, orchestrate fulfillment, optimize inventory visibility, and automate order routing to deliver seamless omnichannel commerce experiences.",
+        "summary": "D365 Commerce / Intelligent Order Management: Provides a unified platform to manage customer orders across channels, orchestrate fulfillment, optimize inventory visibility, and automate order routing to deliver seamless omnichannel commerce experiences.",
+        "htmlDecoded": false
+      },
+      "source": {
+        "rowNumber": 71,
+        "id": "68433"
+      }
+    },
+    {
+      "workItemId": 68476,
+      "workItemCode": null,
+      "title": "WS-33 - Institutional order mgmt\nInventory & fulfillment mgmt",
+      "displayTitle": "WS-33 - Institutional order mgmt\nInventory & fulfillment mgmt",
+      "workItemType": "Workshop",
+      "state": "New",
+      "parent": {
+        "workItemId": 68372
+      },
+      "relatedLinkCount": 1,
+      "areaPath": {
+        "raw": "Day 2 IT Program\\HeartStream\\Workshop",
+        "segments": [
+          "Day 2 IT Program",
+          "HeartStream",
+          "Workshop"
+        ]
+      },
+      "iterationPath": {
+        "raw": "Day 2 IT Program\\Sprint 0",
+        "segments": [
+          "Day 2 IT Program",
+          "Sprint 0"
+        ]
+      },
+      "description": {
+        "plainText": "Institutional Order Management\n\nManages the end-to-end processing of orders from institutional customers, including healthcare providers, government agencies, educational institutions, and large enterprises. It supports contract-based ordering, pricing controls, approval workflows, fulfillment coordination, and compliance requirements to ensure efficient and accurate order execution.\n\nInventory & Fulfillment Management\n\nManages inventory availability, allocation, warehousing, picking, packing, shipping, and delivery processes to ensure timely order fulfillment, optimal stock levels, and efficient supply chain operations while maintaining product availability and customer satisfaction.",
+        "summary": "Institutional Order Management",
+        "htmlDecoded": true
+      },
+      "source": {
+        "rowNumber": 72,
+        "id": "68476"
+      }
+    },
+    {
+      "workItemId": 68456,
+      "workItemCode": null,
+      "title": "WS-33 - Goods Flow Distribution",
+      "displayTitle": "WS-33 - Goods Flow Distribution",
+      "workItemType": "Workshop",
+      "state": "New",
+      "parent": {
+        "workItemId": 68372
+      },
+      "relatedLinkCount": 1,
+      "areaPath": {
+        "raw": "Day 2 IT Program\\HeartStream\\Workshop",
+        "segments": [
+          "Day 2 IT Program",
+          "HeartStream",
+          "Workshop"
+        ]
+      },
+      "iterationPath": {
+        "raw": "Day 2 IT Program\\Sprint 0",
+        "segments": [
+          "Day 2 IT Program",
+          "Sprint 0"
+        ]
+      },
+      "description": {
+        "plainText": "Dynamics 365 Intelligent Order Management (IOM) enhances the Order-to-Cash (O2C) process by intelligently orchestrating customer orders across multiple sales channels, fulfillment locations, inventory sources, and logistics providers.\n\nGoods Flow Distribution: Manages the movement, storage, and distribution of goods across the supply chain, including inventory transfers, warehouse operations, order fulfillment, shipping, and delivery. It ensures products are efficiently routed from suppliers and production facilities to customers or distribution centers, improving inventory visibility, operational efficiency, and on-time delivery performance.",
+        "summary": "Dynamics 365 Intelligent Order Management (IOM) enhances the Order-to-Cash (O2C) process by intelligently orchestrating customer orders across multiple sales channels, fulfillment locations, inventory sources, and logistics providers.",
+        "htmlDecoded": false
+      },
+      "source": {
+        "rowNumber": 73,
+        "id": "68456"
+      }
+    },
+    {
+      "workItemId": 68462,
+      "workItemCode": null,
+      "title": "WS-33 - Cart management\nAbandoned cart recovery\nCustomer order mgmt\nInventory visibility\nShipping & logistics",
+      "displayTitle": "WS-33 - Cart management\nAbandoned cart recovery\nCustomer order mgmt\nInventory visibility\nShipping & logistics",
+      "workItemType": "Workshop",
+      "state": "New",
+      "parent": {
+        "workItemId": 68372
+      },
+      "relatedLinkCount": 1,
+      "areaPath": {
+        "raw": "Day 2 IT Program\\HeartStream\\Workshop",
+        "segments": [
+          "Day 2 IT Program",
+          "HeartStream",
+          "Workshop"
+        ]
+      },
+      "iterationPath": {
+        "raw": "Day 2 IT Program\\Sprint 0",
+        "segments": [
+          "Day 2 IT Program",
+          "Sprint 0"
+        ]
+      },
+      "description": {
+        "plainText": "Cart Management: Enables customers to add, modify, and manage products in a shopping cart throughout the purchasing process, providing a seamless and user-friendly shopping experience.\n\nAbandoned Cart Recovery: Identifies incomplete purchases and automates follow-up actions such as reminders and targeted offers to encourage customers to complete their transactions and improve conversion rates.\n\nCustomer Order Management: Supports the end-to-end management of customer orders, including order capture, validation, fulfillment, tracking, and servicing, ensuring accurate and efficient order processing.\n\nInventory Visibility: Provides real-time visibility into inventory levels, availability, and locations across channels and fulfillment networks, enabling informed purchasing and fulfillment decisions.\n\nShipping & Logistics: Manages the planning, execution, and tracking of product shipments and deliveries, optimizing transportation, fulfillment efficiency, and on-time delivery performance while enhancing the customer experience.",
+        "summary": "Cart Management: Enables customers to add, modify, and manage products in a shopping cart throughout the purchasing process, providing a seamless and user-friendly shopping experience.",
+        "htmlDecoded": true
+      },
+      "source": {
+        "rowNumber": 74,
+        "id": "68462"
+      }
+    },
+    {
+      "workItemId": 68480,
+      "workItemCode": null,
+      "title": "WS-32 - BB2B pricing mgmt\nPerformance-based pricing\nAdvancd & lifecycle pricing",
+      "displayTitle": "WS-32 - BB2B pricing mgmt\nPerformance-based pricing\nAdvancd & lifecycle pricing",
+      "workItemType": "Workshop",
+      "state": "New",
+      "parent": {
+        "workItemId": 68372
+      },
+      "relatedLinkCount": 1,
+      "areaPath": {
+        "raw": "Day 2 IT Program\\HeartStream\\Workshop",
+        "segments": [
+          "Day 2 IT Program",
+          "HeartStream",
+          "Workshop"
+        ]
+      },
+      "iterationPath": {
+        "raw": "Day 2 IT Program\\Sprint 0",
+        "segments": [
+          "Day 2 IT Program",
+          "Sprint 0"
+        ]
+      },
+      "description": {
+        "plainText": "Pricing & Discounts in Dynamics 365 Commerce is the capability that defines product prices, promotional offers, customer-specific pricing, and discount rules across all sales channels. It plays a critical role in the Order-to-Cash (O2C) process by determining the price customers pay and the revenue the organization earns.",
+        "summary": "Pricing & Discounts in Dynamics 365 Commerce is the capability that defines product prices, promotional offers, customer-specific pricing, and discount rules across all sales channels. It plays a critical role in the Order-to-Cash (O2C) process by determining the price customers pay and the revenue the organization ea…",
+        "htmlDecoded": true
+      },
+      "source": {
+        "rowNumber": 75,
+        "id": "68480"
+      }
+    },
+    {
+      "workItemId": 68431,
+      "workItemCode": null,
+      "title": "WS-31 - Rich media and content\nSearch & discovery",
+      "displayTitle": "WS-31 - Rich media and content\nSearch & discovery",
+      "workItemType": "Workshop",
+      "state": "New",
+      "parent": {
+        "workItemId": 68372
+      },
+      "relatedLinkCount": 1,
+      "areaPath": {
+        "raw": "Day 2 IT Program\\HeartStream\\Workshop",
+        "segments": [
+          "Day 2 IT Program",
+          "HeartStream",
+          "Workshop"
+        ]
+      },
+      "iterationPath": {
+        "raw": "Day 2 IT Program\\Sprint 0",
+        "segments": [
+          "Day 2 IT Program",
+          "Sprint 0"
+        ]
+      },
+      "description": {
+        "plainText": "Commerce - Payment & Order to Cash: Supports the complete commerce transaction lifecycle, including order capture, payment processing, invoicing, fulfillment, collections, and revenue realization, ensuring a seamless customer purchasing experience and efficient cash flow management.\n\nRich Media and Content: Enables the creation, management, and delivery of engaging digital content, including images, videos, product information, and marketing assets, to enhance customer experiences across commerce channels.\n\nSearch & Discovery: Provides intelligent product search, navigation, recommendations, and filtering capabilities that help customers quickly find relevant products and content, improving user experience, engagement, and conversion rates.",
+        "summary": "Commerce - Payment & Order to Cash: Supports the complete commerce transaction lifecycle, including order capture, payment processing, invoicing, fulfillment, collections, and revenue realization, ensuring a seamless customer purchasing experience and efficient cash flow management.",
+        "htmlDecoded": true
+      },
+      "source": {
+        "rowNumber": 76,
+        "id": "68431"
+      }
+    },
+    {
+      "workItemId": 68427,
+      "workItemCode": null,
+      "title": "WS-31 - Procuct Lifecycle Management",
+      "displayTitle": "WS-31 - Procuct Lifecycle Management",
+      "workItemType": "Workshop",
+      "state": "New",
+      "parent": {
+        "workItemId": 68372
+      },
+      "relatedLinkCount": 1,
+      "areaPath": {
+        "raw": "Day 2 IT Program\\HeartStream\\Workshop",
+        "segments": [
+          "Day 2 IT Program",
+          "HeartStream",
+          "Workshop"
+        ]
+      },
+      "iterationPath": {
+        "raw": "Day 2 IT Program\\Sprint 0",
+        "segments": [
+          "Day 2 IT Program",
+          "Sprint 0"
+        ]
+      },
+      "description": {
+        "plainText": "D365 Commerce – Catalog Management: Product Lifecycle Management\n\nManages products throughout their lifecycle, from creation and catalog setup to updates, publication, and retirement. It ensures accurate product information, category structures, pricing, and channel readiness across commerce platforms, enabling consistent customer experiences, improved product governance, and efficient commercialization.",
+        "summary": "D365 Commerce – Catalog Management: Product Lifecycle Management",
+        "htmlDecoded": false
+      },
+      "source": {
+        "rowNumber": 77,
+        "id": "68427"
+      }
+    },
+    {
+      "workItemId": 68454,
+      "workItemCode": null,
+      "title": "WS-31 - Need definition",
+      "displayTitle": "WS-31 - Need definition",
+      "workItemType": "Workshop",
+      "state": "New",
+      "parent": {
+        "workItemId": 68372
+      },
+      "relatedLinkCount": 1,
+      "areaPath": {
+        "raw": "Day 2 IT Program\\HeartStream\\Workshop",
+        "segments": [
+          "Day 2 IT Program",
+          "HeartStream",
+          "Workshop"
+        ]
+      },
+      "iterationPath": {
+        "raw": "Day 2 IT Program\\Sprint 0",
+        "segments": [
+          "Day 2 IT Program",
+          "Sprint 0"
+        ]
+      },
+      "description": {
+        "plainText": "Accounts Payable (AP) in Dynamics 365 Finance manages supplier invoices, vendor liabilities, approvals, payments, and settlements. It is a key component of the Procure-to-Pay (P2P) business process, ensuring vendors are paid accurately and on time while maintaining financial control.\nFinance, Accounts Payable - Need Definition: Defines the business requirements, processes, controls, and operational needs for managing supplier obligations, including vendor onboarding, invoice processing, payment execution, expense management, and compliance. It ensures accounts payable activities are aligned with organizational policies, support efficient cash management, and enable accurate financial reporting",
+        "summary": "Accounts Payable (AP) in Dynamics 365 Finance manages supplier invoices, vendor liabilities, approvals, payments, and settlements. It is a key component of the Procure-to-Pay (P2P) business process, ensuring vendors are paid accurately and on time while maintaining financial control. Finance, Accounts Payable - Need D…",
+        "htmlDecoded": false
+      },
+      "source": {
+        "rowNumber": 78,
+        "id": "68454"
+      }
+    },
+    {
+      "workItemId": 68448,
+      "workItemCode": null,
+      "title": "WS-31 - Bundle & kit management\nCatalog management",
+      "displayTitle": "WS-31 - Bundle & kit management\nCatalog management",
+      "workItemType": "Workshop",
+      "state": "New",
+      "parent": {
+        "workItemId": 68372
+      },
+      "relatedLinkCount": 1,
+      "areaPath": {
+        "raw": "Day 2 IT Program\\HeartStream\\Workshop",
+        "segments": [
+          "Day 2 IT Program",
+          "HeartStream",
+          "Workshop"
+        ]
+      },
+      "iterationPath": {
+        "raw": "Day 2 IT Program\\Sprint 0",
+        "segments": [
+          "Day 2 IT Program",
+          "Sprint 0"
+        ]
+      },
+      "description": {
+        "plainText": "D365 Commerce Catalog Management, Bundle & Kit Management (Order to Cash): Enables organizations to create, organize, and maintain product catalogs with accurate product information, pricing, and assortments across sales channels. It also supports bundle and kit management by grouping products into predefined packages for streamlined selling, ordering, fulfillment, and invoicing, improving customer experience, sales effectiveness, and order-to-cash efficiency.",
+        "summary": "D365 Commerce Catalog Management, Bundle & Kit Management (Order to Cash): Enables organizations to create, organize, and maintain product catalogs with accurate product information, pricing, and assortments across sales channels. It also supports bundle and kit management by grouping products into predefined packages…",
+        "htmlDecoded": true
+      },
+      "source": {
+        "rowNumber": 79,
+        "id": "68448"
+      }
+    },
+    {
+      "workItemId": 68404,
+      "workItemCode": null,
+      "title": "WS-30 - POS & Offline operations",
+      "displayTitle": "WS-30 - POS & Offline operations",
+      "workItemType": "Workshop",
+      "state": "New",
+      "parent": {
+        "workItemId": 68372
+      },
+      "relatedLinkCount": 1,
+      "areaPath": {
+        "raw": "Day 2 IT Program\\HeartStream\\Workshop",
+        "segments": [
+          "Day 2 IT Program",
+          "HeartStream",
+          "Workshop"
+        ]
+      },
+      "iterationPath": {
+        "raw": "Day 2 IT Program\\Sprint 0",
+        "segments": [
+          "Day 2 IT Program",
+          "Sprint 0"
+        ]
+      },
+      "description": {
+        "plainText": "D365 Commerce Channel Management enables organizations to manage retail stores, e-commerce sites, call centers, and marketplaces while supporting the complete Order-to-Cash process from customer order placement to revenue collection.",
+        "summary": "D365 Commerce Channel Management enables organizations to manage retail stores, e-commerce sites, call centers, and marketplaces while supporting the complete Order-to-Cash process from customer order placement to revenue collection.",
+        "htmlDecoded": false
+      },
+      "source": {
+        "rowNumber": 80,
+        "id": "68404"
+      }
+    },
+    {
+      "workItemId": 68409,
+      "workItemCode": null,
+      "title": "WS-30 - Online channel managment",
+      "displayTitle": "WS-30 - Online channel managment",
+      "workItemType": "Workshop",
+      "state": "New",
+      "parent": {
+        "workItemId": 68372
+      },
+      "relatedLinkCount": 1,
+      "areaPath": {
+        "raw": "Day 2 IT Program\\HeartStream\\Workshop",
+        "segments": [
+          "Day 2 IT Program",
+          "HeartStream",
+          "Workshop"
+        ]
+      },
+      "iterationPath": {
+        "raw": "Day 2 IT Program\\Sprint 0",
+        "segments": [
+          "Day 2 IT Program",
+          "Sprint 0"
+        ]
+      },
+      "description": {
+        "plainText": "Online Channel Management\n\nManages digital sales and customer engagement channels, including e-commerce platforms, marketplaces, websites, and partner portals, to deliver consistent customer experiences, optimize online sales performance, and support omnichannel business operations.",
+        "summary": "Online Channel Management",
+        "htmlDecoded": false
+      },
+      "source": {
+        "rowNumber": 81,
+        "id": "68409"
+      }
+    },
+    {
+      "workItemId": 68415,
+      "workItemCode": null,
+      "title": "WS-30 - Multi store management\nMulti store-front management",
+      "displayTitle": "WS-30 - Multi store management\nMulti store-front management",
+      "workItemType": "Workshop",
+      "state": "New",
+      "parent": {
+        "workItemId": 68372
+      },
+      "relatedLinkCount": 1,
+      "areaPath": {
+        "raw": "Day 2 IT Program\\HeartStream\\Workshop",
+        "segments": [
+          "Day 2 IT Program",
+          "HeartStream",
+          "Workshop"
+        ]
+      },
+      "iterationPath": {
+        "raw": "Day 2 IT Program\\Sprint 0",
+        "segments": [
+          "Day 2 IT Program",
+          "Sprint 0"
+        ]
+      },
+      "description": {
+        "plainText": "Channel Management in Dynamics 365 Commerce enables organizations to manage and operate multiple sales channels from a unified platform. It supports the Order-to-Cash (O2C) process by providing consistent product, pricing, inventory, customer, and order experiences across all customer touchpoints.\nMulti-Store Management\n\nManages operations across multiple retail stores, including inventory, pricing, promotions, orders, and performance monitoring, ensuring consistent processes, centralized control, and optimized store performance.\n\nMulti Storefront Management\n\nManages multiple digital storefronts, brands, regions, or market-specific online experiences from a centralized platform, enabling consistent product information, localized content, pricing, and customer experiences across channels.",
+        "summary": "Channel Management in Dynamics 365 Commerce enables organizations to manage and operate multiple sales channels from a unified platform. It supports the Order-to-Cash (O2C) process by providing consistent product, pricing, inventory, customer, and order experiences across all customer touchpoints. Multi-Store Manageme…",
+        "htmlDecoded": false
+      },
+      "source": {
+        "rowNumber": 82,
+        "id": "68415"
+      }
+    },
+    {
+      "workItemId": 68414,
+      "workItemCode": null,
+      "title": "WS-29 - Lifecycle state management\nProduct Obsolescence & Phase Out",
+      "displayTitle": "WS-29 - Lifecycle state management\nProduct Obsolescence & Phase Out",
+      "workItemType": "Workshop",
+      "state": "New",
+      "parent": {
+        "workItemId": 68372
+      },
+      "relatedLinkCount": 1,
+      "areaPath": {
+        "raw": "Day 2 IT Program\\HeartStream\\Workshop",
+        "segments": [
+          "Day 2 IT Program",
+          "HeartStream",
+          "Workshop"
+        ]
+      },
+      "iterationPath": {
+        "raw": "Day 2 IT Program\\Sprint 0",
+        "segments": [
+          "Day 2 IT Program",
+          "Sprint 0"
+        ]
+      },
+      "description": {
+        "plainText": "Product Lifecycle State in Dynamics 365 Supply Chain Management (SCM) controls the status and usability of a product throughout its lifecycle, from design and engineering through production, sales, service, and retirement.\n\nLifecycle State Management\n\nGoverns product progression through development, production, maintenance, and retirement stages while ensuring appropriate controls and approvals.\n\nProduct Obsolescence & Phase Out\n\nManages product end-of-life planning, phase-out activities, and replacement strategies to minimize operational disruption and maintain compliance.",
+        "summary": "Product Lifecycle State in Dynamics 365 Supply Chain Management (SCM) controls the status and usability of a product throughout its lifecycle, from design and engineering through production, sales, service, and retirement.",
+        "htmlDecoded": true
+      },
+      "source": {
+        "rowNumber": 83,
+        "id": "68414"
+      }
+    },
+    {
+      "workItemId": 68373,
+      "workItemCode": null,
+      "title": "WS-29 - External PLM integration",
+      "displayTitle": "WS-29 - External PLM integration",
+      "workItemType": "Workshop",
+      "state": "New",
+      "parent": {
+        "workItemId": 68372
+      },
+      "relatedLinkCount": 1,
+      "areaPath": {
+        "raw": "Day 2 IT Program\\HeartStream\\Workshop",
+        "segments": [
+          "Day 2 IT Program",
+          "HeartStream",
+          "Workshop"
+        ]
+      },
+      "iterationPath": {
+        "raw": "Day 2 IT Program\\Sprint 0",
+        "segments": [
+          "Day 2 IT Program",
+          "Sprint 0"
+        ]
+      },
+      "description": {
+        "plainText": "External PLM Integration\n\nIntegrates external Product Lifecycle Management (PLM) systems with enterprise applications to synchronize product data, engineering changes, specifications, and lifecycle information, ensuring consistent product governance, collaboration, and data accuracy across systems.",
+        "summary": "External PLM Integration",
+        "htmlDecoded": false
+      },
+      "source": {
+        "rowNumber": 84,
+        "id": "68373"
+      }
+    },
+    {
+      "workItemId": 68413,
+      "workItemCode": null,
+      "title": "WS-28 - Engineering & BOM mgmt\nRoute & operation mgm",
+      "displayTitle": "WS-28 - Engineering & BOM mgmt\nRoute & operation mgm",
+      "workItemType": "Workshop",
+      "state": "New",
+      "parent": {
+        "workItemId": 68372
+      },
+      "relatedLinkCount": 1,
+      "areaPath": {
+        "raw": "Day 2 IT Program\\HeartStream\\Workshop",
+        "segments": [
+          "Day 2 IT Program",
+          "HeartStream",
+          "Workshop"
+        ]
+      },
+      "iterationPath": {
+        "raw": "Day 2 IT Program\\Sprint 0",
+        "segments": [
+          "Day 2 IT Program",
+          "Sprint 0"
+        ]
+      },
+      "description": {
+        "plainText": "is the functionality used to define what materials are required to make a product (BOM) and how the product is manufactured (Route\n\nEngineering & BOM Management\n\nMaintains engineering data and Bills of Materials (BOMs) to support accurate product design, manufacturing, and lifecycle management.\n\nRoute & Operation Management\n\nDefines and controls manufacturing routes, operations, and production processes to enable efficient and standardized execution..",
+        "summary": "is the functionality used to define what materials are required to make a product (BOM) and how the product is manufactured (Route",
+        "htmlDecoded": true
+      },
+      "source": {
+        "rowNumber": 85,
+        "id": "68413"
+      }
+    },
+    {
+      "workItemId": 68408,
+      "workItemCode": null,
+      "title": "WS-27 - Constraint-based configuration\nProduct readiness & release",
+      "displayTitle": "WS-27 - Constraint-based configuration\nProduct readiness & release",
+      "workItemType": "Workshop",
+      "state": "New",
+      "parent": {
+        "workItemId": 68372
+      },
+      "relatedLinkCount": 1,
+      "areaPath": {
+        "raw": "Day 2 IT Program\\HeartStream\\Workshop",
+        "segments": [
+          "Day 2 IT Program",
+          "HeartStream",
+          "Workshop"
+        ]
+      },
+      "iterationPath": {
+        "raw": "Day 2 IT Program\\Sprint 0",
+        "segments": [
+          "Day 2 IT Program",
+          "Sprint 0"
+        ]
+      },
+      "description": {
+        "plainText": "Product Configurator in Dynamics 365 Supply Chain Management (SCM) enables organizations to create configurable products and generate valid product configurations based on customer requirements, engineering rules, and manufacturing constraints.\n\nIt is commonly associated with the Design-to-Order (DTO) or Configure-to-Order (CTO) process.\n\nConstraint-Based Configuration\n\nApplies business and engineering rules to ensure valid product configurations, reducing errors and supporting complex product offerings.\n\nProduct Readiness & Release\n\nManages product validation, approval, and release processes to ensure products are operationally, commercially, and regulatory ready for launch.",
+        "summary": "Product Configurator in Dynamics 365 Supply Chain Management (SCM) enables organizations to create configurable products and generate valid product configurations based on customer requirements, engineering rules, and manufacturing constraints.",
+        "htmlDecoded": true
+      },
+      "source": {
+        "rowNumber": 86,
+        "id": "68408"
+      }
+    },
+    {
+      "workItemId": 68407,
+      "workItemCode": null,
+      "title": "WS-26 - Engineering category setup\nProduct version management\n\nExternal Analytics Data Ingestion & Unification",
+      "displayTitle": "WS-26 - Engineering category setup\nProduct version management\n\nExternal Analytics Data Ingestion & Unification",
+      "workItemType": "Workshop",
+      "state": "New",
+      "parent": {
+        "workItemId": 68372
+      },
+      "relatedLinkCount": 1,
+      "areaPath": {
+        "raw": "Day 2 IT Program\\HeartStream\\Workshop",
+        "segments": [
+          "Day 2 IT Program",
+          "HeartStream",
+          "Workshop"
+        ]
+      },
+      "iterationPath": {
+        "raw": "Day 2 IT Program\\Sprint 0",
+        "segments": [
+          "Day 2 IT Program",
+          "Sprint 0"
+        ]
+      },
+      "description": {
+        "plainText": "Engineering Change Management (ECM) in Dynamics 365 Supply Chain Management (SCM) governs the lifecycle of product designs and engineering changes from initial design through production, service, and eventual product retirement. It supports the Design-to-Retire (D2R) business process by ensuring changes are reviewed, approved, controlled, and implemented consistently across the enterprise\nExternal Analytics Data Ingestion & Unification\n\nIntegrates and consolidates data from external analytics sources to create a unified view for reporting, insights, and data-driven decision-making.",
+        "summary": "Engineering Change Management (ECM) in Dynamics 365 Supply Chain Management (SCM) governs the lifecycle of product designs and engineering changes from initial design through production, service, and eventual product retirement. It supports the Design-to-Retire (D2R) business process by ensuring changes are reviewed,…",
+        "htmlDecoded": true
+      },
+      "source": {
+        "rowNumber": 87,
+        "id": "68407"
+      }
+    },
+    {
+      "workItemId": 68401,
+      "workItemCode": null,
+      "title": "WS-25 -  Change order creation\n BOM & Route versioning\nECO Approval & release",
+      "displayTitle": "WS-25 -  Change order creation\n BOM & Route versioning\nECO Approval & release",
+      "workItemType": "Workshop",
+      "state": "New",
+      "parent": {
+        "workItemId": 68372
+      },
+      "relatedLinkCount": 1,
+      "areaPath": {
+        "raw": "Day 2 IT Program\\HeartStream\\Workshop",
+        "segments": [
+          "Day 2 IT Program",
+          "HeartStream",
+          "Workshop"
+        ]
+      },
+      "iterationPath": {
+        "raw": "Day 2 IT Program\\Sprint 0",
+        "segments": [
+          "Day 2 IT Program",
+          "Sprint 0"
+        ]
+      },
+      "description": {
+        "plainText": "Engineering Change Mgmt is a capability that controls and governs changes to products, Bills of Materials (BOMs), formulas, components, and engineering data throughout a product's lifecycle.\n\nChange Order Creation\n\nCreates and manages engineering change orders (ECOs) to formally implement approved product, process, or manufacturing changes.\n\nBOM & Route Versioning\n\nMaintains version-controlled Bills of Materials (BOMs) and manufacturing routes to ensure accurate production, traceability, and change governance.\n\nECO Approval & Release\n\nManages the approval and release of engineering change orders, ensuring authorized changes are deployed in a controlled and compliant manner.",
+        "summary": "Engineering Change Mgmt is a capability that controls and governs changes to products, Bills of Materials (BOMs), formulas, components, and engineering data throughout a product's lifecycle.",
+        "htmlDecoded": true
+      },
+      "source": {
+        "rowNumber": 88,
+        "id": "68401"
+      }
+    },
+    {
+      "workItemId": 68402,
+      "workItemCode": null,
+      "title": "WS-24 - Change request initiation",
+      "displayTitle": "WS-24 - Change request initiation",
+      "workItemType": "Workshop",
+      "state": "New",
+      "parent": {
+        "workItemId": 68372
+      },
+      "relatedLinkCount": 1,
+      "areaPath": {
+        "raw": "Day 2 IT Program\\HeartStream\\Workshop",
+        "segments": [
+          "Day 2 IT Program",
+          "HeartStream",
+          "Workshop"
+        ]
+      },
+      "iterationPath": {
+        "raw": "Day 2 IT Program\\Sprint 0",
+        "segments": [
+          "Day 2 IT Program",
+          "Sprint 0"
+        ]
+      },
+      "description": {
+        "plainText": "A change request is created when a need for a product modification is identified. The request may originate from:\nChange Request Initiation\n\nEnables the structured submission and tracking of product or engineering change requests to support controlled change management processes.",
+        "summary": "A change request is created when a need for a product modification is identified. The request may originate from: Change Request Initiation",
+        "htmlDecoded": false
+      },
+      "source": {
+        "rowNumber": 89,
+        "id": "68402"
+      }
+    },
+    {
+      "workItemId": 68400,
+      "workItemCode": null,
+      "title": "WS-24 -  ECR Review & Approval\n Change request initiation",
+      "displayTitle": "WS-24 -  ECR Review & Approval\n Change request initiation",
+      "workItemType": "Workshop",
+      "state": "New",
+      "parent": {
+        "workItemId": 68372
+      },
+      "relatedLinkCount": 1,
+      "areaPath": {
+        "raw": "Day 2 IT Program\\HeartStream\\Workshop",
+        "segments": [
+          "Day 2 IT Program",
+          "HeartStream",
+          "Workshop"
+        ]
+      },
+      "iterationPath": {
+        "raw": "Day 2 IT Program\\Sprint 0",
+        "segments": [
+          "Day 2 IT Program",
+          "Sprint 0"
+        ]
+      },
+      "description": {
+        "plainText": "Engineering Change Mgmt is a capability that controls and governs changes to products, Bills of Materials (BOMs), formulas, components, and engineering data throughout a product's lifecycle.\n\nECR Review & Approval\n\nFacilitates the review, evaluation, and approval of Engineering Change Requests (ECRs) to ensure changes are properly assessed, authorized, and documented.\n\nChange Request Initiation\n\nEnables the structured submission and tracking of product or engineering change requests to support controlled change management processes.",
+        "summary": "Engineering Change Mgmt is a capability that controls and governs changes to products, Bills of Materials (BOMs), formulas, components, and engineering data throughout a product's lifecycle.",
+        "htmlDecoded": true
+      },
+      "source": {
+        "rowNumber": 90,
+        "id": "68400"
+      }
+    },
+    {
+      "workItemId": 68479,
+      "workItemCode": null,
+      "title": "WS-23 - Quality nonconformance tracking & CAPA mgmtt\nProduct service agreements",
+      "displayTitle": "WS-23 - Quality nonconformance tracking & CAPA mgmtt\nProduct service agreements",
+      "workItemType": "Workshop",
+      "state": "New",
+      "parent": {
+        "workItemId": 68372
+      },
+      "relatedLinkCount": 1,
+      "areaPath": {
+        "raw": "Day 2 IT Program\\HeartStream\\Workshop",
+        "segments": [
+          "Day 2 IT Program",
+          "HeartStream",
+          "Workshop"
+        ]
+      },
+      "iterationPath": {
+        "raw": "Day 2 IT Program\\Sprint 0",
+        "segments": [
+          "Day 2 IT Program",
+          "Sprint 0"
+        ]
+      },
+      "description": {
+        "plainText": "Quality Nonconformance Tracking & CAPA Management\n\nTracks product and process quality issues, manages nonconformance investigations, and oversees Corrective and Preventive Actions (CAPA) to improve compliance, reduce recurring defects, and drive continuous quality improvement.\n\nProduct Service Agreements\n\nManages service agreements throughout their lifecycle, including contract setup, service commitments, renewals, and performance tracking to ensure consistent service delivery and customer satisfaction.",
+        "summary": "Quality Nonconformance Tracking & CAPA Management",
+        "htmlDecoded": true
+      },
+      "source": {
+        "rowNumber": 91,
+        "id": "68479"
+      }
+    },
+    {
+      "workItemId": 68474,
+      "workItemCode": null,
+      "title": "WS-22 - RMA processing\nCusttomer return orders",
+      "displayTitle": "WS-22 - RMA processing\nCusttomer return orders",
+      "workItemType": "Workshop",
+      "state": "New",
+      "parent": {
+        "workItemId": 68372
+      },
+      "relatedLinkCount": 1,
+      "areaPath": {
+        "raw": "Day 2 IT Program\\HeartStream\\Workshop",
+        "segments": [
+          "Day 2 IT Program",
+          "HeartStream",
+          "Workshop"
+        ]
+      },
+      "iterationPath": {
+        "raw": "Day 2 IT Program\\Sprint 0",
+        "segments": [
+          "Day 2 IT Program",
+          "Sprint 0"
+        ]
+      },
+      "description": {
+        "plainText": "Sales & Returns in Dynamics 365 Supply Chain Management (SCM) manages the complete lifecycle of customer sales orders and product returns. It ensures efficient order fulfillment, delivery, returns processing, inventory reconciliation, and customer satisfaction as part of the Inventory-to-Deliver (I2D) process.",
+        "summary": "Sales & Returns in Dynamics 365 Supply Chain Management (SCM) manages the complete lifecycle of customer sales orders and product returns. It ensures efficient order fulfillment, delivery, returns processing, inventory reconciliation, and customer satisfaction as part of the Inventory-to-Deliver (I2D) process.",
+        "htmlDecoded": true
+      },
+      "source": {
+        "rowNumber": 92,
+        "id": "68474"
+      }
+    },
+    {
+      "workItemId": 68468,
+      "workItemCode": null,
+      "title": "WS-21 - Sales-driven production orders\nExport order mgmt\nExport control compliance\nSales order processing",
+      "displayTitle": "WS-21 - Sales-driven production orders\nExport order mgmt\nExport control compliance\nSales order processing",
+      "workItemType": "Workshop",
+      "state": "New",
+      "parent": {
+        "workItemId": 68372
+      },
+      "relatedLinkCount": 1,
+      "areaPath": {
+        "raw": "Day 2 IT Program\\HeartStream\\Workshop",
+        "segments": [
+          "Day 2 IT Program",
+          "HeartStream",
+          "Workshop"
+        ]
+      },
+      "iterationPath": {
+        "raw": "Day 2 IT Program\\Sprint 0",
+        "segments": [
+          "Day 2 IT Program",
+          "Sprint 0"
+        ]
+      },
+      "description": {
+        "plainText": "Sales & Order Management in Dynamics 365 Supply Chain Management (SCM) manages the fulfillment lifecycle from customer order receipt through inventory allocation, warehouse processing, shipment, and delivery. It is a core component of the Inventory-to-Deliver (I2D) process.",
+        "summary": "Sales & Order Management in Dynamics 365 Supply Chain Management (SCM) manages the fulfillment lifecycle from customer order receipt through inventory allocation, warehouse processing, shipment, and delivery. It is a core component of the Inventory-to-Deliver (I2D) process.",
+        "htmlDecoded": true
+      },
+      "source": {
+        "rowNumber": 93,
+        "id": "68468"
+      }
+    },
+    {
+      "workItemId": 68467,
+      "workItemCode": null,
+      "title": "WS-20 - Warehouse operations\nOutbound process execution\nOutbound shipment planning",
+      "displayTitle": "WS-20 - Warehouse operations\nOutbound process execution\nOutbound shipment planning",
+      "workItemType": "Workshop",
+      "state": "New",
+      "parent": {
+        "workItemId": 68372
+      },
+      "relatedLinkCount": 1,
+      "areaPath": {
+        "raw": "Day 2 IT Program\\HeartStream\\Workshop",
+        "segments": [
+          "Day 2 IT Program",
+          "HeartStream",
+          "Workshop"
+        ]
+      },
+      "iterationPath": {
+        "raw": "Day 2 IT Program\\Sprint 0",
+        "segments": [
+          "Day 2 IT Program",
+          "Sprint 0"
+        ]
+      },
+      "description": {
+        "plainText": "Inventory-to-Deliver in Dynamics 365 Supply Chain Management (SCM) covers the process of managing inventory, warehousing, transportation, and shipment execution to ensure products are delivered to customers efficiently and accurately.",
+        "summary": "Inventory-to-Deliver in Dynamics 365 Supply Chain Management (SCM) covers the process of managing inventory, warehousing, transportation, and shipment execution to ensure products are delivered to customers efficiently and accurately.",
+        "htmlDecoded": false
+      },
+      "source": {
+        "rowNumber": 94,
+        "id": "68467"
+      }
+    },
+    {
+      "workItemId": 68506,
+      "workItemCode": null,
+      "title": "WS-19 - Chemical compliance\nEHS standards & reporting\nSustainability target mgmt\nSustainability reporting",
+      "displayTitle": "WS-19 - Chemical compliance\nEHS standards & reporting\nSustainability target mgmt\nSustainability reporting",
+      "workItemType": "Workshop",
+      "state": "New",
+      "parent": {
+        "workItemId": 68372
+      },
+      "relatedLinkCount": 1,
+      "areaPath": {
+        "raw": "Day 2 IT Program\\HeartStream\\Workshop",
+        "segments": [
+          "Day 2 IT Program",
+          "HeartStream",
+          "Workshop"
+        ]
+      },
+      "iterationPath": {
+        "raw": "Day 2 IT Program\\Sprint 0",
+        "segments": [
+          "Day 2 IT Program",
+          "Sprint 0"
+        ]
+      },
+      "description": {
+        "plainText": "Asset Management and Sustainability Manager in Dynamics 365 help organizations manage physical assets, maintenance operations, reliability, environmental performance, and sustainability goals. These capabilities are commonly aligned with a Maintain-to-Operate (M2O) business process.",
+        "summary": "Asset Management and Sustainability Manager in Dynamics 365 help organizations manage physical assets, maintenance operations, reliability, environmental performance, and sustainability goals. These capabilities are commonly aligned with a Maintain-to-Operate (M2O) business process.",
+        "htmlDecoded": false
+      },
+      "source": {
+        "rowNumber": 95,
+        "id": "68506"
+      }
+    },
+    {
+      "workItemId": 68445,
+      "workItemCode": null,
+      "title": "WS-18 - Nonconformance & corrective action",
+      "displayTitle": "WS-18 - Nonconformance & corrective action",
+      "workItemType": "Workshop",
+      "state": "New",
+      "parent": {
+        "workItemId": 68372
+      },
+      "relatedLinkCount": 1,
+      "areaPath": {
+        "raw": "Day 2 IT Program\\HeartStream\\Workshop",
+        "segments": [
+          "Day 2 IT Program",
+          "HeartStream",
+          "Workshop"
+        ]
+      },
+      "iterationPath": {
+        "raw": "Day 2 IT Program\\Sprint 0",
+        "segments": [
+          "Day 2 IT Program",
+          "Sprint 0"
+        ]
+      },
+      "description": {
+        "plainText": "Nonconformance & Corrective Action: Manages the identification, investigation, and resolution of quality issues related to products, processes, or materials. It supports documenting nonconformances, performing root-cause analysis, implementing corrective actions, and monitoring outcomes to improve quality, ensure compliance, and prevent recurring issues.",
+        "summary": "Nonconformance & Corrective Action: Manages the identification, investigation, and resolution of quality issues related to products, processes, or materials. It supports documenting nonconformances, performing root-cause analysis, implementing corrective actions, and monitoring outcomes to improve quality, ensure comp…",
+        "htmlDecoded": true
+      },
+      "source": {
+        "rowNumber": 96,
+        "id": "68445"
+      }
+    },
+    {
+      "workItemId": 68461,
+      "workItemCode": null,
+      "title": "WS-17 - Production scheduling\nMake-to-stock & make-to-order",
+      "displayTitle": "WS-17 - Production scheduling\nMake-to-stock & make-to-order",
+      "workItemType": "Workshop",
+      "state": "New",
+      "parent": {
+        "workItemId": 68372
+      },
+      "relatedLinkCount": 1,
+      "areaPath": {
+        "raw": "Day 2 IT Program\\HeartStream\\Workshop",
+        "segments": [
+          "Day 2 IT Program",
+          "HeartStream",
+          "Workshop"
+        ]
+      },
+      "iterationPath": {
+        "raw": "Day 2 IT Program\\Sprint 0",
+        "segments": [
+          "Day 2 IT Program",
+          "Sprint 0"
+        ]
+      },
+      "description": {
+        "plainText": "Production Control in Dynamics 365 Supply Chain Management (SCM) manages the end-to-end manufacturing process that converts raw materials and components into finished goods and delivers them to customers. It is a core capability within the Inventory-to-Deliver (I2D) business process.",
+        "summary": "Production Control in Dynamics 365 Supply Chain Management (SCM) manages the end-to-end manufacturing process that converts raw materials and components into finished goods and delivers them to customers. It is a core capability within the Inventory-to-Deliver (I2D) business process.",
+        "htmlDecoded": false
+      },
+      "source": {
+        "rowNumber": 97,
+        "id": "68461"
+      }
+    },
+    {
+      "workItemId": 68437,
+      "workItemCode": null,
+      "title": "WS-17 - Production planning\nSupply planning",
+      "displayTitle": "WS-17 - Production planning\nSupply planning",
+      "workItemType": "Workshop",
+      "state": "New",
+      "parent": {
+        "workItemId": 68372
+      },
+      "relatedLinkCount": 1,
+      "areaPath": {
+        "raw": "Day 2 IT Program\\HeartStream\\Workshop",
+        "segments": [
+          "Day 2 IT Program",
+          "HeartStream",
+          "Workshop"
+        ]
+      },
+      "iterationPath": {
+        "raw": "Day 2 IT Program\\Sprint 0",
+        "segments": [
+          "Day 2 IT Program",
+          "Sprint 0"
+        ]
+      },
+      "description": {
+        "plainText": "D365 SCM Production Control, Inventory to Deliver, Production Planning & Supply Planning: Dynamics 365 Supply Chain Management enables organizations to plan, schedule, and control production activities while ensuring optimal inventory availability and efficient order fulfillment. It supports production planning and supply planning by balancing demand, inventory, capacity, procurement, and manufacturing resources to optimize production schedules, maintain stock levels, reduce supply chain disruptions, and ensure products are delivered to customers on time.",
+        "summary": "D365 SCM Production Control, Inventory to Deliver, Production Planning & Supply Planning: Dynamics 365 Supply Chain Management enables organizations to plan, schedule, and control production activities while ensuring optimal inventory availability and efficient order fulfillment. It supports production planning and su…",
+        "htmlDecoded": true
+      },
+      "source": {
+        "rowNumber": 98,
+        "id": "68437"
+      }
+    },
+    {
+      "workItemId": 68444,
+      "workItemCode": null,
+      "title": "WS-17 - Inventory & production alignment\nBOM & production optimization",
+      "displayTitle": "WS-17 - Inventory & production alignment\nBOM & production optimization",
+      "workItemType": "Workshop",
+      "state": "New",
+      "parent": {
+        "workItemId": 68372
+      },
+      "relatedLinkCount": 1,
+      "areaPath": {
+        "raw": "Day 2 IT Program\\HeartStream\\Workshop",
+        "segments": [
+          "Day 2 IT Program",
+          "HeartStream",
+          "Workshop"
+        ]
+      },
+      "iterationPath": {
+        "raw": "Day 2 IT Program\\Sprint 0",
+        "segments": [
+          "Day 2 IT Program",
+          "Sprint 0"
+        ]
+      },
+      "description": {
+        "plainText": "Inventory & Production Alignment: Ensures inventory levels, material availability, and production schedules are synchronized with demand and supply requirements, enabling efficient manufacturing operations, minimizing stock shortages, and supporting on-time order fulfillment.\n\nBOM & Production Optimization: Streamlines the management and optimization of Bills of Materials (BOMs) and production processes to improve resource utilization, reduce costs, enhance product quality, and increase overall manufacturing efficiency.",
+        "summary": "Inventory & Production Alignment: Ensures inventory levels, material availability, and production schedules are synchronized with demand and supply requirements, enabling efficient manufacturing operations, minimizing stock shortages, and supporting on-time order fulfillment.",
+        "htmlDecoded": true
+      },
+      "source": {
+        "rowNumber": 99,
+        "id": "68444"
+      }
+    },
+    {
+      "workItemId": 68422,
+      "workItemCode": null,
+      "title": "WS-16 - Sales forecast mgmt\nSafety stock planning\nDemand forecasting\nForecast accuracy & AI analytics",
+      "displayTitle": "WS-16 - Sales forecast mgmt\nSafety stock planning\nDemand forecasting\nForecast accuracy & AI analytics",
+      "workItemType": "Workshop",
+      "state": "New",
+      "parent": {
+        "workItemId": 68372
+      },
+      "relatedLinkCount": 1,
+      "areaPath": {
+        "raw": "Day 2 IT Program\\HeartStream\\Workshop",
+        "segments": [
+          "Day 2 IT Program",
+          "HeartStream",
+          "Workshop"
+        ]
+      },
+      "iterationPath": {
+        "raw": "Day 2 IT Program\\Sprint 0",
+        "segments": [
+          "Day 2 IT Program",
+          "Sprint 0"
+        ]
+      },
+      "description": {
+        "plainText": "Sales Forecast Management\n\nManages the creation, review, and alignment of sales forecasts to support planning accuracy, resource allocation, and business decision-making.\n\nSafety Stock Planning\n\nDetermines and maintains optimal inventory buffer levels to minimize stockouts, ensure product availability, and balance inventory carrying costs.\n\nDemand Forecasting\n\nAnalyzes historical trends, market signals, and business inputs to predict future customer demand and support effective supply and production planning.\n\nForecast Accuracy & AI Analytics\n\nMonitors forecast performance and leverages AI-driven analytics to improve forecasting accuracy, identify trends, and enhance planning decisions",
+        "summary": "Sales Forecast Management",
+        "htmlDecoded": true
+      },
+      "source": {
+        "rowNumber": 100,
+        "id": "68422"
+      }
+    },
+    {
+      "workItemId": 68421,
+      "workItemCode": null,
+      "title": "WS-15 - Traceability & Batch/serial tracking",
+      "displayTitle": "WS-15 - Traceability & Batch/serial tracking",
+      "workItemType": "Workshop",
+      "state": "New",
+      "parent": {
+        "workItemId": 68372
+      },
+      "relatedLinkCount": 1,
+      "areaPath": {
+        "raw": "Day 2 IT Program\\HeartStream\\Workshop",
+        "segments": [
+          "Day 2 IT Program",
+          "HeartStream",
+          "Workshop"
+        ]
+      },
+      "iterationPath": {
+        "raw": "Day 2 IT Program\\Sprint 0",
+        "segments": [
+          "Day 2 IT Program",
+          "Sprint 0"
+        ]
+      },
+      "description": {
+        "plainText": "Traceability & Batch/Serial Tracking\n\nManages end-to-end product traceability by tracking materials, components, and finished goods through batch and serial numbers across the supply chain. This enables product genealogy, quality control, regulatory compliance, recall management, and visibility into inventory and product movement throughout the lifecycle.",
+        "summary": "Traceability & Batch/Serial Tracking",
+        "htmlDecoded": true
+      },
+      "source": {
+        "rowNumber": 101,
+        "id": "68421"
+      }
+    },
+    {
+      "workItemId": 68455,
+      "workItemCode": null,
+      "title": "WS-14 - Procurement mgmt",
+      "displayTitle": "WS-14 - Procurement mgmt",
+      "workItemType": "Workshop",
+      "state": "New",
+      "parent": {
+        "workItemId": 68372
+      },
+      "relatedLinkCount": 1,
+      "areaPath": {
+        "raw": "Day 2 IT Program\\HeartStream\\Workshop",
+        "segments": [
+          "Day 2 IT Program",
+          "HeartStream",
+          "Workshop"
+        ]
+      },
+      "iterationPath": {
+        "raw": "Day 2 IT Program\\Sprint 0",
+        "segments": [
+          "Day 2 IT Program",
+          "Sprint 0"
+        ]
+      },
+      "description": {
+        "plainText": "Procure-to-Pay (P2P) lifecycle, ensuring materials, products, and services are sourced efficiently, purchased at the right cost, and delivered when needed.\nD365 SCM Procurement & Sourcing, Record to Report & Procurement Management: Supports the end-to-end procurement lifecycle, including supplier sourcing, vendor management, purchasing, contract compliance, and procurement operations. It integrates procurement activities with financial processes to ensure accurate recording of purchasing transactions, cost control, supplier performance management, and timely financial reporting within the record-to-report framework.",
+        "summary": "Procure-to-Pay (P2P) lifecycle, ensuring materials, products, and services are sourced efficiently, purchased at the right cost, and delivered when needed. D365 SCM Procurement & Sourcing, Record to Report & Procurement Management: Supports the end-to-end procurement lifecycle, including supplier sourcing, vendor mana…",
+        "htmlDecoded": true
+      },
+      "source": {
+        "rowNumber": 102,
+        "id": "68455"
+      }
+    },
+    {
+      "workItemId": 68514,
+      "workItemCode": null,
+      "title": "WS-14 - Landed cost mgmt",
+      "displayTitle": "WS-14 - Landed cost mgmt",
+      "workItemType": "Workshop",
+      "state": "New",
+      "parent": {
+        "workItemId": 68372
+      },
+      "relatedLinkCount": 1,
+      "areaPath": {
+        "raw": "Day 2 IT Program\\HeartStream\\Workshop",
+        "segments": [
+          "Day 2 IT Program",
+          "HeartStream",
+          "Workshop"
+        ]
+      },
+      "iterationPath": {
+        "raw": "Day 2 IT Program\\Sprint 0",
+        "segments": [
+          "Day 2 IT Program",
+          "Sprint 0"
+        ]
+      },
+      "description": {
+        "plainText": "Procurement & Sourcing in Dynamics 365 Supply Chain Management (SCM) manages the complete Source-to-Pay (S2P) process, from identifying sourcing needs and selecting suppliers through purchasing, receiving goods, invoice processing, and supplier payment.",
+        "summary": "Procurement & Sourcing in Dynamics 365 Supply Chain Management (SCM) manages the complete Source-to-Pay (S2P) process, from identifying sourcing needs and selecting suppliers through purchasing, receiving goods, invoice processing, and supplier payment.",
+        "htmlDecoded": true
+      },
+      "source": {
+        "rowNumber": 103,
+        "id": "68514"
+      }
+    },
+    {
+      "workItemId": 68443,
+      "workItemCode": null,
+      "title": "WS-12 - Employee benefit accounting\nFinancial data coordination\nIntercompany consolidation",
+      "displayTitle": "WS-12 - Employee benefit accounting\nFinancial data coordination\nIntercompany consolidation",
+      "workItemType": "Workshop",
+      "state": "New",
+      "parent": {
+        "workItemId": 68372
+      },
+      "relatedLinkCount": 1,
+      "areaPath": {
+        "raw": "Day 2 IT Program\\HeartStream\\Workshop",
+        "segments": [
+          "Day 2 IT Program",
+          "HeartStream",
+          "Workshop"
+        ]
+      },
+      "iterationPath": {
+        "raw": "Day 2 IT Program\\Sprint 0",
+        "segments": [
+          "Day 2 IT Program",
+          "Sprint 0"
+        ]
+      },
+      "description": {
+        "plainText": "Consolidations & Financial Reporting is a core component of the Record-to-Report (R2R) process in Dynamics 365 Finance. It combines financial data from multiple legal entities, performs eliminations and adjustments, and produces enterprise-wide financial statements and management reports.",
+        "summary": "Consolidations & Financial Reporting is a core component of the Record-to-Report (R2R) process in Dynamics 365 Finance. It combines financial data from multiple legal entities, performs eliminations and adjustments, and produces enterprise-wide financial statements and management reports.",
+        "htmlDecoded": true
+      },
+      "source": {
+        "rowNumber": 104,
+        "id": "68443"
+      }
+    },
+    {
+      "workItemId": 68499,
+      "workItemCode": null,
+      "title": "WS-12 - Balance sheet consolidation",
+      "displayTitle": "WS-12 - Balance sheet consolidation",
+      "workItemType": "Workshop",
+      "state": "New",
+      "parent": {
+        "workItemId": 68372
+      },
+      "relatedLinkCount": 1,
+      "areaPath": {
+        "raw": "Day 2 IT Program\\HeartStream\\Workshop",
+        "segments": [
+          "Day 2 IT Program",
+          "HeartStream",
+          "Workshop"
+        ]
+      },
+      "iterationPath": {
+        "raw": "Day 2 IT Program\\Sprint 0",
+        "segments": [
+          "Day 2 IT Program",
+          "Sprint 0"
+        ]
+      },
+      "description": {
+        "plainText": "Consolidations & Financial Reporting in Dynamics 365 Finance is the final stage of the Record-to-Report (R2R) process. It combines financial data across legal entities, performs eliminations and adjustments, and produces statutory and management financial reports used by executives, auditors, regulators, and stakeholders.",
+        "summary": "Consolidations & Financial Reporting in Dynamics 365 Finance is the final stage of the Record-to-Report (R2R) process. It combines financial data across legal entities, performs eliminations and adjustments, and produces statutory and management financial reports used by executives, auditors, regulators, and stakehold…",
+        "htmlDecoded": true
+      },
+      "source": {
+        "rowNumber": 105,
+        "id": "68499"
+      }
+    },
+    {
+      "workItemId": 68442,
+      "workItemCode": null,
+      "title": "WS-11 - Intercompanysetup & data mgmt",
+      "displayTitle": "WS-11 - Intercompanysetup & data mgmt",
+      "workItemType": "Workshop",
+      "state": "New",
+      "parent": {
+        "workItemId": 68372
+      },
+      "relatedLinkCount": 1,
+      "areaPath": {
+        "raw": "Day 2 IT Program\\HeartStream\\Workshop",
+        "segments": [
+          "Day 2 IT Program",
+          "HeartStream",
+          "Workshop"
+        ]
+      },
+      "iterationPath": {
+        "raw": "Day 2 IT Program\\Sprint 0",
+        "segments": [
+          "Day 2 IT Program",
+          "Sprint 0"
+        ]
+      },
+      "description": {
+        "plainText": "Intercompany Accounting in Dynamics 365 Finance manages financial and operational transactions between legal entities within the same organization. It automates due-to/due-from entries, intercompany sales and purchases, cost allocations, and consolidated financial reporting.",
+        "summary": "Intercompany Accounting in Dynamics 365 Finance manages financial and operational transactions between legal entities within the same organization. It automates due-to/due-from entries, intercompany sales and purchases, cost allocations, and consolidated financial reporting.",
+        "htmlDecoded": false
+      },
+      "source": {
+        "rowNumber": 106,
+        "id": "68442"
+      }
+    },
+    {
+      "workItemId": 68494,
+      "workItemCode": null,
+      "title": "WS-10 - Project lifecycle mgmt",
+      "displayTitle": "WS-10 - Project lifecycle mgmt",
+      "workItemType": "Workshop",
+      "state": "New",
+      "parent": {
+        "workItemId": 68372
+      },
+      "relatedLinkCount": 1,
+      "areaPath": {
+        "raw": "Day 2 IT Program\\HeartStream\\Workshop",
+        "segments": [
+          "Day 2 IT Program",
+          "HeartStream",
+          "Workshop"
+        ]
+      },
+      "iterationPath": {
+        "raw": "Day 2 IT Program\\Sprint 0",
+        "segments": [
+          "Day 2 IT Program",
+          "Sprint 0"
+        ]
+      },
+      "description": {
+        "plainText": "D365 Project Management & Accounting (Project Operations in the broader D365 suite) manages the complete lifecycle of customer projects, from project planning and resource assignment through time and expense capture, billing, revenue recognition, and profitability reporting.\n\nThe business process is commonly referred to as Project-to-Profit (P2P).",
+        "summary": "D365 Project Management & Accounting (Project Operations in the broader D365 suite) manages the complete lifecycle of customer projects, from project planning and resource assignment through time and expense capture, billing, revenue recognition, and profitability reporting.",
+        "htmlDecoded": true
+      },
+      "source": {
+        "rowNumber": 107,
+        "id": "68494"
+      }
+    },
+    {
+      "workItemId": 68498,
+      "workItemCode": null,
+      "title": "WS-09 - Inventory valuation",
+      "displayTitle": "WS-09 - Inventory valuation",
+      "workItemType": "Workshop",
+      "state": "New",
+      "parent": {
+        "workItemId": 68372
+      },
+      "relatedLinkCount": 1,
+      "areaPath": {
+        "raw": "Day 2 IT Program\\HeartStream\\Workshop",
+        "segments": [
+          "Day 2 IT Program",
+          "HeartStream",
+          "Workshop"
+        ]
+      },
+      "iterationPath": {
+        "raw": "Day 2 IT Program\\Sprint 0",
+        "segments": [
+          "Day 2 IT Program",
+          "Sprint 0"
+        ]
+      },
+      "description": {
+        "plainText": "Cost Accounting in Dynamics 365 Finance enables organizations to collect, allocate, analyze, and report costs across departments, business units, products, projects, and operations. It is a key component of the Record-to-Report (R2R) process because it provides management insight into profitability, operational efficiency, and cost control.",
+        "summary": "Cost Accounting in Dynamics 365 Finance enables organizations to collect, allocate, analyze, and report costs across departments, business units, products, projects, and operations. It is a key component of the Record-to-Report (R2R) process because it provides management insight into profitability, operational effici…",
+        "htmlDecoded": false
+      },
+      "source": {
+        "rowNumber": 108,
+        "id": "68498"
+      }
+    },
+    {
+      "workItemId": 68460,
+      "workItemCode": null,
+      "title": "WS-08 - Asset transaction mgmt",
+      "displayTitle": "WS-08 - Asset transaction mgmt",
+      "workItemType": "Workshop",
+      "state": "New",
+      "parent": {
+        "workItemId": 68372
+      },
+      "relatedLinkCount": 1,
+      "areaPath": {
+        "raw": "Day 2 IT Program\\HeartStream\\Workshop",
+        "segments": [
+          "Day 2 IT Program",
+          "HeartStream",
+          "Workshop"
+        ]
+      },
+      "iterationPath": {
+        "raw": "Day 2 IT Program\\Sprint 0",
+        "segments": [
+          "Day 2 IT Program",
+          "Sprint 0"
+        ]
+      },
+      "description": {
+        "plainText": "Acquire-to-Dispose (A2D) is the end-to-end lifecycle of a fixed asset in Dynamics 365 Finance, from purchasing or creating the asset through depreciation, maintenance, and final disposal.",
+        "summary": "Acquire-to-Dispose (A2D) is the end-to-end lifecycle of a fixed asset in Dynamics 365 Finance, from purchasing or creating the asset through depreciation, maintenance, and final disposal.",
+        "htmlDecoded": false
+      },
+      "source": {
+        "rowNumber": 109,
+        "id": "68460"
+      }
+    },
+    {
+      "workItemId": 68473,
+      "workItemCode": null,
+      "title": "WS-07 - Discount & settlement provisions",
+      "displayTitle": "WS-07 - Discount & settlement provisions",
+      "workItemType": "Workshop",
+      "state": "New",
+      "parent": {
+        "workItemId": 68372
+      },
+      "relatedLinkCount": 1,
+      "areaPath": {
+        "raw": "Day 2 IT Program\\HeartStream\\Workshop",
+        "segments": [
+          "Day 2 IT Program",
+          "HeartStream",
+          "Workshop"
+        ]
+      },
+      "iterationPath": {
+        "raw": "Day 2 IT Program\\Sprint 0",
+        "segments": [
+          "Day 2 IT Program",
+          "Sprint 0"
+        ]
+      },
+      "description": {
+        "plainText": "Credit & Collections in Dynamics 365 Finance helps organizations manage customer credit risk, monitor outstanding receivables, accelerate collections, and improve cash flow. It is a critical component of the Record-to-Report (R2R) process because it directly impacts Accounts Receivable, working capital, bad debt exposure, and financial reporting.",
+        "summary": "Credit & Collections in Dynamics 365 Finance helps organizations manage customer credit risk, monitor outstanding receivables, accelerate collections, and improve cash flow. It is a critical component of the Record-to-Report (R2R) process because it directly impacts Accounts Receivable, working capital, bad debt expos…",
+        "htmlDecoded": true
+      },
+      "source": {
+        "rowNumber": 110,
+        "id": "68473"
+      }
+    },
+    {
+      "workItemId": 68483,
+      "workItemCode": null,
+      "title": "WS-07 - Delinquent account mgmt\nCredit risk mgmt",
+      "displayTitle": "WS-07 - Delinquent account mgmt\nCredit risk mgmt",
+      "workItemType": "Workshop",
+      "state": "New",
+      "parent": {
+        "workItemId": 68372
+      },
+      "relatedLinkCount": 1,
+      "areaPath": {
+        "raw": "Day 2 IT Program\\HeartStream\\Workshop",
+        "segments": [
+          "Day 2 IT Program",
+          "HeartStream",
+          "Workshop"
+        ]
+      },
+      "iterationPath": {
+        "raw": "Day 2 IT Program\\Sprint 0",
+        "segments": [
+          "Day 2 IT Program",
+          "Sprint 0"
+        ]
+      },
+      "description": {
+        "plainText": "Credit & Collections in Dynamics 365 Finance manages customer credit risk, credit limits, collections activities, dispute management, bad debt exposure, and cash recovery. It is an important component of the Record-to-Report (R2R) process because it improves cash flow, reduces financial risk, and ensures accurate receivable reporting.",
+        "summary": "Credit & Collections in Dynamics 365 Finance manages customer credit risk, credit limits, collections activities, dispute management, bad debt exposure, and cash recovery. It is an important component of the Record-to-Report (R2R) process because it improves cash flow, reduces financial risk, and ensures accurate rece…",
+        "htmlDecoded": true
+      },
+      "source": {
+        "rowNumber": 111,
+        "id": "68483"
+      }
+    },
+    {
+      "workItemId": 68508,
+      "workItemCode": null,
+      "title": "WS-06 - Sundry & miscellaneous AR",
+      "displayTitle": "WS-06 - Sundry & miscellaneous AR",
+      "workItemType": "Workshop",
+      "state": "New",
+      "parent": {
+        "workItemId": 68372
+      },
+      "relatedLinkCount": 1,
+      "areaPath": {
+        "raw": "Day 2 IT Program\\HeartStream\\Workshop",
+        "segments": [
+          "Day 2 IT Program",
+          "HeartStream",
+          "Workshop"
+        ]
+      },
+      "iterationPath": {
+        "raw": "Day 2 IT Program\\Sprint 0",
+        "segments": [
+          "Day 2 IT Program",
+          "Sprint 0"
+        ]
+      },
+      "description": {
+        "plainText": "Sundry & Miscellaneous AR\n\nHandles non-standard accounts receivable transactions, miscellaneous customer charges, credits, adjustments, and collections to maintain accurate financial records.",
+        "summary": "Sundry & Miscellaneous AR",
+        "htmlDecoded": true
+      },
+      "source": {
+        "rowNumber": 112,
+        "id": "68508"
+      }
+    },
+    {
+      "workItemId": 68472,
+      "workItemCode": null,
+      "title": "WS-06 - Customer billing & revenue recognition\nCash application",
+      "displayTitle": "WS-06 - Customer billing & revenue recognition\nCash application",
+      "workItemType": "Workshop",
+      "state": "New",
+      "parent": {
+        "workItemId": 68372
+      },
+      "relatedLinkCount": 1,
+      "areaPath": {
+        "raw": "Day 2 IT Program\\HeartStream\\Workshop",
+        "segments": [
+          "Day 2 IT Program",
+          "HeartStream",
+          "Workshop"
+        ]
+      },
+      "iterationPath": {
+        "raw": "Day 2 IT Program\\Sprint 0",
+        "segments": [
+          "Day 2 IT Program",
+          "Sprint 0"
+        ]
+      },
+      "description": {
+        "plainText": "Customer Billing & Revenue Recognition\n\nManages customer invoicing, billing schedules, and revenue recognition processes to ensure accurate billing, compliance with accounting standards, and timely recognition of revenue across products, services, subscriptions, and contractual agreements.\n\nCash Application\n\nAutomates the matching and application of customer payments to open invoices, improving accounts receivable accuracy, reducing manual effort, accelerating collections, and enhancing cash flow visibility",
+        "summary": "Customer Billing & Revenue Recognition",
+        "htmlDecoded": true
+      },
+      "source": {
+        "rowNumber": 113,
+        "id": "68472"
+      }
+    },
+    {
+      "workItemId": 68453,
+      "workItemCode": null,
+      "title": "WS-05 - AP setup & vendor mgmt",
+      "displayTitle": "WS-05 - AP setup & vendor mgmt",
+      "workItemType": "Workshop",
+      "state": "New",
+      "parent": {
+        "workItemId": 68372
+      },
+      "relatedLinkCount": 1,
+      "areaPath": {
+        "raw": "Day 2 IT Program\\HeartStream\\Workshop",
+        "segments": [
+          "Day 2 IT Program",
+          "HeartStream",
+          "Workshop"
+        ]
+      },
+      "iterationPath": {
+        "raw": "Day 2 IT Program\\Sprint 0",
+        "segments": [
+          "Day 2 IT Program",
+          "Sprint 0"
+        ]
+      },
+      "description": {
+        "plainText": "Finance, Record to Report, Accounts Payable Setup & Vendor Management: Supports the configuration and management of accounts payable processes and vendor master data, including vendor onboarding, invoice processing, payment management, and compliance controls. It ensures accurate financial transactions, efficient supplier management, timely payments, and reliable financial reporting within the record-to-report process.",
+        "summary": "Finance, Record to Report, Accounts Payable Setup & Vendor Management: Supports the configuration and management of accounts payable processes and vendor master data, including vendor onboarding, invoice processing, payment management, and compliance controls. It ensures accurate financial transactions, efficient supp…",
+        "htmlDecoded": true
+      },
+      "source": {
+        "rowNumber": 114,
+        "id": "68453"
+      }
+    },
+    {
+      "workItemId": 68487,
+      "workItemCode": null,
+      "title": "WS-04 - Liquidity & cash equivalents",
+      "displayTitle": "WS-04 - Liquidity & cash equivalents",
+      "workItemType": "Workshop",
+      "state": "New",
+      "parent": {
+        "workItemId": 68372
+      },
+      "relatedLinkCount": 1,
+      "areaPath": {
+        "raw": "Day 2 IT Program\\HeartStream\\Workshop",
+        "segments": [
+          "Day 2 IT Program",
+          "HeartStream",
+          "Workshop"
+        ]
+      },
+      "iterationPath": {
+        "raw": "Day 2 IT Program\\Sprint 0",
+        "segments": [
+          "Day 2 IT Program",
+          "Sprint 0"
+        ]
+      },
+      "description": {
+        "plainText": "Cash & Bank Management in Dynamics 365 Finance manages the organization's cash positions, bank accounts, payment processing, bank reconciliations, liquidity, and cash forecasting. It is a critical component of the Record-to-Report (R2R) process because it ensures that financial transactions are accurately recorded, reconciled, and reported.",
+        "summary": "Cash & Bank Management in Dynamics 365 Finance manages the organization's cash positions, bank accounts, payment processing, bank reconciliations, liquidity, and cash forecasting. It is a critical component of the Record-to-Report (R2R) process because it ensures that financial transactions are accurately recorded, re…",
+        "htmlDecoded": true
+      },
+      "source": {
+        "rowNumber": 115,
+        "id": "68487"
+      }
+    },
+    {
+      "workItemId": 68420,
+      "workItemCode": null,
+      "title": "WS-03 - Tax audit & compliance\nTax code configuration\nTax provision\nTax engine configuration\nWitholding tax & statutory journals",
+      "displayTitle": "WS-03 - Tax audit & compliance\nTax code configuration\nTax provision\nTax engine configuration\nWitholding tax & statutory journals",
+      "workItemType": "Workshop",
+      "state": "New",
+      "parent": {
+        "workItemId": 68372
+      },
+      "relatedLinkCount": 1,
+      "areaPath": {
+        "raw": "Day 2 IT Program\\HeartStream\\Workshop",
+        "segments": [
+          "Day 2 IT Program",
+          "HeartStream",
+          "Workshop"
+        ]
+      },
+      "iterationPath": {
+        "raw": "Day 2 IT Program\\Sprint 0",
+        "segments": [
+          "Day 2 IT Program",
+          "Sprint 0"
+        ]
+      },
+      "description": {
+        "plainText": "Tax / Tax Calculation Service in Dynamics 365 Finance manages indirect tax determination, calculation, posting, reporting, and compliance for financial and operational transactions. It supports the Record-to-Report (R2R) process by ensuring taxes are calculated accurately and properly reflected in the General Ledger and statutory reporting.",
+        "summary": "Tax / Tax Calculation Service in Dynamics 365 Finance manages indirect tax determination, calculation, posting, reporting, and compliance for financial and operational transactions. It supports the Record-to-Report (R2R) process by ensuring taxes are calculated accurately and properly reflected in the General Ledger a…",
+        "htmlDecoded": false
+      },
+      "source": {
+        "rowNumber": 116,
+        "id": "68420"
+      }
+    },
+    {
+      "workItemId": 68497,
+      "workItemCode": null,
+      "title": "WS-02 - Period end processing",
+      "displayTitle": "WS-02 - Period end processing",
+      "workItemType": "Workshop",
+      "state": "New",
+      "parent": {
+        "workItemId": 68372
+      },
+      "relatedLinkCount": 1,
+      "areaPath": {
+        "raw": "Day 2 IT Program\\HeartStream\\Workshop",
+        "segments": [
+          "Day 2 IT Program",
+          "HeartStream",
+          "Workshop"
+        ]
+      },
+      "iterationPath": {
+        "raw": "Day 2 IT Program\\Sprint 0",
+        "segments": [
+          "Day 2 IT Program",
+          "Sprint 0"
+        ]
+      },
+      "description": {
+        "plainText": "General Ledger (GL) is the financial system of record in Dynamics 365 Finance. It serves as the central repository for all financial transactions and is the foundation of the Record-to-Report (R2R) process, supporting accounting, financial close, consolidation, and reporting.\n\nPeriod End Processing\n Manages month-end and year-end closing activities, including reconciliations, adjustments, and financial reviews, to ensure accurate and timely financial reporting.",
+        "summary": "General Ledger (GL) is the financial system of record in Dynamics 365 Finance. It serves as the central repository for all financial transactions and is the foundation of the Record-to-Report (R2R) process, supporting accounting, financial close, consolidation, and reporting.",
+        "htmlDecoded": false
+      },
+      "source": {
+        "rowNumber": 117,
+        "id": "68497"
+      }
+    },
+    {
+      "workItemId": 68412,
+      "workItemCode": null,
+      "title": "WS-02 - Payroll integration\nJornal automation\nCost & revenue allocation",
+      "displayTitle": "WS-02 - Payroll integration\nJornal automation\nCost & revenue allocation",
+      "workItemType": "Workshop",
+      "state": "New",
+      "parent": {
+        "workItemId": 68372
+      },
+      "relatedLinkCount": 1,
+      "areaPath": {
+        "raw": "Day 2 IT Program\\HeartStream\\Workshop",
+        "segments": [
+          "Day 2 IT Program",
+          "HeartStream",
+          "Workshop"
+        ]
+      },
+      "iterationPath": {
+        "raw": "Day 2 IT Program\\Sprint 0",
+        "segments": [
+          "Day 2 IT Program",
+          "Sprint 0"
+        ]
+      },
+      "description": {
+        "plainText": "General Ledger (GL) is the central accounting engine in Dynamics 365 Finance and serves as the foundation of the Record-to-Report (R2R) process. It collects financial transactions from all business processes, maintains the chart of accounts, supports financial close activities, and produces financial statements and management reports.\n\nPayroll Integration\n Integrates payroll transactions with the general ledger to ensure accurate recording of employee compensation, taxes, benefits, and related financial postings.\n\nJournal Automation\n Automates journal entry creation, validation, and posting processes to improve efficiency, reduce manual effort, and enhance financial controls.\n\nCost & Revenue Allocation\n Allocates shared costs and revenues across organizational entities based on predefined rules, improving profitability analysis and financial transparency.",
+        "summary": "General Ledger (GL) is the central accounting engine in Dynamics 365 Finance and serves as the foundation of the Record-to-Report (R2R) process. It collects financial transactions from all business processes, maintains the chart of accounts, supports financial close activities, and produces financial statements and ma…",
+        "htmlDecoded": true
+      },
+      "source": {
+        "rowNumber": 118,
+        "id": "68412"
+      }
+    },
+    {
+      "workItemId": 68403,
+      "workItemCode": null,
+      "title": "WS-02 -  Accrual & deferral management\n Ledger allocation",
+      "displayTitle": "WS-02 -  Accrual & deferral management\n Ledger allocation",
+      "workItemType": "Workshop",
+      "state": "New",
+      "parent": {
+        "workItemId": 68372
+      },
+      "relatedLinkCount": 1,
+      "areaPath": {
+        "raw": "Day 2 IT Program\\HeartStream\\Workshop",
+        "segments": [
+          "Day 2 IT Program",
+          "HeartStream",
+          "Workshop"
+        ]
+      },
+      "iterationPath": {
+        "raw": "Day 2 IT Program\\Sprint 0",
+        "segments": [
+          "Day 2 IT Program",
+          "Sprint 0"
+        ]
+      },
+      "description": {
+        "plainText": "General Ledger (GL) is the central accounting engine in Dynamics 365 Finance and serves as the foundation of the Record-to-Report (R2R) process. It collects financial transactions from all business processes, maintains the chart of accounts, supports financial close activities, and produces financial statements and management reports.Accrual & Deferral Management\n\nAutomates the recognition and timing of expenses and revenues through accrual and deferral processes, ensuring accurate financial reporting and compliance with accounting standards.\n\nLedger Allocation\n Distributes costs, revenues, and balances across business units, departments, or cost centers to support accurate financial analysis and reporting.",
+        "summary": "General Ledger (GL) is the central accounting engine in Dynamics 365 Finance and serves as the foundation of the Record-to-Report (R2R) process. It collects financial transactions from all business processes, maintains the chart of accounts, supports financial close activities, and produces financial statements and ma…",
+        "htmlDecoded": true
+      },
+      "source": {
+        "rowNumber": 119,
+        "id": "68403"
+      }
+    },
+    {
+      "workItemId": 68371,
+      "workItemCode": null,
+      "title": "WS-01 - PIM Core Module Operations",
+      "displayTitle": "WS-01 - PIM Core Module Operations",
+      "workItemType": "Workshop",
+      "state": "In Review",
+      "parent": {
+        "workItemId": 68372
+      },
+      "relatedLinkCount": 1,
+      "areaPath": {
+        "raw": "Day 2 IT Program\\HeartStream\\Workshop",
+        "segments": [
+          "Day 2 IT Program",
+          "HeartStream",
+          "Workshop"
+        ]
+      },
+      "iterationPath": {
+        "raw": "Day 2 IT Program\\Sprint 0",
+        "segments": [
+          "Day 2 IT Program",
+          "Sprint 0"
+        ]
+      },
+      "description": {
+        "plainText": "<div><span>Within D365 SCM Product Information Management (PIM), Design to Retire refers specifically to the lifecycle management of a product's master data, from the moment a product is conceived until it is discontinued and removed from active use.<br></span><div><br> </div><div>PIM Core Module Operations<br> </div><div><br> </div><div>Manages the overall Product Information Management (PIM) process, ensuring product data is centralized, governed, maintained, and distributed consistently across business systems and channels.<br> </div><div><br> </div><div>Product Master Data Setup<br> </div><div><br> </div><div>Establishes and maintains core product master data, including product definitions, identifiers, dimensions, and classifications, to support accurate business operations and reporting.<br> </div><div><br> </div><div>Product Variants & Configurations<br> </div><div><br> </div><div>Manages product variants and configurable options, enabling businesses to define and control different product models, features, and customization requirements.<br> </div><div><br> </div><div>Product Attributes & Categories<br> </div><div><br> </div><div>Organizes products using standardized attributes, specifications, and category structures to improve product classification, searchability, and data consistency.<br> </div><div><br> </div><div>Product Release & Lifecycle<br> </div><div><br> </div><span>Controls the process of releasing products and managing them through their lifecycle stages, from introduction and updates to retirement, ensuring compliance and operational readiness.</span><br> </div>",
+        "summary": "<div><span>Within D365 SCM Product Information Management (PIM), Design to Retire refers specifically to the lifecycle management of a product's master data, from the moment a product is conceived until it is discontinued and removed from active use.<br></span><div><br> </div><div>PIM Core Module Operations<br> </div>…",
+        "htmlDecoded": true
+      },
+      "source": {
+        "rowNumber": 120,
+        "id": "68371"
+      }
+    },
+    {
+      "workItemId": 68372,
+      "workItemCode": null,
+      "title": "Workshop",
+      "displayTitle": "Workshop",
+      "workItemType": "Epic",
+      "state": "In Progress",
+      "parent": {
+        "workItemId": null
+      },
+      "relatedLinkCount": 119,
+      "areaPath": {
+        "raw": "Day 2 IT Program\\HeartStream\\Workshop",
+        "segments": [
+          "Day 2 IT Program",
+          "HeartStream",
+          "Workshop"
+        ]
+      },
+      "iterationPath": {
+        "raw": "Day 2 IT Program\\Sprint 0",
+        "segments": [
+          "Day 2 IT Program",
+          "Sprint 0"
+        ]
+      },
+      "description": {
+        "plainText": "",
+        "summary": "",
+        "htmlDecoded": false
+      },
+      "source": {
+        "rowNumber": 121,
+        "id": "68372"
+      }
+    },
+    {
+      "workItemId": 68664,
+      "workItemCode": null,
+      "title": "CRM",
+      "displayTitle": "CRM",
+      "workItemType": "Epic",
+      "state": "New",
+      "parent": {
+        "workItemId": null
+      },
+      "relatedLinkCount": 0,
+      "areaPath": {
+        "raw": "Day 2 IT Program\\HeartStream\\Workshop",
+        "segments": [
+          "Day 2 IT Program",
+          "HeartStream",
+          "Workshop"
+        ]
+      },
+      "iterationPath": {
+        "raw": "Day 2 IT Program\\Sprint 0",
+        "segments": [
+          "Day 2 IT Program",
+          "Sprint 0"
+        ]
+      },
+      "description": {
+        "plainText": "",
+        "summary": "",
+        "htmlDecoded": false
+      },
+      "source": {
+        "rowNumber": 122,
+        "id": "68664"
+      }
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+# Template for docs/intake/user-story-csv-rulebook.yaml (copy and fill on bootstrap only)
+
+schema_version: "1.0"
+rulebook_id: "<ado-user-story-csv-vN>"
+status: Active
+
+provenance:
+  behavior_id: RB-USCSV-001
+  statement: "<what this rulebook governs>"
+  source_path: "factory-setup"
+  source_locator: "<setup_csv filename — one-time only>"
+  confidence: explicit
+
+csv:
+  encoding: utf-8
+  delimiter: ","
+  quote_char: '"'
+  line_ending: "\n"
+  include_header_row: true
+  column_order: []  # exact ADO export headers in order
+
+work_item_types:
+  allowed: []
+  transcript_output_default: User Story
+
+user_story:
+  description_format:
+    pattern: "As a <role>, I need to <need>, so that <benefit>."
+
+acceptance_criteria:
+  column: Acceptance Criteria
+  format:
+    - "Use ASCII '- ' hyphen bullets per outcome (one per line)"
+
+priority_conventions:
+  present_in_reference_export: false
+  rule: "Do not add Priority columns unless rulebook superseded."
+
+story_point_conventions:
+  present_in_reference_export: false
+  rule: "Do not add Story Points unless rulebook superseded."
+
+required_fields:
+  User Story:
+    required: [Work Item Type, Title, Description, Acceptance Criteria]
+
+validation:
+  script: scripts/validate-user-story-csv.py
+  rulebook_pointer: docs/intake/user-story-csv-rulebook.yaml
+
+output_paths:
+  working_csv: "artifacts/intake/.pipeline/<YYYY-MM-DD>-user-stories-working.csv"
+  public_xlsx: "artifacts/intake/<YYYY-MM-DD>-user-stories-from-transcript.xlsx"
+  invest_scorecard: "artifacts/intake/<YYYY-MM-DD>-invest-scorecard.csv"

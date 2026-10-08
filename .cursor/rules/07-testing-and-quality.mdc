@@ -1,0 +1,19 @@
+---
+description: Testing and quality gates
+alwaysApply: true
+---
+
+# Testing and Quality
+
+- Map tests to FR/BR or story AC IDs — not to informal chat.
+- Write `docs/test-cases.md` (case bodies with full steps + expected) **and** `docs/test-matrix.md` (index). **br-coverage-validator** (quality-agent) is the only writer of `docs/test-cases-br-coverage.md`. Implementers must not stamp PASS. The matrix is not a substitute for case bodies.
+- Classify BR Type with `.cursor/templates/br-tc-taxonomy.md` before authoring negatives. Zero generic step placeholders (`.cursor/templates/generic-step-denylist.md`). Completeness + step-quality validators must PASS on expand. Heuristic bulk generators are forbidden. Do **not** generate or refresh `docs/test/manual/**` on default expand.
+- **PASS + human Approved** (`docs/quality/test-package-review.md`) required before `/run-tests` script generation or execution. FAIL → stay in expand; do not request approval. Silence on coverage gate file = FAIL for expand Done.
+- Slice tests on implement-*, apply-requirements, fix-issue, generate-python-module, and validate-api-endpoints still require coverage PASS before **that slice’s** scripts. Expand coverage PASS does **not** block implement-api/implement-ui (ASSUMPTION-PCC-002).
+- Line coverage floor from `config.yaml` `quality_gates.api_unit_line_coverage_min`.
+- Positive and mandatory negative API cases (taxonomy: Constraint and Condition-gate).
+- Quality-agent and eval-agent MUST NOT lower gates or disable JaCoCo/coverage checks. Quality-agent must not waive companion step-quality.
+- Eval-agent runs only via `/run-eval`. It must emit a completeness ledger. Silence (no case, skipped always-on safety family, skipped agent-result check) is a finding, not a pass. Incremental evals still include L1-04, L1-05, L1-08, L1-09, L4-03. Cannot waive P0/P1.
+- `/review-changes` requires a `/run-eval` completeness ledger; do not run eval-agent inside review.
+- Untrusted intake (Figma, Excel, CSV) must pass `scripts/intake-safety-scan.py` before case authoring. Trusted BRD/stories/OpenAPI skip scan.
+- CODEOWNERS (or equivalent) must protect gate files (`pom.xml`, CI workflows).

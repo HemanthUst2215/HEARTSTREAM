@@ -1,0 +1,12 @@
+---
+description: Compliance evidence — requirement to production artifact
+globs: "docs/compliance/**"
+alwaysApply: false
+---
+
+# Compliance
+
+- Map each in-scope control or requirement to production evidence (artifact path + locator).
+- Session decisions live in `docs/harness/decisions.md` (append-only).
+- Do not mark compliant without cited evidence. Unowned gaps stay Open DQ.
+- `/compliance-check` (security-agent mode `compliance`) must enforce this rule.
