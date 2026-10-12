@@ -1,9 +1,0 @@
----
-description: SLO and golden signals
-alwaysApply: false
----
-
-# Observability
-
-SLI/SLO, golden signals, runbooks wired to alerts.
-Measured performance evidence: `/performance-test` (sre-agent mode `perf`). Cite command/result files; do not invent baselines.

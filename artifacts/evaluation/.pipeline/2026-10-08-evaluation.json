@@ -1,0 +1,819 @@
+{
+  "schema_version": "1.0",
+  "status": "Draft \u2014 Pending Method Review",
+  "assumption_id": "ASSUMPTION-USEVAL-001",
+  "inputs": {
+    "manual_csv": "WS-68405.csv",
+    "generated_csv": "artifacts/intake/2026-10-08-user-stories-from-transcript-v2.xlsx",
+    "transcript_path": "01. Sales - CE Record to Report UST Led Workshop-20260928-en-US.docx"
+  },
+  "matches": [
+    {
+      "match_id": "M-001",
+      "manual_key": "manual-US-31",
+      "manual_title": "Receive Partner Planning data points from ZINFI",
+      "generated_keys": [
+        "generated-US-26"
+      ],
+      "generated_titles": "Capture required account-planning data points in CRM",
+      "match_type": "1:1",
+      "confidence": "high",
+      "transcript_refs": [
+        {
+          "locator": "40:43",
+          "excerpt": "the planning will be done in Zinfy and only required data points will be captured in Dynamics 365 for the partner account planning."
+        }
+      ]
+    },
+    {
+      "match_id": "M-002",
+      "manual_key": "manual-US-33",
+      "manual_title": "Assign Partners to Region and Legal Entity",
+      "generated_keys": [
+        "generated-US-22"
+      ],
+      "generated_titles": "Scope partner record visibility to originating legal entity",
+      "match_type": "1:1",
+      "confidence": "medium",
+      "transcript_refs": [
+        {
+          "locator": "28:47",
+          "excerpt": "any partner getting created in USA will be synced to USA company in CRM as well."
+        }
+      ]
+    },
+    {
+      "match_id": "M-003",
+      "manual_key": "manual-US-34",
+      "manual_title": "Make Synchronized Partner Data Read-Only",
+      "generated_keys": [
+        "generated-US-24"
+      ],
+      "generated_titles": "Enforce read-only partner record with approval-based edit exception",
+      "match_type": "1:1",
+      "confidence": "high",
+      "transcript_refs": [
+        {
+          "locator": "39:31",
+          "excerpt": "once the record Partner record gets created in Zinfy, successfully approved and flown to Dynamics, that will be read only for everyone."
+        }
+      ]
+    },
+    {
+      "match_id": "M-004",
+      "manual_key": "manual-US-35",
+      "manual_title": "Restrict Partner Visibility by Region",
+      "generated_keys": [
+        "generated-US-22",
+        "generated-US-23"
+      ],
+      "generated_titles": "Scope partner record visibility to originating legal entity; Assign single record owner with legal-entity-wide read visibility",
+      "match_type": "split",
+      "confidence": "high",
+      "transcript_refs": [
+        {
+          "locator": "28:04",
+          "excerpt": "And it is not to be shared with any other company or legal entity."
+        }
+      ]
+    },
+    {
+      "match_id": "M-005",
+      "manual_key": "manual-US-37",
+      "manual_title": "Synchronize Training and Certification Status",
+      "generated_keys": [
+        "generated-US-25"
+      ],
+      "generated_titles": "Sync partner training completion status to CRM",
+      "match_type": "1:1",
+      "confidence": "high",
+      "transcript_refs": [
+        {
+          "locator": "3:07:28",
+          "excerpt": "the status only the status will be captured in CRM for those training certifications and that will be synchronized to Dynamics."
+        }
+      ]
+    }
+  ],
+  "manual_only": [
+    {
+      "story_key": "manual-US-32",
+      "title": "Classify Partners by Business Model",
+      "rationale": "No generated story records stocking, non-stocking, manufacturer representative, just-in-time, or government/military partner classification. The transcript states those types.",
+      "transcript_refs": [
+        {
+          "locator": "43:17",
+          "excerpt": "stocking distributor, a non stocking distributor, a manufacturer's Rep and customer just in time distributor."
+        }
+      ]
+    },
+    {
+      "story_key": "manual-US-36",
+      "title": "Grant Approved Cross-Region Partner Access",
+      "rationale": "No generated story grants cross-region visibility. This transcript says a partner is not shared with another legal entity and, for now, is one partner per region.",
+      "transcript_refs": [
+        {
+          "locator": "28:41",
+          "excerpt": "For now we take it, it will be just one partner per region and as and when it creates, it will be 1 to one mapping."
+        }
+      ]
+    }
+  ],
+  "generated_only": [
+    {
+      "story_key": "generated-US-21",
+      "title": "Sync approved partner record from Zinfi to CRM only after onboarding is finalized",
+      "classification": "valid_extra",
+      "rationale": "Transcript says the partner moves into CRM after contract signature and required training. The manual CSV has no story for that gate.",
+      "transcript_refs": [
+        {
+          "locator": "24:37",
+          "excerpt": "once we reach a point where the contract is signed and any required training is completed and at that point that partner would be ready to move on to the next steps which would be syncing up into our systems."
+        }
+      ]
+    },
+    {
+      "story_key": "generated-US-27",
+      "title": "Create and distribute leads from CRM to partners via Zinfi",
+      "classification": "valid_extra",
+      "rationale": "Transcript says Heartstream sales or marketing creates leads in Dynamics and distributes them to partners. Not in the manual user-story rows.",
+      "transcript_refs": [
+        {
+          "locator": "49:37",
+          "excerpt": "the partner lead process is hot stream team or marketing team creating leads for the partners and assigning them to partners."
+        }
+      ]
+    },
+    {
+      "story_key": "generated-US-28",
+      "title": "Allow account managers to create and maintain their own leads",
+      "classification": "valid_extra",
+      "rationale": "Transcript says team members prospecting in their territories should enter and maintain their own leads rather than push that work to marketing.",
+      "transcript_refs": [
+        {
+          "locator": "52:53",
+          "excerpt": "we want them to have the ability to enter those leads and maintain their own funnel versus pushing that off on marketing"
+        }
+      ]
+    },
+    {
+      "story_key": "generated-US-29",
+      "title": "Allow partners to optionally register their own leads in Zinfi",
+      "classification": "noise",
+      "rationale": "The session close says partners do not directly create leads. An earlier span left partner-originated leads uncertain. The story states the capability as a need.",
+      "transcript_refs": [
+        {
+          "locator": "3:09:08",
+          "excerpt": "Partners do not directly create leads."
+        }
+      ]
+    },
+    {
+      "story_key": "generated-US-30",
+      "title": "Share opportunity notes and customer communication between partner and Heartstream users",
+      "classification": "valid_extra",
+      "rationale": "Transcript says both the distributor and Heartstream should add notes on the opportunity.",
+      "transcript_refs": [
+        {
+          "locator": "55:11",
+          "excerpt": "if the distributor speaks to the customer or we do, both sides should be able to add notes to the to the opportunity."
+        }
+      ]
+    },
+    {
+      "story_key": "generated-US-31",
+      "title": "Configure a global opportunity pipeline with standard stages",
+      "classification": "valid_extra",
+      "rationale": "Transcript says phase 1 begins as a global approach and that pipeline stages are configurable, with mandatory information before a user proceeds.",
+      "transcript_refs": [
+        {
+          "locator": "1:26:37",
+          "excerpt": "right now for the first phase, we are planning a global implementation."
+        }
+      ]
+    },
+    {
+      "story_key": "generated-US-32",
+      "title": "Prevent duplicate deal registration for the same customer opportunity",
+      "classification": "valid_extra",
+      "rationale": "Transcript says a second distributor should not work a professional deal that is already registered.",
+      "transcript_refs": [
+        {
+          "locator": "1:13:43",
+          "excerpt": "if it's the pro space, when they register, boom, right, It's just the one person."
+        }
+      ]
+    },
+    {
+      "story_key": "generated-US-33",
+      "title": "Flag an opportunity as a registered deal by product/solution category",
+      "classification": "valid_extra",
+      "rationale": "Transcript separates professional deals, which register to one distributor, from AED deals, where multiple distributors can work the same opportunity.",
+      "transcript_refs": [
+        {
+          "locator": "1:10:24",
+          "excerpt": "in the AED biz, we can have multiple distributors bidding on the same deal, in the professional space, it's different."
+        }
+      ]
+    },
+    {
+      "story_key": "generated-US-34",
+      "title": "Capture reseller sales-partner contract terms",
+      "classification": "valid_extra",
+      "rationale": "Transcript says contracts carry the partner's discounts and rebates, which can differ by product group or material.",
+      "transcript_refs": [
+        {
+          "locator": "2:19:30",
+          "excerpt": "the partner gets a certain percentual discount on the list price per and that can be different for each product group"
+        }
+      ]
+    },
+    {
+      "story_key": "generated-US-35",
+      "title": "Capture service-partner contract terms including spare-part discounts and SLA",
+      "classification": "valid_extra",
+      "rationale": "Transcript asks for SLA timelines on the service contract and for post-warranty contracts on a serial number.",
+      "transcript_refs": [
+        {
+          "locator": "1:53:29",
+          "excerpt": "What are the SLA timelines or agreements you have to adhere when a particular customer is to be catered that lies in this service contract."
+        }
+      ]
+    },
+    {
+      "story_key": "generated-US-36",
+      "title": "Enforce minimum and maximum contract duration by partner type",
+      "classification": "valid_extra",
+      "rationale": "Transcript says direct contracts go up to five years, distributor contracts seen in the region are one to three years, and the minimum is one year.",
+      "transcript_refs": [
+        {
+          "locator": "2:20:10",
+          "excerpt": "with direct contracts, we we go up to five years typically"
+        }
+      ]
+    },
+    {
+      "story_key": "generated-US-37",
+      "title": "Support mid-contract list price updates with notice period",
+      "classification": "valid_extra",
+      "rationale": "Transcript says list price can be indexed during the contract and a 60 day notice is typical before the new price applies.",
+      "transcript_refs": [
+        {
+          "locator": "2:18:53",
+          "excerpt": "typically in the contract there's a 60, typically a 60 day notice that we have to give them before the new prices go into effect."
+        }
+      ]
+    },
+    {
+      "story_key": "generated-US-38",
+      "title": "Share finalized contract and approvals with the partner in Zinfi",
+      "classification": "valid_extra",
+      "rationale": "Transcript says the final contract approval should be available in Zinfi for the partner.",
+      "transcript_refs": [
+        {
+          "locator": "1:50:45",
+          "excerpt": "the final approval should be available in Zenfi for the partners to refer to"
+        }
+      ]
+    },
+    {
+      "story_key": "generated-US-39",
+      "title": "Derive quote pricing from the partner's active contract",
+      "classification": "valid_extra",
+      "rationale": "Transcript says a partner quotation is bounded by the contract created for that partner.",
+      "transcript_refs": [
+        {
+          "locator": "2:04:27",
+          "excerpt": "he straightaway is bounded by the contract which we are creating for that particular partner."
+        }
+      ]
+    },
+    {
+      "story_key": "generated-US-40",
+      "title": "Route additional discount beyond contract through tiered approval",
+      "classification": "valid_extra",
+      "rationale": "Transcript says a discount inside the contract needs no approval, and larger discounts go to the partner account manager and then head of finance. The story's 'regional sales director' title is not in the transcript.",
+      "transcript_refs": [
+        {
+          "locator": "2:15:59",
+          "excerpt": "if it's within the contractual discount, no approval is needed."
+        }
+      ]
+    },
+    {
+      "story_key": "generated-US-41",
+      "title": "Allow quote creation without a full opportunity for low-value items",
+      "classification": "valid_extra",
+      "rationale": "Transcript says a quote for one battery or one case of paper should not require a full opportunity, and a shell opportunity was named.",
+      "transcript_refs": [
+        {
+          "locator": "2:39:36",
+          "excerpt": "I don't want people to have to create an opportunity against an account in order to quote 1 battery or one roll of paper."
+        }
+      ]
+    },
+    {
+      "story_key": "generated-US-42",
+      "title": "Convert approved quote into a confirmed sales order",
+      "classification": "valid_extra",
+      "rationale": "Transcript says the quote is the starting point to convert into an order toward Dynamics. The 'only an approved quote' gate is not stated.",
+      "transcript_refs": [
+        {
+          "locator": "2:02:23",
+          "excerpt": "I would like that they use the quote as a starting point to convert it into an order."
+        }
+      ]
+    },
+    {
+      "story_key": "generated-US-43",
+      "title": "Require Requested Delivery Date before fulfillment starts",
+      "classification": "valid_extra",
+      "rationale": "Transcript says the requested delivery date must be conveyed before fulfillment starts. A later span also asks for separate line items with different ship months.",
+      "transcript_refs": [
+        {
+          "locator": "2:44:26",
+          "excerpt": "requested delivery date RDD is to be conveyed before the fulfillment starts"
+        }
+      ]
+    },
+    {
+      "story_key": "generated-US-44",
+      "title": "Re-trigger approval on pricing or configuration revision, not on date-only changes",
+      "classification": "valid_extra",
+      "rationale": "Transcript says an RDD-only change does not need approval, and a configuration or pricing change goes through approval again.",
+      "transcript_refs": [
+        {
+          "locator": "2:49:07",
+          "excerpt": "if the change is only affecting the RDD date then the approval flow is not needed."
+        }
+      ]
+    },
+    {
+      "story_key": "generated-US-45",
+      "title": "Lock order from cancellation and edit after a defined fulfillment status",
+      "classification": "valid_extra",
+      "rationale": "Transcript says cancellation should be blocked in the application after a defined status such as build, package, or ship.",
+      "transcript_refs": [
+        {
+          "locator": "2:50:06",
+          "excerpt": "once we start to build or package or ship or whatever the situation is, we don't want someone to be able to cancel an order"
+        }
+      ]
+    },
+    {
+      "story_key": "generated-US-46",
+      "title": "Capture and provide required customs/shipment documents for applicable regions",
+      "classification": "valid_extra",
+      "rationale": "Transcript says partners who clear customs need the document set for the destination, including certificate of origin, packing list, and product sheets. 'Signed invoice' is not named.",
+      "transcript_refs": [
+        {
+          "locator": "2:53:02",
+          "excerpt": "especially for countries where the partner also needs to do the customs clearing of shipments."
+        }
+      ]
+    },
+    {
+      "story_key": "generated-US-47",
+      "title": "Create install base record on delivery for serialized hardware",
+      "classification": "valid_extra",
+      "rationale": "The session summary says the install base is created on delivery. The story's claim that the original order and ship-to are permanently retained is not in the transcript.",
+      "transcript_refs": [
+        {
+          "locator": "3:05:22",
+          "excerpt": "the install base is created on delivery I that's, that's the discussion we had."
+        }
+      ]
+    },
+    {
+      "story_key": "generated-US-48",
+      "title": "Allow partner-initiated install base location change request via Zinfi",
+      "classification": "valid_extra",
+      "rationale": "Transcript says the partner can raise a request to change install-base location and does not get direct edit access. Who applies the change was left open.",
+      "transcript_refs": [
+        {
+          "locator": "3:06:26",
+          "excerpt": "the partner can initiate a request to change these details, but the partner won't have the direct access to change this information"
+        }
+      ]
+    },
+    {
+      "story_key": "generated-US-49",
+      "title": "Synchronize partner-raised case escalation from Zinfi to CRM for triage",
+      "classification": "valid_extra",
+      "rationale": "Transcript says a partner escalates from Zinfi, the request synchronizes to CRM, and it is triaged. The detailed workflow was deferred.",
+      "transcript_refs": [
+        {
+          "locator": "3:08:06",
+          "excerpt": "the partner would raise a request from Zenfi itself and that will synchronize to CRM and further it will be triaged"
+        }
+      ]
+    }
+  ],
+  "metrics": [
+    {
+      "metric_id": "recall",
+      "owner": "coverage-analysis-evaluator",
+      "kind": "ratio",
+      "display": "71% (5/7)",
+      "score": 0.7142857142857143,
+      "na": false,
+      "evidence": [
+        {
+          "statement": "Five of seven manual user stories have a generated match: planning data points, region and legal entity, read-only partner data, regional visibility, and training status. Classify Partners by Business Model and Grant Approved Cross-Region Partner Access do not.",
+          "source_path": "WS-68405.csv",
+          "source_locator": "manual user-story rows 31-37",
+          "confidence": "explicit",
+          "transcript_refs": [
+            {
+              "locator": "manual user-story rows 31-37",
+              "excerpt": "stocking distributor, a non stocking distributor, a manufacturer's Rep and customer just in time distributor."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "metric_id": "precision",
+      "owner": "coverage-analysis-evaluator",
+      "kind": "ratio",
+      "display": "83% (5/6)",
+      "score": 0.8333333333333334,
+      "na": false,
+      "evidence": [
+        {
+          "statement": "Five generated stories match a manual story. One generated-only story is noise (partner-created leads, contradicted by the session close). Twenty-three generated-only stories are valid extras and are excluded from this denominator.",
+          "source_path": "01. Sales - CE Record to Report UST Led Workshop-20260928-en-US.docx",
+          "source_locator": "3:09:08",
+          "confidence": "explicit",
+          "transcript_refs": [
+            {
+              "locator": "3:09:08",
+              "excerpt": "Partners do not directly create leads."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "metric_id": "manual_only_stories",
+      "owner": "coverage-analysis-evaluator",
+      "kind": "count",
+      "display": "2",
+      "score": 2,
+      "na": false,
+      "evidence": [
+        {
+          "statement": "manual-US-32 Classify Partners by Business Model is stated at 43:17 and 43:47 and has no generated story. manual-US-36 Grant Approved Cross-Region Partner Access conflicts with 28:04 and 28:41, which keep one partner in one legal entity for now.",
+          "source_path": "01. Sales - CE Record to Report UST Led Workshop-20260928-en-US.docx",
+          "source_locator": "43:17",
+          "confidence": "explicit",
+          "transcript_refs": [
+            {
+              "locator": "43:17",
+              "excerpt": "stocking distributor, a non stocking distributor, a manufacturer's Rep and customer just in time distributor."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "metric_id": "generated_only_stories",
+      "owner": "coverage-analysis-evaluator",
+      "kind": "split",
+      "display": "23 valid extras, 1 noise",
+      "score": null,
+      "na": false,
+      "evidence": [
+        {
+          "statement": "Twenty-three generated stories state requirements this transcript records and the manual user-story rows do not. generated-US-29 is noise because the session close says partners do not directly create leads. Earlier lines (about 53:00 and 56:00) had left partner-originated leads uncertain; the close is the classification used here.",
+          "source_path": "01. Sales - CE Record to Report UST Led Workshop-20260928-en-US.docx",
+          "source_locator": "3:09:08",
+          "confidence": "explicit",
+          "transcript_refs": [
+            {
+              "locator": "3:09:08",
+              "excerpt": "Partners do not directly create leads."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "metric_id": "epic_agreement",
+      "owner": "epic-feature-mapping-evaluator",
+      "kind": "ratio",
+      "display": "0% (0/5)",
+      "score": 0,
+      "na": false,
+      "evidence": [
+        {
+          "statement": "All five matched manual stories sit under preceding Epic 67462 '02. B2B Direct Through Reseller' (manual row 30). Every generated user story's nearest preceding Epic is 67557 '03. B2B Direct Service & Solution Delivery' because the workbook lists all Epic rows, then all Feature rows, then all User Story rows. No matched pair has the same Epic id.",
+          "source_path": "artifacts/intake/2026-10-08-user-stories-from-transcript-v2.xlsx",
+          "source_locator": "AI workbook rows 3-5 then 21-49",
+          "confidence": "derived",
+          "transcript_refs": [
+            {
+              "locator": "AI workbook rows 3-5 then 21-49",
+              "excerpt": "Epic rows precede the feature block; the last epic remains the nearest preceding epic for every user story."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "metric_id": "feature_agreement",
+      "owner": "epic-feature-mapping-evaluator",
+      "kind": "ratio",
+      "display": "0% (0/5)",
+      "score": 0,
+      "na": false,
+      "evidence": [
+        {
+          "statement": "Generated User Story ID is the catalog Feature id (for example generated-US-26 ID 67505, generated-US-25 ID 67512). The manual epic row at row 30 clears the preceding Feature, and the manual User Story ID is the story id (81553, 81549, 81550, 81551, 81554), not a Feature id. Every matched pair has feature context on the generated side only, which the method counts as disagree.",
+          "source_path": "artifacts/intake/2026-10-08-user-stories-from-transcript-v2.xlsx",
+          "source_locator": "manual rows 30-37; AI story ID column",
+          "confidence": "derived",
+          "transcript_refs": [
+            {
+              "locator": "manual rows 30-37; AI story ID column",
+              "excerpt": "Feature context is one-sided on every matched pair."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "metric_id": "title_description_format_compliance",
+      "owner": "business-correctness-evaluator",
+      "kind": "ratio",
+      "display": "93% (27/29)",
+      "score": 0.9310344827586207,
+      "na": false,
+      "evidence": [
+        {
+          "statement": "Structural format_ok was 26 of 29. generated-US-41 still matches 'As a <role>, I need to ..., so that ...' once the comma inside 'e.g., one battery' is ignored, so that row is counted compliant. generated-US-28 and generated-US-44 start with 'As an' and miss the rulebook 'As a' pattern.",
+          "source_path": "docs/intake/user-story-csv-rulebook.yaml",
+          "source_locator": "user_story.description_format",
+          "confidence": "explicit",
+          "transcript_refs": [
+            {
+              "locator": "user_story.description_format",
+              "excerpt": "As a <role>, I need to <need>, so that <benefit>."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "metric_id": "role_specificity",
+      "owner": "business-correctness-evaluator",
+      "kind": "ratio",
+      "display": "100% (29/29)",
+      "score": 1,
+      "na": false,
+      "evidence": [
+        {
+          "statement": "No generated description uses the role 'user' or 'users' (ASSUMPTION-USEVAL-002). Twenty-six rows match the 'As a' capture. generated-US-28 names account manager and generated-US-44 names approver under 'As an'. generated-US-41 names a sales or partner user. Those three are specific business roles.",
+          "source_path": ".cursor/templates/user-story-evaluation-metrics.yaml",
+          "source_locator": "ASSUMPTION-USEVAL-002",
+          "confidence": "assumption",
+          "transcript_refs": [
+            {
+              "locator": "ASSUMPTION-USEVAL-002",
+              "excerpt": "A role is specific when it is not exactly user or users."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "metric_id": "acceptance_criteria_count",
+      "owner": "acceptance-criteria-evaluator",
+      "kind": "comparison",
+      "display": "Manual mean 0.86 (6 lines) \u00b7 Generated mean 2.72 (79 lines)",
+      "score": null,
+      "na": false,
+      "evidence": [
+        {
+          "statement": "A bullet is one non-empty line. Manual user stories have 6 such lines across 7 stories. Several manual cells glue multiple '\u2022' outcomes onto one line and the criteria text is shifted onto the next story. Generated stories have 79 lines, each starting with '- '.",
+          "source_path": "WS-68405.csv",
+          "source_locator": "Acceptance Criteria column",
+          "confidence": "derived",
+          "transcript_refs": [
+            {
+              "locator": "Acceptance Criteria column",
+              "excerpt": "Manual mean 0.86; generated mean 2.72."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "metric_id": "acceptance_criteria_quality",
+      "owner": "acceptance-criteria-evaluator",
+      "kind": "score",
+      "display": "84",
+      "score": 84,
+      "na": false,
+      "evidence": [
+        {
+          "statement": "Generated criteria are ASCII '- ' bullets and most state one observable outcome tied to a transcript span. The score is the mean of per-story judgments: most stories 90, with lower scores where a bullet is a follow-up note rather than an outcome (generated-US-26, US-41, US-47, US-48) or names an approver the transcript does not name (generated-US-40, regional sales director). Mean 84.",
+          "source_path": "01. Sales - CE Record to Report UST Led Workshop-20260928-en-US.docx",
+          "source_locator": "2:15:59 and 2:16:13",
+          "confidence": "explicit",
+          "transcript_refs": [
+            {
+              "locator": "2:15:59 and 2:16:13",
+              "excerpt": "additional discount until a certain threshold then there's an approver needed. ... going up to our head of finance"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "metric_id": "negative_boundary_coverage",
+      "owner": "acceptance-criteria-evaluator",
+      "kind": "ratio",
+      "display": "100% (17/17)",
+      "score": 1,
+      "na": false,
+      "evidence": [
+        {
+          "statement": "Seventeen generated stories have a transcript span that states a negative or a limit, and each of those stories includes that limit in Acceptance Criteria. Examples: no CRM record until approval (24:37), not visible in another legal entity (28:04), read-only for everyone (39:31), no approval inside the contract discount (2:15:59), one to three years and up to five years (2:20:10), 60 day notice (2:18:53), RDD before fulfillment (2:44:26), date-only change does not re-approve (2:49:07), no cancel after build/package/ship (2:50:06), partner cannot directly edit install base (3:06:26).",
+          "source_path": "01. Sales - CE Record to Report UST Led Workshop-20260928-en-US.docx",
+          "source_locator": "39:31",
+          "confidence": "explicit",
+          "transcript_refs": [
+            {
+              "locator": "39:31",
+              "excerpt": "that will be read only for everyone."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "metric_id": "granularity",
+      "owner": "story-matching-evaluator",
+      "kind": "ratio",
+      "display": "86% (25/29)",
+      "score": 0.8620689655172413,
+      "na": false,
+      "evidence": [
+        {
+          "statement": "Four generated stories stack more than one capability: generated-US-22 (visibility plus one-partner-one-entity), generated-US-23 (owner, who can view, and who can edit), generated-US-24 (read-only plus a new warehouse as a new record), generated-US-43 (mandatory RDD plus different dates on split lines). The other 25 state one capability.",
+          "source_path": "01. Sales - CE Record to Report UST Led Workshop-20260928-en-US.docx",
+          "source_locator": "28:41 and 39:31",
+          "confidence": "explicit",
+          "transcript_refs": [
+            {
+              "locator": "28:41 and 39:31",
+              "excerpt": "one partner per region; read only for everyone; a new warehouse is another record."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "metric_id": "hallucination_rate",
+      "owner": "hallucination-detection-evaluator",
+      "kind": "ratio",
+      "display": "24% (7/29)",
+      "score": 0.2413793103448276,
+      "na": false,
+      "evidence": [
+        {
+          "statement": "Seven generated stories contain at least one claim this transcript does not support: generated-US-23 says the owner can edit, while 39:31 says the record is read-only for everyone; generated-US-29 states partner-created leads as a need, while 3:09:08 says partners do not directly create leads; generated-US-40 names a regional sales director, while 2:16:24 and 2:16:13 name the partner account manager and head of finance; generated-US-42 limits conversion to an approved quote, while 2:02:23 says to convert the quote without that gate; generated-US-45 adds a clear rejection message the transcript does not state; generated-US-46 lists a signed invoice the customs span does not name (2:53:53 names certificate of origin); generated-US-47 says the original order and ship-to are permanently retained, which is not stated at 3:05:22.",
+          "source_path": "01. Sales - CE Record to Report UST Led Workshop-20260928-en-US.docx",
+          "source_locator": "39:31",
+          "confidence": "explicit",
+          "transcript_refs": [
+            {
+              "locator": "39:31",
+              "excerpt": "that will be read only for everyone."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "open_items": [
+    "ASSUMPTION-USEVAL-001 scoring method is pending acceptance. Role specificity also uses ASSUMPTION-USEVAL-002.",
+    "Epic Agreement and Feature Agreement are 0% because of workbook shape: the AI file lists every Epic, then every Feature, then every User Story, and manual story IDs are story ids. The generated story ID is the catalog Feature id.",
+    "Manual Acceptance Criteria cells use HTML and '\u2022', and several criteria sit on the following story's row. The count metric uses non-empty lines, so it understates the manual criteria.",
+    "Partner-originated leads are uncertain earlier in the transcript and denied at the close (3:09:08). generated-US-29 is noise from the close.",
+    "WS-68405.csv line 54 matched the intake scanner ('override rules') inside an Issue mitigation sentence. The operator supplied that file again as the manual baseline. The sentence was treated as data."
+  ],
+  "comparison": [
+    {
+      "name": "User stories",
+      "manual": "7",
+      "ai": "29",
+      "better": "",
+      "note": "Count is not a quality score. The AI file covers more of the workshop."
+    },
+    {
+      "name": "Title and description format",
+      "manual": "86% (6/7)",
+      "ai": "93% (27/29)",
+      "better": "ai",
+      "note": "Rulebook pattern As a \u2026, I need to \u2026, so that \u2026. Manual miss: Classify Partners (HTML in the description). AI misses: two stories that start As an."
+    },
+    {
+      "name": "Role specificity",
+      "manual": "29% (2/7)",
+      "ai": "100% (29/29)",
+      "better": "ai",
+      "note": "ASSUMPTION-USEVAL-002: the role user or users is not specific. Five manual stories use user. Every AI story names a business role."
+    },
+    {
+      "name": "Acceptance criteria count",
+      "manual": "0.86 mean (6 lines)",
+      "ai": "2.72 mean (79 lines)",
+      "better": "ai",
+      "note": "A bullet is one non-empty line. Manual cells glue several \u2022 outcomes onto one line, and several criteria sit on the next story."
+    },
+    {
+      "name": "Acceptance criteria quality",
+      "manual": "22",
+      "ai": "84",
+      "better": "ai",
+      "note": "Manual score 22: criteria are shifted onto the neighboring story and do not use ASCII '- ' bullets. AI score 84: hyphen bullets, most of them one observable outcome."
+    },
+    {
+      "name": "Negative and boundary coverage",
+      "manual": "0% (0/4)",
+      "ai": "100% (17/17)",
+      "better": "ai",
+      "note": "Four manual stories have a transcript limit (only agreed planning points, read-only, other legal entity hidden, training status only). None of those limits are in that story's own Acceptance Criteria cell. Seventeen AI stories include the limit the transcript states."
+    },
+    {
+      "name": "Granularity",
+      "manual": "86% (6/7)",
+      "ai": "86% (25/29)",
+      "better": "tie",
+      "note": "Manual stacks two classifications in Classify Partners. AI stacks two capabilities in four stories (legal-entity scope, ownership, read-only plus warehouse, RDD plus split dates)."
+    },
+    {
+      "name": "Hallucination rate",
+      "manual": "14% (1/7)",
+      "ai": "24% (7/29)",
+      "better": "manual",
+      "note": "Lower is stronger. Manual: Grant Approved Cross-Region Partner Access contradicts 28:04 and 28:41. AI: seven stories add a claim the transcript does not state."
+    },
+    {
+      "name": "Transcript-supported stories",
+      "manual": "6 of 7",
+      "ai": "28 of 29",
+      "better": "ai",
+      "note": "Manual cross-region access is not supported. AI partner-created leads are noise against the close at 3:09:08. The other AI stories state a requirement the transcript records. Seven of those also add an unsupported detail."
+    },
+    {
+      "name": "Recall",
+      "manual": "7-story baseline",
+      "ai": "71% (5/7)",
+      "better": "",
+      "note": "AI matches planning data, region and legal entity, read-only, regional visibility, and training status. It misses partner classification and does not grant cross-region access."
+    },
+    {
+      "name": "Precision",
+      "manual": "Baseline",
+      "ai": "83% (5/6)",
+      "better": "",
+      "note": "Denominator is matched AI stories plus noise. Twenty-three valid extras are excluded."
+    },
+    {
+      "name": "Manual-only / AI-only",
+      "manual": "2 manual-only",
+      "ai": "23 valid extras, 1 noise",
+      "better": "",
+      "note": "Manual-only: partner classification (in the transcript) and cross-region access (not in this transcript). AI-only valid extras include leads, deals, contracts, quotes, orders, install base, and case escalation."
+    },
+    {
+      "name": "Epic agreement",
+      "manual": "Epic 67462 on all 7",
+      "ai": "Epic 67557 on all 29",
+      "better": "",
+      "note": "0% (0/5). The AI workbook lists every epic, then every feature, then every story, so the last epic is the nearest preceding epic for every story."
+    },
+    {
+      "name": "Feature agreement",
+      "manual": "Story IDs, no feature on the row",
+      "ai": "Story ID is the catalog feature ID",
+      "better": "",
+      "note": "0% (0/5). The manual epic row clears the preceding feature. Manual IDs are story IDs, not feature IDs."
+    }
+  ],
+  "conclusion": {
+    "label": "Conclusion",
+    "headline": "The AI story set is the stronger set for this transcript.",
+    "winner_line": "AI is better than the manual set for the 28 September 2026 Sales CE Record to Report workshop.",
+    "reasons": [
+      "The transcript states leads, deal registration, contracts, quoting, orders, fulfillment, install base, and case escalation. The manual file has none of those stories. The AI file states them, and 23 of those stories are valid extras.",
+      "AI is stronger on format (93% vs 86%), role specificity (100% vs 29%), acceptance-criteria quality (84 vs 22), and negative or boundary coverage (100% vs 0%).",
+      "Granularity is tied at 86%.",
+      "Manual is stronger only on hallucination rate: 14% (1 of 7) versus 24% (7 of 29). The manual miss is the cross-region access story. The AI misses are extra claims inside otherwise supported stories, plus partner-created leads."
+    ],
+    "limit": "This verdict is Draft until ASSUMPTION-USEVAL-001 is accepted. It judges the story text against this transcript. It does not judge delivery effort or whether a story is ready to implement."
+  }
+}

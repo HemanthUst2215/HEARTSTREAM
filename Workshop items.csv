@@ -1,4 +1,4 @@
-﻿State,ID,Work Item Type,Title,Description,Parent,Related Link Count,Area Path,Iteration Path
+State,ID,Work Item Type,Title,Description,Parent,Related Link Count,Area Path,Iteration Path
 New,68411,Workshop,WS-CE-40 - Web store / e-commerce,"Customer Service – Service Resolution: Reseller Portal
 
 Provides a self-service portal for resellers to access support services, submit and track cases, manage service requests, view warranties and entitlements, access knowledge resources, and collaborate with support teams, improving service efficiency, transparency, and partner experience.",68372,1,Day 2 IT Program\HeartStream\Workshop,Day 2 IT Program\Sprint 0
@@ -10,34 +10,34 @@ Supports collaborative planning and alignment with partners by managing joint bu
 New,68405,Workshop,WS-CE-37 - Distributor & Reseller Integration,"ZINFI PRM (Partner Relationship Management)
 
 Manages the end-to-end partner ecosystem by supporting partner onboarding, recruitment, enablement, business planning, lead distribution, deal registration, incentive management, training, collaboration, and performance tracking. It helps organizations strengthen partner engagement, improve channel sales effectiveness, and drive partner-led revenue growth through a centralized partner management platform.",68372,1,Day 2 IT Program\HeartStream\Workshop,Day 2 IT Program\Sprint 0
-New,68515,Workshop,WS-CE-36 - API & integration governance,"API &amp; Integration Governance
+New,68515,Workshop,WS-CE-36 - API & integration governance,"API & Integration Governance
 
 Oversees the design, security, monitoring, and management of APIs and system integrations to ensure reliable data exchange, compliance, and enterprise-wide interoperability.",68372,1,Day 2 IT Program\HeartStream\Workshop,Day 2 IT Program\Sprint 0
-New,68513,Workshop,WS-CE-34 - B2C IFU distribution & support mgmt,"B2C IFU Distribution &amp; Support Management
+New,68513,Workshop,WS-CE-34 - B2C IFU distribution & support mgmt,"B2C IFU Distribution & Support Management
 
 Coordinates the distribution of Instructions for Use (IFU) materials and related customer support activities to ensure proper product usage, compliance, and customer satisfaction.",68372,1,Day 2 IT Program\HeartStream\Workshop,Day 2 IT Program\Sprint 0
 New,68511,Workshop,WS-CE-33 - Knowledge mgmt lifecycle governance,"Knowledge Management Lifecycle Governance
 
 Manages the creation, review, publication, maintenance, and retirement of knowledge assets to ensure accurate and accessible service information.",68372,1,Day 2 IT Program\HeartStream\Workshop,Day 2 IT Program\Sprint 0
-New,68510,Workshop,WS-CE-32 - Service analytics & operational insights,"Service Analytics &amp; Operational Insights
+New,68510,Workshop,WS-CE-32 - Service analytics & operational insights,"Service Analytics & Operational Insights
 
 Provides reporting, performance metrics, and analytical insights into service operations to support decision-making, optimize processes, and improve service outcomes.",68372,1,Day 2 IT Program\HeartStream\Workshop,Day 2 IT Program\Sprint 0
-New,68507,Workshop,WS-CE-31 - Custoemr feedback & requirements capture,"Customer Feedback &amp; Requirements Capture
+New,68507,Workshop,WS-CE-31 - Custoemr feedback & requirements capture,"Customer Feedback & Requirements Capture
 
 Collects, tracks, and analyzes customer feedback, needs, and requirements to support product improvements, service enhancements, and informed business decisions.",68372,1,Day 2 IT Program\HeartStream\Workshop,Day 2 IT Program\Sprint 0
 New,68505,Workshop,WS-CE-30 & WS-CE 30-A - Fieldd change order (FCO) lifecycle mgmt,"Field Change Order (FCO) Lifecycle Management
 
 Controls the planning, approval, implementation, and tracking of field change orders to ensure product modifications are executed consistently and compliantly.",68372,1,Day 2 IT Program\HeartStream\Workshop,Day 2 IT Program\Sprint 0
-New,68504,Workshop,WS-CE-29 - Preventive maintenance planning & execution,"Preventive Maintenance Planning &amp; Execution
+New,68504,Workshop,WS-CE-29 - Preventive maintenance planning & execution,"Preventive Maintenance Planning & Execution
 
 Plans and executes proactive maintenance activities to reduce equipment downtime, improve asset reliability, and extend product life.e",68372,1,Day 2 IT Program\HeartStream\Workshop,Day 2 IT Program\Sprint 0
-New,68503,Workshop,"WS-CE-28-A - Returns, exchanges & order exception mgmt","Returns, Exchanges &amp; Order Exception Management
+New,68503,Workshop,"WS-CE-28-A - Returns, exchanges & order exception mgmt","Returns, Exchanges & Order Exception Management
 
 Manages customer returns, product exchanges, and order exceptions to ensure efficient resolution, accurate processing, and a positive customer experience.",68372,1,Day 2 IT Program\HeartStream\Workshop,Day 2 IT Program\Sprint 0
-New,68502,Workshop,WS-CE-28 - Service parts request & exception mgmt,"Service Parts Request &amp; Exception Management
+New,68502,Workshop,WS-CE-28 - Service parts request & exception mgmt,"Service Parts Request & Exception Management
 
 Coordinates service parts ordering, allocation, and exception handling to ensure timely availability of components needed for service activities.",68372,1,Day 2 IT Program\HeartStream\Workshop,Day 2 IT Program\Sprint 0
-New,68501,Workshop,WS-CE-27 - Field service schedudling & communications,"Field Service Scheduling &amp; Communications
+New,68501,Workshop,WS-CE-27 - Field service schedudling & communications,"Field Service Scheduling & Communications
 
 Optimizes field technician scheduling, dispatching, and customer communications to improve resource utilization and service delivery effectiveness.",68372,1,Day 2 IT Program\HeartStream\Workshop,Day 2 IT Program\Sprint 0
 New,68496,Workshop,WS-CE-26 - Service contract lifecycle mgmt,"Service Contract Lifecycle Management
@@ -46,7 +46,7 @@ Manages service contracts from creation and renewal through modification and ter
 New,68495,Workshop,WS-CE-25 - Warranty claims mgmt,"Warranty Claims Management
 
 Administers warranty claim submission, validation, approval, and settlement processes to ensure accurate and efficient claim resolution",68372,1,Day 2 IT Program\HeartStream\Workshop,Day 2 IT Program\Sprint 0
-New,68493,Workshop,WS-CE-24 - Product release readiness & launch governance,"Product Release Readiness &amp; Launch Governance
+New,68493,Workshop,WS-CE-24 - Product release readiness & launch governance,"Product Release Readiness & Launch Governance
 
 Ensures products are validated, approved, and operationally ready for launch by managing release criteria, stakeholder approvals, compliance checks, and launch governance activities.",68372,1,Day 2 IT Program\HeartStream\Workshop,Day 2 IT Program\Sprint 0
 New,68491,Workshop,"WS-CE-23-A - Service quality, compliance & performance mgmt","2B Service Delivery Orchestration
@@ -64,58 +64,58 @@ Manages the complete lifecycle of business customer support requests, enabling s
 New,68486,Workshop,WS-CE-20-A - B2C service request-to-resolution orchestration,"B2C Service Request-to-Resolution Orchestration
 
 Coordinates the end-to-end resolution of consumer service requests, ensuring a seamless customer experience from issue reporting through resolution.",68372,1,Day 2 IT Program\HeartStream\Workshop,Day 2 IT Program\Sprint 0
-New,68485,Workshop,WS-CE-20 - B2B/B2C support segmentation & routing,"B2B/B2C Support Segmentation &amp; Routing
+New,68485,Workshop,WS-CE-20 - B2B/B2C support segmentation & routing,"B2B/B2C Support Segmentation & Routing
 
 Intelligently segments and routes support requests based on customer type, issue complexity, and service requirements to ensure efficient and appropriate handling.",68372,1,Day 2 IT Program\HeartStream\Workshop,Day 2 IT Program\Sprint 0
-New,68482,Workshop,WS-CE-19 - Customer 360 & interaction timeline mgmt,"Customer 360 &amp; Interaction Timeline Management
+New,68482,Workshop,WS-CE-19 - Customer 360 & interaction timeline mgmt,"Customer 360 & Interaction Timeline Management
 
 Provides a unified view of customer information and historical interactions, enabling service teams to deliver personalized, context-driven support experiences.",68372,1,Day 2 IT Program\HeartStream\Workshop,Day 2 IT Program\Sprint 0
-New,68478,Workshop,WS-CE-18-A - AI-enabled self-service & agent assistance,"AI-Enabled Self-Service &amp; Agent Assistance
+New,68478,Workshop,WS-CE-18-A - AI-enabled self-service & agent assistance,"AI-Enabled Self-Service & Agent Assistance
 
 Leverages AI-powered tools to provide customer self-service capabilities and real-time agent assistance, improving issue resolution speed, service quality, and support efficiency.",68372,1,Day 2 IT Program\HeartStream\Workshop,Day 2 IT Program\Sprint 0
-New,68477,Workshop,WS-CE-18 - Warranty registration & entitlement activation,"Warranty Registration &amp; Entitlement Activation
+New,68477,Workshop,WS-CE-18 - Warranty registration & entitlement activation,"Warranty Registration & Entitlement Activation
 
 Manages product warranty registration and entitlement activation processes, ensuring customers receive the appropriate coverage, support rights, and service benefits throughout the product lifecycle.",68372,1,Day 2 IT Program\HeartStream\Workshop,Day 2 IT Program\Sprint 0
 New,68471,Workshop,WS-CE-17-A - Omnichannel routing & bot-to-agent handoff,"Customer Service – Service to Resolution:
- Provides intelligent omnichannel case routing and seamless bot-to-agent handoff to ensure customers are connected to the right support resource quickly, improving resolution efficiency and customer experience.
-Omnichannel Routing &amp; Bot-to-Agent Handoff
+Provides intelligent omnichannel case routing and seamless bot-to-agent handoff to ensure customers are connected to the right support resource quickly, improving resolution efficiency and customer experience.
+Omnichannel Routing & Bot-to-Agent Handoff
 
 Intelligently routes customer interactions across channels such as phone, email, chat, social media, and self-service portals while using skills, availability, and business rules to connect customers with the most appropriate support resource. It also enables seamless escalation from virtual agents or chatbots to live agents with full conversation context, improving resolution speed, service efficiency, and customer experience.",68372,1,Day 2 IT Program\HeartStream\Workshop,Day 2 IT Program\Sprint 0
 New,68470,Workshop,"WS-CE-17 - Case automation, SLAs, & complaint handling integration","Customer Service – Service to Resolution:
  Automates case management, tracks SLA compliance, and integrates complaint handling to enable efficient, timely, and consistent customer issue resolution.",68372,1,Day 2 IT Program\HeartStream\Workshop,Day 2 IT Program\Sprint 0
 New,68466,Workshop,WS-CE-16 - Entitlements & service provisioning orchestration,"Service-to-Resolution is the end-to-end process in Dynamics 365 Customer Service that manages customer issues, inquiries, complaints, and support requests from initial contact through successful resolution and case closure.
 
-Entitlements &amp; Service Provisioning Orchestration: Manages customer entitlements, service rights, and access provisioning by ensuring customers receive the appropriate products, services, support levels, and benefits based on their agreements. It automates the coordination of service activation, access management, and fulfillment processes, improving service delivery efficiency, compliance, and the overall customer experience.",68372,1,Day 2 IT Program\HeartStream\Workshop,Day 2 IT Program\Sprint 0
-New,68465,Workshop,"WS-CE-15-A - Case handling operating model (queues, skills, routing, hours, policies)","Customer Service, Service to Resolution &amp; Case Handling Operating Model: Defines the processes, rules, and governance for managing customer service cases from intake through resolution. It includes queue management, skill-based assignment, intelligent routing, service hours, escalation paths, and service policies to ensure cases are handled efficiently by the right resources, improving resolution times, service quality, and customer satisfaction.",68372,1,Day 2 IT Program\HeartStream\Workshop,Day 2 IT Program\Sprint 0
+Entitlements & Service Provisioning Orchestration: Manages customer entitlements, service rights, and access provisioning by ensuring customers receive the appropriate products, services, support levels, and benefits based on their agreements. It automates the coordination of service activation, access management, and fulfillment processes, improving service delivery efficiency, compliance, and the overall customer experience.",68372,1,Day 2 IT Program\HeartStream\Workshop,Day 2 IT Program\Sprint 0
+New,68465,Workshop,"WS-CE-15-A - Case handling operating model (queues, skills, routing, hours, policies)","Customer Service, Service to Resolution & Case Handling Operating Model: Defines the processes, rules, and governance for managing customer service cases from intake through resolution. It includes queue management, skill-based assignment, intelligent routing, service hours, escalation paths, and service policies to ensure cases are handled efficiently by the right resources, improving resolution times, service quality, and customer satisfaction.",68372,1,Day 2 IT Program\HeartStream\Workshop,Day 2 IT Program\Sprint 0
 New,68464,Workshop,WS-CE-15 - Omnichannel case mgmt,"Service-to-Resolution is the end-to-end customer support process that manages customer issues, inquiries, and service requests from initial contact through final resolution and case closure.
 
 Omnichannel Case Management: Enables organizations to manage and resolve customer inquiries, service requests, and support cases consistently across multiple channels, including phone, email, chat, web, social media, and self-service portals. It provides a unified view of customer interactions, streamlines case routing and resolution, and improves customer satisfaction through seamless, personalized service experiences.",68372,1,Day 2 IT Program\HeartStream\Workshop,Day 2 IT Program\Sprint 0
-New,68459,Workshop,WS-CE-14-A - Sales performance & pipeline insights,"Sales Performance &amp; Pipeline Insights: Provides visibility into sales performance, pipeline health, forecast accuracy, and revenue trends through analytics, dashboards, and reporting. It enables sales leaders and teams to monitor opportunity progression, identify risks and growth opportunities, optimize sales activities, and make data-driven decisions to improve conversion rates and achieve business targets.",68372,1,Day 2 IT Program\HeartStream\Workshop,Day 2 IT Program\Sprint 0
+New,68459,Workshop,WS-CE-14-A - Sales performance & pipeline insights,"Sales Performance & Pipeline Insights: Provides visibility into sales performance, pipeline health, forecast accuracy, and revenue trends through analytics, dashboards, and reporting. It enables sales leaders and teams to monitor opportunity progression, identify risks and growth opportunities, optimize sales activities, and make data-driven decisions to improve conversion rates and achieve business targets.",68372,1,Day 2 IT Program\HeartStream\Workshop,Day 2 IT Program\Sprint 0
 New,68458,Workshop,WS-CE-14 - Commercial education program mgmt,"Commercial Education Program Management: Supports the planning, development, delivery, and governance of training programs for commercial teams, partners, and customers. It ensures stakeholders are equipped with the knowledge, skills, tools, and best practices needed to effectively sell, support, and adopt products and services, driving business performance, compliance, and customer success.",68372,1,Day 2 IT Program\HeartStream\Workshop,Day 2 IT Program\Sprint 0
-New,68457,Workshop,WS-CE-13 - Service billing & revenue governance,"Sales, Opportunity to Order &amp; Service Billing and Revenue Governance: Supports the conversion of sales opportunities into customer orders while managing service billing and revenue-related controls. It ensures accurate invoicing, compliance with pricing and contractual agreements, effective revenue tracking, and governance processes that promote financial accuracy, operational consistency, and revenue realization.",68372,1,Day 2 IT Program\HeartStream\Workshop,Day 2 IT Program\Sprint 0
-New,68452,Workshop,WS-CE-12-A - Professional services delivery & commercial mgmt,"Sales, Order to Cash &amp; Professional Services Delivery and Commercial Management: Supports the planning, execution, and management of professional services engagements, including resource utilization, project delivery, contract compliance, billing, and revenue tracking. It ensures services are delivered efficiently, commercial commitments are met, and financial performance is optimized throughout the order-to-cash lifecycle.",68372,1,Day 2 IT Program\HeartStream\Workshop,Day 2 IT Program\Sprint 0
-New,68451,Workshop,WS-CE-12 - Professional services quoting & approvals mgmt,"Sales, Quote to Cash &amp; Professional Services Quoting and Approvals Management: Supports the creation, review, approval, and management of professional services quotations, including pricing, resource estimates, project scope, and contractual terms. It streamlines approval workflows and ensures accurate quote-to-cash execution, helping organizations improve revenue realization, governance, and customer satisfaction.",68372,1,Day 2 IT Program\HeartStream\Workshop,Day 2 IT Program\Sprint 0
-New,68450,Workshop,WS-CE-11-A - Software entitlements * license lifecycle mgmt,"Sales, Order to Cash &amp; Software Entitlements/License Lifecycle Management: Manages the complete lifecycle of software licenses and entitlements, from purchase and activation through renewals, upgrades, modifications, and expiration. It ensures customers receive the appropriate product access and usage rights while supporting accurate order processing, billing, compliance, and revenue management throughout the order-to-cash process.",68372,1,Day 2 IT Program\HeartStream\Workshop,Day 2 IT Program\Sprint 0
-New,68449,Workshop,WS-CE-11 - Installoed base lifecycle & data quality mgmt,"Sales, Service to Resolution &amp; Installed Base Lifecycle/Data Quality Management: Supports the management of customer-owned products and assets throughout their lifecycle, from installation and maintenance to replacement and retirement. It ensures accurate installed base records and high-quality customer and asset data, enabling efficient service delivery, faster issue resolution, improved customer satisfaction, and informed decision-making.
+New,68457,Workshop,WS-CE-13 - Service billing & revenue governance,"Sales, Opportunity to Order & Service Billing and Revenue Governance: Supports the conversion of sales opportunities into customer orders while managing service billing and revenue-related controls. It ensures accurate invoicing, compliance with pricing and contractual agreements, effective revenue tracking, and governance processes that promote financial accuracy, operational consistency, and revenue realization.",68372,1,Day 2 IT Program\HeartStream\Workshop,Day 2 IT Program\Sprint 0
+New,68452,Workshop,WS-CE-12-A - Professional services delivery & commercial mgmt,"Sales, Order to Cash & Professional Services Delivery and Commercial Management: Supports the planning, execution, and management of professional services engagements, including resource utilization, project delivery, contract compliance, billing, and revenue tracking. It ensures services are delivered efficiently, commercial commitments are met, and financial performance is optimized throughout the order-to-cash lifecycle.",68372,1,Day 2 IT Program\HeartStream\Workshop,Day 2 IT Program\Sprint 0
+New,68451,Workshop,WS-CE-12 - Professional services quoting & approvals mgmt,"Sales, Quote to Cash & Professional Services Quoting and Approvals Management: Supports the creation, review, approval, and management of professional services quotations, including pricing, resource estimates, project scope, and contractual terms. It streamlines approval workflows and ensures accurate quote-to-cash execution, helping organizations improve revenue realization, governance, and customer satisfaction.",68372,1,Day 2 IT Program\HeartStream\Workshop,Day 2 IT Program\Sprint 0
+New,68450,Workshop,WS-CE-11-A - Software entitlements * license lifecycle mgmt,"Sales, Order to Cash & Software Entitlements/License Lifecycle Management: Manages the complete lifecycle of software licenses and entitlements, from purchase and activation through renewals, upgrades, modifications, and expiration. It ensures customers receive the appropriate product access and usage rights while supporting accurate order processing, billing, compliance, and revenue management throughout the order-to-cash process.",68372,1,Day 2 IT Program\HeartStream\Workshop,Day 2 IT Program\Sprint 0
+New,68449,Workshop,WS-CE-11 - Installoed base lifecycle & data quality mgmt,"Sales, Service to Resolution & Installed Base Lifecycle/Data Quality Management: Supports the management of customer-owned products and assets throughout their lifecycle, from installation and maintenance to replacement and retirement. It ensures accurate installed base records and high-quality customer and asset data, enabling efficient service delivery, faster issue resolution, improved customer satisfaction, and informed decision-making.
 In Dynamics 365 Customer Service, this process helps organizations deliver consistent support, meet SLAs, and improve customer satisfaction.",68372,1,Day 2 IT Program\HeartStream\Workshop,Day 2 IT Program\Sprint 0
-New,68447,Workshop,WS-CE-10-A - Sales order-to-cash governance,"Sales, Order to Cash &amp; Sales Order-to-Cash Governance: Establishes the policies, controls, workflows, and oversight required to manage the end-to-end sales order-to-cash process. It ensures accurate order processing, compliance with business rules, effective risk management, timely invoicing and payment collection, and consistent execution across sales, finance, and operations functions.",68372,1,Day 2 IT Program\HeartStream\Workshop,Day 2 IT Program\Sprint 0
-New,68446,Workshop,WS-CE-10 - Sales order & subscriptino lifecycle mgmt,"Sales, Order to Cash &amp; Sales Order/Subscription Lifecycle Management: Supports the end-to-end process from customer order creation through fulfillment, invoicing, payment collection, and revenue recognition. It also manages the complete subscription lifecycle, including activation, renewals, upgrades, changes, and cancellations, ensuring efficient order processing, recurring revenue management, and a seamless customer experience.",68372,1,Day 2 IT Program\HeartStream\Workshop,Day 2 IT Program\Sprint 0
+New,68447,Workshop,WS-CE-10-A - Sales order-to-cash governance,"Sales, Order to Cash & Sales Order-to-Cash Governance: Establishes the policies, controls, workflows, and oversight required to manage the end-to-end sales order-to-cash process. It ensures accurate order processing, compliance with business rules, effective risk management, timely invoicing and payment collection, and consistent execution across sales, finance, and operations functions.",68372,1,Day 2 IT Program\HeartStream\Workshop,Day 2 IT Program\Sprint 0
+New,68446,Workshop,WS-CE-10 - Sales order & subscriptino lifecycle mgmt,"Sales, Order to Cash & Sales Order/Subscription Lifecycle Management: Supports the end-to-end process from customer order creation through fulfillment, invoicing, payment collection, and revenue recognition. It also manages the complete subscription lifecycle, including activation, renewals, upgrades, changes, and cancellations, ensuring efficient order processing, recurring revenue management, and a seamless customer experience.",68372,1,Day 2 IT Program\HeartStream\Workshop,Day 2 IT Program\Sprint 0
 New,68441,Workshop,"WS-CE-09-A - Quotation-to-order governance (quote, negotiate, approve, sign-off)","Quote-to-Cash (Q2C) in Dynamics 365 Sales is the end-to-end process of converting a customer opportunity into a quote, securing customer acceptance, creating an order, fulfilling the order, invoicing the customer, and collecting payment.",68372,1,Day 2 IT Program\HeartStream\Workshop,Day 2 IT Program\Sprint 0
-New,68440,Workshop,WS-CE-09 - Opportunity-to-close orchestration (upsell/cross-sell/relationship nurture),"Sales Opportunity to Order &amp; Opportunity-to-Close Orchestration: Manages the process of converting qualified sales opportunities into customer orders by guiding deals through the sales cycle, including pricing, proposals, approvals, and order creation. Opportunity-to-close orchestration supports upsell and cross-sell activities, relationship nurturing, and targeted customer engagement to maximize revenue, improve customer retention, and increase deal conversion rates.",68372,1,Day 2 IT Program\HeartStream\Workshop,Day 2 IT Program\Sprint 0
+New,68440,Workshop,WS-CE-09 - Opportunity-to-close orchestration (upsell/cross-sell/relationship nurture),"Sales Opportunity to Order & Opportunity-to-Close Orchestration: Manages the process of converting qualified sales opportunities into customer orders by guiding deals through the sales cycle, including pricing, proposals, approvals, and order creation. Opportunity-to-close orchestration supports upsell and cross-sell activities, relationship nurturing, and targeted customer engagement to maximize revenue, improve customer retention, and increase deal conversion rates.",68372,1,Day 2 IT Program\HeartStream\Workshop,Day 2 IT Program\Sprint 0
 New,68439,Workshop,WS-CE-08 - Customer success outcomes & adoption mgmt,"Opportunity-to-Order is the sales process that transforms a qualified sales opportunity into a confirmed customer order. It begins after the sales team has identified a viable deal and ends when the customer accepts the quote and a sales order is created
 
-Customer Success Outcomes &amp; Adoption Management
+Customer Success Outcomes & Adoption Management
 
 Monitors customer adoption, usage, satisfaction, and business outcomes to ensure customers realize the expected value from products and services. It supports onboarding, engagement, health tracking, retention, and success planning activities to drive customer satisfaction, long-term adoption, renewal, and growth.",68372,1,Day 2 IT Program\HeartStream\Workshop,Day 2 IT Program\Sprint 0
-New,68438,Workshop,WS-CE-08 - Contact & account mgmt (customer master),"Sales, Lead to Opportunity &amp; Contact/Account Management (Customer Master): Enables sales teams to capture, qualify, and convert leads into opportunities while maintaining a centralized customer master record for accounts and contacts. This provides a single source of truth for customer information, improves relationship management, supports sales activities, and ensures accurate, consistent customer data across the organization.",68372,1,Day 2 IT Program\HeartStream\Workshop,Day 2 IT Program\Sprint 0
-New,68436,Workshop,WS-CE-07-A - Lead scoring & qualification,"Sales, Lead to Opportunity &amp; Lead Scoring/Qualification: Enables sales teams to capture, track, and nurture prospective customers through the sales pipeline, converting qualified leads into revenue-generating opportunities. Lead scoring and qualification use predefined criteria, customer behaviors, and engagement data to prioritize high-potential prospects, improve sales efficiency, and increase conversion rates",68372,1,Day 2 IT Program\HeartStream\Workshop,Day 2 IT Program\Sprint 0
+New,68438,Workshop,WS-CE-08 - Contact & account mgmt (customer master),"Sales, Lead to Opportunity & Contact/Account Management (Customer Master): Enables sales teams to capture, qualify, and convert leads into opportunities while maintaining a centralized customer master record for accounts and contacts. This provides a single source of truth for customer information, improves relationship management, supports sales activities, and ensures accurate, consistent customer data across the organization.",68372,1,Day 2 IT Program\HeartStream\Workshop,Day 2 IT Program\Sprint 0
+New,68436,Workshop,WS-CE-07-A - Lead scoring & qualification,"Sales, Lead to Opportunity & Lead Scoring/Qualification: Enables sales teams to capture, track, and nurture prospective customers through the sales pipeline, converting qualified leads into revenue-generating opportunities. Lead scoring and qualification use predefined criteria, customer behaviors, and engagement data to prioritize high-potential prospects, improve sales efficiency, and increase conversion rates",68372,1,Day 2 IT Program\HeartStream\Workshop,Day 2 IT Program\Sprint 0
 New,68435,Workshop,WS-CE-07 - Sales enablement content distribution,"Sales Enablement Content Distribution
 
 Manages the creation, organization, distribution, and accessibility of sales content, including product information, presentations, training materials, and marketing assets. This ensures sales teams and partners have timely access to consistent, approved content that improves sales readiness, customer engagement, and revenue generation.",68372,1,Day 2 IT Program\HeartStream\Workshop,Day 2 IT Program\Sprint 0
 New,68429,Workshop,WS-CE-06-A - Partner/customer training communications & access enablement,"Lead to Opportunity: Manages the end-to-end process of capturing, qualifying, nurturing, and converting leads into sales opportunities, providing visibility into the sales pipeline and enabling effective engagement with prospective customers.
 
-Partner/Customer Training Communications &amp; Access Enablement: Facilitates the delivery of training, communications, and access provisioning to partners and customers, ensuring they have the knowledge, tools, and appropriate system access needed to effectively adopt, use, and support business processes and solutions.",68372,1,Day 2 IT Program\HeartStream\Workshop,Day 2 IT Program\Sprint 0
-New,68428,Workshop,WS-CE-06 - Post-activation engagement & reputation monitoring,"Post-Activation Engagement &amp; Reputation Monitoring
+Partner/Customer Training Communications & Access Enablement: Facilitates the delivery of training, communications, and access provisioning to partners and customers, ensuring they have the knowledge, tools, and appropriate system access needed to effectively adopt, use, and support business processes and solutions.",68372,1,Day 2 IT Program\HeartStream\Workshop,Day 2 IT Program\Sprint 0
+New,68428,Workshop,WS-CE-06 - Post-activation engagement & reputation monitoring,"Post-Activation Engagement & Reputation Monitoring
 
 Manages ongoing customer engagement after product purchase or service activation while monitoring customer sentiment, feedback, reviews, and brand reputation. This helps improve customer retention, strengthen brand perception, identify service improvement opportunities, and drive long-term customer loyalty.",68372,1,Day 2 IT Program\HeartStream\Workshop,Day 2 IT Program\Sprint 0
 New,68426,Workshop,WS-CE-05-A - Strategic plan of record (SPoR) governance,"Customer Insights: Provides a unified 360-degree view of customers by consolidating data from multiple sources, enabling customer segmentation, behavioral insights, personalization, and data-driven engagement to improve customer acquisition, retention, and satisfaction.
@@ -124,14 +124,14 @@ Record to Report (R2R): An end-to-end financial management process that captures
 
 Strategic Plan of Record (SPoR) Governance: Establishes the processes, controls, and decision-making framework to manage, monitor, and align strategic initiatives, priorities, and investments with organizational objectives, ensuring accountability, transparency, and effective execution of business strategy.",68372,1,Day 2 IT Program\HeartStream\Workshop,Day 2 IT Program\Sprint 0
 New,68425,Workshop,WS-CE-05 - Marketing performance analytics & insights,"Dynamics 365 Customer Insights supports the Record-to-Report (R2R) process by transforming customer, marketing, sales, service, and commerce data into business insights, predictive analytics, profitability analysis, and executive reporting. While it is not a financial ledger system, it provides customer intelligence that enriches management and financial reporting",68372,1,Day 2 IT Program\HeartStream\Workshop,Day 2 IT Program\Sprint 0
-New,68424,Workshop,"WS-CE-04-A  - Campaign experimentation & personalization
-Configuration of agreed customer journey","Campaign Experimentation &amp; Personalization and Customer Journey Configuration: Dynamics 365 Customer Insights - Journeys enables organizations to design and configure agreed customer journeys across marketing and sales touchpoints. It supports campaign experimentation through A/B testing and personalized communications based on customer profiles, behaviors, and preferences, ensuring targeted engagement, improved conversion rates, and a consistent customer experience from lead generation through customer retention.",68372,1,Day 2 IT Program\HeartStream\Workshop,Day 2 IT Program\Sprint 0
+New,68424,Workshop,"WS-CE-04-A - Campaign experimentation & personalization
+Configuration of agreed customer journey","Campaign Experimentation & Personalization and Customer Journey Configuration: Dynamics 365 Customer Insights - Journeys enables organizations to design and configure agreed customer journeys across marketing and sales touchpoints. It supports campaign experimentation through A/B testing and personalized communications based on customer profiles, behaviors, and preferences, ensuring targeted engagement, improved conversion rates, and a consistent customer experience from lead generation through customer retention.",68372,1,Day 2 IT Program\HeartStream\Workshop,Day 2 IT Program\Sprint 0
 New,68423,Workshop,WS-CE-04 - Digital experience journey orchestration,"Dynamics 365 Customer Insights supports the Lead-to-Opportunity process by unifying customer and prospect data, creating intelligent audience segments, scoring and qualifying leads, and passing high-value leads to Dynamics 365 Sales for opportunity management. It helps marketing and sales teams work from a common customer view and improve lead conversion rates.",68372,1,Day 2 IT Program\HeartStream\Workshop,Day 2 IT Program\Sprint 0
 New,68418,Workshop,WS-CE-03  - Campaign objective governance,"Dynamics 365 Customer Insights supports the Lead-to-Opportunity process by unifying customer and prospect data, creating intelligent audience segments, scoring and qualifying leads, and passing high-value leads to Dynamics 365 Sales for opportunity management. It helps marketing and sales teams work from a common customer view and improve lead conversion rates.",68372,1,Day 2 IT Program\HeartStream\Workshop,Day 2 IT Program\Sprint 0
-New,68417,Workshop,"WS-CE-02 - Marketing Research Insights Planning 
+New,68417,Workshop,"WS-CE-02 - Marketing Research Insights Planning
 Global Marketing Content Activation
- Brand Reputation Campaign Management 
-Marketing Asset Governance & Campaign Readiness 
+Brand Reputation Campaign Management
+Marketing Asset Governance & Campaign Readiness
 Marketing Strategy & Activation Planning","Leverage Customer Insights (Data and Journeys) to identify, nurture, score, and qualify leads, then convert high-potential prospects into Sales Opportunities for revenue generation.
 
 Marketing Research Insights Planning
@@ -146,15 +146,15 @@ Brand Reputation Campaign Management
 
 Monitors and manages brand perception through targeted campaigns, customer engagement, and reputation tracking to strengthen brand equity and trust.
 
-Marketing Asset Governance &amp; Campaign Readiness
+Marketing Asset Governance & Campaign Readiness
 
 Controls marketing assets, approvals, compliance, and campaign preparation activities to ensure content quality, brand consistency, and launch readiness.
 
-Marketing Strategy &amp; Activation Planning
+Marketing Strategy & Activation Planning
 
 Defines marketing objectives, audience strategies, budgets, and execution plans to drive awareness, demand generation, customer acquisition, and business growth.",68372,1,Day 2 IT Program\HeartStream\Workshop,Day 2 IT Program\Sprint 0
 New,68416,Workshop,WS-CE-01 - External Analytics Data Ingestion & Unification,"While Dynamics 365 Customer Insights is primarily a customer data and engagement platform, it contributes to the Record-to-Report (R2R) process by providing customer analytics, revenue insights, segmentation, customer profitability analysis, and forecasting data that support financial reporting and executive decision-making.
-External Analytics Data Ingestion &amp; Unification
+External Analytics Data Ingestion & Unification
 
 Integrates, consolidates, and harmonizes data from multiple external analytics and business sources into a unified data model, providing a single source of truth for reporting, advanced analytics, performance monitoring, and data-driven decision-making across the organization.",68372,1,Day 2 IT Program\HeartStream\Workshop,Day 2 IT Program\Sprint 0
 New,68475,Workshop,"WS-40 - Order-integrated service
@@ -162,18 +162,18 @@ RMA & Warranty Management","Order-Integrated Service
 
 Integrates service processes directly with customer orders, enabling seamless coordination of service entitlements, installations, support, maintenance, and fulfillment activities throughout the order lifecycle. This ensures accurate service delivery, improved customer experience, and end-to-end visibility from order placement to service completion.
 
-RMA &amp; Warranty Management
+RMA & Warranty Management
 
 Manages Return Material Authorization (RMA) and warranty processes, including return requests, product inspections, replacements, repairs, claims validation, and warranty coverage tracking. This helps streamline returns, ensure compliance with warranty policies, and improve customer satisfaction.",68372,1,Day 2 IT Program\HeartStream\Workshop,Day 2 IT Program\Sprint 0
 New,68399,Workshop,WS-40 -  Regulated Product Management,"Regulated Product Management
 
 Manages products subject to regulatory requirements, ensuring compliance, traceability, documentation control, and adherence to industry standards and quality regulations.",68372,1,Day 2 IT Program\HeartStream\Workshop,Day 2 IT Program\Sprint 0
 New,68512,Workshop,"WS-39 - Third party product & license key mgmt
--Distributor & reseller integration","Third-Party Product &amp; License Key Management
+-Distributor & reseller integration","Third-Party Product & License Key Management
 
 Manages third-party products, software licenses, and license keys throughout their lifecycle, including provisioning, activation, tracking, renewal, compliance, and entitlement management. This ensures accurate license administration, regulatory compliance, and seamless customer access to licensed products and services.
 
-Distributor &amp; Reseller Integration
+Distributor & Reseller Integration
 
 Integrates distributors and resellers into the sales, order, service, and support ecosystem by enabling data sharing, order processing, inventory visibility, lead management, and collaboration. This improves channel efficiency, operational transparency, and partner-driven revenue growth.",68372,1,Day 2 IT Program\HeartStream\Workshop,Day 2 IT Program\Sprint 0
 New,68469,Workshop,WS-39 - Supply chain API,"D365 + Azure Integration / Dataverse supports the Order-to-Cash (O2C) process by enabling seamless data exchange between Dynamics 365 applications, external systems, partners, eCommerce platforms, warehouses, banks, and analytics solutions. Dataverse serves as the common business data platform, while Azure provides integration, orchestration, messaging, APIs, and automation.
@@ -197,12 +197,12 @@ Procure-to-Pay
 Record-to-Report
 Project-to-Profit
 Maintain-to-Operate",68372,1,Day 2 IT Program\HeartStream\Workshop,Day 2 IT Program\Sprint 0
-New,68432,Workshop,"WS-37 - Subscription Billing & Payments, B2B and B2C Payment caputre and processing","Payments &amp; Tax in Dynamics 365 Commerce manages the collection of customer payments and the calculation of applicable taxes across all commerce channels, including eCommerce, retail stores, call centers, and B2B portals.",68372,1,Day 2 IT Program\HeartStream\Workshop,Day 2 IT Program\Sprint 0
-New,68374,Workshop,WS-37 - Medical Device & Data Privacy,"Medical Device &amp; Data Privacy
+New,68432,Workshop,"WS-37 - Subscription Billing & Payments, B2B and B2C Payment caputre and processing","Payments & Tax in Dynamics 365 Commerce manages the collection of customer payments and the calculation of applicable taxes across all commerce channels, including eCommerce, retail stores, call centers, and B2B portals.",68372,1,Day 2 IT Program\HeartStream\Workshop,Day 2 IT Program\Sprint 0
+New,68374,Workshop,WS-37 - Medical Device & Data Privacy,"Medical Device & Data Privacy
 
 Ensures compliance with medical device regulations and data privacy requirements by governing product information, customer data handling, and regulatory controls throughout the product lifecycle.",68372,1,Day 2 IT Program\HeartStream\Workshop,Day 2 IT Program\Sprint 0
 New,68500,Workshop,"WS-37 - Global Tax Management 
-Tax Exemption Management","Payments &amp; Tax in Dynamics 365 Commerce manages customer payment processing, tax calculation, payment settlement, refunds, and financial reconciliation across all commerce channels. It is a critical component of the Order-to-Cash (O2C) process because it converts customer orders into collected revenue while ensuring tax compliance.",68372,1,Day 2 IT Program\HeartStream\Workshop,Day 2 IT Program\Sprint 0
+Tax Exemption Management","Payments & Tax in Dynamics 365 Commerce manages customer payment processing, tax calculation, payment settlement, refunds, and financial reconciliation across all commerce channels. It is a critical component of the Order-to-Cash (O2C) process because it converts customer orders into collected revenue while ensuring tax compliance.",68372,1,Day 2 IT Program\HeartStream\Workshop,Day 2 IT Program\Sprint 0
 New,68430,Workshop,"WS-36 - Subscription billing back-office
 Frontend subscription mgmt
 Healthcare subscription configuration","Subscription Billing Back-Office: Manages the operational and financial aspects of subscription services, including billing, invoicing, payment processing, renewals, revenue recognition, and subscription lifecycle management to ensure accurate and efficient recurring revenue operations.
@@ -217,7 +217,7 @@ New,68481,Workshop,WS-35 - Affiliate & influenced sales,"D365 Commerce B2B enabl
 New,68463,Workshop,WS-34 - Guest checkout,"D365 Commerce / D365 Sales (CE) Order to Cash - Guest Checkout: Enables customers to complete purchases without creating an account, providing a fast and frictionless buying experience. Guest checkout supports order capture, payment processing, inventory validation, fulfillment, and invoicing within the order-to-cash process, helping increase conversion rates while maintaining efficient order management and customer service capabilities.",68372,1,Day 2 IT Program\HeartStream\Workshop,Day 2 IT Program\Sprint 0
 New,68434,Workshop,WS-34 - Customer onboarding,"Customer Onboarding: Manages the end-to-end process of welcoming and enabling new customers by guiding account setup, data collection, access provisioning, training, and initial engagement activities, ensuring a smooth transition, faster adoption, and a positive customer experience.",68372,1,Day 2 IT Program\HeartStream\Workshop,Day 2 IT Program\Sprint 0
 New,68484,Workshop,"WS-34 - CRM & D365 suite integration
-Guest customer mgmt","CRM &amp; D365 Suite Integration
+Guest customer mgmt","CRM & D365 Suite Integration
 
 Integrates Customer Relationship Management (CRM) capabilities with the broader Dynamics 365 ecosystem to enable seamless data sharing across sales, marketing, customer service, finance, and operations. This provides a unified customer view, improves process efficiency, and supports end-to-end business workflows.
 
@@ -230,7 +230,7 @@ Inventory & fulfillment mgmt","Institutional Order Management
 
 Manages the end-to-end processing of orders from institutional customers, including healthcare providers, government agencies, educational institutions, and large enterprises. It supports contract-based ordering, pricing controls, approval workflows, fulfillment coordination, and compliance requirements to ensure efficient and accurate order execution.
 
-Inventory &amp; Fulfillment Management
+Inventory & Fulfillment Management
 
 Manages inventory availability, allocation, warehousing, picking, packing, shipping, and delivery processes to ensure timely order fulfillment, optimal stock levels, and efficient supply chain operations while maintaining product availability and customer satisfaction.",68372,1,Day 2 IT Program\HeartStream\Workshop,Day 2 IT Program\Sprint 0
 New,68456,Workshop,WS-33 - Goods Flow Distribution,"Dynamics 365 Intelligent Order Management (IOM) enhances the Order-to-Cash (O2C) process by intelligently orchestrating customer orders across multiple sales channels, fulfillment locations, inventory sources, and logistics providers.
@@ -248,23 +248,23 @@ Customer Order Management: Supports the end-to-end management of customer orders
 
 Inventory Visibility: Provides real-time visibility into inventory levels, availability, and locations across channels and fulfillment networks, enabling informed purchasing and fulfillment decisions.
 
-Shipping &amp; Logistics: Manages the planning, execution, and tracking of product shipments and deliveries, optimizing transportation, fulfillment efficiency, and on-time delivery performance while enhancing the customer experience.",68372,1,Day 2 IT Program\HeartStream\Workshop,Day 2 IT Program\Sprint 0
+Shipping & Logistics: Manages the planning, execution, and tracking of product shipments and deliveries, optimizing transportation, fulfillment efficiency, and on-time delivery performance while enhancing the customer experience.",68372,1,Day 2 IT Program\HeartStream\Workshop,Day 2 IT Program\Sprint 0
 New,68480,Workshop,"WS-32 - BB2B pricing mgmt
 Performance-based pricing
-Advancd & lifecycle pricing","Pricing &amp; Discounts in Dynamics 365 Commerce is the capability that defines product prices, promotional offers, customer-specific pricing, and discount rules across all sales channels. It plays a critical role in the Order-to-Cash (O2C) process by determining the price customers pay and the revenue the organization earns.",68372,1,Day 2 IT Program\HeartStream\Workshop,Day 2 IT Program\Sprint 0
+Advancd & lifecycle pricing","Pricing & Discounts in Dynamics 365 Commerce is the capability that defines product prices, promotional offers, customer-specific pricing, and discount rules across all sales channels. It plays a critical role in the Order-to-Cash (O2C) process by determining the price customers pay and the revenue the organization earns.",68372,1,Day 2 IT Program\HeartStream\Workshop,Day 2 IT Program\Sprint 0
 New,68431,Workshop,"WS-31 - Rich media and content
-Search & discovery","Commerce - Payment &amp; Order to Cash: Supports the complete commerce transaction lifecycle, including order capture, payment processing, invoicing, fulfillment, collections, and revenue realization, ensuring a seamless customer purchasing experience and efficient cash flow management.
+Search & discovery","Commerce - Payment & Order to Cash: Supports the complete commerce transaction lifecycle, including order capture, payment processing, invoicing, fulfillment, collections, and revenue realization, ensuring a seamless customer purchasing experience and efficient cash flow management.
 
 Rich Media and Content: Enables the creation, management, and delivery of engaging digital content, including images, videos, product information, and marketing assets, to enhance customer experiences across commerce channels.
 
-Search &amp; Discovery: Provides intelligent product search, navigation, recommendations, and filtering capabilities that help customers quickly find relevant products and content, improving user experience, engagement, and conversion rates.",68372,1,Day 2 IT Program\HeartStream\Workshop,Day 2 IT Program\Sprint 0
+Search & Discovery: Provides intelligent product search, navigation, recommendations, and filtering capabilities that help customers quickly find relevant products and content, improving user experience, engagement, and conversion rates.",68372,1,Day 2 IT Program\HeartStream\Workshop,Day 2 IT Program\Sprint 0
 New,68427,Workshop,WS-31 - Procuct Lifecycle Management,"D365 Commerce – Catalog Management: Product Lifecycle Management
 
 Manages products throughout their lifecycle, from creation and catalog setup to updates, publication, and retirement. It ensures accurate product information, category structures, pricing, and channel readiness across commerce platforms, enabling consistent customer experiences, improved product governance, and efficient commercialization.",68372,1,Day 2 IT Program\HeartStream\Workshop,Day 2 IT Program\Sprint 0
 New,68454,Workshop,WS-31 - Need definition,"Accounts Payable (AP) in Dynamics 365 Finance manages supplier invoices, vendor liabilities, approvals, payments, and settlements. It is a key component of the Procure-to-Pay (P2P) business process, ensuring vendors are paid accurately and on time while maintaining financial control.
 Finance, Accounts Payable - Need Definition: Defines the business requirements, processes, controls, and operational needs for managing supplier obligations, including vendor onboarding, invoice processing, payment execution, expense management, and compliance. It ensures accounts payable activities are aligned with organizational policies, support efficient cash management, and enable accurate financial reporting",68372,1,Day 2 IT Program\HeartStream\Workshop,Day 2 IT Program\Sprint 0
 New,68448,Workshop,"WS-31 - Bundle & kit management
-Catalog management","D365 Commerce Catalog Management, Bundle &amp; Kit Management (Order to Cash): Enables organizations to create, organize, and maintain product catalogs with accurate product information, pricing, and assortments across sales channels. It also supports bundle and kit management by grouping products into predefined packages for streamlined selling, ordering, fulfillment, and invoicing, improving customer experience, sales effectiveness, and order-to-cash efficiency.",68372,1,Day 2 IT Program\HeartStream\Workshop,Day 2 IT Program\Sprint 0
+Catalog management","D365 Commerce Catalog Management, Bundle & Kit Management (Order to Cash): Enables organizations to create, organize, and maintain product catalogs with accurate product information, pricing, and assortments across sales channels. It also supports bundle and kit management by grouping products into predefined packages for streamlined selling, ordering, fulfillment, and invoicing, improving customer experience, sales effectiveness, and order-to-cash efficiency.",68372,1,Day 2 IT Program\HeartStream\Workshop,Day 2 IT Program\Sprint 0
 New,68404,Workshop,WS-30 - POS & Offline operations,"D365 Commerce Channel Management enables organizations to manage retail stores, e-commerce sites, call centers, and marketplaces while supporting the complete Order-to-Cash process from customer order placement to revenue collection.",68372,1,Day 2 IT Program\HeartStream\Workshop,Day 2 IT Program\Sprint 0
 New,68409,Workshop,WS-30 - Online channel managment,"Online Channel Management
 
@@ -285,7 +285,7 @@ Lifecycle State Management
 
 Governs product progression through development, production, maintenance, and retirement stages while ensuring appropriate controls and approvals.
 
-Product Obsolescence &amp; Phase Out
+Product Obsolescence & Phase Out
 
 Manages product end-of-life planning, phase-out activities, and replacement strategies to minimize operational disruption and maintain compliance.",68372,1,Day 2 IT Program\HeartStream\Workshop,Day 2 IT Program\Sprint 0
 New,68373,Workshop,WS-29 - External PLM integration,"External PLM Integration
@@ -294,11 +294,11 @@ Integrates external Product Lifecycle Management (PLM) systems with enterprise a
 New,68413,Workshop,"WS-28 - Engineering & BOM mgmt
 Route & operation mgm","is the functionality used to define what materials are required to make a product (BOM) and how the product is manufactured (Route
 
-Engineering &amp; BOM Management
+Engineering & BOM Management
 
 Maintains engineering data and Bills of Materials (BOMs) to support accurate product design, manufacturing, and lifecycle management.
 
-Route &amp; Operation Management
+Route & Operation Management
 
 Defines and controls manufacturing routes, operations, and production processes to enable efficient and standardized execution..",68372,1,Day 2 IT Program\HeartStream\Workshop,Day 2 IT Program\Sprint 0
 New,68408,Workshop,"WS-27 - Constraint-based configuration
@@ -310,39 +310,39 @@ Constraint-Based Configuration
 
 Applies business and engineering rules to ensure valid product configurations, reducing errors and supporting complex product offerings.
 
-Product Readiness &amp; Release
+Product Readiness & Release
 
 Manages product validation, approval, and release processes to ensure products are operationally, commercially, and regulatory ready for launch.",68372,1,Day 2 IT Program\HeartStream\Workshop,Day 2 IT Program\Sprint 0
 New,68407,Workshop,"WS-26 - Engineering category setup
 Product version management
 
 External Analytics Data Ingestion & Unification","Engineering Change Management (ECM) in Dynamics 365 Supply Chain Management (SCM) governs the lifecycle of product designs and engineering changes from initial design through production, service, and eventual product retirement. It supports the Design-to-Retire (D2R) business process by ensuring changes are reviewed, approved, controlled, and implemented consistently across the enterprise
-External Analytics Data Ingestion &amp; Unification
+External Analytics Data Ingestion & Unification
 
 Integrates and consolidates data from external analytics sources to create a unified view for reporting, insights, and data-driven decision-making.",68372,1,Day 2 IT Program\HeartStream\Workshop,Day 2 IT Program\Sprint 0
-New,68401,Workshop,"WS-25 -  Change order creation
- BOM & Route versioning
+New,68401,Workshop,"WS-25 - Change order creation
+BOM & Route versioning
 ECO Approval & release","Engineering Change Mgmt is a capability that controls and governs changes to products, Bills of Materials (BOMs), formulas, components, and engineering data throughout a product's lifecycle.
 
 Change Order Creation
 
 Creates and manages engineering change orders (ECOs) to formally implement approved product, process, or manufacturing changes.
 
-BOM &amp; Route Versioning
+BOM & Route Versioning
 
 Maintains version-controlled Bills of Materials (BOMs) and manufacturing routes to ensure accurate production, traceability, and change governance.
 
-ECO Approval &amp; Release
+ECO Approval & Release
 
 Manages the approval and release of engineering change orders, ensuring authorized changes are deployed in a controlled and compliant manner.",68372,1,Day 2 IT Program\HeartStream\Workshop,Day 2 IT Program\Sprint 0
 New,68402,Workshop,WS-24 - Change request initiation,"A change request is created when a need for a product modification is identified. The request may originate from:
 Change Request Initiation
 
 Enables the structured submission and tracking of product or engineering change requests to support controlled change management processes.",68372,1,Day 2 IT Program\HeartStream\Workshop,Day 2 IT Program\Sprint 0
-New,68400,Workshop,"WS-24 -  ECR Review & Approval
- Change request initiation","Engineering Change Mgmt is a capability that controls and governs changes to products, Bills of Materials (BOMs), formulas, components, and engineering data throughout a product's lifecycle.
+New,68400,Workshop,"WS-24 - ECR Review & Approval
+Change request initiation","Engineering Change Mgmt is a capability that controls and governs changes to products, Bills of Materials (BOMs), formulas, components, and engineering data throughout a product's lifecycle.
 
-ECR Review &amp; Approval
+ECR Review & Approval
 
 Facilitates the review, evaluation, and approval of Engineering Change Requests (ECRs) to ensure changes are properly assessed, authorized, and documented.
 
@@ -350,7 +350,7 @@ Change Request Initiation
 
 Enables the structured submission and tracking of product or engineering change requests to support controlled change management processes.",68372,1,Day 2 IT Program\HeartStream\Workshop,Day 2 IT Program\Sprint 0
 New,68479,Workshop,"WS-23 - Quality nonconformance tracking & CAPA mgmtt
-Product service agreements","Quality Nonconformance Tracking &amp; CAPA Management
+Product service agreements","Quality Nonconformance Tracking & CAPA Management
 
 Tracks product and process quality issues, manages nonconformance investigations, and oversees Corrective and Preventive Actions (CAPA) to improve compliance, reduce recurring defects, and drive continuous quality improvement.
 
@@ -358,11 +358,11 @@ Product Service Agreements
 
 Manages service agreements throughout their lifecycle, including contract setup, service commitments, renewals, and performance tracking to ensure consistent service delivery and customer satisfaction.",68372,1,Day 2 IT Program\HeartStream\Workshop,Day 2 IT Program\Sprint 0
 New,68474,Workshop,"WS-22 - RMA processing
-Custtomer return orders","Sales &amp; Returns in Dynamics 365 Supply Chain Management (SCM) manages the complete lifecycle of customer sales orders and product returns. It ensures efficient order fulfillment, delivery, returns processing, inventory reconciliation, and customer satisfaction as part of the Inventory-to-Deliver (I2D) process.",68372,1,Day 2 IT Program\HeartStream\Workshop,Day 2 IT Program\Sprint 0
+Custtomer return orders","Sales & Returns in Dynamics 365 Supply Chain Management (SCM) manages the complete lifecycle of customer sales orders and product returns. It ensures efficient order fulfillment, delivery, returns processing, inventory reconciliation, and customer satisfaction as part of the Inventory-to-Deliver (I2D) process.",68372,1,Day 2 IT Program\HeartStream\Workshop,Day 2 IT Program\Sprint 0
 New,68468,Workshop,"WS-21 - Sales-driven production orders
 Export order mgmt
 Export control compliance
-Sales order processing","Sales &amp; Order Management in Dynamics 365 Supply Chain Management (SCM) manages the fulfillment lifecycle from customer order receipt through inventory allocation, warehouse processing, shipment, and delivery. It is a core component of the Inventory-to-Deliver (I2D) process.",68372,1,Day 2 IT Program\HeartStream\Workshop,Day 2 IT Program\Sprint 0
+Sales order processing","Sales & Order Management in Dynamics 365 Supply Chain Management (SCM) manages the fulfillment lifecycle from customer order receipt through inventory allocation, warehouse processing, shipment, and delivery. It is a core component of the Inventory-to-Deliver (I2D) process.",68372,1,Day 2 IT Program\HeartStream\Workshop,Day 2 IT Program\Sprint 0
 New,68467,Workshop,"WS-20 - Warehouse operations
 Outbound process execution
 Outbound shipment planning","Inventory-to-Deliver in Dynamics 365 Supply Chain Management (SCM) covers the process of managing inventory, warehousing, transportation, and shipment execution to ensure products are delivered to customers efficiently and accurately.",68372,1,Day 2 IT Program\HeartStream\Workshop,Day 2 IT Program\Sprint 0
@@ -370,15 +370,15 @@ New,68506,Workshop,"WS-19 - Chemical compliance
 EHS standards & reporting
 Sustainability target mgmt
 Sustainability reporting","Asset Management and Sustainability Manager in Dynamics 365 help organizations manage physical assets, maintenance operations, reliability, environmental performance, and sustainability goals. These capabilities are commonly aligned with a Maintain-to-Operate (M2O) business process.",68372,1,Day 2 IT Program\HeartStream\Workshop,Day 2 IT Program\Sprint 0
-New,68445,Workshop,WS-18 - Nonconformance & corrective action,"Nonconformance &amp; Corrective Action: Manages the identification, investigation, and resolution of quality issues related to products, processes, or materials. It supports documenting nonconformances, performing root-cause analysis, implementing corrective actions, and monitoring outcomes to improve quality, ensure compliance, and prevent recurring issues.",68372,1,Day 2 IT Program\HeartStream\Workshop,Day 2 IT Program\Sprint 0
+New,68445,Workshop,WS-18 - Nonconformance & corrective action,"Nonconformance & Corrective Action: Manages the identification, investigation, and resolution of quality issues related to products, processes, or materials. It supports documenting nonconformances, performing root-cause analysis, implementing corrective actions, and monitoring outcomes to improve quality, ensure compliance, and prevent recurring issues.",68372,1,Day 2 IT Program\HeartStream\Workshop,Day 2 IT Program\Sprint 0
 New,68461,Workshop,"WS-17 - Production scheduling
 Make-to-stock & make-to-order",Production Control in Dynamics 365 Supply Chain Management (SCM) manages the end-to-end manufacturing process that converts raw materials and components into finished goods and delivers them to customers. It is a core capability within the Inventory-to-Deliver (I2D) business process.,68372,1,Day 2 IT Program\HeartStream\Workshop,Day 2 IT Program\Sprint 0
 New,68437,Workshop,"WS-17 - Production planning
-Supply planning","D365 SCM Production Control, Inventory to Deliver, Production Planning &amp; Supply Planning: Dynamics 365 Supply Chain Management enables organizations to plan, schedule, and control production activities while ensuring optimal inventory availability and efficient order fulfillment. It supports production planning and supply planning by balancing demand, inventory, capacity, procurement, and manufacturing resources to optimize production schedules, maintain stock levels, reduce supply chain disruptions, and ensure products are delivered to customers on time.",68372,1,Day 2 IT Program\HeartStream\Workshop,Day 2 IT Program\Sprint 0
+Supply planning","D365 SCM Production Control, Inventory to Deliver, Production Planning & Supply Planning: Dynamics 365 Supply Chain Management enables organizations to plan, schedule, and control production activities while ensuring optimal inventory availability and efficient order fulfillment. It supports production planning and supply planning by balancing demand, inventory, capacity, procurement, and manufacturing resources to optimize production schedules, maintain stock levels, reduce supply chain disruptions, and ensure products are delivered to customers on time.",68372,1,Day 2 IT Program\HeartStream\Workshop,Day 2 IT Program\Sprint 0
 New,68444,Workshop,"WS-17 - Inventory & production alignment
-BOM & production optimization","Inventory &amp; Production Alignment: Ensures inventory levels, material availability, and production schedules are synchronized with demand and supply requirements, enabling efficient manufacturing operations, minimizing stock shortages, and supporting on-time order fulfillment.
+BOM & production optimization","Inventory & Production Alignment: Ensures inventory levels, material availability, and production schedules are synchronized with demand and supply requirements, enabling efficient manufacturing operations, minimizing stock shortages, and supporting on-time order fulfillment.
 
-BOM &amp; Production Optimization: Streamlines the management and optimization of Bills of Materials (BOMs) and production processes to improve resource utilization, reduce costs, enhance product quality, and increase overall manufacturing efficiency.",68372,1,Day 2 IT Program\HeartStream\Workshop,Day 2 IT Program\Sprint 0
+BOM & Production Optimization: Streamlines the management and optimization of Bills of Materials (BOMs) and production processes to improve resource utilization, reduce costs, enhance product quality, and increase overall manufacturing efficiency.",68372,1,Day 2 IT Program\HeartStream\Workshop,Day 2 IT Program\Sprint 0
 New,68422,Workshop,"WS-16 - Sales forecast mgmt
 Safety stock planning
 Demand forecasting
@@ -394,41 +394,41 @@ Demand Forecasting
 
 Analyzes historical trends, market signals, and business inputs to predict future customer demand and support effective supply and production planning.
 
-Forecast Accuracy &amp; AI Analytics
+Forecast Accuracy & AI Analytics
 
 Monitors forecast performance and leverages AI-driven analytics to improve forecasting accuracy, identify trends, and enhance planning decisions",68372,1,Day 2 IT Program\HeartStream\Workshop,Day 2 IT Program\Sprint 0
-New,68421,Workshop,WS-15 - Traceability & Batch/serial tracking,"Traceability &amp; Batch/Serial Tracking
+New,68421,Workshop,WS-15 - Traceability & Batch/serial tracking,"Traceability & Batch/Serial Tracking
 
 Manages end-to-end product traceability by tracking materials, components, and finished goods through batch and serial numbers across the supply chain. This enables product genealogy, quality control, regulatory compliance, recall management, and visibility into inventory and product movement throughout the lifecycle.",68372,1,Day 2 IT Program\HeartStream\Workshop,Day 2 IT Program\Sprint 0
 New,68455,Workshop,WS-14 - Procurement mgmt,"Procure-to-Pay (P2P) lifecycle, ensuring materials, products, and services are sourced efficiently, purchased at the right cost, and delivered when needed.
-D365 SCM Procurement &amp; Sourcing, Record to Report &amp; Procurement Management: Supports the end-to-end procurement lifecycle, including supplier sourcing, vendor management, purchasing, contract compliance, and procurement operations. It integrates procurement activities with financial processes to ensure accurate recording of purchasing transactions, cost control, supplier performance management, and timely financial reporting within the record-to-report framework.",68372,1,Day 2 IT Program\HeartStream\Workshop,Day 2 IT Program\Sprint 0
-New,68514,Workshop,WS-14 - Landed cost mgmt,"Procurement &amp; Sourcing in Dynamics 365 Supply Chain Management (SCM) manages the complete Source-to-Pay (S2P) process, from identifying sourcing needs and selecting suppliers through purchasing, receiving goods, invoice processing, and supplier payment.",68372,1,Day 2 IT Program\HeartStream\Workshop,Day 2 IT Program\Sprint 0
+D365 SCM Procurement & Sourcing, Record to Report & Procurement Management: Supports the end-to-end procurement lifecycle, including supplier sourcing, vendor management, purchasing, contract compliance, and procurement operations. It integrates procurement activities with financial processes to ensure accurate recording of purchasing transactions, cost control, supplier performance management, and timely financial reporting within the record-to-report framework.",68372,1,Day 2 IT Program\HeartStream\Workshop,Day 2 IT Program\Sprint 0
+New,68514,Workshop,WS-14 - Landed cost mgmt,"Procurement & Sourcing in Dynamics 365 Supply Chain Management (SCM) manages the complete Source-to-Pay (S2P) process, from identifying sourcing needs and selecting suppliers through purchasing, receiving goods, invoice processing, and supplier payment.",68372,1,Day 2 IT Program\HeartStream\Workshop,Day 2 IT Program\Sprint 0
 New,68443,Workshop,"WS-12 - Employee benefit accounting
 Financial data coordination
-Intercompany consolidation","Consolidations &amp; Financial Reporting is a core component of the Record-to-Report (R2R) process in Dynamics 365 Finance. It combines financial data from multiple legal entities, performs eliminations and adjustments, and produces enterprise-wide financial statements and management reports.",68372,1,Day 2 IT Program\HeartStream\Workshop,Day 2 IT Program\Sprint 0
-New,68499,Workshop,WS-12 - Balance sheet consolidation,"Consolidations &amp; Financial Reporting in Dynamics 365 Finance is the final stage of the Record-to-Report (R2R) process. It combines financial data across legal entities, performs eliminations and adjustments, and produces statutory and management financial reports used by executives, auditors, regulators, and stakeholders.",68372,1,Day 2 IT Program\HeartStream\Workshop,Day 2 IT Program\Sprint 0
+Intercompany consolidation","Consolidations & Financial Reporting is a core component of the Record-to-Report (R2R) process in Dynamics 365 Finance. It combines financial data from multiple legal entities, performs eliminations and adjustments, and produces enterprise-wide financial statements and management reports.",68372,1,Day 2 IT Program\HeartStream\Workshop,Day 2 IT Program\Sprint 0
+New,68499,Workshop,WS-12 - Balance sheet consolidation,"Consolidations & Financial Reporting in Dynamics 365 Finance is the final stage of the Record-to-Report (R2R) process. It combines financial data across legal entities, performs eliminations and adjustments, and produces statutory and management financial reports used by executives, auditors, regulators, and stakeholders.",68372,1,Day 2 IT Program\HeartStream\Workshop,Day 2 IT Program\Sprint 0
 New,68442,Workshop,WS-11 - Intercompanysetup & data mgmt,"Intercompany Accounting in Dynamics 365 Finance manages financial and operational transactions between legal entities within the same organization. It automates due-to/due-from entries, intercompany sales and purchases, cost allocations, and consolidated financial reporting.",68372,1,Day 2 IT Program\HeartStream\Workshop,Day 2 IT Program\Sprint 0
-New,68494,Workshop,WS-10 - Project lifecycle mgmt,"D365 Project Management &amp; Accounting (Project Operations in the broader D365 suite) manages the complete lifecycle of customer projects, from project planning and resource assignment through time and expense capture, billing, revenue recognition, and profitability reporting.
+New,68494,Workshop,WS-10 - Project lifecycle mgmt,"D365 Project Management & Accounting (Project Operations in the broader D365 suite) manages the complete lifecycle of customer projects, from project planning and resource assignment through time and expense capture, billing, revenue recognition, and profitability reporting.
 
 The business process is commonly referred to as Project-to-Profit (P2P).",68372,1,Day 2 IT Program\HeartStream\Workshop,Day 2 IT Program\Sprint 0
 New,68498,Workshop,WS-09 - Inventory valuation,"Cost Accounting in Dynamics 365 Finance enables organizations to collect, allocate, analyze, and report costs across departments, business units, products, projects, and operations. It is a key component of the Record-to-Report (R2R) process because it provides management insight into profitability, operational efficiency, and cost control.",68372,1,Day 2 IT Program\HeartStream\Workshop,Day 2 IT Program\Sprint 0
 New,68460,Workshop,WS-08 - Asset transaction mgmt,"Acquire-to-Dispose (A2D) is the end-to-end lifecycle of a fixed asset in Dynamics 365 Finance, from purchasing or creating the asset through depreciation, maintenance, and final disposal.",68372,1,Day 2 IT Program\HeartStream\Workshop,Day 2 IT Program\Sprint 0
-New,68473,Workshop,WS-07 - Discount & settlement provisions,"Credit &amp; Collections in Dynamics 365 Finance helps organizations manage customer credit risk, monitor outstanding receivables, accelerate collections, and improve cash flow. It is a critical component of the Record-to-Report (R2R) process because it directly impacts Accounts Receivable, working capital, bad debt exposure, and financial reporting.",68372,1,Day 2 IT Program\HeartStream\Workshop,Day 2 IT Program\Sprint 0
+New,68473,Workshop,WS-07 - Discount & settlement provisions,"Credit & Collections in Dynamics 365 Finance helps organizations manage customer credit risk, monitor outstanding receivables, accelerate collections, and improve cash flow. It is a critical component of the Record-to-Report (R2R) process because it directly impacts Accounts Receivable, working capital, bad debt exposure, and financial reporting.",68372,1,Day 2 IT Program\HeartStream\Workshop,Day 2 IT Program\Sprint 0
 New,68483,Workshop,"WS-07 - Delinquent account mgmt
-Credit risk mgmt","Credit &amp; Collections in Dynamics 365 Finance manages customer credit risk, credit limits, collections activities, dispute management, bad debt exposure, and cash recovery. It is an important component of the Record-to-Report (R2R) process because it improves cash flow, reduces financial risk, and ensures accurate receivable reporting.",68372,1,Day 2 IT Program\HeartStream\Workshop,Day 2 IT Program\Sprint 0
-New,68508,Workshop,WS-06 - Sundry & miscellaneous AR,"Sundry &amp; Miscellaneous AR
+Credit risk mgmt","Credit & Collections in Dynamics 365 Finance manages customer credit risk, credit limits, collections activities, dispute management, bad debt exposure, and cash recovery. It is an important component of the Record-to-Report (R2R) process because it improves cash flow, reduces financial risk, and ensures accurate receivable reporting.",68372,1,Day 2 IT Program\HeartStream\Workshop,Day 2 IT Program\Sprint 0
+New,68508,Workshop,WS-06 - Sundry & miscellaneous AR,"Sundry & Miscellaneous AR
 
 Handles non-standard accounts receivable transactions, miscellaneous customer charges, credits, adjustments, and collections to maintain accurate financial records.",68372,1,Day 2 IT Program\HeartStream\Workshop,Day 2 IT Program\Sprint 0
 New,68472,Workshop,"WS-06 - Customer billing & revenue recognition
-Cash application","Customer Billing &amp; Revenue Recognition
+Cash application","Customer Billing & Revenue Recognition
 
 Manages customer invoicing, billing schedules, and revenue recognition processes to ensure accurate billing, compliance with accounting standards, and timely recognition of revenue across products, services, subscriptions, and contractual agreements.
 
 Cash Application
 
 Automates the matching and application of customer payments to open invoices, improving accounts receivable accuracy, reducing manual effort, accelerating collections, and enhancing cash flow visibility",68372,1,Day 2 IT Program\HeartStream\Workshop,Day 2 IT Program\Sprint 0
-New,68453,Workshop,WS-05 - AP setup & vendor mgmt,"Finance, Record to Report, Accounts Payable Setup &amp; Vendor Management: Supports the configuration and management of accounts payable processes and vendor master data, including vendor onboarding, invoice processing, payment management, and compliance controls. It ensures accurate financial transactions, efficient supplier management, timely payments, and reliable financial reporting within the record-to-report process.",68372,1,Day 2 IT Program\HeartStream\Workshop,Day 2 IT Program\Sprint 0
-New,68487,Workshop,WS-04 - Liquidity & cash equivalents,"Cash &amp; Bank Management in Dynamics 365 Finance manages the organization's cash positions, bank accounts, payment processing, bank reconciliations, liquidity, and cash forecasting. It is a critical component of the Record-to-Report (R2R) process because it ensures that financial transactions are accurately recorded, reconciled, and reported.",68372,1,Day 2 IT Program\HeartStream\Workshop,Day 2 IT Program\Sprint 0
+New,68453,Workshop,WS-05 - AP setup & vendor mgmt,"Finance, Record to Report, Accounts Payable Setup & Vendor Management: Supports the configuration and management of accounts payable processes and vendor master data, including vendor onboarding, invoice processing, payment management, and compliance controls. It ensures accurate financial transactions, efficient supplier management, timely payments, and reliable financial reporting within the record-to-report process.",68372,1,Day 2 IT Program\HeartStream\Workshop,Day 2 IT Program\Sprint 0
+New,68487,Workshop,WS-04 - Liquidity & cash equivalents,"Cash & Bank Management in Dynamics 365 Finance manages the organization's cash positions, bank accounts, payment processing, bank reconciliations, liquidity, and cash forecasting. It is a critical component of the Record-to-Report (R2R) process because it ensures that financial transactions are accurately recorded, reconciled, and reported.",68372,1,Day 2 IT Program\HeartStream\Workshop,Day 2 IT Program\Sprint 0
 New,68420,Workshop,"WS-03 - Tax audit & compliance
 Tax code configuration
 Tax provision
@@ -443,20 +443,40 @@ Jornal automation
 Cost & revenue allocation","General Ledger (GL) is the central accounting engine in Dynamics 365 Finance and serves as the foundation of the Record-to-Report (R2R) process. It collects financial transactions from all business processes, maintains the chart of accounts, supports financial close activities, and produces financial statements and management reports.
 
 Payroll Integration
- Integrates payroll transactions with the general ledger to ensure accurate recording of employee compensation, taxes, benefits, and related financial postings.
+Integrates payroll transactions with the general ledger to ensure accurate recording of employee compensation, taxes, benefits, and related financial postings.
 
 Journal Automation
- Automates journal entry creation, validation, and posting processes to improve efficiency, reduce manual effort, and enhance financial controls.
+Automates journal entry creation, validation, and posting processes to improve efficiency, reduce manual effort, and enhance financial controls.
 
-Cost &amp; Revenue Allocation
- Allocates shared costs and revenues across organizational entities based on predefined rules, improving profitability analysis and financial transparency.",68372,1,Day 2 IT Program\HeartStream\Workshop,Day 2 IT Program\Sprint 0
-New,68403,Workshop,"WS-02 -  Accrual & deferral management
- Ledger allocation","General Ledger (GL) is the central accounting engine in Dynamics 365 Finance and serves as the foundation of the Record-to-Report (R2R) process. It collects financial transactions from all business processes, maintains the chart of accounts, supports financial close activities, and produces financial statements and management reports.Accrual &amp; Deferral Management
+Cost & Revenue Allocation
+Allocates shared costs and revenues across organizational entities based on predefined rules, improving profitability analysis and financial transparency.",68372,1,Day 2 IT Program\HeartStream\Workshop,Day 2 IT Program\Sprint 0
+New,68403,Workshop,"WS-02 - Accrual & deferral management
+Ledger allocation","General Ledger (GL) is the central accounting engine in Dynamics 365 Finance and serves as the foundation of the Record-to-Report (R2R) process. It collects financial transactions from all business processes, maintains the chart of accounts, supports financial close activities, and produces financial statements and management reports.Accrual & Deferral Management
 
 Automates the recognition and timing of expenses and revenues through accrual and deferral processes, ensuring accurate financial reporting and compliance with accounting standards.
 
 Ledger Allocation
- Distributes costs, revenues, and balances across business units, departments, or cost centers to support accurate financial analysis and reporting.",68372,1,Day 2 IT Program\HeartStream\Workshop,Day 2 IT Program\Sprint 0
-In Review,68371,Workshop,WS-01 - PIM Core Module Operations,"<div><span>Within D365 SCM Product Information Management (PIM), Design to Retire refers specifically to the lifecycle management of a product's master data, from the moment a product is conceived until it is discontinued and removed from active use.<br></span><div><br> </div><div>PIM Core Module Operations<br> </div><div><br> </div><div>Manages the overall Product Information Management (PIM) process, ensuring product data is centralized, governed, maintained, and distributed consistently across business systems and channels.<br> </div><div><br> </div><div>Product Master Data Setup<br> </div><div><br> </div><div>Establishes and maintains core product master data, including product definitions, identifiers, dimensions, and classifications, to support accurate business operations and reporting.<br> </div><div><br> </div><div>Product Variants &amp; Configurations<br> </div><div><br> </div><div>Manages product variants and configurable options, enabling businesses to define and control different product models, features, and customization requirements.<br> </div><div><br> </div><div>Product Attributes &amp; Categories<br> </div><div><br> </div><div>Organizes products using standardized attributes, specifications, and category structures to improve product classification, searchability, and data consistency.<br> </div><div><br> </div><div>Product Release &amp; Lifecycle<br> </div><div><br> </div><span>Controls the process of releasing products and managing them through their lifecycle stages, from introduction and updates to retirement, ensuring compliance and operational readiness.</span><br> </div>",68372,1,Day 2 IT Program\HeartStream\Workshop,Day 2 IT Program\Sprint 0
+Distributes costs, revenues, and balances across business units, departments, or cost centers to support accurate financial analysis and reporting.",68372,1,Day 2 IT Program\HeartStream\Workshop,Day 2 IT Program\Sprint 0
+In Review,68371,Workshop,WS-01 - PIM Core Module Operations,"Within D365 SCM Product Information Management (PIM), Design to Retire refers specifically to the lifecycle management of a product's master data, from the moment a product is conceived until it is discontinued and removed from active use.
+
+PIM Core Module Operations
+
+Manages the overall Product Information Management (PIM) process, ensuring product data is centralized, governed, maintained, and distributed consistently across business systems and channels.
+
+Product Master Data Setup
+
+Establishes and maintains core product master data, including product definitions, identifiers, dimensions, and classifications, to support accurate business operations and reporting.
+
+Product Variants & Configurations
+
+Manages product variants and configurable options, enabling businesses to define and control different product models, features, and customization requirements.
+
+Product Attributes & Categories
+
+Organizes products using standardized attributes, specifications, and category structures to improve product classification, searchability, and data consistency.
+
+Product Release & Lifecycle
+
+Controls the process of releasing products and managing them through their lifecycle stages, from introduction and updates to retirement, ensuring compliance and operational readiness.",68372,1,Day 2 IT Program\HeartStream\Workshop,Day 2 IT Program\Sprint 0
 In Progress,68372,Epic,Workshop,,,119,Day 2 IT Program\HeartStream\Workshop,Day 2 IT Program\Sprint 0
 New,68664,Epic,CRM,,,0,Day 2 IT Program\HeartStream\Workshop,Day 2 IT Program\Sprint 0

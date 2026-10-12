@@ -92,13 +92,14 @@ def test_map_stories_writes_catalog_epic_and_feature_rows() -> None:
     stories = [r for r in mapped if r["Work Item Type"] == "User Story"]
     assert "FEATURE ID" not in stories[0]
     assert "EPIC ID" not in stories[0]
-    assert stories[0].get("ID") == ""
+    assert stories[0].get("ID") == "F1"
+    assert stories[1].get("ID") == ""
     assert [r["Work Item Type"] for r in mapped][:4] == ["Workshop", "Epic", "Feature", "User Story"]
     assert log[0]["status"] == "matched"
     assert log[1]["status"] == "unmatched"
 
 
-def test_ambiguous_duplicate_features_stay_blank() -> None:
+def test_duplicate_feature_titles_still_map() -> None:
     rows = [_row("User Story", "Onboard the partner and enable selling")]
     buckets = {
         "Epic": [_cand("E1", "Reseller"), _cand("E2", "Retail")],
@@ -111,8 +112,10 @@ def test_ambiguous_duplicate_features_stay_blank() -> None:
     mapped, log = map_stories(rows, buckets, THRESHOLD, MARGIN)
     assert "FEATURE ID" not in mapped[0]
     assert "EPIC ID" not in mapped[0]
-    assert log[0]["pair"] == "no_feature"
-    assert "no_unique_catalog_title" in log[0]["feature"]["rationale"]
+    assert log[0]["status"] == "matched"
+    assert log[0]["featureId"] in {"F1", "F2"}
+    story = next(r for r in mapped if r["Work Item Type"] == "User Story")
+    assert story["ID"] == log[0]["featureId"]
 
 
 def main() -> int:
@@ -120,7 +123,7 @@ def main() -> int:
         test_title_score_ignores_numbering,
         test_story_maps_to_existing_feature_and_parent_epic,
         test_map_stories_writes_catalog_epic_and_feature_rows,
-        test_ambiguous_duplicate_features_stay_blank,
+        test_duplicate_feature_titles_still_map,
     ]
     for fn in tests:
         fn()

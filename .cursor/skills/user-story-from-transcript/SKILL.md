@@ -19,7 +19,7 @@ description: Transcript → ADO user story CSV using the stored rulebook. Use fo
 4. **ado-user-story-csv-writer** — row JSON → `python scripts/ado_user_story_csv.py write` to the **internal** working CSV (canonical; see rulebook `validation.mandatory_flow`).
 5. **user-story-csv-compliance-validator** — run `scripts/validate-user-story-csv.py`; parent rejects FAIL (layout + field rules).
 6. **invest-scorecard-evaluator** — write **only** `artifacts/intake/<date>-invest-scorecard.csv`. Do not add INVEST columns to the working CSV or the public Excel.
-7. **work-item-mapping-agent** (after PASS) — one public Excel; catalog Epic/Feature IDs in `ID` only.
+7. **Identify Feature, then story.** Match the transcript to an existing Feature before writing the User Story. **work-item-mapping-agent** (after PASS) writes one public Excel. A matched User Story `ID` is that Feature's workItemId.
 
 ## Output paths
 
@@ -39,7 +39,7 @@ description: Transcript → ADO user story CSV using the stored rulebook. Use fo
 - **Description:** `As a <role>, I need to <need>, so that <benefit>.` (User Story only).
 - **Acceptance Criteria:** one ASCII `- ` (hyphen + space) criterion per line inside the cell; leave empty for Issue/Risk.
 - **Area Path:** on Workshop/Feature/Issue; usually **blank** on User Story rows (ADO export convention).
-- **ID:** leave blank for new rows unless transcript cites an existing ADO ID.
+- **ID:** blank on the working CSV. On the public Excel, every User Story `ID` is a catalog Feature workItemId. Leave it blank only when no catalog Feature title relates.
 - **Priority / Story Points:** do not add columns (not in rulebook).
 
 ## Provenance

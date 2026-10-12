@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MSD E2E Test Case Generation — HeartStream AI Factory</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+<style>
+  :root {
+    --bg: #e8edf2;
+    --bg-accent: radial-gradient(ellipse 120% 80% at 50% -20%, rgba(0, 118, 129, 0.12), transparent 55%);
+    --surface: #ffffff;
+    --surface-2: #f4f7fa;
+    --ink: #0f1720;
+    --muted: #5c6773;
+    --line: #d0d8e2;
+    --ust-navy: #0c2340;
+    --ust-teal: #007681;
+    --ust-green: #1a7a52;
+    --accent: var(--ust-teal);
+    --good: var(--ust-green);
+    --warn: #b45309;
+    --radius: 14px;
+    --shadow: 0 12px 40px rgba(12, 35, 64, 0.09);
+    --shadow-hover: 0 16px 48px rgba(12, 35, 64, 0.14);
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    font: 16px/1.6 "DM Sans", "Segoe UI", sans-serif;
+    color: var(--ink);
+    background: var(--bg);
+    background-image: var(--bg-accent);
+  }
+  .hero {
+    background: linear-gradient(145deg, #0c2340 0%, #134063 42%, #0a5c62 100%);
+    color: #f4f7fa;
+    padding: 3.5rem 1.5rem 3rem;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at 85% 20%, rgba(255,255,255,0.08), transparent 45%);
+    pointer-events: none;
+  }
+  .wrap { max-width: 1180px; margin: 0 auto; padding: 0 1.5rem; position: relative; z-index: 1; }
+  .hero h1 {
+    font-family: "Instrument Serif", Georgia, serif;
+    font-size: clamp(2.1rem, 4.5vw, 3rem);
+    font-weight: 400;
+    margin: 0 0 0.6rem;
+    line-height: 1.12;
+    letter-spacing: -0.02em;
+  }
+  .eyebrow {
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    font-size: 0.7rem;
+    color: #8ec4d4;
+    margin: 0 0 0.85rem;
+    font-weight: 600;
+  }
+  .hero p.lead { max-width: 42rem; color: #b8c9d6; margin: 0; font-size: 1.05rem; }
+  .hero-badges { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 1.5rem; }
+  .badge {
+    font-size: 0.78rem;
+    padding: 0.35rem 0.75rem;
+    border-radius: 999px;
+    border: 1px solid rgba(255,255,255,0.2);
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(4px);
+  }
+  nav.sticky {
+    position: sticky;
+    top: 0;
+    z-index: 40;
+    background: rgba(255,255,255,0.88);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--line);
+    box-shadow: 0 4px 20px rgba(12, 35, 64, 0.04);
+  }
+  nav.sticky .wrap {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    padding-top: 0.85rem;
+    padding-bottom: 0.85rem;
+    align-items: center;
+  }
+  nav.sticky a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--ust-navy);
+    text-decoration: none;
+    font-size: 0.82rem;
+    font-weight: 600;
+    line-height: 1.2;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    border: 1px solid var(--line);
+    background: linear-gradient(180deg, #ffffff 0%, var(--surface-2) 100%);
+    box-shadow: 0 2px 6px rgba(12, 35, 64, 0.07);
+    transition: color 0.15s ease, background 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease, transform 0.15s ease;
+  }
+  nav.sticky a:hover {
+    color: #fff;
+    background: linear-gradient(180deg, #0a8a94 0%, var(--accent) 100%);
+    border-color: var(--accent);
+    box-shadow: 0 4px 14px rgba(0, 118, 129, 0.35);
+    transform: translateY(-1px);
+  }
+  nav.sticky a:active {
+    transform: translateY(0);
+    box-shadow: 0 1px 4px rgba(0, 118, 129, 0.25);
+  }
+  main { padding: 2.5rem 0 4.5rem; }
+  section {
+    margin-bottom: 0;
+    scroll-margin-top: 5rem;
+    padding: 2.5rem 0;
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    border-bottom: 1px solid var(--line);
+  }
+  main > .wrap > section:last-of-type {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+  section h2 {
+    font-family: "Instrument Serif", Georgia, serif;
+    font-size: 1.85rem;
+    font-weight: 400;
+    margin: 0 0 0.4rem;
+    color: var(--ust-navy);
+    letter-spacing: -0.02em;
+    line-height: 1.2;
+  }
+  section > h3 {
+    font-size: 1.05rem;
+    font-weight: 600;
+    margin: 1.35rem 0 0.55rem;
+    color: var(--ust-navy);
+  }
+  .section-intro { color: var(--muted); margin: 0 0 1.35rem; max-width: 46rem; }
+  .grid-2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.75rem 2.25rem;
+  }
+  .card {
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    padding: 0;
+  }
+  .card .icon {
+    display: none;
+  }
+  .card h3 { margin-top: 0; font-size: 1.02rem; }
+  .card p { margin: 0; color: var(--muted); font-size: 0.92rem; line-height: 1.5; }
+  .flow-steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 0.65rem;
+  }
+  .step {
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    padding: 0 0.25rem;
+    text-align: left;
+    border-top: none;
+  }
+  .step .num {
+    font-size: 0.65rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--accent);
+    font-weight: 700;
+  }
+  .step strong { display: block; font-size: 0.88rem; margin: 0.35rem 0 0.25rem; color: var(--ust-navy); }
+  .step span { font-size: 0.78rem; color: var(--muted); line-height: 1.35; display: block; }
+  .diagram {
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    padding: 0.5rem 0;
+    margin: 1.25rem 0;
+    overflow-x: auto;
+  }
+  table.data {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+  }
+  table.data th, table.data td {
+    border-bottom: 1px solid var(--line);
+    padding: 0.7rem 0.85rem;
+    text-align: left;
+    vertical-align: top;
+  }
+  table.data th {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--muted);
+    background: var(--surface-2);
+  }
+  table.data tr:hover td { background: #fafcfd; }
+  .table-wrap { overflow-x: auto; border: none; border-radius: 0; }
+  .pill {
+    display: inline-block;
+    font-size: 0.72rem;
+    padding: 0.2rem 0.55rem;
+    border-radius: 999px;
+    font-weight: 600;
+  }
+  .pill.once { background: #e8f0f8; color: var(--ust-navy); }
+  .pill.runtime { background: #edf7f1; color: var(--good); }
+  .pill.never { background: #fef3e8; color: var(--warn); }
+  ul.clean { margin: 0.5rem 0 0; padding-left: 1.2rem; color: var(--muted); }
+  ul.clean li { margin-bottom: 0.45rem; }
+  .stat-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 0.75rem;
+    margin-top: 1rem;
+  }
+  .stat {
+    text-align: left;
+    padding: 0;
+    background: transparent;
+    border-radius: 0;
+    border: none;
+  }
+  .stat .val {
+    font-family: "Instrument Serif", Georgia, serif;
+    font-size: 2rem;
+    color: var(--ust-navy);
+    line-height: 1.1;
+  }
+  .stat .lbl { font-size: 0.78rem; color: var(--muted); margin-top: 0.35rem; }
+  .pipeline {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 1.5rem;
+    background: linear-gradient(90deg, var(--ust-navy), #165a7a);
+    border-radius: var(--radius);
+    color: #fff;
+  }
+  .pipeline .node {
+    background: rgba(255,255,255,0.12);
+    border: 1px solid rgba(255,255,255,0.25);
+    padding: 0.55rem 1rem;
+    border-radius: 10px;
+    font-size: 0.82rem;
+    font-weight: 600;
+  }
+  .pipeline .node.highlight {
+    background: var(--accent);
+    border-color: transparent;
+  }
+  .pipeline .arrow { opacity: 0.7; font-size: 1rem; }
+  footer {
+    border-top: 1px solid var(--line);
+    padding: 2rem 1.5rem;
+    color: var(--muted);
+    font-size: 0.88rem;
+    background: var(--surface);
+    text-align: center;
+  }
+  footer a { color: var(--accent); text-decoration: none; font-weight: 600; }
+  footer a:hover { text-decoration: underline; }
+  @media (max-width: 640px) {
+    section { padding: 1.25rem; }
+  }
+  @media print {
+    nav.sticky { display: none; }
+    section { box-shadow: none; break-inside: avoid; }
+  }
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="wrap">
+    <p class="eyebrow">HeartStream · AI Factory · UST</p>
+    <h1>MSD E2E Test Case Generation</h1>
+    <p class="lead">From a rulebook-shaped user story workbook to a Microsoft Dynamics execution-ready E2E package—grouped by feature, grounded in acceptance criteria, and validated before delivery.</p>
+    <div class="hero-badges">
+      <span class="badge">Rulebook-driven layout</span>
+      <span class="badge">AC-sourced steps</span>
+      <span class="badge">Positive + exception model</span>
+      <span class="badge">No bootstrap at runtime</span>
+    </div>
+  </div>
+</header>
+
+<nav class="sticky" aria-label="Page sections">
+  <div class="wrap">
+    <a href="#inputs">Inputs</a>
+    <a href="#command">Command</a>
+    <a href="#flow">Flow</a>
+    <a href="#cases">Case model</a>
+    <a href="#workbook">Workbook</a>
+    <a href="#factory">Factory map</a>
+    <a href="#artifacts">Artifacts</a>
+    <a href="#pipeline">Pipeline</a>
+  </div>
+</nav>
+
+<main class="wrap">
+
+<section id="inputs">
+  <h2>1. Inputs used</h2>
+  <p class="section-intro">Runtime generation reads <strong>stored rulebooks</strong> and a <strong>user story workbook</strong> (typically produced right after story generation from a workshop transcript). A sample E2E execution plan is used only once to define the MSD rulebook—it is never opened during generation.</p>
+  <div class="grid-2">
+    <article class="card">
+      <div class="icon" aria-hidden="true">&#128196;</div>
+      <h3>User Story Excel</h3>
+      <p>Standard story export layout. Rows include Epic, Feature, and User Story work items with Description and Acceptance Criteria.</p>
+    </article>
+    <article class="card">
+      <div class="icon" aria-hidden="true">&#128214;</div>
+      <h3>MSD test case rulebook</h3>
+      <p>Sheet names, columns, test case ID pattern, case model, allowed values, and generation logic—the permanent layout contract.</p>
+    </article>
+    <article class="card">
+      <div class="icon" aria-hidden="true">&#128221;</div>
+      <h3>Source story rulebook</h3>
+      <p>Defines how to find the header row and which column is <em>User Story</em>. Used only for extraction—not for rewriting stories.</p>
+    </article>
+    <article class="card">
+      <div class="icon" aria-hidden="true">&#9888;</div>
+      <h3>Intake safety</h3>
+      <p>The story workbook is untrusted intake: it is scanned for injection and sensitive data before any extraction or authoring.</p>
+    </article>
+  </div>
+  <h3>Bootstrap vs runtime</h3>
+  <ul class="clean">
+    <li><span class="pill once">One-time</span> Sample E2E execution plan → MSD rulebook via rulebook bootstrap authoring.</li>
+    <li><span class="pill runtime">Every run</span> Agents load the stored rulebook only. Layout and patterns are configuration, not copied sample rows.</li>
+    <li><span class="pill never">Never</span> Read bootstrap cell content, ISV product lists, or process names into generated cases.</li>
+  </ul>
+</section>
+
+<section id="command">
+  <h2>2. Operator command</h2>
+  <p class="section-intro">Entry point: <strong>generate test cases from user stories</strong>, with the story workbook as input. The orchestrator routes to the <strong>test agent</strong> in user-story-excel mode (not the quality agent, which owns sprint test-package expansion).</p>
+  <div class="table-wrap">
+    <table class="data">
+      <thead>
+        <tr><th>Phase</th><th>Role</th><th>What runs</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Gate</td><td>Output safety</td><td>Path conflict check, intake safety scan</td></tr>
+        <tr><td>Extract</td><td>Mechanical load</td><td>Story extraction tool</td></tr>
+        <tr><td>Author</td><td>Cases from AC</td><td>Test case extractor specialist</td></tr>
+        <tr><td>Write</td><td>Build workbook</td><td>Workbook writer specialist</td></tr>
+        <tr><td>Validate</td><td>Schema check</td><td>Workbook compliance validator</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="section-intro" style="margin-top:1rem;margin-bottom:0;">In Cursor chat, run the generate-test-cases command and attach or reference the latest user story workbook.</p>
+</section>
+
+<section id="flow">
+  <h2>3. Generation flow</h2>
+  <p class="section-intro">Plan → Act → Observe → Reflect (up to three iterations). The first pass that clears validation is enough to stop. Human gates: intake safety, output conflict resolution, and review of the delivered workbook.</p>
+  <div class="flow-steps">
+    <div class="step"><span class="num">0</span><strong>Path gate</strong><span>CLEAR or human new/overwrite.</span></div>
+    <div class="step"><span class="num">1</span><strong>Safety</strong><span>Scan story workbook.</span></div>
+    <div class="step"><span class="num">2</span><strong>Extract</strong><span>Stories plus grouping.</span></div>
+    <div class="step"><span class="num">3</span><strong>Author</strong><span>Cases, steps, provenance.</span></div>
+    <div class="step"><span class="num">4</span><strong>Write</strong><span>Build Excel package.</span></div>
+    <div class="step"><span class="num">5</span><strong>Validate</strong><span>Headers, grain, IDs.</span></div>
+    <div class="step"><span class="num">6</span><strong>Deliver</strong><span>Public workbook.</span></div>
+  </div>
+  <div class="diagram mermaid">
+flowchart LR
+  US[User story workbook] --> G[Output path gate]
+  G --> S[Intake safety]
+  S --> E[Extract stories]
+  E --> J1[Story snapshot]
+  J1 --> A[Author cases]
+  A --> J2[Case row set]
+  J2 --> W[Render workbook]
+  W --> XL[E2E test package]
+  XL --> V[Validate layout]
+  V --> OK{PASS?}
+  OK -->|yes| OUT[Operator review]
+  OK -->|no| A
+  </div>
+  <h3>Mechanical vs agent-owned</h3>
+  <ul class="clean">
+    <li><strong>Automation</strong> — Header discovery, story filtering, workbook rendering, coverage and ISV derivation, validation.</li>
+    <li><strong>Agents</strong> — Grouping notes, positive and exception case selection, step text from cited acceptance criteria, test data only when cited, open questions when exception evidence is missing.</li>
+    <li><strong>Agents must not</strong> — Hand-edit the workbook, add columns, invent Dynamics modules or failure paths, or produce sprint markdown test catalogs.</li>
+  </ul>
+</section>
+
+<section id="cases">
+  <h2>4. Case model per scenario</h2>
+  <p class="section-intro">Each scenario group gets at most two test cases: one happy path and one exception or control path—only when the stories evidence constraints, negatives, or boundaries.</p>
+  <div class="grid-2">
+    <article class="card">
+      <h3>Positive case</h3>
+      <p><strong>Test type:</strong> Positive E2E. <strong>ID polarity:</strong> P (for example scenario 01, positive 01). Built from happy-path acceptance criteria and the story need and benefit.</p>
+    </article>
+    <article class="card">
+      <h3>Exception / control case</h3>
+      <p><strong>Test type:</strong> Negative or Control, or a more specific negative class when AC names it. <strong>ID polarity:</strong> N. Omitted when there is no cited failure or constraint—log an open question, do not invent.</p>
+    </article>
+  </div>
+  <div class="diagram mermaid">
+flowchart LR
+  G[Scenario group] --> P[Positive E2E case]
+  G --> N[Exception case if evidenced]
+  P --> S1[Happy-path steps]
+  N --> S2[Constraint steps]
+  </div>
+</section>
+
+<section id="workbook">
+  <h2>5. Delivered workbook layout</h2>
+  <p class="section-intro">The public deliverable is one dated E2E test case workbook. Coverage and ISV sheets are <strong>derived automatically</strong> from the step register—agents do not hand-build them.</p>
+  <div class="table-wrap">
+    <table class="data">
+      <thead>
+        <tr><th>Sheet</th><th>Visible</th><th>Contents</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><strong>Test Coverage</strong></td><td>Yes</td><td>Metrics blocks plus one row per scenario (positive and exception IDs, step counts, primary systems, source flow, coverage focus).</td></tr>
+        <tr><td><strong>E2E Test Cases</strong></td><td>Yes</td><td>Step-level register: scenario, process, case metadata, step, action, owner, ISV, data, expected, execution columns.</td></tr>
+        <tr><td><strong>ISV and Purpose</strong></td><td>Hidden</td><td>Lookup of integration tokens and typical business owner from step owners.</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <h3>Example scale (reference run)</h3>
+  <p class="section-intro">Illustrative counts from one full pipeline run on a 29-story workbook—your numbers depend on story input.</p>
+  <div class="stat-row">
+    <div class="stat"><div class="val">29</div><div class="lbl">User stories read</div></div>
+    <div class="stat"><div class="val">15</div><div class="lbl">Scenario groups</div></div>
+    <div class="stat"><div class="val">30</div><div class="lbl">Test cases</div></div>
+    <div class="stat"><div class="val">72</div><div class="lbl">Detailed steps</div></div>
+  </div>
+</section>
+
+<section id="factory">
+  <h2>6. Factory map</h2>
+  <p class="section-intro">Roles in the AI factory that own this pipeline—described by responsibility, not repository location.</p>
+  <div class="table-wrap">
+    <table class="data">
+      <thead>
+        <tr><th>Kind</th><th>Component</th><th>Responsibility</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Command</td><td>Generate test cases</td><td>Definition of done, gates, deliverables</td></tr>
+        <tr><td>Skill</td><td>MSD from stories</td><td>Runtime workflow summary</td></tr>
+        <tr><td>Primary agent</td><td>Test agent</td><td>Coordinates extract, author, write, validate</td></tr>
+        <tr><td>Specialist</td><td>Case extractor</td><td>Case objects and extraction notes</td></tr>
+        <tr><td>Specialist</td><td>Workbook writer</td><td>Persist case rows, render Excel</td></tr>
+        <tr><td>Specialist</td><td>Compliance validator</td><td>Validation report</td></tr>
+        <tr><td>Rulebook</td><td>MSD layout contract</td><td>Sheets, columns, IDs, case model</td></tr>
+        <tr><td>Tooling</td><td>Story extract CLI</td><td>Load stories from workbook</td></tr>
+        <tr><td>Tooling</td><td>Layout renderer</td><td>Coverage, ISV, openpyxl output</td></tr>
+        <tr><td>Tooling</td><td>Workbook validator</td><td>Headers, numbering, uniformity</td></tr>
+        <tr><td>Templates</td><td>Extraction notes</td><td>Scenario table and open questions</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <h3>Automation sequence (every run)</h3>
+  <ul class="clean">
+    <li>Extract stories from the user story workbook into a story snapshot.</li>
+    <li>After agents author cases, write the case row set and render the E2E workbook.</li>
+    <li>Run the compliance validator and keep reflecting until it passes.</li>
+  </ul>
+</section>
+
+<section id="artifacts">
+  <h2>7. Artifacts &amp; definition of done</h2>
+  <p class="section-intro">Outputs are versioned under intake storage plus a governance audit. Only the Excel package is the primary operator deliverable.</p>
+  <div class="table-wrap">
+    <table class="data">
+      <thead>
+        <tr><th>Deliverable</th><th>Audience</th><th>Purpose</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>E2E test workbook</td><td>Operator / QA</td><td>Execution-ready MSD E2E package</td></tr>
+        <tr><td>Story snapshot</td><td>Internal</td><td>Extracted stories and grouping keys</td></tr>
+        <tr><td>Case row set</td><td>Internal</td><td>Cases and steps before render</td></tr>
+        <tr><td>Extraction notes</td><td>Internal</td><td>Scenario table, provenance, open questions</td></tr>
+        <tr><td>Validation report</td><td>Internal</td><td>Pass or fail evidence</td></tr>
+        <tr><td>Command audit</td><td>Governance</td><td>What, why, validation, next step</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <h3>Done when</h3>
+  <ul class="clean">
+    <li>Intake safety cleared (or documented waiver).</li>
+    <li>Output path gate cleared or explicit human overwrite.</li>
+    <li>Workbook validator reports pass.</li>
+    <li>No bootstrap execution-plan cell content in generated cells.</li>
+    <li>Audit written; harness updated for this phase-changing command.</li>
+  </ul>
+</section>
+
+<section id="pipeline">
+  <h2>8. End-to-end pipeline</h2>
+  <p class="section-intro">Test case generation sits after user-story intake. It does not replace sprint test-package expansion (BR-linked catalogs and human approval before automated test runs).</p>
+  <div class="pipeline" role="img" aria-label="Process pipeline">
+    <span class="node">Transcript</span>
+    <span class="arrow" aria-hidden="true">&#8594;</span>
+    <span class="node">User story workbook</span>
+    <span class="arrow" aria-hidden="true">&#8594;</span>
+    <span class="node highlight">MSD E2E workbook</span>
+    <span class="arrow" aria-hidden="true">&#8594;</span>
+    <span class="node">Manual execution</span>
+  </div>
+  <div class="diagram mermaid">
+flowchart LR
+  subgraph stories [User story generation]
+    TR[Workshop transcript] --> GEN[Generate stories]
+    GEN --> XL[Story workbook]
+  end
+  subgraph msd [MSD test cases]
+    XL --> TC[Generate test cases]
+    RB[MSD rulebook] --> TC
+    TC --> OUT[E2E test package]
+  end
+  subgraph other [Sprint quality path]
+    BRD[Approved requirements] --> EXP[Expand test coverage]
+    EXP --> PKG[Test package review]
+  end
+  </div>
+  <p class="section-intro" style="margin-top:1.25rem;">Related: <a href="user-story-generation-process.html">User story generation</a> (same doc style, upstream process).</p>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    HeartStream AI Factory — MSD E2E test case generation reference.
+  </div>
+</footer>
+
+<script>
+mermaid.initialize({ startOnLoad: true, theme: "neutral", securityLevel: "loose" });
+</script>
+</body>
+</html>

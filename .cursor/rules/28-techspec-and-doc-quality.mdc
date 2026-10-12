@@ -1,9 +1,0 @@
----
-description: Tech spec completeness
-alwaysApply: false
----
-
-# Tech Spec Quality
-
-- Context, scope, assumptions, risks, rollout, and rollback required.
-- Trace to story IDs or FR/BR IDs.

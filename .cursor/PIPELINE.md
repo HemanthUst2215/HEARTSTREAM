@@ -8,7 +8,9 @@ Do not advertise generate-backend / generate-frontend / wire-fe-be as public exe
 
 Do not advertise public `/write-tech-spec`, `/gap-analysis`, or `/generate-user-story`. User stories come only from `/generate-user-stories-from-transcript`. Gap analysis is an internal step of the plan commands.
 
-Intake: `/generate-user-stories-from-transcript` (transcript → one Excel with IDs, separate INVEST CSV).
+Intake: `/generate-user-stories-from-transcript` (transcript → one Excel with IDs, separate INVEST CSV). Then `/generate-test-cases-from-user-stories` (that Excel → MSD E2E test-case workbook via `docs/intake/msd-test-case-rulebook.yaml`).
+
+Satellite (audit only, no harness row): `/evaluate-user-stories` (manual CSV vs AI-generated CSV vs transcript → HTML report). Scores stay Draft — Pending Method Review until `ASSUMPTION-USEVAL-001` is accepted.
 
 Quality scorecards: `/validate-kpi-metrics` (quality-agent mode `kpi`).
 Figma DS URL: `/figma-to-nextjs`. Bounded context: `/plan-bounded-context`.

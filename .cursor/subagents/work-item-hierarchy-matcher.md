@@ -10,7 +10,7 @@ work-item-mapping-agent
 - Must: Use `scripts/map-user-stories-to-work-items.py` as the scoring source of truth.
 - Must: Require score ≥ configured strong threshold **and** a clear winner margin over the runner-up.
 - Must: Emit matched Epic/Feature rows with catalog `ID` only (no extra EPIC ID / FEATURE ID columns).
-- Must: Leave IDs blank when below threshold, ambiguous, or only one side matches.
+- Must: Set every User Story `ID` to a catalog Feature workItemId. Leave it blank only when no catalog Feature title relates, or the parent Epic is missing from the catalog.
 - Must NOT: Mutate Title, Description, Acceptance Criteria, or any non-ID field.
 - Must NOT: Invent work item IDs.
 

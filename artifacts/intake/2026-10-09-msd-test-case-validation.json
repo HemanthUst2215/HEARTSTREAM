@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "critical": 0,
+  "findings": [],
+  "xlsx": "C:\\Users\\308279\\Documents\\HEARTSTREAM-1\\artifacts\\intake\\2026-10-09-msd-e2e-test-cases.xlsx",
+  "rulebook": "C:\\Users\\308279\\Documents\\HEARTSTREAM-1\\docs\\intake\\msd-test-case-rulebook.yaml",
+  "rulebook_id": "msd-e2e-test-case-xlsx-v1"
+}

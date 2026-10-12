@@ -26,7 +26,7 @@ Only `harness-updater` writes `docs/harness/progress.md` and `docs/harness/decis
 
 ## Phase-changing commands (must call harness-updater)
 
-Intake: `/generate-brd`, `/generate-user-stories-from-transcript`  
+Intake: `/generate-brd`, `/generate-user-stories-from-transcript`, `/generate-test-cases-from-user-stories`  
 Plan: `/plan-governed-stories`, `/plan-sprint`, `/plan-bounded-context`  
 Execute: `/implement-api`, `/implement-ui`, `/expand-test-coverage`, `/run-tests`, `/run-eval`, `/review-changes`, `/validate-kpi-metrics`, `/application-summary`  
 Batch: `/deliver-sprint`  

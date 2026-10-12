@@ -1,0 +1,490 @@
+# MSD E2E Test Case Rulebook (permanent runtime contract)
+# Bootstrap: derived once from "E2E test execution plan.xlsx" during factory setup.
+# Runtime agents MUST load this file only — never read or require the original bootstrap workbook.
+# Do not copy bootstrap cell content (process names, steps, ISVs, titles) into generated output.
+
+schema_version: "1.0"
+rulebook_id: "msd-e2e-test-case-xlsx-v1"
+status: Active
+platform: microsoft_dynamics
+
+provenance:
+  behavior_id: RB-MSDTC-001
+  statement: >
+    Workbook layout, sheet taxonomy, column roles, ID patterns, case model, and
+    generation logic for Microsoft Dynamics E2E test cases produced from a
+    User Story Excel that itself follows the user-story CSV rulebook.
+  source_path: "factory-setup"
+  source_locator: "E2E test execution plan.xlsx (one-time bootstrap; not a runtime input)"
+  confidence: explicit
+
+# ---------------------------------------------------------------------------
+# Input: generated (or rulebook-shaped) User Story Excel
+# ---------------------------------------------------------------------------
+input:
+  source_rulebook: docs/intake/user-story-csv-rulebook.yaml
+  accepted_suffixes: [".xlsx", ".csv"]
+  header_match: >
+    Locate the first row whose cells equal source_rulebook csv.column_order
+    (order-sensitive). That row is the header; rows below are data.
+  row_filter:
+    type_column: Work Item Type
+    include_type_from_source: transcript_output_default
+  grouping:
+    statement: Identify the Feature first, then the stories in that group.
+    keys_in_order:
+      - mapped_feature_id
+      - nearest_preceding_feature_title
+      - area_path
+      - unmatched_singleton
+    mapped_feature_id:
+      rule: >
+        When a User Story ID matches a Feature row ID in the same workbook
+        (ADO mapping convention), group by that Feature title. This wins over
+        nearest-preceding Feature when the workbook lists all Features before
+        User Stories.
+    nearest_preceding_feature:
+      type_column: Work Item Type
+      type_value: Feature
+    area_path_column: Area Path
+    scenario_id: sequential_integers_from_1
+    business_process_name: >
+      Grouping key with numbering prefixes stripped (same strip rule as user-story
+      title_formats.feature / epic). Do not invent a process name the stories do not support.
+  field_bind:
+    # Maps source rulebook columns → extractor fields. Scripts read these keys, not literals.
+    id: ID
+    work_item_type: Work Item Type
+    title: Title
+    description: Description
+    acceptance_criteria: Acceptance Criteria
+    area_path: Area Path
+  story_parse:
+    description_pattern_ref: user_story.description_format.pattern
+    ac_bullet_prefix_ref: acceptance_criteria.format
+    role_from_description: >
+      Capture the <role> in "As a <role>, I need to <need>, so that <benefit>."
+      Use that role as the default step owner when a step does not name another actor.
+
+# ---------------------------------------------------------------------------
+# Workbook (public Excel)
+# ---------------------------------------------------------------------------
+workbook:
+  encoding: utf-8
+  engine: openpyxl
+  include_header_row: true
+  project_label:
+    source: ".cursor/config.yaml project.name"
+    placeholder_tokens: ["<project-name>", ""]
+    fallback: "E2E"
+  sheets:
+    coverage:
+      key: coverage
+      name: Test Coverage
+      visible: true
+      title_row: 1
+      subtitle_row: 2
+      merge_title_across_columns: true
+      metrics_header_row: 4
+      metrics_data_start_row: 5
+      table_header_row: 10
+      data_start_row: 11
+      freeze_panes: A11
+      title_template: "{project_label} — E2E Test Coverage"
+      subtitle_template: "Execution-ready coverage across {scenario_count} business processes"
+    register:
+      key: register
+      name: E2E Test Cases
+      visible: true
+      title_row: 1
+      subtitle_row: 2
+      merge_title_across_columns: true
+      table_header_row: 4
+      data_start_row: 5
+      freeze_panes: D5
+      title_template: "{project_label} — End-to-End Test Cases"
+      subtitle_template: "Scope: {scenario_count} business processes | Positive and key control/exception cases"
+    isv_lookup:
+      key: isv_lookup
+      name: ISV and Purpose
+      visible: false
+      table_header_row: 1
+      data_start_row: 2
+      populate: derived_from_register
+  styling:
+    reference_workbook: "2026-10-09-msd-e2e-test-cases-styled.xlsx"
+    font_family: "Aptos Narrow"
+    body_font_size: 12
+    title_font_size: 18
+    title_row_height: 24
+    colors:
+      title_band: "16324F"
+      table_header: "2F75B5"
+      metrics_header: "2F75B5"
+      metrics_row: "EAF2F8"
+      design_basis_row: "F3F6F8"
+      on_dark: "FFFFFF"
+    sheets:
+      coverage:
+        subtitle_font_size: 12
+        wrap_roles:
+          - primary_systems
+          - source_flow
+          - coverage_focus
+        table_header:
+          mode: plain
+          bold: false
+          vertical: top
+        column_widths_by_header:
+          "Scenario ID": 10.83203125
+          "Business Process": 31.6640625
+          "Positive Case": 15.33203125
+          "Exception / Control Case": 13.0
+          "Detailed Steps": 13.0
+          "Critical Steps": 13.0
+          "Primary Systems / ISVs": 35.0
+          "Source Flow": 36.6640625
+          "Coverage Focus": 38.33203125
+      register:
+        subtitle_font_size: 10
+        table_header:
+          mode: branded
+          vertical: center
+        column_widths_by_header:
+          "Scenario ID": 10.33203125
+          "Business Process": 25.0
+          "Test Case ID": 13.0
+          "Test Case Title": 31.6640625
+          "Test Type": 13.6640625
+          "Priority": 13.0
+          "Preconditions": 36.6640625
+          "Step #": 8.0
+          "Detailed Test Step": 43.33203125
+          "Step Owner": 21.6640625
+          "Application / ISV": 28.33203125
+          "Test Data / Input": 25.0
+          "Expected Result": 38.33203125
+          "Actual Result": 30.0
+          "Status": 13.6640625
+          "Defect ID": 13.0
+          "Comments": 25.0
+
+# ---------------------------------------------------------------------------
+# Column contracts (layout only — names come from bootstrap headers)
+# ---------------------------------------------------------------------------
+columns:
+  coverage:
+    order:
+      - Scenario ID
+      - Business Process
+      - Positive Case
+      - Exception / Control Case
+      - Detailed Steps
+      - Critical Steps
+      - Primary Systems / ISVs
+      - Source Flow
+      - Coverage Focus
+    roles:
+      scenario_id: Scenario ID
+      business_process: Business Process
+      positive_case_id: Positive Case
+      exception_case_id: Exception / Control Case
+      detailed_step_count: Detailed Steps
+      critical_step_count: Critical Steps
+      primary_systems: Primary Systems / ISVs
+      source_flow: Source Flow
+      coverage_focus: Coverage Focus
+  register:
+    order:
+      - Scenario ID
+      - Business Process
+      - Test Case ID
+      - Test Case Title
+      - Test Type
+      - Priority
+      - Preconditions
+      - Step #
+      - Detailed Test Step
+      - Step Owner
+      - Application / ISV
+      - Test Data / Input
+      - Expected Result
+      - Actual Result
+      - Status
+      - Defect ID
+      - Comments
+    roles:
+      scenario_id: Scenario ID
+      business_process: Business Process
+      test_case_id: Test Case ID
+      test_case_title: Test Case Title
+      test_type: Test Type
+      priority: Priority
+      preconditions: Preconditions
+      step_number: Step #
+      detailed_test_step: Detailed Test Step
+      step_owner: Step Owner
+      application_isv: Application / ISV
+      test_data: Test Data / Input
+      expected_result: Expected Result
+      actual_result: Actual Result
+      status: Status
+      defect_id: Defect ID
+      comments: Comments
+    case_level_roles:
+      - scenario_id
+      - business_process
+      - test_case_id
+      - test_case_title
+      - test_type
+      - priority
+      - preconditions
+    step_level_roles:
+      - step_number
+      - detailed_test_step
+      - step_owner
+      - application_isv
+      - test_data
+      - expected_result
+    execution_roles:
+      - actual_result
+      - status
+      - defect_id
+      - comments
+    wrap_roles:
+      - preconditions
+      - step_number
+      - detailed_test_step
+      - step_owner
+      - application_isv
+      - expected_result
+      - test_data
+      - comments
+  isv_lookup:
+    order:
+      - ISV / Integration Apps
+      - Typical Business Owner
+    roles:
+      application: ISV / Integration Apps
+      typical_owner: Typical Business Owner
+
+row_grain:
+  register: one_row_per_step
+  rule: >
+    Repeat case-level fields on every step row of that Test Case ID.
+    Case-level values MUST be identical across steps of the same Test Case ID.
+    Step # is 1..n with no gaps inside a case.
+
+# ---------------------------------------------------------------------------
+# IDs, types, enums
+# ---------------------------------------------------------------------------
+id_patterns:
+  scenario_id:
+    type: integer
+    start: 1
+  test_case_id:
+    pattern: "TC{scenario:02d}-{polarity}{seq:02d}"
+    polarity:
+      positive: P
+      exception: N
+    seq_start: 1
+    regex: '^TC(\d{2})-([PN])(\d{2})$'
+    rule: >
+      Scenario number in the ID is zero-padded to two digits and MUST equal
+      the Scenario ID integer. First positive case in a scenario is seq 01
+      with polarity P; first exception/control case is seq 01 with polarity N.
+
+test_types:
+  positive_default: Positive E2E
+  exception_default: Negative / Control
+  allowed:
+    - Positive E2E
+    - Negative / Control
+    - Negative / Exception
+    - Negative / Compliance
+    - Negative / Commercial
+    - Negative / Alternate
+    - Negative / Integration
+  selection_rule: >
+    Use positive_default for the happy-path case. For the exception case, use a
+    more specific Negative / * value only when the user-story AC or description
+    names that class (constraint, compliance, commercial, alternate path,
+    integration). Otherwise use exception_default. Do not invent a class.
+
+priority:
+  allowed: [Critical, High, Medium]
+  default: High
+  rule: >
+    Populate from the user story only when severity is explicit. Otherwise use
+    default. Do not infer Critical from unstated business importance.
+
+status_field:
+  allowed:
+    - Not Run
+    - Pass
+    - Fail / Blocked
+  generation_default: Not Run
+  rule: Generation always writes generation_default. Agents must not mark Pass/Fail.
+
+execution_columns:
+  at_generation:
+    actual_result: empty
+    defect_id: empty
+    comments: empty
+    status: generation_default
+  operator_updates_later:
+    - actual_result
+    - status
+    - defect_id
+    - comments
+
+# ---------------------------------------------------------------------------
+# Generation logic (from bootstrap Design Basis — rules, not sample rows)
+# ---------------------------------------------------------------------------
+generation:
+  case_model:
+    statement: One positive case and one key exception/control case per grouped process.
+    per_group:
+      - polarity: positive
+        test_type_key: positive_default
+        source: happy_path_ac_and_description
+      - polarity: exception
+        test_type_key: exception_default
+        source: negative_boundary_or_constraint_ac
+    exception_if_no_evidence: >
+      If the group has no constraint, negative, or boundary AC and the description
+      states no control, do not invent a failure path. Emit the positive case,
+      list the group under unmatched_exception, register Open DQ.
+  ownership:
+    statement: Swimlane role; application ownership aligned to the ISV lookup sheet.
+    step_owner_source:
+      - actor named in the step or AC
+      - else role parsed from the user-story description
+      - else blank (do not invent an organization name)
+  steps:
+    min_per_case: 1
+    numbering: sequential_from_1_within_case
+    detailed_test_step: Imperative observable action; one action per step.
+    expected_result: Observable outcome for that step; testable without implementation detail.
+    test_data: >
+      Only values the user story Title, Description, or AC actually cites.
+      Leave blank when the story is silent. Do not invent SKUs, accounts, or amounts.
+    deny_generic_placeholders:
+      ref: .cursor/templates/generic-step-denylist.md
+  titles:
+    test_case_title: >
+      Short capability or control headline. No "As a …" prefix.
+      Positive: the happy-path capability. Exception: the control or failure condition.
+    preconditions: >
+      One or more setup facts that must be true before Step 1, cited from the
+      story description or AC Givens. Do not invent environment state.
+  coverage_row:
+    positive_case_id: Test Case ID of the group's positive case (blank if none)
+    exception_case_id: Test Case ID of the group's exception case (blank if none)
+    detailed_step_count: count of register rows for that Scenario ID
+    critical_step_count: count of those rows whose Priority equals Critical
+    primary_systems: unique Application / ISV tokens for that scenario, joined by composite_separator
+    source_flow: input workbook path plus cited story IDs (not bootstrap PDF names)
+    coverage_focus: one-line synthesis of grouped story titles / AC themes; no new domain claims
+  isv_lookup_rows:
+    source: unique Application / ISV tokens from the register (split on composite_separator)
+    typical_owner: majority Step Owner among steps that cite that token; else blank
+    do_not: copy bootstrap ISV product names that the user stories do not cite
+
+application_isv:
+  platform: Microsoft Dynamics
+  composite_separator: " / "
+  rule: >
+    When the user story (Area Path, Title, Description, or AC) cites a Microsoft
+    Dynamics app or an integration, emit that token in Application / ISV.
+    Composite steps that span apps join tokens with composite_separator.
+    Do not emit a Dynamics module or ISV the source stories do not support.
+
+metrics:
+  coverage_block:
+    headers: [Coverage Metric, Value]
+    rows:
+      - label: Business processes
+        formula: distinct_scenario_id
+      - label: Distinct test cases
+        formula: distinct_test_case_id
+      - label: Detailed test steps
+        formula: count_register_rows
+  execution_block:
+    headers: [Execution Metric, Step Count]
+    rows:
+      - label: Not Run
+        formula: count_status
+        status_value: Not Run
+      - label: Pass
+        formula: count_status
+        status_value: Pass
+      - label: Fail / Blocked
+        formula: count_status
+        status_value: Fail / Blocked
+  design_basis_block:
+    headers: [Design Basis]
+    rows:
+      - label: Case model
+        text_ref: generation.case_model.statement
+      - label: Ownership
+        text_ref: generation.ownership.statement
+      - label: Execution
+        text: Update Actual Result, Status, Defect ID and Comments in the test register
+
+required_fields:
+  register_step:
+    required_roles:
+      - scenario_id
+      - business_process
+      - test_case_id
+      - test_case_title
+      - test_type
+      - priority
+      - preconditions
+      - step_number
+      - detailed_test_step
+      - step_owner
+      - application_isv
+      - expected_result
+      - status
+    optional_roles:
+      - test_data
+      - actual_result
+      - defect_id
+      - comments
+  coverage_row:
+    required_roles:
+      - scenario_id
+      - business_process
+      - detailed_step_count
+  isv_lookup_row:
+    required_roles:
+      - application
+
+formatting_standards:
+  - Preserve exact header spelling and column order from columns.*.order.
+  - Apply workbook.styling via scripts/msd_test_case_xlsx_layout.py (fonts, fills, column widths, wraps).
+  - Do not add or remove columns or sheets at runtime.
+  - Do not copy bootstrap workbook cell values into generated output.
+  - RFC4180 if a working CSV of the register is written; public deliverable is xlsx.
+
+validation:
+  script: scripts/validate-msd-test-case-xlsx.py
+  writer_script: scripts/msd_test_case_xlsx.py
+  layout_module: scripts/msd_test_case_xlsx_layout.py
+  regression_tests: scripts/test_msd_test_case_xlsx_layout.py
+  rulebook_pointer: docs/intake/msd-test-case-rulebook.yaml
+  mandatory_flow: >
+    Agents must not hand-author the workbook. Persist case objects to JSON, then run
+    `python scripts/msd_test_case_xlsx.py write --json <rows.json> --out <out.xlsx>`,
+    then `python scripts/validate-msd-test-case-xlsx.py --xlsx <out.xlsx>`.
+    Exit non-zero blocks Done.
+
+output_paths:
+  extraction_notes: "artifacts/intake/<YYYY-MM-DD>-msd-test-case-extraction.md"
+  stories_json: "artifacts/intake/<YYYY-MM-DD>-msd-source-stories.json"
+  case_rows_json: "artifacts/intake/<YYYY-MM-DD>-msd-test-case-rows.json"
+  public_xlsx: "artifacts/intake/<YYYY-MM-DD>-msd-e2e-test-cases.xlsx"
+  validation_report: "artifacts/intake/<YYYY-MM-DD>-msd-test-case-validation.json"
+  working_register_csv: "artifacts/intake/.pipeline/<YYYY-MM-DD>-msd-test-cases-working.csv"

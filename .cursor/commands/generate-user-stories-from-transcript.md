@@ -72,7 +72,8 @@ Plan → Act → Observe → Reflect (max 3). Iteration 1 Observe pass with vali
 - Do not add Priority or Story Point columns to the ADO CSV.
 - Run `python scripts/validate-user-story-csv.py --csv artifacts/intake/.pipeline/<date>-user-stories-working.csv --report <validation.json>`; FAIL → stay in Reflect. Do **not** map until this PASS.
 - **INVEST scorecard (separate file only):** after validator PASS, run **invest-scorecard-evaluator**. Write `artifacts/intake/<date>-invest-scorecard.csv`. Do **not** put INVEST on the Excel workbook or on the working CSV. Gate: no critical dimension below 5; overall ≥ 7 for Pass. Needs Refinement → Reflect (max 3), do not invent copy to force a pass.
-- **Work item mapping (after CSV PASS):** load `.cursor/skills/work-item-mapping/SKILL.md`. Spawn **work-item-mapping-agent**. Scan all `artifacts/work-items/*.json` with `workItems[]`. Write matched catalog Epic and Feature rows into **one** public Excel using the rulebook **`ID`** column (no `EPIC ID` / `FEATURE ID` columns). Do not write `*-mapped.csv`, `*-mapped.xlsx`, or a second story workbook. Do not change Title, Description, Acceptance Criteria, or any other generated field. Strong match required (`work_item_mapping.strong_threshold` + `winner_margin`). Map each User Story to **existing** Features in `artifacts/work-items` JSON and emit those Features plus parent Epics as rows with catalog IDs. Do not invent IDs or titles. Empty catalog → skip mapping, Open DQ, still write the one Excel.
+- **Identify the Feature first, then the story.** Before authoring User Stories, match transcript requirements to existing Features in `artifacts/work-items/feature.json` (parent Epic must exist in `epic.json`). Write a User Story only as an update to that identified Feature. Do not invent Feature titles.
+- **Work item mapping (after CSV PASS):** load `.cursor/skills/work-item-mapping/SKILL.md`. Spawn **work-item-mapping-agent**. Scan all `artifacts/work-items/*.json` with `workItems[]`. Write matched catalog Epic and Feature rows into **one** public Excel. On each matched User Story, set the rulebook **`ID`** column to that Feature's workItemId (no `EPIC ID` / `FEATURE ID` columns). Do not write `*-mapped.csv`, `*-mapped.xlsx`, or a second story workbook. Do not change Title, Description, or Acceptance Criteria. Strong match required (`work_item_mapping.strong_threshold` + `winner_margin`). Unmatched User Story `ID` stays blank. Do not invent IDs or titles. Empty catalog → skip mapping, Open DQ, still write the one Excel.
   ```
   python scripts/map-user-stories-to-work-items.py --csv artifacts/intake/.pipeline/<date>-user-stories-working.csv --work-items-dir artifacts/work-items --out-xlsx artifacts/intake/<date>-user-stories-from-transcript.xlsx --log-json artifacts/intake/.pipeline/<date>-work-item-mapping-log.json
   ```
@@ -84,7 +85,7 @@ Register Open DQ for: transcript path, area path, parent Feature/Epic when hiera
 
 ## Artifact Persistence
 **Public (operator):**
-- `artifacts/intake/<date>-user-stories-from-transcript.xlsx` — **the only Excel**; catalog Epic/Feature rows with `ID`; User Stories keep blank `ID`
+- `artifacts/intake/<date>-user-stories-from-transcript.xlsx` — **the only Excel**; Epic/Feature rows keep catalog IDs; each matched User Story `ID` is the Feature workItemId identified from the transcript
 - `artifacts/intake/<date>-invest-scorecard.csv` — INVEST only (separate)
 
 **Internal (not extra Excels):**
@@ -104,7 +105,7 @@ Register Open DQ for: transcript path, area path, parent Feature/Epic when hiera
 - [ ] `validate-user-story-csv.py` exit 0
 - [ ] One public Excel written; no `*-mapped.csv` / second story workbook
 - [ ] INVEST scorecard written as a **separate** CSV (not a sheet in the Excel)
-- [ ] Mapping run after PASS (or skipped with Open DQ if work-items catalog absent); IDs blank when match is not strong
+- [ ] Mapping run after PASS (or skipped with Open DQ if work-items catalog absent); every User Story `ID` is a catalog Feature workItemId; blank only when no catalog Feature relates
 - [ ] Internal mapping log lists every User Story as matched or unmatched
 - [ ] `artifacts/audit/<date>-generate-user-stories-from-transcript-<task>.md` written
 - [ ] Harness updated (phase-changing)
@@ -112,4 +113,4 @@ Register Open DQ for: transcript path, area path, parent Feature/Epic when hiera
 ## Next command
 
 > ✅ `/generate-user-stories-from-transcript` complete.
-> **Next command:** Use `artifacts/intake/<date>-user-stories-from-transcript.xlsx` (and the separate INVEST CSV), then `/plan-governed-stories` or `/plan-sprint`.
+> **Next command:** Use `artifacts/intake/<date>-user-stories-from-transcript.xlsx` (and the separate INVEST CSV) with `/generate-test-cases-from-user-stories`, `/plan-governed-stories`, or `/plan-sprint`.

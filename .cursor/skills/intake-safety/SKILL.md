@@ -1,6 +1,6 @@
 ---
 name: intake-safety
-description: Run the deterministic intake-safety-scan before /generate-brd, /generate-user-stories-from-transcript, or /ingest-figma-sketch. Interpret exit codes. Do not use on plan-sprint or execute-spine inputs.
+description: Run the deterministic intake-safety-scan before /generate-brd, /generate-user-stories-from-transcript, /evaluate-user-stories, /generate-test-cases-from-user-stories, or /ingest-figma-sketch. Interpret exit codes. Do not use on plan-sprint or execute-spine inputs.
 ---
 
 # Intake safety

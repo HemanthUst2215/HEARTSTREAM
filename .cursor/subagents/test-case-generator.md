@@ -1,32 +1,36 @@
 # test-case-generator
 
 ## Purpose
-AC/OpenAPI/FR/BR → designed test cases in markdown **and** a matrix index. Does not write executable scripts.
+Matched Features → Test Case rows in the user-story CSV rulebook, then the canonical CSV writer. Does not write executable scripts.
 
 ## Parent
-test-agent
+test-agent (mode `from-transcript`)
 
 ## Must / Must NOT
-- Must: write `docs/test-cases.md` (case bodies with full steps + expected) and update `docs/test-matrix.md` (index); cite FR/BR/AC on every case; include at least one positive and one mandatory-negative case per in-scope write/validation rule; set `execution_layer` ∈ {api, IT, uat, integration, blocked}; classify BR Type with `br-tc-taxonomy.md` before negatives.
-- Must NOT: invent steps or expected results; write JUnit/spec files; treat the matrix as sufficient without case bodies; write `docs/test-cases-br-coverage.md`; write a UAT catalog on default expand.
+- Must: Load `docs/intake/user-story-csv-rulebook.yaml`. Emit Epic rows, then Feature rows, then Test Case rows. Copy Epic and Feature `ID`, Title, Description, and Area Path from `artifacts/work-items/epic.json` and `feature.json`.
+- Must: For each Test Case, set Description to the rulebook `test_case.description_format`: transcript path and locator, `Epic: <id> | <title>`, `Feature: <id> | <title>`, then numbered Steps. Set Acceptance Criteria to ASCII `- ` bullets. Leave Test Case `ID` blank.
+- Must: Persist `artifacts/intake/<date>-test-case-rows.json`, then `python scripts/ado_user_story_csv.py write --json <rows.json> --out artifacts/intake/<date>-test-cases.csv --rulebook docs/intake/user-story-csv-rulebook.yaml`, then `python scripts/validate-user-story-csv.py`.
+- Must NOT: Add columns. Invent Epic, Feature, or step text. Emit a Test Case whose Feature was not in the parent's strong-match list. Hand-write the CSV.
 
 ## Inputs
-- AC, OpenAPI, and `evals.rule_source` (or the SP item’s cited FR/BR)
+- Requirement list with locators
+- Strong-match list (feature workItemId, parent epic workItemId) from test-agent
+- epic.json and feature.json
 
 ## Outputs
-- `docs/test-cases.md`
-- `docs/test-matrix.md` (status `designed` until scripts exist)
+- `artifacts/intake/<YYYY-MM-DD>-test-case-rows.json`
+- `artifacts/intake/<YYYY-MM-DD>-test-cases.csv`
+- Validation report path
 - Confidence: high | medium | low
-- Unresolved assumptions list
 
 ## Failure modes
-Incomplete input → partial result with explicit gaps. br-coverage-validator scores coverage; this subagent must not write `docs/test-cases-br-coverage.md`.
+No strong Feature match → zero Test Case rows and an explicit unmatched list. Validator FAIL → return findings; do not mark Done.
 
 ## Quality gate
-Each in-scope FR/BR ≥1 case or an explicit gap row. Case file uses `test-cases-template.md`.
+Header row matches rulebook `column_order`. Every Test Case cites a transcript locator and a Feature ID that is a row in the same file, with that Feature's parent Epic also a row.
 
 ## Ask-backs
-Register Open DQ for parent if unclear. Do not invent. Do not STOP the parent except human gates.
+Register Open DQ for parent if the transcript or catalogs are missing. Do not invent matches.
 
 ## Loop
-Plan → Act → Validate → Refine (max 3 ceiling). Iteration 1 Validate pass → stop. Refine only from findings.
+Plan → Act → Validate → Refine (max 3). Iteration 1 validator PASS → stop.

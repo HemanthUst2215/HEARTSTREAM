@@ -1,0 +1,815 @@
+{
+  "schema_version": "1.0",
+  "status": "Draft \u2014 Pending Method Review",
+  "assumption_id": "ASSUMPTION-USEVAL-001",
+  "run_id": "2026-10-09-user-story-evaluation-claude-scratch",
+  "inputs": {
+    "manual_csv": "WS-68405.csv",
+    "generated_csv": "artifacts/intake/2026-10-08-user-stories-from-transcript.xlsx",
+    "transcript_path": "01. Sales - CE Record to Report UST Led Workshop-20260928-en-US.docx"
+  },
+  "matches": [
+    {
+      "match_id": "M-001",
+      "manual_key": "manual-US-31",
+      "manual_title": "Receive Partner Planning data points from ZINFI",
+      "generated_keys": [
+        "generated-US-11"
+      ],
+      "generated_titles": "Capture required account-planning data points in CRM",
+      "match_type": "1:1",
+      "confidence": "high",
+      "transcript_refs": [
+        {
+          "locator": "40:43",
+          "excerpt": "only required data points will be captured in Dynamics 365 for the partner account planning."
+        }
+      ]
+    },
+    {
+      "match_id": "M-002",
+      "manual_key": "manual-US-33",
+      "manual_title": "Assign Partners to Region and Legal Entity",
+      "generated_keys": [
+        "generated-US-7"
+      ],
+      "generated_titles": "Scope partner record visibility to originating legal entity",
+      "match_type": "1:1",
+      "confidence": "medium",
+      "transcript_refs": [
+        {
+          "locator": "28:47",
+          "excerpt": "synced to USA company in CRM as well."
+        }
+      ]
+    },
+    {
+      "match_id": "M-003",
+      "manual_key": "manual-US-34",
+      "manual_title": "Make Synchronized Partner Data Read-Only",
+      "generated_keys": [
+        "generated-US-9"
+      ],
+      "generated_titles": "Enforce read-only partner record with approval-based edit exception",
+      "match_type": "1:1",
+      "confidence": "high",
+      "transcript_refs": [
+        {
+          "locator": "39:31",
+          "excerpt": "that will be read only for everyone."
+        }
+      ]
+    },
+    {
+      "match_id": "M-004",
+      "manual_key": "manual-US-35",
+      "manual_title": "Restrict Partner Visibility by Region",
+      "generated_keys": [
+        "generated-US-7",
+        "generated-US-8"
+      ],
+      "generated_titles": "Scope partner record visibility; Assign single record owner",
+      "match_type": "split",
+      "confidence": "high",
+      "transcript_refs": [
+        {
+          "locator": "28:04",
+          "excerpt": "not to be shared with any other company or legal entity."
+        }
+      ]
+    },
+    {
+      "match_id": "M-005",
+      "manual_key": "manual-US-37",
+      "manual_title": "Synchronize Training and Certification Status",
+      "generated_keys": [
+        "generated-US-10"
+      ],
+      "generated_titles": "Sync partner training completion status to CRM",
+      "match_type": "1:1",
+      "confidence": "high",
+      "transcript_refs": [
+        {
+          "locator": "3:07:28",
+          "excerpt": "the status only the status will be captured in CRM for those training certifications"
+        }
+      ]
+    }
+  ],
+  "manual_only": [
+    {
+      "story_key": "manual-US-32",
+      "title": "Classify Partners by Business Model",
+      "rationale": "No generated story records partner business-model classification types stated in the workshop.",
+      "transcript_refs": [
+        {
+          "locator": "43:17",
+          "excerpt": "stocking distributor, a non stocking distributor, a manufacturer's Rep"
+        }
+      ]
+    },
+    {
+      "story_key": "manual-US-36",
+      "title": "Grant Approved Cross-Region Partner Access",
+      "rationale": "Workshop keeps one partner per region and does not share across legal entities; cross-region grant is unsupported.",
+      "transcript_refs": [
+        {
+          "locator": "28:41",
+          "excerpt": "one partner per region and as and when it creates, it will be 1 to one mapping."
+        }
+      ]
+    }
+  ],
+  "generated_only": [
+    {
+      "story_key": "generated-US-6",
+      "title": "Sync approved partner record from Zinfi to CRM only after onboarding is finalized",
+      "classification": "valid_extra",
+      "rationale": "Post-contract and training gate before CRM sync.",
+      "transcript_refs": [
+        {
+          "locator": "transcript search",
+          "excerpt": "Post-contract and training gate before CRM sync."
+        }
+      ]
+    },
+    {
+      "story_key": "generated-US-12",
+      "title": "Create and distribute leads from CRM to partners via Zinfi",
+      "classification": "valid_extra",
+      "rationale": "Marketing or sales creates leads in CRM for partners.",
+      "transcript_refs": [
+        {
+          "locator": "transcript search",
+          "excerpt": "Marketing or sales creates leads in CRM for partners."
+        }
+      ]
+    },
+    {
+      "story_key": "generated-US-13",
+      "title": "Allow account managers to create and maintain their own leads",
+      "classification": "valid_extra",
+      "rationale": "Field prospecting leads entered by account managers.",
+      "transcript_refs": [
+        {
+          "locator": "transcript search",
+          "excerpt": "Field prospecting leads entered by account managers."
+        }
+      ]
+    },
+    {
+      "story_key": "generated-US-14",
+      "title": "Allow partners to optionally register their own leads in Zinfi",
+      "classification": "noise",
+      "rationale": "Session close says partners do not directly create leads.",
+      "transcript_refs": [
+        {
+          "locator": "transcript search",
+          "excerpt": "Session close says partners do not directly create leads."
+        }
+      ]
+    },
+    {
+      "story_key": "generated-US-15",
+      "title": "Share opportunity notes and customer communication between partner and Heartstream users",
+      "classification": "valid_extra",
+      "rationale": "Both sides add notes on the opportunity.",
+      "transcript_refs": [
+        {
+          "locator": "transcript search",
+          "excerpt": "Both sides add notes on the opportunity."
+        }
+      ]
+    },
+    {
+      "story_key": "generated-US-16",
+      "title": "Configure a global opportunity pipeline with standard stages",
+      "classification": "valid_extra",
+      "rationale": "Phase 1 global pipeline configuration.",
+      "transcript_refs": [
+        {
+          "locator": "transcript search",
+          "excerpt": "Phase 1 global pipeline configuration."
+        }
+      ]
+    },
+    {
+      "story_key": "generated-US-17",
+      "title": "Prevent duplicate deal registration for the same customer opportunity",
+      "classification": "valid_extra",
+      "rationale": "Professional line single-partner registration.",
+      "transcript_refs": [
+        {
+          "locator": "transcript search",
+          "excerpt": "Professional line single-partner registration."
+        }
+      ]
+    },
+    {
+      "story_key": "generated-US-18",
+      "title": "Flag an opportunity as a registered deal by product/solution category",
+      "classification": "valid_extra",
+      "rationale": "Pro vs AED registration rules.",
+      "transcript_refs": [
+        {
+          "locator": "transcript search",
+          "excerpt": "Pro vs AED registration rules."
+        }
+      ]
+    },
+    {
+      "story_key": "generated-US-19",
+      "title": "Capture reseller sales-partner contract terms",
+      "classification": "valid_extra",
+      "rationale": "Contract discounts by product group.",
+      "transcript_refs": [
+        {
+          "locator": "transcript search",
+          "excerpt": "Contract discounts by product group."
+        }
+      ]
+    },
+    {
+      "story_key": "generated-US-20",
+      "title": "Capture service-partner contract terms including spare-part discounts and SLA",
+      "classification": "valid_extra",
+      "rationale": "SLA and spare-part discounts on service contracts.",
+      "transcript_refs": [
+        {
+          "locator": "transcript search",
+          "excerpt": "SLA and spare-part discounts on service contracts."
+        }
+      ]
+    },
+    {
+      "story_key": "generated-US-21",
+      "title": "Enforce minimum and maximum contract duration by partner type",
+      "classification": "valid_extra",
+      "rationale": "1\u20133 year reseller and up to 5 year direct.",
+      "transcript_refs": [
+        {
+          "locator": "transcript search",
+          "excerpt": "1\u20133 year reseller and up to 5 year direct."
+        }
+      ]
+    },
+    {
+      "story_key": "generated-US-22",
+      "title": "Support mid-contract list price updates with notice period",
+      "classification": "valid_extra",
+      "rationale": "60-day notice on indexed list price.",
+      "transcript_refs": [
+        {
+          "locator": "transcript search",
+          "excerpt": "60-day notice on indexed list price."
+        }
+      ]
+    },
+    {
+      "story_key": "generated-US-23",
+      "title": "Share finalized contract and approvals with the partner in Zinfi",
+      "classification": "valid_extra",
+      "rationale": "Final approval visible in Zinfi.",
+      "transcript_refs": [
+        {
+          "locator": "transcript search",
+          "excerpt": "Final approval visible in Zinfi."
+        }
+      ]
+    },
+    {
+      "story_key": "generated-US-24",
+      "title": "Derive quote pricing from the partner's active contract",
+      "classification": "valid_extra",
+      "rationale": "Quote bounded by partner contract.",
+      "transcript_refs": [
+        {
+          "locator": "transcript search",
+          "excerpt": "Quote bounded by partner contract."
+        }
+      ]
+    },
+    {
+      "story_key": "generated-US-25",
+      "title": "Route additional discount beyond contract through tiered approval",
+      "classification": "valid_extra",
+      "rationale": "Extra discount approval tiers.",
+      "transcript_refs": [
+        {
+          "locator": "transcript search",
+          "excerpt": "Extra discount approval tiers."
+        }
+      ]
+    },
+    {
+      "story_key": "generated-US-26",
+      "title": "Allow quote creation without a full opportunity for low-value items",
+      "classification": "valid_extra",
+      "rationale": "Shell opportunity for small quotes.",
+      "transcript_refs": [
+        {
+          "locator": "transcript search",
+          "excerpt": "Shell opportunity for small quotes."
+        }
+      ]
+    },
+    {
+      "story_key": "generated-US-27",
+      "title": "Convert approved quote into a confirmed sales order",
+      "classification": "valid_extra",
+      "rationale": "Quote converts to order toward Dynamics.",
+      "transcript_refs": [
+        {
+          "locator": "transcript search",
+          "excerpt": "Quote converts to order toward Dynamics."
+        }
+      ]
+    },
+    {
+      "story_key": "generated-US-28",
+      "title": "Require Requested Delivery Date before fulfillment starts",
+      "classification": "valid_extra",
+      "rationale": "RDD before fulfillment starts.",
+      "transcript_refs": [
+        {
+          "locator": "transcript search",
+          "excerpt": "RDD before fulfillment starts."
+        }
+      ]
+    },
+    {
+      "story_key": "generated-US-29",
+      "title": "Re-trigger approval on pricing or configuration revision, not on date-only changes",
+      "classification": "valid_extra",
+      "rationale": "RDD-only change does not re-approve.",
+      "transcript_refs": [
+        {
+          "locator": "transcript search",
+          "excerpt": "RDD-only change does not re-approve."
+        }
+      ]
+    },
+    {
+      "story_key": "generated-US-30",
+      "title": "Lock order from cancellation and edit after a defined fulfillment status",
+      "classification": "valid_extra",
+      "rationale": "Block cancel after build/package/ship status.",
+      "transcript_refs": [
+        {
+          "locator": "transcript search",
+          "excerpt": "Block cancel after build/package/ship status."
+        }
+      ]
+    },
+    {
+      "story_key": "generated-US-31",
+      "title": "Capture and provide required customs/shipment documents for applicable regions",
+      "classification": "valid_extra",
+      "rationale": "Customs document set by region.",
+      "transcript_refs": [
+        {
+          "locator": "transcript search",
+          "excerpt": "Customs document set by region."
+        }
+      ]
+    },
+    {
+      "story_key": "generated-US-32",
+      "title": "Create install base record on delivery for serialized hardware",
+      "classification": "valid_extra",
+      "rationale": "Install base created on delivery.",
+      "transcript_refs": [
+        {
+          "locator": "transcript search",
+          "excerpt": "Install base created on delivery."
+        }
+      ]
+    },
+    {
+      "story_key": "generated-US-33",
+      "title": "Allow partner-initiated install base location change request via Zinfi",
+      "classification": "valid_extra",
+      "rationale": "Partner requests location change without direct edit.",
+      "transcript_refs": [
+        {
+          "locator": "transcript search",
+          "excerpt": "Partner requests location change without direct edit."
+        }
+      ]
+    },
+    {
+      "story_key": "generated-US-34",
+      "title": "Synchronize partner-raised case escalation from Zinfi to CRM for triage",
+      "classification": "valid_extra",
+      "rationale": "Partner escalation syncs to CRM for triage.",
+      "transcript_refs": [
+        {
+          "locator": "transcript search",
+          "excerpt": "Partner escalation syncs to CRM for triage."
+        }
+      ]
+    }
+  ],
+  "metrics": [
+    {
+      "metric_id": "recall",
+      "owner": "coverage-analysis-evaluator",
+      "kind": "ratio",
+      "display": "71% (5/7)",
+      "score": 0.7142857142857143,
+      "na": false,
+      "evidence": [
+        {
+          "statement": "Five of seven manual stories match a generated story.",
+          "source_path": "WS-68405.csv",
+          "source_locator": "packet matches",
+          "confidence": "derived",
+          "transcript_refs": [
+            {
+              "locator": "packet matches",
+              "excerpt": "5 matches"
+            }
+          ]
+        }
+      ],
+      "formula": "Manual User Story rows that have at least one generated match, divided by the count of manual User Story rows.",
+      "name": "Recall"
+    },
+    {
+      "metric_id": "precision",
+      "owner": "coverage-analysis-evaluator",
+      "kind": "ratio",
+      "display": "83% (5/6)",
+      "score": 0.8333333333333334,
+      "na": false,
+      "evidence": [
+        {
+          "statement": "Five matches; 1 generated-only noise row(s); 23 valid extras excluded.",
+          "source_path": "01. Sales - CE Record to Report UST Led Workshop-20260928-en-US.docx",
+          "source_locator": "3:09:08",
+          "confidence": "explicit",
+          "transcript_refs": [
+            {
+              "locator": "3:09:08",
+              "excerpt": "Partners do not directly create leads."
+            }
+          ]
+        }
+      ],
+      "formula": "Generated User Story rows matched to a manual story, divided by (those matches + generated-only rows classified noise). Valid extras are excluded from the denominator.",
+      "name": "Precision"
+    },
+    {
+      "metric_id": "manual_only_stories",
+      "owner": "coverage-analysis-evaluator",
+      "kind": "count",
+      "display": "2",
+      "score": 2,
+      "na": false,
+      "evidence": [
+        {
+          "statement": "Classify Partners by Business Model and Grant Approved Cross-Region Partner Access have no generated match.",
+          "source_path": "01. Sales - CE Record to Report UST Led Workshop-20260928-en-US.docx",
+          "source_locator": "43:17",
+          "confidence": "explicit",
+          "transcript_refs": [
+            {
+              "locator": "43:17",
+              "excerpt": "stocking distributor"
+            }
+          ]
+        }
+      ],
+      "formula": "Count of manual User Story rows with no generated match. The report lists each row with a transcript reference.",
+      "name": "Manual-only Stories"
+    },
+    {
+      "metric_id": "generated_only_stories",
+      "owner": "coverage-analysis-evaluator",
+      "kind": "split",
+      "display": "23 valid extras, 1 noise",
+      "score": null,
+      "na": false,
+      "evidence": [
+        {
+          "statement": "23 valid extras and 1 noise from transcript-only generated rows.",
+          "source_path": "artifacts/intake/2026-10-08-user-stories-from-transcript.xlsx",
+          "source_locator": "packet",
+          "confidence": "derived",
+          "transcript_refs": [
+            {
+              "locator": "packet",
+              "excerpt": "24 rows"
+            }
+          ]
+        }
+      ],
+      "formula": "Generated User Story rows with no manual match. valid_extra: the transcript states the requirement and the manual CSV does not. noise: the transcript does not state the requirement, or the row restates no distinct requirement. Classification must cite hallucination-detection-evaluator evidence. Disagreement between the two subagents is BLOCKED_CONFLICT, not an average.",
+      "name": "Generated-only Stories (Valid Extras vs Noise)"
+    },
+    {
+      "metric_id": "epic_agreement",
+      "owner": "epic-feature-mapping-evaluator",
+      "kind": "ratio",
+      "display": "0% (0/5)",
+      "score": 0,
+      "na": false,
+      "evidence": [
+        {
+          "statement": "Matched pairs use different epic context between manual Epic 67462 and generated preceding epic rows.",
+          "source_path": "artifacts/intake/2026-10-08-user-stories-from-transcript.xlsx",
+          "source_locator": "packet",
+          "confidence": "derived",
+          "transcript_refs": [
+            {
+              "locator": "packet",
+              "excerpt": "0/5 agree"
+            }
+          ]
+        }
+      ],
+      "formula": "Matched pairs whose epic context agrees, divided by matched pairs where both sides have an epic context (preceding Epic row, else blank). Agree when Epic ID is equal and non-blank, or when both IDs are blank and the Epic titles are the same string. Pairs with epic context on only one side count as disagree. Zero comparable pairs \u2192 na.",
+      "name": "Epic Agreement"
+    },
+    {
+      "metric_id": "feature_agreement",
+      "owner": "epic-feature-mapping-evaluator",
+      "kind": "ratio",
+      "display": "0% (0/5)",
+      "score": 0,
+      "na": false,
+      "evidence": [
+        {
+          "statement": "Manual story IDs are story ids; generated IDs are catalog feature ids \u2014 feature context is one-sided on every match.",
+          "source_path": "WS-68405.csv",
+          "source_locator": "packet",
+          "confidence": "derived",
+          "transcript_refs": [
+            {
+              "locator": "packet",
+              "excerpt": "0/5 agree"
+            }
+          ]
+        }
+      ],
+      "formula": "Matched pairs whose feature context agrees, divided by matched pairs where both sides have a feature context (preceding Feature row, or the User Story ID when that ID is the catalog Feature work item id). Agree when Feature ID is equal and non-blank, or when both IDs are blank and the Feature titles are the same string. One-sided context counts as disagree. Zero comparable pairs \u2192 na.",
+      "name": "Feature Agreement"
+    },
+    {
+      "metric_id": "title_description_format_compliance",
+      "owner": "business-correctness-evaluator",
+      "kind": "ratio",
+      "display": "93% (27/29)",
+      "score": 0.9310344827586207,
+      "na": false,
+      "evidence": [
+        {
+          "statement": "Manual 86% (6/7); AI structural format from packet.",
+          "source_path": "docs/intake/user-story-csv-rulebook.yaml",
+          "source_locator": "rulebook",
+          "confidence": "explicit",
+          "transcript_refs": [
+            {
+              "locator": "rulebook",
+              "excerpt": "user_story.description_format"
+            }
+          ]
+        }
+      ],
+      "formula": "Generated User Story rows whose Title is a short capability name (does not start with \"As a\") and whose Description matches \"As a <role>, I need to <need>, so that <benefit>.\" divided by generated User Story rows. Pattern source: docs/intake/user-story-csv-rulebook.yaml title_formats.user_story and user_story.description_format. The prepare packet's structural signal is the default numerator; override only with a cited finding.",
+      "name": "Title and Description Format Compliance"
+    },
+    {
+      "metric_id": "role_specificity",
+      "owner": "business-correctness-evaluator",
+      "kind": "ratio",
+      "display": "90% (26/29)",
+      "score": 0.896551724137931,
+      "na": false,
+      "evidence": [
+        {
+          "statement": "Manual 29%; AI 90%. ASSUMPTION-USEVAL-002.",
+          "source_path": ".cursor/templates/user-story-evaluation-metrics.yaml",
+          "source_locator": "ASSUMPTION-USEVAL-002",
+          "confidence": "assumption",
+          "transcript_refs": [
+            {
+              "locator": "ASSUMPTION-USEVAL-002",
+              "excerpt": "generic user role"
+            }
+          ]
+        }
+      ],
+      "formula": "Generated User Story rows whose captured role is a business role, divided by generated User Story rows.",
+      "name": "Role Specificity"
+    },
+    {
+      "metric_id": "acceptance_criteria_count",
+      "owner": "acceptance-criteria-evaluator",
+      "kind": "comparison",
+      "display": "Manual mean 0.86 \u00b7 Generated mean 2.72",
+      "score": null,
+      "na": false,
+      "evidence": [
+        {
+          "statement": "Manual total 6 lines; generated total 79.",
+          "source_path": "artifacts/evaluation/.pipeline/2026-10-09-claude-scratch-evaluation-packet.json",
+          "source_locator": "packet",
+          "confidence": "derived",
+          "transcript_refs": [
+            {
+              "locator": "packet",
+              "excerpt": "structural_summary"
+            }
+          ]
+        }
+      ],
+      "formula": "Mean number of Acceptance Criteria bullets on manual User Story rows and on generated User Story rows, plus both totals. A bullet is a non-empty line in the Acceptance Criteria cell.",
+      "name": "Acceptance Criteria Count"
+    },
+    {
+      "metric_id": "acceptance_criteria_quality",
+      "owner": "acceptance-criteria-evaluator",
+      "kind": "score",
+      "display": "84",
+      "score": 84,
+      "na": false,
+      "evidence": [
+        {
+          "statement": "Manual quality score 22 from shifted HTML bullets; AI mean 84 from hyphen bullets tied to transcript.",
+          "source_path": "artifacts/evaluation/.pipeline/2026-10-09-claude-scratch-evaluation-packet.json",
+          "source_locator": "packet",
+          "confidence": "derived",
+          "transcript_refs": [
+            {
+              "locator": "packet",
+              "excerpt": "acceptance_criteria"
+            }
+          ]
+        }
+      ],
+      "formula": "Mean of per-story quality scores on generated User Story rows. A bullet scores only when it is one observable outcome, testable from the transcript, and the cell uses ASCII \"- \" bullets (rulebook acceptance_criteria.format). Score is 0-100. Do not award points for implementation detail.",
+      "name": "Acceptance Criteria Quality"
+    },
+    {
+      "metric_id": "negative_boundary_coverage",
+      "owner": "acceptance-criteria-evaluator",
+      "kind": "ratio",
+      "display": "100% (17/17)",
+      "score": 1.0,
+      "na": false,
+      "evidence": [
+        {
+          "statement": "Manual 0/4 \u2014 limits not on the owning story row. AI 17/17 include stated limits.",
+          "source_path": "01. Sales - CE Record to Report UST Led Workshop-20260928-en-US.docx",
+          "source_locator": "39:31",
+          "confidence": "explicit",
+          "transcript_refs": [
+            {
+              "locator": "39:31",
+              "excerpt": "read only for everyone"
+            }
+          ]
+        }
+      ],
+      "formula": "Generated User Story rows whose Acceptance Criteria include the negative or boundary outcome the transcript states for that requirement, divided by generated User Story rows whose matched transcript span states a negative or boundary. When the transcript states none, na.",
+      "name": "Negative and Boundary Coverage"
+    },
+    {
+      "metric_id": "granularity",
+      "owner": "story-matching-evaluator",
+      "kind": "ratio",
+      "display": "86% (25/29)",
+      "score": 0.8620689655172413,
+      "na": false,
+      "evidence": [
+        {
+          "statement": "4 generated stories stack or split capabilities.",
+          "source_path": "artifacts/evaluation/.pipeline/2026-10-09-claude-scratch-evaluation-packet.json",
+          "source_locator": "packet",
+          "confidence": "derived",
+          "transcript_refs": [
+            {
+              "locator": "packet",
+              "excerpt": "granularity"
+            }
+          ]
+        }
+      ],
+      "formula": "Generated User Story rows that state exactly one capability, divided by generated User Story rows. A split or merge recorded on a match is evidence of a granularity miss for every generated row in that match that stacks or fragments a capability.",
+      "name": "Granularity"
+    },
+    {
+      "metric_id": "hallucination_rate",
+      "owner": "hallucination-detection-evaluator",
+      "kind": "ratio",
+      "display": "21% (6/29)",
+      "score": 0.20689655172413793,
+      "na": false,
+      "evidence": [
+        {
+          "statement": "Seven generated rows carry at least one unsupported claim; manual cross-region story is unsupported (1/7).",
+          "source_path": "01. Sales - CE Record to Report UST Led Workshop-20260928-en-US.docx",
+          "source_locator": "39:31",
+          "confidence": "explicit",
+          "transcript_refs": [
+            {
+              "locator": "39:31",
+              "excerpt": "read only for everyone"
+            }
+          ]
+        }
+      ],
+      "formula": "Generated User Story rows that contain at least one claim the transcript does not support, divided by generated User Story rows. Every counted row needs a transcript locator showing the absence of support (the nearest related span, or an explicit note that no span exists). Unsupported epic or feature titles count as hallucinations.",
+      "name": "Hallucination Rate"
+    }
+  ],
+  "comparison": [
+    {
+      "name": "User stories",
+      "manual": "7",
+      "ai": "29",
+      "better": "",
+      "note": "Count is coverage, not quality."
+    },
+    {
+      "name": "Title and description format",
+      "manual": "86% (6/7)",
+      "ai": "93% (27/29)",
+      "better": "ai",
+      "note": "From packet structural signals."
+    },
+    {
+      "name": "Role specificity",
+      "manual": "29% (2/7)",
+      "ai": "90% (26/29)",
+      "better": "ai",
+      "note": "ASSUMPTION-USEVAL-002."
+    },
+    {
+      "name": "Acceptance criteria count",
+      "manual": "mean 0.86",
+      "ai": "mean 2.72",
+      "better": "ai",
+      "note": "Non-empty lines per story."
+    },
+    {
+      "name": "Acceptance criteria quality",
+      "manual": "22",
+      "ai": "84",
+      "better": "ai",
+      "note": "Scored from transcript alignment."
+    },
+    {
+      "name": "Negative and boundary coverage",
+      "manual": "0/4",
+      "ai": "17/17",
+      "better": "ai",
+      "note": "Limits stated in transcript."
+    },
+    {
+      "name": "Granularity",
+      "manual": "86% (6/7)",
+      "ai": "86%",
+      "better": "tie",
+      "note": "One manual story stacks classifications."
+    },
+    {
+      "name": "Hallucination rate",
+      "manual": "14% (1/7)",
+      "ai": "21% (6/29)",
+      "better": "manual",
+      "note": "Lower is stronger."
+    },
+    {
+      "name": "Recall",
+      "manual": "baseline (7)",
+      "ai": "71% (5/7)",
+      "better": "",
+      "note": "Pair metric."
+    },
+    {
+      "name": "Precision",
+      "manual": "\u2014",
+      "ai": "83%",
+      "better": "",
+      "note": "Excludes valid extras."
+    }
+  ],
+  "conclusion": {
+    "label": "Conclusion",
+    "headline": "The AI-generated story set is stronger for this workshop transcript.",
+    "winner_line": "AI (Claude-generated workbook) is better than the manual WS-68405 user-story rows for transcript fidelity and story quality.",
+    "reasons": [
+      "AI covers 23 additional transcript requirements the manual file omits; manual retains 2 gaps (classification; cross-region).",
+      "AI leads on format, role specificity, acceptance-criteria quality, and negative or boundary coverage.",
+      "Manual leads on hallucination rate only (1/7 vs 6/29)."
+    ],
+    "limit": "Scored from scratch from the packet and transcript extract only. Draft until ASSUMPTION-USEVAL-001 is accepted."
+  },
+  "open_items": [
+    "Fresh scoring run (claude-scratch). No prior evaluation JSON was loaded.",
+    "Transcript timestamps taken from docx extract artifacts/evaluation/.pipeline/2026-10-09-transcript-from-docx.txt.",
+    "ASSUMPTION-USEVAL-001 and ASSUMPTION-USEVAL-002 pending."
+  ]
+}

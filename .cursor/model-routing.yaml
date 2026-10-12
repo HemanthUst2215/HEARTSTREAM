@@ -62,6 +62,7 @@ tier_by_command:
   dast-scan: reasoning
   prepare-cutover: reasoning
   generate-user-stories-from-transcript: reasoning
+  evaluate-user-stories: reasoning
   ingest-figma-sketch: coding
   figma-to-nextjs: coding
   implement-api: coding
@@ -84,6 +85,7 @@ overrides:
   agents:
     eval-agent: reasoning
     work-item-mapping-agent: reasoning
+    user-story-evaluation-agent: reasoning
   subagents:
     audit-trail-writer: mechanical
     java-static-metrics-collector: mechanical
@@ -108,3 +110,10 @@ overrides:
     ado-user-story-csv-writer: coding
     transcript-story-extractor: reasoning
     user-story-csv-rulebook-author: reasoning
+    story-matching-evaluator: reasoning
+    coverage-analysis-evaluator: reasoning
+    business-correctness-evaluator: reasoning
+    acceptance-criteria-evaluator: reasoning
+    hallucination-detection-evaluator: reasoning
+    epic-feature-mapping-evaluator: reasoning
+    kpi-aggregation-evaluator: reasoning

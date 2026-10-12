@@ -1,7 +1,7 @@
 {
   "meta": {
     "sourceFile": "C:\\Users\\308279\\Documents\\HEARTSTREAM-1\\EPIC.csv",
-    "generatedAt": "2026-10-08T09:15:59.798635+00:00",
+    "generatedAt": "2026-10-08T11:56:08.893587+00:00",
     "rowCount": 17,
     "columns": [
       "State",
@@ -594,8 +594,8 @@
         ]
       },
       "description": {
-        "plainText": "<div>This process illustrates the end-to-end\nreseller sales lifecycle, from partner\nrecruitment and enablement through\ncustomer acquisition, sales execution,\nfulfilment, financial processing, and rebate\nsettlement<br> </div>",
-        "summary": "<div>This process illustrates the end-to-end reseller sales lifecycle, from partner recruitment and enablement through customer acquisition, sales execution, fulfilment, financial processing, and rebate settlement<br> </div>",
+        "plainText": "This process illustrates the end-to-end reseller sales lifecycle, from partner recruitment and enablement through customer acquisition, sales execution, fulfilment, financial processing, and rebate settlement",
+        "summary": "This process illustrates the end-to-end reseller sales lifecycle, from partner recruitment and enablement through customer acquisition, sales execution, fulfilment, financial processing, and rebate settlement",
         "htmlDecoded": false
       },
       "source": {
@@ -630,8 +630,8 @@
         ]
       },
       "description": {
-        "plainText": "<div>This process illustrates the end-to-end B2B\nDirect Sales journey, spanning customer\nacquisition, sales conversion, order\nexecution, fulfilment, financial processing,\nand installed base creation within the\nHeartstream ecosystem </div>",
-        "summary": "<div>This process illustrates the end-to-end B2B Direct Sales journey, spanning customer acquisition, sales conversion, order execution, fulfilment, financial processing, and installed base creation within the Heartstream ecosystem </div>",
+        "plainText": "This process illustrates the end-to-end B2B Direct Sales journey, spanning customer acquisition, sales conversion, order execution, fulfilment, financial processing, and installed base creation within the Heartstream ecosystem",
+        "summary": "This process illustrates the end-to-end B2B Direct Sales journey, spanning customer acquisition, sales conversion, order execution, fulfilment, financial processing, and installed base creation within the Heartstream ecosystem",
         "htmlDecoded": false
       },
       "source": {

@@ -1,4 +1,4 @@
-﻿State,ID,Work Item Type,Title,Description,Parent,Related Link Count,Area Path,Iteration Path
+State,ID,Work Item Type,Title,Description,Parent,Related Link Count,Area Path,Iteration Path
 New,67681,Feature,Social Commerce - Marketplace & Retail Partner Channel Management,,67680,19,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
 New,67535,Feature,Sales Order Approval,"Input: Validated Sales Order
 Activities : 
@@ -10,39 +10,39 @@ New,67539,Feature,Revenue Recognition,"Input: Posted Customer Invoice
 Activities : 
 11.1 Recognize Revenue
 Output: Recognized Revenue",67476,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
-New,67530,Feature,Partner Recruitment & Contracting,"Input: Channel strategy &amp;
+New,67530,Feature,Partner Recruitment & Contracting,"Input: Channel strategy &
 growth plan defined
 Activities :
- 
-2.1  Recruit eCommerce channel
+
+2.1 Recruit eCommerce channel
 partners
-2.2  Define commercial terms &amp;
+2.2 Define commercial terms &
 discount structures
-2.3  Negotiate channel
+2.3 Negotiate channel
 agreements
-2.4  Execute partner contracts
+2.4 Execute partner contracts
 Output: Partner contracts Executed",67476,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
-New,67531,Feature,Partner Onboarding & Enablement,"Input: Partner contracts 
+New,67531,Feature,Partner Onboarding & Enablement,"Input: Partner contracts
 executed
-Activities : 
-3.1  Onboard approved channel
+Activities :
+3.1 Onboard approved channel
 partners
-3.2  Provide product catalogs &amp;
+3.2 Provide product catalogs &
 pricing
-3.3  Provide marketing &amp;
+3.3 Provide marketing &
 promotional assets
-3.4  Enable channel participation &amp;
+3.4 Enable channel participation &
 selling
 Output: Channel partners
-onboarded &amp; enabled to sell",67476,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
+onboarded & enabled to sell",67476,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
 New,67704,Feature,P3. Affiliate Onboarding & Enablement,"Input: Activated affiliate relationship
-Activities: P3.1 Onboard approved affiliates, P3.2 Provide marketing &amp; promotional assets, P3.3 Assign affiliate IDs, links or promo codes, P3.4 Enable affiliate participation
-Output: Affiliates onboarded &amp; enabled to promote",67701,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
+Activities: P3.1 Onboard approved affiliates, P3.2 Provide marketing & promotional assets, P3.3 Assign affiliate IDs, links or promo codes, P3.4 Enable affiliate participation
+Output: Affiliates onboarded & enabled to promote",67701,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
 New,67703,Feature,P2. Affiliate Recruitment & Contracting,"Input: Affiliate program strategy defined
 Activities: P2.1 Recruit affiliate partners, P2.2 Review affiliate eligibility, P2.3 Define commission agreements, P2.4 Execute affiliate contracts, P2.5 Activate affiliate relationship
 Output: Affiliate relationships activated",67701,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
 New,67702,Feature,P1. Affiliate Program Strategy,"Input: Business case for affiliate/associates program
-Activities: P1.1 Define affiliate program strategy, P1.2 Define affiliate types &amp; participation criteria, P1.3 Define commission structures &amp; incentive models, P1.4 Define channel governance &amp; operating model
+Activities: P1.1 Define affiliate program strategy, P1.2 Define affiliate types & participation criteria, P1.3 Define commission structures & incentive models, P1.4 Define channel governance & operating model
 Output: Affiliate program strategy defined",67701,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
 New,67534,Feature,Order Processing Management,"Input: Received eCommerce Order
 Activities : 
@@ -51,37 +51,37 @@ Sales Order
 Output: Validated Order",67476,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
 New,67533,Feature,Order Capture,"Input: Customer demand
 generated via campaigns
-Activities : 
+Activities :
 5.1 - Customer Discovers Product
 5.2 - Place Order on Channel
 Platform
-5.3 - Capture Order &amp; Customer
+5.3 - Capture Order & Customer
 Details
 Output: eCommerce order
 created
 
 Other sub-processes :
 1.Order Processing Input: eCommerce Order
-Activities : 
+Activities :
 A.1 - Synchronize Order to
 Commerce HQ
 Output: Order Synced with
 Commerce HQ
-2. Sync order with F&amp;O via integration
+2. Sync order with F&O via integration
 3. Sync Order with SPS/DHL
 4. Sync Order Status",67476,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
 New,67532,Feature,Joint Marketing & Demand Generation,"Input: Channel partners enabled
 to sell
-Activities : 
-4.1  Plan marketing campaigns &amp;
+Activities :
+4.1 Plan marketing campaigns &
 promotions
-4.2  Manage MDF-funded activities
-4.3  Execute digital &amp; media
+4.2 Manage MDF-funded activities
+4.3 Execute digital & media
 campaigns
-4.4  Drive traffic to eCommerce
+4.4 Drive traffic to eCommerce
 channels
-4.5  Monitor campaign
-performance &amp; conversion
+4.5 Monitor campaign
+performance & conversion
 Output: Demand generated for
 channels",67476,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
 New,67538,Feature,Invoicing,"Input: Fulfilled Order / Installed
@@ -98,45 +98,45 @@ Output: Order Released for
 Fulfilment",67476,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
 New,67537,Feature,Fulfillment & Shipment,"Input: Order Released for
 Fulfillment
-Activities : 
-9.1 - Process Fulfilment &amp; Shipment
+Activities :
+9.1 - Process Fulfilment & Shipment
 9.2 - Update Shipment Status
 9.3 - Notify Customer
 9.4 - Update Order Status
-Output: Fulfilled Order &amp; Delivery
+Output: Fulfilled Order & Delivery
 Confirmation",67476,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
 New,67540,Feature,Forecasting & WoC Planning,"Input: Posted Customer Invoice
-Activities : 
+Activities :
 12.1 - Capture Demand Signals
 12.2 - Analyze Sales Performance
 12.3 - Generate Demand Forecasts
 12.4 - Support Inventory Planning
 12.5 - Monitor Forecast Accuracy
 Output: Forecasts generated
-Sub processes: Retailer Data &amp; Customer
+Sub processes: Retailer Data & Customer
 Voice Integration
-Input: Channel &amp; platform sales
+Input: Channel & platform sales
 activity
-Activities : 
-F.1 - Capture Sales &amp; Marketplace
+Activities :
+F.1 - Capture Sales & Marketplace
 Data
 F.2 - Integrate Performance Metrics
-F.3 - Collect Ratings &amp; Reviews
+F.3 - Collect Ratings & Reviews
 F.4 - Analyze Customer Sentiment
 F.5 - Monitor Platform Performance
 Output: Retailer, platform data
 captured",67476,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
-New,67698,Feature,F. Retailer Data & Customer Voice Integration (Integration),"Input: Channel &amp; platform sales activity
-Activities: F.1 Capture Sales &amp; Marketplace Data, F.2 Integrate Performance Metrics, F.3 Collect Ratings &amp; Reviews, F.4 Analyze Customer Sentiment, F.5 Monitor Platform Performance
+New,67698,Feature,F. Retailer Data & Customer Voice Integration (Integration),"Input: Channel & platform sales activity
+Activities: F.1 Capture Sales & Marketplace Data, F.2 Integrate Performance Metrics, F.3 Collect Ratings & Reviews, F.4 Analyze Customer Sentiment, F.5 Monitor Platform Performance
 Output: Retailer, platform data captured",67681,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
-New,67720,Feature,F. Retailer Data & Customer Voice Integration (Integration),"Input: Channel &amp; platform sales activity
-Activities: F.1 Capture Sales &amp; Marketplace Data, F.2 Integrate Performance Metrics, F.3 Collect Ratings &amp; Reviews, F.4 Analyze Customer Sentiment, F.5 Monitor Platform Performance
+New,67720,Feature,F. Retailer Data & Customer Voice Integration (Integration),"Input: Channel & platform sales activity
+Activities: F.1 Capture Sales & Marketplace Data, F.2 Integrate Performance Metrics, F.3 Collect Ratings & Reviews, F.4 Analyze Customer Sentiment, F.5 Monitor Platform Performance
 Output: Retailer, platform data captured",67701,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
 New,67719,Feature,E. Sync Order Status & Data (Integration),"Input: Changed Sales Order
-Activities: E.1 Consolidate Sales, Orders &amp; Inventory Data, E.2 Analyze Campaign, Conversion &amp; Platform Performance, E.3 Generate Business Insights &amp; Trends
+Activities: E.1 Consolidate Sales, Orders & Inventory Data, E.2 Analyze Campaign, Conversion & Platform Performance, E.3 Generate Business Insights & Trends
 Output: Synchronize Order Status to CE",67701,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
 New,67697,Feature,E. Sync Order Status & Data (Integration),"Input: Changed Sales Order
-Activities: E.1 Consolidate Sales, Orders &amp; Inventory Data, E.2 Analyze Campaign, Conversion &amp; Platform Performance, E.3 Generate Business Insights &amp; Trends
+Activities: E.1 Consolidate Sales, Orders & Inventory Data, E.2 Analyze Campaign, Conversion & Platform Performance, E.3 Generate Business Insights & Trends
 Output: Synchronize Order Status to CE",67681,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
 New,67694,Feature,D. Sync Order Status (Integration),"Input: Changed Sales Order
 Activities: D.1 Synchronize Order Status to CE/Copernicus App
@@ -149,36 +149,36 @@ Activities: D.1 Synchronize Order Status to CE
 Output: Synchronize Order Status to CE",,0,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
 New,67529,Feature,Channel Strategy & Platform Management,"Input: Business case for retail
 channel expansion
-Activities : 
-1.1  Define eCommerce channel
+Activities :
+1.1 Define eCommerce channel
 strategy
-1.2  Define B2B &amp; B2C channel
+1.2 Define B2B & B2C channel
 operating model
-1.3  Identify channel partners &amp;
+1.3 Identify channel partners &
 retailers
-1.4  Define channel objectives &amp;
+1.4 Define channel objectives &
 growth plans
-Output: Channel strategy &amp; growth
+Output: Channel strategy & growth
 plan define",67476,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
 New,67617,Feature,C. Sync Order with SPS/DHL (Integration),"Input: Validated Sales Order
 Activities: C.1 Synchronize Sales Order to SPS Commerce, C.2 Synchronize Sales Order with DHL
-Output: Order Synced with D365 F&amp;O",,0,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
+Output: Order Synced with D365 F&O",,0,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
 New,67715,Feature,C. Sync Order with SPS/DHL (Integration),"Input: Validated Sales Order
 Activities: C.1 Synchronize Sales Order to SPS Commerce, C.2 Synchronize Sales Order with DHL
-Output: Order Synced with D365 F&amp;O",67701,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
+Output: Order Synced with D365 F&O",67701,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
 New,67693,Feature,C. Sync Order with SPS/DHL (Integration),"Input: Validated Sales Order
 Activities: C.1 Synchronize Sales Order to SPS Commerce, C.2 Synchronize Sales Order with DHL
-Output: Order Synced with D365 F&amp;O",67681,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
+Output: Order Synced with D365 F&O",67681,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
 New,67689,Feature,B. Sync Order with F&O (Integration),"Input: Validated Sales Order
-Activities: B.1 Synchronize Sales Order to D365 F&amp;O
-Output: Order Synced with D365 F&amp;O",67681,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
+Activities: B.1 Synchronize Sales Order to D365 F&O
+Output: Order Synced with D365 F&O",67681,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
 New,67711,Feature,B. Sync Order with F&O (Integration),"Input: Validated Sales Order
-Activities: B.1 Synchronize Sales Order to D365 F&amp;O
-Output: Order Synced with D365 F&amp;O",67701,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
+Activities: B.1 Synchronize Sales Order to D365 F&O
+Output: Order Synced with D365 F&O",67701,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
 New,67701,Feature,Affiliates Programs - Retailer & Associates Partner Channel Management,,67700,21,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
 New,67565,Feature,A. Sync Contract (Integration),"Input: Service Contract
-Activities: A.1 Synchronize Service Contract to F&amp;O
-Output: Contract Synced with F&amp;O",67557,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
+Activities: A.1 Synchronize Service Contract to F&O
+Output: Contract Synced with F&O",67557,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
 New,67688,Feature,A. Order Processing (Integration),"Input: eCommerce Order
 Activities: A.1 Synchronize Order to Commerce HQ
 Output: Order Synced with Commerce HQ",67681,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
@@ -189,19 +189,21 @@ New,67593,Feature,9. Warranty Closure,"Input: Delivery Confirmation + Return Pro
 Activities: 9.1 Confirm Replacement Completed, 9.2 Update Warranty Case/RMA Status, 9.3 Notify Distributor, 9.4 Close Warranty Transactions
 Output: Warranty Replacement Closed",67583,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
 New,67678,Feature,9. Sync Order with F&O (Integration),"Input: Validated Sales Order
-Activities: A.1 Synchronize Sales Order to D365 F&amp;O
-Output: Order Synced with D365 F&amp;O",67669,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
+Activities: A.1 Synchronize Sales Order to D365 F&O
+Output: Order Synced with D365 F&O",67669,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
 New,67648,Feature,9. Software Distribution & Activation,"Input: Software Package Available for Provisioning
-Activities: 9.1 Authorize Package Download, 9.2 Deliver Software Package, 9.3 Complete Software Installation &amp; Activation
-Output: Software Upgrade Successfully Installed &amp; Activated",67635,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
+Activities: 9.1 Authorize Package Download, 9.2 Deliver Software Package, 9.3 Complete Software Installation & Activation
+Output: Software Upgrade Successfully Installed & Activated",67635,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
 New,67606,Feature,9. Returns Processing,"Input: Defective/unused spare part
 Activities: 9.1 Track and receive return shipment, 9.2 Record and process return receipt, 9.3 Close return
 Output: Close return transaction",67596,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
-New,67514,Feature,9. Partner Lead Generation & Performance,"<div>Input: Partner-Generated Leads &amp;
-Campaign Engagement Data&nbsp; </div><div>Activities :&nbsp; </div><div>9.1 Generate Partner-Sourced
-Leads&nbsp; </div><div>9.2 Track Campaign Performance&nbsp; </div><div>9.3 Measure Lead Generation
-Outcomes&nbsp; </div><div><br> </div><div>Output: Qualified Partner-Sourced
-Leads </div>",67462,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
+New,67514,Feature,9. Partner Lead Generation & Performance,"Input: Partner-Generated Leads & Campaign Engagement Data
+Activities :
+9.1 Generate Partner-Sourced Leads
+9.2 Track Campaign Performance
+9.3 Measure Lead Generation Outcomes
+
+Output: Qualified Partner-Sourced Leads",67462,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
 New,67612,Feature,9. Order Processing (Integration),"Input: eCommerce Order
 Activities: A.1 Synchronize Order to Commerce HQ
 Output: Order Synced with Commerce HQ",67607,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
@@ -212,20 +214,23 @@ New,67569,Feature,9. Investigate & Communicate,"Input: Assigned Service Case
 Activities: 9.1 Investigate and diagnose, 9.2 Communicate customer updates, 9.3 Record activity and case progress
 Output: Diagnosis and action plan",67557,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
 New,67692,Feature,9. Fulfillment & Shipment,"Input: Order Released for Fulfillment
-Activities: 9.1 Process Fulfillment &amp; Shipment, 9.2 Update Shipment Status, 9.3 Notify Customer, 9.4 Update Order Status
-Output: Fulfilled Order &amp; Delivery Confirmation",67681,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
+Activities: 9.1 Process Fulfillment & Shipment, 9.2 Update Shipment Status, 9.3 Notify Customer, 9.4 Update Order Status
+Output: Fulfilled Order & Delivery Confirmation",67681,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
 New,67714,Feature,9. Fulfillment & Shipment,"Input: Order Released for Fulfillment
-Activities: 9.1 Process Fulfillment &amp; Shipment, 9.2 Update Shipment Status, 9.3 Notify Customer, 9.4 Update Order Status
-Output: Fulfilled Order &amp; Delivery Confirmation",67701,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
+Activities: 9.1 Process Fulfillment & Shipment, 9.2 Update Shipment Status, 9.3 Notify Customer, 9.4 Update Order Status
+Output: Fulfilled Order & Delivery Confirmation",67701,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
 New,67734,Feature,9. Fulfillment & Shipment,"Input: Order Released for Fulfillment
-Activities: 9.1 Process Fulfillment &amp; Shipment, 9.2 Update Shipment Status, 9.3 Notify Customer, 9.4 Update Order Status
-Output: Fulfilled Order &amp; Delivery Confirmation",67722,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
-New,67494,Feature,9. Contract Management,"<div>Input: Customer Approved
-Quotation </div><div><br> </div><div>Activities :&nbsp; </div><div>&nbsp;9.1 Create Customer Contracts&nbsp; </div><div>9.2 Manage Commercial                 
-Agreements&nbsp; </div><div>9.3 Associate Contract Terms &amp;
-Pricing&nbsp; </div><div>9.4   Associate multiple customer     
-        sites&nbsp; </div><div><br> </div><div>Output: Active Customer Contract &amp;
-Contract Pricing Terms </div>",67461,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
+Activities: 9.1 Process Fulfillment & Shipment, 9.2 Update Shipment Status, 9.3 Notify Customer, 9.4 Update Order Status
+Output: Fulfilled Order & Delivery Confirmation",67722,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
+New,67494,Feature,9. Contract Management,"Input: Customer Approved Quotation
+
+Activities :
+9.1 Create Customer Contracts
+9.2 Manage Commercial Agreements
+9.3 Associate Contract Terms & Pricing
+9.4 Associate multiple customer sites
+
+Output: Active Customer Contract & Contract Pricing Terms",67461,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
 New,67582,Feature,9. Closure and Knowledge,"Input: Validated resolution
 Activities: 9.1 Validate with customer, 9.2 Complete investigation documentation, 9.3 Record root cause, 9.4 Create/update knowledge base, 9.5 Close service case
 Output: Closed case and reusable knowledge base",67572,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
@@ -241,18 +246,26 @@ Output: Spare parts returned",67596,1,Day 2 IT Program\HeartStream\Business E2E 
 New,67592,Feature,8. Return Equipment Processing,"Input: RMA Authorization
 Activities: 8.1 Distributor Returns Defective Device, 8.2 DHL Tracks Return Shipment, 8.3 Warehouse Receives Return Equipment, 8.4 Inspect Returned Device
 Output: Return Equipment Processed",67583,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
-New,67493,Feature,8. Quotation Approval,"<div>Input: Customer Decision&nbsp; </div><div>Activities :&nbsp; </div><div>8.1 Obtain customer approval         
-and sign-off&nbsp; </div><div><br> </div><div>Output: Customer Decision Stage </div>",67461,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
+New,67493,Feature,8. Quotation Approval,"Input: Customer Decision
+Activities :
+8.1 Obtain customer approval and sign-off
+
+Output: Customer Decision Stage",67461,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
 New,67581,Feature,8. Outcome and Record Update,"Input: Execution result or remote resolution
 Activities: 8.1 Capture outcome and customer confirmation, 8.2 Update install base and service records
 Output: Resolution ready for validation",67572,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
 New,67656,Feature,8. Order Processing (Integration),"Input: Sales Order
 Activities: A.1 Synchronize Order to Commerce HQ
 Output: Order Synced with Commerce HQ",67650,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
-New,67513,Feature,8. Joint Marketing & Demand Generation,"<div>Input: Enabled &amp; Certified Partner
-Network&nbsp; </div><div><br> </div><div>Activities :&nbsp; </div><div>8.1 Plan Joint Marketing Activities&nbsp; </div><div>8.2 Allocate MDF Budgets&nbsp; </div><div>8.3 Create Target Segments&nbsp; </div><div>8.4 Execute Campaigns &amp;
-Customer Journeys&nbsp; </div><div><br> </div><div>Output: Partner-Generated Leads
-&amp; Campaign Engagement Data<br> </div>",67462,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
+New,67513,Feature,8. Joint Marketing & Demand Generation,"Input: Enabled & Certified Partner Network
+
+Activities :
+8.1 Plan Joint Marketing Activities
+8.2 Allocate MDF Budgets
+8.3 Create Target Segments
+8.4 Execute Campaigns & Customer Journeys
+
+Output: Partner-Generated Leads & Campaign Engagement Data",67462,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
 New,67691,Feature,8. Fulfillment Request,"Input: Confirmed Sales Order
 Activities: 8.1 Submit fulfillment request
 Output: Order Released for Fulfillment",67681,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
@@ -280,9 +293,9 @@ Output: Device issue resolved",67596,1,Day 2 IT Program\HeartStream\Business E2E
 New,67567,Feature,7. Service Request Intake,"Input: Service Request and Asset details
 Activities: 7.1 Raise service request, 7.2 Capture channel, issue and asset
 Output: Service Request Received",67557,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
-New,67643,Feature,7. Sales Order Synchronization (Finance),"Input: Upgrade Work Order &amp; Sales Order Created
-Activities: 7.1 Create Software Upgrade, 7.2 Sales Order, 7.3 Synchronize Sales Order to D365 F&amp;O
-Output: Software Upgrade Sales Order Available in D365 F&amp;O",67635,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
+New,67643,Feature,7. Sales Order Synchronization (Finance),"Input: Upgrade Work Order & Sales Order Created
+Activities: 7.1 Create Software Upgrade, 7.2 Sales Order, 7.3 Synchronize Sales Order to D365 F&O
+Output: Software Upgrade Sales Order Available in D365 F&O",67635,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
 New,67690,Feature,7. Sales Order Approval,"Input: Validated Sales Order
 Activities: 7.1 Validate Sales Order, 7.2 Confirm Sales Order
 Output: Confirmed Sales Order Ready for Fulfillment",67681,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
@@ -292,14 +305,24 @@ Output: Confirmed Sales Order Ready for Fulfillment",67701,1,Day 2 IT Program\He
 New,67732,Feature,7. Sales Order Approval,"Input: Validated Sales Order
 Activities: 7.1 Validate Sales Order, 7.2 Confirm Sales Order
 Output: Confirmed Sales Order Ready for Fulfillment",67722,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
-New,67492,Feature,7. Quotation & Pricing,"<div>Input: Customer Needs&nbsp; </div><div>Activities :&nbsp; </div><div>7.1 Create Quotations&nbsp; </div><div>7.2 Add Products, Services, SaaS / 
-      Subscriptions as applicable&nbsp; </div><div>7.3 Define Payment  / Invoicing       
-      Terms&nbsp; </div><div>7.4 Negotiate &amp; Revise Quote&nbsp; </div><div>7.5 Share with Customer for             
-      Approval&nbsp; </div><div><br> </div><div>Output: Customer Decision Stage </div>",67461,2,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
-New,67512,Feature,7. Partner Training & Enablement,"<div>Input: Active Partner Account &amp;
-Portal Access </div><div><br> </div><div>Activities :&nbsp; </div><div>7.1 Provide Partner Training&nbsp; </div><div>7.2 Deliver Certification Programs&nbsp; </div><div>7.3 Share Sales &amp; Marketing
-Content&nbsp; </div><div>7.4 Track Training Completion&nbsp; </div><div><br> </div><div>Output: Enabled &amp; Certified Partner
-Network<br> </div>",67462,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
+New,67492,Feature,7. Quotation & Pricing,"Input: Customer Needs
+Activities :
+7.1 Create Quotations
+7.2 Add Products, Services, SaaS / Subscriptions as applicable
+7.3 Define Payment / Invoicing Terms
+7.4 Negotiate & Revise Quote
+7.5 Share with Customer for Approval
+
+Output: Customer Decision Stage",67461,2,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
+New,67512,Feature,7. Partner Training & Enablement,"Input: Active Partner Account & Portal Access
+
+Activities :
+7.1 Provide Partner Training
+7.2 Deliver Certification Programs
+7.3 Share Sales & Marketing Content
+7.4 Track Training Completion
+
+Output: Enabled & Certified Partner Network",67462,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
 New,67666,Feature,7. Order Processing (Integration),"Input: Sales Order
 Activities: A.1 Synchronize Order to Commerce HQ
 Output: Order Synced with Commerce HQ",67660,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
@@ -320,36 +343,41 @@ New,67580,Feature,7. Corrective Service Execution,"Input: Assigned Work Order
 Activities: 7.1 Repair, replace, update or correct, 7.2 Capture completion evidence, 7.3 Return execution status
 Output: Corrective action completed",67572,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
 New,67731,Feature,6.B. Sync Order with F&O (Integration),"Input: Validated Sales Order
-Activities: B.1 Synchronize Sales Order to D365 F&amp;O
-Output: Order Synced with D365 F&amp;O",67722,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
+Activities: B.1 Synchronize Sales Order to D365 F&O
+Output: Order Synced with D365 F&O",67722,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
 New,67730,Feature,6.A. Order Processing (Integration),"Input: eCommerce Order
 Activities: A.1 Synchronize Order to Commerce HQ
 Output: Order Synced with Commerce HQ",67722,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
-New,67511,Feature,6.1 Partner Data Available in F&O,"<div>Input: Partner Data synced from CE&nbsp; </div><div>Activities :&nbsp; </div><div>6.1 Partner Data Avl in F&amp;O&nbsp; </div><div><br> </div><div>Output: Updated Partner
-Commercial Data F&amp;O<br> </div><div><br> </div>",67462,2,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
+New,67511,Feature,6.1 Partner Data Available in F&O,"Input: Partner Data synced from CE
+Activities :
+6.1 Partner Data Avl in F&O
+
+Output: Updated Partner Commercial Data F&O",67462,2,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
 New,67579,Feature,6. Work Order & Handoff,"Input: Resolution requiring Field intervention
-Activities: 6.1 Create Work Order, 6.2 Provide asset, issue &amp; action details, 6.3 Hand off to ASP
+Activities: 6.1 Create Work Order, 6.2 Provide asset, issue & action details, 6.3 Hand off to ASP
 Output: Approved resolution recommendation",67572,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
 New,67749,Feature,6. Sync Order with SPS/DHL (Integration),"Input: Validated Purchase Order
 Activities: C.1 Synchronize Purchase Order to SPS Commerce, C.2 Synchronize Purchase Order with DHL
-Output: Goods Receipt posted order Synced with D365 &lt;&gt; DHL",67742,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
+Output: Goods Receipt posted order Synced with D365 <> DHL",67742,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
 New,67603,Feature,6. Shipment Process,"Input: Spare Parts Sales Order
 Activities: 6.1 Pick, pack and ship spare parts, 6.2 Generate shipment tracking, 6.3 Update shipment status
 Output: Confirmed delivery to service distributor",67596,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
 New,67590,Feature,6. Shipment Fulfillment & Tracking,"Input: Released Fulfillment Order
-Activities: 6.1 Generate RMA/Return Instructions, 6.2 Pick Replacement Device/Accessories, 6.3 Pack &amp; Ship Replacement Item, 6.4 Generate Tracking Number, 6.5 Confirm Delivery
+Activities: 6.1 Generate RMA/Return Instructions, 6.2 Pick Replacement Device/Accessories, 6.3 Pack & Ship Replacement Item, 6.4 Generate Tracking Number, 6.5 Confirm Delivery
 Output: Replacement Device Delivered",67583,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
-New,67510,Feature,6. Partner Data Available in CRM & synchronization with FnO,"<div>Input: Partner Data Synced from
-PRM&nbsp; </div><div>Activities :&nbsp; </div><div>6.1 Partner Data Availability in
-CRM&nbsp; </div><div>6.2 Partner Data (Status/               
-        Health/Score/Training /             
-        complaince / engagement /       
-        trends) made avaialable
-6.3   Sync Partner Data with F&amp;O&nbsp; </div><div><br> </div><div>Output: Partner Data Available in
-D365 CE&nbsp;<br> </div><div><br> </div><div><br> </div><div>Input: Active Partner Account in
-CE&nbsp; </div><div>Activities :&nbsp; </div><div>B.1 Sync Partner Profile with F&amp;O&nbsp; </div><div>B.2 Sync Partner Account
-Information with F&amp;O&nbsp; </div><div><br> </div><div>Output: Partner Data Available in
-D365 F&amp;O<br> </div>",67462,2,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
+New,67510,Feature,6. Partner Data Available in CRM & synchronization with FnO,"Input: Partner Data Synced from PRM
+Activities :
+6.1 Partner Data Availability in CRM
+6.2 Partner Data (Status/ Health/Score/Training / complaince / engagement / trends) made avaialable 6.3 Sync Partner Data with F&O
+
+Output: Partner Data Available in D365 CE
+
+Input: Active Partner Account in CE
+Activities :
+B.1 Sync Partner Profile with F&O
+B.2 Sync Partner Account Information with F&O
+
+Output: Partner Data Available in D365 F&O",67462,2,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
 New,67729,Feature,6. Order Processing Management,"Input: Received eCommerce Order
 Activities: 6.1 Validate and convert order to Sales Order
 Output: Validated Order",67722,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
@@ -360,11 +388,11 @@ New,67687,Feature,6. Order Processing Management,"Input: Received eCommerce Orde
 Activities: 6.1 Validate and convert order to Sales Order
 Output: Validated Order",67681,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
 New,67616,Feature,6. Fulfillment & Shipment,"Input: Order Released for Fulfillment
-Activities: 6.1 Process Fulfillment &amp; Shipment, 6.2 Update Shipment Status, 6.3 Notify Customer, 6.4 Update Order Status
-Output: Fulfilled Order &amp; Delivery Confirmation",67607,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
+Activities: 6.1 Process Fulfillment & Shipment, 6.2 Update Shipment Status, 6.3 Notify Customer, 6.4 Update Order Status
+Output: Fulfilled Order & Delivery Confirmation",67607,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
 New,67630,Feature,6. Fulfillment & Shipment,"Input: Order Released for Fulfillment
-Activities: 6.1 Process Fulfillment &amp; Shipment, 6.2 Update Shipment Status, 6.3 Notify Customer, 6.4 Update Order Status
-Output: Fulfilled Order &amp; Delivery Confirmation",67621,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
+Activities: 6.1 Process Fulfillment & Shipment, 6.2 Update Shipment Status, 6.3 Notify Customer, 6.4 Update Order Status
+Output: Fulfilled Order & Delivery Confirmation",67621,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
 New,67658,Feature,6. Entitlement Renewal (D365 CE),"Input: Upgrade Activated
 Activities: 6.1 Extend entitlement period, 6.2 Update subscription status, 6.3 Maintain service access
 Output: Active Subscription",67650,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
@@ -377,28 +405,38 @@ Output: Active Software Upgrade Entitlement",67635,1,Day 2 IT Program\HeartStrea
 New,67668,Feature,6. Customer Confirmation,"Input: Active Subscription
 Activities: 6.1 Display renewal confirmation, 6.2 Send confirmation email, 6.3 Update subscription history
 Output: Renewal Recorded",67660,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
-New,67491,Feature,6. Commercial Pricing Management,"<div>Commercial Pricing Management
-Input: Product Catalog &amp; Pricing
-Policies&nbsp; </div><div>Activities :&nbsp; </div><div>6.1  Maintain Trade Agreement&nbsp; </div><div>6.2  Manage Cust Groups&nbsp; </div><div>6.3 Maintain Pricing Discounts&nbsp; </div><div><br> </div><div>Output: Customer-Specific Pricing
-&amp; Discount Rules </div>",67461,2,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
-New,67564,Feature,6. Commercial Pricing Management,"Input: Product Catalog &amp; Pricing Policies
+New,67491,Feature,6. Commercial Pricing Management,"Commercial Pricing Management Input: Product Catalog & Pricing Policies
+Activities :
+6.1 Maintain Trade Agreement
+6.2 Manage Cust Groups
+6.3 Maintain Pricing Discounts
+
+Output: Customer-Specific Pricing & Discount Rules",67461,2,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
+New,67564,Feature,6. Commercial Pricing Management,"Input: Product Catalog & Pricing Policies
 Activities: 6.1 Maintain Trade Agreement, 6.2 Manage Cust Groups, 6.3 Maintain Pricing Discounts
-Output: Customer-Specific Pricing &amp; Discount Rules",67557,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
+Output: Customer-Specific Pricing & Discount Rules",67557,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
 New,67675,Feature,5. Subscription Renewal Processing,"Input: Order Decision
 Activities: 5.1 Create renewal work order, 5.2 Link approved order, 5.3 Initiate entitlement renewal
 Output: Renewal Initiated",67669,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
-New,67563,Feature,5. Product & Pricing Management,"Input: Product Catalog &amp; Pricing Policies
+New,67563,Feature,5. Product & Pricing Management,"Input: Product Catalog & Pricing Policies
 Activities: 5.1 Maintain Products, 5.2 Manage Selling Prices
-Output: Products &amp; Base Pricing Available for Sales",67557,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
-New,67490,Feature,5. Product & Pricing Management,"<div>Input: Product Catalog &amp; Pricing
-Policies&nbsp; </div><div>Activities :&nbsp; </div><div>5.1  Maintain Products&nbsp; </div><div>5.2  Manage Selling Prices&nbsp; </div><div><br> </div><div>Output: Products &amp; Base Pricing
-Available for Sales </div>",67461,3,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
+Output: Products & Base Pricing Available for Sales",67557,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
+New,67490,Feature,5. Product & Pricing Management,"Input: Product Catalog & Pricing Policies
+Activities :
+5.1 Maintain Products
+5.2 Manage Selling Prices
+
+Output: Products & Base Pricing Available for Sales",67461,3,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
 New,67748,Feature,5. Payment & Settlement,"Input: Approved Invoice
-Activities: 5.1 Create payment proposal &amp; approve method, 5.2 Generate payment (EFT/check/ISO 20022), 5.3 Settle transaction &amp; post payment
+Activities: 5.1 Create payment proposal & approve method, 5.2 Generate payment (EFT/check/ISO 20022), 5.3 Settle transaction & post payment
 Output: Payment Posted - P2P Complete",67742,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
-New,67509,Feature,5. Partner Onboarding & Enablement with Partner data synchronization,"<div>Input: Partner Program
-Framework &amp; Channel Policies&nbsp; </div><div>Activities :&nbsp; </div><div>5.1 Onboard Approved Partner&nbsp; </div><div>5.2 Provision Partner Access&nbsp; </div><div>5.3 Setup Partner Credentials&nbsp; </div><div><br> </div><div>Output: Active Partner Account &amp;
-Portal Acces<br> </div>",67462,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
+New,67509,Feature,5. Partner Onboarding & Enablement with Partner data synchronization,"Input: Partner Program Framework & Channel Policies
+Activities :
+5.1 Onboard Approved Partner
+5.2 Provision Partner Access
+5.3 Setup Partner Credentials
+
+Output: Active Partner Account & Portal Acces",67462,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
 New,67641,Feature,5. Order Validation,"Input: Software Upgrade Order Created
 Activities: 5.1 Validate Upgrade Order
 Output: Validated Software Upgrade Order",67635,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
@@ -409,13 +447,13 @@ New,67602,Feature,5. Order Fulfillment and Returns (Finance),"Input: Released sp
 Activities: 5.1 Receive fulfillment spare parts order request and downstream activities, 5.2 Receive returned spare parts
 Output: Order fulfillment and returns",67596,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
 New,67686,Feature,5. Order Capture,"Input: Customer demand generated via campaigns
-Activities: 5.1 Customer Discovers Product, 5.2 Place Order on Channel Platform, 5.3 Capture Order &amp; Customer Details
+Activities: 5.1 Customer Discovers Product, 5.2 Place Order on Channel Platform, 5.3 Capture Order & Customer Details
 Output: eCommerce order created",67681,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
 New,67708,Feature,5. Order Capture,"Input: Customer demand generated via campaigns
-Activities: 5.1 Customer Discovers Product, 5.2 Place Order on Channel Platform, 5.3 Capture Order &amp; Customer Details
+Activities: 5.1 Customer Discovers Product, 5.2 Place Order on Channel Platform, 5.3 Capture Order & Customer Details
 Output: eCommerce order created",67701,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
 New,67728,Feature,5. Order Capture,"Input: Customer demand generated via campaigns
-Activities: 5.1 Customer Discovers Product, 5.2 Place Order on Channel Platform, 5.3 Capture Order &amp; Customer Details
+Activities: 5.1 Customer Discovers Product, 5.2 Place Order on Channel Platform, 5.3 Capture Order & Customer Details
 Output: eCommerce order created",67722,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
 New,67589,Feature,5. Inventory Validation,"Input: Replacement Order
 Activities: 5.1 Validate Inventory Availability, 5.2 Reserve Inventory, 5.3 Release Order for fulfillment
@@ -433,7 +471,7 @@ New,67578,Feature,5. Action & Resolution Definition,"Input: Confirmed Root cause
 Activities: 5.1 Define corrective actions, 5.2 Document recommended resolution, 5.3 Identify execution path
 Output: Approved resolution recommendation",67572,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
 New,67747,Feature,4. Vendor Invoice Processing,"Input: Vendor Invoice + Goods Receipt
-Activities: 4.1 Register &amp; pool vendor invoice, 4.2 Perform 2-way/3-way invoice matching, 4.3 Approve invoice for posting
+Activities: 4.1 Register & pool vendor invoice, 4.2 Perform 2-way/3-way invoice matching, 4.3 Approve invoice for posting
 Output: Approved Invoice Posted",67742,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
 New,67577,Feature,4. Technical Investigation,"Input: Assigned Tier 3 case
 Activities: 4.1 Perform Detailed investigation, 4.2 Capture findings and evidence, 4.3 Collaborate with engineering, quality and service teams, 4.4 Determine root cause
@@ -450,25 +488,30 @@ Output: Confirmed Sales Order Ready for Fulfillment",67607,1,Day 2 IT Program\He
 New,67628,Feature,4. Sales Order Approval,"Input: Validated Sales Order
 Activities: 4.1 Validate Sales Order, 4.2 Confirm Sales Order
 Output: Confirmed Sales Order Ready for Fulfillment",67621,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
-New,67588,Feature,4. Return Order Creation (Finance),"Input: Return &amp; Replacement Order
+New,67588,Feature,4. Return Order Creation (Finance),"Input: Return & Replacement Order
 Activities: 4.1 Receive Return Order from CE
 Output: Return order request created",67583,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
 New,67665,Feature,4. Order Processing (Retail Operations),"Input: Renewal Order
 Activities: 4.1 Create Subscription order, 4.2 Sync order to Commerce HQ, 4.3 Validate renewal order details, 4.4 Confirm Renewal Transaction
-Output: Validated &amp; Confirmed order",67660,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
+Output: Validated & Confirmed order",67660,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
 New,67655,Feature,4. Order Processing (Retail Operations),"Input: Renewal Order
 Activities: 4.1 Sync order to HQ, 4.2 Validate order details
 Output: Validated order",67650,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
-New,67489,Feature,4. Opportunity Management,"<div>Input: Sales Accepted Leads&nbsp; </div><div>Activities :&nbsp; </div><div>4.1 Create Opportunities&nbsp; </div><div>4.2 Manage Sales Pipeline&nbsp; </div><div>4.3 Track Sales Activities&nbsp; </div><div>4.4 Identify Upsell/Cross-Sell           
-      Opportunities&nbsp; </div><div>4.5 Manage Sales Forecast /           
-      Forecast Categories/ Win Lost   
-      Analysis&nbsp; </div><div>4.6 Review Sales Analytics &amp;           
-      Forecast Reports&nbsp; </div><div><br> </div><div>Output: Qualified Sales Opportunities </div>",67461,3,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
-New,67685,Feature,4. Joint Marketing & Demand Generation,"Input: Enabled promotional &amp; selling capabilities
-Activities: 4.1 Define Campaigns &amp; Media, 4.2 MDF &amp; Co-Marketing, 4.3 Execute Social &amp; Influencer Campaigns, 4.4 Drive Engagement &amp; Demand, 4.5 Monitor Performance &amp; Conversions
+New,67489,Feature,4. Opportunity Management,"Input: Sales Accepted Leads
+Activities :
+4.1 Create Opportunities
+4.2 Manage Sales Pipeline
+4.3 Track Sales Activities
+4.4 Identify Upsell/Cross-Sell Opportunities
+4.5 Manage Sales Forecast / Forecast Categories/ Win Lost Analysis
+4.6 Review Sales Analytics & Forecast Reports
+
+Output: Qualified Sales Opportunities",67461,3,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
+New,67685,Feature,4. Joint Marketing & Demand Generation,"Input: Enabled promotional & selling capabilities
+Activities: 4.1 Define Campaigns & Media, 4.2 MDF & Co-Marketing, 4.3 Execute Social & Influencer Campaigns, 4.4 Drive Engagement & Demand, 4.5 Monitor Performance & Conversions
 Output: Qualified Customer Demand",67681,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
-New,67727,Feature,4. Joint Marketing & Demand Generation,"Input: Retailers onboarded &amp; enabled
-Activities: 4.1 Define co-marketing &amp; promotional plans, 4.2 Allocate Marketing Development Funds (MDF), 4.3 Execute retail &amp; media campaigns, 4.4 Manage promotions &amp; in-store activations, 4.5 Monitor campaign &amp; promotional performance
+New,67727,Feature,4. Joint Marketing & Demand Generation,"Input: Retailers onboarded & enabled
+Activities: 4.1 Define co-marketing & promotional plans, 4.2 Allocate Marketing Development Funds (MDF), 4.3 Execute retail & media campaigns, 4.4 Manage promotions & in-store activations, 4.5 Monitor campaign & promotional performance
 Output: Qualified Customer Demand",67722,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
 New,67601,Feature,4. Inventory Checks,"Input: Spare parts Sales Order
 Activities: 4.1 Validate inventory availability, 4.2 Allocate spare parts, 4.3 Release order for fulfillment
@@ -476,10 +519,15 @@ Output: Order Released for fulfillment",67596,1,Day 2 IT Program\HeartStream\Bus
 New,67562,Feature,4. Install Base Management,"Input: Customer, Location and Asset data
 Activities: 4.1 Create Installed Products, 4.2 Link Account and Locations, 4.3 Maintain warranty and serial data, 4.4 Govern Installed-base quality
 Output: Trusted Installed Base record",67557,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
-New,67508,Feature,4. Commercial Terms Synchronization,"<div>Input: F&amp;O Commercial Setup&nbsp; </div><div><br> </div><div>Activities :&nbsp; </div><div>4.1 Sync Pricing &amp; Discounts&nbsp; </div><div>4.2 Sync Rebate Structure&nbsp; </div><div><br> </div><div>Output: Updated Partner
-Commercial Data in Zinfi<br> </div>",67462,2,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
-New,67707,Feature,4. Affiliate Promotions,"Input: Affiliate pricing &amp; eligibility defined
-Activities: 4.1 Maintain affiliate discounts &amp; promotions, 4.2 Associate promotions with affiliate programs, 4.3 Publish affiliate offers to eCommerce channels
+New,67508,Feature,4. Commercial Terms Synchronization,"Input: F&O Commercial Setup
+
+Activities :
+4.1 Sync Pricing & Discounts
+4.2 Sync Rebate Structure
+
+Output: Updated Partner Commercial Data in Zinfi",67462,2,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
+New,67707,Feature,4. Affiliate Promotions,"Input: Affiliate pricing & eligibility defined
+Activities: 4.1 Maintain affiliate discounts & promotions, 4.2 Associate promotions with affiliate programs, 4.3 Publish affiliate offers to eCommerce channels
 Output: Affiliate offers published to eCommerce channels",67701,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
 New,67486,Feature,3.1 Sales Lead Handoff,"Input: Qualified Sales Leads
 Activities : 
@@ -503,53 +551,71 @@ New,67561,Feature,3. Service Entitlements,"Input: Active Contract
 Activities: 3.1 Create Entitlements, 3.2 Link Contract and Assets, 3.3 Define Entitled Services, 3.4 Track Usage and Validity
 Output: Validated Service Coverage",67557,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
 New,67587,Feature,3. RMA & Replacement Order Creation,"Input: Approved Warranty Authorization
-Activities: 3.1 Generate Warranty Replacement/Return Order Request, 3.2 Submit Request to F&amp;O
+Activities: 3.1 Generate Warranty Replacement/Return Order Request, 3.2 Submit Request to F&O
 Output: RMA and Replacement Order Created",67583,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
 New,67673,Feature,3. PO Submission,"Input: Renewal Request
 Activities: 3.1 Select renewal term, 3.2 Create renewal request, 3.3 Submit PO details
 Output: Submitted PO",67669,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
 New,67684,Feature,3. Partner Onboarding & Enablement,"Input: Partner Onboarding
-Activities: 3.1 Onboard Channel Partners, 3.2 Publish Catalog &amp; Content, 3.3 Provide Brand &amp; Campaign Assets, 3.4 Enable Selling &amp; Promotions
-Output: Partners onboarded &amp; enabled to sell",67681,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
+Activities: 3.1 Onboard Channel Partners, 3.2 Publish Catalog & Content, 3.3 Provide Brand & Campaign Assets, 3.4 Enable Selling & Promotions
+Output: Partners onboarded & enabled to sell",67681,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
 New,67726,Feature,3. Partner Onboarding & Enablement,"Input: Executed retailer contracts
-Activities: 3.1 Onboard approved retailers, 3.2 Setup retailer account &amp; channel profile, 3.3 Share product catalogs &amp; pricing, 3.4 Provide retailer training &amp; onboarding materials
-Output: Retailers onboarded &amp; enabled",67722,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
-New,67507,Feature,3. Partner Contracting & Commercial Setup,"<div>Input: Partner Program
-Framework &amp; Channel Policies&nbsp; </div><div><br> </div><div>Activities :&nbsp; </div><div>3.1 Create Partner Account&nbsp; </div><div>3.2 Define Partner Pricing &amp;
-Discounts&nbsp; </div><div>3.3 Define Rebate Eligibility &amp;
-Rules&nbsp; </div><div>3.4 Establish Partner
-Agreements&nbsp; </div><div><br> </div><div>Output: Active Partner Contract &amp;
-Commercial Terms<br> </div>",67462,2,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
+Activities: 3.1 Onboard approved retailers, 3.2 Setup retailer account & channel profile, 3.3 Share product catalogs & pricing, 3.4 Provide retailer training & onboarding materials
+Output: Retailers onboarded & enabled",67722,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
+New,67507,Feature,3. Partner Contracting & Commercial Setup,"Input: Partner Program Framework & Channel Policies
+
+Activities :
+3.1 Create Partner Account
+3.2 Define Partner Pricing & Discounts
+3.3 Define Rebate Eligibility & Rules
+3.4 Establish Partner Agreements
+
+Output: Active Partner Contract & Commercial Terms",67462,2,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
 New,67625,Feature,3. Order Processing/Management,"Input: Received eCommerce Order
 Activities: 3.1 Validate and convert order to Sales Order
 Output: Validated Order",67621,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
 New,67611,Feature,3. Order Processing/Management,"Input: Received eCommerce Order
 Activities: 3.1 Validate and convert order to Sales Order
 Output: Validated Order",67607,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
-New,67488,Feature,3. Lead Assessment,"<div>Input: Marketing Qualified Leads
-(MQLs)&nbsp; </div><div>Activities :&nbsp; </div><div>3.1 Generate Leads&nbsp; </div><div>3.2 Score &amp; Qualify Leads&nbsp; </div><div>3.3 Identify MQLs&nbsp; </div><div><br> </div><div>Output: Qualified Sales Leads </div>",67461,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
+New,67488,Feature,3. Lead Assessment,"Input: Marketing Qualified Leads (MQLs)
+Activities :
+3.1 Generate Leads
+3.2 Score & Qualify Leads
+3.3 Identify MQLs
+
+Output: Qualified Sales Leads",67461,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
 New,67746,Feature,3. Goods Receipt,"Input: Confirmed PO/Vendor Shipment (ASN)
-Activities: 3.1 Register arrival &amp; post product receipt, 3.2 Update on-hand inventory
+Activities: 3.1 Register arrival & post product receipt, 3.2 Update on-hand inventory
 Output: Goods Receipt Posted",67742,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
-New,67706,Feature,3. Commercial Pricing Management,"Input: Product Catalog &amp; Pricing Policies
+New,67706,Feature,3. Commercial Pricing Management,"Input: Product Catalog & Pricing Policies
 Activities: 3.1 Maintain Trade Agreement, 3.2 Manage Cust Groups, 3.3 Maintain Pricing Discounts
-Output: Customer-Specific Pricing &amp; Discount Rules",67701,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
+Output: Customer-Specific Pricing & Discount Rules",67701,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
 New,67639,Feature,3. Checkout & Payment,"Input: Software Upgrade Cart Created
 Activities: 3.1 Review Upgrade Details, 3.2 Proceed to Checkout, 3.3 Process Payment via Credit Card/Confirmation on PO
 Output: Paid Software Upgrade Order",67635,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
-New,67527,Feature,22. Rebate & MDF Settlement,"<div>Input: Approved Rebate &amp; MDF
-Settlements&nbsp; </div><div><br> </div><div>Activities :&nbsp; </div><div>16.1Approve Rebate &amp; MDF
-Settlements&nbsp; </div><div>16.3Process Rebate &amp; MDF
-Payouts&nbsp; </div><div>16.4Report Rebate &amp; MDF
-Performance&nbsp; </div><div><br> </div><div>Output: Rebate &amp; MDF Obligations
-Settled<br> </div>",67462,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
-New,67526,Feature,21. Rebate & MDF Calculation,"<div>Input: Cash Collected &amp;
-Receivables Settled&nbsp; </div><div>Activities :&nbsp; </div><div>15.1Calculate Rebate Eligibility&nbsp; </div><div>15.2Calculate Earned Rebates&nbsp; </div><div>15.3Track MDF Utilization&nbsp; </div><div>15.4Validate Rebate &amp; MDF Claims </div><div><br> </div><div>Output: Approved Rebate &amp; MDF
-Settlements<br> </div>",67462,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
-New,67525,Feature,20. Payment Collection,"<div>Input: Posted Customer Invoice&nbsp; </div><div>Activities :&nbsp; </div><div>14.1Process Customer Payments&nbsp; </div><div>14.2Apply Payments Against
-Invoices&nbsp; </div><div>14.3Manage Receivables &amp;
-Collections&nbsp; </div><div><br> </div><div>Output: Payment Collected &amp;
-Receivables Settled<br> </div>",67462,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
+New,67527,Feature,22. Rebate & MDF Settlement,"Input: Approved Rebate & MDF Settlements
+
+Activities :
+16.1Approve Rebate & MDF Settlements
+16.3Process Rebate & MDF Payouts
+16.4Report Rebate & MDF Performance
+
+Output: Rebate & MDF Obligations Settled",67462,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
+New,67526,Feature,21. Rebate & MDF Calculation,"Input: Cash Collected & Receivables Settled
+Activities :
+15.1Calculate Rebate Eligibility
+15.2Calculate Earned Rebates
+15.3Track MDF Utilization
+15.4Validate Rebate & MDF Claims
+
+Output: Approved Rebate & MDF Settlements",67462,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
+New,67525,Feature,20. Payment Collection,"Input: Posted Customer Invoice
+Activities :
+14.1Process Customer Payments
+14.2Apply Payments Against Invoices
+14.3Manage Receivables & Collections
+
+Output: Payment Collected & Receivables Settled",67462,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
 New,67586,Feature,2. Warranty Validation & Authorization,"Input: Warranty Replacement Request
 Activities: 2.1 Review Warranty Request, 2.2 Review Customer Account and Installed Device information and warranty coverage, 2.3 Validate Entitlement Eligibility
 Output: Warranty Authorization",67583,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
@@ -560,23 +626,36 @@ New,67599,Feature,2. Spare Parts Order Submission,"Input: Device issue diagnosis
 Activities: 2.1 Create spare parts order request for identified spare parts, 2.2 Submit spare parts order
 Output: Spare parts order request",67596,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
 New,67745,Feature,2. Sourcing & PO Creation,"Input: Approved Requisition
-Activities: 2.1 Source vendor via RFQ (if required) &amp; select bid, 2.2 Create purchase order, add charges &amp; tax, 2.3 Confirm PO &amp; send to vendor
+Activities: 2.1 Source vendor via RFQ (if required) & select bid, 2.2 Create purchase order, add charges & tax, 2.3 Confirm PO & send to vendor
 Output: Confirmed Purchase Order",67742,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
 New,67624,Feature,2. Shopping Cart & Checkout,"Input: Buy now selected
-Activities: 2.1 Auto-Add Replacement Items, 2.2 Suggest Related Accessories, 2.3 Review Cart &amp; Checkout, 2.4 Capture Delivery Details, 2.5 Process Payment
+Activities: 2.1 Auto-Add Replacement Items, 2.2 Suggest Related Accessories, 2.3 Review Cart & Checkout, 2.4 Capture Delivery Details, 2.5 Process Payment
 Output: eCommerce replacement order created",67621,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
-New,67560,Feature,2. Service Contract Management,"<div>Input: Approved Service Quotation&nbsp; </div><div><br> </div><div>Activities: 2.1 Create Service Contract,&nbsp; </div><div>2.2 Define Service Levels,&nbsp; </div><div>2.3 Link Customer and locations,&nbsp; </div><div>2.4 Maintain Lifecycle and renewals&nbsp; </div><div><br> </div><div>Output: Active Service Contract </div>",67557,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
+New,67560,Feature,2. Service Contract Management,"Input: Approved Service Quotation
+
+Activities: 2.1 Create Service Contract,
+2.2 Define Service Levels,
+2.3 Link Customer and locations,
+2.4 Maintain Lifecycle and renewals
+
+Output: Active Service Contract",67557,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
 New,67725,Feature,2. Retailer Recruitment & Contracting,"Input: Retail channel strategy defined
-Activities: 2.1 Identify prospective retail partners, 2.2 Evaluate retailer eligibility &amp; fit, 2.3 Define commercial terms &amp; discounts, 2.4 Negotiate retailer agreements, 2.5 Execute retailer contracts
+Activities: 2.1 Identify prospective retail partners, 2.2 Evaluate retailer eligibility & fit, 2.3 Define commercial terms & discounts, 2.4 Negotiate retailer agreements, 2.5 Execute retailer contracts
 Output: Retailer contracts executed",67722,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
-New,67705,Feature,2. Product & Pricing Management,"Input: Product Catalog &amp; Pricing Policies
+New,67705,Feature,2. Product & Pricing Management,"Input: Product Catalog & Pricing Policies
 Activities: 2.1 Maintain Products, 2.2 Manage Selling Prices
-Output: Products &amp; Base Pricing Available for Sales",67701,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
-New,67683,Feature,2. Partner Recruitment & Channel Setup,"Input: Approved channel strategy &amp; platform selection
-Activities: 2.1 Identify Partners &amp; Platforms, 2.2 Define Commercial Agreements, 2.3 Configure Channels &amp; Integrations, 2.4 Activate Channel Partnerships
+Output: Products & Base Pricing Available for Sales",67701,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
+New,67683,Feature,2. Partner Recruitment & Channel Setup,"Input: Approved channel strategy & platform selection
+Activities: 2.1 Identify Partners & Platforms, 2.2 Define Commercial Agreements, 2.3 Configure Channels & Integrations, 2.4 Activate Channel Partnerships
 Output: Active Social Commerce Channel",67681,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
-New,67506,Feature,2. Partner Onboarding & Qualification,"<div>Input: Partner Program
-Framework &amp; Channel Policies&nbsp; </div><div><br> </div><div>Activities :&nbsp; </div><div>2.1 Capture Partner Applications&nbsp; </div><div>2.2 Evaluate Partner Eligibility </div><div>2.3 Approve Partner Enrollment&nbsp; </div><div><br> </div><div>Output: Approved Partner Profile<br> </div>",67462,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
+New,67506,Feature,2. Partner Onboarding & Qualification,"Input: Partner Program Framework & Channel Policies
+
+Activities :
+2.1 Capture Partner Applications
+2.2 Evaluate Partner Eligibility
+2.3 Approve Partner Enrollment
+
+Output: Approved Partner Profile",67462,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
 New,67653,Feature,2. Customer Renewal Notification,"Input: Renewal Candidates
 Activities: 2.1 Send expiry notification, 2.2 Display renewal options, 2.3 Present renewal terms
 Output: Customer Response",67650,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
@@ -590,58 +669,118 @@ New,67575,Feature,2. Case Assignment & Triage,"Input: Classified Service case
 Activities: 2.1 Validate Customer asset and entitlement, 2.2 Assess severity and priority, 2.3 Review knowledge and similar cases, 2.4 Route to support team
 Output: Triaged and routed case",67572,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
 New,67610,Feature,2. Cart & Checkout,"Input: Items added to cart
-Activities: 2.1 Review &amp; Update Cart, 2.2 Checkout &amp; Enter Address Details, 2.3 Process Payment, 2.4 Create Order Maintain Order History
+Activities: 2.1 Review & Update Cart, 2.2 Checkout & Enter Address Details, 2.3 Process Payment, 2.4 Create Order Maintain Order History
 Output: eCommerce order created",67607,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
-New,67484,Feature,2. Campaign Management,"<div>Input: Qualified Target
-Segments &amp; Marketing Leads&nbsp; </div><div>Activities :&nbsp; </div><div>&nbsp;2.1 Define Campaign Strategy&nbsp; </div><div>2.2 Execute Campaigns&nbsp; </div><div>2.3 Monitor Camp Performance&nbsp; </div><div><br> </div><div>Output: Marketing Qualified Leads </div>",67461,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
-New,67524,Feature,19. Invoicing,"<div>Input: Fulfilled Order &amp; Delivery
-Confirmation&nbsp; </div><div><br> </div><div>Activities :&nbsp; </div><div>13.1Generate Customer Invoice&nbsp; </div><div>13.2Post Invoice&nbsp; </div><div>13.3Update Billing Status&nbsp; </div><div><br> </div><div>Output: Posted Customer Invoice<br> </div>",67462,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
-New,67523,Feature,18. Fulfillment & Shipment,"<div>Input: Order Released for
-Fulfillment&nbsp; </div><div>Activities :&nbsp; </div><div>14.1Process Fulfilment &amp; Shipment&nbsp; </div><div>14.2Update Shipment Status&nbsp; </div><div>14.3Notify Partner / Customer&nbsp; </div><div>14.4Update Order Status </div><div><br> </div><div>&nbsp;Output: Fulfilled Order &amp; Delivery
-Confirmation<br> </div>",67462,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
-New,67502,Feature,18 Cash Collection,"<div>Input: Posted Customer Invoice&nbsp; </div><div>Activities :&nbsp; </div><div>17.1 Process Customer Payments&nbsp; </div><div>17.2 Apply Payments to Invoices&nbsp; </div><div>17.3 Manage Receivables &amp;
-Collections&nbsp; </div><div><br> </div><div>Output: Cash Collected &amp;     
-Receivables Settled </div>",67461,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
-New,67522,Feature,17. Sales Order Approval,"<div>Input: Validated &amp; Submit Sales
-Order for fulfillment&nbsp; </div><div>Activities :&nbsp; </div><div>12.1Validate Sales Order&nbsp; </div><div>12.2 Confirm Sales Order&nbsp; </div><div>11.3Submit Sales Order for
-fulfillment&nbsp; </div><div><br> </div><div>Output: Confirmed Sales Order
-Ready for Fulfilment<br> </div>",67462,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
-New,67501,Feature,17. Revenue Recognition,"<div>Input: Posted Customer&nbsp; </div><div>Invoice
-Activities : 
-16.1Recognize Revenue </div><div>&nbsp;Output: Recognized Revenue </div>",67461,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
-New,67740,Feature,16. Retailer Data & Customer Voice Integration (Integration),"Input: Channel &amp; platform sales activity
-Activities: F.1 Capture Sales &amp; Marketplace Data, F.2 Integrate Performance Metrics, F.3 Collect Ratings &amp; Reviews, F.4 Analyze Customer Sentiment, F.5 Monitor Platform Performance
+New,67484,Feature,2. Campaign Management,"Input: Qualified Target Segments & Marketing Leads
+Activities :
+2.1 Define Campaign Strategy
+2.2 Execute Campaigns
+2.3 Monitor Camp Performance
+
+Output: Marketing Qualified Leads",67461,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
+New,67524,Feature,19. Invoicing,"Input: Fulfilled Order & Delivery Confirmation
+
+Activities :
+13.1Generate Customer Invoice
+13.2Post Invoice
+13.3Update Billing Status
+
+Output: Posted Customer Invoice",67462,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
+New,67523,Feature,18. Fulfillment & Shipment,"Input: Order Released for Fulfillment
+Activities :
+14.1Process Fulfilment & Shipment
+14.2Update Shipment Status
+14.3Notify Partner / Customer
+14.4Update Order Status
+
+Output: Fulfilled Order & Delivery Confirmation",67462,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
+New,67502,Feature,18 Cash Collection,"Input: Posted Customer Invoice
+Activities :
+17.1 Process Customer Payments
+17.2 Apply Payments to Invoices
+17.3 Manage Receivables & Collections
+
+Output: Cash Collected & Receivables Settled",67461,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
+New,67522,Feature,17. Sales Order Approval,"Input: Validated & Submit Sales Order for fulfillment
+Activities :
+12.1Validate Sales Order
+12.2 Confirm Sales Order
+11.3Submit Sales Order for fulfillment
+
+Output: Confirmed Sales Order Ready for Fulfilment",67462,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
+New,67501,Feature,17. Revenue Recognition,"Input: Posted Customer
+Invoice Activities : 16.1Recognize Revenue
+Output: Recognized Revenue",67461,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
+New,67740,Feature,16. Retailer Data & Customer Voice Integration (Integration),"Input: Channel & platform sales activity
+Activities: F.1 Capture Sales & Marketplace Data, F.2 Integrate Performance Metrics, F.3 Collect Ratings & Reviews, F.4 Analyze Customer Sentiment, F.5 Monitor Platform Performance
 Output: Retailer, platform data captured",67722,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
-New,67521,Feature,16. Order Capture / Management & Order processing by order sync between F&O and CRM,"<div><b>Order Capturing</b> </div><div>Input: Active Customer Contract
-&amp; Commercial Terms&nbsp; </div><div><br> </div><div>Activities :&nbsp; </div><div>8.1 Create Customer Order&nbsp; </div><div>8.2 Validate Pricing &amp; Entitlements&nbsp; </div><div>8.3 Submit Order&nbsp; </div><div><br> </div><div>Output: Submitted Customer Order<br> </div><div><br> </div><div><b>Order Processing</b> </div><div><br> </div><div>Input: Submitted Customer Order&nbsp; </div><div>Activities :&nbsp; </div><div>A.1 Synchronize Order to
-Commerce HQ&nbsp; </div><div><br> </div><div>Output: Order Synced with
-Commerce HQ<br> </div>",67462,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
-New,67500,Feature,16. Invoicing,"<div>Input: Fulfilled Order / Installed
-Base Record&nbsp; </div><div><br> </div><div>Activities :&nbsp; </div><div>15.1 Generate Customer Invoice&nbsp; </div><div>15.2 Post Invoice&nbsp; </div><div>15.3 Update Billing Status&nbsp; </div><div><br> </div><div>Output: Posted Customer Invoice </div>",67461,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
+New,67521,Feature,16. Order Capture / Management & Order processing by order sync between F&O and CRM,"Order Capturing
+Input: Active Customer Contract & Commercial Terms
+
+Activities :
+8.1 Create Customer Order
+8.2 Validate Pricing & Entitlements
+8.3 Submit Order
+
+Output: Submitted Customer Order
+
+Order Processing
+
+Input: Submitted Customer Order
+Activities :
+A.1 Synchronize Order to Commerce HQ
+
+Output: Order Synced with Commerce HQ",67462,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
+New,67500,Feature,16. Invoicing,"Input: Fulfilled Order / Installed Base Record
+
+Activities :
+15.1 Generate Customer Invoice
+15.2 Post Invoice
+15.3 Update Billing Status
+
+Output: Posted Customer Invoice",67461,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
 New,67739,Feature,15. Sync Order Status & Data (Integration),"Input: Changed Sales Order
-Activities: E.1 Consolidate Sales, Orders &amp; Inventory Data, E.2 Analyze Campaign, Conversion &amp; Platform Performance, E.3 Generate Business Insights &amp; Trends
+Activities: E.1 Consolidate Sales, Orders & Inventory Data, E.2 Analyze Campaign, Conversion & Platform Performance, E.3 Generate Business Insights & Trends
 Output: Synchronize Order Status to CE",67722,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
 New,67499,Feature,15. Fulfillment & Shipment,"Fulfillment
-Activities : 
-14.1Process Fulfilment &amp; Shipment (including integration with SPS/DHL &amp; Install Base Generation)
+Activities :
+14.1Process Fulfilment & Shipment (including integration with SPS/DHL & Install Base Generation)
 14.2Update Shipment Status
 14.3Notify Customer
 14.4Update Order Status
-Output: Fulfilled Order &amp; Delivery Confirmation",67461,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
-New,67520,Feature,15. Customer Contracting & Contract Synchronization with FnO,"<div>Customer Contracting </div><div>Input: Customer Approved
-Quotation&nbsp; </div><div><br> </div><div>Activities :&nbsp; </div><div>6.1 Create Customer Contract&nbsp; </div><div>6.2 Associate Partner Commercial
-Terms&nbsp; </div><div>6.3 Finalize Contractual
-Agreements&nbsp; </div><div><br> </div><div>Output: Active Customer Contract
-&amp; Commercial Terms<br> </div><div><br> </div><div>Contract Synchronization </div><div>Input: Active Customer Contract &amp;
-Commercial Terms&nbsp; </div><div>Activities :&nbsp; </div><div>A.1 Synchronize Contract Details to
-D365 F&amp;O&nbsp; </div><div><br> </div><div>Output: Contract Synced with F&amp;O<br> </div>",67462,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
+Output: Fulfilled Order & Delivery Confirmation",67461,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
+New,67520,Feature,15. Customer Contracting & Contract Synchronization with FnO,"Customer Contracting
+Input: Customer Approved Quotation
+
+Activities :
+6.1 Create Customer Contract
+6.2 Associate Partner Commercial Terms
+6.3 Finalize Contractual Agreements
+
+Output: Active Customer Contract & Commercial Terms
+
+Contract Synchronization
+Input: Active Customer Contract & Commercial Terms
+Activities :
+A.1 Synchronize Contract Details to D365 F&O
+
+Output: Contract Synced with F&O",67462,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
 New,67735,Feature,14. Sync Order with SPS/DHL (Integration),"Input: Validated Sales Order
 Activities: C.1 Synchronize Sales Order to SPS Commerce, C.2 Synchronize Sales Order with DHL
-Output: Order Synced with D365 F&amp;O",67722,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
-New,67498,Feature,14. Fulfillment Request,<div>Input: Confirmed Sales Order&nbsp; </div><div>Activities :&nbsp; </div><div>13.1 Submit fulfilment request&nbsp; </div><div><br> </div><div>Output: Order Released for Fulfilment </div>,67461,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
-New,67519,Feature,14. Commercial Pricing Management,"<div>Input: Product Catalog &amp; Pricing
-Policies&nbsp; </div><div>Activities :&nbsp; </div><div>5.1  Maintain Trade Agreement&nbsp; </div><div>5.2  Manage Cust Groups&nbsp; </div><div>5.3  Maintain Pricing Discounts&nbsp; </div><div>5.4 Maintain Promos&nbsp; </div><div><br> </div><div>Output: Customer-Specific Pricing
-&amp; Discount Rules<br> </div>",67462,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
+Output: Order Synced with D365 F&O",67722,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
+New,67498,Feature,14. Fulfillment Request,"Input: Confirmed Sales Order
+Activities :
+13.1 Submit fulfilment request
+
+Output: Order Released for Fulfilment",67461,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
+New,67519,Feature,14. Commercial Pricing Management,"Input: Product Catalog & Pricing Policies
+Activities :
+5.1 Maintain Trade Agreement
+5.2 Manage Cust Groups
+5.3 Maintain Pricing Discounts
+5.4 Maintain Promos
+
+Output: Customer-Specific Pricing & Discount Rules",67462,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
 New,67736,Feature,13. Sync Order Status (Integration),"Input: Changed Sales Order
 Activities: D.1 Synchronize Order Status to CE/Copernicus App
 Output: Synchronize Order Status to CE/Copernicus App",67722,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
@@ -654,22 +793,33 @@ Activities :
 12.2 Confirm Sales Order
 Output: Confirmed Sales Order
 Ready for Fulfilment",67461,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
-New,67518,Feature,13. Product & Pricing Management,"<div>Input: Product Catalog &amp; Pricing
-Policies&nbsp; </div><div>Activities :&nbsp; </div><div>4.1  Maintain Products&nbsp; </div><div>4.2  Manage Selling Prices&nbsp; </div><div>4.3  Manage Promos&nbsp; </div><div><br> </div><div>Output: Products &amp; Base Pricing
-Available for Sales<br> </div>",67462,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
+New,67518,Feature,13. Product & Pricing Management,"Input: Product Catalog & Pricing Policies
+Activities :
+4.1 Maintain Products
+4.2 Manage Selling Prices
+4.3 Manage Promos
+
+Output: Products & Base Pricing Available for Sales",67462,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
 New,67645,Feature,12. Work Order Generation (Automation),"Input: Active Software Upgrade Entitlement
 Activities: B.1 Generate Upgrade Work Order, B.2 Create Software Upgrade Sales Order
-Output: Upgrade Work Order &amp; Sales Order Created",67635,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
+Output: Upgrade Work Order & Sales Order Created",67635,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
 New,67632,Feature,12. Sync Order Status (Integration),"Input: Changed Sales Order
 Activities: D.1 Synchronize Order Status to CE
 Output: Synchronize Order Status to CE",67621,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
-New,67517,Feature,12. Quotation & Pricing,"<div>Input: Qualified Sales
-Opportunities&nbsp; </div><div>Activities :&nbsp; </div><div>3.1 Create Quotations&nbsp; </div><div>3.2 Apply Partner Pricing &amp;
-Discounts &amp; Promos &amp; Start -   
-        End Date&nbsp; </div><div>3.3 Define Commercial Terms&nbsp; </div><div>3.4 Negotiate &amp; Revise Quotations&nbsp; </div><div>3.5 Obtain Customer Sign-off&nbsp; </div><div><br> </div><div>Output: Customer Decision for
-Quote <br> </div>",67462,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
-New,67496,Feature,12. Order Processing/ Management,"<div>Input: Received eCommerce Order&nbsp; </div><div>Activities :&nbsp; </div><div>11.1 Validate and convert order to
-Sales Order&nbsp; </div><div><br> </div><div>Output: Validated Order </div>",67461,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
+New,67517,Feature,12. Quotation & Pricing,"Input: Qualified Sales Opportunities
+Activities :
+3.1 Create Quotations
+3.2 Apply Partner Pricing & Discounts & Promos & Start - End Date
+3.3 Define Commercial Terms
+3.4 Negotiate & Revise Quotations
+3.5 Obtain Customer Sign-off
+
+Output: Customer Decision for Quote",67462,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
+New,67496,Feature,12. Order Processing/ Management,"Input: Received eCommerce Order
+Activities :
+11.1 Validate and convert order to Sales Order
+
+Output: Validated Order",67461,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
 New,67699,Feature,12. Forecasting & WoC Planning,"Input: Posted Customer Invoice
 Activities: 12.1 Capture Demand Signals, 12.2 Analyze Sales Performance, 12.3 Generate Demand Forecasts, 12.4 Support Inventory Planning, 12.5 Monitor Forecast Accuracy
 Output: Forecasts generated",67681,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
@@ -681,10 +831,10 @@ Activities: 12.1 Capture Demand Signals, 12.2 Analyze Sales Performance, 12.3 Ge
 Output: Forecasts generated",67701,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
 New,67631,Feature,11. Sync Order with SPS/DHL (Integration),"Input: Validated Sales Order
 Activities: C.1 Synchronize Sales Order to SPS Commerce, C.2 Synchronize Sales Order with DHL
-Output: Order Synced with D365 F&amp;O",67621,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
+Output: Order Synced with D365 F&O",67621,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
 New,67644,Feature,11. Sync Order with HQ Comm (Integration),"Input: Validated Sales Order
 Activities: A.1 Synchronize Sales Order to HQ Commerce
-Output: Order Synced with D365 F&amp;O and CRM",67635,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
+Output: Order Synced with D365 F&O and CRM",67635,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
 New,67696,Feature,11. Revenue Recognition,"Input: Posted Customer Invoice
 Activities: 11.1 Recognize Revenue
 Output: Recognized Revenue",67681,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
@@ -694,12 +844,22 @@ Output: Recognized Revenue",67701,1,Day 2 IT Program\HeartStream\Business E2E fl
 New,67738,Feature,11. Revenue Recognition,"Input: Posted Customer Invoice
 Activities: 11.1 Recognize Revenue
 Output: Recognized Revenue",67722,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
-New,67495,Feature,11. Order Capture / Management,"<div>Input: Customer Approved
-Quotation&nbsp; </div><div>Activities :&nbsp; </div><div>10.1 Customer Accesses B2B Portal&nbsp; </div><div>10.2 Browse Products &amp; Pricing&nbsp; </div><div>10.3 Review Cart &amp; Checkout&nbsp; </div><div>10.4 Create eCommerce Order&nbsp; </div><div><br> </div><div>Output: eCommerce Order Created </div>",67461,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
-New,67516,Feature,11. Opportunity Management,"<div>Input: Qualified Partner Leads&nbsp; </div><div><br> </div><div>Activities :&nbsp; </div><div>2.1 Create &amp; Manage
-Opportunities&nbsp; </div><div>2.2 Track Opportunity Progression&nbsp; </div><div>2.3 Manage Partner &amp; Sales
-Collaboration&nbsp; </div><div><br> </div><div>Output: Qualified&nbsp;Sales
-Opportunity<br> </div>",67462,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
+New,67495,Feature,11. Order Capture / Management,"Input: Customer Approved Quotation
+Activities :
+10.1 Customer Accesses B2B Portal
+10.2 Browse Products & Pricing
+10.3 Review Cart & Checkout
+10.4 Create eCommerce Order
+
+Output: eCommerce Order Created",67461,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
+New,67516,Feature,11. Opportunity Management,"Input: Qualified Partner Leads
+
+Activities :
+2.1 Create & Manage Opportunities
+2.2 Track Opportunity Progression
+2.3 Manage Partner & Sales Collaboration
+
+Output: Qualified Sales Opportunity",67462,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
 New,67595,Feature,11. DHL Dispatching Faulty Device to R&D,"Input: Faulty Device In Transit to Failure Analysis Lab
 Activities: 11.1 Receive Faulty Device from DHL, 11.2 Confirm Shipment Delivery, 11.3 Log Device Receipt, 11.4 Assign Device for Failure Analysis, 11.5 Notify Relevant Stakeholders of Receipt
 Output: Faulty Device Available for Failure Analysis",67583,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
@@ -707,15 +867,18 @@ New,67571,Feature,11. Closure and Performance,"Input: Diagnosis and action plan
 Activities: 11.1 Resolve and close case, 11.2 Track case resolution metrics, 11.3 Monitor SLA compliance, 11.4 Review trends and performance
 Output: Closed case and service insights",67557,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
 New,67627,Feature,10. Sync Order with F&O (Integration),"Input: Validated Sales Order
-Activities: B.1 Synchronize Sales Order to D365 F&amp;O
-Output: Order Synced with D365 F&amp;O",67621,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
+Activities: B.1 Synchronize Sales Order to D365 F&O
+Output: Order Synced with D365 F&O",67621,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
 New,67613,Feature,10. Sync Order with F&O (Integration),"Input: Validated Sales Order
-Activities: B.1 Synchronize Sales Order to D365 F&amp;O
-Output: Order Synced with D365 F&amp;O",67607,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
-New,67515,Feature,10. Lead Registration & Qualification,"<div>Input: Qualified Partner-Sourced
-Leads&nbsp; </div><div>Activities :&nbsp; </div><div>1.1 Register Partner-Generated
-Leads&nbsp; </div><div>1.2 Validate &amp; Qualify Leads&nbsp; </div><div>1.3 Assign or approve lead
-ownership&nbsp; </div><div><br> </div><div>Output: Qualified Partner Leads<br> </div>",67462,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
+Activities: B.1 Synchronize Sales Order to D365 F&O
+Output: Order Synced with D365 F&O",67607,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
+New,67515,Feature,10. Lead Registration & Qualification,"Input: Qualified Partner-Sourced Leads
+Activities :
+1.1 Register Partner-Generated Leads
+1.2 Validate & Qualify Leads
+1.3 Assign or approve lead ownership
+
+Output: Qualified Partner Leads",67462,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
 New,67737,Feature,10. Invoicing,"Input: Fulfilled Order/Installed Base Record
 Activities: 10.1 Generate Customer Invoice, 10.2 Post Invoice, 10.3 Update Billing Status
 Output: Posted Customer Invoice",67722,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
@@ -731,14 +894,14 @@ Output: Faulty Device In Transit to Failure Analysis Lab",67583,1,Day 2 IT Progr
 New,67570,Feature,10. Escalation & Resolution,"Input: SLA escalation
 Activities: 10.1 Handle escalation and corrective action, 10.2 Implement service resolution
 Output: Service Issue resolved",67557,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
-New,67649,Feature,10. Customer Notification & Order Completion,"Input: Software Upgrade Successfully Installed &amp; Activated
+New,67649,Feature,10. Customer Notification & Order Completion,"Input: Software Upgrade Successfully Installed & Activated
 Activities: 10.1 Display Order Confirmation, 10.2 Send Purchase Notification, 10.3 Confirm Upgrade Download, 10.4 Update Upgrade History, 10.5 In-App Update Success Notification
-Output: Software Upgrade Completed &amp; Customer Notified",67635,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
+Output: Software Upgrade Completed & Customer Notified",67635,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
 New,67585,Feature,1. Warranty Replacement Request,"Input: Defective AED device or Accessory Serial Number, Failure Description, Support Documents
 Activities: 1.1 Distributor Identify defective AED devices/Accessory, 1.2 Submit Warranty Replacement Request, 1.3 Provide Device Serial Number, 1.4 Provide Failure Details, 1.5 Upload Supporting Warranty Documentation
 Output: Warranty Replacement Request Submitted",67583,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
-New,67637,Feature,1. Upgrade Eligibility & Recommendation,"Input: Installed Base &amp; Device Configuration Data
-Activities: 1.1 Identify Upgrade-Eligible Devices, 1.2 Display Available Upgrade Options, 1.3 Notify Customer of Upgrades, 1.4 Present Upgrade Benefits &amp; Supported Devices
+New,67637,Feature,1. Upgrade Eligibility & Recommendation,"Input: Installed Base & Device Configuration Data
+Activities: 1.1 Identify Upgrade-Eligible Devices, 1.2 Display Available Upgrade Options, 1.3 Notify Customer of Upgrades, 1.4 Present Upgrade Benefits & Supported Devices
 Output: Upgrade Opportunity Presented to Customers",67635,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
 New,67652,Feature,1. Subscription Monitoring,"Input: Active Subscriptions
 Activities: 1.1 Review active terms, 1.2 Identify Expiring Subscriptions, 1.3 Check auto-renewal Status
@@ -753,27 +916,35 @@ New,67559,Feature,1. Service Contract Quotation,"Input: Customer Service Need
 Activities: 1.1 Create Service Opportunity, 1.2 Define scope and coverage, 1.3 Create Quotation, 1.4 Review and Negotiate
 Output: Quotation for approval",67557,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
 New,67609,Feature,1. Product Discovery & Shopping,"Input: Consumer initiates shopping session
-Activities: 1.1 Access e-Shop, 1.2 Login/Register, 1.3 Browse &amp; Review Products, 1.4 Add Items to Cart
-Output: AEDs &amp; accessories added to cart",67607,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
+Activities: 1.1 Access e-Shop, 1.2 Login/Register, 1.3 Browse & Review Products, 1.4 Add Items to Cart
+Output: AEDs & accessories added to cart",67607,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
 New,67598,Feature,1. Diagnosis,"Input: Multi-Channel Customer Service Request
 Activities: 1.1 Diagnosis of device issue, 1.2 Spare parts identification, 1.3 Warranty checks
 Output: Determine Warranty/Chargeback scenario",67596,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
 New,67744,Feature,1. Demand & Requisition,"Input: Planned Order/Business Need
-Activities: 1.1 Identify demand (MRP, min/max, or manual), 1.2 Create purchase requisition &amp; lines, 1.3 Submit PR for approval
+Activities: 1.1 Identify demand (MRP, min/max, or manual), 1.2 Create purchase requisition & lines, 1.3 Submit PR for approval
 Output: Approved Purchase Requisition",67742,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
-New,67482,Feature,1. Customer Data & Segmentation,"<div>Input: Multi-Source Customer &amp;
-Engagement Data&nbsp; </div><div>Activities : </div><div>1.1 - Aggregate Cust Data&nbsp; </div><div>1.2 - Build Customer Profiles&nbsp; </div><div>1.3 - Segment Customers&nbsp; </div><div><br> </div><div>Output: Target Customer Segments </div>",67461,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
+New,67482,Feature,1. Customer Data & Segmentation,"Input: Multi-Source Customer & Engagement Data
+Activities :
+1.1 - Aggregate Cust Data
+1.2 - Build Customer Profiles
+1.3 - Segment Customers
+
+Output: Target Customer Segments",67461,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
 New,67724,Feature,1. Channel Strategy & Platform Management,"Input: Business case for retail channel expansion
-Activities: 1.1 Define retail channel strategy, 1.2 Identify target retailers &amp; retail segments, 1.3 Define retail programs &amp; channel objectives, 1.4 Define pricing, discount &amp; promotion strategy
-Output: Retail channel strategy &amp; pricing approach defined",67722,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
+Activities: 1.1 Define retail channel strategy, 1.2 Identify target retailers & retail segments, 1.3 Define retail programs & channel objectives, 1.4 Define pricing, discount & promotion strategy
+Output: Retail channel strategy & pricing approach defined",67722,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
 New,67682,Feature,1. Channel Strategy & Platform Management,"Input: Business need for social commerce channel
-Activities: 1.1 Define Social Commerce Strategy, 1.2 Select Target Platforms, 1.3 Define Product Assortment, 1.4 Establish Operating Model &amp; Governance
-Output: Channel strategy &amp; platform selection defined",67681,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
-New,67505,Feature,1. Channel Partner Strategy,"<div>Input: Business Goals &amp; Channel
-Objectives&nbsp; </div><div>Activities :&nbsp; </div><div>1.1 Define Partner Strategy&nbsp; </div><div>1.2 Define Partner Tiers &amp; Eligibility&nbsp; </div><div>1.3 Define Partner Benefits &amp;
-Incentives&nbsp; </div><div>1.4 Define Rebate &amp; MDF
-Frameworks&nbsp; </div><div><br> </div><div>Output: Partner Program
-Framework &amp; Channel Policies<br> </div>",67462,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
+Activities: 1.1 Define Social Commerce Strategy, 1.2 Select Target Platforms, 1.3 Define Product Assortment, 1.4 Establish Operating Model & Governance
+Output: Channel strategy & platform selection defined",67681,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
+New,67505,Feature,1. Channel Partner Strategy,"Input: Business Goals & Channel Objectives
+Activities :
+1.1 Define Partner Strategy
+1.2 Define Partner Tiers & Eligibility
+1.3 Define Partner Benefits & Incentives
+1.4 Define Rebate & MDF Frameworks
+
+Output: Partner Program Framework & Channel Policies",67462,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0
 New,67574,Feature,1. Case Intake & Classification,"Input: Customer, Partner or system generated case
 Activities: 1.1 Customer raises request, 1.2 Partner/distributor raises request, 1.3 Installed Base/entitlement issue, 1.4 Tier 1/Tier 2 escalations
 Output: Classified Service Case",67572,1,Day 2 IT Program\HeartStream\Business E2E flow,Day 2 IT Program\Sprint 0

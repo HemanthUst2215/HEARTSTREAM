@@ -30,13 +30,13 @@ description: >-
 ## Strong-match policy
 - Do **not** invent Epic/Feature titles from the transcript. Score each User Story against existing Feature titles in `artifacts/work-items` JSON.
 - Write matched catalog Epics and Features into the Excel as rows with their existing `ID` values.
-- Put catalog IDs only in the rulebook `ID` column on Epic/Feature (and Workshop) rows. Do **not** add `EPIC ID` or `FEATURE ID` columns.
-- Include a Feature row only when it is a strong unique match **and** its `parent.workItemId` exists as an Epic in the same catalog.
-- Duplicate Feature titles across Epics → leave both IDs blank.
+- Put catalog IDs in the rulebook `ID` column. Every User Story row `ID` is a catalog Feature workItemId. Epic and Feature rows keep their own IDs. Do **not** add `EPIC ID` or `FEATURE ID` columns.
+- Include a Feature row when its `parent.workItemId` exists as an Epic in the same catalog.
+- When several Features share a title, still map the User Story to one existing catalog Feature. Never invent an ID.
 - Workshop ID is independent.
 - Never invent IDs.
 
 ## Must NOT
-- Fill IDs on weak matches
+- Leave a User Story `ID` blank when a related catalog Feature exists
 - Edit story narrative fields
 - Emit extra Excel/CSV twins of the stories

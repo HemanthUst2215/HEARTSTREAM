@@ -41,6 +41,7 @@ work_item_types:
     - Workshop
     - Epic
     - Feature
+    - Test Case
     - User Story
     - Task
     - Issue
@@ -101,15 +102,19 @@ transcript_authoring:
     - Epic
     - Feature
   note: >
-    Do not invent Epic or Feature titles from the transcript. After stories are authored, mapping
-    writes the matching existing Epic and Feature records from artifacts/work-items JSON into the
-    public Excel with their ADO IDs in the `ID` column (no extra EPIC ID / FEATURE ID columns).
+    Identify the related catalog Feature from the transcript before authoring User Stories
+    (AI Factory meeting 2026-10-07, Rajesh/Rajeev: the challenge is identifying the related feature,
+    then each update to that workflow is a user story). Do not invent Feature titles.
+    On the public Excel, every User Story `ID` is a catalog Feature workItemId.
+    Leave it blank only when no catalog Feature title relates.
+    Epic and Feature rows still carry their own catalog IDs. No EPIC ID / FEATURE ID columns.
 
 ado_export_layout:
   row_order:
     - Workshop
     - Epic
     - Feature
+    - Test Case
     - User Story
     - Issue
     - Risk
@@ -194,6 +199,10 @@ required_fields:
   Feature:
     required: [Work Item Type, Title, Description]
     optional: [Annexure ID1, Area Path]
+  Test Case:
+    required: [Work Item Type, Title, Description, Acceptance Criteria]
+    optional: []
+    id: leave blank
   Workshop:
     required: [Work Item Type, Title, Description, Area Path]
     optional: [Start Date, workshop_governance_columns]
@@ -205,11 +214,50 @@ required_fields:
   Risk:
     required: [Work Item Type, Title, Description]
 
+test_case:
+  behavior_id: RB-TC-001
+  statement: >
+    Before test cases are written, requirements are taken from the transcript and matched to existing
+    Feature records in artifacts/work-items/feature.json. A case is written only for a strong unique
+    Feature match whose parent.workItemId exists in artifacts/work-items/epic.json. The CSV uses this
+    rulebook's column_order. Traceability Transcript → Epic → Feature → Test Case is stored in the
+    Test Case Description. No new columns.
+  source_path: operator-instruction
+  source_locator: "2026-10-08 test-agent: transcript match then CSV"
+  confidence: explicit
+  catalogs:
+    epic_json: artifacts/work-items/epic.json
+    feature_json: artifacts/work-items/feature.json
+  match: >
+    Score each transcript requirement against Feature title and description.plainText.
+    Use work_item_mapping.strong_threshold and winner_margin from .cursor/config.yaml.
+    Below threshold, ambiguous winner, or missing parent Epic → no Test Case for that requirement.
+  row_rules:
+    epic_feature: Copy ID, Title, Description, and Area Path from the matched JSON records. Do not invent titles or IDs.
+    test_case_id: Leave ID blank.
+    section_order: All Epic rows, then all matched Feature rows, then Test Case rows.
+  description_format:
+    pattern: |
+      Transcript: <source_path>#<locator>
+      Epic: <epic workItemId> | <epic title>
+      Feature: <feature workItemId> | <feature title>
+      Steps:
+      1. <step cited from the transcript requirement or the matched Feature text>
+    rules:
+      - Steps and Acceptance Criteria come only from the transcript locator or the matched Feature title/description.
+      - Do not add a step or expected result the transcript and Feature text do not support.
+      - At least one numbered step.
+  acceptance_criteria:
+    format: Same ASCII "- " bullets as acceptance_criteria above. One expected outcome per line.
+    placement: Acceptance Criteria column only.
+
 id_column:
   column: ID
   rule: >
-    Leave ID blank for newly generated rows (ADO assigns on import). Never fabricate numeric IDs.
-    If transcript cites an existing ADO ID, include it only when explicitly stated.
+    Working CSV: leave User Story ID blank (ADO assigns a story id on import).
+    Public Excel after mapping: set every User Story `ID` to a catalog Feature workItemId
+    identified from the transcript. Leave it blank only when no catalog Feature title relates.
+    Never fabricate an ID. Epic and Feature rows use their own catalog IDs.
 
 formatting_standards:
   - RFC4180 CSV quoting; escape internal double quotes by doubling.
@@ -240,5 +288,7 @@ output_paths:
   working_csv: "artifacts/intake/.pipeline/<YYYY-MM-DD>-user-stories-working.csv"
   public_xlsx: "artifacts/intake/<YYYY-MM-DD>-user-stories-from-transcript.xlsx"
   invest_scorecard: "artifacts/intake/<YYYY-MM-DD>-invest-scorecard.csv"
+  test_cases_csv: "artifacts/intake/<YYYY-MM-DD>-test-cases.csv"
+  test_case_rows_json: "artifacts/intake/<YYYY-MM-DD>-test-case-rows.json"
   extraction_notes: "artifacts/intake/<YYYY-MM-DD>-transcript-story-extraction.md"
   validation_report: "artifacts/intake/<YYYY-MM-DD>-user-story-csv-validation.json"

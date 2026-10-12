@@ -2,8 +2,8 @@
 
 | Field | Value |
 |-------|-------|
-| **Updated** | 2026-09-11 |
-| **Last command** | retrofit Opticals test split (`/run-tests`, `/run-eval`) |
+| **Updated** | 2026-10-09 |
+| **Last command** | `/generate-test-cases-from-user-stories` |
 
 ## Pipeline
 
@@ -11,6 +11,7 @@
 |-------|--------|
 | Factory installed | **Done** |
 | `/generate-user-story` or `/generate-brd` | Pending |
+| `/generate-test-cases-from-user-stories` | **Done** (`artifacts/intake/2026-10-09-msd-e2e-test-cases.xlsx`; audit `2026-10-09-generate-test-cases-from-user-stories-v2.md`) |
 | Plan (`/plan-governed-stories`, `/plan-sprint`, or `/plan-bounded-context`) | Pending |
 | `/implement-api` | Pending |
 | `/implement-ui` | Pending |

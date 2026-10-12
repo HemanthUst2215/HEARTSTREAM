@@ -1,0 +1,157 @@
+# Evaluation-method contract for /evaluate-user-stories.
+# Loaded by scripts/evaluate_user_stories.py and by user-story-evaluation-agent.
+# These formulas are method definitions, not business rules.
+# behavior_id: ASSUMPTION-USEVAL-001
+# statement: Ratios below are the scoring method for comparing a manual user-story CSV
+#   to an AI-generated user-story CSV, with the source transcript as ground truth.
+# source_path: .cursor/templates/user-story-evaluation-metrics.yaml
+# source_locator: metrics
+# confidence: assumption
+# status: Draft — Pending Method Review
+# Do not mark an evaluation Accepted while this assumption is pending.
+
+schema_version: "1.0"
+assumption_id: ASSUMPTION-USEVAL-001
+transcript_is_ground_truth: true
+
+story_row:
+  work_item_type: User Story
+  key_pattern: "{side}-US-{row_number}"
+
+metrics:
+  - metric_id: recall
+    name: Recall
+    owner: coverage-analysis-evaluator
+    kind: ratio
+    formula: >
+      Manual User Story rows that have at least one generated match,
+      divided by the count of manual User Story rows.
+
+  - metric_id: precision
+    name: Precision
+    owner: coverage-analysis-evaluator
+    kind: ratio
+    formula: >
+      Generated User Story rows matched to a manual story,
+      divided by (those matches + generated-only rows classified noise).
+      Valid extras are excluded from the denominator.
+
+  - metric_id: manual_only_stories
+    name: Manual-only Stories
+    owner: coverage-analysis-evaluator
+    kind: count
+    formula: >
+      Count of manual User Story rows with no generated match.
+      The report lists each row with a transcript reference.
+
+  - metric_id: generated_only_stories
+    name: Generated-only Stories (Valid Extras vs Noise)
+    owner: coverage-analysis-evaluator
+    kind: split
+    formula: >
+      Generated User Story rows with no manual match.
+      valid_extra: the transcript states the requirement and the manual CSV does not.
+      noise: the transcript does not state the requirement, or the row restates no distinct requirement.
+      Classification must cite hallucination-detection-evaluator evidence.
+      Disagreement between the two subagents is BLOCKED_CONFLICT, not an average.
+
+  - metric_id: epic_agreement
+    name: Epic Agreement
+    owner: epic-feature-mapping-evaluator
+    kind: ratio
+    formula: >
+      Matched pairs whose epic context agrees, divided by matched pairs
+      where both sides have an epic context (preceding Epic row, else blank).
+      Agree when Epic ID is equal and non-blank, or when both IDs are blank
+      and the Epic titles are the same string. Pairs with epic context on
+      only one side count as disagree. Zero comparable pairs → na.
+
+  - metric_id: feature_agreement
+    name: Feature Agreement
+    owner: epic-feature-mapping-evaluator
+    kind: ratio
+    formula: >
+      Matched pairs whose feature context agrees, divided by matched pairs
+      where both sides have a feature context (preceding Feature row, or the
+      User Story ID when that ID is the catalog Feature work item id).
+      Agree when Feature ID is equal and non-blank, or when both IDs are blank
+      and the Feature titles are the same string. One-sided context counts as
+      disagree. Zero comparable pairs → na.
+
+  - metric_id: title_description_format_compliance
+    name: Title and Description Format Compliance
+    owner: business-correctness-evaluator
+    kind: ratio
+    formula: >
+      Generated User Story rows whose Title is a short capability name
+      (does not start with "As a") and whose Description matches
+      "As a <role>, I need to <need>, so that <benefit>."
+      divided by generated User Story rows.
+      Pattern source: docs/intake/user-story-csv-rulebook.yaml title_formats.user_story
+      and user_story.description_format. The prepare packet's structural
+      signal is the default numerator; override only with a cited finding.
+
+  - metric_id: role_specificity
+    name: Role Specificity
+    owner: business-correctness-evaluator
+    kind: ratio
+    formula: >
+      Generated User Story rows whose captured role is a business role,
+      divided by generated User Story rows.
+    assumption_id: ASSUMPTION-USEVAL-002
+    assumption: >
+      A role is specific when the Description captures a non-empty role and
+      that role, compared case-insensitively, is not exactly "user" or "users".
+      Pending method review.
+
+  - metric_id: acceptance_criteria_count
+    name: Acceptance Criteria Count
+    owner: acceptance-criteria-evaluator
+    kind: comparison
+    formula: >
+      Mean number of Acceptance Criteria bullets on manual User Story rows
+      and on generated User Story rows, plus both totals.
+      A bullet is a non-empty line in the Acceptance Criteria cell.
+
+  - metric_id: acceptance_criteria_quality
+    name: Acceptance Criteria Quality
+    owner: acceptance-criteria-evaluator
+    kind: score
+    scale: "0-100"
+    formula: >
+      Mean of per-story quality scores on generated User Story rows.
+      A bullet scores only when it is one observable outcome, testable from
+      the transcript, and the cell uses ASCII "- " bullets
+      (rulebook acceptance_criteria.format). Score is 0-100. Do not award
+      points for implementation detail.
+
+  - metric_id: negative_boundary_coverage
+    name: Negative and Boundary Coverage
+    owner: acceptance-criteria-evaluator
+    kind: ratio
+    formula: >
+      Generated User Story rows whose Acceptance Criteria include the negative
+      or boundary outcome the transcript states for that requirement,
+      divided by generated User Story rows whose matched transcript span
+      states a negative or boundary. When the transcript states none, na.
+
+  - metric_id: granularity
+    name: Granularity
+    owner: story-matching-evaluator
+    kind: ratio
+    formula: >
+      Generated User Story rows that state exactly one capability,
+      divided by generated User Story rows.
+      A split or merge recorded on a match is evidence of a granularity miss
+      for every generated row in that match that stacks or fragments a capability.
+
+  - metric_id: hallucination_rate
+    name: Hallucination Rate
+    owner: hallucination-detection-evaluator
+    kind: ratio
+    formula: >
+      Generated User Story rows that contain at least one claim the transcript
+      does not support, divided by generated User Story rows.
+      Every counted row needs a transcript locator showing the absence of support
+      (the nearest related span, or an explicit note that no span exists).
+      Unsupported epic or feature titles count as hallucinations.

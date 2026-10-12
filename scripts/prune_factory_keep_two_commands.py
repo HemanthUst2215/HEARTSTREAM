@@ -18,6 +18,7 @@ PROTECTED_PREFIXES = (
 KEEP_COMMANDS = {
     "generate-user-stories-from-transcript.md",
     "expand-test-coverage.md",
+    "evaluate-user-stories.md",
     "README.md",
 }
 
@@ -26,6 +27,7 @@ KEEP_AGENTS = {
     "business-analyst-agent.md",
     "quality-agent.md",
     "test-agent.md",
+    "user-story-evaluation-agent.md",
     "README.md",
 }
 
@@ -46,6 +48,13 @@ KEEP_SUBAGENTS = {
     "tc-step-quality-validator.md",
     "bdd-scenario-expander.md",
     "br-coverage-validator.md",
+    "story-matching-evaluator.md",
+    "coverage-analysis-evaluator.md",
+    "business-correctness-evaluator.md",
+    "acceptance-criteria-evaluator.md",
+    "hallucination-detection-evaluator.md",
+    "epic-feature-mapping-evaluator.md",
+    "kpi-aggregation-evaluator.md",
     "README.md",
 }
 
@@ -54,6 +63,14 @@ KEEP_SKILL_DIRS = {
     "intake-safety",
     "br-coverage",
     "quality",
+    "user-story-evaluation",
+    "story-matching",
+    "coverage-analysis",
+    "business-correctness",
+    "acceptance-criteria-evaluation",
+    "hallucination-detection",
+    "epic-feature-mapping-validation",
+    "kpi-aggregation",
 }
 
 REMOVE_TOP_LEVEL_DIRS = (

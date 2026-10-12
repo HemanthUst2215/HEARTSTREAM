@@ -1,40 +1,32 @@
 # Templates
 
-Contracts, BRD, stories, plans, audit, evals, quality, ops, issue logs. **Always use these templates** — do not create ad-hoc doc structures.
+Contracts for the public commands. Use these files — do not invent a parallel doc shape.
 
-See **[template-hardening-standard.md](template-hardening-standard.md)** for required elements (metadata, tables, provenance, output paths).
-
-## Quality bar
-
-| Tier | Example | Line count guide |
-|------|---------|------------------|
-| Hardened operational | `issue-log-template.md`, `audit-trail-template.md` | 40+ lines with tables |
-| Hardened KPI / command | `kpi-evidence-matrix-template.md`, `command-contract-template.md` | 40+ lines |
-| **Forbidden** | Single-line placeholders ("Paths, methods, envelope") | — |
-
-## Twin sync
-
-After editing `.cursor/templates/`, mirror to `.claude/templates/` and `.github/templates/` (byte-identical).
-
-## Common templates by command
+## By command
 
 | Template | Used by |
 |----------|---------|
-| `issue-log-template.md` | `/fix-issue` → `artifacts/issues/<date>-<slug>.md` |
-| `audit-trail-template.md` | Every public command |
-| `brd-template.md` | `/generate-brd` |
-| `test-cases-template.md` | implement-*, expand-test-coverage, fix-issue |
-| `test-package-review-template.md` | expand-test-coverage Phase 2b human gate |
-| `br-tc-taxonomy.md` / `generic-step-denylist.md` | expand-test-coverage companion quality |
-| `test-cases-br-coverage-template.md` | br-coverage-validator (PASS before `/run-tests`) |
-| `playwright-spec-template.md` / `page-object-template.md` | `/run-tests` playwright-codegen |
-| `defect-analysis-template.md` / `self-heal-suggestion-template.md` | `/run-tests` after execution |
-| `ooda-self-heal-loop.md` | `playwright-self-healer` only (Phase 5 inner loop; not factory-wide) |
-| `api-contract-template.md` | `/implement-api`, api-agent |
-| `tech-spec-template.md` | plan / documentation-agent (not a public story command) |
-| `user-story-csv-rulebook-template.yaml` | one-time rulebook bootstrap |
+| `user-story-csv-rulebook-template.yaml` | `/generate-user-stories-from-transcript` one-time rulebook bootstrap |
 | `transcript-story-extraction-template.md` | `/generate-user-stories-from-transcript` |
 | `ado-user-story-rows-json-template.md` | row JSON before `ado_user_story_csv.py write` |
-| `kpi-*-template.md` | `/validate-kpi-metrics` → `docs/quality/kpi-validations/` |
-| `pr-template.md` | `/pr-assist` |
-| `code-generation-dos-donts.md` | All implement commands |
+| `msd-test-case-rulebook-template.yaml` | `/generate-test-cases-from-user-stories` one-time MSD rulebook bootstrap |
+| `msd-test-case-extraction-template.md` | `/generate-test-cases-from-user-stories` extraction notes |
+| `msd-test-case-rows-json-template.md` | case JSON before `msd_test_case_xlsx.py write` |
+| `gherkin-story-template.md` | `gherkin-acceptance-criteria-writer` |
+| `work-items-output.schema.json` | `/process-work-items-csv` |
+| `work-items-summary-template.md` | `/process-work-items-csv` enricher |
+| `test-cases-template.md` | legacy case-body shape; `/expand-test-coverage` output is the rulebook CSV |
+| `test-matrix-template.md` | `/expand-test-coverage` |
+| `test-cases-br-coverage-template.md` | br-coverage-validator |
+| `test-package-review-template.md` | expand Phase 2b human gate |
+| `br-tc-taxonomy.md` / `generic-step-denylist.md` | expand companion quality |
+| `test-case-quality-metrics-template.md` | step-quality validator |
+| `intake-manifest.schema.md` | test-intake-normalizer |
+| `bdd-test-case-template.md` | expand when Gherkin expansion is in scope |
+| `plan-act-validate-refine-loop.md` | expand execution loop |
+| `plan-as-input-protocol.md` | orchestrator when a governed plan or story artifact is supplied |
+| `ooda-self-heal-loop.md` | quality-agent (self-heal inner loop only) |
+| `subagent-io-template.md` | subagent return contract |
+| `audit-trail-template.md` | every public command |
+| `user-story-evaluation-metrics.yaml` | `/evaluate-user-stories` metric contract |
+| `user-story-evaluation-report-template.md` | `/evaluate-user-stories` evaluation JSON shape |

@@ -5,8 +5,8 @@ During `/generate-user-stories-from-transcript`, scan `artifacts/work-items/**/*
 
 ## Must / Must NOT
 - Must: Load every `*.json` under `artifacts/work-items/` that contains a `workItems[]` array.
-- Must: Leave IDs blank when the match is weak or ambiguous.
-- Must: Insert matched catalog Epic and Feature records as rows with `ID` + Title from JSON (do not invent titles; do not add EPIC ID / FEATURE ID columns).
+- Must: Set every User Story ID to a catalog Feature workItemId. Leave it blank only when no catalog Feature relates.
+- Must: Insert matched catalog Epic and Feature records as rows with their own `ID` + Title from JSON. On each matched User Story, set `ID` to that Feature's workItemId (do not invent titles; do not add EPIC ID / FEATURE ID columns).
 - Must: Match a User Story to a catalog Feature only when that Feature uniquely matches **and** its parent Epic exists in the JSON.
 - Must: Write exactly one workbook: `artifacts/intake/<date>-user-stories-from-transcript.xlsx`.
 - Must: Run `python scripts/map-user-stories-to-work-items.py` (canonical).

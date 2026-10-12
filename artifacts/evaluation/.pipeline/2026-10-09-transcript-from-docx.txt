@@ -1,0 +1,1551 @@
+01. Sales - CE Record to Report UST Led Workshop-20260928
+0:05Hi there.
+0:06Hey, Vijay, are you there?
+0:08Hey.
+0:08Hello, Suzanne.
+0:09Good morning.
+0:11Good morning.
+0:11Hey, I just saw you join and thank you.
+0:14I don't have Zimpy on this call.
+0:16Is that a requirement?
+0:18We have the right players from Zimpy, I mean Cami and Vince from the Heartstream side, but I don't, I didn't see that they were in.
+0:29I know that I had the workshop last week, right?
+0:32But I think this workshop is more of like how the records gets created in CE, the CRN and then it gets flow to further processes.
+0:44I think it's more related to the but let's wait for like 2 or 3 minutes more.
+0:50Nitesh can confirm us.
+0:52OK, more on that.
+0:53That would be totally my fault.
+0:56It would have been totally my oversight.
+0:59And so I'm feeling horrible if I over if I mess this up.
+1:06So anyways, I, yeah, I just was like, what?
+1:08I was like, Oh my gosh.
+1:09I read the the body of it.
+1:11OK, then I will, I'll hang tight.
+1:13I'm going to I'm checking on other meetings too, to make sure everything's recording and set up.
+1:18So I will come, I'll come right back.
+1:21OK, no problem.
+1:22Thank you.
+5:26Hello, James.
+5:27Good morning.
+5:29Good morning.
+5:30How are you?
+5:31I'm good.
+5:32How are you doing?
+5:34Doing OK.
+5:36So it must be quite early at your side, right?
+5:41I'm on East Coast US, so not that at all.
+5:43So that's still better.
+5:44Yeah, Yeah, it's a little better.
+5:47I assume it's mid afternoon for you.
+5:51Late evening, 063630 Yeah, yes, I work a lot with people in China, so the hours are crazy for those.
+6:03Those calls are really off hours all right.
+6:33Good afternoon, Vince.
+6:36Hey, good morning.
+6:38Hello, Vince.
+6:39Good morning.
+6:41Good morning, Vince, you are on.
+6:45I'm so delighted.
+6:46Thank you.
+6:47Thank you so much.
+6:49I I was on hold.
+6:51And so when you're on hold, it just doesn't show.
+6:52Such with Cami being out, I was very concerned and then I did not invite anyone from Zimpi, which I think was my oversight.
+7:03So I'll be curious to know what we can and can't do in this discussion.
+7:12Yeah, Susan, let us try and understand the business scenarios, what through the partner onboarding towards the order, the entire process that we can briefly discuss with the business users and then let's see from there on how we can go further with the Azinfi team.
+7:32I would appreciate that very, very much so.
+7:34And what I can do is ensure that they're on going forward in the series.
+7:40And so I will certainly work on that.
+7:41I don't have all the names, but I will I will get right on that.
+7:44So thank you very much and appreciate all those that are on.
+7:48I'm popping in and out.
+7:49I'm I'm trouble booked with these and so I won't be on this entirely.
+7:55OK.
+7:56So and Susan, I will share the a synfy name with you from Akash, who has worked closely with Cammy in like the the first month.
+8:08Wonderful.
+8:09Oh my gosh, thank you, Vince.
+8:14OK, I am actually going to see if I can ping him right now.
+8:19All right, I'll let you guys proceed.
+8:21Your recording notes should be on and you should be in good hands.
+8:24Thank you, everyone.
+8:25Appreciate it.
+8:26Thank you, Susan.
+8:27Thank you.
+8:32So I, I believe we have everyone that's required for the call and we can quick start with the call.
+8:43OK, I take that as an yes.
+8:45So hi everyone, myself, Ashwini Banerjee, I'll be, you'll be seeing me more on this calls towards the sales part of Dynamics 365.
+8:56Along with me I have Nitesh, Ansar, Pankaj and Srinidhi, who will be primarily will be more or less discussing on all the CRM side of the business processes and implementations.
+9:12So without further delay, let us jump into the agenda that we have for today.
+9:18I'm sharing my screen.
+9:20Give me a moment here.
+9:22Ashwin, need just one point.
+9:23Yeah, hi, hello everyone.
+9:25I just wanted to ensure the recording is started, but is the transcription also enabled along with it?
+9:32If, if the facilitator can confirm?
+9:37So I can tell you this, it is turned on, but it has not always been consistent.
+9:42And I can't, I've, I've shown people how I do it and they're like, Yep, you're doing it just right.
+9:47And so I've, I got to tell you, it says it's on.
+9:50I mean, I could show you and it has the button for me to turn it off, but I'm not seeing it go and I have not had good luck with it.
+9:58So when I hit recording and I get nervous because I hit recording and transcribe, I do OK.
+10:04So I I can't guarantee it guys.
+10:07OK, so Susan, only expectation for this recording is video is fine, but the transcript, what has been discussed that transcription file is very much important for us to, you know, have the notes and everything generated after this call.
+10:21That is the only reason we are, you know, stressing up on.
+10:24Oh, I totally get it.
+10:25I totally, totally get it.
+10:26And I turned it on and it sometimes it doesn't work.
+10:29So I, I just, I can only do what I can do.
+10:31And I apologize and I showed, I even walked through, I think it was even Patrick, I showed him how he did it and he's like, yeah, that should do it.
+10:38And I'm like, I just, I, I apologize.
+10:40So yes, it is recording.
+10:42And that's why sometimes I, I am like, well, what do you want between the two?
+10:46So anyways, it is.
+10:47And so I will see what happens.
+10:49But my, my confidence is low that it, it does both.
+10:54OK.
+10:55I'm open to any suggestions.
+10:56Of course, Susan, maybe just try stopping the recording and then starting it over again with both.
+11:05If you do it mid meet, I know this one.
+11:07If you do it mid meeting, it doesn't work.
+11:10You can do recording mid meeting, but the transcribe.
+11:12But I can I'll do anything you guys want, But I did I checked it that that's the reason why I'm leaving on this morning is I get so paranoid and so I check it every time before every meeting to make sure everything is selected.
+11:23So I I unless I know that there is a Firefly looks like they're taking notes.
+11:29So looks like there's another entity already working at this.
+11:34OK, OK, OK.
+11:37I think that's the best we can do with the.
+11:39I apologize.
+11:40I I think that's, that's all teams.
+11:44So yeah, let's move ahead with the agenda.
+11:47Let me share my screen.
+11:49Let me know once it's visible.
+11:59I hope my screen is visible.
+12:03Yep, it is.
+12:04OK.
+12:05Thank you for confirming.
+12:06Got it.
+12:07Yeah.
+12:07So today is our first workshop in terms of the sales and partner onboarding.
+12:14So before we begin, I would like to briefly align everyone on the purpose of today's session.
+12:19As you know, Zinfi has already been selected as the PRM platform and today's workshop is intended to help us validate and gain agreement on how the partner life cycle process will operate across Zenfi and Dynamics 365.
+12:35So this is primarily a business process discussion and alignment session.
+12:40We will focus on understanding the current and the future state processes for partner on boarding, the lead and opportunity management, deal registrations, partner visibility.
+12:55I will briefly touch base on the business planning as well.
+12:59So that is our main process or the business process discussion plan for today.
+13:06So we are looking into the design and solution.
+13:08We are not looking into the design and solution from scratch.
+13:10We will spend time on detailed discussions and technical aspect of it later on in the process and those activities will be performed subsequent in subsequent fit gap and solution sessions.
+13:24OK.
+13:25However, I would stress on this to please ask questions throughout the discussion wherever possible.
+13:31We will provide clarity based on our current understanding and decisions already made with this entry team and overall process.
+13:39If there is any additional investigation or design discussions we need, we'll capture those items and address them during the later phase.
+13:49OK, So just a simple ask, please share as much business information as possible.
+13:54Even if some details are not yet finalized, we can take those further in the detailed discussions.
+14:01OK.
+14:02So at the end of the session, what we are trying to achieve is what is the life cycle events throughout the partner life cycle events throughout which should trigger account contact, lead opportunity and so on and so forth.
+14:18Sync with ZINFI or department platform and Dynamics 365 and where the partner data and what are the statuses that needs to be synchronized between the systems, how the lead management deal registration and the partner collaboration should operate and how the partner onboarding enablement will be managed.
+14:41Also.
+14:41Lastly, we will touch base on the training aspect of it as well.
+14:46So far, everyone with me any, any questions on the agenda?
+14:52Just a just a quick note, those of us in North America here are not intimately familiar at all with Zenfi.
+15:01So if this is just, you know, high level process mapping, we should be fine.
+15:06If it's talking about, you know, details of how Zinfy operates, then we we, we will be less assistance and we're going to have to learn more on our partners.
+15:15Yeah, yeah.
+15:16And Vince and team who might know it a little better than us.
+15:19Absolutely.
+15:19This is primarily the business process and not the technical aspects of the Zinfy.
+15:24So yeah, that's, that's great.
+15:29OK.
+15:31So we shared a little bit of pre read, but I understand it's pretty early and this is something I just covered what we will be covering through our session today and what are the final objectives that we are targeting out of this session, right.
+15:48So we'll start or we'll jump into the agenda directly here and the processes that we are discussing.
+15:56OK.
+15:57So this is a standard partner onboarding and end to end process that we have carved out basis our understanding as well as our discussion, prior discussion with Sinfi team.
+16:08All right.
+16:09So while we are navigating those the through these stages like you rightly said, sorry, I didn't get who was speaking right now.
+16:17But right, like you rightly said, we will go through the business processes primarily, right and note down if there are any discussions that needs to be taken up further.
+16:28So partner onboarding to start with partner onboarding, I would like to understand what are the hot streams current partner time types that we are looking at?
+16:44I think for partner onboarding it's all distribution, it's all distributors around the world, OK.
+16:51In, in North America we could Matt used this for onboarding Mrs.
+17:00as well.
+17:00It's a very similar process as far as you know, providing price files, etcetera and signing contracts and storing contracts and all of those things.
+17:09So I would say onboarding is for distribute distributors.
+17:12I think on overseas they call them dealers sometimes same thing.
+17:17And then here in North America, manufacturers, representatives and I, I'm not sure, but I think those are the two types.
+17:25And those are selling agents.
+17:28So the Mrs.
+17:30yeah, generically are selling agents.
+17:33They're not resellers.
+17:34But then distributors and dealers are typically.
+17:37Yeah, are resellers.
+17:39OK.
+17:40So irrespective of the Mrs.
+17:42or the distributors or the dealers, the onboarding process remains pretty same, right?
+17:49Probably.
+17:51Yeah, it's maybe maybe good to mention them from a Mai perspective.
+18:00They mostly focus on one naming partners.
+18:03So we have partners sales, we have partner service and we have partners that are only active within service.
+18:12So they're not selling the equipment or the consumables, but they're only performing service activities.
+18:23OK, But probably the same, yes, for the purposes of onboarding, that's probably Yep.
+18:29OK, OK.
+18:30And where does the onboarding ownership, with whom does this ownership lie?
+18:35So is it that the Heartstream members do the data validation approvals before the partner would even be onboarded?
+18:45And at what point do we confirm the partner is finally on onboarded and authorized to further welcome to the leads and opportunities.
+18:59There's diligence that's done, you know, just to qualify them.
+19:05And it's more rigorous in Europe than say North America.
+19:10But there's a process and it involves the contracts department.
+19:16So, so the not the commercial team, but the contracts department, the commercial team requests, you know, they do an intake form mm hmm, to capture all the information and then the diligence starts, you know, from there.
+19:32OK.
+19:32And it's a collaboration between commercial and contracts.
+19:36Noted.
+19:37So there's a right now, is there any process or need that we are looking at where maybe the partner has in feasibility to self register to Zenfi?
+19:48So again, this is Zenfi specific, but I'm just trying to touch base on this part where if there's any way the partners might self register for the on hold to initiate on you, Jim.
+20:01OK.
+20:02Yeah.
+20:04I think for our region, it's always triggered by the sales team.
+20:09Which are looking into the market with for a partner with Riot capabilities if so, yeah, they start like the onboarding process and then there's a handover to work towards sales OPS or sales back office.
+20:27And then it indeed the starting point is the due diligence, the DDP process.
+20:35And once that is completed it will continue with yeah, creating a contract for this for this partner.
+20:44OK.
+20:45So our understanding is that Zenfi will operate as the partner relationship management platform and Zenfi will be configured to provide a seamless onboarding journey.
+20:57While you know heart stream and Zenfi will jointly define the required information and validations required there.
+21:03We will be or Dynamics team will be primarily syncing the authorized finalized partner.
+21:10Once the entire due diligence are done, we need to define that off where the partner is considered on boarded and that's when the Dynamics 365 CRM would come into picture and the partner will be then synced to the CRM.
+21:25So, so far what we covered is the onboarding process is more or less same for all the Mrs.
+21:33dealers and partners, distributors.
+21:36The due diligence is done in coordination with the sales and the commercials team, which will be taken care in Zinfi.
+21:45And the moment the partner is finalised, the partner will move into the dynamic CRM system.
+21:51Now here I would like to understand how does the visibility, who owns this partner record?
+21:56Who has the visibility?
+21:59Can I, can I ask a question when you have, when you mentioning that transfer it, do you then mean that an account number and account record is being created for this new partner?
+22:15And that's absolutely right.
+22:16So we will have a account number in Zenfi and CRM.
+22:20So those will be linked respectively and we will have a account record passed from Zenfi to CRM as well and the associated contact as well.
+22:31And from your from your perspective, should that be created after the contract has been signed or is it like when a partner is doing a submission of their first information required fields?
+22:49Is is then already a record being created in Dynamics.
+22:54So now according to our understanding in previous discussions, we should have the partner in CRM only after the final onboarding that includes the contractual part completed.
+23:05But there is a little bit of discussion that needs to happen around the contractual part.
+23:10Maybe we can come to that part later on.
+23:13Nitesh or Pankaji Sri on to pitch in on this point to feel free to add for the sure contract part.
+23:21So with respect to this ask Vince in here, the moment a particular partner or reseller is approved on Zenfi, that record is immediately synced with Dynamics and later on probably when they are doing business the the details of that partner will be flowing around with the rest of the records.
+23:45OK, OK, OK.
+23:50So the like we just discussed, the recommended onboarding journey will be in Zenfi which will include the approvals and confirmation as well.
+24:02Any, any e-mail communication, onboarding communications will be done through Zenfi itself.
+24:09OK.
+24:10Once the approved partner synchronizes with the Dynamics 365 CRM, we will and define the further partner data model and everything.
+24:21So yeah, coming back to my question, I would like to understand how does the partner visibility we want to have it, it would be basis the legal entities I presume, if you can confirm on that please.
+24:37I would think once once we reach a point where the contract is signed and any required training is completed and at that point that partner would be ready to move on to the next steps which would be syncing up into our systems.
+24:56Absolutely, because prior trainings are required.
+24:59And that was my last topic with just to touch base on the trainings, Zinfi will be capturing those trainings.
+25:05They have client build capability to manage certain training aspect of it.
+25:10So dynamic CRM will only capture the status of the training.
+25:14So once that status as per the agreed statuses, if those are required trainings are completed and the contractual aspects are taken care of and the partner is confirmed that as approved and authorized, right.
+25:31OK.
+25:31So just maybe a stupid question, just for my understanding, you will align with the Sinfi team that we request all the mandatory fields to yeah, to be able to create such a customer account record in Dynamics, right?
+25:53Absolutely Yes, yes, that's right.
+25:57And we do have Akash on.
+25:59So I'm sorry, just to let you guys know Akash was simply did join us.
+26:03So thank you.
+26:08OK, great.
+26:09We have Akash from Zenfrey team as well team as well team as well.
+26:12Team as well.
+26:17Akash is there on the call.
+26:19I don't see him.
+26:21Akash, if you could just say hi or something.
+26:31Circle back.
+26:32I've been in chat with him so I apologize.
+26:35Thank you.
+26:35OK so yeah, I I could see just one note taker with Sandipan's name.
+26:42Sandipan is the Zenfi team member, but I don't see Akash.
+26:47OK, we will.
+26:48We will hold on to that one.
+26:50Coming back to the point which Ashwini was discussing regarding the visibility.
+26:55Yes, James, your, your point is valid.
+26:58We will be interacting with Zinfy team for solutionizing what fields are captured against a particular partner, what is to be flown to Dynamics and once the record is successfully shown in Dynamics, what all this stuff is to be shown when we talk about a particular partner record?
+27:14Yes, that particular aspect we will take care along with Zinfy.
+27:19However, the visibility part is what Ashwini had touched upon.
+27:23So like we are catering to 8 different countries and Zinfi portal, say for example a reseller is in USA, it has been you know that that particular record has been processed.
+27:37The trainings and approval and everything is done.
+27:40Now there comes a time for this record to be synced with Dynamics.
+27:44In Dynamics also you have 8 different legal entities, USA, India, in Australia, so on and so forth.
+27:53Oh, a different this particular record which is originated from USA will be visible only to the USA legal entity in Dynamics.
+28:01Is that understanding correct?
+28:04And it is not to be shared with any other company or legal entity.
+28:08That means someone logging in from Australia will not be able to see this reseller's record, is that correct?
+28:17Yeah.
+28:17So I'm not aware of any partners which are active in multiple sales organizations.
+28:26So in multiple regions.
+28:29Perfect, perfect.
+28:31So that I mean, obviously you're, you're confirming, but if at all it comes out, then it will be 1 point to discuss further how to manage the visibility.
+28:41For now we take it, it will be just one partner per region and as and when it creates, it will be 1 to one mapping.
+28:47The record will be synced directly with the appropriate or associated legal entity or the company in finance term, if you say, OK, that means any partner getting created in USA will be synced to USA company in CRM as well.
+29:02Yes, Pankaj, go ahead if you're having queries.
+29:07Yeah.
+29:08So actually I have a follow up on this.
+29:12So, so we are discussing here the privileges on the account records that we create in CRM Dynamics CRM.
+29:22So the record will be available in USA.
+29:28How about who owns it in CRM?
+29:32Is it?
+29:33Yeah.
+29:33Will it be available for all the users in that USA legal entity for example?
+29:40And do we need edit privileges as well on those records?
+29:48So just to simplify any aspect of the partner information, are we expecting any modifications that needs to be performed in CRM once the partner is approved?
+30:01Will there be any team that will be interacting with this partner record?
+30:06Sorry I that will be viewing as well as editing this partner record, pornographics and any any aspect of the partner information.
+30:21If if we can put this on the parking lot, this one, yeah, OK, we can surely.
+30:27But just wanted to make our question one more time pretty clear.
+30:30So James wins.
+30:33What we wanted to say is once the partner record is approved on the Zinfy portal and it flows down to Dynamics, the partner record, say for example Nitish is the partner contact which got successfully synced in Dynamics in the USA legal entity.
+30:47So that means any user who's logging on to Dynamics CRM in, in USA legal entity, he will be able to see the record which got synced from Zinfy.
+30:56That is Nitish, right?
+30:58Is there any specific team who owns this record for visibility sake or anyone logging on to USA legal entity CRM will be able to see what got synced from Zinfy?
+31:09Is there any, you know, bifurcation in terms of data, data visibility?
+31:15I think anyone with access to the CRM should be able to see it whether it's someone who is booking orders or someone who is managing leads or or the so the entire sales themselves.
+31:26Yeah, OK, things for too.
+31:29Yeah, well, I'd say wide open within that within that legal entity.
+31:34OK, OK.
+31:35But as far as, but as far as ownership for it, I think that there will be one for distributors.
+31:42I think there would be 1 sales agent, a account manager or sales manager who would be responsible for, you know, completing all the work in Zinfy and, and, and certifying that it's ready for the CRM.
+31:59So for instance, if we have a, a channel manager here in the United States bringing on a new distributor to cover 2 states, they put in the request, they work through the contracting and pricing.
+32:10And when all the training is complete, they ensure that, that that distributor is ready to kind of join our systems, right?
+32:19Join the CRM.
+32:20So there is one kind of owner within the organization, but everyone should be able to see it in my opinion.
+32:28OK, So can we ascertain or can we say this owner who's approving the partner record on the Zenfi portal will be the owner in CRM as well, who will be having total control of this record?
+32:39Rest everyone will be able to see those record.
+32:41It should not be a challenge at all.
+32:43Can you define what you mean by total control?
+32:46OK, I, I apologies.
+32:48I just meant to say when a record is created in Dynamics CRM, it has to have one owner.
+32:55It could be a user that is a CRM user or it could be a team as well, OK, For it to have control on any aspect of the record to be edited, modified, changed, right?
+33:08So that aspect, can this channel manager who's approved the record on Zenfi portal be the one?
+33:19So I guess, I guess, Matt Reed, if you think about the past, we had kind of tight controls on who could edit things in the CRM, right?
+33:30And moving forward, we want to keep things easy and not have to build a department full of people to manage the CRM.
+33:35So I think this is a business decision on how we want to operate.
+33:42Do we let people go in or let the quote UN quote owner of that account go in and make changes?
+33:49You know, if they if they, you know, move, you know, like Code Blue did a couple years ago?
+33:53Yeah.
+33:54Do we let them trans things or the CRM then the the the user at the commercial or the sales level could do that.
+34:01I think that's OK.
+34:03We're not talking about master data records though all the way back into I, I guess, I guess are we or pricing?
+34:13Yes, this is this was why I asked the question.
+34:16So, so to the team on the phone to the UST team when we talk about this record that will be imported from Zinfy that I assume the custom, the, the the partner name and address will come through as well when it creates this record in the CRM.
+34:36Is that record the same, a customer record that we use to book orders off of and to check credit history and manage credit levels and all of that stuff?
+34:49So I guess is, is this just one kind of master record or are there different levels of control?
+34:55So the people who are managing credit in the finance department would be the only ones to touch the credit end of it.
+35:02And the and the sales people who are managing let's say the address or or a contact name and phone number, is that all one big record or is it in the system in different places?
+35:15OK, so let us help you understand, James, this one a bit.
+35:21As of now, we have not gone into transaction as of now.
+35:24We are at the preliminary level or the primary level where we are just creating partner records who will be doing business on behalf of Hardstream.
+35:32Say for example, Nitish is a new reseller, the onboarding of Nitesh, his name, his address, his company's information and the contract.
+35:41What you'll be having initially, Nitesh's record will be synced to CRM.
+35:46That is the reseller record post this particular thing is done, then Nitesh will go ahead and work on with leads and opportunities and codes.
+35:56Those will be individual records getting synced to CRM.
+35:59OK, so we're we're just talking about the first record when a partner record is created and approved in Zenfi and once it's gets synced with you know CRM who should be having control of it.
+36:15If if you say this particular record which got synced off in CRM should be totally non editable and only we only for all the users logging on to CRM, that is also fine and that is the recommended approach.
+36:29But just wanted to see if there are any nuances of people or a super user or the owner editing that record directly in CRM which gets again synced back to Zinfy with all the changes which has been done like your phone number update, like your address information update or any nuances of the contract.
+36:48Those kind of stuff we are trying to ask right?
+36:50I guess it is that record used by, is that record Dynamics used by Dynamics for order entry and credit management and all of those things or is this a completely separate record from what we will be using in Dynamics to operate our business as far as finance and billing and invoicing and all of that?
+37:12Yes, it will be the same record, the partner record which we'll be using for invoicing and all.
+37:18Yeah, OK.
+37:19So that helps.
+37:20I don't Matt Reed, I don't Dave.
+37:24I don't know that we want an account manager to be able to go in and change a name and address on someone who has already been credit kind of validated by finance master data approved.
+37:39I don't think we want, I, I think we want to be more restrictive if it flows all the way to the master data that is that customer record.
+37:49I I don't think we want to let the team do it.
+37:53So yeah, go ahead, Matt.
+37:55I'm sorry.
+37:57Well, maybe it, it becomes a just an approval flow so that there's at least some oversight, but we're just talking about partner distributors and partners here.
+38:11Yeah, Right.
+38:12Correct.
+38:13Right.
+38:13Yes, yes.
+38:14The other thing I heard was contract content changes.
+38:21We, we, we don't want anybody outside of contracts having the ability to change anything on the contract, right.
+38:33Yeah.
+38:33Once a contract is signed, once a contract is signed, it's logged in, you know, for 12 to 14 months.
+38:40Yeah.
+38:40So contract would be a different element.
+38:43We are right now purely got talking about the partner record, the partner account, Yeah.
+38:52How about distributors where we just adding us another location.
+38:56For example, they have 9 warehouses, they're adding a 10th.
+38:59It's not a change, it's just an addition.
+39:02Is that something we should be able to do on our own?
+39:07Yeah, we so associated like say for example, a new warehouse is introduced that will be just another record which will get created that will not involve any change.
+39:16Yeah, OK, sure.
+39:18So what we understand is with all this discussion ongoing, we do understand there is, you know, an element of keeping that record intact.
+39:28So what we'll do is this can be changed later on, by the way, OK.
+39:31For everyone's information, the behavior as of now we are recording or acknowledging is once the record Partner record gets created in Zinfy, successfully approved and flown to Dynamics, that will be read only for everyone.
+39:43OK.
+39:44And if at all you say later on, OK, one guy who's the owner of those partner or channel partner manager, he should be the only one who should be editing the details.
+39:54We can give access to that particular guy for now.
+39:57Let us keep it read only.
+39:58OK, Right.
+40:00Yeah.
+40:00I think we just need an approval flow rather than letting everyone do it immediately.
+40:06Perfect.
+40:07Perfect.
+40:07Noted.
+40:08OK, I shouldn't go ahead.
+40:09OK, noted.
+40:10So once the past partner is active, let us now move into the partner business planning a bit.
+40:16This the proposed process is for Zen Free to support partner facing account based business planning and for Dynamics 365 we'll receive the information required only to be captured in CRM if there is any data points that needs to be captured as the aspect of the account planning.
+40:39So we'll get into those detailed data points later on.
+40:43But this is the process where the planning will be done in Zinfy and only required data points will be captured in Dynamics 365 for the partner account planning.
+40:56And we would like to touch base on a few other elements.
+41:00But I think we don't have synfry team over here.
+41:03But just wanted to check if who creates approves the plan, if there is any variation by region or partner type, is there any variation on that?
+41:14And downstream if there is an impact on Dynamics data points, that is something we would like to touch base on.
+41:24So will there be any planning activities varied depending on the regions?
+41:31Maybe the US entity has a different element to it.
+41:35The China legal entity has a different element to it and that needs to be recorded in CRM as well from Xinfi.
+41:53If, if there is nothing specific we can move on to the next point, but just wanted to record if there is, if it's same or any deviations to that region wise so can we.
+42:10So I don't think there would be dramatic differences.
+42:15OK.
+42:15So we can record that it would be similar and the data points will come on to those detailed discussions later on if anything needs to be captured in CRM.
+42:25But do you, do you foresee any specific data points required in CRM in reference to the account planning?
+42:35I don't think so, no.
+42:39OK, thank you.
+42:40What would be an example?
+42:42I guess I would want to know like maybe they have a type of customer read or partner that that doesn't exist in North America.
+42:54I just, I can't think of anything really.
+42:56Yeah, I mean, the only thing that's popping in my head is the difference between a stocking distributor, an NSD, an MRA, just in time distributor and the different requirements there.
+43:11So can you come again?
+43:13I think there was a little bit of echo there.
+43:16Sorry.
+43:17I, I guess the only thing that really popped in my head in terms of North American differences resellers, we have at least four different types of agreements and who they sell to where they sell stocking distributor, a non stocking distributor, a manufacturer's Rep and customer just in time distributor.
+43:47And then I guess a fifth would be a fed Gov military partner.
+43:52OK.
+43:53Because primarily these exceptions or these variations would come into picture when the partner is, you know, creating leads or targeting certain customer segments.
+44:04So that is something would be definitely part of the Zenfi implementation or process flows.
+44:11So let us park this point and we can take it up further with this in free team in when we have this in free team as well.
+44:19Can can I add two things linked to the opportunity management, because we also have like in Europe, the difference between partners active in the AED home and public portfolio and on the pro parts.
+44:38On the pro part, they, the partners create individual opportunities linked to a hospital or a hospital group with certain equipment and consumables in it.
+44:51There they would like to upload batches of opportunities because they already have those opportunities in their own CRM systems and they do not want to do duplicate work.
+45:06And on the part of the AD partners, they want to upload a 12 month rolling forecast on the main consumables and equipment articles.
+45:20So I'm not might be slightly different with the other region, but that, that that's how it currently in Europe is working.
+45:30OK.
+45:30So in in reference to that now that you said that the partners will be registering the opportunities in their own CRM, how does the contract come into picture in this case?
+45:40Because the I know I did not touch base on contract earlier.
+45:44That's something I wanted to come at the end as it's an open discussion.
+45:49Your contracts are associated with pricing, discounts deals.
+45:54If the the the Europe region partners are working their own CRM, How, how does the contract come into this equation overall because the contracts will be primarily into Zenfi or you know D365 CRM.
+46:10So that's an open discussion as of now.
+46:12But yeah, that would be somewhere in Zenfi or D365 right now how Europe is managing those contracts if the are created in local CRM, No, yeah, they're then either the account manager or the partner does create those opportunity in yeah currently in in sales force.
+46:39But yeah, they they do not like to do that duplicate work.
+46:42So that's continuous struggle with with the partners.
+46:49OK, OK.
+46:52So we'll circle back on to the contract part, Nitish, unless you want to take it up now because I wanted to have that discussion at the end of the agenda that we had.
+47:07No worries OK, Whenever we open up the forum for discussion, discussion on the contract because what we understand is during the onboarding process itself, the contract with that particular partner is formed signed officially and that's how the partner is onboarded, correct.
+47:24So what all nuances of the partners contractors, what all it covers how it affects the partner doing business with Hardstream.
+47:32That is something which we wanted to you know get more info on, but fine with you know taking that particular aspect later on.
+47:38Ashwini OK, OK, so this is for Europe region.
+47:43We might need to have more detailed discussions in terms of how the the opportunities and the contract would, you know come into picture because they do not reenter those opportunities as obviously they do not want to do the double the entries.
+48:03So we might need to circle back on this in detail discussion.
+48:07But I, I just wanted to understand today, as of today, is there anything or is it just like offline reports those are shared.
+48:15That's, that's only how you have the visibility to the CRM, the partner CRM reporting or opportunities and forecast for Europe, the opportunities are in Salesforce and for home and public.
+48:36So the AED part they are managed mainly, it's mainly Excel based to be honest, those 12 month rolling forecast on the main products that is managed in different Excel files.
+48:51OK, OK, right.
+48:52No very similar, very similar in North America.
+48:59OK.
+48:59So the majority is done on Excel that that's pretty much understood.
+49:04But the local CRM that the partners are right now entering the apportionities into that is something the basically the reference point, right?
+49:15That is where the entire data is registered and the opportunities are then taken further, right.
+49:24OK, we'll come to the apportionity as well.
+49:26So from account planning, the next process would be where the lead and apportionity, the partners are creating the leads, managing the leads and further opportunities.
+49:37So we would like to confirm the partner lead process is hot stream team or marketing team creating leads for the partners and assigning them to partners.
+49:50Is that a possible process flow for any of the regions or is it completely owned by the partners to create the leads directly?
+50:04We could find leads and assign to distributors.
+50:08That is also the system, right, Jim?
+50:12Like how do they, how do they get it right now we there is a system to allow that and that's kind of what we were hoping to build out.
+50:23Yeah, I guess I, we don't know if Zenfi because in North America we're not familiar with Zenfi.
+50:27Does does it have the ability to manage lead distribution to channel partners?
+50:35OK.
+50:35So if I I know the answer to that question.
+50:39So we will have this point in parking lot if there is a visibility, yes, the marketing team can create load leads for the partners.
+50:46That is one of the business processes that we are expecting depending on the capability, right.
+50:53But they will create the leads in Dynamics and then for the partner, it will be visible when they enter their account in Sinfi, right.
+51:04So we can also touch base on this during our marketing discussions.
+51:08Right now, I'm just trying to understand the entry points like you said, yes, from marketing campaigns.
+51:16If the leads are generated for partners, those can be synced with Zenfi and the partners can also create Zenfi's leads directly into Zenfi.
+51:27So our understanding is that partners can record and work their own leads in Zenfi and that is will be synchronized to CRM in addition to if hot stream team members like marketing leads can be also created in Zynfiq.
+51:42So that's an open discussion we'll be touch basing on in the detail.
+51:47But yeah, I just I'm confirming that both possibilities are in scope business process to create marketing leads and assign it to partners as well as the distributors creating their own leads through Zynfiq.
+52:03I think that's yes, yeah, no, agreed.
+52:07Yes.
+52:08But I think we all would also want the ability for the account manager to add leads into the system and be able to assign them as well.
+52:16That's where a lot of the leads are generated and we want them going to and bogging down marketing and and entering leads that are being identified and developed in the field.
+52:29OK, So it's the account manager who primarily does that creation of lead for partners.
+52:35That is the goal right now.
+52:38A lot of leads come in through trade shows, which is through marketing.
+52:44Marketing was not the one that was entering those though.
+52:46We actually have another team member that was entering those leads into a system.
+52:53But as we move forward and the team members are doing more and more prospecting in their own territories, we want them to have the ability to enter those leads and maintain their own funnel versus pushing that off on marketing, which is not a real big team for us.
+53:11OK.
+53:11So once these leads are created, be it account manager or as we expand this process further to other users, these will be completely owned by the partners.
+53:23Is that correct?
+53:24Or will there be any intervention from the Heartstream state account manager or any other users on this particular lead?
+53:33There's collaboration, collaboration between the the Heartstream team and and the distributors and partners, OK.
+53:42And we also like to be able to follow those leads and report against whether they were closed or not closed.
+53:50OK, Yep.
+53:52OK.
+53:53So when we talk about see, sorry, I, my apologies, I don't necessarily see a distributor adding in a new lead that they identified on their own that wasn't handed to them by us.
+54:08But if we have a lead that we generate through marketing efforts or team prospecting, we enter that lead and we push that to the partner.
+54:17We do fully expect that they update those.
+54:19I think we would have some partners that would enter their own leads and opportunities in there, but I, I don't know if that's would be widespread.
+54:30Reed, would we want to enter an opportunity that came to us from a partner?
+54:34So a partner pulls us into an opportunity, we'd probably want to track it.
+54:38Yep, yeah, Yep.
+54:40Great.
+54:41OK, so when we say we want to have collaborative efforts on this lead the again, I'll come back to the edit read part that we discussed for the account as well.
+54:53So there will be full edit rights for the account manager or in future if we are adding in other user profiles or personas, they'll be having full access and full own edit rights on this particular lead or we are looking at some restrictions as well.
+55:11I think that's OK Team members, whether it's distributor or Heartstream direct adding team members also adding notes.
+55:19You know, if if the distributor speaks to the customer or we do, both sides should be able to add notes to the to the opportunity.
+55:29OK, So the customer communication also happens from the Heartstream side.
+55:34So we expect to have customer communications from partner at Zenfi end as well as from the Heartstream team at NCRM as well.
+55:45Is that right?
+55:45Correct understanding occasionally, yeah, occasionally.
+55:52OK, but that's a that's a possibility, right?
+55:55OK.
+55:56Yeah, OK.
+55:58And are we expecting to have this visibility of of of course, I'm just stating it for just making sure we are on the same page.
+56:08All this communication with the customer, be it the Heartstream user or the partner, has to be visible to the partner and the Heartstream users or again, is there any restriction there?
+56:23Guys, what do you think?
+56:25Since it's a collaborative effort, I believe it should be visible to avoid any repetitive or, you know, same communications going out.
+56:33I think we should have the same view as the partner.
+56:37And then yeah, if there's any reason to hold back read, we would just take it offline, right?
+56:44As if.
+56:45Yeah, I agree.
+56:47I agree.
+56:48OK, OK.
+56:49So we'll we'll check with this in free team as well in terms of thinking of these activities and communications.
+56:56But yeah, the scenarios are are noted.
+56:59So we spoke about these two primary sources.
+57:02Is there any other source from where the lead could be generated for the partners?
+57:08Is there any deviation in process for any of these sources for lead generation and follow up?
+57:20I don't think so.
+57:21For example, if the lead is generated by the partner in Zenfi and that's synced into CRM there as well, it will be equally collaborative efforts, right Or that's not the case.
+57:33Now that would be, I would say they, I would say they need to remain synced if people edit them in CRM, yeah, they need to go backwards.
+57:42And if people edit them in Zenfi, they need to go forward.
+57:46We, I'm not clear.
+57:48Go ahead, Matt.
+57:48Sorry, I, it may be just me, but I'm not clear which system we'd be working in, whether it's Zenfi or the CRM that you're describing.
+57:59OK.
+57:59So yeah, Matt, let me you know, patient here, although Pankaj has raised his hand.
+58:06Pankaj, allow me to take up this particular point and then probably we can open up the forum for discussion.
+58:12What we're trying to discuss here is the lead management aspect.
+58:16Once a particular partner is already onboarded, he's been authorized, approved and credentials are given for him to log on to Xinfi and do necessary, you know business.
+58:26There comes the lead management part.
+58:28Now lead management can be done in two ways.
+58:31One, either someone from hard stream that is the sales team or marketing team generates the lead, records them in dynamics and gives it or distributes it to your distributor for taking care of them.
+58:45Or second could be the distributor themself scouting in the market and generating leads and recording them in Zinfy, either of the ways the progress of leads, whatever nurturing happens on the lead, follow up happens with the customer, that is going to be done by partners only and that will happen on Zinfy.
+59:06Got it.
+59:08OK.
+59:08And then we don't envision, yeah, yeah, the distributors or partners wouldn't be working directly in the CRM then?
+59:16No, no, no distributor and partners resellers, they will be having this partner portal to which they will be logging in.
+59:24If in case they are supposed to work on lead, they will be accessing leads only from Zinfi.
+59:29Whatever progress happens that will get sync to CRM for visibility.
+59:34OK, thank you.
+59:35OK.
+59:35Now on the same lines, Matt and rest of the team, just wanted to ask question, is our understanding correct that there could be two possibilities, One your marketing team or sales team generating leads, recording them in CRM and circulating or distributing it to your resellers for them to work upon.
+59:53At the same time reseller also can register leads on Zinfy and take it to closure for sales process and all.
+1:00:00Is that correct?
+1:00:05They can, but Reid said you know they.
+1:00:10We don't have a lot of history there.
+1:00:12We don't have history of them populating funnels and giving us a beautiful forecast.
+1:00:17This is new for us.
+1:00:20And I think they'll be reluctant unless we contractually obligate them to do it.
+1:00:26Yeah, yeah.
+1:00:28We don't know how active they're going to be.
+1:00:31We likely won't have channel partners entering in leads for every single unit of product that they sell.
+1:00:38But maybe Matt Reed, we put in some type of a business process that says if it's over quarter $1,000,000 or whatever it is, right?
+1:00:48If it's a we could incent stocking order or whatever, Yeah, yeah, we could gamify it, we could do, but we just don't have a lot of history there.
+1:00:57I agree.
+1:00:58I think on the leads, it will probably most be the first scenario where we have a event or there or via our website.
+1:01:09We, we, we receive leads and we process them towards a partner.
+1:01:16To be honest regarding the partners, I don't think that they will do their lead management on Zenfi because they're have their own systems where they register those leads and then do the follow up.
+1:01:31They have their own CRMS.
+1:01:32Yeah, yeah.
+1:01:33OK, OK, OK.
+1:01:35And Vince, in that scenario, let's say leads is of the chart, partners do not enter leads.
+1:01:42How about the deals which are registered with Heartstream?
+1:01:47Is that a, is that a mandate that that should be registered in the partner portal for us to be able to see in CRM?
+1:01:53Yeah, because there we need to see the funnel.
+1:01:57But yeah, be be prepared because that's also a challenge because they have their own CRM system.
+1:02:05And so if we just contractual give them the obligation to re enter those opportunities in our CRM, yeah, they won't be happy.
+1:02:18So therefore we need to focus on, yeah, the ease of doing business with Hardstream.
+1:02:25So how can we give them the opportunity to easily import their opportunities in our system without doing a lot of, without doing a lot of opportunity entry work?
+1:02:40Correct me if I'm wrong, but what, what we, we want to forecast what our dealers and distributors buy from us for stocking orders, right?
+1:02:51We don't necessarily need to track their individual sales leads unless it is something that we are sending to them, right?
+1:03:00If we are sending 1 distributor 75 leads a year, we want to be able to see how many of those 75 they close because if they're closing zero, that's a red flag.
+1:03:11It means we're giving them leads and they're closing them with someone else's product, right.
+1:03:15So I think from a, from a day-to-day business lead tracking, it's it's if we are forwarding leads to them, we want to know if they close.
+1:03:28But otherwise really the only thing that we track for them for forecast and funnel and planning isn't deal by deal details.
+1:03:36It's it's orders they place against us to stock their warehouses.
+1:03:43Got it, got it.
+1:03:44So James, tell me if it's yeah, team chime in, right?
+1:03:48I, I, yeah, that's slightly, yeah.
+1:03:50Then at least for the pro part in Europe, slightly different because there we do want to have the visibility, yeah.
+1:03:58In which hospital are you working on a certain project where can we support and, and to track that?
+1:04:06So there the partners do have like the individual opportunities in a hospital.
+1:04:14OK.
+1:04:15So you're having distributors today go into our sales force and create an opportunity for 12 Intrepids.
+1:04:21Yeah, OK.
+1:04:22Yeah, I think that's a reasonable expectation though Jim.
+1:04:26We it's an opportunity based business, yes.
+1:04:30Whereas on home and public or the AED side, it's much harder to manage and there's just so many.
+1:04:38I I don't think we should set the weather for home and public.
+1:04:41I agree.
+1:04:42And and therefore with home and public, we're working with those 12 month rolling forecast, which would also be good if the partners could easily, yeah, update that forecast.
+1:04:53So that's also them in Zenfi and in the end in dynamic CRM.
+1:05:01Yes.
+1:05:01So one thing is, you know, confirm James, if at all we are giving or distributing leads to the partners and in Zenfy they progress or they update the statuses of those leads, the information or the progress is immediately visible in CRM, that is Dynamics.
+1:05:21You will be able to derive reports, views, dashboards, everything based on what your partner is doing on this lead.
+1:05:27Even if they are not acting on it, you'll be able to figure that out.
+1:05:30Only thing is we'll have to agree to a process that these partners should be working on the leads which are accessible to them.
+1:05:37Why?
+1:05:37As in fee?
+1:05:38Yeah, right.
+1:05:39Yeah.
+1:05:39We need to tell them if we give them a lead, we want them to tell, you know, tell us when it closes and with what.
+1:05:44Right.
+1:05:44Something like that.
+1:05:45I had another question you had mentioned a minute or two ago about deal registrations.
+1:05:52Yeah.
+1:05:53And although in North America today we do not have a product, a pro product in the United States, we do expect to get one back at some point.
+1:06:04And and we do want to have and we had in the past for many years a deal registration process.
+1:06:13So if you have 17 distributors who could sell into a particular account, we work with the basically the distributor who got there first to register that deal as being theirs.
+1:06:26So that when another dealer distributor comes up to us and says we want your help closing this deal, we say that deal's already registered to someone else, right.
+1:06:36So deal registration is something that we would like to be able to track here per dealer.
+1:06:44So if someone creates an, if we create an opportunity or if our partner creates an opportunity, help me think this through.
+1:06:56I, I think just by creating that opportunity, the deal is assigned to them.
+1:07:02So if another distributor tries to tries to work on it or ask our assistance on it, we can search the system, see if there's an opportunity for that end user customer and and we will call that deal registration I guess.
+1:07:18Yeah, that's true.
+1:07:19So the moment the deal is registered, it will be associated against the account the customer.
+1:07:25So you'll have the visibility if a customer has an open deal in CRM and I I believe that's the channel conflict that you handle offline as of now, if there is a deal already present, if another partner comes in, you already you know there is a deal present.
+1:07:42So that's how the channel conflicts are handled.
+1:07:44Is that right?
+1:07:46Right.
+1:07:46Yeah, right.
+1:07:47So and we used to track that with forms because we didn't, we didn't have our distributors in Salesforce.com moving forward if we have them in there for the probusiness and tracking business for the probusiness on our CRM or through Zenfi, I would, I would consider that deal registration, right?
+1:08:08I mean, absolutely, yes, yes.
+1:08:11And maybe we have a special check box that says this, consider this registration for, you know, consider this a deal registration, not just an opportunity.
+1:08:19And that way we can report against them differently, right?
+1:08:22I, I don't know how to do that, correct, right.
+1:08:24So Zinfi also has the capability to register an opportunity or a directly a deal, right?
+1:08:31So the only difference is that it's a confirmed opportunity that would land as a deal in Zinfi and a respectively in CRM as a confirmed opportunity or A1 opportunity.
+1:08:41But the moment it's registered it, it will reflect against the customer and you have that visibility for if it's an open opportunity or a confirmed deal that's associated with that customer.
+1:08:53Right.
+1:08:55But yeah, that's all.
+1:08:56Yeah.
+1:08:56Mm Hmm.
+1:08:57Yeah, go ahead if you need on the same lines before we hand it over to Pankaj.
+1:09:00He's been keeping his hand up for quite some time.
+1:09:05Yeah, sorry, Pankaj.
+1:09:07James, on the very same lines, on the same note, what exactly like is it currently possible for multiple partners to come and ask you that we are supposed to have business with X customer and you take a call that which particular partner will be taking this particular deal to closure and multiple it is?
+1:09:29Yes.
+1:09:30For the probusiness, we typically support 1 channel partner who is working on on the deal, right?
+1:09:37We assign it to to one.
+1:09:39It's usually the one who you know, made us aware of it first.
+1:09:43OK, So if today in this envy portal where this conflict management is taken care and if the first partner registers a particular deal against a contact or a customer and then the second partner tries to do that, he gets a message saying, hey, this deal for this particular customer is already registered, you will not be able to proceed.
+1:10:05Will that be OK for you?
+1:10:08But we do have opportunities where we have multiple partners working.
+1:10:13Yeah, absolutely.
+1:10:14Yeah.
+1:10:14That's why I said there needs to be like a yeah, there needs to be a check box to say, you know, something like consider this deal registration, right?
+1:10:24Whereas in the AED biz, we can have multiple distributors bidding on the same deal, in the professional space, it's different.
+1:10:32We don't have the time or the bandwidth to support multiple channel partners going after a complicated large installable, you know, deal.
+1:10:41So, so we would want to call off the others when they say, hey, I found this deal and we well, no, that's already registered to someone, right?
+1:10:50And that's how we've done it in the past.
+1:10:53So we need to be able to handle both, you know, you know, having multiple distributors working on the same one AED business or if we choose to track that or the professional side where we actually register that deal.
+1:11:08So that whoever in the company looks and looks at that opportunity for that customer, they can see that that deal was registered to Partner A and if it's Partner C trying to register the deal, we say sorry, right, that one's taken.
+1:11:24It's essentially got it, got it.
+1:11:26So you would like to have those checks from the system perspective saying if I try to register already registered deal, I should get that notification.
+1:11:34I stop this particular customer is already been registered with respect to deal we are trying to register, OK, only because right.
+1:11:42And and correct me, I think Matt, you're the one with the most experience here in the EMS space is we don't have the bandwidth for the staff to support multiple partners going after complicated large deals, right and especially in the pro space.
+1:11:57So I would I would think we would want to continue to register deals when we come back to the EMS market.
+1:12:05But that's that's the case only for the large deals.
+1:12:08There is still a possibility that individual opportunities could be created by several partners and then whoever finalizes the opportunity into a deal that partner gets the deal.
+1:12:21And definitely the system would restrict for the opportunities to be converted.
+1:12:25But in case of larger deals, that's where we need to restrict even at the opportunity creation.
+1:12:31Is that the current understanding?
+1:12:34I think it's a business workflow decision, right.
+1:12:36In the professional space, we're probably going to require our channel partners to to use our CRM and register their deals.
+1:12:46Is that a safe assumption, Matt, once we launch Intrepid here?
+1:12:49Yeah, yeah, I think that's think that's a fair assumption.
+1:12:55Yeah.
+1:12:56Is is there any baseline how we can define a large deal?
+1:12:59Can we differentiate between a deal that can have multiple opportunities versus a deal which cannot have multiple opportunities generated?
+1:13:10Is is there some business that's fairly easy in the?
+1:13:14So I'm not familiar with how the CRM works with Dynamics, but we are probably going to set up, we have different product categories in our business, different solutions.
+1:13:28And if we select a certain type of solution, then we consider that registration.
+1:13:35But if we select the AED business, then and it's just an opportunity and anybody can play, right?
+1:13:43And there can be multiple people on the same opportunity if it's the AED space, but if it's the pro space, when they register, boom, right, It's just the one person.
+1:13:53OK, So that's pretty much configured at the product level and solution level, right.
+1:13:59So there won't be any deviations to what has been preconfigured.
+1:14:02OK, noted.
+1:14:05Yeah, we would have a pull down list, I would imagine of some type where you you click which solution this opportunity is for.
+1:14:13And once you pick Pro, we're going to manage those in detail and consider those deals registered.
+1:14:21And Vince, I don't know if you do it the same way over there or if you let multiple channel partners go after the same deal in the system, right?
+1:14:30I, I only recognize this from home and public because they are working Europe wide and for Pro, they are really working within the country.
+1:14:42And yeah, there's no competition within that country.
+1:14:45So there's one partner.
+1:14:48OK.
+1:14:48So, so this, this, this do this divider of selecting home and public versus pro feels like it'll work if you select pro and it registers the deal to you as that distributor and no one else can go after that deal.
+1:15:08We still need deal registration though on a case by case basis.
+1:15:12We just need a way to make it visible and say this like an enterprise deal, right, where we've we're going into IBM, you know, with a specific partner, meaning we're not going to go in with the other one or give them special pricing.
+1:15:31So I think let's just you can put it in the parking lot.
+1:15:34We have a whether it's a naming convention or it's a drop down that says this deal has been registered.
+1:15:40We need the ability to do it on a case by case basis with home and public as well.
+1:15:45OK.
+1:15:49So before I hand off to Pankaj, just one last question on this deal specific deal and opportunity do Heartstream users.
+1:16:00So it's completely on Heartstream users to confirm the deal is registered and that's how the partner gets it.
+1:16:08So there will be some some check mark will be capturing on the opportunity to or the deal to make sure that it's captured in basis that then further restrictions can be taken care of.
+1:16:20Yes, sounds good.
+1:16:22OK, we can explore on that.
+1:16:25So yeah, Pankaj over to you.
+1:16:27You had your hand raised.
+1:16:30So the reason I raised my hand as most of the answers have been covered.
+1:16:36So I'm just covering the abstract of the understanding of the abstract.
+1:16:41Hear that.
+1:16:42So, so far the idea we had was partner best selling was more from partners initiated.
+1:16:50But what I'm seeing that it is more inclined towards CRM users initiated the collaboration between Zinfi and CRM and the partners and the CRM is driven by the two way data synchronization for the object synchronization between CRM and ZINFI partners will be using Zinfi UPM system that is there the portal that Zinfi provides and CRM users will be using Dynamics to work on a given opportunity or process and opportunity.
+1:17:31Is that a right understanding?
+1:17:41But this question to listen James or Vince, I I believe Pankaj if you could you know again repeat the question or your understanding one more time.
+1:17:59Yeah, so so far the idea we had was partner based selling is more partner initiated.
+1:18:06But from discussion, we are understanding that is more inclined towards CRM initiated, the sales organization initiated than the partner initiated.
+1:18:17Yeah, So not necessarily 2 aspects here, Pankaj.
+1:18:22Leads, when you talk about leads, yes, the sales team or the marketing team will be, you know, registering or updating leads in CRM, which will be distributed to these partners who will be taking them ahead for nurturing and, you know, turning that to business opportunity on the other hand, and and yes, when we talk about lead, current situation is partners are reluctant in recording the leads in a specific hard stream system while they're already having their own CRM to work upon.
+1:18:53So lead is that when you talk about opportunity where the deeper conversation or deal is to be you know talked about that becomes a mandate for partners to register in the partner portal which will be flown to CRM, dynamic CRM yeah and another another information I wanted to establish that the collaboration between the partner records pattern issued records and CLM will be enabled by the two way sync of the information.
+1:19:25I mean user don't need to log into two systems, that's what I wanted to just establish.
+1:19:31And another one we had a little bit touched upon the outgoing communication to the end customer, let's say for lead or opportunities.
+1:19:42I just wanted to suggest that we should keep a single system for outgoing communication while we are dealing with opportunity and leads.
+1:19:53Yeah, yeah.
+1:19:53That those communication will be taken care by Zenfi system.
+1:19:58And for the people on this call, Matt and, you know, read.
+1:20:05Or James, what we wanted to say was the communication which you're talking about when you are dealing with leads and opportunities, we are pretty sure as like any other sales system, there is constant update given to the customer saying, hey, we discussed about this and this here is the communication, here is the product information.
+1:20:22This, this kind of information will be directly done by the system which is operated by partners which is ZINFI in this case.
+1:20:31Is that correct understanding?
+1:20:33For the most part, I would think yes.
+1:20:36OK, OK, got it.
+1:20:38But we do have another nuance of internal sales team also logging onto CRM for the very same activities.
+1:20:45That is, they are also handling leads, they're working on opportunities, quotations and all.
+1:20:50And they also would be reaching out to customers via these communication.
+1:20:53So CRM should also be capable of handling these communications.
+1:20:58Yeah, isn't it?
+1:20:58It feels, yeah, like though the CRM is the most complete, it feels like there will be everything will be in the CRM from Zinfy, but there will be more things in the CRM than there are in Zinfy.
+1:21:18Correct, correct, correct.
+1:21:21Yeah, I think that's fine.
+1:21:24But for example, when I would be a partner account manager for Pro and I with the customer in France, then I would open like the Zinfi portal of that customer.
+1:21:39We could go through the open opportunities at some comments, update some statuses and those should then be yeah, synced with Dynamics.
+1:21:54OK, OK, OK, Sorry.
+1:21:59OK, So I have, we have one more point on opportunity and then maybe we can take a quick 10 minutes break and then start with the quotation part if that's fine with everyone.
+1:22:12I have one parking lot item.
+1:22:14I can share it now or we can wait till just before the break.
+1:22:18It's up to you.
+1:22:19Yeah, sure.
+1:22:20Go ahead.
+1:22:21We have a a system, Dave and Reed, I'm not sure how long we've had it called Pipedrive and it's a subscription service.
+1:22:34I'm not sure if it's app based David, but yeah, it gathers up leads from trade shows and allows us to report out against it and make and just make them.
+1:22:47They land in one spot and then they're visible for you know, follow up actions and as we mature the leads through.
+1:22:54But I just want to make you aware of that.
+1:22:57That's something that I think it's only in North America called Pipedrive and at a minimum I think we would, the team seems to like it.
+1:23:08It's effective.
+1:23:09We would need to export from that probably into Zenfi or or the CRM.
+1:23:19OK, Matt on those lines that is the lead management system.
+1:23:24If you're talking about a pipe drive, I'm pretty sure you would be discontinuing pipe drive for North Omega region as well once the new systems are you know on boarded.
+1:23:36So yes, the the entire workflow of how leads progress, what all stages it incorporates during the journey, those will be replicated in these new systems.
+1:23:46So if your internal sales are supposed to work on lead management, the entire flow of pipe drive will be replicated or built onto CRM similarly in Zinfi as well.
+1:23:58Yeah, But yes, this information of the various stages of lead, how they progress, that will be something which we are recording right now.
+1:24:08We'll ask questions on that just to ascertain the entire process of lead management.
+1:24:14OK, thank you.
+1:24:17Yeah, Papa Ashwini over to you.
+1:24:19Yeah.
+1:24:20So we so far we touched based on creation of lead opportunity and deals.
+1:24:25So here what we would like to understand is what are the major opportunity stages, the review gates, how we would like to go about it so that we can plan those review gates and stages for the apportion.
+1:24:40So I I would like to bring up the CRM opportunity screen.
+1:24:45Allow me to just quickly bring up that screen.
+1:24:49Let me let me know if the CRM screen is visible as of now it is the PPT OK Let me re share I have most probably shared on the PPT Give me a second OK Let me know once the screen the CRM screen is visible.
+1:25:20Yes, we are able to.
+1:25:20OK, I am able to see, Yep, me too.
+1:25:25OK, OK, so this is just so that you get a feel of how CRM would look like and opportunity being in a major, you know, activity where most of the collaboration would be happening.
+1:25:40So this is the opportunity, a standard opportunity, how it would look like in CRM where we will be capturing all the information around the opportunity, the budget, the time frame, the details, the need of the customer and proposed solutions, so on and so forth.
+1:25:58Likewise, we'll be having the product line items and other details as well.
+1:26:03So now drawing your attention to these stages.
+1:26:05So these are the pretty much standard stages of an opportunity.
+1:26:08So I would like to understand what are your standard stages for taking an opportunity to a closure?
+1:26:16What are the standard gateways that we are looking at for a particular opportunity?
+1:26:22Well, that was, that was actually one of my questions.
+1:26:25Has it already been identified or do we get to identify it?
+1:26:28And and if we get to identify what those sales stages are, is that something that has to be agreed upon globally or can it be by region?
+1:26:37So it right now for the first phase, we are planning a global implementation.
+1:26:44But of course we can record the regionals and we can see how we go about it.
+1:26:48But yeah, to begin with, it would be a global approach.
+1:26:54Vince, are these stages consistent with what Europe is using, let's say for the probusiness today?
+1:27:05Yeah, yeah, yeah.
+1:27:07So, so there we created a training for and we're basically training all partners also on the different stages of the the opportunity.
+1:27:20And I'm try, I will try to add our latest presentation in the chat so that you also can take that into account.
+1:27:30Not saying that that should be the way of working moving forward, that that's also like open for discussions and to make certain improvements.
+1:27:45Guys, I'm trying to remember we had alongside these stages.
+1:27:49We had like P1 through 4 alongside it as well.
+1:27:53And we you know, and then it became best case and commit right alongside.
+1:27:59Yeah, some of these.
+1:27:59So it's there's some overlap and I'm just trying to remember.
+1:28:04We haven't had an opportunity based business in a while and read no.
+1:28:13What were you what were your thoughts on on this?
+1:28:17Yeah, I mean we typically had five or six stages.
+1:28:22I don't know if we want to simplify that.
+1:28:24It starts with awareness and it goes down to either close one close lost or it could be like a continued interest or or loyalty phase that the customer remains engaged with us after after sale.
+1:28:45But it's I mean it at minimum it's got to be awareness, interest evaluation proposal implementation.
+1:29:01Yeah, I think we've all we've in Salesforce, we've always had like only four stages as I recall.
+1:29:06But it's been so long, it's been years since we've, as Matt said, had an opportunity based awareness to interest or or debt or I'm sorry, evaluation, consideration close one close lost or decision.
+1:29:27Yeah, I think it feels like these words describe the same thing and it just, we just need to train the team to hey, you know, and but there's other qualifiers that describe it, whether it's a best case, meaning we're, we're not sure we're gonna get it or it's a commit.
+1:29:44That's I think it's the next layer that I'm most interested in.
+1:29:50Yeah.
+1:29:50So these names, yeah, these comes out-of-the-box.
+1:29:54We can, you know, tweak these names to match the business process and your gateways.
+1:29:59And like you said, there would be specific conditions that would be certain gateways that would make sure that a respective stage captures the now mandatory information and only then the user proceeds further with the further stages.
+1:30:15So at every stage we can capture that information and make sure the user completes those before they progress.
+1:30:30OK.
+1:30:30So maybe we can add this point to the parking lot and we will get back in the circle back in further detail discussions to have these gateways defined.
+1:30:40I believe not every region has these stages defined as of now or maybe they are more or less overlapping.
+1:30:50We can come to a consensus decision once we get into the detailed discussions.
+1:30:59Yeah, thanks Vince for sharing the screenshots where your current sales stages and nuances of fit are shared.
+1:31:07But just wanted to you know call out these are just configurable, whatever you see on screen, entire pipeline is configurable.
+1:31:14Tomorrow you say OK, fine.
+1:31:16I would like to have five more stages to this particular workflow that is totally configurable.
+1:31:22There is no development needed.
+1:31:23Yeah, only nuance would be if in case based on the region, if these flows changes or there are few stages only applicable to North America or say for example Australia in the entire sales pipeline processing.
+1:31:39That is something which we would like to you know, no, because that would need some effort to configure and tweak the system for your liking.
+1:31:48Apart from that everything is configurable.
+1:31:51So sorry to interrupt guys.
+1:31:53So for now, let's keep this discussion towards stages of in B2B opportunities and for a actual opportunities life cycle we have a separate workshop anyways.
+1:32:07Yeah.
+1:32:07So, yeah.
+1:32:09So if we have any differentiation or specification for AB to B or partner originator opportunities, OK.
+1:32:26I think there have not been much opportunity based.
+1:32:30It's more or less a deal based workflow.
+1:32:33That's what I understood from couple of statements here.
+1:32:36But there are few screenshots shared as well.
+1:32:39So we would appreciate if there are any, if not right now even later on if you have that stage level details for specific to region that would help us into further detailed discussions.
+1:32:54Yeah, let us align and next time we come back to the topic, we'll we'll have some recommendations.
+1:33:01OK, OK.
+1:33:02So oh, we also would like to understand at what point we would call an opportunity as one and we when do we get into the quoting?
+1:33:14So that is the next session before that I we can take a quick 10 minutes break and then continue with the quoting and then of course the contract aspect of it while we are discussing the quotation part.
+1:33:28OK, OK, OK.
+1:33:30So we'll be back in 10 minutes.
+1:33:33Very good.
+1:33:34Thank you.
+1:33:34Thank you.
+1:33:36Bye.
+1:33:37Thank you.
+1:45:30Hello, welcome back.
+1:45:34Let's give it a couple of minutes.
+1:46:12I see readers on hold.
+1:46:24Is it OK, Vince James, if you can start?
+1:46:32Yeah, I think we can can start.
+1:46:35Especially I think we're now going to focus on the quoting, right, which is also more towards the pro portfolio.
+1:46:44That's right.
+1:46:45Yeah, yes.
+1:46:47OK, so I'll start.
+1:46:49Let me share my screen.
+1:46:51Give me a moment here.
+1:47:06OK.
+1:47:07So, so far we have covered the partner onboarding, the account planning, lead creation, conversion to opportunity and opportunity and deal creation as well.
+1:47:22So as we move on to the quotation, which is pretty much closely tied up with the contract, let's talk briefly about the contract part as well.
+1:47:33So right now during our discussions, it's still an open point where the contract nuances would lie.
+1:47:41But yeah, of course for the partner, the contract would be available in the Zen fee so that the commercials will be applicable while working through the leads, opportunities and quotations, right.
+1:47:54So I would like to understand who all is involved, which teams are involved in the contract creation and completion of the contract.
+1:48:08So we have a contracts department in the United States that is responsible for managing contracts in US and Canada and Latin America, I believe.
+1:48:19But part of the ownership sits with the account managers as well.
+1:48:24OK.
+1:48:25But that's with the respective regions, right?
+1:48:29Because you mentioned certain teams are those collectively working on these contracts, are the contracting within those regions or individual region would have those contractual teams and they will be owning those discussions and approvals, the regions support their own contracting.
+1:48:50OK, OK.
+1:48:51But just to call out LATAM today flows through Europe for contracting.
+1:48:57I think we need to decide for day 2.
+1:49:02We just we need to, we haven't finalized that yet.
+1:49:06But today it doesn't even though it's in the Americas region, it goes through Europe.
+1:49:11OK.
+1:49:12Because the reason to come to this part is even though these are discussions, ongoing discussions where the contract would lie, we would like to understand the visibility, the ownership of these contracts if the the Latin goes through Europe.
+1:49:27You said right, if I got that correct, correct.
+1:49:30Yeah, that's correct.
+1:49:30Yeah, Yeah.
+1:49:31So, so now the Europe region would need to have visibility into the Latin contracts and also be able to generate and work on those contracts.
+1:49:42Is there any limitations?
+1:49:44Is there any specific set of specific partner contracts those are being worked on or it's every single contract goes Latin contract goes through the Europe contracting team, they all go there and then they also reside there in the repository.
+1:50:02OK, OK.
+1:50:04And the other nuances like the approvals, the contractual terms and condition pricing and all that, those are taken care by the contract team alone.
+1:50:15Or is there any collaboration happening on that aspect as well from sales, finance and operations, Vince, right.
+1:50:26But both finance and operations, yeah, it's, it's finance and the sales teams who actually gives input on the proposed discounts, targets, rebates, things like that.
+1:50:44OK, noted.
+1:50:45And the partners of course, there would be a sharing of this contract discussions and the final approval should be available in Zenfi for the partners to refer to, right.
+1:51:00So, OK, Nitish, anything you want to add on the contracting part here since that's pretty much open?
+1:51:08Yes, maybe good to mention that currently in a lot of cases it's our multi year agreements where we try to create a separate amendment on the the rebates, the discount things like that because those can change within within the time of the the contract.
+1:51:35So, so that might might be an update each year, but but normally once the contract has been signed, we create a sales deal in SAP with all the the, the right discounts of that particular partner.
+1:51:56OK, So I, I want to discuss on the, the revisions or, you know, terminating the contracts before that Nitish anything on creation part that you would like to cover that I might just yes, yes.
+1:52:09So while we have, you know, a basic understanding of this contract, Vince James and rest of the team on Collier, we wanted to you know, delve into deeper discussion when it comes to this contract.
+1:52:20We'll explain you our understanding of the contract, reseller contract and then probably you can add on to whatever we are missing out.
+1:52:28So when you talk about a reseller contract or a partner contract, these are there are two types of contract, one sales contract or the sales partners contract.
+1:52:37Another would be the service partners contract.
+1:52:40Now when we talk about sales partners contract, what we understand is while this contract is getting, you know, created this contract.
+1:52:48The nuances of this contract includes all the discounts the partner is going to get if they purchase parts from us.
+1:52:54All the the you know, rebates, they are going to like rebates which are going to get adjusted when a particular deal happens.
+1:53:03All the prices, whenever a particular deal is done with respect to a customer's interest, the prices and everything is driven from this contract that that is all about sales contract.
+1:53:17When it comes to service contract, what we understand is for service, whenever the spare parts and consumables are ordered from Hardstream, what prices they attract that is mentioned in these contracts.
+1:53:29What are the SLA timelines or agreements you have to adhere when a particular customer is to be catered that lies in this service contract.
+1:53:39So this is our understanding.
+1:53:40We would like to, you know, no more how are these contracts, you know, formed, what all nuances this contract consists.
+1:53:48And if I'm not wrong, these contracts are generated when you are onboarding a new partner in your ecosystem as hard stream.
+1:53:55So really open for discussion and we would like to know more.
+1:54:02So are you talking about contracts specifically for, you know, for part channel partners or are you talking about end user customer contracts?
+1:54:10Because we deal with both specifically in North America.
+1:54:16OK.
+1:54:16So we have contracts between Heartstream and a specific hospital or Heartstream and a specific EMS customer and we need to be able to manage and we we also have something called group purchase organizations, which are groups of hundreds or thousands of hospitals that are part of one contract.
+1:54:37So there's lots of if, if we're going to have a, a contracts discussion, there are lots of things that we have to think about and plan for, for capabilities.
+1:54:48OK, OK, OK.
+1:54:49So for now, since the topic is on the reseller part contract, we'll go ahead with that.
+1:54:55The customer contract, we will surely keep it up for discussion for some other, you know, time for.
+1:55:01Yeah, I just don't want that to be I, I don't want that to be forgotten because it's, it's, you know, moving forward that's gonna be a big part of our, of our business as well.
+1:55:10Understood, Jen James.
+1:55:11OK, thanks.
+1:55:12Very good.
+1:55:14So, OK, we can, we can discuss about the partner contracts.
+1:55:19Yeah.
+1:55:20So sales partner contracts typically we, we will provide, you know, an addendum to the contract which lists what products and product categories that they have the ability or that they're being contracted to distribute for us.
+1:55:37So we have some contracts that are for AED's only.
+1:55:40We have other contracts that are for the professional side of the business only.
+1:55:44So, so we would filter through the corporate price file and narrow it down to the specific items, whether it's a service distributor, whether it's a professional distributor that's selling into hospitals or EMS or whether it's a channel partner that's selling AE DS into non healthcare spaces.
+1:56:04So we would, we would work through that corporate price file, adjust it with the typically current pricing and with whatever products we want that specific channel partner to be selling on our behalf.
+1:56:22OK, OK.
+1:56:25Do you also have any regional constraints on the partners or if a particular partner is associated with North America, they do you have any further constraints on those regions as well?
+1:56:42So they can you know serve the entire or all the customer base around the North America or any restrictions there.
+1:56:49But we well, Matt, we did have some sometimes we do put state, we give people regions and zones, but we moved away from that in the Ms.
+1:56:59map, correct?
+1:57:02I think we did, we started, we started off saying, you know, you have these four States and then and then we just opened it up realizing that people will typically stay, you know, close to home if these products require installation, right?
+1:57:19They don't want to fly from coast to coast to the, you know, 3000 miles to install 11 AE DS right.
+1:57:24So they typically stay close to close to home.
+1:57:27So I would probably keep the opportunity in there that we could segment by geography.
+1:57:37But we typically do that with wording in the contract rather than right systematic restrictions.
+1:57:44I can't think of a reason we would need it in the system hardwired that way.
+1:57:49Do you do it that way, Vince?
+1:57:51Yeah.
+1:57:51In my country, in Europe, we have something as territories where we mention in which territory they are active.
+1:58:01But that's really a tricky part because we're not allowed to tell a partner in Germany, hey, partner in Germany.
+1:58:10You cannot sell in France because it is seen as one open market in Europe.
+1:58:24I don't know that the systems need to support it.
+1:58:27Like Jim said, I think we handle it in the contract and the product exhibits.
+1:58:31That's great.
+1:58:32Here's your pricing and here's where you can sell, OK, That that works great.
+1:58:38So the less the restrictions that's better I would say a system per SE, OK.
+1:58:45OK.
+1:58:45So this was like the contract wherein the nuances of particular price based on the price group file and everything is decided and that's how we have a contract for this particular reseller.
+1:58:57So that this particular contract encompasses which all products on behalf of our stream, this reseller is allowed to sell and at what price is is that is that correct understanding correct?
+1:59:11OK.
+1:59:12But on the same lines, we do understand that there is a quotation process say for example, if I'm already having this contract and AED is to be sold at say for example 500 U.S.
+1:59:26dollar as per the contract hypothetical number and a quotation is to be created.
+1:59:33This quotation also is, you know, extended to hard stream for some deals or some discounts or any price change or the contract price remains the final one.
+1:59:47So 2 comments there.
+1:59:50One, if you're dealing with, if we're talking specifically channel partners and not direct sales, typically in north of in North America, we let our distributors use their own systems for pricing and quoting and they just place orders against us.
+2:00:09Or their inventory or or through an SBE for their inventory or purchases.
+2:00:15So, but if we have a stocking distributor here in the US, they just cut a purchase order basically directly to our order team because they, their contract has their pricing right on it.
+2:00:27So that when our order team gets the order, they realize that the dollars match for the contract, they theoretically will pull the proper pricing, see that the PO matches and therefore place the order.
+2:00:40Vince, correct me if I'm wrong, but in other parts of the world, we actually provide our distributors A quoting tool and they use our quoting tool to quote their end user customers, which is Sofon Quest, correct?
+2:00:55Yeah, that's, that's correct.
+2:00:57So that's pulling in the the the information from the sales deal from that particular partner in in SAP and then giving the correct pricing.
+2:01:11I'm not sure if that functionality really in in sending in the out the so phone quote towards their end customer is used often.
+2:01:23It's more that they use the configuration tool then see, Yeah, basically they're buying price at heart stream and they use that as a basis hopefully in the end to place the order.
+2:01:39And they also use it when for a certain deal additional discount is needed to win the deal on top of the contractual discount.
+2:01:52And then that quote is going into an approval flow, OK.
+2:02:01So, so here North America, we don't do that.
+2:02:06We give them their contract, we give them an addendum with all their pricing.
+2:02:09They cut APO directly to our orders team and they place the order and and we do not provide them any quoting tools or any access to quoting tools whatsoever.
+2:02:23And then my ideal world, they would create a quote, then connect with their end customer, if they win the order, go back to the quote and convert it into an order towards Dynamics.
+2:02:40And maybe they need to make some last adjustments on configuration or adding a few consumables.
+2:02:48But I would like that they use the quote as a starting point to convert it into an order.
+2:02:57And, and, and the purpose why rest of world has always done that is because it's nice and clean.
+2:03:04It pulls contractual pricing when the order is attached to that and it is sent in with a purchase order or credit card.
+2:03:15Those orders will always match because they came straight out of our system and, and it doesn't it, it reduces the amount of rework for the order team.
+2:03:25So very, very clean on that side here.
+2:03:28Every so often we will find someone who gets something that's not priced properly.
+2:03:33They cut in a cut the purchase order, they send it in and then the order team has to say, sorry, you know, you have to change this.
+2:03:39This isn't correct.
+2:03:44Moving forward, you know, we can brainstorm on as as far as what tools are available to us through Zenfi and Dynamics to make sure that when a distributor wants to place an order, their contract pricing is correct, their configurations are correct and that order will enter and ship without any pain to heart stream or or to the distributor.
+2:04:15OK, OK, So what we can do here is we can note down the types of contracts we have in place and against particular type of partners.
+2:04:27So what we understand, I mean the initial discussion was circled around having a standard process of catering these kind of you know, situations wherein any partner if in case he's supposed to provide quotation to the customer, he straightaway is bounded by the contract which we are creating for that particular partner.
+2:04:48In that particular partner, the price derivation will be done based on whatever nuances of the contracts are based on that the prices will be derived against the quotation.
+2:04:57And once the customer agrees, that particular quotation will be converted to a sales order for fulfillment.
+2:05:04OK.
+2:05:05So nevertheless what we can do in here is we would like to you know, have a look at type of contracts which currently are in place for your partners and accordingly we can take a call how this is to be, you know, managed.
+2:05:20We already requested one contract like the complex of the complex contract to Patrice and that is 1, you know, open item.
+2:05:32So we will have a look at it and if in case there is any nuance to it to be discussed further, surely we'll get back.
+2:05:39OK, so this was about this Jim.
+2:05:41Yeah, it it's Jim.
+2:05:42Before you move off, off, off details of contracts, I wanna make sure you have in the in our on our follow up list direct sales.
+2:05:53There are numerous more complicated contract requirements that we need to be able to offer for direct sales and that one that's a, you know, it could cause our company a lot of pain if we aren't able to do the things that are required.
+2:06:12So direct sales contracts needs to be, you know, kind of front and center.
+2:06:16I think just let me know which call we will address that on and I'll and I'll be there if you have to give a, a gist of this direct sales contract, James, what what we understand is the earlier part which we called out wherein customers like hospitals or group purchase organization or EMF customers.
+2:06:40These kind of customers will be dealing in direct sales where they these are the customers will be placing direct orders with Hardstream, which we are supposed to, you know, give and these individual customer.
+2:06:51The moment you say the, the the customers with hospitals or EMF customers or group purchase organizations, they get onboarded into Zinfiz ecosystem.
+2:07:03You go ahead and design or device a contract for their ways of working.
+2:07:08That means once this contract is in place, no matter what happens, whenever the order flows in from these customers, it has to adhere to the prices or the nuances which we delay like you know, which you put together in that contract, right?
+2:07:22So, so, so, so, so, so This is why I ask this question is Zinfy is a partner management tool, not an end user customer management tool.
+2:07:34So, so I would imagine our sales contracts department would work with end user customers to get the contracts in a state that they are then complete.
+2:07:50Does it have the ability to manage fixed pricing and multi year fixed pricing?
+2:07:56In other words, if you have a a four year fixed price contract and we have 4 price increases during those four years, right, an item that went under contract at $100 would go up to 105 and then 110 and 115, etcetera.
+2:08:17So by the end of the fourth year, that $100 item on contract is now $120.00.
+2:08:23Does it have the ability to look back and pull from an earlier price file for quotations and orders for those customers who are on a three or four or five year fixed price?
+2:08:37Some of the intricacies we have to deal with and I don't want to bog down this call if we're talking predominantly about channel partners, but for the US and Canada there's a lot of direct sales.
+2:08:49Every hospital is you know, hospital and EMS are EMS is typically half and half direct and channel and hospital is mostly direct.
+2:08:58OK, OK, James, before you know progressing then just one question wanted to ask say, for example, today a hospital as a customer gets onboarded into heartstrings ecosystem, how the sale or how the orders are placed?
+2:09:14Is that, that the, the, the, the representative from hospital or such organization, they directly contact the sales team and then that's how they place the order or the hospital will contact the sales team will, you know, will go out and do a quotation.
+2:09:30They'll decide they want to purchase, they'll cut a cut an order, a purchase order against that quotation.
+2:09:36And then they'll send in the quote and the, and the perch or the quote number in the purchase order, typically to the same sales Rep account manager.
+2:09:45And they would, you know, push it in through whatever the process of the day is for getting orders entered with the company.
+2:09:52Perfect, perfect.
+2:09:53Sure.
+2:09:54In that scenario, James, we, we also had a high level and understanding of this type of customers.
+2:09:59What we were thinking is like you have your reseller portal for Zenfi, which becomes a, a tool or an interface for someone to log in and you know, do all these order placement and quotation request activities.
+2:10:13These kind of customers can also be onboarded onto Zinfy.
+2:10:18They have their own login, they log into this Zinfy portal with limited features and functionalities as opposed to your resellers and they can request for quotation, get all the nuances done and the orders will be flowing in from there.
+2:10:32So that was the idea.
+2:10:33OK.
+2:10:34So we'll have to we'll have to, we'll have to figure that out.
+2:10:36And Matt, maybe it's maybe it's the Mrs.
+2:10:39for today that are selling into hospitals, US, Canada get Zinfi access and that's their portal to get orders entered or we put them right into Dynamics and that's their channel to get, you know, their portal to get orders entered.
+2:10:56What we can figure that out as we go.
+2:10:58I'm not sure if Dynamics has kind of partner level access versus direct employee level access, so that confidential items can't be seen by partners, et cetera.
+2:11:09Yeah.
+2:11:09So James, as of now, Dynamics have only employee level access.
+2:11:13Each and every user who logs on to Dynamics will have one license assigned, which is the named user named license, basically.
+2:11:20So today if James is supposed to log in, he will have one license assigned to his, you know, organization ID that definitely is not, you know, something which a partner will be getting.
+2:11:34So he will have to, you know, log on to Zinfy or alternative option to have these orders punched in.
+2:11:40Yeah.
+2:11:41OK.
+2:11:41So Dynamics does not have the ability to restrict by user what they have access to see.
+2:11:50Yeah, I'm saying we wouldn't.
+2:11:52We wouldn't wanna give it.
+2:11:53We wouldn't wanna give a partner a contracted salesperson, even though we treat them like they're a direct sales Rep.
+2:11:59We wouldn't want to give them access to Dynamics.
+2:12:01This is what you're saying, Yes, And probably also not an employee who will not be able to access Dynamics CRM directly.
+2:12:12Probably also from a licenses perspective, it's going to be otherwise very expensive.
+2:12:19Definitely.
+2:12:19OK.
+2:12:20We'll figure it out.
+2:12:21Regarding the quotation tool, and maybe this also has a link to yeah, to the discussion on partners versus direct business.
+2:12:33From my perspective, it would be important that the quoting tool the the way of working the look and feel would be the same for internal users in dynamics on the same for partners on Zynfi and also for possible customers on a on a E store or ordering platform.
+2:13:00So therefore also already earlier I raised the expert logic tool to the lease to take that in consideration.
+2:13:10But he mentioned that we're first would look to the out-of-the-box dynamics functionality.
+2:13:20Yes or quoting, Yeah, sure.
+2:13:27OK, just to OK.
+2:13:28Yeah, Ashwini, just to summarize contracts, those are, you know, like they have their own nuances when it comes to the group purchase organization or EMF customers or hospitals.
+2:13:42These are direct customers who'll be having specific contracts as in when they get onboarded.
+2:13:47At the same time, there are reseller contracts both for sales and service as well, right?
+2:13:54And the nuances of these contracts are to be figured out.
+2:13:58But at any point of time, these contracts will be associated with these customers and contract management will be initiated in ZINFI.
+2:14:05The data will be flowing onto dynamics for visibility.
+2:14:10The nuances of the contract, we will discuss in detail as and when we get access to any of the contract format and that's how we'll take it further.
+2:14:19OK.
+2:14:19OK, OK.
+2:14:21Old are you Ashwini?
+2:14:22Yeah.
+2:14:22Also I would like to summarize on the quotation part.
+2:14:25So we had two variations here where the quotation is extracted basis or the pricing extracted basis the contract.
+2:14:35However, there is one deviation where the partners do apply their discounts and pricing for the customers and then that goes through an approval process.
+2:14:48Whereas the rest of the world, the North America where they do not have this process, it's it's a straightaway a link to the contract and the pricing and it's in order that is punched in by the partner directly.
+2:15:02So again we would get into the details of if we would like to you know these two processes needs to be continued further.
+2:15:12And if so we would like to deep dive into a little bit into the approval process, who owns the approval for these kind of quotations where an additional discount or pricing variations are added by the partner for the end customers.
+2:15:28Yes, just one clarification outside the US the additional discounts that Vince mentioned is above the distributor or dealer discount pricing.
+2:15:42It's not an end user customer pricing.
+2:15:44But other than that, yes, I agree beyond the contractual pricing that would be an additional discount for the that would be added, right.
+2:15:52So the sorry and so that's currently working with approval matrix.
+2:15:59So if it's within the contractual discount, no approval is needed.
+2:16:05Is it then additional discount until a certain threshold then there's an approver needed.
+2:16:13If it's like even bigger discount, then yeah, it's going up to our head of finance to to approve.
+2:16:23OK.
+2:16:24And who is the first level of approval here approver here then it's going to the partner account managers.
+2:16:32Partner account managers, OK.
+2:16:34And 2nd, 2nd threshold is the sales director of the region.
+2:16:45And if it's even a higher discount, then also the approval from the head of finance is needed, OK.
+2:16:55So there could be possibly 3 levels of approvals depending on the the if it's a higher discount or depending on the discount.
+2:17:04OK, Yep, same here.
+2:17:06Same, same for North America, there's 33 tiers, 3 to 4 tiers of approval noted ending, ending of course, at the top with finance.
+2:17:15MM Hmm.
+2:17:17OK.
+2:17:18And how are the current expirations or revisions monitor or track and how are those reinitiated the extension of the contracts, you mean just contract extensions, they expire contract extensions, yeah, yeah.
+2:17:38So typically sales contracts will know which contracts are expiring and we'll have a trigger to let us know that they are expiring.
+2:17:51In the in North America, we typically renew every contract every year.
+2:17:55We have started to go to multiple years just to save us the pain of all the legwork.
+2:18:01Same year.
+2:18:02Yes.
+2:18:02Reid, what, what are we at now for typical length of a standard distributor contract?
+2:18:07Are we at two years or still one year?
+2:18:13Are you still still on hold?
+2:18:15I think I'm Matt as well.
+2:18:18Darn.
+2:18:18So yeah, we may still be on a one year for North America distributors, but we have started to go you know to two and three-year duration and then we simply update pricing.
+2:18:33One of the things to note is that with, and I think it's true for you as well Vince is, is for distributor contracts, we always keep them on current pricing.
+2:18:44So we have the right, even during a 12 month or 24 month contract, we have the right to raise our prices as we see fit.
+2:18:53And typically in the contract there's a 60, typically a 60 day notice that we have to give them before the new prices go into effect.
+2:19:03And contracts would then send out a message to all the distributors with a with, you know, the updated price files attached.
+2:19:10So that's it starts that 60 day notice and then we can start realizing the updated pricing.
+2:19:17Yeah.
+2:19:18So each product has a list price and that list price as mentioned, we can index during the contract.
+2:19:30And then the partner gets a certain percentual discount on the list price per and that can be different for each product group and can even be in our contracts be different for a unique material where they have like a higher discount.
+2:19:53And these and many, many, many, many times they separate between hardware and supplies as well.
+2:20:00And these place changes.
+2:20:03Go ahead.
+2:20:04And Sir, sorry.
+2:20:04Yes, yeah.
+2:20:06What are the min and Max contract?
+2:20:08Yes.
+2:20:10Can we create a contract for 60 days or minimum is one year or what are the maximum years of contract we need to put here or it can go 510 years as well or any deviation with the respect to the regions with direct contracts, we we go up to five years typically, but I've never seen a distributor contract go to five years.
+2:20:32So for the distributor, what are the minimum years of contract is required?
+2:20:36Minimum is one year, Yeah, one year Max next what I have seen in our region it's it's three years.
+2:20:45Same.
+2:20:47OK, thank you.
+2:20:49OK.
+2:20:50And these revisions, do they trigger another level of approval for the contracts which has already gone through an approval process?
+2:21:02Repeat the question.
+2:21:04So sorry the the quotations suppose there is an revision in pricing or the contract pricing and there is an in progress quotation happening.
+2:21:15So I believe the earlier quotes are still stand valid, right.
+2:21:19Is there any impact on those open or in progress quotations through the expiration date of the quote?
+2:21:27And we will honor that pricing even if it means doing, you know, special discounting to match that price.
+2:21:33OK.
+2:21:34And our quote validity dates are typically 60 days.
+2:21:38OK, noted.
+2:21:40OK, so that's pretty much about the contract and quotation.
+2:21:45So once the quotation is generated, now there are again we will be talking more about the quotation process and then moving to order.
+2:21:54Of course, we have this visibility where a direct order can be punched in as well.
+2:22:00So once the quotation is confirmed approved, this code will be generating a confirmed sales order in Dynamics 365 CRM and that would further flow into the FNS system for fulfillment.
+2:22:15Now when we talk about the direct order placement, that will also be initiated from Zenfi and that is our understanding the direct order will be punched in, in Zenfi by the partner.
+2:22:29Yeah, we have to figure out what that workflow looks like.
+2:22:32I only found out five minutes ago that that our contracted direct sales people will not have access to Dynamics.
+2:22:40That was a bit of a surprise.
+2:22:42So we have to figure out what we do with direct sales moving forward and if it if it ends up being that all of our contracted sales reps work through Zinfy just like a distributor partner that can work.
+2:22:55It's just I know nothing about Zinfy to see if it will meet our needs, but kind of A to to be determined.
+2:23:01But from my understanding the sales team so pumps they should have access to to dynamics.
+2:23:13Yes, Heartstream employees only, correct?
+2:23:17Yeah, yeah.
+2:23:19So I don't want, I don't want our Heartstream employees to have to, you know, work through the details of entering every order from every distributor.
+2:23:26That would be silly.
+2:23:28I mean for every direct sale that would, that would be a lot of work.
+2:23:30So we just have to figure out what the business workflow will be for direct sales for North America.
+2:23:37OK, most probably James, it is going to be Zinfy only.
+2:23:43But as you said rightly, we'll figure out the exact workflow and then probably it'll be conveyed before we finalize on it.
+2:23:51We're good.
+2:23:51We'll figure that one out.
+2:23:53Yeah, Ashwini before we move on to the quotation on last, you know, aspect of the contract, we we covered the reseller contracts, direct sales customer contract.
+2:24:03We we missed out on the service contract.
+2:24:06So James wins and the rest of the team whoever can, just wanted to know if when we talk about a service contract for the authorized service partner, what all it encompasses we are transitioning to?
+2:24:25So two things.
+2:24:26One, we're transitioning to 3rd party service everywhere.
+2:24:30OK, we will no longer have a direct service organization.
+2:24:33So we will need the ability to, we will generate part numbers and need the ability to quote those part numbers for service for individual service parts.
+2:24:50We will also need to have contracts that give our authorized service providers discounts on parts.
+2:25:00If if we choose to do that multi year service contracts need to be loaded into the system.
+2:25:10So, so all of our hardware is of course serialized.
+2:25:13So if you have serial number 123 and someone chooses, A distributor chooses to cover a service distributor chooses to cover that serial number for for the customer for five years, then they may choose to buy from us a five year parts contract at a previously agreed upon contractual price.
+2:25:35So very similar to hardware distributors, except they typically buy service contracts, which allows them free parts, right, for a length of time.
+2:25:51So you know, one year, 2 year, 3 or 4 year, five year typically.
+2:25:57And the part, the number of part numbers are very much reduced.
+2:26:02So it would be they'd have access to all of the service parts that repair everything.
+2:26:07If they wanted to buy a specific circuit board, they could do that.
+2:26:11But for contracts, there's only just a handful of part numbers.
+2:26:19OK, OK.
+2:26:20So this service contract, yeah, yeah, service contract typically then involves all the prices with respect to spare parts which the partners are procuring from hard stream and then the prices which which is to be taken into consideration, I guess 2 two things.
+2:26:36But if you divide it in half, they need to have a contracted this a a contract discount off service parts, the individual part numbers for items.
+2:26:46That's the first half, right?
+2:26:47The second-half is they need to be able to buy a one year in increments of one year up to five years.
+2:26:57They need to be able to buy post warranty service contracts for a specific serial number.
+2:27:03So if we create a part number, that's part number, you know, 888 and they, they sell serial number 123, right?
+2:27:10And the customer who buys serial number 123 says to the distributor, I would like to have an extended service contract to protect this product for the next 5 years, right?
+2:27:22That distributor would buy from us, they'd get the one year warranty for parts.
+2:27:28So for the first year, the warranty covers free parts for that distributor for that serial number.
+2:27:33But then if the customer desires five years of coverage, they would place an order to us for four years of service contract, meaning all the parts for that serial number are free for four years.
+2:27:47So, right, if you divide the service the service distributor needs into two parts, 1 contracted discounts on part numbers for parts, right.
+2:27:582 is contracted discount on part numbers for annual service contracts against specific serial numbers.
+2:28:06Does that make sense?
+2:28:09Yep, yes, on the part numbers, OK, on the device serial numbers and then then that brings you know to an another important aspect, the serial number or the actual device serial numbers which are covered by these distributors.
+2:28:26So are we saying these distributors do inform which all serial numbers from which all customers they're going to cater against a particular contract?
+2:28:34Because then the list they provide you right, they if, yeah, if, yeah, they provide the serial numbers.
+2:28:41So if they buy, you know, 10 units and they have 10 serial numbers and they wanted them place an order for four years of service contract for all ten of those serial numbers.
+2:28:51They provide those serial numbers to us and our systems have to be able to say, have to be able to enter data that says for these 10 serial numbers they are covered.
+2:29:03This is the free part for the next 60 months, right?
+2:29:0812 months of warranty for free and 48 months of post warranty service contract for free.
+2:29:17Does that make sense?
+2:29:19Yes, yes.
+2:29:21OK, All right, all right.
+2:29:26So probably it'll make you know more clearer to us when we actually have a look at the contract record and you know, when we try to, you know, solutionize that probably there is where we will have more queries into nuances of the contract.
+2:29:41But for now on on the on the topic, we do understand the nuance.
+2:29:45Yes, the series contract answer.
+2:29:47You have something to say.
+2:29:49Yeah, Thanks Nitesh.
+2:29:51So James, I just had a question, like for example distributors sold the product to customer, Yeah and they have some warranty one year after that can distributed direct the end customer from the distributor side they can directly purchase the service from hot stream or they must go through only from the distributor to purchase the external service.
+2:30:14If the distributor, which most are most not all, if the distributor is a hardware distributor, so they sell for us and they service for us, which many do, then yes, they would go straight through that distributor for quoting the new product, shipping the new product and then quoting and selling the post warranty service contracts if they are separate.
+2:30:40So someone else sold the defibrillators and now the service distributor gets involved because the customer says they want, you know, four more years of coverage, right, four more years.
+2:30:54So that service distributor would then price out with with their own margins included, they would price out coverage for four years.
+2:31:04And for that service distributor to protect themselves, the service distributor would buy from Heartstream four years of parts contract, OK.
+2:31:15So, so OK, the distributor buys the coverage, the service distributor buys the coverage for the serial number irrelevant of whether or not they sold the hardware.
+2:31:27So they must go through the service distributors so that they have a contract for the next two years.
+2:31:31Services, yes, for everywhere but the United States.
+2:31:35For everywhere but the United States.
+2:31:38OK, So what about if the end customer is directly purchasing from Hot Stream, the service contract, do we need to inform to the service distributor as well?
+2:31:47This is a new contract for this product and this is a customer who purchased the service directly from the hot Stream so that you need to provide the service for the next 4 years.
+2:31:55Do we need to inform to the service distributor as well?
+2:31:58I think just just for the purposes of day two, yes, we would have to take all the all the service entitlements we have on our current systems and manually migrate those over into Dynamics so that those serial numbers remain covered for all the people who paid for that coverage in the current systems.
+2:32:22Does that make sense?
+2:32:24So if we have it, you know, if globally we have you know, 40,000 devices that have between one and four years of service contract remaining, then those all have to move into our new systems.
+2:32:37So that when the customers engage with us, then you know, and they gave us money, right.
+2:32:43As far as they're concerned, they don't know our systems change.
+2:32:45They, they know they gave us $40,000 to cover their product for four years and they don't care that our systems change.
+2:32:51So when they call in and say I'm having a problem with my specific serial number, they want us to say, I see you have a contract and it expires in December of 20, 30, right.
+2:33:03So that all has to migrate over just for the purposes of day one and then it's business as usual in the new systems.
+2:33:12Is it probably the same from the global or only for the North America we're talking about?
+2:33:18Vince can give some feedback to Rest of World.
+2:33:20I think it's very similar though, because Rest of World has been has transitioned over to 3rd party service as well.
+2:33:32OK, for now, local service indeed that that's for Europe the case.
+2:33:38But to be honest, if you really want to know the, yeah, all the details, I need to connect you to, yeah, our service manager in the region babies.
+2:33:52Yeah, OK.
+2:33:56Yeah, thank you.
+2:33:57Thank you, Nitish, go ahead, continue.
+2:34:00Thank you.
+2:34:00And Sir, OK, so we have so far completed the contractual part including the service contracts and the code creation, direct order creation as well.
+2:34:15There is one open point in terms of North America where majority direct sales is done by the third party sales team.
+2:34:22So that's an open discussion for further refinements.
+2:34:26And now moving on to the order part of it, once you go to before you before we jump to order, I just have one question regarding quotes.
+2:34:34Sure, with direct sales and with indirect sales as we mentioned earlier, indirect sometimes for competitive reasons we need to give additional discounting.
+2:34:45So there has to be the an escalation process that that Vince and I mentioned with, you know, 3 to 4 tiers of approvers.
+2:34:56Yeah.
+2:34:57And whether that is tied to a specific deal or or opportunity, I don't know what you call them in Dynamics, an account with an opportunity under it.
+2:35:12Sometimes we need discounts that are not specifically tied to opportunities where we need to do a blanket discount and apply it to multiple different customers.
+2:35:21So some type of a discounting discount request workflow, whether it's an independent element of the system or whether it's tied to individual deals.
+2:35:36I'd like both, to be honest.
+2:35:37I'd like to be able to give a discount on a part number for the next 6 months, right?
+2:35:42And I'd also like to be able to give a discount on individual opportunities in the system.
+2:35:48And just just to make sure that that discount request process, the technical capability is, is in the system somewhere and fairly quick and easy to work through.
+2:36:03You don't want a salesperson to have to wait or a channel partner to have to wait two weeks for our people to approve things, right?
+2:36:11We want some kind of notifications that just hit you quickly to say you have a pending approval.
+2:36:20OK, noted.
+2:36:22So what I understand or quickly summarize, we're left with 30 minutes.
+2:36:26So I'll try to be quick here.
+2:36:30Apart from the standard pricing and the court level discounts, we are looking at discounts that can be applied at part numbers for a certain time frame as well.
+2:36:40Also at individual opportunity level, there needs to be an additional discount.
+2:36:45When I say individual, individual opportunity level, is that certain type of opportunities you are referring to or and it's it's at the opportunity, Yeah, at the opportunity level.
+2:36:57So if you have OK, Saint Vincent's Hospital, right and someone creates an opportunity for 10 Intrepids, right and they're going against like a competitor and they say I need four more percent to remain competitive here or I think I'm going to lose the deal.
+2:37:13Well, we want to look at that.
+2:37:15We want those different tier levels to look at that, the appropriate tier levels and have it be serial.
+2:37:22So it starts at the bottom to make sure the sales manager knows that their salesperson is giving away discount, right.
+2:37:28And then it moves up to if it's over a certain percentage, it moves up to the next level and if it's over a certain percentage it moves up, etcetera.
+2:37:36So yes, but the key there is speed.
+2:37:40We don't want people whether they're direct or direct contract or distributor, we don't want them waiting a week to get something approved.
+2:37:49Ideally we'd like them to be waiting a day.
+2:37:52And yeah, so once we establish the discount levels where and how needs to applied, we can work on those notifications.
+2:38:00So yeah, we'll deep dive into these conditions and approvals in our further discussions.
+2:38:06So these points are noted.
+2:38:07Yeah, the business scenarios, OK.
+2:38:10And from my understanding looking to sin Phi, if we have and if we're looking to quoting, so then it would be my understanding that each quote also is connected to an opportunity.
+2:38:27Yes, absolutely.
+2:38:29OK, Yeah.
+2:38:31So the court will be initiated only after an opportunity is generated.
+2:38:36So there won't be any orphan quotation quotes in the system.
+2:38:39It will always be associated with an opportunity question for you.
+2:38:44So, Vince, I'm glad you brought that up.
+2:38:47We do many, many, many, many direct quotes for very, very tiny quantities and very tiny dollars.
+2:38:56Someone wants to buy a battery, right?
+2:38:58To do all that work to create an opportunity and then to, to quote $150.00 battery, right?
+2:39:04It's, it's a tremendous amount of work.
+2:39:05So today we have created like dummy opportunities for supplies.
+2:39:11So if we're quoting a battery to a hospital, frankly, I don't care if we're quoting it for a hospital or a, or a veterinary clinic, right?
+2:39:20It just doesn't matter to me.
+2:39:21So, so we want to for the purpose of speed, if it's in Zenfi, great.
+2:39:28If it's directly for direct sales, if it's in dynamics, that's fine too.
+2:39:36But I don't want people to have to create an opportunity against an account in order to quote 1 battery or one roll of paper.
+2:39:46I agree that, yeah, on the other hand, I'm surprised that we're quoting, we're creating quotes for one batteries because I would expect that such a customer then converts their order or gets their price via the E store functionality in in North America.
+2:40:08Vince, I could curl your hair.
+2:40:10No, no, no, no, E store does not work here today.
+2:40:13So unfortunately today the E store is off the table for hospital purchases.
+2:40:18So we are literally, our contractors are literally quoting one set of pads, 1 battery, one case of paper.
+2:40:25So we just need to have a way.
+2:40:28You had mentioned we don't want any orphan quotes, but you know, perhaps we find a way once it's launched to work rather than finding a way after launch to work around the system.
+2:40:38I'd rather have a plan in place as we're developing processes here so that when we need to quote something tiny like that.
+2:40:46Mm hmm.
+2:40:47And we don't want people to have to take 15 minutes to create an opportunity and then put the products on and then do the quote anyway.
+2:40:54You you get my points.
+2:40:56We can figure out.
+2:40:56Yeah, we can figure out the solutioning part of it.
+2:40:59Yeah.
+2:40:59But noted the scenario that's that we need to take in account for the quotation part.
+2:41:04OK, OK.
+2:41:05So I quickly wanted to go into the CRM system to just give you a feel of the quotation and the order, but I think we are short of time.
+2:41:14Let's keep that for the end of the session.
+2:41:18So yeah, once the code is generated, we'll work through the nuances of the smaller or codes against a shell opportunity that might bring up a different workflow.
+2:41:32But right now the approved code will be converted into an order in the Dynamics CRM system and then that will flow downstream into the FNO system and then the four PL.
+2:41:44and the fulfillment flow would be triggered and the ERP will be managing the invoices.
+2:41:49So I won't well into details of the fulfillment and billing process.
+2:41:55So I hope we are good here.
+2:41:57Once the code is confirmed, the order is generated and that will further get into the fulfillment process and the invoicing part of it.
+2:42:06Now while this is happening, the key statuses will be synced from the respective ERP systems to CRM and then to Zynfi.
+2:42:17So Zynfi will always have the current status of where the fulfillment process is, what is the current status and those details that are required for a partner to have visibility into and further communicate to the customer.
+2:42:34So that's until the fulfillment and the invoicing part.
+2:42:38Any questions here or any points to add until the fulfillment and invoicing process Something what I recognise from partners is that when quoting they don't have yeah feasibility on when exact day will need the equipment to be delivered.
+2:43:03But once they place the order they they know that information.
+2:43:08So they want to add an RDD requested delivery date to the order.
+2:43:14So that is something that needs to be taken into account when converting a quote into an an order that requested delivery date is a really important field that needs to be added.
+2:43:29All right.
+2:43:30So before the approval of the quotation, this can be a check to have that requested delivery date, right?
+2:43:40No, but the approval flow is more linked to the pricing part, pricing part of it.
+2:43:47OK.
+2:43:48So I'm noted with that pricing information, the partner goes to their end customer when they then find the agreement on and get the order, hopefully then they will come to Zinfy to come to pick up the quote and to convert it into an order.
+2:44:05And at that point they want to add, yeah, an RDD to the to the order.
+2:44:12Understood.
+2:44:13So it's it's only the request for delivery.
+2:44:16That's what required to be captured before the court is converted to the order.
+2:44:23No, on the order on the order.
+2:44:26So what what the request is if in case any order is received after the code gets converted or finalized requested delivery date RDD is to be conveyed before the fulfillment starts, right?
+2:44:39Yeah, yeah.
+2:44:40Captured.
+2:44:40Yeah, Yeah.
+2:44:43So that is something that partner would be confirming.
+2:44:47Now we will again work out how we capture and where we capture, but that's something mandatory for an order to be created.
+2:44:56OK, noted.
+2:44:59And I assume, I assume at that time of order entry, whether it's whether it's channel partner or contracted sales through Zenfi or whether it's direct sales of Heartstream employee directly in the CRM that if that there would be the opportunity to schedule a delivery date instead of just letting the system tell you, you know, many times people want to receive as soon as possible, right.
+2:45:24But a lot of our channel partners sometimes want to break up their orders and ship some in you know what, two months and some in four months and some in six months, right.
+2:45:32So hopefully that there is a, a, a delivery date that you can choose or even split the order up into multiple sections so that you can have different deliveries requested for different line items.
+2:45:44OK, OK, noted.
+2:45:48So we'll be capturing the line items against the sales order.
+2:45:51And in addition to that, the request for delivery date or the date of delivery to be captured individually as well.
+2:45:59In the US, we have channel partners that buy place like annual orders in, in the first quarter and then break up that annual order to ship some every 60 days, right, for the rest of the year.
+2:46:11So that that's what I'm talking about.
+2:46:15We're also at that thing in Europe, but during migration we had a lot of issues with those orders like full year stock was delivered at partners.
+2:46:30So we are now pushing partners to really add 1 RDD per order.
+2:46:40But still if we have like a really controlled way of working, yeah, then we can also process the those yearly orders for the four partners.
+2:46:51So that would be good in it rather than breaking those up into separate orders where you ship 50 and 50 in March and 50 in August and 50 in September, I'd rather have one order even if we have to break them into separate line items where you pick, you know, the first three line items ship in March and the second three line items.
+2:47:10So however we do it is irrelevant as long as we have the capability.
+2:47:19And quick question on my side for the scenario when we have approved a deal with additional discount, the partner is is connecting with their end customer and there's a change in configuration.
+2:47:37So we need to go in.
+2:47:40Yeah, there needs to be a change to the quote.
+2:47:44I assume that they then can go into the quote and change the goal quote and push it in the approval flow again instead of in worst case scenario like creating a new quote.
+2:48:01Yeah, the the revisions can be considered.
+2:48:04So one question though, what would be the gateway to allow these revisions?
+2:48:12So at what stage the revisions needs to be restricted for the court even for delivery dates as well.
+2:48:25So my court, a court is generated, it went through the say for example the extreme case, it went through the four level of approvals in between as well there could be revisions and the approval would be retriggered.
+2:48:37Now say all my approvals have been done, I have the approved court and now I just need to provide the and date of delivery.
+2:48:48I can still revise the code because it's not even a confirmed order yet.
+2:48:52So is this where we would be revising the codes or even after the confirmation of the order there is a revision that is happening?
+2:49:05Yeah, yeah.
+2:49:07It it if the change is only affecting the RDD date then the approval flow is not needed.
+2:49:17But if it's changing configuration and change in the the pricing or whatever then we need to go into the approval flow again.
+2:49:28Great, great.
+2:49:30But this this all change and revisions for even date or the pricing will happen only until the sales order is confirmed or generated right with the request for delivery date noted.
+2:49:45OK, give me a second here.
+2:49:51Any any additional instructions that needs to be captured on sales order, something that we haven't captured on this?
+2:50:05So a couple of things.
+2:50:06First, sometimes people cancel orders and does the system have the ability or can it be designed to have the ability that once we start to build or package or ship or whatever the situation is, we don't want someone to be able to cancel an order after their, you know, boxes have already gone on a truck to head towards them, right?
+2:50:30At that point, you know, we don't want to be stuck with a, you know, in the manufacturing line with a device that's been built and assigned to a customer.
+2:50:38And now we have to unravel that whole thing.
+2:50:40So is there some way based on the confirmed delivery date by manufacturing that we freeze that order and it can't be changed or deleted 'cause we get, we get, we've gotten bit by that for 30 years of my career here.
+2:50:54Phillips, right, People change it, but it's already it's already in the chute.
+2:50:59So, right, so we can work through those conditions.
+2:51:02At what stage you would like to lock in the orders, at what stage depending on the status and the status would be definitely sinking in.
+2:51:11So we can look into that.
+2:51:13However, we also need to understand at Zilfi and what are the possibilities of locking those cancellations for the partners, right.
+2:51:22I will get into those details.
+2:51:24It really isn't at the application and Ashwini James that any which ways, even if you're having a system built which restricts user from you know requesting A cancellation, that still will be a case in your world, isn't it?
+2:51:40You have the orders already on the truck to be delivered.
+2:51:44Someone from the customer calls you up and says, hey, James, I might, you know, have to hold on for these orders.
+2:51:52Can you just cancel it for me?
+2:51:53That still will happen.
+2:51:55So there is, you know, it'll still happen even if we put in safeguards against exactly, exactly the opportunity, yeah, to happen, right?
+2:52:04Yes, yes.
+2:52:05One thumb up rule when we are designing the system, James, is whenever the records are submitted and after certain like statuses are, you know, updated these statuses no matter from which system, supply chain system gets updated into the ERPERP gets, you know, pushed that particular status against the order to the CRMCRM in turn will be pushing it to Zinfi.
+2:52:28So all the places the sales order statuses are updated.
+2:52:32What we can do is we can have the safeguards in place saying after this particular status, no one will be able to cancel or request a cancellation up till there we can control.
+2:52:44But after that if someone tries approaching for cancellation that cannot be controlled in the application.
+2:52:50Got it.
+2:52:52Understood.
+2:52:52It's still gonna happen, but it'll it reduces the opportunity for.
+2:52:56OK, sure.
+2:52:59OK.
+2:52:59So moving on addition.
+2:53:02So especially for countries where the partner also needs to do the customs clearing of shipments.
+2:53:10So for our region that is Middle East, Turkey, basically everything outside of Europe, there they need to do the customs clearing and when placing the orders they use so from our current quoting tool.
+2:53:31So there they deliver an order package and in parallel they send an Excel file which contains more shipping related information.
+2:53:46So which set of documents do they need to have a smooth customs clearing process?
+2:53:53Do they need a a certificate of origin?
+2:53:56Do they need a packing list?
+2:53:58Do they need?
+2:53:59Yeah, basically it's written down what they need.
+2:54:04That is also information that we somehow need to either capture or already have in the system to make sure that we send out the shipments with the right set of documents.
+2:54:21OK, OK.
+2:54:22And Vince, just on a very high level, if you have to call out few documents in those aspect before fulfillment, these are to be given to the customer for our our respective party for custom purpose or something what those documents would be called.
+2:54:37Like if you could just, you know, name a few, it will give us good insight.
+2:54:42Yeah, it is for for example heart stream invoice signed or with a stamp on it.
+2:54:50So it really differs their country, what is what is needed in case of batteries, they need additional information, product sheets, packing list, so really shipment related documents.
+2:55:12OK, OK, All right.
+2:55:14So along with the confirmation or the sales order shipment details, these documents also would be required to be given to the respective parties so that customs and all those nuances can be taken care of.
+2:55:27Yeah, OK, noted.
+2:55:33OK, OK, so now one of the major point that we might need a bit of discussion is the install based trigger.
+2:55:45So once the fulfillment and is happening, we would like to understand what is the trigger when an install base is created so that team can confirm whether install base creation is triggered at shipment, delivery, installation or activation or is there any other agreed milestone and which system initiates this record.
+2:56:14So we will get into the details of all this in the further modelling sessions, but right now I just wanted to understand what are the different milestones at which these install base trigger records are created?
+2:56:29For example, for a software, it could be simply at activation, the foreign hardware, it could be at ship date or at delivery date.
+2:56:37So what are these different triggers for an install base creation?
+2:56:43Yeah, traditionally for serialized product it was upon shipment.
+2:56:49I would love it to be upon delivery Right?
+2:56:52Cuz customers have asked us that question over the years and it's a better answer to say when you receive it, it starts instead of when we put it on a truck it starts right?
+2:57:02It just feels better.
+2:57:04Also I would think that this there would need to be a fairly easy yet controlled manner to update install base.
+2:57:15So I would want to always save the ship to locate, sorry, the order location right.
+2:57:20So if it was ordered by ABC Company and July 1st of 2029, then we want to save that forever and it was shipped to 123 Main St.
+2:57:30in, you know, Florida, you know, Orlando, FL, USA.
+2:57:33We always want that to be there.
+2:57:36But what's really, really important for us in install base is that we have the ability to update the current location of a serial number, you know, fairly easily without having again to create a department of people that manage install base, right.
+2:57:53But, but we want it to be somewhat controlled even if it's through an approval process.
+2:57:59But we need to have a fairly quick easy way to update current name and address of a serial number.
+2:58:08Agreed.
+2:58:09Thank you.
+2:58:10Yeah, OK.
+2:58:12And should the partner also be able to do that via CENFI?
+2:58:19That's a good question.
+2:58:20Do we trust a chance?
+2:58:21And yeah, that's a really good question.
+2:58:23I, I, I lean towards yes, because they have really no reason to lie.
+2:58:27Yeah.
+2:58:28What's, what's the scenario there, Jim?
+2:58:31We, a customer calls us and they have a either an account manager or the service organization and they, they have a question on how to use the device or there might be something wrong with their device.
+2:58:41And when we go in, you know, especially here in North America, the regulatory, we can't touch a device or answer any questions about a device unless we are 100% sure that what the customer on the phone is saying for where the device is, the name and address is the same as what we show on our system.
+2:59:01We hit the brakes, we stop everything unless that is correct.
+2:59:05We literally cannot, you know, service their device unless that's accurate.
+2:59:09So having the ability to keep those up to date is critical from a compliance standpoint in in Canada and the United States.
+2:59:18But also we want to keep them up to date in case something happens and we need to do a recall.
+2:59:23And you don't want to reach out to the wrong people when you when you're doing some kind of a regulatory notification.
+2:59:32OK, So what we understand if there are any.
+2:59:35OK, let me come back to the install base creation.
+2:59:38Now when the install base is created, be it at the delivery date, that's what we have so far discussed.
+2:59:47Is there any information, how is the information of this installed base passed on to the partner on behalf of the customer?
+2:59:57So how, how is that happening right now?
+2:59:59Because I understand you might not always have the end customer information against the install base as of today.
+3:00:05That might be there is a regulatory compliance where you need to have that within three days of request, right?
+3:00:12That's my understanding.
+3:00:13But how is it managed right now to get that information?
+3:00:21We would say is it like today we reach out to channel partners, channel partners and ask them for the locations of the serial numbers that we ship to them.
+3:00:29OK.
+3:00:30And if there is a change to it, there is one question, sorry, I can't see who asked the question.
+3:00:35If the partner can change the location and the information against an install base.
+3:00:40So I believe the partner will raise a request from Zenfi, the partner management portal to initiate this change.
+3:00:48Is, is that the correct understanding because the partner will not have that the access to update that information directly.
+3:00:56It will be initiated as a request and then there will be a team in CRM.
+3:01:02Of course, I would like to know who will be owning that change in CRM.
+3:01:05Yeah, we don't have the answers to that yet.
+3:01:11In North America when we do the pro side of the business, the the more expensive products we tell our channel partners that we will drop ship directly to the end user customer and by by by drop shipping to the end user customer.
+3:01:28That make that ensures that your installed base is accurate from day one.
+3:01:33You do not, you do not rely on the more sophisticated, you know, the higher end products out there, the monitors, you do not rely on a channel partner to get back to you within three days.
+3:01:47You know, that's not to say we have to do that moving forward.
+3:01:49I just consider that a best practice that we've kind of evolved to over the last 10 years in North America is that we don't want to ship monitors to distributors and let them ship them to customers.
+3:02:01We want to ship them directly to the customers because the one, they're bigger and heavier and more expensive for our channel partners to move around, right.
+3:02:08Two, they're more expensive and they don't stock them typically, right, Right.
+3:02:12And three, we get that accurate install base from day one and we don't have to worry about following up for that information, OK.
+3:02:21So that might be true in the current situation where it's mostly ordered to deliver, but we are also looking at the future state where it could be ordered to stock, right?
+3:02:32Sorry.
+3:02:34Yeah, we also want to get into that situation in future though it's not in the current discussions, but that's something we are also keeping in mind that that could be the feature scenario.
+3:02:44If you think about the costs of these, you know, we we have the AE DS that are typically sub $2200, right.
+3:02:52And then we have the monitors that are typically sub $40,000 each, right.
+3:02:57So you can see channel partners do not stock those, right, right, right.
+3:03:01And Vince, I don't know if you know differently, but it's a it's, it's the, the price range of that solution is so expensive that people just don't ask to stock because it's just way too expensive to sit on all that, on all that money.
+3:03:16So that's the same for for Europe.
+3:03:19However, I don't think we have the visibility on and customer locations of all devices.
+3:03:30So there we rely on the partners.
+3:03:32So in case of FCO indeed they need to then we are really dependent on the the list that they need to provide within three working days.
+3:03:46So, so you must ship to the distributor and have the distributor ship to the customer and therefore your install base data is not up to date.
+3:03:56It's not to say we couldn't change it, right?
+3:03:58All they're doing is receiving them and configuring them and throwing them a box and then shipping them off to the customer, right?
+3:04:03So or driving them, right.
+3:04:04So just have to figure out what we want to do on day 2 and whether or not it's the same worldwide or, or we have the same combinations that we have today.
+3:04:16Drop ship direct for updated install base or follow up on request.
+3:04:24OK, I noted and maybe good to mention as a last thing on those serial numbers that from my understanding the partner is receiving them on the invoice.
+3:04:40So there and the and the invoices created upon shipment and there they can see per equipment device the serial numbers and there's not another number on that on that invoice.
+3:04:59I think it's a UDI number that is also feasible on on the invoice for partners.
+3:05:07OK.
+3:05:12So maybe once we get into the detailed discussion, we will have more clarity on these variations and the processes.
+3:05:22So, OK, just to summarize on the install base, the install base is created on delivery I that's, that's the discussion we had.
+3:05:32I hope there is no deviation to that.
+3:05:34If so, we would like to register that and have those data types further then once the install base is registered.
+3:05:44Since we are moving towards the drop shipment, most of the times we have the customer information and the end location and the the location where the install base is there.
+3:05:56But there is an exception where mostly the partners are shipped and the the partners would take the further shipment to the customer.
+3:06:04But we can re evaluate this process in our detail.
+3:06:07Deep, deep dives.
+3:06:11Once the install base is established, there should be a visibility to change the location of this install base.
+3:06:19And right now we don't have an answer who does that.
+3:06:23That is something a parking lot to be discussed later.
+3:06:26At the same time, the partner can initiate a request to change these details, but the partner won't have the direct access to change this information or they can just raise a request to change these details on an install base.
+3:06:43That's the summary of what we discussed so far on the install base.
+3:06:47Anything else to be added here?
+3:06:51Anything, any other deviation for any of the regions?
+3:07:01OK, I take.
+3:07:04OK, thank you.
+3:07:05So we are, we are up with the time, but I just had one last point, a couple of points I'll just quickly run through if that's OK.
+3:07:16Of course, Sure.
+3:07:17OK.
+3:07:18So the partner training part for partner training, our references that the learning management will be taken care by Zenfi.
+3:07:28They will be leveraging their training capabilities and the status only the status will be captured in CRM for those training certifications and that will be synchronized to Dynamics.
+3:07:44The second part that I wanted to touch base was on the partner case management.
+3:07:48Now that is we have a complete session on this topic so we can close on the partner case management where the partner will have capability to raise.
+3:07:58So they will be direct communicating with the customer for any initial case resolutions.
+3:08:06If there is a need to escalate this or reach out to hot stream, that's when the partner would raise a request from Zenfi itself and that will synchronize to CRM and further it will be triaged and the ownership will be taken further.
+3:08:19So we will be deep diving into this process in the next upcoming session.
+3:08:24So that was our overall points.
+3:08:27We will be documenting our discussions, assumptions, open points and we will follow up on these discussions further.
+3:08:37And to close the session, I'll just quickly you know reiterate that we have covered the partner onboarding, the contractual aspects of the partner.
+3:08:50We also touched based a little bit on the direct contracts with the customers.
+3:08:56We spoke about the lead capturing leads by the sales team or the marketing team in CRM and handed over to the partner.
+3:09:04That is the primary way of capturing leads.
+3:09:08Partners do not directly create leads.
+3:09:10They do that process in their own CRM, local CRM we capture.
+3:09:15We spoke about creating opportunities deals, how the pricing is incorporated in the quotations from the contracts and how there could be additional discounting that could come into picture which would need approvals from 1 to 4 levels of approvals for those additional discounts on the quotations.
+3:09:36We also spoke about having quotes for a smaller products which should not enforce an opportunity creation.
+3:09:45It could be a shell opportunity and then we spoke about the date of delivery that needs to be captured on the order before the order is confirmed.
+3:09:54And there could be a possibility where before the order is confirmed, there could be cancellations, revisions or revision to the date or pricing which would initiate A reapproval for those kind of quotations where the pricing might change.
+3:10:10Not for the date it might not.
+3:10:12It won't need a an approval process.
+3:10:14And then we briefly spoke about the install base.
+3:10:18So that is what pretty much we covered for today.
+3:10:21Any, any additions, anything that we might have missed that did not come while we discussed these processes?
+3:10:32One more parking lot thing, maybe you discussed it when I was offline, but I see the case creation in training and service.
+3:10:39Yes, we need to align with quality.
+3:10:42Yeah, in the QMS to capture customer feedback and patient events that the distributors or partners become aware of.
+3:10:52Yep, we just want to align it.
+3:10:53You know, typically we train them to a specific location for for customer feedback and patient events.
+3:11:01We need to understand or decide if Zinfy should play a role there with the partners.
+3:11:07Yep, we will be having a detail session on the service part of it coming up next.
+3:11:13So yeah, we will deep dive into those aspects in those service discussions.
+3:11:19So yeah, that's pretty much to summarize today's session.
+3:11:24I thank you so much everyone for your time and patience, especially early this morning.
+3:11:30Thank you so much.
+3:11:32That's all from my end.
+3:11:34Anything from team Pankaj Nitesh to add on before we close, We are good.
+3:11:42Thank you again, entire team, especially James and then rest of the team who are contributing.
+3:11:50So what we're going to do next is we're going to summarize the entire session as we conducted.
+3:11:56The detailed minutes of meeting will be shared to you.
+3:11:59Wherever we have open items or the parking lot items, those will be recorded in the ADO.
+3:12:06And wherever expectation is that we are expecting some information, some formats, those will be straightaway, you know assigned very clearly.
+3:12:14It will be assigned so that actionables can be tracked easily.
+3:12:17OK, So you will hear more from us and any which ways we have back-to-back sessions, we can collaborate on these, you know ongoing activities on daily basis so we can conclude the session.
+3:12:36OK, then that is it then.
+3:12:37Yep.
+3:12:38Yes, Pankaj.
+3:12:40All right, thank you.
+3:12:42Thank you team.
+3:12:42Thank you.
+3:12:43Have a great day.
+3:12:44Have a good time.
+3:12:45Bye.
+3:12:45Bye.
+3:12:45Bye.
+3:12:46Have a great day.
+3:12:47Bye, Nitish.
+3:12:51Should we turn off the recording?
+3:12:58Should we turn off the recording?
+3:13:00I don't know if we have access.
+3:13:02I don't think we have access to.
+3:13:04I don't at least.
+3:13:06Yeah, I also didn't.
+3:13:07I don't see.
+3:13:08Tell Susan or it ends when everybody drops.
+3:13:12Yeah.
+3:13:13So I'll drop off.
+3:13:16Thanks.

@@ -2,139 +2,109 @@
 
 ## Invocation
 
-`/expand-test-coverage` — close remaining FR/BR test-design gaps for the current slice (sprint item, story pack, or bounded context).
-
-Optional: `/expand-test-coverage --stop-after=design` — case bodies + matrix + quality validators only; skip coverage gate and approval package.
+`/expand-test-coverage` — transcript requirements matched to catalog Features, then a test-case CSV.
 
 ## Objective
 
-Factory **design** entry for intake, **case bodies**, **traceability matrix**, completeness, and the BR coverage gate. Stops at **Pending Approval**. Does **not** generate a manual UAT catalog, executable scripts, run suites, or eval.
+Before any test case is written, read the transcript and list requirements. Match those requirements to `artifacts/work-items/epic.json` and `artifacts/work-items/feature.json`. Write test cases only for strong Feature matches whose parent Epic exists. Public output is one CSV. Columns and the Test Case Description shape come from `docs/intake/user-story-csv-rulebook.yaml`.
+
+Traceability on every case: Transcript locator → Epic id → Feature id → Test Case.
 
 ## Use Agents
 
 - orchestrator-agent
 - quality-agent
-- test-agent (generate mode — design only)
+- test-agent (mode `from-transcript`)
 
 ## Delegate to Subagents
 
-- test-intake-normalizer (when untrusted inputs present)
-- automation-companion-author (Phase 1; or test-case-generator with companion-quality DoD)
-- tc-traceability-mapper (Phase 1b)
-- tc-completeness-validator, tc-step-quality-validator (case bodies)
-- bdd-scenario-expander (when Gherkin expansion is in scope)
-- br-coverage-validator (`pre-script`)
+- test-intake-normalizer (intake-safety on the transcript)
+- test-case-generator (row JSON + canonical CSV writer)
 - audit-trail-writer
-
-Do **not** write `docs/test/manual/**`. Do **not** invoke eval-agent or `/close-eval-gaps`.
 
 ## Enforce Rules
 
-00, 07, 09, 10, 11, 17, 22, 23 (test-generation). Untrusted intake: rule 31.
+00, 07, 09, 10, 22, 31.
 
-## Use Templates
+## Use Templates / Skills
 
-`test-cases-template.md`, `test-matrix-template.md`, `test-cases-br-coverage-template.md`, `test-package-review-template.md`, `br-tc-taxonomy.md`, `generic-step-denylist.md`, `test-case-quality-metrics-template.md`, `intake-manifest.schema.md`, `bdd-test-case-template.md`, `audit-trail-template.md`, `plan-act-validate-refine-loop.md`
+`audit-trail-template.md`
 
-## Use Skills
+`.cursor/skills/test-cases-from-transcript/SKILL.md`
 
-`.cursor/skills/br-coverage/SKILL.md`, `.cursor/skills/quality/SKILL.md`
+Rulebook (column contract, not a template): `docs/intake/user-story-csv-rulebook.yaml`
 
 ## Runtime Inputs
 
 ### Required
 
-- Accepted BRD or story pack (`evals.rule_source`) — used later by `/run-eval`; required so design cites FR/BR
+- `transcript_path`
+- `artifacts/work-items/epic.json`
+- `artifacts/work-items/feature.json`
 
 ### Optional
 
-- Prior implement-api/ui audits (optional for `--stop-after=design`)
-- Untrusted intake (Figma extracts, Excel, CSV)
+- `output_slug` (filename suffix)
 
 ## Command-Specific Hardening
 
-**Intake:** Untrusted inputs go through `test-intake-normalizer` and `python3 scripts/intake-safety-scan.py`. Injection (exit 2) blocks. PII (exit 1) requires human redaction. Trusted artifacts (BRD, stories, OpenAPI, checklists) are **not** scanned.
+**Intake:** Run `python scripts/intake-safety-scan.py` on the transcript before test-agent. Exit 2 → STOP. Exit 1 → STOP until redaction or waiver.
 
-**Phase 1–1c:** Always write case bodies (full steps/expected; not matrix-only rows) and matrix. Classify BR Type **before** authoring negatives (`.cursor/templates/br-tc-taxonomy.md`). Heuristic bulk scripts are forbidden.
+**Order (hard):**
+1. Requirements from the transcript, each with a locator. No cases yet.
+2. Match to Feature title and `description.plainText`. Keep a match only at `work_item_mapping.strong_threshold` with `winner_margin`, and only when `parent.workItemId` is in epic.json.
+3. test-case-generator writes cases only for those Features.
+4. CSV via `scripts/ado_user_story_csv.py write`, then `scripts/validate-user-story-csv.py`. FAIL stays in Refine.
 
-**Phases 2–2b:** Coverage gate then Pending Approval. FAIL → expand cases; **no** `/run-tests`. Agents **Must NOT** set package Approval to Approved.
+**CSV shape:** Rulebook `csv.column_order` only. Section order: Epic rows, Feature rows, Test Case rows. Test Case Description follows `test_case.description_format`. Acceptance Criteria uses `- ` bullets. Test Case ID blank. Epic and Feature IDs copied from JSON.
 
-**Out of scope:** Manual UAT catalog generation/refresh; JUnit/Vitest/Playwright script generation; suite execution; eval-agent; `/close-eval-gaps`. Those belong to `/run-tests` and `/run-eval`.
-
-**ASSUMPTION-PCC-002:** implement-api/implement-ui are **not** blocked for missing expand-gate PASS. Slice tests remain on implement-*.
+**Out of scope:** Test cases for unmatched requirements or Features that were not matched. New columns. Invented Epic or Feature titles. Executable scripts.
 
 ## Execution Policy
 
-Plan → Act → Validate → Refine (max 3 ceiling). Iteration 1 Validate pass → stop. Refine only from findings. Escalate with owners after iteration 3.
+Plan → Act → Validate → Refine (max 3). Iteration 1 validator PASS → stop.
 
 ## Execution flow
 
 | Phase | Role | Artifact |
 |-------|------|----------|
-| **Intake** (when untrusted inputs present) | test-intake-normalizer | `artifacts/test-intake/<date>-manifest.json` |
-| **1 Cases** | quality-agent → test-agent + automation-companion-author | `docs/test-cases.md` |
-| **1b Matrix** | tc-traceability-mapper | `docs/test-matrix.md` |
-| **1c Quality** | tc-completeness-validator + tc-step-quality-validator | case bodies |
-| 2 Coverage gate | quality-agent → br-coverage-validator (`pre-script`) | `docs/test-cases-br-coverage.md` — only writer; FAIL → expand cases; **no `/run-tests`** |
-| 2b Human package | quality-agent | `docs/quality/test-package-review.md` **Pending Approval** (PASS only) |
-
-If `--stop-after=design`: complete after cases + matrix + quality validators; skip Phases 2–2b.
+| Intake | test-intake-normalizer | scan result in the audit |
+| 1 Requirements | test-agent | requirement list with locators (in the audit) |
+| 2 Match | test-agent | matched Feature + parent Epic, or unmatched |
+| 3 CSV | test-case-generator | `artifacts/intake/<date>-test-cases.csv` |
+| 4 Validate | test-case-generator | `artifacts/intake/<date>-test-case-validation.json` |
 
 ## Decision logic
 
-- If `evals.rule_source` missing → register Open DQ; refuse.
-- If untrusted intake scan exit 2 → refuse cases until the file is cleaned.
-- If untrusted intake scan exit 1 → refuse until redaction or dated waiver.
-- If coverage FAIL → expand cases; do not request human approval.
-- If requirements unclear → **ask user**; do not invent.
+- Transcript path missing → refuse.
+- epic.json or feature.json missing → refuse.
+- Scan exit 2 → refuse.
+- No strong Feature match → write Epic/Feature rows only if any matched; otherwise no Test Case rows, and list unmatched requirements. Do not invent a Feature.
 
 ## Clarification Protocol
 
-After resolve-before-ask, register Open DQ when `evals.rule_source` is missing or untrusted intake is blocked. Do not invent FR/BR. Do not STOP for a numbered clarification round except the human approval gate (Phase 2b) and PII-redaction halt. Still refuse when Required rule_source is absent.
+Register Open DQ for a missing transcript or an empty catalog. Do not invent requirements or catalog IDs.
 
 ## Artifact persistence
 
-- `artifacts/test-intake/<date>-manifest.json` (when intake ran)
-- `docs/test-cases.md` (Phase 1)
-- `docs/test-matrix.md` (Phase 1b)
-- `docs/test-cases-br-coverage.md` (Phase 2)
-- `docs/quality/test-package-review.md` (Phase 2b, PASS only)
-- `artifacts/audit/<date>-expand-test-coverage-<task>.md` (includes Intake + companion quality metrics)
+- `artifacts/intake/<date>-test-case-rows.json`
+- `artifacts/intake/<date>-test-cases.csv`
+- `artifacts/intake/<date>-test-case-validation.json`
+- `artifacts/audit/<date>-expand-test-coverage-<task>.md`
 
 ## Definition of Done
 
-### Phases 1–1c (always; also `--stop-after=design`)
-
-- [ ] `docs/test-cases.md` written with **full** steps + expected per case (not matrix-only)
-- [ ] `docs/test-matrix.md` indexes those cases
-- [ ] Every in-scope FR/BR has ≥1 case or is Blocked with owner+reason
-- [ ] `execution_layer` ∈ {api, IT, uat, integration, blocked}
-- [ ] `source_path` populated when Automated ≠ NONE / not Blocked
-- [ ] Negatives exist for Constraint and Condition-gate BRs (or documented N/A); **no** negatives on behavioral-assertion BRs
-- [ ] Zero generic step placeholders (denylist) in case steps
-- [ ] Every Constraint negative cites the BR’s exact error code + field from Source
-- [ ] Completeness + step-quality validators PASS on case bodies
-- [ ] Quality metrics table in expand audit
-- [ ] All cases cite source FR/BR; no invented behaviors
-- [ ] Manual UAT catalog was **not** created or refreshed
-- [ ] Catalog was **not** produced by a heuristic generator script
-
-### Phases 2–2b (full run; N/A for `--stop-after=design`)
-
-- [ ] Untrusted intake scanned or documented skipped (trusted-only)
-- [ ] `docs/test-cases-br-coverage.md` Status **PASS** with coverage ratio (Phase 2)
-- [ ] `docs/quality/test-package-review.md` exists with **Pending Approval** (agents did not self-approve)
-- [ ] No silent BR skips
-- [ ] Audit written; harness updated (phase-changing)
-- [ ] Executable scripts, test runs, and eval were **not** performed
+- [ ] Intake-safety scan exit 0, or exit 1 with recorded waiver
+- [ ] Requirements listed from the transcript before cases
+- [ ] Every Test Case traces to one transcript locator, one Epic id, and one Feature id
+- [ ] Feature id is a strong unique match and its parent Epic is in epic.json
+- [ ] No case for an unmatched requirement
+- [ ] CSV headers match the rulebook; validator exit 0
+- [ ] Audit written
 
 ## Next command
 
-**Next command (after human sets Approval = Approved):** `/run-tests`
-
-After `--stop-after=design`: `/expand-test-coverage` Phases 2–2b when the gate/package is ready.
-
 ```
 ✅ /expand-test-coverage complete.
-**Next command:** /run-tests (after test-package-review Approved)
+**Next command:** Review `artifacts/intake/<date>-test-cases.csv`.
 ```

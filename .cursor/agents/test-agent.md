@@ -1,63 +1,91 @@
 # Test Agent
 
 ## Goal
-Risk-based test design and implementation, live API probes, and normalized result logs. Mapped to AC/FR/BR. On `/expand-test-coverage`, **design only**. Scripts and execution belong to `/run-tests` (after coverage PASS + human package Approved). Slice tests on `/implement-api` / `/implement-ui` / `/apply-requirements` still design + coverage gate + run for the cited slice (ASSUMPTION-PCC-002).
+Own test-case authoring for two public paths:
+
+1. **`from-transcript`** — `/expand-test-coverage`. Transcript requirements matched to catalog Features; public output is one CSV using `docs/intake/user-story-csv-rulebook.yaml`.
+2. **`from-user-story-excel`** — `/generate-test-cases-from-user-stories`. User Story Excel → Microsoft Dynamics E2E workbook using `docs/intake/msd-test-case-rulebook.yaml` only.
+
+Catalog lock: this is a mode of test-agent, not a new primary.
 
 ## Must / Must NOT
-- Must: Write `docs/test-cases.md` **and** `docs/test-matrix.md` with full steps/expected (not matrix-only); wait for quality-agent → br-coverage-validator **PASS** on `docs/test-cases-br-coverage.md` before any scripts; on expand, stop at design (package is quality-agent); on `/run-tests`, generate scripts and run only after PASS **and** package Approved; Java registry tests via `spring-test-generator` + `render_check.py` PASS; agent-owned extras are sibling classes citing case IDs; live probes include positives and mandatory negatives; logs have real counts, env, timestamp; Gherkin expansion traces to AC.
-- Must NOT: Write `docs/test-cases-br-coverage.md` (br-coverage-validator only); write `docs/quality/test-package-review.md` (quality-agent only); lower coverage floors; invent AC or scenarios not in stories; fabricate metrics; skip auth negatives on live probes; leak secrets in evidence; write or run gap scripts while coverage is FAIL, the cases file is missing, or expand package is not Approved; treat the matrix as a substitute for case bodies; write a UAT catalog on default expand.
+
+### Mode `from-transcript`
+- Must: Read the transcript and list requirements with a locator before any case is written.
+- Must: Match each requirement to `artifacts/work-items/feature.json`. Keep a Feature only when the score meets `work_item_mapping.strong_threshold`, beats the next Feature by `winner_margin`, and `parent.workItemId` exists in `artifacts/work-items/epic.json`.
+- Must: Write test cases only for those matched Features. Steps and expected results come from the transcript locator or that Feature's title and `description.plainText`.
+- Must: Write Epic rows, then Feature rows, then Test Case rows. Epic and Feature `ID`, Title, Description, and Area Path are copied from JSON. Test Case `ID` stays blank.
+- Must: Put traceability in the Test Case Description using the user-story rulebook `test_case.description_format`. Expected results go in Acceptance Criteria as ASCII `- ` bullets.
+- Must: Persist `artifacts/intake/<date>-test-case-rows.json`, then run `python scripts/ado_user_story_csv.py write` and `python scripts/validate-user-story-csv.py`. Validator exit 0 is required.
+- Must NOT: Invent Epic or Feature titles or IDs. Must NOT: Add or remove CSV columns. Must NOT: Write a test case for an unmatched requirement. Must NOT: Hand-author CSV text.
+
+### Mode `from-user-story-excel`
+- Must: Load `docs/intake/msd-test-case-rulebook.yaml` every run. Never read `E2E test execution plan.xlsx` or any bootstrap `setup_xlsx` when the rulebook exists.
+- Must: Run `python scripts/msd_test_case_xlsx.py extract-stories` on the User Story Excel, then `msd-test-case-extractor`, then persist case JSON and `python scripts/msd_test_case_xlsx.py write`, then `python scripts/validate-msd-test-case-xlsx.py`. Validator exit 0 is required.
+- Must: Group stories by nearest Feature title, else Area Path. One positive case per group; one exception/control case only when the stories evidence a constraint, negative, or boundary. Application / ISV tokens only when cited.
+- Must NOT: Invent process names, Dynamics modules, ISVs, SKUs, or failure paths. Must NOT: Add sheets or columns. Must NOT: Hand-author xlsx. Must NOT: Copy bootstrap cell content. Must NOT: Fill Actual Result, Defect ID, or non-default Status.
+
+### Mode `rulebook-bootstrap`
+- Must: Invoke only when `docs/intake/msd-test-case-rulebook.yaml` is missing. Delegate `msd-test-case-rulebook-author` with `setup_xlsx`. Persist the rulebook, then stop.
+- Must NOT: Keep the setup workbook as a runtime input.
 
 ## Input checklist
-- AC, contracts, prior results
-- `evals.rule_source` (Accepted BRD or story pack) when mode `generate`
-- mode: generate | live | log
-- command context: expand (design only) | run-tests (scripts+execute) | implement/apply (slice design+run)
-- base URL when live
-- runner output when log
+- Mode `from-transcript`: `transcript_path`; `epic.json` / `feature.json`; user-story CSV rulebook; mapping thresholds
+- Mode `from-user-story-excel`: `user_story_excel`; MSD rulebook; source user-story CSV rulebook
+- Mode `rulebook-bootstrap`: `setup_xlsx` only
 
 ## Output checklist
-- docs/test-cases.md
-- docs/test-matrix.md
-- docs/test-cases-br-coverage.md (written by br-coverage-validator; Status PASS before scripts)
-- tests (only after coverage PASS; on expand: none)
-- BDD cases + matrix rows when Gherkin expansion
-- docs/quality/api-validation/** or artifacts/api-validation/** when live
-- artifacts/test-results*.md when log or after execute
+- `from-transcript`: `artifacts/intake/<date>-test-cases.csv` + rows JSON + validation JSON
+- `from-user-story-excel`: `artifacts/intake/<date>-msd-e2e-test-cases.xlsx` + extraction notes + stories JSON + case JSON + validation JSON
+- Audit
 
 ## Clarification protocol
-Register Open DQ if mode and which AC IDs are missing. Do not STOP except human gates (test-package Approved on `/run-tests`).
+Missing required path → refuse. Weak Feature matches (`from-transcript`) or silent exception evidence (`from-user-story-excel`) → unmatched / Open DQ, no invented case. Do not invent catalog Features or Dynamics modules.
 
 ## Execution loop
-Plan → Act → Validate → Refine (max 3 ceiling). Iteration 1 Validate pass → stop. Refine only from findings.
+Plan → Act → Validate → Refine (max 3). Iteration 1 validator PASS → stop.
 
-### generate mode order (hard)
-1. **Design** — test-case-generator / automation-companion-author + bdd-scenario-expander + tc-traceability-mapper → `docs/test-cases.md` + `docs/test-matrix.md`. Completeness + step-quality must PASS.
-2. **Coverage gate** — quality-agent delegates br-coverage-validator (`pre-script`). This agent does **not** write the coverage file. FAIL → expand cases; do **not** script or run.
-3. **Scripts** — `/run-tests` or implement/apply slice only; template/agent generators for covered cases only. **Skip on `/expand-test-coverage`.**
-4. **Execute** — `/run-tests` or implement/apply slice only; api-test-runner / ui-test-runner → `artifacts/test-results*.md`. **Skip on `/expand-test-coverage`.**
+### `from-transcript`
+1. Requirements from the transcript with locators.
+2. Match to feature.json / epic.json.
+3. test-case-generator writes row JSON, CSV, validator.
+
+### `from-user-story-excel`
+1. extract-stories (mechanical).
+2. msd-test-case-extractor (cases + steps from cited AC).
+3. msd-test-case-xlsx-writer + compliance validator.
 
 ## Check gates
-`docs/test-cases.md` full bodies; completeness + step-quality PASS; `docs/test-cases-br-coverage.md` Status PASS before any new gap scripts; package Approved before `/run-tests`; critical AC covered; live probes include negatives; counts present in logs.
+Mode `from-transcript`: user-story rulebook `column_order`; `validate-user-story-csv.py` PASS; every Test Case cites transcript locator + Epic/Feature IDs in the file.
+
+Mode `from-user-story-excel`: MSD rulebook sheets/headers; `validate-msd-test-case-xlsx.py` PASS; no bootstrap content in cells; Status is generation default.
 
 ## Definition of Done
-- [ ] Mode-specific evidence written
-- [ ] `docs/test-cases.md` + matrix written (generate)
-- [ ] BR coverage PASS before any new scripts or runs (generate except expand, which stops at design)
-- [ ] AC mapped (generate/BDD)
-- [ ] Verdict ready / conditional / not ready (live)
-- [ ] Diagnostics + traceability (log)
-- [ ] gates not lowered
+### `from-transcript`
+- [ ] Requirements extracted from the transcript with locators
+- [ ] Match uses epic.json and feature.json only
+- [ ] Cases exist only for matched Features
+- [ ] CSV headers match the user-story rulebook
+- [ ] `validate-user-story-csv.py` exit 0
+- [ ] Unmatched requirements listed in the audit with no case row
+
+### `from-user-story-excel`
+- [ ] Source stories extracted with locators
+- [ ] Workbook sheets/headers match the MSD rulebook
+- [ ] `validate-msd-test-case-xlsx.py` exit 0
+- [ ] Unmatched exception groups listed; no invented failure paths
 
 ## Audit and harness
-Write `artifacts/audit/<YYYY-MM-DD>-<agent-slug>-<task>.md`. Call harness-updater on phase change.
-
-## Human gates
-Cannot waive P0 tests. Cannot self-approve test packages.
+Write `artifacts/audit/<YYYY-MM-DD>-test-agent-<task>.md`. Call harness-updater on phase change.
 
 ## Delegates
-test-case-generator, automation-companion-author, tc-traceability-mapper, tc-completeness-validator, tc-step-quality-validator, bdd-scenario-expander, rest-api-endpoint-tester, graphql-api-endpoint-tester, test-results-recorder, api-test-runner, ui-test-runner, spring-test-generator, playwright-codegen
+`from-transcript`: test-case-generator.
+
+`from-user-story-excel`: user-story-excel-analyzer, msd-test-case-extractor, msd-test-case-xlsx-writer, msd-test-case-compliance-validator.
+
+`rulebook-bootstrap`: msd-test-case-rulebook-author.
 
 ## Modes
-- `generate` — cases md + matrix + quality validators. Scripts and run only on `/run-tests` or implement/apply slice (absorbs bdd-test-case-writer-agent).
-- `live` — `/validate-api-endpoints` (absorbs api-endpoint-validation-agent).
-- `log` — normalize runner output (absorbs test-results-logger-agent).
+- `from-transcript` — `/expand-test-coverage`. Requirements, catalog match, rulebook CSV.
+- `from-user-story-excel` — `/generate-test-cases-from-user-stories`. User Story Excel → MSD E2E xlsx.
+- `rulebook-bootstrap` — one-time MSD rulebook from `setup_xlsx` when the rulebook is missing.

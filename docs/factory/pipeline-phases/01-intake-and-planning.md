@@ -1,6 +1,6 @@
 # 1. Intake and planning
 
-Validated against: `/generate-brd`, `/generate-user-stories-from-transcript`, `/ingest-figma-sketch`, `/figma-to-nextjs`, `/plan-sprint`, `/plan-governed-stories`, `/plan-bounded-context`, rules 11 and 31.
+Validated against: `/generate-brd`, `/generate-user-stories-from-transcript`, `/generate-test-cases-from-user-stories`, `/ingest-figma-sketch`, `/figma-to-nextjs`, `/plan-sprint`, `/plan-governed-stories`, `/plan-bounded-context`, rules 11 and 31.
 
 This is where the factory **starts**. Implement / test / eval do not run until intake is accepted and a plan is **Approved**.
 
@@ -12,6 +12,7 @@ Canonical map: [CURSOR-FLOW.md](../../../CURSOR-FLOW.md).
 |----------|---------|---------|----------|
 | Meeting **recording / transcript** | `/generate-brd` | requirements-agent | Write stories |
 | Meeting **transcript** (one Excel + separate INVEST + Epic/Feature/Workshop IDs) | `/generate-user-stories-from-transcript` | business-analyst-agent → work-item-mapping-agent | Author a BRD |
+| **User Story Excel** (MSD E2E test-case workbook) | `/generate-test-cases-from-user-stories` | test-agent mode `from-user-story-excel` | Expand coverage markdown or run tests |
 | Screen **PNG / screenshot / Figma node image** | `/ingest-figma-sketch` | frontend-agent | Extract a design system |
 | Figma **file URL** with `node-id` | `/figma-to-nextjs` | frontend-agent mode `design-system` | Author requirements |
 | Process whiteboard | whiteboard skill | — | Treat a flowchart as a page |
@@ -28,8 +29,10 @@ flowchart TD
   brd --> draft["BRD Draft — Pending Domain Review"]
   draft --> hg1["HUMAN: Accepted or waiver"]
   hg1 --> ps["/plan-sprint"]
-  us --> csv["ADO CSV + INVEST + mapped IDs"]
-  csv --> pgs["/plan-governed-stories"]
+  us --> usOut["ADO Excel + INVEST + mapped IDs"]
+  usOut --> msd["/generate-test-cases-from-user-stories"]
+  usOut --> pgs["/plan-governed-stories"]
+  msd --> msdXlsx["MSD E2E xlsx"]
   pbc["/plan-bounded-context"] --> proposed["Plan Proposed — Pending Approval"]
   ps --> proposed
   pgs --> proposed
@@ -45,7 +48,7 @@ flowchart TD
 
 ## Step A — Untrusted intake scan (before authoring)
 
-Applies to `/generate-brd`, `/generate-user-stories-from-transcript`, and sidecar text next to `/ingest-figma-sketch`. Not applied to plan or execute commands (those consume factory artifacts).
+Applies to `/generate-brd`, `/generate-user-stories-from-transcript`, `/generate-test-cases-from-user-stories`, and sidecar text next to `/ingest-figma-sketch`. Not applied to plan or execute commands (those consume factory artifacts).
 
 1. Operator supplies source paths.
 2. Orchestrator loads `.cursor/skills/intake-safety/SKILL.md`.

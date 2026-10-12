@@ -1,0 +1,339 @@
+{
+  "schema_version": "1.0",
+  "status": "Layout specimen \u2014 synthetic rows, not a scored evaluation",
+  "assumption_id": "ASSUMPTION-USEVAL-001",
+  "inputs": {
+    "manual_csv": "(specimen) manual.csv",
+    "generated_csv": "(specimen) generated.csv",
+    "transcript_path": "(specimen) transcript.txt"
+  },
+  "matches": [
+    {
+      "match_id": "M-001",
+      "manual_key": "manual-US-4",
+      "manual_title": "Sync partner after approval",
+      "generated_keys": [
+        "generated-US-4"
+      ],
+      "generated_titles": "Sync partner after approval",
+      "match_type": "1:1",
+      "confidence": "high",
+      "transcript_refs": [
+        {
+          "locator": "line 1",
+          "excerpt": "partner onboarding"
+        }
+      ]
+    }
+  ],
+  "manual_only": [],
+  "generated_only": [],
+  "metrics": [
+    {
+      "metric_id": "recall",
+      "owner": "coverage-analysis-evaluator",
+      "kind": "ratio",
+      "display": "100% (1/1)",
+      "score": 1.0,
+      "evidence": [
+        {
+          "statement": "Fixture evidence for recall.",
+          "source_path": "transcript.txt",
+          "source_locator": "line 1",
+          "confidence": "explicit",
+          "transcript_refs": [
+            {
+              "locator": "line 1",
+              "excerpt": "partner onboarding"
+            }
+          ]
+        }
+      ],
+      "formula": "Manual User Story rows that have at least one generated match, divided by the count of manual User Story rows.",
+      "name": "Recall"
+    },
+    {
+      "metric_id": "precision",
+      "owner": "coverage-analysis-evaluator",
+      "kind": "ratio",
+      "display": "100% (1/1)",
+      "score": 1.0,
+      "evidence": [
+        {
+          "statement": "Fixture evidence for precision.",
+          "source_path": "transcript.txt",
+          "source_locator": "line 1",
+          "confidence": "explicit",
+          "transcript_refs": [
+            {
+              "locator": "line 1",
+              "excerpt": "partner onboarding"
+            }
+          ]
+        }
+      ],
+      "formula": "Generated User Story rows matched to a manual story, divided by (those matches + generated-only rows classified noise). Valid extras are excluded from the denominator.",
+      "name": "Precision"
+    },
+    {
+      "metric_id": "manual_only_stories",
+      "owner": "coverage-analysis-evaluator",
+      "kind": "count",
+      "display": "0",
+      "score": 0,
+      "evidence": [
+        {
+          "statement": "Fixture evidence for manual_only_stories.",
+          "source_path": "transcript.txt",
+          "source_locator": "line 1",
+          "confidence": "explicit",
+          "transcript_refs": [
+            {
+              "locator": "line 1",
+              "excerpt": "partner onboarding"
+            }
+          ]
+        }
+      ],
+      "formula": "Count of manual User Story rows with no generated match. The report lists each row with a transcript reference.",
+      "name": "Manual-only Stories"
+    },
+    {
+      "metric_id": "generated_only_stories",
+      "owner": "coverage-analysis-evaluator",
+      "kind": "split",
+      "display": "0 valid extras, 0 noise",
+      "score": null,
+      "evidence": [
+        {
+          "statement": "Fixture evidence for generated_only_stories.",
+          "source_path": "transcript.txt",
+          "source_locator": "line 1",
+          "confidence": "explicit",
+          "transcript_refs": [
+            {
+              "locator": "line 1",
+              "excerpt": "partner onboarding"
+            }
+          ]
+        }
+      ],
+      "formula": "Generated User Story rows with no manual match. valid_extra: the transcript states the requirement and the manual CSV does not. noise: the transcript does not state the requirement, or the row restates no distinct requirement. Classification must cite hallucination-detection-evaluator evidence. Disagreement between the two subagents is BLOCKED_CONFLICT, not an average.",
+      "name": "Generated-only Stories (Valid Extras vs Noise)"
+    },
+    {
+      "metric_id": "epic_agreement",
+      "owner": "epic-feature-mapping-evaluator",
+      "kind": "ratio",
+      "display": "100% (1/1)",
+      "score": 1.0,
+      "evidence": [
+        {
+          "statement": "Fixture evidence for epic_agreement.",
+          "source_path": "transcript.txt",
+          "source_locator": "line 1",
+          "confidence": "explicit",
+          "transcript_refs": [
+            {
+              "locator": "line 1",
+              "excerpt": "partner onboarding"
+            }
+          ]
+        }
+      ],
+      "formula": "Matched pairs whose epic context agrees, divided by matched pairs where both sides have an epic context (preceding Epic row, else blank). Agree when Epic ID is equal and non-blank, or when both IDs are blank and the Epic titles are the same string. Pairs with epic context on only one side count as disagree. Zero comparable pairs \u2192 na.",
+      "name": "Epic Agreement"
+    },
+    {
+      "metric_id": "feature_agreement",
+      "owner": "epic-feature-mapping-evaluator",
+      "kind": "ratio",
+      "display": "100% (1/1)",
+      "score": 1.0,
+      "evidence": [
+        {
+          "statement": "Fixture evidence for feature_agreement.",
+          "source_path": "transcript.txt",
+          "source_locator": "line 1",
+          "confidence": "explicit",
+          "transcript_refs": [
+            {
+              "locator": "line 1",
+              "excerpt": "partner onboarding"
+            }
+          ]
+        }
+      ],
+      "formula": "Matched pairs whose feature context agrees, divided by matched pairs where both sides have a feature context (preceding Feature row, or the User Story ID when that ID is the catalog Feature work item id). Agree when Feature ID is equal and non-blank, or when both IDs are blank and the Feature titles are the same string. One-sided context counts as disagree. Zero comparable pairs \u2192 na.",
+      "name": "Feature Agreement"
+    },
+    {
+      "metric_id": "title_description_format_compliance",
+      "owner": "business-correctness-evaluator",
+      "kind": "ratio",
+      "display": "100% (1/1)",
+      "score": 1.0,
+      "evidence": [
+        {
+          "statement": "Fixture evidence for title_description_format_compliance.",
+          "source_path": "transcript.txt",
+          "source_locator": "line 1",
+          "confidence": "explicit",
+          "transcript_refs": [
+            {
+              "locator": "line 1",
+              "excerpt": "partner onboarding"
+            }
+          ]
+        }
+      ],
+      "formula": "Generated User Story rows whose Title is a short capability name (does not start with \"As a\") and whose Description matches \"As a <role>, I need to <need>, so that <benefit>.\" divided by generated User Story rows. Pattern source: docs/intake/user-story-csv-rulebook.yaml title_formats.user_story and user_story.description_format. The prepare packet's structural signal is the default numerator; override only with a cited finding.",
+      "name": "Title and Description Format Compliance"
+    },
+    {
+      "metric_id": "role_specificity",
+      "owner": "business-correctness-evaluator",
+      "kind": "ratio",
+      "display": "100% (1/1)",
+      "score": 1.0,
+      "evidence": [
+        {
+          "statement": "Fixture evidence for role_specificity.",
+          "source_path": "transcript.txt",
+          "source_locator": "line 1",
+          "confidence": "explicit",
+          "transcript_refs": [
+            {
+              "locator": "line 1",
+              "excerpt": "partner onboarding"
+            }
+          ]
+        }
+      ],
+      "formula": "Generated User Story rows whose captured role is a business role, divided by generated User Story rows.",
+      "name": "Role Specificity"
+    },
+    {
+      "metric_id": "acceptance_criteria_count",
+      "owner": "acceptance-criteria-evaluator",
+      "kind": "comparison",
+      "display": "Manual 1 \u00b7 Generated 1",
+      "score": null,
+      "evidence": [
+        {
+          "statement": "Fixture evidence for acceptance_criteria_count.",
+          "source_path": "transcript.txt",
+          "source_locator": "line 1",
+          "confidence": "explicit",
+          "transcript_refs": [
+            {
+              "locator": "line 1",
+              "excerpt": "partner onboarding"
+            }
+          ]
+        }
+      ],
+      "formula": "Mean number of Acceptance Criteria bullets on manual User Story rows and on generated User Story rows, plus both totals. A bullet is a non-empty line in the Acceptance Criteria cell.",
+      "name": "Acceptance Criteria Count"
+    },
+    {
+      "metric_id": "acceptance_criteria_quality",
+      "owner": "acceptance-criteria-evaluator",
+      "kind": "score",
+      "display": "80",
+      "score": 80,
+      "evidence": [
+        {
+          "statement": "Fixture evidence for acceptance_criteria_quality.",
+          "source_path": "transcript.txt",
+          "source_locator": "line 1",
+          "confidence": "explicit",
+          "transcript_refs": [
+            {
+              "locator": "line 1",
+              "excerpt": "partner onboarding"
+            }
+          ]
+        }
+      ],
+      "formula": "Mean of per-story quality scores on generated User Story rows. A bullet scores only when it is one observable outcome, testable from the transcript, and the cell uses ASCII \"- \" bullets (rulebook acceptance_criteria.format). Score is 0-100. Do not award points for implementation detail.",
+      "name": "Acceptance Criteria Quality"
+    },
+    {
+      "metric_id": "negative_boundary_coverage",
+      "owner": "acceptance-criteria-evaluator",
+      "kind": "ratio",
+      "display": "n/a",
+      "score": null,
+      "evidence": [
+        {
+          "statement": "Fixture evidence for negative_boundary_coverage.",
+          "source_path": "transcript.txt",
+          "source_locator": "line 1",
+          "confidence": "explicit",
+          "transcript_refs": [
+            {
+              "locator": "line 1",
+              "excerpt": "partner onboarding"
+            }
+          ]
+        }
+      ],
+      "na": true,
+      "na_reason": "Transcript states no negative or boundary for this fixture.",
+      "formula": "Generated User Story rows whose Acceptance Criteria include the negative or boundary outcome the transcript states for that requirement, divided by generated User Story rows whose matched transcript span states a negative or boundary. When the transcript states none, na.",
+      "name": "Negative and Boundary Coverage"
+    },
+    {
+      "metric_id": "granularity",
+      "owner": "story-matching-evaluator",
+      "kind": "ratio",
+      "display": "100% (1/1)",
+      "score": 1.0,
+      "evidence": [
+        {
+          "statement": "Fixture evidence for granularity.",
+          "source_path": "transcript.txt",
+          "source_locator": "line 1",
+          "confidence": "explicit",
+          "transcript_refs": [
+            {
+              "locator": "line 1",
+              "excerpt": "partner onboarding"
+            }
+          ]
+        }
+      ],
+      "formula": "Generated User Story rows that state exactly one capability, divided by generated User Story rows. A split or merge recorded on a match is evidence of a granularity miss for every generated row in that match that stacks or fragments a capability.",
+      "name": "Granularity"
+    },
+    {
+      "metric_id": "hallucination_rate",
+      "owner": "hallucination-detection-evaluator",
+      "kind": "ratio",
+      "display": "0% (0/1)",
+      "score": 0.0,
+      "evidence": [
+        {
+          "statement": "Fixture evidence for hallucination_rate.",
+          "source_path": "transcript.txt",
+          "source_locator": "line 1",
+          "confidence": "explicit",
+          "transcript_refs": [
+            {
+              "locator": "line 1",
+              "excerpt": "partner onboarding"
+            }
+          ]
+        }
+      ],
+      "formula": "Generated User Story rows that contain at least one claim the transcript does not support, divided by generated User Story rows. Every counted row needs a transcript locator showing the absence of support (the nearest related span, or an explicit note that no span exists). Unsupported epic or feature titles count as hallucinations.",
+      "name": "Hallucination Rate"
+    }
+  ],
+  "open_items": [
+    "This page shows the report layout only.",
+    "Scores are fixture values, not an evaluation of any HeartStream transcript.",
+    "ASSUMPTION-USEVAL-001 remains pending."
+  ]
+}

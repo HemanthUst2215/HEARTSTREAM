@@ -21,11 +21,21 @@ SECTION_RANK: dict[str, int] = {
     "Workshop": 0,
     "Epic": 1,
     "Feature": 2,
+    "Test Case": 3,
     "User Story": 3,
     "Task": 4,
     "Issue": 5,
     "Risk": 6,
 }
+
+TEST_CASE_HEAD_RE = re.compile(
+    r"^Transcript:\s*\S.+\n"
+    r"Epic:\s*(?P<epic>\d+)\s*\|\s*\S.+\n"
+    r"Feature:\s*(?P<feature>\d+)\s*\|\s*\S.+\n"
+    r"Steps:\n"
+    r"(?:\d+\.\s+\S.*\n?)+",
+    re.MULTILINE,
+)
 
 # Transcript authoring does not create Epic/Feature rows; those IDs come from work-items JSON.
 HIERARCHY_BEFORE_STORIES = frozenset({"Workshop"})
@@ -123,6 +133,10 @@ def validate_structure(
     prev_rank = -1
     story_count = 0
     saw_story = False
+    saw_test_case = False
+    epic_ids: set[str] = set()
+    feature_ids: set[str] = set()
+    cited_pairs: list[tuple[int, str, str]] = []
 
     for i, row in enumerate(rows):
         line = row_offset + i
@@ -200,11 +214,68 @@ def validate_structure(
                 findings.append(f"row {line}: Workshop should include Area Path when known")
                 # warning only — not critical
 
+        if wit == "Epic":
+            epic_id = (row.get("ID") or "").strip()
+            if epic_id:
+                epic_ids.add(epic_id)
+        if wit == "Feature":
+            feature_id = (row.get("ID") or "").strip()
+            if feature_id:
+                feature_ids.add(feature_id)
+
+        if wit == "Test Case":
+            if not saw_test_case:
+                saw_test_case = True
+                if "Epic" not in types_seen or "Feature" not in types_seen:
+                    findings.append(
+                        f"row {line}: Test Case before Epic and Feature catalog rows"
+                    )
+                    critical += 1
+            if (row.get("ID") or "").strip():
+                findings.append(f"row {line}: Test Case ID must be blank")
+                critical += 1
+            desc = row.get("Description") or ""
+            match = TEST_CASE_HEAD_RE.search(desc.strip())
+            if not match:
+                findings.append(
+                    "row {line}: Test Case Description must be "
+                    "Transcript / Epic: <id> | <title> / Feature: <id> | <title> / Steps".format(
+                        line=line
+                    )
+                )
+                critical += 1
+            else:
+                cited_pairs.append((line, match.group("epic"), match.group("feature")))
+            ac = row.get("Acceptance Criteria") or ""
+            if ac and "\u2022" in ac:
+                findings.append(
+                    f"row {line}: Acceptance Criteria must use ASCII '- ' bullets, not Unicode • (U+2022)"
+                )
+                critical += 1
+            if not ac_bullet_lines(ac):
+                findings.append(
+                    f"row {line}: Test Case Acceptance Criteria must use lines starting with '- '"
+                )
+                critical += 1
+
         types_seen.add(wit)
 
     if story_count and "Workshop" not in types_seen:
         findings.append("file: at least one Workshop row required when User Stories are present")
         critical += 1
+
+    if saw_test_case:
+        for line, epic_id, feature_id in cited_pairs:
+            if epic_id not in epic_ids:
+                findings.append(
+                    f"row {line}: Test Case Epic {epic_id} is not an Epic row ID in this file"
+                )
+                critical += 1
+            if feature_id not in feature_ids:
+                findings.append(
+                    f"row {line}: Test Case Feature {feature_id} is not a Feature row ID in this file"
+                )
+                critical += 1
 
     return findings, critical
 

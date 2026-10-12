@@ -10,7 +10,7 @@ function ensure(p) {
   const gk = path.join(p, ".gitkeep");
   if (!fs.existsSync(gk)) fs.writeFileSync(gk, "");
 }
-if (/\/(implement-api|implement-ui|expand-test-coverage|generate-user-stories-from-transcript|generate-brd|plan-sprint|plan-governed-stories)/.test(prompt)) {
+if (/\/(implement-api|implement-ui|expand-test-coverage|generate-user-stories-from-transcript|generate-test-cases-from-user-stories|generate-brd|plan-sprint|plan-governed-stories)/.test(prompt)) {
   if (sprint) {
     ensure(path.join(root, `docs/sprint${sprint}`));
     ensure(path.join(root, `docs/sprint${sprint}/userstory`));

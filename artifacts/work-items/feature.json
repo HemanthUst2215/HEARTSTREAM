@@ -1,7 +1,7 @@
 {
   "meta": {
     "sourceFile": "C:\\Users\\308279\\Documents\\HEARTSTREAM-1\\Feature.csv",
-    "generatedAt": "2026-10-08T09:18:05.156355+00:00",
+    "generatedAt": "2026-10-08T11:56:08.865826+00:00",
     "rowCount": 221,
     "columns": [
       "State",
@@ -90,7 +90,7 @@
         ]
       },
       "description": {
-        "plainText": "Input: Validated Sales Order\nActivities : \n7.1  - Validate Sales Order\n7.2 - Confirm Sales Order\nOutput: Confirmed Sales Order\nReady for Fulfilment",
+        "plainText": "Input: Validated Sales Order\r\nActivities : \r\n7.1  - Validate Sales Order\r\n7.2 - Confirm Sales Order\r\nOutput: Confirmed Sales Order\r\nReady for Fulfilment",
         "summary": "Input: Validated Sales Order Activities : 7.1 - Validate Sales Order 7.2 - Confirm Sales Order Output: Confirmed Sales Order Ready for Fulfilment",
         "htmlDecoded": false
       },
@@ -126,7 +126,7 @@
         ]
       },
       "description": {
-        "plainText": "Input: Posted Customer Invoice\nActivities : \n11.1 Recognize Revenue\nOutput: Recognized Revenue",
+        "plainText": "Input: Posted Customer Invoice\r\nActivities : \r\n11.1 Recognize Revenue\r\nOutput: Recognized Revenue",
         "summary": "Input: Posted Customer Invoice Activities : 11.1 Recognize Revenue Output: Recognized Revenue",
         "htmlDecoded": false
       },
@@ -162,9 +162,9 @@
         ]
       },
       "description": {
-        "plainText": "Input: Channel strategy &\ngrowth plan defined\nActivities :\n \n2.1  Recruit eCommerce channel\npartners\n2.2  Define commercial terms &\ndiscount structures\n2.3  Negotiate channel\nagreements\n2.4  Execute partner contracts\nOutput: Partner contracts Executed",
+        "plainText": "Input: Channel strategy &\ngrowth plan defined\nActivities :\n\n2.1 Recruit eCommerce channel\npartners\n2.2 Define commercial terms &\ndiscount structures\n2.3 Negotiate channel\nagreements\n2.4 Execute partner contracts\nOutput: Partner contracts Executed",
         "summary": "Input: Channel strategy & growth plan defined Activities :",
-        "htmlDecoded": true
+        "htmlDecoded": false
       },
       "source": {
         "rowNumber": 5,
@@ -198,9 +198,9 @@
         ]
       },
       "description": {
-        "plainText": "Input: Partner contracts \nexecuted\nActivities : \n3.1  Onboard approved channel\npartners\n3.2  Provide product catalogs &\npricing\n3.3  Provide marketing &\npromotional assets\n3.4  Enable channel participation &\nselling\nOutput: Channel partners\nonboarded & enabled to sell",
+        "plainText": "Input: Partner contracts\nexecuted\nActivities :\n3.1 Onboard approved channel\npartners\n3.2 Provide product catalogs &\npricing\n3.3 Provide marketing &\npromotional assets\n3.4 Enable channel participation &\nselling\nOutput: Channel partners\nonboarded & enabled to sell",
         "summary": "Input: Partner contracts executed Activities : 3.1 Onboard approved channel partners 3.2 Provide product catalogs & pricing 3.3 Provide marketing & promotional assets 3.4 Enable channel participation & selling Output: Channel partners onboarded & enabled to sell",
-        "htmlDecoded": true
+        "htmlDecoded": false
       },
       "source": {
         "rowNumber": 6,
@@ -236,7 +236,7 @@
       "description": {
         "plainText": "Input: Activated affiliate relationship\nActivities: P3.1 Onboard approved affiliates, P3.2 Provide marketing & promotional assets, P3.3 Assign affiliate IDs, links or promo codes, P3.4 Enable affiliate participation\nOutput: Affiliates onboarded & enabled to promote",
         "summary": "Input: Activated affiliate relationship Activities: P3.1 Onboard approved affiliates, P3.2 Provide marketing & promotional assets, P3.3 Assign affiliate IDs, links or promo codes, P3.4 Enable affiliate participation Output: Affiliates onboarded & enabled to promote",
-        "htmlDecoded": true
+        "htmlDecoded": false
       },
       "source": {
         "rowNumber": 7,
@@ -270,7 +270,7 @@
         ]
       },
       "description": {
-        "plainText": "Input: Affiliate program strategy defined\nActivities: P2.1 Recruit affiliate partners, P2.2 Review affiliate eligibility, P2.3 Define commission agreements, P2.4 Execute affiliate contracts, P2.5 Activate affiliate relationship\nOutput: Affiliate relationships activated",
+        "plainText": "Input: Affiliate program strategy defined\r\nActivities: P2.1 Recruit affiliate partners, P2.2 Review affiliate eligibility, P2.3 Define commission agreements, P2.4 Execute affiliate contracts, P2.5 Activate affiliate relationship\r\nOutput: Affiliate relationships activated",
         "summary": "Input: Affiliate program strategy defined Activities: P2.1 Recruit affiliate partners, P2.2 Review affiliate eligibility, P2.3 Define commission agreements, P2.4 Execute affiliate contracts, P2.5 Activate affiliate relationship Output: Affiliate relationships activated",
         "htmlDecoded": false
       },
@@ -308,7 +308,7 @@
       "description": {
         "plainText": "Input: Business case for affiliate/associates program\nActivities: P1.1 Define affiliate program strategy, P1.2 Define affiliate types & participation criteria, P1.3 Define commission structures & incentive models, P1.4 Define channel governance & operating model\nOutput: Affiliate program strategy defined",
         "summary": "Input: Business case for affiliate/associates program Activities: P1.1 Define affiliate program strategy, P1.2 Define affiliate types & participation criteria, P1.3 Define commission structures & incentive models, P1.4 Define channel governance & operating model Output: Affiliate program strategy defined",
-        "htmlDecoded": true
+        "htmlDecoded": false
       },
       "source": {
         "rowNumber": 9,
@@ -342,7 +342,7 @@
         ]
       },
       "description": {
-        "plainText": "Input: Received eCommerce Order\nActivities : \n6.1 - Validate and convert order to\nSales Order\nOutput: Validated Order",
+        "plainText": "Input: Received eCommerce Order\r\nActivities : \r\n6.1 - Validate and convert order to\r\nSales Order\r\nOutput: Validated Order",
         "summary": "Input: Received eCommerce Order Activities : 6.1 - Validate and convert order to Sales Order Output: Validated Order",
         "htmlDecoded": false
       },
@@ -378,9 +378,9 @@
         ]
       },
       "description": {
-        "plainText": "Input: Customer demand\ngenerated via campaigns\nActivities : \n5.1 - Customer Discovers Product\n5.2 - Place Order on Channel\nPlatform\n5.3 - Capture Order & Customer\nDetails\nOutput: eCommerce order\ncreated\n\nOther sub-processes :\n1.Order Processing Input: eCommerce Order\nActivities : \nA.1 - Synchronize Order to\nCommerce HQ\nOutput: Order Synced with\nCommerce HQ\n2. Sync order with F&O via integration\n3. Sync Order with SPS/DHL\n4. Sync Order Status",
+        "plainText": "Input: Customer demand\ngenerated via campaigns\nActivities :\n5.1 - Customer Discovers Product\n5.2 - Place Order on Channel\nPlatform\n5.3 - Capture Order & Customer\nDetails\nOutput: eCommerce order\ncreated\n\nOther sub-processes :\n1.Order Processing Input: eCommerce Order\nActivities :\nA.1 - Synchronize Order to\nCommerce HQ\nOutput: Order Synced with\nCommerce HQ\n2. Sync order with F&O via integration\n3. Sync Order with SPS/DHL\n4. Sync Order Status",
         "summary": "Input: Customer demand generated via campaigns Activities : 5.1 - Customer Discovers Product 5.2 - Place Order on Channel Platform 5.3 - Capture Order & Customer Details Output: eCommerce order created",
-        "htmlDecoded": true
+        "htmlDecoded": false
       },
       "source": {
         "rowNumber": 11,
@@ -414,9 +414,9 @@
         ]
       },
       "description": {
-        "plainText": "Input: Channel partners enabled\nto sell\nActivities : \n4.1  Plan marketing campaigns &\npromotions\n4.2  Manage MDF-funded activities\n4.3  Execute digital & media\ncampaigns\n4.4  Drive traffic to eCommerce\nchannels\n4.5  Monitor campaign\nperformance & conversion\nOutput: Demand generated for\nchannels",
+        "plainText": "Input: Channel partners enabled\nto sell\nActivities :\n4.1 Plan marketing campaigns &\npromotions\n4.2 Manage MDF-funded activities\n4.3 Execute digital & media\ncampaigns\n4.4 Drive traffic to eCommerce\nchannels\n4.5 Monitor campaign\nperformance & conversion\nOutput: Demand generated for\nchannels",
         "summary": "Input: Channel partners enabled to sell Activities : 4.1 Plan marketing campaigns & promotions 4.2 Manage MDF-funded activities 4.3 Execute digital & media campaigns 4.4 Drive traffic to eCommerce channels 4.5 Monitor campaign performance & conversion Output: Demand generated for channels",
-        "htmlDecoded": true
+        "htmlDecoded": false
       },
       "source": {
         "rowNumber": 12,
@@ -450,7 +450,7 @@
         ]
       },
       "description": {
-        "plainText": "Input: Fulfilled Order / Installed\nBase Record\nActivities : \n10.1 - Generate Customer Invoice\n10.2 - Post Invoice\n10.3 - Update Billing Status\nOutput: Posted Customer Invoice",
+        "plainText": "Input: Fulfilled Order / Installed\r\nBase Record\r\nActivities : \r\n10.1 - Generate Customer Invoice\r\n10.2 - Post Invoice\r\n10.3 - Update Billing Status\r\nOutput: Posted Customer Invoice",
         "summary": "Input: Fulfilled Order / Installed Base Record Activities : 10.1 - Generate Customer Invoice 10.2 - Post Invoice 10.3 - Update Billing Status Output: Posted Customer Invoice",
         "htmlDecoded": false
       },
@@ -486,7 +486,7 @@
         ]
       },
       "description": {
-        "plainText": "Input: Confirmed Sales Order\nActivities : \n8.1 - Submit fulfilment request\nOutput: Order Released for\nFulfilment",
+        "plainText": "Input: Confirmed Sales Order\r\nActivities : \r\n8.1 - Submit fulfilment request\r\nOutput: Order Released for\r\nFulfilment",
         "summary": "Input: Confirmed Sales Order Activities : 8.1 - Submit fulfilment request Output: Order Released for Fulfilment",
         "htmlDecoded": false
       },
@@ -522,9 +522,9 @@
         ]
       },
       "description": {
-        "plainText": "Input: Order Released for\nFulfillment\nActivities : \n9.1 - Process Fulfilment & Shipment\n9.2 - Update Shipment Status\n9.3 - Notify Customer\n9.4 - Update Order Status\nOutput: Fulfilled Order & Delivery\nConfirmation",
+        "plainText": "Input: Order Released for\nFulfillment\nActivities :\n9.1 - Process Fulfilment & Shipment\n9.2 - Update Shipment Status\n9.3 - Notify Customer\n9.4 - Update Order Status\nOutput: Fulfilled Order & Delivery\nConfirmation",
         "summary": "Input: Order Released for Fulfillment Activities : 9.1 - Process Fulfilment & Shipment 9.2 - Update Shipment Status 9.3 - Notify Customer 9.4 - Update Order Status Output: Fulfilled Order & Delivery Confirmation",
-        "htmlDecoded": true
+        "htmlDecoded": false
       },
       "source": {
         "rowNumber": 15,
@@ -558,9 +558,9 @@
         ]
       },
       "description": {
-        "plainText": "Input: Posted Customer Invoice\nActivities : \n12.1 - Capture Demand Signals\n12.2 - Analyze Sales Performance\n12.3 - Generate Demand Forecasts\n12.4 - Support Inventory Planning\n12.5 - Monitor Forecast Accuracy\nOutput: Forecasts generated\nSub processes: Retailer Data & Customer\nVoice Integration\nInput: Channel & platform sales\nactivity\nActivities : \nF.1 - Capture Sales & Marketplace\nData\nF.2 - Integrate Performance Metrics\nF.3 - Collect Ratings & Reviews\nF.4 - Analyze Customer Sentiment\nF.5 - Monitor Platform Performance\nOutput: Retailer, platform data\ncaptured",
+        "plainText": "Input: Posted Customer Invoice\nActivities :\n12.1 - Capture Demand Signals\n12.2 - Analyze Sales Performance\n12.3 - Generate Demand Forecasts\n12.4 - Support Inventory Planning\n12.5 - Monitor Forecast Accuracy\nOutput: Forecasts generated\nSub processes: Retailer Data & Customer\nVoice Integration\nInput: Channel & platform sales\nactivity\nActivities :\nF.1 - Capture Sales & Marketplace\nData\nF.2 - Integrate Performance Metrics\nF.3 - Collect Ratings & Reviews\nF.4 - Analyze Customer Sentiment\nF.5 - Monitor Platform Performance\nOutput: Retailer, platform data\ncaptured",
         "summary": "Input: Posted Customer Invoice Activities : 12.1 - Capture Demand Signals 12.2 - Analyze Sales Performance 12.3 - Generate Demand Forecasts 12.4 - Support Inventory Planning 12.5 - Monitor Forecast Accuracy Output: Forecasts generated Sub processes: Retailer Data & Customer Voice Integration Input: Channel & platform…",
-        "htmlDecoded": true
+        "htmlDecoded": false
       },
       "source": {
         "rowNumber": 16,
@@ -596,7 +596,7 @@
       "description": {
         "plainText": "Input: Channel & platform sales activity\nActivities: F.1 Capture Sales & Marketplace Data, F.2 Integrate Performance Metrics, F.3 Collect Ratings & Reviews, F.4 Analyze Customer Sentiment, F.5 Monitor Platform Performance\nOutput: Retailer, platform data captured",
         "summary": "Input: Channel & platform sales activity Activities: F.1 Capture Sales & Marketplace Data, F.2 Integrate Performance Metrics, F.3 Collect Ratings & Reviews, F.4 Analyze Customer Sentiment, F.5 Monitor Platform Performance Output: Retailer, platform data captured",
-        "htmlDecoded": true
+        "htmlDecoded": false
       },
       "source": {
         "rowNumber": 17,
@@ -632,7 +632,7 @@
       "description": {
         "plainText": "Input: Channel & platform sales activity\nActivities: F.1 Capture Sales & Marketplace Data, F.2 Integrate Performance Metrics, F.3 Collect Ratings & Reviews, F.4 Analyze Customer Sentiment, F.5 Monitor Platform Performance\nOutput: Retailer, platform data captured",
         "summary": "Input: Channel & platform sales activity Activities: F.1 Capture Sales & Marketplace Data, F.2 Integrate Performance Metrics, F.3 Collect Ratings & Reviews, F.4 Analyze Customer Sentiment, F.5 Monitor Platform Performance Output: Retailer, platform data captured",
-        "htmlDecoded": true
+        "htmlDecoded": false
       },
       "source": {
         "rowNumber": 18,
@@ -668,7 +668,7 @@
       "description": {
         "plainText": "Input: Changed Sales Order\nActivities: E.1 Consolidate Sales, Orders & Inventory Data, E.2 Analyze Campaign, Conversion & Platform Performance, E.3 Generate Business Insights & Trends\nOutput: Synchronize Order Status to CE",
         "summary": "Input: Changed Sales Order Activities: E.1 Consolidate Sales, Orders & Inventory Data, E.2 Analyze Campaign, Conversion & Platform Performance, E.3 Generate Business Insights & Trends Output: Synchronize Order Status to CE",
-        "htmlDecoded": true
+        "htmlDecoded": false
       },
       "source": {
         "rowNumber": 19,
@@ -704,7 +704,7 @@
       "description": {
         "plainText": "Input: Changed Sales Order\nActivities: E.1 Consolidate Sales, Orders & Inventory Data, E.2 Analyze Campaign, Conversion & Platform Performance, E.3 Generate Business Insights & Trends\nOutput: Synchronize Order Status to CE",
         "summary": "Input: Changed Sales Order Activities: E.1 Consolidate Sales, Orders & Inventory Data, E.2 Analyze Campaign, Conversion & Platform Performance, E.3 Generate Business Insights & Trends Output: Synchronize Order Status to CE",
-        "htmlDecoded": true
+        "htmlDecoded": false
       },
       "source": {
         "rowNumber": 20,
@@ -738,7 +738,7 @@
         ]
       },
       "description": {
-        "plainText": "Input: Changed Sales Order\nActivities: D.1 Synchronize Order Status to CE/Copernicus App\nOutput: Synchronize Order Status to CE/Copernicus App",
+        "plainText": "Input: Changed Sales Order\r\nActivities: D.1 Synchronize Order Status to CE/Copernicus App\r\nOutput: Synchronize Order Status to CE/Copernicus App",
         "summary": "Input: Changed Sales Order Activities: D.1 Synchronize Order Status to CE/Copernicus App Output: Synchronize Order Status to CE/Copernicus App",
         "htmlDecoded": false
       },
@@ -774,7 +774,7 @@
         ]
       },
       "description": {
-        "plainText": "Input: Changed Sales Order\nActivities: D.1 Synchronize Order Status to CE/Copernicus App\nOutput: Synchronize Order Status to CE/Copernicus App",
+        "plainText": "Input: Changed Sales Order\r\nActivities: D.1 Synchronize Order Status to CE/Copernicus App\r\nOutput: Synchronize Order Status to CE/Copernicus App",
         "summary": "Input: Changed Sales Order Activities: D.1 Synchronize Order Status to CE/Copernicus App Output: Synchronize Order Status to CE/Copernicus App",
         "htmlDecoded": false
       },
@@ -810,7 +810,7 @@
         ]
       },
       "description": {
-        "plainText": "Input: Changed Sales Order\nActivities: D.1 Synchronize Order Status to CE\nOutput: Synchronize Order Status to CE",
+        "plainText": "Input: Changed Sales Order\r\nActivities: D.1 Synchronize Order Status to CE\r\nOutput: Synchronize Order Status to CE",
         "summary": "Input: Changed Sales Order Activities: D.1 Synchronize Order Status to CE Output: Synchronize Order Status to CE",
         "htmlDecoded": false
       },
@@ -846,9 +846,9 @@
         ]
       },
       "description": {
-        "plainText": "Input: Business case for retail\nchannel expansion\nActivities : \n1.1  Define eCommerce channel\nstrategy\n1.2  Define B2B & B2C channel\noperating model\n1.3  Identify channel partners &\nretailers\n1.4  Define channel objectives &\ngrowth plans\nOutput: Channel strategy & growth\nplan define",
+        "plainText": "Input: Business case for retail\nchannel expansion\nActivities :\n1.1 Define eCommerce channel\nstrategy\n1.2 Define B2B & B2C channel\noperating model\n1.3 Identify channel partners &\nretailers\n1.4 Define channel objectives &\ngrowth plans\nOutput: Channel strategy & growth\nplan define",
         "summary": "Input: Business case for retail channel expansion Activities : 1.1 Define eCommerce channel strategy 1.2 Define B2B & B2C channel operating model 1.3 Identify channel partners & retailers 1.4 Define channel objectives & growth plans Output: Channel strategy & growth plan define",
-        "htmlDecoded": true
+        "htmlDecoded": false
       },
       "source": {
         "rowNumber": 24,
@@ -884,7 +884,7 @@
       "description": {
         "plainText": "Input: Validated Sales Order\nActivities: C.1 Synchronize Sales Order to SPS Commerce, C.2 Synchronize Sales Order with DHL\nOutput: Order Synced with D365 F&O",
         "summary": "Input: Validated Sales Order Activities: C.1 Synchronize Sales Order to SPS Commerce, C.2 Synchronize Sales Order with DHL Output: Order Synced with D365 F&O",
-        "htmlDecoded": true
+        "htmlDecoded": false
       },
       "source": {
         "rowNumber": 25,
@@ -920,7 +920,7 @@
       "description": {
         "plainText": "Input: Validated Sales Order\nActivities: C.1 Synchronize Sales Order to SPS Commerce, C.2 Synchronize Sales Order with DHL\nOutput: Order Synced with D365 F&O",
         "summary": "Input: Validated Sales Order Activities: C.1 Synchronize Sales Order to SPS Commerce, C.2 Synchronize Sales Order with DHL Output: Order Synced with D365 F&O",
-        "htmlDecoded": true
+        "htmlDecoded": false
       },
       "source": {
         "rowNumber": 26,
@@ -956,7 +956,7 @@
       "description": {
         "plainText": "Input: Validated Sales Order\nActivities: C.1 Synchronize Sales Order to SPS Commerce, C.2 Synchronize Sales Order with DHL\nOutput: Order Synced with D365 F&O",
         "summary": "Input: Validated Sales Order Activities: C.1 Synchronize Sales Order to SPS Commerce, C.2 Synchronize Sales Order with DHL Output: Order Synced with D365 F&O",
-        "htmlDecoded": true
+        "htmlDecoded": false
       },
       "source": {
         "rowNumber": 27,
@@ -992,7 +992,7 @@
       "description": {
         "plainText": "Input: Validated Sales Order\nActivities: B.1 Synchronize Sales Order to D365 F&O\nOutput: Order Synced with D365 F&O",
         "summary": "Input: Validated Sales Order Activities: B.1 Synchronize Sales Order to D365 F&O Output: Order Synced with D365 F&O",
-        "htmlDecoded": true
+        "htmlDecoded": false
       },
       "source": {
         "rowNumber": 28,
@@ -1028,7 +1028,7 @@
       "description": {
         "plainText": "Input: Validated Sales Order\nActivities: B.1 Synchronize Sales Order to D365 F&O\nOutput: Order Synced with D365 F&O",
         "summary": "Input: Validated Sales Order Activities: B.1 Synchronize Sales Order to D365 F&O Output: Order Synced with D365 F&O",
-        "htmlDecoded": true
+        "htmlDecoded": false
       },
       "source": {
         "rowNumber": 29,
@@ -1100,7 +1100,7 @@
       "description": {
         "plainText": "Input: Service Contract\nActivities: A.1 Synchronize Service Contract to F&O\nOutput: Contract Synced with F&O",
         "summary": "Input: Service Contract Activities: A.1 Synchronize Service Contract to F&O Output: Contract Synced with F&O",
-        "htmlDecoded": true
+        "htmlDecoded": false
       },
       "source": {
         "rowNumber": 31,
@@ -1134,7 +1134,7 @@
         ]
       },
       "description": {
-        "plainText": "Input: eCommerce Order\nActivities: A.1 Synchronize Order to Commerce HQ\nOutput: Order Synced with Commerce HQ",
+        "plainText": "Input: eCommerce Order\r\nActivities: A.1 Synchronize Order to Commerce HQ\r\nOutput: Order Synced with Commerce HQ",
         "summary": "Input: eCommerce Order Activities: A.1 Synchronize Order to Commerce HQ Output: Order Synced with Commerce HQ",
         "htmlDecoded": false
       },
@@ -1170,7 +1170,7 @@
         ]
       },
       "description": {
-        "plainText": "Input: eCommerce Order\nActivities: A.1 Synchronize Order to Commerce HQ\nOutput: Order Synced with Commerce HQ",
+        "plainText": "Input: eCommerce Order\r\nActivities: A.1 Synchronize Order to Commerce HQ\r\nOutput: Order Synced with Commerce HQ",
         "summary": "Input: eCommerce Order Activities: A.1 Synchronize Order to Commerce HQ Output: Order Synced with Commerce HQ",
         "htmlDecoded": false
       },
@@ -1206,7 +1206,7 @@
         ]
       },
       "description": {
-        "plainText": "Input: Delivery Confirmation + Return Processing Results\nActivities: 9.1 Confirm Replacement Completed, 9.2 Update Warranty Case/RMA Status, 9.3 Notify Distributor, 9.4 Close Warranty Transactions\nOutput: Warranty Replacement Closed",
+        "plainText": "Input: Delivery Confirmation + Return Processing Results\r\nActivities: 9.1 Confirm Replacement Completed, 9.2 Update Warranty Case/RMA Status, 9.3 Notify Distributor, 9.4 Close Warranty Transactions\r\nOutput: Warranty Replacement Closed",
         "summary": "Input: Delivery Confirmation + Return Processing Results Activities: 9.1 Confirm Replacement Completed, 9.2 Update Warranty Case/RMA Status, 9.3 Notify Distributor, 9.4 Close Warranty Transactions Output: Warranty Replacement Closed",
         "htmlDecoded": false
       },
@@ -1244,7 +1244,7 @@
       "description": {
         "plainText": "Input: Validated Sales Order\nActivities: A.1 Synchronize Sales Order to D365 F&O\nOutput: Order Synced with D365 F&O",
         "summary": "Input: Validated Sales Order Activities: A.1 Synchronize Sales Order to D365 F&O Output: Order Synced with D365 F&O",
-        "htmlDecoded": true
+        "htmlDecoded": false
       },
       "source": {
         "rowNumber": 35,
@@ -1280,7 +1280,7 @@
       "description": {
         "plainText": "Input: Software Package Available for Provisioning\nActivities: 9.1 Authorize Package Download, 9.2 Deliver Software Package, 9.3 Complete Software Installation & Activation\nOutput: Software Upgrade Successfully Installed & Activated",
         "summary": "Input: Software Package Available for Provisioning Activities: 9.1 Authorize Package Download, 9.2 Deliver Software Package, 9.3 Complete Software Installation & Activation Output: Software Upgrade Successfully Installed & Activated",
-        "htmlDecoded": true
+        "htmlDecoded": false
       },
       "source": {
         "rowNumber": 36,
@@ -1314,7 +1314,7 @@
         ]
       },
       "description": {
-        "plainText": "Input: Defective/unused spare part\nActivities: 9.1 Track and receive return shipment, 9.2 Record and process return receipt, 9.3 Close return\nOutput: Close return transaction",
+        "plainText": "Input: Defective/unused spare part\r\nActivities: 9.1 Track and receive return shipment, 9.2 Record and process return receipt, 9.3 Close return\r\nOutput: Close return transaction",
         "summary": "Input: Defective/unused spare part Activities: 9.1 Track and receive return shipment, 9.2 Record and process return receipt, 9.3 Close return Output: Close return transaction",
         "htmlDecoded": false
       },
@@ -1350,9 +1350,9 @@
         ]
       },
       "description": {
-        "plainText": "<div>Input: Partner-Generated Leads &\nCampaign Engagement Data  </div><div>Activities :  </div><div>9.1 Generate Partner-Sourced\nLeads  </div><div>9.2 Track Campaign Performance  </div><div>9.3 Measure Lead Generation\nOutcomes  </div><div><br> </div><div>Output: Qualified Partner-Sourced\nLeads </div>",
-        "summary": "<div>Input: Partner-Generated Leads & Campaign Engagement Data </div><div>Activities : </div><div>9.1 Generate Partner-Sourced Leads </div><div>9.2 Track Campaign Performance </div><div>9.3 Measure Lead Generation Outcomes </div><div><br> </div><div>Output: Qualified Partner-Sourced Leads </div>",
-        "htmlDecoded": true
+        "plainText": "Input: Partner-Generated Leads & Campaign Engagement Data\nActivities :\n9.1 Generate Partner-Sourced Leads\n9.2 Track Campaign Performance\n9.3 Measure Lead Generation Outcomes\n\nOutput: Qualified Partner-Sourced Leads",
+        "summary": "Input: Partner-Generated Leads & Campaign Engagement Data Activities : 9.1 Generate Partner-Sourced Leads 9.2 Track Campaign Performance 9.3 Measure Lead Generation Outcomes",
+        "htmlDecoded": false
       },
       "source": {
         "rowNumber": 38,
@@ -1386,7 +1386,7 @@
         ]
       },
       "description": {
-        "plainText": "Input: eCommerce Order\nActivities: A.1 Synchronize Order to Commerce HQ\nOutput: Order Synced with Commerce HQ",
+        "plainText": "Input: eCommerce Order\r\nActivities: A.1 Synchronize Order to Commerce HQ\r\nOutput: Order Synced with Commerce HQ",
         "summary": "Input: eCommerce Order Activities: A.1 Synchronize Order to Commerce HQ Output: Order Synced with Commerce HQ",
         "htmlDecoded": false
       },
@@ -1422,7 +1422,7 @@
         ]
       },
       "description": {
-        "plainText": "Input: eCommerce Order\nActivities: A.1 Synchronize Order to Commerce HQ\nOutput: Order Synced with Commerce HQ",
+        "plainText": "Input: eCommerce Order\r\nActivities: A.1 Synchronize Order to Commerce HQ\r\nOutput: Order Synced with Commerce HQ",
         "summary": "Input: eCommerce Order Activities: A.1 Synchronize Order to Commerce HQ Output: Order Synced with Commerce HQ",
         "htmlDecoded": false
       },
@@ -1458,7 +1458,7 @@
         ]
       },
       "description": {
-        "plainText": "Input: Assigned Service Case\nActivities: 9.1 Investigate and diagnose, 9.2 Communicate customer updates, 9.3 Record activity and case progress\nOutput: Diagnosis and action plan",
+        "plainText": "Input: Assigned Service Case\r\nActivities: 9.1 Investigate and diagnose, 9.2 Communicate customer updates, 9.3 Record activity and case progress\r\nOutput: Diagnosis and action plan",
         "summary": "Input: Assigned Service Case Activities: 9.1 Investigate and diagnose, 9.2 Communicate customer updates, 9.3 Record activity and case progress Output: Diagnosis and action plan",
         "htmlDecoded": false
       },
@@ -1496,7 +1496,7 @@
       "description": {
         "plainText": "Input: Order Released for Fulfillment\nActivities: 9.1 Process Fulfillment & Shipment, 9.2 Update Shipment Status, 9.3 Notify Customer, 9.4 Update Order Status\nOutput: Fulfilled Order & Delivery Confirmation",
         "summary": "Input: Order Released for Fulfillment Activities: 9.1 Process Fulfillment & Shipment, 9.2 Update Shipment Status, 9.3 Notify Customer, 9.4 Update Order Status Output: Fulfilled Order & Delivery Confirmation",
-        "htmlDecoded": true
+        "htmlDecoded": false
       },
       "source": {
         "rowNumber": 42,
@@ -1532,7 +1532,7 @@
       "description": {
         "plainText": "Input: Order Released for Fulfillment\nActivities: 9.1 Process Fulfillment & Shipment, 9.2 Update Shipment Status, 9.3 Notify Customer, 9.4 Update Order Status\nOutput: Fulfilled Order & Delivery Confirmation",
         "summary": "Input: Order Released for Fulfillment Activities: 9.1 Process Fulfillment & Shipment, 9.2 Update Shipment Status, 9.3 Notify Customer, 9.4 Update Order Status Output: Fulfilled Order & Delivery Confirmation",
-        "htmlDecoded": true
+        "htmlDecoded": false
       },
       "source": {
         "rowNumber": 43,
@@ -1568,7 +1568,7 @@
       "description": {
         "plainText": "Input: Order Released for Fulfillment\nActivities: 9.1 Process Fulfillment & Shipment, 9.2 Update Shipment Status, 9.3 Notify Customer, 9.4 Update Order Status\nOutput: Fulfilled Order & Delivery Confirmation",
         "summary": "Input: Order Released for Fulfillment Activities: 9.1 Process Fulfillment & Shipment, 9.2 Update Shipment Status, 9.3 Notify Customer, 9.4 Update Order Status Output: Fulfilled Order & Delivery Confirmation",
-        "htmlDecoded": true
+        "htmlDecoded": false
       },
       "source": {
         "rowNumber": 44,
@@ -1602,9 +1602,9 @@
         ]
       },
       "description": {
-        "plainText": "<div>Input: Customer Approved\nQuotation </div><div><br> </div><div>Activities :  </div><div> 9.1 Create Customer Contracts  </div><div>9.2 Manage Commercial                 \nAgreements  </div><div>9.3 Associate Contract Terms &\nPricing  </div><div>9.4   Associate multiple customer     \n        sites  </div><div><br> </div><div>Output: Active Customer Contract &\nContract Pricing Terms </div>",
-        "summary": "<div>Input: Customer Approved Quotation </div><div><br> </div><div>Activities : </div><div> 9.1 Create Customer Contracts </div><div>9.2 Manage Commercial Agreements </div><div>9.3 Associate Contract Terms & Pricing </div><div>9.4 Associate multiple customer sites </div><div><br> </div><div>Output: Active Customer Con…",
-        "htmlDecoded": true
+        "plainText": "Input: Customer Approved Quotation\n\nActivities :\n9.1 Create Customer Contracts\n9.2 Manage Commercial Agreements\n9.3 Associate Contract Terms & Pricing\n9.4 Associate multiple customer sites\n\nOutput: Active Customer Contract & Contract Pricing Terms",
+        "summary": "Input: Customer Approved Quotation",
+        "htmlDecoded": false
       },
       "source": {
         "rowNumber": 45,
@@ -1638,7 +1638,7 @@
         ]
       },
       "description": {
-        "plainText": "Input: Validated resolution\nActivities: 9.1 Validate with customer, 9.2 Complete investigation documentation, 9.3 Record root cause, 9.4 Create/update knowledge base, 9.5 Close service case\nOutput: Closed case and reusable knowledge base",
+        "plainText": "Input: Validated resolution\r\nActivities: 9.1 Validate with customer, 9.2 Complete investigation documentation, 9.3 Record root cause, 9.4 Create/update knowledge base, 9.5 Close service case\r\nOutput: Closed case and reusable knowledge base",
         "summary": "Input: Validated resolution Activities: 9.1 Validate with customer, 9.2 Complete investigation documentation, 9.3 Record root cause, 9.4 Create/update knowledge base, 9.5 Close service case Output: Closed case and reusable knowledge base",
         "htmlDecoded": false
       },
@@ -1674,7 +1674,7 @@
         ]
       },
       "description": {
-        "plainText": "Input: Posted Customer Invoice\nActivities: 8.1 Recognize Revenue\nOutput: Recognized Revenue",
+        "plainText": "Input: Posted Customer Invoice\r\nActivities: 8.1 Recognize Revenue\r\nOutput: Recognized Revenue",
         "summary": "Input: Posted Customer Invoice Activities: 8.1 Recognize Revenue Output: Recognized Revenue",
         "htmlDecoded": false
       },
@@ -1710,7 +1710,7 @@
         ]
       },
       "description": {
-        "plainText": "Input: Posted Customer Invoice\nActivities: 8.1 Recognize Revenue\nOutput: Recognized Revenue",
+        "plainText": "Input: Posted Customer Invoice\r\nActivities: 8.1 Recognize Revenue\r\nOutput: Recognized Revenue",
         "summary": "Input: Posted Customer Invoice Activities: 8.1 Recognize Revenue Output: Recognized Revenue",
         "htmlDecoded": false
       },
@@ -1746,7 +1746,7 @@
         ]
       },
       "description": {
-        "plainText": "Input: Returned spare parts\nActivities: 8.1 Return unused spare parts\nOutput: Spare parts returned",
+        "plainText": "Input: Returned spare parts\r\nActivities: 8.1 Return unused spare parts\r\nOutput: Spare parts returned",
         "summary": "Input: Returned spare parts Activities: 8.1 Return unused spare parts Output: Spare parts returned",
         "htmlDecoded": false
       },
@@ -1782,7 +1782,7 @@
         ]
       },
       "description": {
-        "plainText": "Input: RMA Authorization\nActivities: 8.1 Distributor Returns Defective Device, 8.2 DHL Tracks Return Shipment, 8.3 Warehouse Receives Return Equipment, 8.4 Inspect Returned Device\nOutput: Return Equipment Processed",
+        "plainText": "Input: RMA Authorization\r\nActivities: 8.1 Distributor Returns Defective Device, 8.2 DHL Tracks Return Shipment, 8.3 Warehouse Receives Return Equipment, 8.4 Inspect Returned Device\r\nOutput: Return Equipment Processed",
         "summary": "Input: RMA Authorization Activities: 8.1 Distributor Returns Defective Device, 8.2 DHL Tracks Return Shipment, 8.3 Warehouse Receives Return Equipment, 8.4 Inspect Returned Device Output: Return Equipment Processed",
         "htmlDecoded": false
       },
@@ -1818,9 +1818,9 @@
         ]
       },
       "description": {
-        "plainText": "<div>Input: Customer Decision  </div><div>Activities :  </div><div>8.1 Obtain customer approval         \nand sign-off  </div><div><br> </div><div>Output: Customer Decision Stage </div>",
-        "summary": "<div>Input: Customer Decision </div><div>Activities : </div><div>8.1 Obtain customer approval and sign-off </div><div><br> </div><div>Output: Customer Decision Stage </div>",
-        "htmlDecoded": true
+        "plainText": "Input: Customer Decision\nActivities :\n8.1 Obtain customer approval and sign-off\n\nOutput: Customer Decision Stage",
+        "summary": "Input: Customer Decision Activities : 8.1 Obtain customer approval and sign-off",
+        "htmlDecoded": false
       },
       "source": {
         "rowNumber": 51,
@@ -1854,7 +1854,7 @@
         ]
       },
       "description": {
-        "plainText": "Input: Execution result or remote resolution\nActivities: 8.1 Capture outcome and customer confirmation, 8.2 Update install base and service records\nOutput: Resolution ready for validation",
+        "plainText": "Input: Execution result or remote resolution\r\nActivities: 8.1 Capture outcome and customer confirmation, 8.2 Update install base and service records\r\nOutput: Resolution ready for validation",
         "summary": "Input: Execution result or remote resolution Activities: 8.1 Capture outcome and customer confirmation, 8.2 Update install base and service records Output: Resolution ready for validation",
         "htmlDecoded": false
       },
@@ -1890,7 +1890,7 @@
         ]
       },
       "description": {
-        "plainText": "Input: Sales Order\nActivities: A.1 Synchronize Order to Commerce HQ\nOutput: Order Synced with Commerce HQ",
+        "plainText": "Input: Sales Order\r\nActivities: A.1 Synchronize Order to Commerce HQ\r\nOutput: Order Synced with Commerce HQ",
         "summary": "Input: Sales Order Activities: A.1 Synchronize Order to Commerce HQ Output: Order Synced with Commerce HQ",
         "htmlDecoded": false
       },
@@ -1926,9 +1926,9 @@
         ]
       },
       "description": {
-        "plainText": "<div>Input: Enabled & Certified Partner\nNetwork  </div><div><br> </div><div>Activities :  </div><div>8.1 Plan Joint Marketing Activities  </div><div>8.2 Allocate MDF Budgets  </div><div>8.3 Create Target Segments  </div><div>8.4 Execute Campaigns &\nCustomer Journeys  </div><div><br> </div><div>Output: Partner-Generated Leads\n& Campaign Engagement Data<br> </div>",
-        "summary": "<div>Input: Enabled & Certified Partner Network </div><div><br> </div><div>Activities : </div><div>8.1 Plan Joint Marketing Activities </div><div>8.2 Allocate MDF Budgets </div><div>8.3 Create Target Segments </div><div>8.4 Execute Campaigns & Customer Journeys </div><div><br> </div><div>Output: Partner-Generated Lead…",
-        "htmlDecoded": true
+        "plainText": "Input: Enabled & Certified Partner Network\n\nActivities :\n8.1 Plan Joint Marketing Activities\n8.2 Allocate MDF Budgets\n8.3 Create Target Segments\n8.4 Execute Campaigns & Customer Journeys\n\nOutput: Partner-Generated Leads & Campaign Engagement Data",
+        "summary": "Input: Enabled & Certified Partner Network",
+        "htmlDecoded": false
       },
       "source": {
         "rowNumber": 54,
@@ -1962,7 +1962,7 @@
         ]
       },
       "description": {
-        "plainText": "Input: Confirmed Sales Order\nActivities: 8.1 Submit fulfillment request\nOutput: Order Released for Fulfillment",
+        "plainText": "Input: Confirmed Sales Order\r\nActivities: 8.1 Submit fulfillment request\r\nOutput: Order Released for Fulfillment",
         "summary": "Input: Confirmed Sales Order Activities: 8.1 Submit fulfillment request Output: Order Released for Fulfillment",
         "htmlDecoded": false
       },
@@ -1998,7 +1998,7 @@
         ]
       },
       "description": {
-        "plainText": "Input: Confirmed Sales Order\nActivities: 8.1 Submit fulfillment request\nOutput: Order Released for Fulfillment",
+        "plainText": "Input: Confirmed Sales Order\r\nActivities: 8.1 Submit fulfillment request\r\nOutput: Order Released for Fulfillment",
         "summary": "Input: Confirmed Sales Order Activities: 8.1 Submit fulfillment request Output: Order Released for Fulfillment",
         "htmlDecoded": false
       },
@@ -2034,7 +2034,7 @@
         ]
       },
       "description": {
-        "plainText": "Input: Confirmed Sales Order\nActivities: 8.1 Submit fulfillment request\nOutput: Order Released for Fulfillment",
+        "plainText": "Input: Confirmed Sales Order\r\nActivities: 8.1 Submit fulfillment request\r\nOutput: Order Released for Fulfillment",
         "summary": "Input: Confirmed Sales Order Activities: 8.1 Submit fulfillment request Output: Order Released for Fulfillment",
         "htmlDecoded": false
       },
@@ -2070,7 +2070,7 @@
         ]
       },
       "description": {
-        "plainText": "Input: Software Upgrade Work Order Available\nActivities: 8.1 Associate Entitlement to Customer, 8.2 Associate Entitlement to Devices, 8.3 Activate Upgrade Entitlement\nOutput: Active Upgrade Entitlement Ready for Distribution",
+        "plainText": "Input: Software Upgrade Work Order Available\r\nActivities: 8.1 Associate Entitlement to Customer, 8.2 Associate Entitlement to Devices, 8.3 Activate Upgrade Entitlement\r\nOutput: Active Upgrade Entitlement Ready for Distribution",
         "summary": "Input: Software Upgrade Work Order Available Activities: 8.1 Associate Entitlement to Customer, 8.2 Associate Entitlement to Devices, 8.3 Activate Upgrade Entitlement Output: Active Upgrade Entitlement Ready for Distribution",
         "htmlDecoded": false
       },
@@ -2106,7 +2106,7 @@
         ]
       },
       "description": {
-        "plainText": "Input: Active Subscription\nActivities: 8.1 Display renewal confirmation, 8.2 Send confirmation email, 8.3 Update subscription history\nOutput: Renewal Recorded",
+        "plainText": "Input: Active Subscription\r\nActivities: 8.1 Display renewal confirmation, 8.2 Send confirmation email, 8.3 Update subscription history\r\nOutput: Renewal Recorded",
         "summary": "Input: Active Subscription Activities: 8.1 Display renewal confirmation, 8.2 Send confirmation email, 8.3 Update subscription history Output: Renewal Recorded",
         "htmlDecoded": false
       },
@@ -2142,7 +2142,7 @@
         ]
       },
       "description": {
-        "plainText": "Input: Service Request\nActivities: 8.1 Validate Coverage, 8.2 Create Service Case, 8.3 Route and assign case, 8.4 Provide request acknowledgement\nOutput: Assigned Service Case",
+        "plainText": "Input: Service Request\r\nActivities: 8.1 Validate Coverage, 8.2 Create Service Case, 8.3 Route and assign case, 8.4 Provide request acknowledgement\r\nOutput: Assigned Service Case",
         "summary": "Input: Service Request Activities: 8.1 Validate Coverage, 8.2 Create Service Case, 8.3 Route and assign case, 8.4 Provide request acknowledgement Output: Assigned Service Case",
         "htmlDecoded": false
       },
@@ -2178,7 +2178,7 @@
         ]
       },
       "description": {
-        "plainText": "Input: Fulfillment Tracking Information\nActivities: 7.1 Update Tracking Number, 7.2 Update Confirm Delivery\nOutput: Replacement Device Delivered",
+        "plainText": "Input: Fulfillment Tracking Information\r\nActivities: 7.1 Update Tracking Number, 7.2 Update Confirm Delivery\r\nOutput: Replacement Device Delivered",
         "summary": "Input: Fulfillment Tracking Information Activities: 7.1 Update Tracking Number, 7.2 Update Confirm Delivery Output: Replacement Device Delivered",
         "htmlDecoded": false
       },
@@ -2214,7 +2214,7 @@
         ]
       },
       "description": {
-        "plainText": "Input: Spare parts\nActivities: 7.1 Receive and install spare parts, 7.2 Verify installation and device working, 7.3 Create spare part return request if applicable and review eligibility\nOutput: Device issue resolved",
+        "plainText": "Input: Spare parts\r\nActivities: 7.1 Receive and install spare parts, 7.2 Verify installation and device working, 7.3 Create spare part return request if applicable and review eligibility\r\nOutput: Device issue resolved",
         "summary": "Input: Spare parts Activities: 7.1 Receive and install spare parts, 7.2 Verify installation and device working, 7.3 Create spare part return request if applicable and review eligibility Output: Device issue resolved",
         "htmlDecoded": false
       },
@@ -2250,7 +2250,7 @@
         ]
       },
       "description": {
-        "plainText": "Input: Service Request and Asset details\nActivities: 7.1 Raise service request, 7.2 Capture channel, issue and asset\nOutput: Service Request Received",
+        "plainText": "Input: Service Request and Asset details\r\nActivities: 7.1 Raise service request, 7.2 Capture channel, issue and asset\r\nOutput: Service Request Received",
         "summary": "Input: Service Request and Asset details Activities: 7.1 Raise service request, 7.2 Capture channel, issue and asset Output: Service Request Received",
         "htmlDecoded": false
       },
@@ -2288,7 +2288,7 @@
       "description": {
         "plainText": "Input: Upgrade Work Order & Sales Order Created\nActivities: 7.1 Create Software Upgrade, 7.2 Sales Order, 7.3 Synchronize Sales Order to D365 F&O\nOutput: Software Upgrade Sales Order Available in D365 F&O",
         "summary": "Input: Upgrade Work Order & Sales Order Created Activities: 7.1 Create Software Upgrade, 7.2 Sales Order, 7.3 Synchronize Sales Order to D365 F&O Output: Software Upgrade Sales Order Available in D365 F&O",
-        "htmlDecoded": true
+        "htmlDecoded": false
       },
       "source": {
         "rowNumber": 64,
@@ -2322,7 +2322,7 @@
         ]
       },
       "description": {
-        "plainText": "Input: Validated Sales Order\nActivities: 7.1 Validate Sales Order, 7.2 Confirm Sales Order\nOutput: Confirmed Sales Order Ready for Fulfillment",
+        "plainText": "Input: Validated Sales Order\r\nActivities: 7.1 Validate Sales Order, 7.2 Confirm Sales Order\r\nOutput: Confirmed Sales Order Ready for Fulfillment",
         "summary": "Input: Validated Sales Order Activities: 7.1 Validate Sales Order, 7.2 Confirm Sales Order Output: Confirmed Sales Order Ready for Fulfillment",
         "htmlDecoded": false
       },
@@ -2358,7 +2358,7 @@
         ]
       },
       "description": {
-        "plainText": "Input: Validated Sales Order\nActivities: 7.1 Validate Sales Order, 7.2 Confirm Sales Order\nOutput: Confirmed Sales Order Ready for Fulfillment",
+        "plainText": "Input: Validated Sales Order\r\nActivities: 7.1 Validate Sales Order, 7.2 Confirm Sales Order\r\nOutput: Confirmed Sales Order Ready for Fulfillment",
         "summary": "Input: Validated Sales Order Activities: 7.1 Validate Sales Order, 7.2 Confirm Sales Order Output: Confirmed Sales Order Ready for Fulfillment",
         "htmlDecoded": false
       },
@@ -2394,7 +2394,7 @@
         ]
       },
       "description": {
-        "plainText": "Input: Validated Sales Order\nActivities: 7.1 Validate Sales Order, 7.2 Confirm Sales Order\nOutput: Confirmed Sales Order Ready for Fulfillment",
+        "plainText": "Input: Validated Sales Order\r\nActivities: 7.1 Validate Sales Order, 7.2 Confirm Sales Order\r\nOutput: Confirmed Sales Order Ready for Fulfillment",
         "summary": "Input: Validated Sales Order Activities: 7.1 Validate Sales Order, 7.2 Confirm Sales Order Output: Confirmed Sales Order Ready for Fulfillment",
         "htmlDecoded": false
       },
@@ -2430,9 +2430,9 @@
         ]
       },
       "description": {
-        "plainText": "<div>Input: Customer Needs  </div><div>Activities :  </div><div>7.1 Create Quotations  </div><div>7.2 Add Products, Services, SaaS / \n      Subscriptions as applicable  </div><div>7.3 Define Payment  / Invoicing       \n      Terms  </div><div>7.4 Negotiate & Revise Quote  </div><div>7.5 Share with Customer for             \n      Approval  </div><div><br> </div><div>Output: Customer Decision Stage </div>",
-        "summary": "<div>Input: Customer Needs </div><div>Activities : </div><div>7.1 Create Quotations </div><div>7.2 Add Products, Services, SaaS / Subscriptions as applicable </div><div>7.3 Define Payment / Invoicing Terms </div><div>7.4 Negotiate & Revise Quote </div><div>7.5 Share with Customer for Approval </div><div><br> </div><di…",
-        "htmlDecoded": true
+        "plainText": "Input: Customer Needs\nActivities :\n7.1 Create Quotations\n7.2 Add Products, Services, SaaS / Subscriptions as applicable\n7.3 Define Payment / Invoicing Terms\n7.4 Negotiate & Revise Quote\n7.5 Share with Customer for Approval\n\nOutput: Customer Decision Stage",
+        "summary": "Input: Customer Needs Activities : 7.1 Create Quotations 7.2 Add Products, Services, SaaS / Subscriptions as applicable 7.3 Define Payment / Invoicing Terms 7.4 Negotiate & Revise Quote 7.5 Share with Customer for Approval",
+        "htmlDecoded": false
       },
       "source": {
         "rowNumber": 68,
@@ -2466,9 +2466,9 @@
         ]
       },
       "description": {
-        "plainText": "<div>Input: Active Partner Account &\nPortal Access </div><div><br> </div><div>Activities :  </div><div>7.1 Provide Partner Training  </div><div>7.2 Deliver Certification Programs  </div><div>7.3 Share Sales & Marketing\nContent  </div><div>7.4 Track Training Completion  </div><div><br> </div><div>Output: Enabled & Certified Partner\nNetwork<br> </div>",
-        "summary": "<div>Input: Active Partner Account & Portal Access </div><div><br> </div><div>Activities : </div><div>7.1 Provide Partner Training </div><div>7.2 Deliver Certification Programs </div><div>7.3 Share Sales & Marketing Content </div><div>7.4 Track Training Completion </div><div><br> </div><div>Output: Enabled & Certified…",
-        "htmlDecoded": true
+        "plainText": "Input: Active Partner Account & Portal Access\n\nActivities :\n7.1 Provide Partner Training\n7.2 Deliver Certification Programs\n7.3 Share Sales & Marketing Content\n7.4 Track Training Completion\n\nOutput: Enabled & Certified Partner Network",
+        "summary": "Input: Active Partner Account & Portal Access",
+        "htmlDecoded": false
       },
       "source": {
         "rowNumber": 69,
@@ -2502,7 +2502,7 @@
         ]
       },
       "description": {
-        "plainText": "Input: Sales Order\nActivities: A.1 Synchronize Order to Commerce HQ\nOutput: Order Synced with Commerce HQ",
+        "plainText": "Input: Sales Order\r\nActivities: A.1 Synchronize Order to Commerce HQ\r\nOutput: Order Synced with Commerce HQ",
         "summary": "Input: Sales Order Activities: A.1 Synchronize Order to Commerce HQ Output: Order Synced with Commerce HQ",
         "htmlDecoded": false
       },
@@ -2538,7 +2538,7 @@
         ]
       },
       "description": {
-        "plainText": "Input: Fulfilled Order/Installed Base Record\nActivities: 7.1 Generate Customer Invoice, 7.2 Post Invoice, 7.3 Update Billing Status\nOutput: Posted Customer Invoice",
+        "plainText": "Input: Fulfilled Order/Installed Base Record\r\nActivities: 7.1 Generate Customer Invoice, 7.2 Post Invoice, 7.3 Update Billing Status\r\nOutput: Posted Customer Invoice",
         "summary": "Input: Fulfilled Order/Installed Base Record Activities: 7.1 Generate Customer Invoice, 7.2 Post Invoice, 7.3 Update Billing Status Output: Posted Customer Invoice",
         "htmlDecoded": false
       },
@@ -2574,7 +2574,7 @@
         ]
       },
       "description": {
-        "plainText": "Input: Fulfilled Order/Installed Base Record\nActivities: 7.1 Generate Customer Invoice, 7.2 Post Invoice, 7.3 Update Billing Status\nOutput: Posted Customer Invoice",
+        "plainText": "Input: Fulfilled Order/Installed Base Record\r\nActivities: 7.1 Generate Customer Invoice, 7.2 Post Invoice, 7.3 Update Billing Status\r\nOutput: Posted Customer Invoice",
         "summary": "Input: Fulfilled Order/Installed Base Record Activities: 7.1 Generate Customer Invoice, 7.2 Post Invoice, 7.3 Update Billing Status Output: Posted Customer Invoice",
         "htmlDecoded": false
       },
@@ -2610,7 +2610,7 @@
         ]
       },
       "description": {
-        "plainText": "Input: Approved Order\nActivities: 7.1 Generate invoice, 7.2 Send customer invoice, 7.3 Update billing status\nOutput: Invoice Issued",
+        "plainText": "Input: Approved Order\r\nActivities: 7.1 Generate invoice, 7.2 Send customer invoice, 7.3 Update billing status\r\nOutput: Invoice Issued",
         "summary": "Input: Approved Order Activities: 7.1 Generate invoice, 7.2 Send customer invoice, 7.3 Update billing status Output: Invoice Issued",
         "htmlDecoded": false
       },
@@ -2682,7 +2682,7 @@
         ]
       },
       "description": {
-        "plainText": "Input: Active Subscription\nActivities: 7.1 Display renewal confirmation, 7.2 Send confirmation email, 7.3 Update subscription history\nOutput: Renewal Recorded",
+        "plainText": "Input: Active Subscription\r\nActivities: 7.1 Display renewal confirmation, 7.2 Send confirmation email, 7.3 Update subscription history\r\nOutput: Renewal Recorded",
         "summary": "Input: Active Subscription Activities: 7.1 Display renewal confirmation, 7.2 Send confirmation email, 7.3 Update subscription history Output: Renewal Recorded",
         "htmlDecoded": false
       },
@@ -2718,7 +2718,7 @@
         ]
       },
       "description": {
-        "plainText": "Input: Assigned Work Order\nActivities: 7.1 Repair, replace, update or correct, 7.2 Capture completion evidence, 7.3 Return execution status\nOutput: Corrective action completed",
+        "plainText": "Input: Assigned Work Order\r\nActivities: 7.1 Repair, replace, update or correct, 7.2 Capture completion evidence, 7.3 Return execution status\r\nOutput: Corrective action completed",
         "summary": "Input: Assigned Work Order Activities: 7.1 Repair, replace, update or correct, 7.2 Capture completion evidence, 7.3 Return execution status Output: Corrective action completed",
         "htmlDecoded": false
       },
@@ -2756,7 +2756,7 @@
       "description": {
         "plainText": "Input: Validated Sales Order\nActivities: B.1 Synchronize Sales Order to D365 F&O\nOutput: Order Synced with D365 F&O",
         "summary": "Input: Validated Sales Order Activities: B.1 Synchronize Sales Order to D365 F&O Output: Order Synced with D365 F&O",
-        "htmlDecoded": true
+        "htmlDecoded": false
       },
       "source": {
         "rowNumber": 77,
@@ -2790,7 +2790,7 @@
         ]
       },
       "description": {
-        "plainText": "Input: eCommerce Order\nActivities: A.1 Synchronize Order to Commerce HQ\nOutput: Order Synced with Commerce HQ",
+        "plainText": "Input: eCommerce Order\r\nActivities: A.1 Synchronize Order to Commerce HQ\r\nOutput: Order Synced with Commerce HQ",
         "summary": "Input: eCommerce Order Activities: A.1 Synchronize Order to Commerce HQ Output: Order Synced with Commerce HQ",
         "htmlDecoded": false
       },
@@ -2826,9 +2826,9 @@
         ]
       },
       "description": {
-        "plainText": "<div>Input: Partner Data synced from CE  </div><div>Activities :  </div><div>6.1 Partner Data Avl in F&O  </div><div><br> </div><div>Output: Updated Partner\nCommercial Data F&O<br> </div><div><br> </div>",
-        "summary": "<div>Input: Partner Data synced from CE </div><div>Activities : </div><div>6.1 Partner Data Avl in F&O </div><div><br> </div><div>Output: Updated Partner Commercial Data F&O<br> </div><div><br> </div>",
-        "htmlDecoded": true
+        "plainText": "Input: Partner Data synced from CE\nActivities :\n6.1 Partner Data Avl in F&O\n\nOutput: Updated Partner Commercial Data F&O",
+        "summary": "Input: Partner Data synced from CE Activities : 6.1 Partner Data Avl in F&O",
+        "htmlDecoded": false
       },
       "source": {
         "rowNumber": 79,
@@ -2864,7 +2864,7 @@
       "description": {
         "plainText": "Input: Resolution requiring Field intervention\nActivities: 6.1 Create Work Order, 6.2 Provide asset, issue & action details, 6.3 Hand off to ASP\nOutput: Approved resolution recommendation",
         "summary": "Input: Resolution requiring Field intervention Activities: 6.1 Create Work Order, 6.2 Provide asset, issue & action details, 6.3 Hand off to ASP Output: Approved resolution recommendation",
-        "htmlDecoded": true
+        "htmlDecoded": false
       },
       "source": {
         "rowNumber": 80,
@@ -2900,7 +2900,7 @@
       "description": {
         "plainText": "Input: Validated Purchase Order\nActivities: C.1 Synchronize Purchase Order to SPS Commerce, C.2 Synchronize Purchase Order with DHL\nOutput: Goods Receipt posted order Synced with D365 <> DHL",
         "summary": "Input: Validated Purchase Order Activities: C.1 Synchronize Purchase Order to SPS Commerce, C.2 Synchronize Purchase Order with DHL Output: Goods Receipt posted order Synced with D365 <> DHL",
-        "htmlDecoded": true
+        "htmlDecoded": false
       },
       "source": {
         "rowNumber": 81,
@@ -2934,7 +2934,7 @@
         ]
       },
       "description": {
-        "plainText": "Input: Spare Parts Sales Order\nActivities: 6.1 Pick, pack and ship spare parts, 6.2 Generate shipment tracking, 6.3 Update shipment status\nOutput: Confirmed delivery to service distributor",
+        "plainText": "Input: Spare Parts Sales Order\r\nActivities: 6.1 Pick, pack and ship spare parts, 6.2 Generate shipment tracking, 6.3 Update shipment status\r\nOutput: Confirmed delivery to service distributor",
         "summary": "Input: Spare Parts Sales Order Activities: 6.1 Pick, pack and ship spare parts, 6.2 Generate shipment tracking, 6.3 Update shipment status Output: Confirmed delivery to service distributor",
         "htmlDecoded": false
       },
@@ -2972,7 +2972,7 @@
       "description": {
         "plainText": "Input: Released Fulfillment Order\nActivities: 6.1 Generate RMA/Return Instructions, 6.2 Pick Replacement Device/Accessories, 6.3 Pack & Ship Replacement Item, 6.4 Generate Tracking Number, 6.5 Confirm Delivery\nOutput: Replacement Device Delivered",
         "summary": "Input: Released Fulfillment Order Activities: 6.1 Generate RMA/Return Instructions, 6.2 Pick Replacement Device/Accessories, 6.3 Pack & Ship Replacement Item, 6.4 Generate Tracking Number, 6.5 Confirm Delivery Output: Replacement Device Delivered",
-        "htmlDecoded": true
+        "htmlDecoded": false
       },
       "source": {
         "rowNumber": 83,
@@ -3006,9 +3006,9 @@
         ]
       },
       "description": {
-        "plainText": "<div>Input: Partner Data Synced from\nPRM  </div><div>Activities :  </div><div>6.1 Partner Data Availability in\nCRM  </div><div>6.2 Partner Data (Status/               \n        Health/Score/Training /             \n        complaince / engagement /       \n        trends) made avaialable\n6.3   Sync Partner Data with F&O  </div><div><br> </div><div>Output: Partner Data Available in\nD365 CE <br> </div><div><br> </div><div><br> </div><div>Input: Active Partner Account in\nCE  </div><div>Activities :  </div><div>B.1 Sync Partner Profile with F&O  </div><div>B.2 Sync Partner Account\nInformation with F&O  </div><div><br> </div><div>Output: Partner Data Available in\nD365 F&O<br> </div>",
-        "summary": "<div>Input: Partner Data Synced from PRM </div><div>Activities : </div><div>6.1 Partner Data Availability in CRM </div><div>6.2 Partner Data (Status/ Health/Score/Training / complaince / engagement / trends) made avaialable 6.3 Sync Partner Data with F&O </div><div><br> </div><div>Output: Partner Data Available in D36…",
-        "htmlDecoded": true
+        "plainText": "Input: Partner Data Synced from PRM\nActivities :\n6.1 Partner Data Availability in CRM\n6.2 Partner Data (Status/ Health/Score/Training / complaince / engagement / trends) made avaialable 6.3 Sync Partner Data with F&O\n\nOutput: Partner Data Available in D365 CE\n\nInput: Active Partner Account in CE\nActivities :\nB.1 Sync Partner Profile with F&O\nB.2 Sync Partner Account Information with F&O\n\nOutput: Partner Data Available in D365 F&O",
+        "summary": "Input: Partner Data Synced from PRM Activities : 6.1 Partner Data Availability in CRM 6.2 Partner Data (Status/ Health/Score/Training / complaince / engagement / trends) made avaialable 6.3 Sync Partner Data with F&O",
+        "htmlDecoded": false
       },
       "source": {
         "rowNumber": 84,
@@ -3042,7 +3042,7 @@
         ]
       },
       "description": {
-        "plainText": "Input: Received eCommerce Order\nActivities: 6.1 Validate and convert order to Sales Order\nOutput: Validated Order",
+        "plainText": "Input: Received eCommerce Order\r\nActivities: 6.1 Validate and convert order to Sales Order\r\nOutput: Validated Order",
         "summary": "Input: Received eCommerce Order Activities: 6.1 Validate and convert order to Sales Order Output: Validated Order",
         "htmlDecoded": false
       },
@@ -3078,7 +3078,7 @@
         ]
       },
       "description": {
-        "plainText": "Input: Received eCommerce Order\nActivities: 6.1 Validate and convert order to Sales Order\nOutput: Validated Order",
+        "plainText": "Input: Received eCommerce Order\r\nActivities: 6.1 Validate and convert order to Sales Order\r\nOutput: Validated Order",
         "summary": "Input: Received eCommerce Order Activities: 6.1 Validate and convert order to Sales Order Output: Validated Order",
         "htmlDecoded": false
       },
@@ -3114,7 +3114,7 @@
         ]
       },
       "description": {
-        "plainText": "Input: Received eCommerce Order\nActivities: 6.1 Validate and convert order to Sales Order\nOutput: Validated Order",
+        "plainText": "Input: Received eCommerce Order\r\nActivities: 6.1 Validate and convert order to Sales Order\r\nOutput: Validated Order",
         "summary": "Input: Received eCommerce Order Activities: 6.1 Validate and convert order to Sales Order Output: Validated Order",
         "htmlDecoded": false
       },
@@ -3152,7 +3152,7 @@
       "description": {
         "plainText": "Input: Order Released for Fulfillment\nActivities: 6.1 Process Fulfillment & Shipment, 6.2 Update Shipment Status, 6.3 Notify Customer, 6.4 Update Order Status\nOutput: Fulfilled Order & Delivery Confirmation",
         "summary": "Input: Order Released for Fulfillment Activities: 6.1 Process Fulfillment & Shipment, 6.2 Update Shipment Status, 6.3 Notify Customer, 6.4 Update Order Status Output: Fulfilled Order & Delivery Confirmation",
-        "htmlDecoded": true
+        "htmlDecoded": false
       },
       "source": {
         "rowNumber": 88,
@@ -3188,7 +3188,7 @@
       "description": {
         "plainText": "Input: Order Released for Fulfillment\nActivities: 6.1 Process Fulfillment & Shipment, 6.2 Update Shipment Status, 6.3 Notify Customer, 6.4 Update Order Status\nOutput: Fulfilled Order & Delivery Confirmation",
         "summary": "Input: Order Released for Fulfillment Activities: 6.1 Process Fulfillment & Shipment, 6.2 Update Shipment Status, 6.3 Notify Customer, 6.4 Update Order Status Output: Fulfilled Order & Delivery Confirmation",
-        "htmlDecoded": true
+        "htmlDecoded": false
       },
       "source": {
         "rowNumber": 89,
@@ -3222,7 +3222,7 @@
         ]
       },
       "description": {
-        "plainText": "Input: Upgrade Activated\nActivities: 6.1 Extend entitlement period, 6.2 Update subscription status, 6.3 Maintain service access\nOutput: Active Subscription",
+        "plainText": "Input: Upgrade Activated\r\nActivities: 6.1 Extend entitlement period, 6.2 Update subscription status, 6.3 Maintain service access\r\nOutput: Active Subscription",
         "summary": "Input: Upgrade Activated Activities: 6.1 Extend entitlement period, 6.2 Update subscription status, 6.3 Maintain service access Output: Active Subscription",
         "htmlDecoded": false
       },
@@ -3258,7 +3258,7 @@
         ]
       },
       "description": {
-        "plainText": "Input: Renewal Initiated\nActivities: 6.1 Extend entitlement period, 6.2 Update subscription status, 6.3 Maintain remote connectivity\nOutput: Active Connectivity",
+        "plainText": "Input: Renewal Initiated\r\nActivities: 6.1 Extend entitlement period, 6.2 Update subscription status, 6.3 Maintain remote connectivity\r\nOutput: Active Connectivity",
         "summary": "Input: Renewal Initiated Activities: 6.1 Extend entitlement period, 6.2 Update subscription status, 6.3 Maintain remote connectivity Output: Active Connectivity",
         "htmlDecoded": false
       },
@@ -3294,7 +3294,7 @@
         ]
       },
       "description": {
-        "plainText": "Input: Validated Software Upgrade Order\nActivities: 6.1 Create Software Upgrade Entitlement, 6.2 Confirm Software Upgrade Purchase\nOutput: Active Software Upgrade Entitlement",
+        "plainText": "Input: Validated Software Upgrade Order\r\nActivities: 6.1 Create Software Upgrade Entitlement, 6.2 Confirm Software Upgrade Purchase\r\nOutput: Active Software Upgrade Entitlement",
         "summary": "Input: Validated Software Upgrade Order Activities: 6.1 Create Software Upgrade Entitlement, 6.2 Confirm Software Upgrade Purchase Output: Active Software Upgrade Entitlement",
         "htmlDecoded": false
       },
@@ -3330,7 +3330,7 @@
         ]
       },
       "description": {
-        "plainText": "Input: Active Subscription\nActivities: 6.1 Display renewal confirmation, 6.2 Send confirmation email, 6.3 Update subscription history\nOutput: Renewal Recorded",
+        "plainText": "Input: Active Subscription\r\nActivities: 6.1 Display renewal confirmation, 6.2 Send confirmation email, 6.3 Update subscription history\r\nOutput: Renewal Recorded",
         "summary": "Input: Active Subscription Activities: 6.1 Display renewal confirmation, 6.2 Send confirmation email, 6.3 Update subscription history Output: Renewal Recorded",
         "htmlDecoded": false
       },
@@ -3366,9 +3366,9 @@
         ]
       },
       "description": {
-        "plainText": "<div>Commercial Pricing Management\nInput: Product Catalog & Pricing\nPolicies  </div><div>Activities :  </div><div>6.1  Maintain Trade Agreement  </div><div>6.2  Manage Cust Groups  </div><div>6.3 Maintain Pricing Discounts  </div><div><br> </div><div>Output: Customer-Specific Pricing\n& Discount Rules </div>",
-        "summary": "<div>Commercial Pricing Management Input: Product Catalog & Pricing Policies </div><div>Activities : </div><div>6.1 Maintain Trade Agreement </div><div>6.2 Manage Cust Groups </div><div>6.3 Maintain Pricing Discounts </div><div><br> </div><div>Output: Customer-Specific Pricing & Discount Rules </div>",
-        "htmlDecoded": true
+        "plainText": "Commercial Pricing Management Input: Product Catalog & Pricing Policies\nActivities :\n6.1 Maintain Trade Agreement\n6.2 Manage Cust Groups\n6.3 Maintain Pricing Discounts\n\nOutput: Customer-Specific Pricing & Discount Rules",
+        "summary": "Commercial Pricing Management Input: Product Catalog & Pricing Policies Activities : 6.1 Maintain Trade Agreement 6.2 Manage Cust Groups 6.3 Maintain Pricing Discounts",
+        "htmlDecoded": false
       },
       "source": {
         "rowNumber": 94,
@@ -3404,7 +3404,7 @@
       "description": {
         "plainText": "Input: Product Catalog & Pricing Policies\nActivities: 6.1 Maintain Trade Agreement, 6.2 Manage Cust Groups, 6.3 Maintain Pricing Discounts\nOutput: Customer-Specific Pricing & Discount Rules",
         "summary": "Input: Product Catalog & Pricing Policies Activities: 6.1 Maintain Trade Agreement, 6.2 Manage Cust Groups, 6.3 Maintain Pricing Discounts Output: Customer-Specific Pricing & Discount Rules",
-        "htmlDecoded": true
+        "htmlDecoded": false
       },
       "source": {
         "rowNumber": 95,
@@ -3438,7 +3438,7 @@
         ]
       },
       "description": {
-        "plainText": "Input: Order Decision\nActivities: 5.1 Create renewal work order, 5.2 Link approved order, 5.3 Initiate entitlement renewal\nOutput: Renewal Initiated",
+        "plainText": "Input: Order Decision\r\nActivities: 5.1 Create renewal work order, 5.2 Link approved order, 5.3 Initiate entitlement renewal\r\nOutput: Renewal Initiated",
         "summary": "Input: Order Decision Activities: 5.1 Create renewal work order, 5.2 Link approved order, 5.3 Initiate entitlement renewal Output: Renewal Initiated",
         "htmlDecoded": false
       },
@@ -3476,7 +3476,7 @@
       "description": {
         "plainText": "Input: Product Catalog & Pricing Policies\nActivities: 5.1 Maintain Products, 5.2 Manage Selling Prices\nOutput: Products & Base Pricing Available for Sales",
         "summary": "Input: Product Catalog & Pricing Policies Activities: 5.1 Maintain Products, 5.2 Manage Selling Prices Output: Products & Base Pricing Available for Sales",
-        "htmlDecoded": true
+        "htmlDecoded": false
       },
       "source": {
         "rowNumber": 97,
@@ -3510,9 +3510,9 @@
         ]
       },
       "description": {
-        "plainText": "<div>Input: Product Catalog & Pricing\nPolicies  </div><div>Activities :  </div><div>5.1  Maintain Products  </div><div>5.2  Manage Selling Prices  </div><div><br> </div><div>Output: Products & Base Pricing\nAvailable for Sales </div>",
-        "summary": "<div>Input: Product Catalog & Pricing Policies </div><div>Activities : </div><div>5.1 Maintain Products </div><div>5.2 Manage Selling Prices </div><div><br> </div><div>Output: Products & Base Pricing Available for Sales </div>",
-        "htmlDecoded": true
+        "plainText": "Input: Product Catalog & Pricing Policies\nActivities :\n5.1 Maintain Products\n5.2 Manage Selling Prices\n\nOutput: Products & Base Pricing Available for Sales",
+        "summary": "Input: Product Catalog & Pricing Policies Activities : 5.1 Maintain Products 5.2 Manage Selling Prices",
+        "htmlDecoded": false
       },
       "source": {
         "rowNumber": 98,
@@ -3548,7 +3548,7 @@
       "description": {
         "plainText": "Input: Approved Invoice\nActivities: 5.1 Create payment proposal & approve method, 5.2 Generate payment (EFT/check/ISO 20022), 5.3 Settle transaction & post payment\nOutput: Payment Posted - P2P Complete",
         "summary": "Input: Approved Invoice Activities: 5.1 Create payment proposal & approve method, 5.2 Generate payment (EFT/check/ISO 20022), 5.3 Settle transaction & post payment Output: Payment Posted - P2P Complete",
-        "htmlDecoded": true
+        "htmlDecoded": false
       },
       "source": {
         "rowNumber": 99,
@@ -3582,9 +3582,9 @@
         ]
       },
       "description": {
-        "plainText": "<div>Input: Partner Program\nFramework & Channel Policies  </div><div>Activities :  </div><div>5.1 Onboard Approved Partner  </div><div>5.2 Provision Partner Access  </div><div>5.3 Setup Partner Credentials  </div><div><br> </div><div>Output: Active Partner Account &\nPortal Acces<br> </div>",
-        "summary": "<div>Input: Partner Program Framework & Channel Policies </div><div>Activities : </div><div>5.1 Onboard Approved Partner </div><div>5.2 Provision Partner Access </div><div>5.3 Setup Partner Credentials </div><div><br> </div><div>Output: Active Partner Account & Portal Acces<br> </div>",
-        "htmlDecoded": true
+        "plainText": "Input: Partner Program Framework & Channel Policies\nActivities :\n5.1 Onboard Approved Partner\n5.2 Provision Partner Access\n5.3 Setup Partner Credentials\n\nOutput: Active Partner Account & Portal Acces",
+        "summary": "Input: Partner Program Framework & Channel Policies Activities : 5.1 Onboard Approved Partner 5.2 Provision Partner Access 5.3 Setup Partner Credentials",
+        "htmlDecoded": false
       },
       "source": {
         "rowNumber": 100,
@@ -3618,7 +3618,7 @@
         ]
       },
       "description": {
-        "plainText": "Input: Software Upgrade Order Created\nActivities: 5.1 Validate Upgrade Order\nOutput: Validated Software Upgrade Order",
+        "plainText": "Input: Software Upgrade Order Created\r\nActivities: 5.1 Validate Upgrade Order\r\nOutput: Validated Software Upgrade Order",
         "summary": "Input: Software Upgrade Order Created Activities: 5.1 Validate Upgrade Order Output: Validated Software Upgrade Order",
         "htmlDecoded": false
       },
@@ -3654,7 +3654,7 @@
         ]
       },
       "description": {
-        "plainText": "Input: Validated Order\nActivities: 5.1 Create entitlement, 5.2 Activate upgrade rights, 5.3 Confirm purchase\nOutput: Upgrade Activated",
+        "plainText": "Input: Validated Order\r\nActivities: 5.1 Create entitlement, 5.2 Activate upgrade rights, 5.3 Confirm purchase\r\nOutput: Upgrade Activated",
         "summary": "Input: Validated Order Activities: 5.1 Create entitlement, 5.2 Activate upgrade rights, 5.3 Confirm purchase Output: Upgrade Activated",
         "htmlDecoded": false
       },
@@ -3690,7 +3690,7 @@
         ]
       },
       "description": {
-        "plainText": "Input: Released spare parts order\nActivities: 5.1 Receive fulfillment spare parts order request and downstream activities, 5.2 Receive returned spare parts\nOutput: Order fulfillment and returns",
+        "plainText": "Input: Released spare parts order\r\nActivities: 5.1 Receive fulfillment spare parts order request and downstream activities, 5.2 Receive returned spare parts\r\nOutput: Order fulfillment and returns",
         "summary": "Input: Released spare parts order Activities: 5.1 Receive fulfillment spare parts order request and downstream activities, 5.2 Receive returned spare parts Output: Order fulfillment and returns",
         "htmlDecoded": false
       },
@@ -3728,7 +3728,7 @@
       "description": {
         "plainText": "Input: Customer demand generated via campaigns\nActivities: 5.1 Customer Discovers Product, 5.2 Place Order on Channel Platform, 5.3 Capture Order & Customer Details\nOutput: eCommerce order created",
         "summary": "Input: Customer demand generated via campaigns Activities: 5.1 Customer Discovers Product, 5.2 Place Order on Channel Platform, 5.3 Capture Order & Customer Details Output: eCommerce order created",
-        "htmlDecoded": true
+        "htmlDecoded": false
       },
       "source": {
         "rowNumber": 104,
@@ -3764,7 +3764,7 @@
       "description": {
         "plainText": "Input: Customer demand generated via campaigns\nActivities: 5.1 Customer Discovers Product, 5.2 Place Order on Channel Platform, 5.3 Capture Order & Customer Details\nOutput: eCommerce order created",
         "summary": "Input: Customer demand generated via campaigns Activities: 5.1 Customer Discovers Product, 5.2 Place Order on Channel Platform, 5.3 Capture Order & Customer Details Output: eCommerce order created",
-        "htmlDecoded": true
+        "htmlDecoded": false
       },
       "source": {
         "rowNumber": 105,
@@ -3800,7 +3800,7 @@
       "description": {
         "plainText": "Input: Customer demand generated via campaigns\nActivities: 5.1 Customer Discovers Product, 5.2 Place Order on Channel Platform, 5.3 Capture Order & Customer Details\nOutput: eCommerce order created",
         "summary": "Input: Customer demand generated via campaigns Activities: 5.1 Customer Discovers Product, 5.2 Place Order on Channel Platform, 5.3 Capture Order & Customer Details Output: eCommerce order created",
-        "htmlDecoded": true
+        "htmlDecoded": false
       },
       "source": {
         "rowNumber": 106,
@@ -3834,7 +3834,7 @@
         ]
       },
       "description": {
-        "plainText": "Input: Replacement Order\nActivities: 5.1 Validate Inventory Availability, 5.2 Reserve Inventory, 5.3 Release Order for fulfillment\nOutput: Fulfillment Order Released",
+        "plainText": "Input: Replacement Order\r\nActivities: 5.1 Validate Inventory Availability, 5.2 Reserve Inventory, 5.3 Release Order for fulfillment\r\nOutput: Fulfillment Order Released",
         "summary": "Input: Replacement Order Activities: 5.1 Validate Inventory Availability, 5.2 Reserve Inventory, 5.3 Release Order for fulfillment Output: Fulfillment Order Released",
         "htmlDecoded": false
       },
@@ -3870,7 +3870,7 @@
         ]
       },
       "description": {
-        "plainText": "Input: Confirmed Sales Order\nActivities: 5.1 Submit fulfillment request\nOutput: Order Released for Fulfillment",
+        "plainText": "Input: Confirmed Sales Order\r\nActivities: 5.1 Submit fulfillment request\r\nOutput: Order Released for Fulfillment",
         "summary": "Input: Confirmed Sales Order Activities: 5.1 Submit fulfillment request Output: Order Released for Fulfillment",
         "htmlDecoded": false
       },
@@ -3906,7 +3906,7 @@
         ]
       },
       "description": {
-        "plainText": "Input: Confirmed Sales Order\nActivities: 5.1 Submit fulfillment request\nOutput: Order Released for Fulfillment",
+        "plainText": "Input: Confirmed Sales Order\r\nActivities: 5.1 Submit fulfillment request\r\nOutput: Order Released for Fulfillment",
         "summary": "Input: Confirmed Sales Order Activities: 5.1 Submit fulfillment request Output: Order Released for Fulfillment",
         "htmlDecoded": false
       },
@@ -3942,7 +3942,7 @@
         ]
       },
       "description": {
-        "plainText": "Input: Upgrade Activated\nActivities: 5.1 Extend entitlement period, 5.2 Update subscription status, 5.3 Maintain service access\nOutput: Active Subscription",
+        "plainText": "Input: Upgrade Activated\r\nActivities: 5.1 Extend entitlement period, 5.2 Update subscription status, 5.3 Maintain service access\r\nOutput: Active Subscription",
         "summary": "Input: Upgrade Activated Activities: 5.1 Extend entitlement period, 5.2 Update subscription status, 5.3 Maintain service access Output: Active Subscription",
         "htmlDecoded": false
       },
@@ -3978,7 +3978,7 @@
         ]
       },
       "description": {
-        "plainText": "Input: Confirmed Root cause\nActivities: 5.1 Define corrective actions, 5.2 Document recommended resolution, 5.3 Identify execution path\nOutput: Approved resolution recommendation",
+        "plainText": "Input: Confirmed Root cause\r\nActivities: 5.1 Define corrective actions, 5.2 Document recommended resolution, 5.3 Identify execution path\r\nOutput: Approved resolution recommendation",
         "summary": "Input: Confirmed Root cause Activities: 5.1 Define corrective actions, 5.2 Document recommended resolution, 5.3 Identify execution path Output: Approved resolution recommendation",
         "htmlDecoded": false
       },
@@ -4016,7 +4016,7 @@
       "description": {
         "plainText": "Input: Vendor Invoice + Goods Receipt\nActivities: 4.1 Register & pool vendor invoice, 4.2 Perform 2-way/3-way invoice matching, 4.3 Approve invoice for posting\nOutput: Approved Invoice Posted",
         "summary": "Input: Vendor Invoice + Goods Receipt Activities: 4.1 Register & pool vendor invoice, 4.2 Perform 2-way/3-way invoice matching, 4.3 Approve invoice for posting Output: Approved Invoice Posted",
-        "htmlDecoded": true
+        "htmlDecoded": false
       },
       "source": {
         "rowNumber": 112,
@@ -4050,7 +4050,7 @@
         ]
       },
       "description": {
-        "plainText": "Input: Assigned Tier 3 case\nActivities: 4.1 Perform Detailed investigation, 4.2 Capture findings and evidence, 4.3 Collaborate with engineering, quality and service teams, 4.4 Determine root cause\nOutput: Investigation findings and root cause assessment",
+        "plainText": "Input: Assigned Tier 3 case\r\nActivities: 4.1 Perform Detailed investigation, 4.2 Capture findings and evidence, 4.3 Collaborate with engineering, quality and service teams, 4.4 Determine root cause\r\nOutput: Investigation findings and root cause assessment",
         "summary": "Input: Assigned Tier 3 case Activities: 4.1 Perform Detailed investigation, 4.2 Capture findings and evidence, 4.3 Collaborate with engineering, quality and service teams, 4.4 Determine root cause Output: Investigation findings and root cause assessment",
         "htmlDecoded": false
       },
@@ -4086,7 +4086,7 @@
         ]
       },
       "description": {
-        "plainText": "Input: Paid Software Upgrade Order\nActivities: 4.1 Create Software Upgrade Order, 4.2 Synchronize order to Commerce HQ\nOutput: Software Upgrade Order Created",
+        "plainText": "Input: Paid Software Upgrade Order\r\nActivities: 4.1 Create Software Upgrade Order, 4.2 Synchronize order to Commerce HQ\r\nOutput: Software Upgrade Order Created",
         "summary": "Input: Paid Software Upgrade Order Activities: 4.1 Create Software Upgrade Order, 4.2 Synchronize order to Commerce HQ Output: Software Upgrade Order Created",
         "htmlDecoded": false
       },
@@ -4122,7 +4122,7 @@
         ]
       },
       "description": {
-        "plainText": "Input: Submitted PO\nActivities: 4.1 Receive sales order, 4.2 Validate Subscription details, 4.3 Review and approve order\nOutput: Order Confirmation; Notify Customer",
+        "plainText": "Input: Submitted PO\r\nActivities: 4.1 Receive sales order, 4.2 Validate Subscription details, 4.3 Review and approve order\r\nOutput: Order Confirmation; Notify Customer",
         "summary": "Input: Submitted PO Activities: 4.1 Receive sales order, 4.2 Validate Subscription details, 4.3 Review and approve order Output: Order Confirmation; Notify Customer",
         "htmlDecoded": false
       },
@@ -4158,7 +4158,7 @@
         ]
       },
       "description": {
-        "plainText": "Input: Validated Sales Order\nActivities: 4.1 Validate Sales Order, 4.2 Confirm Sales Order\nOutput: Confirmed Sales Order Ready for Fulfillment",
+        "plainText": "Input: Validated Sales Order\r\nActivities: 4.1 Validate Sales Order, 4.2 Confirm Sales Order\r\nOutput: Confirmed Sales Order Ready for Fulfillment",
         "summary": "Input: Validated Sales Order Activities: 4.1 Validate Sales Order, 4.2 Confirm Sales Order Output: Confirmed Sales Order Ready for Fulfillment",
         "htmlDecoded": false
       },
@@ -4194,7 +4194,7 @@
         ]
       },
       "description": {
-        "plainText": "Input: Validated Sales Order\nActivities: 4.1 Validate Sales Order, 4.2 Confirm Sales Order\nOutput: Confirmed Sales Order Ready for Fulfillment",
+        "plainText": "Input: Validated Sales Order\r\nActivities: 4.1 Validate Sales Order, 4.2 Confirm Sales Order\r\nOutput: Confirmed Sales Order Ready for Fulfillment",
         "summary": "Input: Validated Sales Order Activities: 4.1 Validate Sales Order, 4.2 Confirm Sales Order Output: Confirmed Sales Order Ready for Fulfillment",
         "htmlDecoded": false
       },
@@ -4232,7 +4232,7 @@
       "description": {
         "plainText": "Input: Return & Replacement Order\nActivities: 4.1 Receive Return Order from CE\nOutput: Return order request created",
         "summary": "Input: Return & Replacement Order Activities: 4.1 Receive Return Order from CE Output: Return order request created",
-        "htmlDecoded": true
+        "htmlDecoded": false
       },
       "source": {
         "rowNumber": 118,
@@ -4268,7 +4268,7 @@
       "description": {
         "plainText": "Input: Renewal Order\nActivities: 4.1 Create Subscription order, 4.2 Sync order to Commerce HQ, 4.3 Validate renewal order details, 4.4 Confirm Renewal Transaction\nOutput: Validated & Confirmed order",
         "summary": "Input: Renewal Order Activities: 4.1 Create Subscription order, 4.2 Sync order to Commerce HQ, 4.3 Validate renewal order details, 4.4 Confirm Renewal Transaction Output: Validated & Confirmed order",
-        "htmlDecoded": true
+        "htmlDecoded": false
       },
       "source": {
         "rowNumber": 119,
@@ -4302,7 +4302,7 @@
         ]
       },
       "description": {
-        "plainText": "Input: Renewal Order\nActivities: 4.1 Sync order to HQ, 4.2 Validate order details\nOutput: Validated order",
+        "plainText": "Input: Renewal Order\r\nActivities: 4.1 Sync order to HQ, 4.2 Validate order details\r\nOutput: Validated order",
         "summary": "Input: Renewal Order Activities: 4.1 Sync order to HQ, 4.2 Validate order details Output: Validated order",
         "htmlDecoded": false
       },
@@ -4338,9 +4338,9 @@
         ]
       },
       "description": {
-        "plainText": "<div>Input: Sales Accepted Leads  </div><div>Activities :  </div><div>4.1 Create Opportunities  </div><div>4.2 Manage Sales Pipeline  </div><div>4.3 Track Sales Activities  </div><div>4.4 Identify Upsell/Cross-Sell           \n      Opportunities  </div><div>4.5 Manage Sales Forecast /           \n      Forecast Categories/ Win Lost   \n      Analysis  </div><div>4.6 Review Sales Analytics &           \n      Forecast Reports  </div><div><br> </div><div>Output: Qualified Sales Opportunities </div>",
-        "summary": "<div>Input: Sales Accepted Leads </div><div>Activities : </div><div>4.1 Create Opportunities </div><div>4.2 Manage Sales Pipeline </div><div>4.3 Track Sales Activities </div><div>4.4 Identify Upsell/Cross-Sell Opportunities </div><div>4.5 Manage Sales Forecast / Forecast Categories/ Win Lost Analysis </div><div>4.6 Re…",
-        "htmlDecoded": true
+        "plainText": "Input: Sales Accepted Leads\nActivities :\n4.1 Create Opportunities\n4.2 Manage Sales Pipeline\n4.3 Track Sales Activities\n4.4 Identify Upsell/Cross-Sell Opportunities\n4.5 Manage Sales Forecast / Forecast Categories/ Win Lost Analysis\n4.6 Review Sales Analytics & Forecast Reports\n\nOutput: Qualified Sales Opportunities",
+        "summary": "Input: Sales Accepted Leads Activities : 4.1 Create Opportunities 4.2 Manage Sales Pipeline 4.3 Track Sales Activities 4.4 Identify Upsell/Cross-Sell Opportunities 4.5 Manage Sales Forecast / Forecast Categories/ Win Lost Analysis 4.6 Review Sales Analytics & Forecast Reports",
+        "htmlDecoded": false
       },
       "source": {
         "rowNumber": 121,
@@ -4376,7 +4376,7 @@
       "description": {
         "plainText": "Input: Enabled promotional & selling capabilities\nActivities: 4.1 Define Campaigns & Media, 4.2 MDF & Co-Marketing, 4.3 Execute Social & Influencer Campaigns, 4.4 Drive Engagement & Demand, 4.5 Monitor Performance & Conversions\nOutput: Qualified Customer Demand",
         "summary": "Input: Enabled promotional & selling capabilities Activities: 4.1 Define Campaigns & Media, 4.2 MDF & Co-Marketing, 4.3 Execute Social & Influencer Campaigns, 4.4 Drive Engagement & Demand, 4.5 Monitor Performance & Conversions Output: Qualified Customer Demand",
-        "htmlDecoded": true
+        "htmlDecoded": false
       },
       "source": {
         "rowNumber": 122,
@@ -4412,7 +4412,7 @@
       "description": {
         "plainText": "Input: Retailers onboarded & enabled\nActivities: 4.1 Define co-marketing & promotional plans, 4.2 Allocate Marketing Development Funds (MDF), 4.3 Execute retail & media campaigns, 4.4 Manage promotions & in-store activations, 4.5 Monitor campaign & promotional performance\nOutput: Qualified Customer Demand",
         "summary": "Input: Retailers onboarded & enabled Activities: 4.1 Define co-marketing & promotional plans, 4.2 Allocate Marketing Development Funds (MDF), 4.3 Execute retail & media campaigns, 4.4 Manage promotions & in-store activations, 4.5 Monitor campaign & promotional performance Output: Qualified Customer Demand",
-        "htmlDecoded": true
+        "htmlDecoded": false
       },
       "source": {
         "rowNumber": 123,
@@ -4446,7 +4446,7 @@
         ]
       },
       "description": {
-        "plainText": "Input: Spare parts Sales Order\nActivities: 4.1 Validate inventory availability, 4.2 Allocate spare parts, 4.3 Release order for fulfillment\nOutput: Order Released for fulfillment",
+        "plainText": "Input: Spare parts Sales Order\r\nActivities: 4.1 Validate inventory availability, 4.2 Allocate spare parts, 4.3 Release order for fulfillment\r\nOutput: Order Released for fulfillment",
         "summary": "Input: Spare parts Sales Order Activities: 4.1 Validate inventory availability, 4.2 Allocate spare parts, 4.3 Release order for fulfillment Output: Order Released for fulfillment",
         "htmlDecoded": false
       },
@@ -4482,7 +4482,7 @@
         ]
       },
       "description": {
-        "plainText": "Input: Customer, Location and Asset data\nActivities: 4.1 Create Installed Products, 4.2 Link Account and Locations, 4.3 Maintain warranty and serial data, 4.4 Govern Installed-base quality\nOutput: Trusted Installed Base record",
+        "plainText": "Input: Customer, Location and Asset data\r\nActivities: 4.1 Create Installed Products, 4.2 Link Account and Locations, 4.3 Maintain warranty and serial data, 4.4 Govern Installed-base quality\r\nOutput: Trusted Installed Base record",
         "summary": "Input: Customer, Location and Asset data Activities: 4.1 Create Installed Products, 4.2 Link Account and Locations, 4.3 Maintain warranty and serial data, 4.4 Govern Installed-base quality Output: Trusted Installed Base record",
         "htmlDecoded": false
       },
@@ -4518,9 +4518,9 @@
         ]
       },
       "description": {
-        "plainText": "<div>Input: F&O Commercial Setup  </div><div><br> </div><div>Activities :  </div><div>4.1 Sync Pricing & Discounts  </div><div>4.2 Sync Rebate Structure  </div><div><br> </div><div>Output: Updated Partner\nCommercial Data in Zinfi<br> </div>",
-        "summary": "<div>Input: F&O Commercial Setup </div><div><br> </div><div>Activities : </div><div>4.1 Sync Pricing & Discounts </div><div>4.2 Sync Rebate Structure </div><div><br> </div><div>Output: Updated Partner Commercial Data in Zinfi<br> </div>",
-        "htmlDecoded": true
+        "plainText": "Input: F&O Commercial Setup\n\nActivities :\n4.1 Sync Pricing & Discounts\n4.2 Sync Rebate Structure\n\nOutput: Updated Partner Commercial Data in Zinfi",
+        "summary": "Input: F&O Commercial Setup",
+        "htmlDecoded": false
       },
       "source": {
         "rowNumber": 126,
@@ -4556,7 +4556,7 @@
       "description": {
         "plainText": "Input: Affiliate pricing & eligibility defined\nActivities: 4.1 Maintain affiliate discounts & promotions, 4.2 Associate promotions with affiliate programs, 4.3 Publish affiliate offers to eCommerce channels\nOutput: Affiliate offers published to eCommerce channels",
         "summary": "Input: Affiliate pricing & eligibility defined Activities: 4.1 Maintain affiliate discounts & promotions, 4.2 Associate promotions with affiliate programs, 4.3 Publish affiliate offers to eCommerce channels Output: Affiliate offers published to eCommerce channels",
-        "htmlDecoded": true
+        "htmlDecoded": false
       },
       "source": {
         "rowNumber": 127,
@@ -4590,7 +4590,7 @@
         ]
       },
       "description": {
-        "plainText": "Input: Qualified Sales Leads\nActivities : \nA.1 Handover Qualified Leads\nA.2 Assign Lead Ownership\nA.3 Route Lead to Sales Team\nOutput: Sales Accepted Leads",
+        "plainText": "Input: Qualified Sales Leads\r\nActivities : \r\nA.1 Handover Qualified Leads\r\nA.2 Assign Lead Ownership\r\nA.3 Route Lead to Sales Team\r\nOutput: Sales Accepted Leads",
         "summary": "Input: Qualified Sales Leads Activities : A.1 Handover Qualified Leads A.2 Assign Lead Ownership A.3 Route Lead to Sales Team Output: Sales Accepted Leads",
         "htmlDecoded": false
       },
@@ -4626,7 +4626,7 @@
         ]
       },
       "description": {
-        "plainText": "Input: Case requiring advanced support\nActivities: 3.1 Assign Engineering or product specialist, 3.2 Set investigation ownership\nOutput: Tier 3 ownership set",
+        "plainText": "Input: Case requiring advanced support\r\nActivities: 3.1 Assign Engineering or product specialist, 3.2 Set investigation ownership\r\nOutput: Tier 3 ownership set",
         "summary": "Input: Case requiring advanced support Activities: 3.1 Assign Engineering or product specialist, 3.2 Set investigation ownership Output: Tier 3 ownership set",
         "htmlDecoded": false
       },
@@ -4662,7 +4662,7 @@
         ]
       },
       "description": {
-        "plainText": "Input: Customer Approval\nActivities: 3.1 Review renewal details, 3.2 Proceed to checkout, 3.3 Process payment\nOutput: Payment Confirmation",
+        "plainText": "Input: Customer Approval\r\nActivities: 3.1 Review renewal details, 3.2 Proceed to checkout, 3.3 Process payment\r\nOutput: Payment Confirmation",
         "summary": "Input: Customer Approval Activities: 3.1 Review renewal details, 3.2 Proceed to checkout, 3.3 Process payment Output: Payment Confirmation",
         "htmlDecoded": false
       },
@@ -4698,7 +4698,7 @@
         ]
       },
       "description": {
-        "plainText": "Input: Customer Approval\nActivities: 3.1 Initiate renewal, 3.2 Generate renewal order, 3.3 Process payment, 3.4 Confirm transaction\nOutput: Renewed Subscription",
+        "plainText": "Input: Customer Approval\r\nActivities: 3.1 Initiate renewal, 3.2 Generate renewal order, 3.3 Process payment, 3.4 Confirm transaction\r\nOutput: Renewed Subscription",
         "summary": "Input: Customer Approval Activities: 3.1 Initiate renewal, 3.2 Generate renewal order, 3.3 Process payment, 3.4 Confirm transaction Output: Renewed Subscription",
         "htmlDecoded": false
       },
@@ -4734,7 +4734,7 @@
         ]
       },
       "description": {
-        "plainText": "Input: Spare parts order request\nActivities: 3.1 Validate warranty, entitlement or service contract as applicable, 3.2 Review order eligibility, 3.3 Create Spare parts sales order\nOutput: Spare Parts Sales Order",
+        "plainText": "Input: Spare parts order request\r\nActivities: 3.1 Validate warranty, entitlement or service contract as applicable, 3.2 Review order eligibility, 3.3 Create Spare parts sales order\r\nOutput: Spare Parts Sales Order",
         "summary": "Input: Spare parts order request Activities: 3.1 Validate warranty, entitlement or service contract as applicable, 3.2 Review order eligibility, 3.3 Create Spare parts sales order Output: Spare Parts Sales Order",
         "htmlDecoded": false
       },
@@ -4770,7 +4770,7 @@
         ]
       },
       "description": {
-        "plainText": "Input: Active Contract\nActivities: 3.1 Create Entitlements, 3.2 Link Contract and Assets, 3.3 Define Entitled Services, 3.4 Track Usage and Validity\nOutput: Validated Service Coverage",
+        "plainText": "Input: Active Contract\r\nActivities: 3.1 Create Entitlements, 3.2 Link Contract and Assets, 3.3 Define Entitled Services, 3.4 Track Usage and Validity\r\nOutput: Validated Service Coverage",
         "summary": "Input: Active Contract Activities: 3.1 Create Entitlements, 3.2 Link Contract and Assets, 3.3 Define Entitled Services, 3.4 Track Usage and Validity Output: Validated Service Coverage",
         "htmlDecoded": false
       },
@@ -4808,7 +4808,7 @@
       "description": {
         "plainText": "Input: Approved Warranty Authorization\nActivities: 3.1 Generate Warranty Replacement/Return Order Request, 3.2 Submit Request to F&O\nOutput: RMA and Replacement Order Created",
         "summary": "Input: Approved Warranty Authorization Activities: 3.1 Generate Warranty Replacement/Return Order Request, 3.2 Submit Request to F&O Output: RMA and Replacement Order Created",
-        "htmlDecoded": true
+        "htmlDecoded": false
       },
       "source": {
         "rowNumber": 134,
@@ -4842,7 +4842,7 @@
         ]
       },
       "description": {
-        "plainText": "Input: Renewal Request\nActivities: 3.1 Select renewal term, 3.2 Create renewal request, 3.3 Submit PO details\nOutput: Submitted PO",
+        "plainText": "Input: Renewal Request\r\nActivities: 3.1 Select renewal term, 3.2 Create renewal request, 3.3 Submit PO details\r\nOutput: Submitted PO",
         "summary": "Input: Renewal Request Activities: 3.1 Select renewal term, 3.2 Create renewal request, 3.3 Submit PO details Output: Submitted PO",
         "htmlDecoded": false
       },
@@ -4880,7 +4880,7 @@
       "description": {
         "plainText": "Input: Partner Onboarding\nActivities: 3.1 Onboard Channel Partners, 3.2 Publish Catalog & Content, 3.3 Provide Brand & Campaign Assets, 3.4 Enable Selling & Promotions\nOutput: Partners onboarded & enabled to sell",
         "summary": "Input: Partner Onboarding Activities: 3.1 Onboard Channel Partners, 3.2 Publish Catalog & Content, 3.3 Provide Brand & Campaign Assets, 3.4 Enable Selling & Promotions Output: Partners onboarded & enabled to sell",
-        "htmlDecoded": true
+        "htmlDecoded": false
       },
       "source": {
         "rowNumber": 136,
@@ -4916,7 +4916,7 @@
       "description": {
         "plainText": "Input: Executed retailer contracts\nActivities: 3.1 Onboard approved retailers, 3.2 Setup retailer account & channel profile, 3.3 Share product catalogs & pricing, 3.4 Provide retailer training & onboarding materials\nOutput: Retailers onboarded & enabled",
         "summary": "Input: Executed retailer contracts Activities: 3.1 Onboard approved retailers, 3.2 Setup retailer account & channel profile, 3.3 Share product catalogs & pricing, 3.4 Provide retailer training & onboarding materials Output: Retailers onboarded & enabled",
-        "htmlDecoded": true
+        "htmlDecoded": false
       },
       "source": {
         "rowNumber": 137,
@@ -4950,9 +4950,9 @@
         ]
       },
       "description": {
-        "plainText": "<div>Input: Partner Program\nFramework & Channel Policies  </div><div><br> </div><div>Activities :  </div><div>3.1 Create Partner Account  </div><div>3.2 Define Partner Pricing &\nDiscounts  </div><div>3.3 Define Rebate Eligibility &\nRules  </div><div>3.4 Establish Partner\nAgreements  </div><div><br> </div><div>Output: Active Partner Contract &\nCommercial Terms<br> </div>",
-        "summary": "<div>Input: Partner Program Framework & Channel Policies </div><div><br> </div><div>Activities : </div><div>3.1 Create Partner Account </div><div>3.2 Define Partner Pricing & Discounts </div><div>3.3 Define Rebate Eligibility & Rules </div><div>3.4 Establish Partner Agreements </div><div><br> </div><div>Output: Active…",
-        "htmlDecoded": true
+        "plainText": "Input: Partner Program Framework & Channel Policies\n\nActivities :\n3.1 Create Partner Account\n3.2 Define Partner Pricing & Discounts\n3.3 Define Rebate Eligibility & Rules\n3.4 Establish Partner Agreements\n\nOutput: Active Partner Contract & Commercial Terms",
+        "summary": "Input: Partner Program Framework & Channel Policies",
+        "htmlDecoded": false
       },
       "source": {
         "rowNumber": 138,
@@ -4986,7 +4986,7 @@
         ]
       },
       "description": {
-        "plainText": "Input: Received eCommerce Order\nActivities: 3.1 Validate and convert order to Sales Order\nOutput: Validated Order",
+        "plainText": "Input: Received eCommerce Order\r\nActivities: 3.1 Validate and convert order to Sales Order\r\nOutput: Validated Order",
         "summary": "Input: Received eCommerce Order Activities: 3.1 Validate and convert order to Sales Order Output: Validated Order",
         "htmlDecoded": false
       },
@@ -5022,7 +5022,7 @@
         ]
       },
       "description": {
-        "plainText": "Input: Received eCommerce Order\nActivities: 3.1 Validate and convert order to Sales Order\nOutput: Validated Order",
+        "plainText": "Input: Received eCommerce Order\r\nActivities: 3.1 Validate and convert order to Sales Order\r\nOutput: Validated Order",
         "summary": "Input: Received eCommerce Order Activities: 3.1 Validate and convert order to Sales Order Output: Validated Order",
         "htmlDecoded": false
       },
@@ -5058,9 +5058,9 @@
         ]
       },
       "description": {
-        "plainText": "<div>Input: Marketing Qualified Leads\n(MQLs)  </div><div>Activities :  </div><div>3.1 Generate Leads  </div><div>3.2 Score & Qualify Leads  </div><div>3.3 Identify MQLs  </div><div><br> </div><div>Output: Qualified Sales Leads </div>",
-        "summary": "<div>Input: Marketing Qualified Leads (MQLs) </div><div>Activities : </div><div>3.1 Generate Leads </div><div>3.2 Score & Qualify Leads </div><div>3.3 Identify MQLs </div><div><br> </div><div>Output: Qualified Sales Leads </div>",
-        "htmlDecoded": true
+        "plainText": "Input: Marketing Qualified Leads (MQLs)\nActivities :\n3.1 Generate Leads\n3.2 Score & Qualify Leads\n3.3 Identify MQLs\n\nOutput: Qualified Sales Leads",
+        "summary": "Input: Marketing Qualified Leads (MQLs) Activities : 3.1 Generate Leads 3.2 Score & Qualify Leads 3.3 Identify MQLs",
+        "htmlDecoded": false
       },
       "source": {
         "rowNumber": 141,
@@ -5096,7 +5096,7 @@
       "description": {
         "plainText": "Input: Confirmed PO/Vendor Shipment (ASN)\nActivities: 3.1 Register arrival & post product receipt, 3.2 Update on-hand inventory\nOutput: Goods Receipt Posted",
         "summary": "Input: Confirmed PO/Vendor Shipment (ASN) Activities: 3.1 Register arrival & post product receipt, 3.2 Update on-hand inventory Output: Goods Receipt Posted",
-        "htmlDecoded": true
+        "htmlDecoded": false
       },
       "source": {
         "rowNumber": 142,
@@ -5132,7 +5132,7 @@
       "description": {
         "plainText": "Input: Product Catalog & Pricing Policies\nActivities: 3.1 Maintain Trade Agreement, 3.2 Manage Cust Groups, 3.3 Maintain Pricing Discounts\nOutput: Customer-Specific Pricing & Discount Rules",
         "summary": "Input: Product Catalog & Pricing Policies Activities: 3.1 Maintain Trade Agreement, 3.2 Manage Cust Groups, 3.3 Maintain Pricing Discounts Output: Customer-Specific Pricing & Discount Rules",
-        "htmlDecoded": true
+        "htmlDecoded": false
       },
       "source": {
         "rowNumber": 143,
@@ -5166,7 +5166,7 @@
         ]
       },
       "description": {
-        "plainText": "Input: Software Upgrade Cart Created\nActivities: 3.1 Review Upgrade Details, 3.2 Proceed to Checkout, 3.3 Process Payment via Credit Card/Confirmation on PO\nOutput: Paid Software Upgrade Order",
+        "plainText": "Input: Software Upgrade Cart Created\r\nActivities: 3.1 Review Upgrade Details, 3.2 Proceed to Checkout, 3.3 Process Payment via Credit Card/Confirmation on PO\r\nOutput: Paid Software Upgrade Order",
         "summary": "Input: Software Upgrade Cart Created Activities: 3.1 Review Upgrade Details, 3.2 Proceed to Checkout, 3.3 Process Payment via Credit Card/Confirmation on PO Output: Paid Software Upgrade Order",
         "htmlDecoded": false
       },
@@ -5202,9 +5202,9 @@
         ]
       },
       "description": {
-        "plainText": "<div>Input: Approved Rebate & MDF\nSettlements  </div><div><br> </div><div>Activities :  </div><div>16.1Approve Rebate & MDF\nSettlements  </div><div>16.3Process Rebate & MDF\nPayouts  </div><div>16.4Report Rebate & MDF\nPerformance  </div><div><br> </div><div>Output: Rebate & MDF Obligations\nSettled<br> </div>",
-        "summary": "<div>Input: Approved Rebate & MDF Settlements </div><div><br> </div><div>Activities : </div><div>16.1Approve Rebate & MDF Settlements </div><div>16.3Process Rebate & MDF Payouts </div><div>16.4Report Rebate & MDF Performance </div><div><br> </div><div>Output: Rebate & MDF Obligations Settled<br> </div>",
-        "htmlDecoded": true
+        "plainText": "Input: Approved Rebate & MDF Settlements\n\nActivities :\n16.1Approve Rebate & MDF Settlements\n16.3Process Rebate & MDF Payouts\n16.4Report Rebate & MDF Performance\n\nOutput: Rebate & MDF Obligations Settled",
+        "summary": "Input: Approved Rebate & MDF Settlements",
+        "htmlDecoded": false
       },
       "source": {
         "rowNumber": 145,
@@ -5238,9 +5238,9 @@
         ]
       },
       "description": {
-        "plainText": "<div>Input: Cash Collected &\nReceivables Settled  </div><div>Activities :  </div><div>15.1Calculate Rebate Eligibility  </div><div>15.2Calculate Earned Rebates  </div><div>15.3Track MDF Utilization  </div><div>15.4Validate Rebate & MDF Claims </div><div><br> </div><div>Output: Approved Rebate & MDF\nSettlements<br> </div>",
-        "summary": "<div>Input: Cash Collected & Receivables Settled </div><div>Activities : </div><div>15.1Calculate Rebate Eligibility </div><div>15.2Calculate Earned Rebates </div><div>15.3Track MDF Utilization </div><div>15.4Validate Rebate & MDF Claims </div><div><br> </div><div>Output: Approved Rebate & MDF Settlements<br> </div>",
-        "htmlDecoded": true
+        "plainText": "Input: Cash Collected & Receivables Settled\nActivities :\n15.1Calculate Rebate Eligibility\n15.2Calculate Earned Rebates\n15.3Track MDF Utilization\n15.4Validate Rebate & MDF Claims\n\nOutput: Approved Rebate & MDF Settlements",
+        "summary": "Input: Cash Collected & Receivables Settled Activities : 15.1Calculate Rebate Eligibility 15.2Calculate Earned Rebates 15.3Track MDF Utilization 15.4Validate Rebate & MDF Claims",
+        "htmlDecoded": false
       },
       "source": {
         "rowNumber": 146,
@@ -5274,9 +5274,9 @@
         ]
       },
       "description": {
-        "plainText": "<div>Input: Posted Customer Invoice  </div><div>Activities :  </div><div>14.1Process Customer Payments  </div><div>14.2Apply Payments Against\nInvoices  </div><div>14.3Manage Receivables &\nCollections  </div><div><br> </div><div>Output: Payment Collected &\nReceivables Settled<br> </div>",
-        "summary": "<div>Input: Posted Customer Invoice </div><div>Activities : </div><div>14.1Process Customer Payments </div><div>14.2Apply Payments Against Invoices </div><div>14.3Manage Receivables & Collections </div><div><br> </div><div>Output: Payment Collected & Receivables Settled<br> </div>",
-        "htmlDecoded": true
+        "plainText": "Input: Posted Customer Invoice\nActivities :\n14.1Process Customer Payments\n14.2Apply Payments Against Invoices\n14.3Manage Receivables & Collections\n\nOutput: Payment Collected & Receivables Settled",
+        "summary": "Input: Posted Customer Invoice Activities : 14.1Process Customer Payments 14.2Apply Payments Against Invoices 14.3Manage Receivables & Collections",
+        "htmlDecoded": false
       },
       "source": {
         "rowNumber": 147,
@@ -5310,7 +5310,7 @@
         ]
       },
       "description": {
-        "plainText": "Input: Warranty Replacement Request\nActivities: 2.1 Review Warranty Request, 2.2 Review Customer Account and Installed Device information and warranty coverage, 2.3 Validate Entitlement Eligibility\nOutput: Warranty Authorization",
+        "plainText": "Input: Warranty Replacement Request\r\nActivities: 2.1 Review Warranty Request, 2.2 Review Customer Account and Installed Device information and warranty coverage, 2.3 Validate Entitlement Eligibility\r\nOutput: Warranty Authorization",
         "summary": "Input: Warranty Replacement Request Activities: 2.1 Review Warranty Request, 2.2 Review Customer Account and Installed Device information and warranty coverage, 2.3 Validate Entitlement Eligibility Output: Warranty Authorization",
         "htmlDecoded": false
       },
@@ -5346,7 +5346,7 @@
         ]
       },
       "description": {
-        "plainText": "Input: Upgrade Opportunity Presented to Customer\nActivities: 2.1 Select Upgrade Features, 2.2 Select Target Devices, 2.3 Add Upgrade to Cart\nOutput: Software Upgrade Cart Created",
+        "plainText": "Input: Upgrade Opportunity Presented to Customer\r\nActivities: 2.1 Select Upgrade Features, 2.2 Select Target Devices, 2.3 Add Upgrade to Cart\r\nOutput: Software Upgrade Cart Created",
         "summary": "Input: Upgrade Opportunity Presented to Customer Activities: 2.1 Select Upgrade Features, 2.2 Select Target Devices, 2.3 Add Upgrade to Cart Output: Software Upgrade Cart Created",
         "htmlDecoded": false
       },
@@ -5382,7 +5382,7 @@
         ]
       },
       "description": {
-        "plainText": "Input: Device issue diagnosis and warranty scenario\nActivities: 2.1 Create spare parts order request for identified spare parts, 2.2 Submit spare parts order\nOutput: Spare parts order request",
+        "plainText": "Input: Device issue diagnosis and warranty scenario\r\nActivities: 2.1 Create spare parts order request for identified spare parts, 2.2 Submit spare parts order\r\nOutput: Spare parts order request",
         "summary": "Input: Device issue diagnosis and warranty scenario Activities: 2.1 Create spare parts order request for identified spare parts, 2.2 Submit spare parts order Output: Spare parts order request",
         "htmlDecoded": false
       },
@@ -5420,7 +5420,7 @@
       "description": {
         "plainText": "Input: Approved Requisition\nActivities: 2.1 Source vendor via RFQ (if required) & select bid, 2.2 Create purchase order, add charges & tax, 2.3 Confirm PO & send to vendor\nOutput: Confirmed Purchase Order",
         "summary": "Input: Approved Requisition Activities: 2.1 Source vendor via RFQ (if required) & select bid, 2.2 Create purchase order, add charges & tax, 2.3 Confirm PO & send to vendor Output: Confirmed Purchase Order",
-        "htmlDecoded": true
+        "htmlDecoded": false
       },
       "source": {
         "rowNumber": 151,
@@ -5456,7 +5456,7 @@
       "description": {
         "plainText": "Input: Buy now selected\nActivities: 2.1 Auto-Add Replacement Items, 2.2 Suggest Related Accessories, 2.3 Review Cart & Checkout, 2.4 Capture Delivery Details, 2.5 Process Payment\nOutput: eCommerce replacement order created",
         "summary": "Input: Buy now selected Activities: 2.1 Auto-Add Replacement Items, 2.2 Suggest Related Accessories, 2.3 Review Cart & Checkout, 2.4 Capture Delivery Details, 2.5 Process Payment Output: eCommerce replacement order created",
-        "htmlDecoded": true
+        "htmlDecoded": false
       },
       "source": {
         "rowNumber": 152,
@@ -5490,9 +5490,9 @@
         ]
       },
       "description": {
-        "plainText": "<div>Input: Approved Service Quotation  </div><div><br> </div><div>Activities: 2.1 Create Service Contract,  </div><div>2.2 Define Service Levels,  </div><div>2.3 Link Customer and locations,  </div><div>2.4 Maintain Lifecycle and renewals  </div><div><br> </div><div>Output: Active Service Contract </div>",
-        "summary": "<div>Input: Approved Service Quotation </div><div><br> </div><div>Activities: 2.1 Create Service Contract, </div><div>2.2 Define Service Levels, </div><div>2.3 Link Customer and locations, </div><div>2.4 Maintain Lifecycle and renewals </div><div><br> </div><div>Output: Active Service Contract </div>",
-        "htmlDecoded": true
+        "plainText": "Input: Approved Service Quotation\n\nActivities: 2.1 Create Service Contract,\n2.2 Define Service Levels,\n2.3 Link Customer and locations,\n2.4 Maintain Lifecycle and renewals\n\nOutput: Active Service Contract",
+        "summary": "Input: Approved Service Quotation",
+        "htmlDecoded": false
       },
       "source": {
         "rowNumber": 153,
@@ -5528,7 +5528,7 @@
       "description": {
         "plainText": "Input: Retail channel strategy defined\nActivities: 2.1 Identify prospective retail partners, 2.2 Evaluate retailer eligibility & fit, 2.3 Define commercial terms & discounts, 2.4 Negotiate retailer agreements, 2.5 Execute retailer contracts\nOutput: Retailer contracts executed",
         "summary": "Input: Retail channel strategy defined Activities: 2.1 Identify prospective retail partners, 2.2 Evaluate retailer eligibility & fit, 2.3 Define commercial terms & discounts, 2.4 Negotiate retailer agreements, 2.5 Execute retailer contracts Output: Retailer contracts executed",
-        "htmlDecoded": true
+        "htmlDecoded": false
       },
       "source": {
         "rowNumber": 154,
@@ -5564,7 +5564,7 @@
       "description": {
         "plainText": "Input: Product Catalog & Pricing Policies\nActivities: 2.1 Maintain Products, 2.2 Manage Selling Prices\nOutput: Products & Base Pricing Available for Sales",
         "summary": "Input: Product Catalog & Pricing Policies Activities: 2.1 Maintain Products, 2.2 Manage Selling Prices Output: Products & Base Pricing Available for Sales",
-        "htmlDecoded": true
+        "htmlDecoded": false
       },
       "source": {
         "rowNumber": 155,
@@ -5600,7 +5600,7 @@
       "description": {
         "plainText": "Input: Approved channel strategy & platform selection\nActivities: 2.1 Identify Partners & Platforms, 2.2 Define Commercial Agreements, 2.3 Configure Channels & Integrations, 2.4 Activate Channel Partnerships\nOutput: Active Social Commerce Channel",
         "summary": "Input: Approved channel strategy & platform selection Activities: 2.1 Identify Partners & Platforms, 2.2 Define Commercial Agreements, 2.3 Configure Channels & Integrations, 2.4 Activate Channel Partnerships Output: Active Social Commerce Channel",
-        "htmlDecoded": true
+        "htmlDecoded": false
       },
       "source": {
         "rowNumber": 156,
@@ -5634,9 +5634,9 @@
         ]
       },
       "description": {
-        "plainText": "<div>Input: Partner Program\nFramework & Channel Policies  </div><div><br> </div><div>Activities :  </div><div>2.1 Capture Partner Applications  </div><div>2.2 Evaluate Partner Eligibility </div><div>2.3 Approve Partner Enrollment  </div><div><br> </div><div>Output: Approved Partner Profile<br> </div>",
-        "summary": "<div>Input: Partner Program Framework & Channel Policies </div><div><br> </div><div>Activities : </div><div>2.1 Capture Partner Applications </div><div>2.2 Evaluate Partner Eligibility </div><div>2.3 Approve Partner Enrollment </div><div><br> </div><div>Output: Approved Partner Profile<br> </div>",
-        "htmlDecoded": true
+        "plainText": "Input: Partner Program Framework & Channel Policies\n\nActivities :\n2.1 Capture Partner Applications\n2.2 Evaluate Partner Eligibility\n2.3 Approve Partner Enrollment\n\nOutput: Approved Partner Profile",
+        "summary": "Input: Partner Program Framework & Channel Policies",
+        "htmlDecoded": false
       },
       "source": {
         "rowNumber": 157,
@@ -5670,7 +5670,7 @@
         ]
       },
       "description": {
-        "plainText": "Input: Renewal Candidates\nActivities: 2.1 Send expiry notification, 2.2 Display renewal options, 2.3 Present renewal terms\nOutput: Customer Response",
+        "plainText": "Input: Renewal Candidates\r\nActivities: 2.1 Send expiry notification, 2.2 Display renewal options, 2.3 Present renewal terms\r\nOutput: Customer Response",
         "summary": "Input: Renewal Candidates Activities: 2.1 Send expiry notification, 2.2 Display renewal options, 2.3 Present renewal terms Output: Customer Response",
         "htmlDecoded": false
       },
@@ -5706,7 +5706,7 @@
         ]
       },
       "description": {
-        "plainText": "Input: Renewal Candidates\nActivities: 2.1 Send expiry notification, 2.2 Display renewal options, 2.3 Present PO Renewal Option\nOutput: Customer Response",
+        "plainText": "Input: Renewal Candidates\r\nActivities: 2.1 Send expiry notification, 2.2 Display renewal options, 2.3 Present PO Renewal Option\r\nOutput: Customer Response",
         "summary": "Input: Renewal Candidates Activities: 2.1 Send expiry notification, 2.2 Display renewal options, 2.3 Present PO Renewal Option Output: Customer Response",
         "htmlDecoded": false
       },
@@ -5742,7 +5742,7 @@
         ]
       },
       "description": {
-        "plainText": "Input: Renewal Candidates\nActivities: 2.1 Send renewal notice, 2.2 Present renewal terms, 2.3 Enable cancellation\nOutput: Customer Response",
+        "plainText": "Input: Renewal Candidates\r\nActivities: 2.1 Send renewal notice, 2.2 Present renewal terms, 2.3 Enable cancellation\r\nOutput: Customer Response",
         "summary": "Input: Renewal Candidates Activities: 2.1 Send renewal notice, 2.2 Present renewal terms, 2.3 Enable cancellation Output: Customer Response",
         "htmlDecoded": false
       },
@@ -5778,7 +5778,7 @@
         ]
       },
       "description": {
-        "plainText": "Input: Classified Service case\nActivities: 2.1 Validate Customer asset and entitlement, 2.2 Assess severity and priority, 2.3 Review knowledge and similar cases, 2.4 Route to support team\nOutput: Triaged and routed case",
+        "plainText": "Input: Classified Service case\r\nActivities: 2.1 Validate Customer asset and entitlement, 2.2 Assess severity and priority, 2.3 Review knowledge and similar cases, 2.4 Route to support team\r\nOutput: Triaged and routed case",
         "summary": "Input: Classified Service case Activities: 2.1 Validate Customer asset and entitlement, 2.2 Assess severity and priority, 2.3 Review knowledge and similar cases, 2.4 Route to support team Output: Triaged and routed case",
         "htmlDecoded": false
       },
@@ -5816,7 +5816,7 @@
       "description": {
         "plainText": "Input: Items added to cart\nActivities: 2.1 Review & Update Cart, 2.2 Checkout & Enter Address Details, 2.3 Process Payment, 2.4 Create Order Maintain Order History\nOutput: eCommerce order created",
         "summary": "Input: Items added to cart Activities: 2.1 Review & Update Cart, 2.2 Checkout & Enter Address Details, 2.3 Process Payment, 2.4 Create Order Maintain Order History Output: eCommerce order created",
-        "htmlDecoded": true
+        "htmlDecoded": false
       },
       "source": {
         "rowNumber": 162,
@@ -5850,9 +5850,9 @@
         ]
       },
       "description": {
-        "plainText": "<div>Input: Qualified Target\nSegments & Marketing Leads  </div><div>Activities :  </div><div> 2.1 Define Campaign Strategy  </div><div>2.2 Execute Campaigns  </div><div>2.3 Monitor Camp Performance  </div><div><br> </div><div>Output: Marketing Qualified Leads </div>",
-        "summary": "<div>Input: Qualified Target Segments & Marketing Leads </div><div>Activities : </div><div> 2.1 Define Campaign Strategy </div><div>2.2 Execute Campaigns </div><div>2.3 Monitor Camp Performance </div><div><br> </div><div>Output: Marketing Qualified Leads </div>",
-        "htmlDecoded": true
+        "plainText": "Input: Qualified Target Segments & Marketing Leads\nActivities :\n2.1 Define Campaign Strategy\n2.2 Execute Campaigns\n2.3 Monitor Camp Performance\n\nOutput: Marketing Qualified Leads",
+        "summary": "Input: Qualified Target Segments & Marketing Leads Activities : 2.1 Define Campaign Strategy 2.2 Execute Campaigns 2.3 Monitor Camp Performance",
+        "htmlDecoded": false
       },
       "source": {
         "rowNumber": 163,
@@ -5886,9 +5886,9 @@
         ]
       },
       "description": {
-        "plainText": "<div>Input: Fulfilled Order & Delivery\nConfirmation  </div><div><br> </div><div>Activities :  </div><div>13.1Generate Customer Invoice  </div><div>13.2Post Invoice  </div><div>13.3Update Billing Status  </div><div><br> </div><div>Output: Posted Customer Invoice<br> </div>",
-        "summary": "<div>Input: Fulfilled Order & Delivery Confirmation </div><div><br> </div><div>Activities : </div><div>13.1Generate Customer Invoice </div><div>13.2Post Invoice </div><div>13.3Update Billing Status </div><div><br> </div><div>Output: Posted Customer Invoice<br> </div>",
-        "htmlDecoded": true
+        "plainText": "Input: Fulfilled Order & Delivery Confirmation\n\nActivities :\n13.1Generate Customer Invoice\n13.2Post Invoice\n13.3Update Billing Status\n\nOutput: Posted Customer Invoice",
+        "summary": "Input: Fulfilled Order & Delivery Confirmation",
+        "htmlDecoded": false
       },
       "source": {
         "rowNumber": 164,
@@ -5922,9 +5922,9 @@
         ]
       },
       "description": {
-        "plainText": "<div>Input: Order Released for\nFulfillment  </div><div>Activities :  </div><div>14.1Process Fulfilment & Shipment  </div><div>14.2Update Shipment Status  </div><div>14.3Notify Partner / Customer  </div><div>14.4Update Order Status </div><div><br> </div><div> Output: Fulfilled Order & Delivery\nConfirmation<br> </div>",
-        "summary": "<div>Input: Order Released for Fulfillment </div><div>Activities : </div><div>14.1Process Fulfilment & Shipment </div><div>14.2Update Shipment Status </div><div>14.3Notify Partner / Customer </div><div>14.4Update Order Status </div><div><br> </div><div> Output: Fulfilled Order & Delivery Confirmation<br> </div>",
-        "htmlDecoded": true
+        "plainText": "Input: Order Released for Fulfillment\nActivities :\n14.1Process Fulfilment & Shipment\n14.2Update Shipment Status\n14.3Notify Partner / Customer\n14.4Update Order Status\n\nOutput: Fulfilled Order & Delivery Confirmation",
+        "summary": "Input: Order Released for Fulfillment Activities : 14.1Process Fulfilment & Shipment 14.2Update Shipment Status 14.3Notify Partner / Customer 14.4Update Order Status",
+        "htmlDecoded": false
       },
       "source": {
         "rowNumber": 165,
@@ -5958,9 +5958,9 @@
         ]
       },
       "description": {
-        "plainText": "<div>Input: Posted Customer Invoice  </div><div>Activities :  </div><div>17.1 Process Customer Payments  </div><div>17.2 Apply Payments to Invoices  </div><div>17.3 Manage Receivables &\nCollections  </div><div><br> </div><div>Output: Cash Collected &     \nReceivables Settled </div>",
-        "summary": "<div>Input: Posted Customer Invoice </div><div>Activities : </div><div>17.1 Process Customer Payments </div><div>17.2 Apply Payments to Invoices </div><div>17.3 Manage Receivables & Collections </div><div><br> </div><div>Output: Cash Collected & Receivables Settled </div>",
-        "htmlDecoded": true
+        "plainText": "Input: Posted Customer Invoice\nActivities :\n17.1 Process Customer Payments\n17.2 Apply Payments to Invoices\n17.3 Manage Receivables & Collections\n\nOutput: Cash Collected & Receivables Settled",
+        "summary": "Input: Posted Customer Invoice Activities : 17.1 Process Customer Payments 17.2 Apply Payments to Invoices 17.3 Manage Receivables & Collections",
+        "htmlDecoded": false
       },
       "source": {
         "rowNumber": 166,
@@ -5994,9 +5994,9 @@
         ]
       },
       "description": {
-        "plainText": "<div>Input: Validated & Submit Sales\nOrder for fulfillment  </div><div>Activities :  </div><div>12.1Validate Sales Order  </div><div>12.2 Confirm Sales Order  </div><div>11.3Submit Sales Order for\nfulfillment  </div><div><br> </div><div>Output: Confirmed Sales Order\nReady for Fulfilment<br> </div>",
-        "summary": "<div>Input: Validated & Submit Sales Order for fulfillment </div><div>Activities : </div><div>12.1Validate Sales Order </div><div>12.2 Confirm Sales Order </div><div>11.3Submit Sales Order for fulfillment </div><div><br> </div><div>Output: Confirmed Sales Order Ready for Fulfilment<br> </div>",
-        "htmlDecoded": true
+        "plainText": "Input: Validated & Submit Sales Order for fulfillment\nActivities :\n12.1Validate Sales Order\n12.2 Confirm Sales Order\n11.3Submit Sales Order for fulfillment\n\nOutput: Confirmed Sales Order Ready for Fulfilment",
+        "summary": "Input: Validated & Submit Sales Order for fulfillment Activities : 12.1Validate Sales Order 12.2 Confirm Sales Order 11.3Submit Sales Order for fulfillment",
+        "htmlDecoded": false
       },
       "source": {
         "rowNumber": 167,
@@ -6030,9 +6030,9 @@
         ]
       },
       "description": {
-        "plainText": "<div>Input: Posted Customer  </div><div>Invoice\nActivities : \n16.1Recognize Revenue </div><div> Output: Recognized Revenue </div>",
-        "summary": "<div>Input: Posted Customer </div><div>Invoice Activities : 16.1Recognize Revenue </div><div> Output: Recognized Revenue </div>",
-        "htmlDecoded": true
+        "plainText": "Input: Posted Customer\nInvoice Activities : 16.1Recognize Revenue\nOutput: Recognized Revenue",
+        "summary": "Input: Posted Customer Invoice Activities : 16.1Recognize Revenue Output: Recognized Revenue",
+        "htmlDecoded": false
       },
       "source": {
         "rowNumber": 168,
@@ -6068,7 +6068,7 @@
       "description": {
         "plainText": "Input: Channel & platform sales activity\nActivities: F.1 Capture Sales & Marketplace Data, F.2 Integrate Performance Metrics, F.3 Collect Ratings & Reviews, F.4 Analyze Customer Sentiment, F.5 Monitor Platform Performance\nOutput: Retailer, platform data captured",
         "summary": "Input: Channel & platform sales activity Activities: F.1 Capture Sales & Marketplace Data, F.2 Integrate Performance Metrics, F.3 Collect Ratings & Reviews, F.4 Analyze Customer Sentiment, F.5 Monitor Platform Performance Output: Retailer, platform data captured",
-        "htmlDecoded": true
+        "htmlDecoded": false
       },
       "source": {
         "rowNumber": 169,
@@ -6102,9 +6102,9 @@
         ]
       },
       "description": {
-        "plainText": "<div><b>Order Capturing</b> </div><div>Input: Active Customer Contract\n& Commercial Terms  </div><div><br> </div><div>Activities :  </div><div>8.1 Create Customer Order  </div><div>8.2 Validate Pricing & Entitlements  </div><div>8.3 Submit Order  </div><div><br> </div><div>Output: Submitted Customer Order<br> </div><div><br> </div><div><b>Order Processing</b> </div><div><br> </div><div>Input: Submitted Customer Order  </div><div>Activities :  </div><div>A.1 Synchronize Order to\nCommerce HQ  </div><div><br> </div><div>Output: Order Synced with\nCommerce HQ<br> </div>",
-        "summary": "<div><b>Order Capturing</b> </div><div>Input: Active Customer Contract & Commercial Terms </div><div><br> </div><div>Activities : </div><div>8.1 Create Customer Order </div><div>8.2 Validate Pricing & Entitlements </div><div>8.3 Submit Order </div><div><br> </div><div>Output: Submitted Customer Order<br> </div><div><b…",
-        "htmlDecoded": true
+        "plainText": "Order Capturing\nInput: Active Customer Contract & Commercial Terms\n\nActivities :\n8.1 Create Customer Order\n8.2 Validate Pricing & Entitlements\n8.3 Submit Order\n\nOutput: Submitted Customer Order\n\nOrder Processing\n\nInput: Submitted Customer Order\nActivities :\nA.1 Synchronize Order to Commerce HQ\n\nOutput: Order Synced with Commerce HQ",
+        "summary": "Order Capturing Input: Active Customer Contract & Commercial Terms",
+        "htmlDecoded": false
       },
       "source": {
         "rowNumber": 170,
@@ -6138,9 +6138,9 @@
         ]
       },
       "description": {
-        "plainText": "<div>Input: Fulfilled Order / Installed\nBase Record  </div><div><br> </div><div>Activities :  </div><div>15.1 Generate Customer Invoice  </div><div>15.2 Post Invoice  </div><div>15.3 Update Billing Status  </div><div><br> </div><div>Output: Posted Customer Invoice </div>",
-        "summary": "<div>Input: Fulfilled Order / Installed Base Record </div><div><br> </div><div>Activities : </div><div>15.1 Generate Customer Invoice </div><div>15.2 Post Invoice </div><div>15.3 Update Billing Status </div><div><br> </div><div>Output: Posted Customer Invoice </div>",
-        "htmlDecoded": true
+        "plainText": "Input: Fulfilled Order / Installed Base Record\n\nActivities :\n15.1 Generate Customer Invoice\n15.2 Post Invoice\n15.3 Update Billing Status\n\nOutput: Posted Customer Invoice",
+        "summary": "Input: Fulfilled Order / Installed Base Record",
+        "htmlDecoded": false
       },
       "source": {
         "rowNumber": 171,
@@ -6176,7 +6176,7 @@
       "description": {
         "plainText": "Input: Changed Sales Order\nActivities: E.1 Consolidate Sales, Orders & Inventory Data, E.2 Analyze Campaign, Conversion & Platform Performance, E.3 Generate Business Insights & Trends\nOutput: Synchronize Order Status to CE",
         "summary": "Input: Changed Sales Order Activities: E.1 Consolidate Sales, Orders & Inventory Data, E.2 Analyze Campaign, Conversion & Platform Performance, E.3 Generate Business Insights & Trends Output: Synchronize Order Status to CE",
-        "htmlDecoded": true
+        "htmlDecoded": false
       },
       "source": {
         "rowNumber": 172,
@@ -6210,9 +6210,9 @@
         ]
       },
       "description": {
-        "plainText": "Fulfillment\nActivities : \n14.1Process Fulfilment & Shipment (including integration with SPS/DHL & Install Base Generation)\n14.2Update Shipment Status\n14.3Notify Customer\n14.4Update Order Status\nOutput: Fulfilled Order & Delivery Confirmation",
+        "plainText": "Fulfillment\nActivities :\n14.1Process Fulfilment & Shipment (including integration with SPS/DHL & Install Base Generation)\n14.2Update Shipment Status\n14.3Notify Customer\n14.4Update Order Status\nOutput: Fulfilled Order & Delivery Confirmation",
         "summary": "Fulfillment Activities : 14.1Process Fulfilment & Shipment (including integration with SPS/DHL & Install Base Generation) 14.2Update Shipment Status 14.3Notify Customer 14.4Update Order Status Output: Fulfilled Order & Delivery Confirmation",
-        "htmlDecoded": true
+        "htmlDecoded": false
       },
       "source": {
         "rowNumber": 173,
@@ -6246,9 +6246,9 @@
         ]
       },
       "description": {
-        "plainText": "<div>Customer Contracting </div><div>Input: Customer Approved\nQuotation  </div><div><br> </div><div>Activities :  </div><div>6.1 Create Customer Contract  </div><div>6.2 Associate Partner Commercial\nTerms  </div><div>6.3 Finalize Contractual\nAgreements  </div><div><br> </div><div>Output: Active Customer Contract\n& Commercial Terms<br> </div><div><br> </div><div>Contract Synchronization </div><div>Input: Active Customer Contract &\nCommercial Terms  </div><div>Activities :  </div><div>A.1 Synchronize Contract Details to\nD365 F&O  </div><div><br> </div><div>Output: Contract Synced with F&O<br> </div>",
-        "summary": "<div>Customer Contracting </div><div>Input: Customer Approved Quotation </div><div><br> </div><div>Activities : </div><div>6.1 Create Customer Contract </div><div>6.2 Associate Partner Commercial Terms </div><div>6.3 Finalize Contractual Agreements </div><div><br> </div><div>Output: Active Customer Contract & Commerci…",
-        "htmlDecoded": true
+        "plainText": "Customer Contracting\nInput: Customer Approved Quotation\n\nActivities :\n6.1 Create Customer Contract\n6.2 Associate Partner Commercial Terms\n6.3 Finalize Contractual Agreements\n\nOutput: Active Customer Contract & Commercial Terms\n\nContract Synchronization\nInput: Active Customer Contract & Commercial Terms\nActivities :\nA.1 Synchronize Contract Details to D365 F&O\n\nOutput: Contract Synced with F&O",
+        "summary": "Customer Contracting Input: Customer Approved Quotation",
+        "htmlDecoded": false
       },
       "source": {
         "rowNumber": 174,
@@ -6284,7 +6284,7 @@
       "description": {
         "plainText": "Input: Validated Sales Order\nActivities: C.1 Synchronize Sales Order to SPS Commerce, C.2 Synchronize Sales Order with DHL\nOutput: Order Synced with D365 F&O",
         "summary": "Input: Validated Sales Order Activities: C.1 Synchronize Sales Order to SPS Commerce, C.2 Synchronize Sales Order with DHL Output: Order Synced with D365 F&O",
-        "htmlDecoded": true
+        "htmlDecoded": false
       },
       "source": {
         "rowNumber": 175,
@@ -6318,9 +6318,9 @@
         ]
       },
       "description": {
-        "plainText": "<div>Input: Confirmed Sales Order  </div><div>Activities :  </div><div>13.1 Submit fulfilment request  </div><div><br> </div><div>Output: Order Released for Fulfilment </div>",
-        "summary": "<div>Input: Confirmed Sales Order </div><div>Activities : </div><div>13.1 Submit fulfilment request </div><div><br> </div><div>Output: Order Released for Fulfilment </div>",
-        "htmlDecoded": true
+        "plainText": "Input: Confirmed Sales Order\nActivities :\n13.1 Submit fulfilment request\n\nOutput: Order Released for Fulfilment",
+        "summary": "Input: Confirmed Sales Order Activities : 13.1 Submit fulfilment request",
+        "htmlDecoded": false
       },
       "source": {
         "rowNumber": 176,
@@ -6354,9 +6354,9 @@
         ]
       },
       "description": {
-        "plainText": "<div>Input: Product Catalog & Pricing\nPolicies  </div><div>Activities :  </div><div>5.1  Maintain Trade Agreement  </div><div>5.2  Manage Cust Groups  </div><div>5.3  Maintain Pricing Discounts  </div><div>5.4 Maintain Promos  </div><div><br> </div><div>Output: Customer-Specific Pricing\n& Discount Rules<br> </div>",
-        "summary": "<div>Input: Product Catalog & Pricing Policies </div><div>Activities : </div><div>5.1 Maintain Trade Agreement </div><div>5.2 Manage Cust Groups </div><div>5.3 Maintain Pricing Discounts </div><div>5.4 Maintain Promos </div><div><br> </div><div>Output: Customer-Specific Pricing & Discount Rules<br> </div>",
-        "htmlDecoded": true
+        "plainText": "Input: Product Catalog & Pricing Policies\nActivities :\n5.1 Maintain Trade Agreement\n5.2 Manage Cust Groups\n5.3 Maintain Pricing Discounts\n5.4 Maintain Promos\n\nOutput: Customer-Specific Pricing & Discount Rules",
+        "summary": "Input: Product Catalog & Pricing Policies Activities : 5.1 Maintain Trade Agreement 5.2 Manage Cust Groups 5.3 Maintain Pricing Discounts 5.4 Maintain Promos",
+        "htmlDecoded": false
       },
       "source": {
         "rowNumber": 177,
@@ -6390,7 +6390,7 @@
         ]
       },
       "description": {
-        "plainText": "Input: Changed Sales Order\nActivities: D.1 Synchronize Order Status to CE/Copernicus App\nOutput: Synchronize Order Status to CE/Copernicus App",
+        "plainText": "Input: Changed Sales Order\r\nActivities: D.1 Synchronize Order Status to CE/Copernicus App\r\nOutput: Synchronize Order Status to CE/Copernicus App",
         "summary": "Input: Changed Sales Order Activities: D.1 Synchronize Order Status to CE/Copernicus App Output: Synchronize Order Status to CE/Copernicus App",
         "htmlDecoded": false
       },
@@ -6426,7 +6426,7 @@
         ]
       },
       "description": {
-        "plainText": "Input: Active Upgrade Entitlement Ready for Distribution\nActivities: C.1 Trigger Software Distribution System, C.2 Publish Software Package for Download\nOutput: Software Package Available for Download",
+        "plainText": "Input: Active Upgrade Entitlement Ready for Distribution\r\nActivities: C.1 Trigger Software Distribution System, C.2 Publish Software Package for Download\r\nOutput: Software Package Available for Download",
         "summary": "Input: Active Upgrade Entitlement Ready for Distribution Activities: C.1 Trigger Software Distribution System, C.2 Publish Software Package for Download Output: Software Package Available for Download",
         "htmlDecoded": false
       },
@@ -6462,7 +6462,7 @@
         ]
       },
       "description": {
-        "plainText": "Input: Validated Sales Order\nActivities : \n12.1Validate Sales Order\n12.2 Confirm Sales Order\nOutput: Confirmed Sales Order\nReady for Fulfilment",
+        "plainText": "Input: Validated Sales Order\r\nActivities : \r\n12.1Validate Sales Order\r\n12.2 Confirm Sales Order\r\nOutput: Confirmed Sales Order\r\nReady for Fulfilment",
         "summary": "Input: Validated Sales Order Activities : 12.1Validate Sales Order 12.2 Confirm Sales Order Output: Confirmed Sales Order Ready for Fulfilment",
         "htmlDecoded": false
       },
@@ -6498,9 +6498,9 @@
         ]
       },
       "description": {
-        "plainText": "<div>Input: Product Catalog & Pricing\nPolicies  </div><div>Activities :  </div><div>4.1  Maintain Products  </div><div>4.2  Manage Selling Prices  </div><div>4.3  Manage Promos  </div><div><br> </div><div>Output: Products & Base Pricing\nAvailable for Sales<br> </div>",
-        "summary": "<div>Input: Product Catalog & Pricing Policies </div><div>Activities : </div><div>4.1 Maintain Products </div><div>4.2 Manage Selling Prices </div><div>4.3 Manage Promos </div><div><br> </div><div>Output: Products & Base Pricing Available for Sales<br> </div>",
-        "htmlDecoded": true
+        "plainText": "Input: Product Catalog & Pricing Policies\nActivities :\n4.1 Maintain Products\n4.2 Manage Selling Prices\n4.3 Manage Promos\n\nOutput: Products & Base Pricing Available for Sales",
+        "summary": "Input: Product Catalog & Pricing Policies Activities : 4.1 Maintain Products 4.2 Manage Selling Prices 4.3 Manage Promos",
+        "htmlDecoded": false
       },
       "source": {
         "rowNumber": 181,
@@ -6536,7 +6536,7 @@
       "description": {
         "plainText": "Input: Active Software Upgrade Entitlement\nActivities: B.1 Generate Upgrade Work Order, B.2 Create Software Upgrade Sales Order\nOutput: Upgrade Work Order & Sales Order Created",
         "summary": "Input: Active Software Upgrade Entitlement Activities: B.1 Generate Upgrade Work Order, B.2 Create Software Upgrade Sales Order Output: Upgrade Work Order & Sales Order Created",
-        "htmlDecoded": true
+        "htmlDecoded": false
       },
       "source": {
         "rowNumber": 182,
@@ -6570,7 +6570,7 @@
         ]
       },
       "description": {
-        "plainText": "Input: Changed Sales Order\nActivities: D.1 Synchronize Order Status to CE\nOutput: Synchronize Order Status to CE",
+        "plainText": "Input: Changed Sales Order\r\nActivities: D.1 Synchronize Order Status to CE\r\nOutput: Synchronize Order Status to CE",
         "summary": "Input: Changed Sales Order Activities: D.1 Synchronize Order Status to CE Output: Synchronize Order Status to CE",
         "htmlDecoded": false
       },
@@ -6606,9 +6606,9 @@
         ]
       },
       "description": {
-        "plainText": "<div>Input: Qualified Sales\nOpportunities  </div><div>Activities :  </div><div>3.1 Create Quotations  </div><div>3.2 Apply Partner Pricing &\nDiscounts & Promos & Start -   \n        End Date  </div><div>3.3 Define Commercial Terms  </div><div>3.4 Negotiate & Revise Quotations  </div><div>3.5 Obtain Customer Sign-off  </div><div><br> </div><div>Output: Customer Decision for\nQuote <br> </div>",
-        "summary": "<div>Input: Qualified Sales Opportunities </div><div>Activities : </div><div>3.1 Create Quotations </div><div>3.2 Apply Partner Pricing & Discounts & Promos & Start - End Date </div><div>3.3 Define Commercial Terms </div><div>3.4 Negotiate & Revise Quotations </div><div>3.5 Obtain Customer Sign-off </div><div><br> </d…",
-        "htmlDecoded": true
+        "plainText": "Input: Qualified Sales Opportunities\nActivities :\n3.1 Create Quotations\n3.2 Apply Partner Pricing & Discounts & Promos & Start - End Date\n3.3 Define Commercial Terms\n3.4 Negotiate & Revise Quotations\n3.5 Obtain Customer Sign-off\n\nOutput: Customer Decision for Quote",
+        "summary": "Input: Qualified Sales Opportunities Activities : 3.1 Create Quotations 3.2 Apply Partner Pricing & Discounts & Promos & Start - End Date 3.3 Define Commercial Terms 3.4 Negotiate & Revise Quotations 3.5 Obtain Customer Sign-off",
+        "htmlDecoded": false
       },
       "source": {
         "rowNumber": 184,
@@ -6642,9 +6642,9 @@
         ]
       },
       "description": {
-        "plainText": "<div>Input: Received eCommerce Order  </div><div>Activities :  </div><div>11.1 Validate and convert order to\nSales Order  </div><div><br> </div><div>Output: Validated Order </div>",
-        "summary": "<div>Input: Received eCommerce Order </div><div>Activities : </div><div>11.1 Validate and convert order to Sales Order </div><div><br> </div><div>Output: Validated Order </div>",
-        "htmlDecoded": true
+        "plainText": "Input: Received eCommerce Order\nActivities :\n11.1 Validate and convert order to Sales Order\n\nOutput: Validated Order",
+        "summary": "Input: Received eCommerce Order Activities : 11.1 Validate and convert order to Sales Order",
+        "htmlDecoded": false
       },
       "source": {
         "rowNumber": 185,
@@ -6678,7 +6678,7 @@
         ]
       },
       "description": {
-        "plainText": "Input: Posted Customer Invoice\nActivities: 12.1 Capture Demand Signals, 12.2 Analyze Sales Performance, 12.3 Generate Demand Forecasts, 12.4 Support Inventory Planning, 12.5 Monitor Forecast Accuracy\nOutput: Forecasts generated",
+        "plainText": "Input: Posted Customer Invoice\r\nActivities: 12.1 Capture Demand Signals, 12.2 Analyze Sales Performance, 12.3 Generate Demand Forecasts, 12.4 Support Inventory Planning, 12.5 Monitor Forecast Accuracy\r\nOutput: Forecasts generated",
         "summary": "Input: Posted Customer Invoice Activities: 12.1 Capture Demand Signals, 12.2 Analyze Sales Performance, 12.3 Generate Demand Forecasts, 12.4 Support Inventory Planning, 12.5 Monitor Forecast Accuracy Output: Forecasts generated",
         "htmlDecoded": false
       },
@@ -6714,7 +6714,7 @@
         ]
       },
       "description": {
-        "plainText": "Input: Posted Customer Invoice\nActivities: 12.1 Capture Demand Signals, 12.2 Analyze Sales Performance, 12.3 Generate Demand Forecasts, 12.4 Support Inventory Planning, 12.5 Monitor Forecast Accuracy\nOutput: Forecasts generated",
+        "plainText": "Input: Posted Customer Invoice\r\nActivities: 12.1 Capture Demand Signals, 12.2 Analyze Sales Performance, 12.3 Generate Demand Forecasts, 12.4 Support Inventory Planning, 12.5 Monitor Forecast Accuracy\r\nOutput: Forecasts generated",
         "summary": "Input: Posted Customer Invoice Activities: 12.1 Capture Demand Signals, 12.2 Analyze Sales Performance, 12.3 Generate Demand Forecasts, 12.4 Support Inventory Planning, 12.5 Monitor Forecast Accuracy Output: Forecasts generated",
         "htmlDecoded": false
       },
@@ -6750,7 +6750,7 @@
         ]
       },
       "description": {
-        "plainText": "Input: Posted Customer Invoice\nActivities: 12.1 Capture Demand Signals, 12.2 Analyze Sales Performance, 12.3 Generate Demand Forecasts, 12.4 Support Inventory Planning, 12.5 Monitor Forecast Accuracy\nOutput: Forecasts generated",
+        "plainText": "Input: Posted Customer Invoice\r\nActivities: 12.1 Capture Demand Signals, 12.2 Analyze Sales Performance, 12.3 Generate Demand Forecasts, 12.4 Support Inventory Planning, 12.5 Monitor Forecast Accuracy\r\nOutput: Forecasts generated",
         "summary": "Input: Posted Customer Invoice Activities: 12.1 Capture Demand Signals, 12.2 Analyze Sales Performance, 12.3 Generate Demand Forecasts, 12.4 Support Inventory Planning, 12.5 Monitor Forecast Accuracy Output: Forecasts generated",
         "htmlDecoded": false
       },
@@ -6788,7 +6788,7 @@
       "description": {
         "plainText": "Input: Validated Sales Order\nActivities: C.1 Synchronize Sales Order to SPS Commerce, C.2 Synchronize Sales Order with DHL\nOutput: Order Synced with D365 F&O",
         "summary": "Input: Validated Sales Order Activities: C.1 Synchronize Sales Order to SPS Commerce, C.2 Synchronize Sales Order with DHL Output: Order Synced with D365 F&O",
-        "htmlDecoded": true
+        "htmlDecoded": false
       },
       "source": {
         "rowNumber": 189,
@@ -6824,7 +6824,7 @@
       "description": {
         "plainText": "Input: Validated Sales Order\nActivities: A.1 Synchronize Sales Order to HQ Commerce\nOutput: Order Synced with D365 F&O and CRM",
         "summary": "Input: Validated Sales Order Activities: A.1 Synchronize Sales Order to HQ Commerce Output: Order Synced with D365 F&O and CRM",
-        "htmlDecoded": true
+        "htmlDecoded": false
       },
       "source": {
         "rowNumber": 190,
@@ -6858,7 +6858,7 @@
         ]
       },
       "description": {
-        "plainText": "Input: Posted Customer Invoice\nActivities: 11.1 Recognize Revenue\nOutput: Recognized Revenue",
+        "plainText": "Input: Posted Customer Invoice\r\nActivities: 11.1 Recognize Revenue\r\nOutput: Recognized Revenue",
         "summary": "Input: Posted Customer Invoice Activities: 11.1 Recognize Revenue Output: Recognized Revenue",
         "htmlDecoded": false
       },
@@ -6894,7 +6894,7 @@
         ]
       },
       "description": {
-        "plainText": "Input: Posted Customer Invoice\nActivities: 11.1 Recognize Revenue\nOutput: Recognized Revenue",
+        "plainText": "Input: Posted Customer Invoice\r\nActivities: 11.1 Recognize Revenue\r\nOutput: Recognized Revenue",
         "summary": "Input: Posted Customer Invoice Activities: 11.1 Recognize Revenue Output: Recognized Revenue",
         "htmlDecoded": false
       },
@@ -6930,7 +6930,7 @@
         ]
       },
       "description": {
-        "plainText": "Input: Posted Customer Invoice\nActivities: 11.1 Recognize Revenue\nOutput: Recognized Revenue",
+        "plainText": "Input: Posted Customer Invoice\r\nActivities: 11.1 Recognize Revenue\r\nOutput: Recognized Revenue",
         "summary": "Input: Posted Customer Invoice Activities: 11.1 Recognize Revenue Output: Recognized Revenue",
         "htmlDecoded": false
       },
@@ -6966,9 +6966,9 @@
         ]
       },
       "description": {
-        "plainText": "<div>Input: Customer Approved\nQuotation  </div><div>Activities :  </div><div>10.1 Customer Accesses B2B Portal  </div><div>10.2 Browse Products & Pricing  </div><div>10.3 Review Cart & Checkout  </div><div>10.4 Create eCommerce Order  </div><div><br> </div><div>Output: eCommerce Order Created </div>",
-        "summary": "<div>Input: Customer Approved Quotation </div><div>Activities : </div><div>10.1 Customer Accesses B2B Portal </div><div>10.2 Browse Products & Pricing </div><div>10.3 Review Cart & Checkout </div><div>10.4 Create eCommerce Order </div><div><br> </div><div>Output: eCommerce Order Created </div>",
-        "htmlDecoded": true
+        "plainText": "Input: Customer Approved Quotation\nActivities :\n10.1 Customer Accesses B2B Portal\n10.2 Browse Products & Pricing\n10.3 Review Cart & Checkout\n10.4 Create eCommerce Order\n\nOutput: eCommerce Order Created",
+        "summary": "Input: Customer Approved Quotation Activities : 10.1 Customer Accesses B2B Portal 10.2 Browse Products & Pricing 10.3 Review Cart & Checkout 10.4 Create eCommerce Order",
+        "htmlDecoded": false
       },
       "source": {
         "rowNumber": 194,
@@ -7002,9 +7002,9 @@
         ]
       },
       "description": {
-        "plainText": "<div>Input: Qualified Partner Leads  </div><div><br> </div><div>Activities :  </div><div>2.1 Create & Manage\nOpportunities  </div><div>2.2 Track Opportunity Progression  </div><div>2.3 Manage Partner & Sales\nCollaboration  </div><div><br> </div><div>Output: Qualified Sales\nOpportunity<br> </div>",
-        "summary": "<div>Input: Qualified Partner Leads </div><div><br> </div><div>Activities : </div><div>2.1 Create & Manage Opportunities </div><div>2.2 Track Opportunity Progression </div><div>2.3 Manage Partner & Sales Collaboration </div><div><br> </div><div>Output: Qualified Sales Opportunity<br> </div>",
-        "htmlDecoded": true
+        "plainText": "Input: Qualified Partner Leads\n\nActivities :\n2.1 Create & Manage Opportunities\n2.2 Track Opportunity Progression\n2.3 Manage Partner & Sales Collaboration\n\nOutput: Qualified Sales Opportunity",
+        "summary": "Input: Qualified Partner Leads",
+        "htmlDecoded": false
       },
       "source": {
         "rowNumber": 195,
@@ -7038,7 +7038,7 @@
         ]
       },
       "description": {
-        "plainText": "Input: Faulty Device In Transit to Failure Analysis Lab\nActivities: 11.1 Receive Faulty Device from DHL, 11.2 Confirm Shipment Delivery, 11.3 Log Device Receipt, 11.4 Assign Device for Failure Analysis, 11.5 Notify Relevant Stakeholders of Receipt\nOutput: Faulty Device Available for Failure Analysis",
+        "plainText": "Input: Faulty Device In Transit to Failure Analysis Lab\r\nActivities: 11.1 Receive Faulty Device from DHL, 11.2 Confirm Shipment Delivery, 11.3 Log Device Receipt, 11.4 Assign Device for Failure Analysis, 11.5 Notify Relevant Stakeholders of Receipt\r\nOutput: Faulty Device Available for Failure Analysis",
         "summary": "Input: Faulty Device In Transit to Failure Analysis Lab Activities: 11.1 Receive Faulty Device from DHL, 11.2 Confirm Shipment Delivery, 11.3 Log Device Receipt, 11.4 Assign Device for Failure Analysis, 11.5 Notify Relevant Stakeholders of Receipt Output: Faulty Device Available for Failure Analysis",
         "htmlDecoded": false
       },
@@ -7074,7 +7074,7 @@
         ]
       },
       "description": {
-        "plainText": "Input: Diagnosis and action plan\nActivities: 11.1 Resolve and close case, 11.2 Track case resolution metrics, 11.3 Monitor SLA compliance, 11.4 Review trends and performance\nOutput: Closed case and service insights",
+        "plainText": "Input: Diagnosis and action plan\r\nActivities: 11.1 Resolve and close case, 11.2 Track case resolution metrics, 11.3 Monitor SLA compliance, 11.4 Review trends and performance\r\nOutput: Closed case and service insights",
         "summary": "Input: Diagnosis and action plan Activities: 11.1 Resolve and close case, 11.2 Track case resolution metrics, 11.3 Monitor SLA compliance, 11.4 Review trends and performance Output: Closed case and service insights",
         "htmlDecoded": false
       },
@@ -7112,7 +7112,7 @@
       "description": {
         "plainText": "Input: Validated Sales Order\nActivities: B.1 Synchronize Sales Order to D365 F&O\nOutput: Order Synced with D365 F&O",
         "summary": "Input: Validated Sales Order Activities: B.1 Synchronize Sales Order to D365 F&O Output: Order Synced with D365 F&O",
-        "htmlDecoded": true
+        "htmlDecoded": false
       },
       "source": {
         "rowNumber": 198,
@@ -7148,7 +7148,7 @@
       "description": {
         "plainText": "Input: Validated Sales Order\nActivities: B.1 Synchronize Sales Order to D365 F&O\nOutput: Order Synced with D365 F&O",
         "summary": "Input: Validated Sales Order Activities: B.1 Synchronize Sales Order to D365 F&O Output: Order Synced with D365 F&O",
-        "htmlDecoded": true
+        "htmlDecoded": false
       },
       "source": {
         "rowNumber": 199,
@@ -7182,9 +7182,9 @@
         ]
       },
       "description": {
-        "plainText": "<div>Input: Qualified Partner-Sourced\nLeads  </div><div>Activities :  </div><div>1.1 Register Partner-Generated\nLeads  </div><div>1.2 Validate & Qualify Leads  </div><div>1.3 Assign or approve lead\nownership  </div><div><br> </div><div>Output: Qualified Partner Leads<br> </div>",
-        "summary": "<div>Input: Qualified Partner-Sourced Leads </div><div>Activities : </div><div>1.1 Register Partner-Generated Leads </div><div>1.2 Validate & Qualify Leads </div><div>1.3 Assign or approve lead ownership </div><div><br> </div><div>Output: Qualified Partner Leads<br> </div>",
-        "htmlDecoded": true
+        "plainText": "Input: Qualified Partner-Sourced Leads\nActivities :\n1.1 Register Partner-Generated Leads\n1.2 Validate & Qualify Leads\n1.3 Assign or approve lead ownership\n\nOutput: Qualified Partner Leads",
+        "summary": "Input: Qualified Partner-Sourced Leads Activities : 1.1 Register Partner-Generated Leads 1.2 Validate & Qualify Leads 1.3 Assign or approve lead ownership",
+        "htmlDecoded": false
       },
       "source": {
         "rowNumber": 200,
@@ -7218,7 +7218,7 @@
         ]
       },
       "description": {
-        "plainText": "Input: Fulfilled Order/Installed Base Record\nActivities: 10.1 Generate Customer Invoice, 10.2 Post Invoice, 10.3 Update Billing Status\nOutput: Posted Customer Invoice",
+        "plainText": "Input: Fulfilled Order/Installed Base Record\r\nActivities: 10.1 Generate Customer Invoice, 10.2 Post Invoice, 10.3 Update Billing Status\r\nOutput: Posted Customer Invoice",
         "summary": "Input: Fulfilled Order/Installed Base Record Activities: 10.1 Generate Customer Invoice, 10.2 Post Invoice, 10.3 Update Billing Status Output: Posted Customer Invoice",
         "htmlDecoded": false
       },
@@ -7254,7 +7254,7 @@
         ]
       },
       "description": {
-        "plainText": "Input: Fulfilled Order/Installed Base Record\nActivities: 10.1 Generate Customer Invoice, 10.2 Post Invoice, 10.3 Update Billing Status\nOutput: Posted Customer Invoice",
+        "plainText": "Input: Fulfilled Order/Installed Base Record\r\nActivities: 10.1 Generate Customer Invoice, 10.2 Post Invoice, 10.3 Update Billing Status\r\nOutput: Posted Customer Invoice",
         "summary": "Input: Fulfilled Order/Installed Base Record Activities: 10.1 Generate Customer Invoice, 10.2 Post Invoice, 10.3 Update Billing Status Output: Posted Customer Invoice",
         "htmlDecoded": false
       },
@@ -7290,7 +7290,7 @@
         ]
       },
       "description": {
-        "plainText": "Input: Fulfilled Order/Installed Base Record\nActivities: 10.1 Generate Customer Invoice, 10.2 Post Invoice, 10.3 Update Billing Status\nOutput: Posted Customer Invoice",
+        "plainText": "Input: Fulfilled Order/Installed Base Record\r\nActivities: 10.1 Generate Customer Invoice, 10.2 Post Invoice, 10.3 Update Billing Status\r\nOutput: Posted Customer Invoice",
         "summary": "Input: Fulfilled Order/Installed Base Record Activities: 10.1 Generate Customer Invoice, 10.2 Post Invoice, 10.3 Update Billing Status Output: Posted Customer Invoice",
         "htmlDecoded": false
       },
@@ -7326,7 +7326,7 @@
         ]
       },
       "description": {
-        "plainText": "Input: Returned Device Processed\nActivities: 10.1 Receive Released Faulty Device for Shipment, 10.2 Generate Shipment Documentation, 10.3 Package Device for Transportation, 10.4 Schedule Shipment to Failure Analysis Lab, 10.5 Dispatch Device and Update Tracking Information\nOutput: Faulty Device In Transit to Failure Analysis Lab",
+        "plainText": "Input: Returned Device Processed\r\nActivities: 10.1 Receive Released Faulty Device for Shipment, 10.2 Generate Shipment Documentation, 10.3 Package Device for Transportation, 10.4 Schedule Shipment to Failure Analysis Lab, 10.5 Dispatch Device and Update Tracking Information\r\nOutput: Faulty Device In Transit to Failure Analysis Lab",
         "summary": "Input: Returned Device Processed Activities: 10.1 Receive Released Faulty Device for Shipment, 10.2 Generate Shipment Documentation, 10.3 Package Device for Transportation, 10.4 Schedule Shipment to Failure Analysis Lab, 10.5 Dispatch Device and Update Tracking Information Output: Faulty Device In Transit to Failure A…",
         "htmlDecoded": false
       },
@@ -7362,7 +7362,7 @@
         ]
       },
       "description": {
-        "plainText": "Input: SLA escalation\nActivities: 10.1 Handle escalation and corrective action, 10.2 Implement service resolution\nOutput: Service Issue resolved",
+        "plainText": "Input: SLA escalation\r\nActivities: 10.1 Handle escalation and corrective action, 10.2 Implement service resolution\r\nOutput: Service Issue resolved",
         "summary": "Input: SLA escalation Activities: 10.1 Handle escalation and corrective action, 10.2 Implement service resolution Output: Service Issue resolved",
         "htmlDecoded": false
       },
@@ -7400,7 +7400,7 @@
       "description": {
         "plainText": "Input: Software Upgrade Successfully Installed & Activated\nActivities: 10.1 Display Order Confirmation, 10.2 Send Purchase Notification, 10.3 Confirm Upgrade Download, 10.4 Update Upgrade History, 10.5 In-App Update Success Notification\nOutput: Software Upgrade Completed & Customer Notified",
         "summary": "Input: Software Upgrade Successfully Installed & Activated Activities: 10.1 Display Order Confirmation, 10.2 Send Purchase Notification, 10.3 Confirm Upgrade Download, 10.4 Update Upgrade History, 10.5 In-App Update Success Notification Output: Software Upgrade Completed & Customer Notified",
-        "htmlDecoded": true
+        "htmlDecoded": false
       },
       "source": {
         "rowNumber": 206,
@@ -7434,7 +7434,7 @@
         ]
       },
       "description": {
-        "plainText": "Input: Defective AED device or Accessory Serial Number, Failure Description, Support Documents\nActivities: 1.1 Distributor Identify defective AED devices/Accessory, 1.2 Submit Warranty Replacement Request, 1.3 Provide Device Serial Number, 1.4 Provide Failure Details, 1.5 Upload Supporting Warranty Documentation\nOutput: Warranty Replacement Request Submitted",
+        "plainText": "Input: Defective AED device or Accessory Serial Number, Failure Description, Support Documents\r\nActivities: 1.1 Distributor Identify defective AED devices/Accessory, 1.2 Submit Warranty Replacement Request, 1.3 Provide Device Serial Number, 1.4 Provide Failure Details, 1.5 Upload Supporting Warranty Documentation\r\nOutput: Warranty Replacement Request Submitted",
         "summary": "Input: Defective AED device or Accessory Serial Number, Failure Description, Support Documents Activities: 1.1 Distributor Identify defective AED devices/Accessory, 1.2 Submit Warranty Replacement Request, 1.3 Provide Device Serial Number, 1.4 Provide Failure Details, 1.5 Upload Supporting Warranty Documentation Outpu…",
         "htmlDecoded": false
       },
@@ -7472,7 +7472,7 @@
       "description": {
         "plainText": "Input: Installed Base & Device Configuration Data\nActivities: 1.1 Identify Upgrade-Eligible Devices, 1.2 Display Available Upgrade Options, 1.3 Notify Customer of Upgrades, 1.4 Present Upgrade Benefits & Supported Devices\nOutput: Upgrade Opportunity Presented to Customers",
         "summary": "Input: Installed Base & Device Configuration Data Activities: 1.1 Identify Upgrade-Eligible Devices, 1.2 Display Available Upgrade Options, 1.3 Notify Customer of Upgrades, 1.4 Present Upgrade Benefits & Supported Devices Output: Upgrade Opportunity Presented to Customers",
-        "htmlDecoded": true
+        "htmlDecoded": false
       },
       "source": {
         "rowNumber": 208,
@@ -7506,7 +7506,7 @@
         ]
       },
       "description": {
-        "plainText": "Input: Active Subscriptions\nActivities: 1.1 Review active terms, 1.2 Identify Expiring Subscriptions, 1.3 Check auto-renewal Status\nOutput: Renewal Decision",
+        "plainText": "Input: Active Subscriptions\r\nActivities: 1.1 Review active terms, 1.2 Identify Expiring Subscriptions, 1.3 Check auto-renewal Status\r\nOutput: Renewal Decision",
         "summary": "Input: Active Subscriptions Activities: 1.1 Review active terms, 1.2 Identify Expiring Subscriptions, 1.3 Check auto-renewal Status Output: Renewal Decision",
         "htmlDecoded": false
       },
@@ -7542,7 +7542,7 @@
         ]
       },
       "description": {
-        "plainText": "Input: Active Subscriptions\nActivities: 1.1 Review active terms, 1.2 Check renewal dates, 1.3 Assess auto-renewal\nOutput: Renewal Decision",
+        "plainText": "Input: Active Subscriptions\r\nActivities: 1.1 Review active terms, 1.2 Check renewal dates, 1.3 Assess auto-renewal\r\nOutput: Renewal Decision",
         "summary": "Input: Active Subscriptions Activities: 1.1 Review active terms, 1.2 Check renewal dates, 1.3 Assess auto-renewal Output: Renewal Decision",
         "htmlDecoded": false
       },
@@ -7578,7 +7578,7 @@
         ]
       },
       "description": {
-        "plainText": "Input: Active Subscriptions\nActivities: 1.1 Monitor active terms, 1.2 Identify Expiring Subscriptions, 1.3 Check Customer eligible for PO Billing\nOutput: Renewal Decision",
+        "plainText": "Input: Active Subscriptions\r\nActivities: 1.1 Monitor active terms, 1.2 Identify Expiring Subscriptions, 1.3 Check Customer eligible for PO Billing\r\nOutput: Renewal Decision",
         "summary": "Input: Active Subscriptions Activities: 1.1 Monitor active terms, 1.2 Identify Expiring Subscriptions, 1.3 Check Customer eligible for PO Billing Output: Renewal Decision",
         "htmlDecoded": false
       },
@@ -7614,7 +7614,7 @@
         ]
       },
       "description": {
-        "plainText": "Input: Customer Service Need\nActivities: 1.1 Create Service Opportunity, 1.2 Define scope and coverage, 1.3 Create Quotation, 1.4 Review and Negotiate\nOutput: Quotation for approval",
+        "plainText": "Input: Customer Service Need\r\nActivities: 1.1 Create Service Opportunity, 1.2 Define scope and coverage, 1.3 Create Quotation, 1.4 Review and Negotiate\r\nOutput: Quotation for approval",
         "summary": "Input: Customer Service Need Activities: 1.1 Create Service Opportunity, 1.2 Define scope and coverage, 1.3 Create Quotation, 1.4 Review and Negotiate Output: Quotation for approval",
         "htmlDecoded": false
       },
@@ -7652,7 +7652,7 @@
       "description": {
         "plainText": "Input: Consumer initiates shopping session\nActivities: 1.1 Access e-Shop, 1.2 Login/Register, 1.3 Browse & Review Products, 1.4 Add Items to Cart\nOutput: AEDs & accessories added to cart",
         "summary": "Input: Consumer initiates shopping session Activities: 1.1 Access e-Shop, 1.2 Login/Register, 1.3 Browse & Review Products, 1.4 Add Items to Cart Output: AEDs & accessories added to cart",
-        "htmlDecoded": true
+        "htmlDecoded": false
       },
       "source": {
         "rowNumber": 213,
@@ -7686,7 +7686,7 @@
         ]
       },
       "description": {
-        "plainText": "Input: Multi-Channel Customer Service Request\nActivities: 1.1 Diagnosis of device issue, 1.2 Spare parts identification, 1.3 Warranty checks\nOutput: Determine Warranty/Chargeback scenario",
+        "plainText": "Input: Multi-Channel Customer Service Request\r\nActivities: 1.1 Diagnosis of device issue, 1.2 Spare parts identification, 1.3 Warranty checks\r\nOutput: Determine Warranty/Chargeback scenario",
         "summary": "Input: Multi-Channel Customer Service Request Activities: 1.1 Diagnosis of device issue, 1.2 Spare parts identification, 1.3 Warranty checks Output: Determine Warranty/Chargeback scenario",
         "htmlDecoded": false
       },
@@ -7724,7 +7724,7 @@
       "description": {
         "plainText": "Input: Planned Order/Business Need\nActivities: 1.1 Identify demand (MRP, min/max, or manual), 1.2 Create purchase requisition & lines, 1.3 Submit PR for approval\nOutput: Approved Purchase Requisition",
         "summary": "Input: Planned Order/Business Need Activities: 1.1 Identify demand (MRP, min/max, or manual), 1.2 Create purchase requisition & lines, 1.3 Submit PR for approval Output: Approved Purchase Requisition",
-        "htmlDecoded": true
+        "htmlDecoded": false
       },
       "source": {
         "rowNumber": 215,
@@ -7758,9 +7758,9 @@
         ]
       },
       "description": {
-        "plainText": "<div>Input: Multi-Source Customer &\nEngagement Data  </div><div>Activities : </div><div>1.1 - Aggregate Cust Data  </div><div>1.2 - Build Customer Profiles  </div><div>1.3 - Segment Customers  </div><div><br> </div><div>Output: Target Customer Segments </div>",
-        "summary": "<div>Input: Multi-Source Customer & Engagement Data </div><div>Activities : </div><div>1.1 - Aggregate Cust Data </div><div>1.2 - Build Customer Profiles </div><div>1.3 - Segment Customers </div><div><br> </div><div>Output: Target Customer Segments </div>",
-        "htmlDecoded": true
+        "plainText": "Input: Multi-Source Customer & Engagement Data\nActivities :\n1.1 - Aggregate Cust Data\n1.2 - Build Customer Profiles\n1.3 - Segment Customers\n\nOutput: Target Customer Segments",
+        "summary": "Input: Multi-Source Customer & Engagement Data Activities : 1.1 - Aggregate Cust Data 1.2 - Build Customer Profiles 1.3 - Segment Customers",
+        "htmlDecoded": false
       },
       "source": {
         "rowNumber": 216,
@@ -7796,7 +7796,7 @@
       "description": {
         "plainText": "Input: Business case for retail channel expansion\nActivities: 1.1 Define retail channel strategy, 1.2 Identify target retailers & retail segments, 1.3 Define retail programs & channel objectives, 1.4 Define pricing, discount & promotion strategy\nOutput: Retail channel strategy & pricing approach defined",
         "summary": "Input: Business case for retail channel expansion Activities: 1.1 Define retail channel strategy, 1.2 Identify target retailers & retail segments, 1.3 Define retail programs & channel objectives, 1.4 Define pricing, discount & promotion strategy Output: Retail channel strategy & pricing approach defined",
-        "htmlDecoded": true
+        "htmlDecoded": false
       },
       "source": {
         "rowNumber": 217,
@@ -7832,7 +7832,7 @@
       "description": {
         "plainText": "Input: Business need for social commerce channel\nActivities: 1.1 Define Social Commerce Strategy, 1.2 Select Target Platforms, 1.3 Define Product Assortment, 1.4 Establish Operating Model & Governance\nOutput: Channel strategy & platform selection defined",
         "summary": "Input: Business need for social commerce channel Activities: 1.1 Define Social Commerce Strategy, 1.2 Select Target Platforms, 1.3 Define Product Assortment, 1.4 Establish Operating Model & Governance Output: Channel strategy & platform selection defined",
-        "htmlDecoded": true
+        "htmlDecoded": false
       },
       "source": {
         "rowNumber": 218,
@@ -7866,9 +7866,9 @@
         ]
       },
       "description": {
-        "plainText": "<div>Input: Business Goals & Channel\nObjectives  </div><div>Activities :  </div><div>1.1 Define Partner Strategy  </div><div>1.2 Define Partner Tiers & Eligibility  </div><div>1.3 Define Partner Benefits &\nIncentives  </div><div>1.4 Define Rebate & MDF\nFrameworks  </div><div><br> </div><div>Output: Partner Program\nFramework & Channel Policies<br> </div>",
-        "summary": "<div>Input: Business Goals & Channel Objectives </div><div>Activities : </div><div>1.1 Define Partner Strategy </div><div>1.2 Define Partner Tiers & Eligibility </div><div>1.3 Define Partner Benefits & Incentives </div><div>1.4 Define Rebate & MDF Frameworks </div><div><br> </div><div>Output: Partner Program Framework…",
-        "htmlDecoded": true
+        "plainText": "Input: Business Goals & Channel Objectives\nActivities :\n1.1 Define Partner Strategy\n1.2 Define Partner Tiers & Eligibility\n1.3 Define Partner Benefits & Incentives\n1.4 Define Rebate & MDF Frameworks\n\nOutput: Partner Program Framework & Channel Policies",
+        "summary": "Input: Business Goals & Channel Objectives Activities : 1.1 Define Partner Strategy 1.2 Define Partner Tiers & Eligibility 1.3 Define Partner Benefits & Incentives 1.4 Define Rebate & MDF Frameworks",
+        "htmlDecoded": false
       },
       "source": {
         "rowNumber": 219,
@@ -7902,7 +7902,7 @@
         ]
       },
       "description": {
-        "plainText": "Input: Customer, Partner or system generated case\nActivities: 1.1 Customer raises request, 1.2 Partner/distributor raises request, 1.3 Installed Base/entitlement issue, 1.4 Tier 1/Tier 2 escalations\nOutput: Classified Service Case",
+        "plainText": "Input: Customer, Partner or system generated case\r\nActivities: 1.1 Customer raises request, 1.2 Partner/distributor raises request, 1.3 Installed Base/entitlement issue, 1.4 Tier 1/Tier 2 escalations\r\nOutput: Classified Service Case",
         "summary": "Input: Customer, Partner or system generated case Activities: 1.1 Customer raises request, 1.2 Partner/distributor raises request, 1.3 Installed Base/entitlement issue, 1.4 Tier 1/Tier 2 escalations Output: Classified Service Case",
         "htmlDecoded": false
       },
@@ -7938,7 +7938,7 @@
         ]
       },
       "description": {
-        "plainText": "Input: AED device usage data\nActivities: 1.1 Monitor Consumable Status, 1.2 Identify Replacement Needs, 1.3 Notify Consumer via App, 1.4 Display Recommended\nOutput: Replacement products recommended to consumer",
+        "plainText": "Input: AED device usage data\r\nActivities: 1.1 Monitor Consumable Status, 1.2 Identify Replacement Needs, 1.3 Notify Consumer via App, 1.4 Display Recommended\r\nOutput: Replacement products recommended to consumer",
         "summary": "Input: AED device usage data Activities: 1.1 Monitor Consumable Status, 1.2 Identify Replacement Needs, 1.3 Notify Consumer via App, 1.4 Display Recommended Output: Replacement products recommended to consumer",
         "htmlDecoded": false
       },

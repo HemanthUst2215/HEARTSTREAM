@@ -88,10 +88,44 @@ def test_single_line_ac_fails() -> None:
     )
 
 
+def test_traceable_test_case_passes() -> None:
+    rb_path = ROOT / "docs/intake/user-story-csv-rulebook.yaml"
+    rulebook = yaml.safe_load(rb_path.read_text(encoding="utf-8"))
+    headers = rulebook["csv"]["column_order"]
+
+    def row(wit: str, **fields: str) -> dict[str, str]:
+        base = {h: "" for h in headers}
+        base["Work Item Type"] = wit
+        base.update(fields)
+        return base
+
+    rows = [
+        row("Epic", ID="67476", Title="16. Ecommerce (B2B & B2C)", Description="Catalog epic"),
+        row("Feature", ID="67535", Title="Sales Order Approval", Description="Catalog feature"),
+        row(
+            "Test Case",
+            Title="Order waits for approval",
+            Description=(
+                "Transcript: artifacts/intake/session.txt#00:12:00\n"
+                "Epic: 67476 | 16. Ecommerce (B2B & B2C)\n"
+                "Feature: 67535 | Sales Order Approval\n"
+                "Steps:\n"
+                "1. Submit a sales order that the transcript says must be approved"
+            ),
+            **{"Acceptance Criteria": acceptance_criteria_cell("The order remains pending approval")},
+        ),
+    ]
+    findings, critical = validate_structure(rulebook, rows)
+    assert critical == 0, findings
+    result = _validate.validate(rulebook, headers, rows)
+    assert result["status"] == "PASS", result
+
+
 def main() -> int:
     test_good_export_passes()
     test_flat_user_story_with_area_fails()
     test_single_line_ac_fails()
+    test_traceable_test_case_passes()
     print("ado_user_story_csv_layout tests OK")
     return 0
 

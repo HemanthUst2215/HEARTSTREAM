@@ -8,7 +8,7 @@ Does not change Title, Description, Acceptance Criteria, or other source cells.
 Do not invent Epic/Feature titles from the transcript. Match each User Story
 to existing Features in artifacts/work-items JSON, then write those catalog
 Epic and Feature rows into the workbook with their ADO IDs. Fill story
-Catalog Epic/Feature/Workshop IDs go in the rulebook `ID` column only — no extra EPIC ID / FEATURE ID columns.
+Catalog Epic and Feature rows keep their own ADO IDs in `ID`. Each matched User Story's `ID` is that Feature's workItemId. No extra EPIC ID / FEATURE ID columns.
 """
 from __future__ import annotations
 
@@ -190,6 +190,18 @@ def pick_strong(
     return top, f"strong ({top_score:.1f})"
 
 
+def pick_best(
+    scores: list[tuple[float, dict[str, Any]]],
+) -> tuple[dict[str, Any] | None, str]:
+    """Highest-scoring catalog Feature, even below the strong threshold."""
+    positive = [(s, c) for s, c in scores if s > 0]
+    if not positive:
+        return None, "no_positive_score"
+    positive.sort(key=lambda x: x[0], reverse=True)
+    top_score, top = positive[0]
+    return top, f"best ({top_score:.1f})"
+
+
 def pick_strong_unique_title(
     scores: list[tuple[float, dict[str, Any]]],
     threshold: float,
@@ -251,9 +263,10 @@ def feature_is_relevant_to_story(feat_title: str, story_title: str) -> bool:
 
 def score_story_to_catalog_feature(story_title: str, blob: str, feature: dict[str, Any]) -> float:
     feat_title = feature.get("title") or ""
-    if not feature_is_relevant_to_story(feat_title, story_title):
+    text = blob or story_title
+    if not feature_is_relevant_to_story(feat_title, story_title) and not feature_is_relevant_to_story(feat_title, text):
         return 0.0
-    base = title_score(feat_title, story_title)
+    base = title_score(feat_title, text)
     core = normalize_title(feat_title)
     words = [w for w in core.split() if w not in STOPWORDS and len(w) > 3]
     st = story_title.lower()
@@ -262,6 +275,94 @@ def score_story_to_catalog_feature(story_title: str, blob: str, feature: dict[st
         if hits:
             base = min(100.0, base + 18.0 * hits)
     return round(base, 1)
+
+
+# Story phrase → distinctive catalog Feature title fragment.
+# First hit wins. IDs are resolved from feature.json, never invented.
+TOPIC_HINTS: list[tuple[tuple[str, ...], str]] = [
+    (("install base",), "install base management"),
+    (("escalat",), "escalation"),
+    (("training",), "partner training"),
+    (("account-planning",), "channel partner strategy"),
+    (("account planning",), "channel partner strategy"),
+    (("legal entity",), "partner data available in crm"),
+    (("visibility",), "partner data available in crm"),
+    (("read-only",), "partner data available in crm"),
+    (("record owner",), "partner data available in crm"),
+    (("sync", "onboarding"), "data synchronization"),
+    (("onboarding",), "partner onboarding"),
+    (("approved partner",), "partner onboarding"),
+    (("distribute leads",), "partner lead generation"),
+    (("own leads",), "lead registration"),
+    (("account manager",), "lead registration"),
+    (("lead",), "lead registration"),
+    (("deal registration",), "opportunity management"),
+    (("pipeline",), "opportunity management"),
+    (("spare",), "service contract management"),
+    (("service-partner",), "service contract management"),
+    (("service partner",), "service contract management"),
+    (("discount",), "quotation & pricing"),
+    (("pricing",), "quotation & pricing"),
+    (("sales order",), "order capture"),
+    (("quote",), "quotation & pricing"),
+    (("quotation",), "quotation & pricing"),
+    (("opportunity",), "opportunity management"),
+    (("reseller",), "partner contracting"),
+    (("sales-partner contract",), "partner contracting"),
+    (("list price",), "contract management"),
+    (("contract duration",), "contract management"),
+    (("finalized contract",), "contracting"),
+    (("approval",), "quotation"),
+    (("requested delivery",), "order capture"),
+    (("customs",), "fulfillment & shipment"),
+    (("shipment",), "fulfillment & shipment"),
+    (("lock order",), "fulfillment & shipment"),
+    (("fulfillment status",), "fulfillment & shipment"),
+    (("contract",), "contract"),
+]
+
+B2B_SALES_EPICS = {"67461", "67462", "67557"}
+
+
+def _topic_fragment(text: str) -> str:
+    lowered = text.lower()
+    for phrases, title_fragment in TOPIC_HINTS:
+        if all(p in lowered for p in phrases):
+            return title_fragment
+    return ""
+
+
+def find_topic_feature(
+    story_title: str,
+    blob: str,
+    features: list[dict[str, Any]],
+    epic_by_id: dict[str, dict[str, Any]],
+) -> dict[str, Any] | None:
+    fragment = _topic_fragment(story_title) or _topic_fragment(blob)
+    if not fragment:
+        return None
+    frag = normalize_title(fragment)
+    hits = [
+        f
+        for f in features
+        if frag and frag in normalize_title(f.get("title") or "")
+        and str(f.get("parent_id") or "") in epic_by_id
+    ]
+    if not hits:
+        return None
+    preferred = [f for f in hits if str(f.get("parent_id") or "") in B2B_SALES_EPICS]
+    pool = preferred or hits
+
+    def rank(feat: dict[str, Any]) -> tuple[float, int, str]:
+        title = normalize_title(feat.get("title") or "")
+        exact = 0 if title == frag or title.startswith(frag) else 1
+        coverage = len(frag) / max(len(title), 1)
+        parent = str(feat.get("parent_id"))
+        epic_rank = 0 if parent == "67462" else 1 if parent == "67557" else 2
+        return (exact, epic_rank, -coverage, title)
+
+    pool.sort(key=rank)
+    return pool[0]
 
 
 def resolve_story_to_existing(
@@ -273,13 +374,19 @@ def resolve_story_to_existing(
 ) -> dict[str, Any]:
     """Map a User Story to an existing Feature whose parent Epic is in the catalog.
 
-    Both IDs are filled only when the Feature winner is strong/unique and that
-    parent Epic exists. No new Epic/Feature is created.
+    A strong unique Feature is preferred. If none clears the threshold, the
+    highest-scoring catalog Feature with a parent Epic is used so every story
+    receives a Feature ID. No new Epic/Feature is created.
     """
     features = buckets.get("Feature") or []
     epic_by_id = {e["id"]: e for e in (buckets.get("Epic") or [])}
     feat_scores = [(score_story_to_catalog_feature(story_title, blob, f), f) for f in features]
-    feature, feat_why = pick_strong_unique_title(feat_scores, threshold, margin)
+    feature = find_topic_feature(story_title, blob or story_title, features, epic_by_id)
+    feat_why = "topic match to catalog feature title" if feature else ""
+    if not feature:
+        feature, feat_why = pick_strong_unique_title(feat_scores, threshold, margin)
+    if not feature:
+        feature, feat_why = pick_best(feat_scores)
     empty: dict[str, Any] = {
         "epic_id": "",
         "feature_id": "",
@@ -378,6 +485,7 @@ def map_stories(
         if pair["pair"] == "matched" and pair["feature"] and pair["epic"]:
             matched_features[feature_id] = pair["feature"]
             matched_epics[epic_id] = pair["epic"]
+            out["ID"] = feature_id
 
         cat_feat_scores = pair["feat_scores"]
         feature = pair["feature"]

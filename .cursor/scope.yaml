@@ -24,6 +24,9 @@ agents:
   work-item-mapping-agent:
     write: [artifacts/intake/**, artifacts/audit/**]
     deny: [scripts/**, docs/harness/**]
+  user-story-evaluation-agent:
+    write: [artifacts/evaluation/**, artifacts/audit/**]
+    deny: [scripts/**, docs/harness/**, .cursor/**]
   reverse-engineering-agent:
     write: [docs/reverse/**, artifacts/reverse/**, artifacts/audit/**]
   planner-agent:
@@ -56,7 +59,7 @@ agents:
     write: [evals/**]
     deny: ["**/*.{java,ts,tsx}", artifacts/audit/**]
   test-agent:
-    write: ["**/*Test.java", "**/*.spec.ts", "**/*.test.ts", docs/**/*.feature, docs/test-cases.md, docs/test-cases/**, docs/test-matrix.md, docs/quality/api-validation/**, artifacts/api-validation/**, artifacts/test-results*.md, artifacts/audit/**]
+    write: ["**/*Test.java", "**/*.spec.ts", "**/*.test.ts", docs/**/*.feature, docs/test-cases.md, docs/test-cases/**, docs/test-matrix.md, docs/quality/api-validation/**, docs/intake/msd-test-case-rulebook.yaml, artifacts/api-validation/**, artifacts/intake/**, artifacts/test-results*.md, artifacts/audit/**]
     deny: [docs/test-cases-br-coverage.md]
   documentation-agent:
     write: [docs/**, artifacts/**, artifacts/audit/**]
