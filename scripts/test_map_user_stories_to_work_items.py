@@ -13,6 +13,7 @@ mod = SourceFileLoader(
 map_stories = mod.map_stories
 resolve_story_to_existing = mod.resolve_story_to_existing
 title_score = mod.title_score
+_catalog_file_for_type = mod._catalog_file_for_type
 
 THRESHOLD = 62.0
 MARGIN = 8.0
@@ -99,6 +100,18 @@ def test_map_stories_writes_catalog_epic_and_feature_rows() -> None:
     assert log[1]["status"] == "unmatched"
 
 
+def test_catalog_file_filter_respects_config() -> None:
+    cfg = {
+        "catalog_epic_json": "custom-epic.json",
+        "catalog_feature_json": "custom-feature.json",
+        "workshop_catalog_json": "custom-workshop.json",
+    }
+    assert _catalog_file_for_type("Epic", "custom-epic.json", cfg)
+    assert not _catalog_file_for_type("Epic", "epic.json", cfg)
+    assert _catalog_file_for_type("Feature", "custom-feature.json", cfg)
+    assert not _catalog_file_for_type("Feature", "feature.json", cfg)
+
+
 def test_duplicate_feature_titles_still_map() -> None:
     rows = [_row("User Story", "Onboard the partner and enable selling")]
     buckets = {
@@ -123,6 +136,7 @@ def main() -> int:
         test_title_score_ignores_numbering,
         test_story_maps_to_existing_feature_and_parent_epic,
         test_map_stories_writes_catalog_epic_and_feature_rows,
+        test_catalog_file_filter_respects_config,
         test_duplicate_feature_titles_still_map,
     ]
     for fn in tests:

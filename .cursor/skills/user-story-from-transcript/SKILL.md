@@ -14,12 +14,13 @@ description: Transcript → ADO user story CSV using the stored rulebook. Use fo
 ## Runtime workflow
 
 1. **Load rulebook** — column order, work item types, narrative formats, required fields. No other schema source.
-2. **transcript-analyzer** — cited facts, quotes, conflicts (do not resolve conflicts into requirements).
-3. **transcript-story-extractor** — candidate User Stories (and Workshop/Task/Issue/Risk when evidenced). Do **not** create new Epic or Feature rows.
-4. **ado-user-story-csv-writer** — row JSON → `python scripts/ado_user_story_csv.py write` to the **internal** working CSV (canonical; see rulebook `validation.mandatory_flow`).
-5. **user-story-csv-compliance-validator** — run `scripts/validate-user-story-csv.py`; parent rejects FAIL (layout + field rules).
-6. **invest-scorecard-evaluator** — write **only** `artifacts/intake/<date>-invest-scorecard.csv`. Do not add INVEST columns to the working CSV or the public Excel.
-7. **Identify Feature, then story.** Match the transcript to an existing Feature before writing the User Story. **work-item-mapping-agent** (after PASS) writes one public Excel. A matched User Story `ID` is that Feature's workItemId.
+2. **Load catalog** — `artifacts/work-items/epic.json` and `artifacts/work-items/feature.json` before story authoring (existing Epics/Features only; never create new hierarchy items).
+3. **transcript-analyzer** — cited facts, quotes, conflicts (do not resolve conflicts into requirements).
+4. **transcript-story-extractor** — candidate User Stories (and Workshop/Task/Issue/Risk when evidenced). Note intended catalog Feature alignment in extraction; do **not** create Epic/Feature rows or IDs.
+5. **ado-user-story-csv-writer** — row JSON → `python scripts/ado_user_story_csv.py write` to the **internal** working CSV (canonical; see rulebook `validation.mandatory_flow`).
+6. **user-story-csv-compliance-validator** — run `scripts/validate-user-story-csv.py`; parent rejects FAIL (layout + field rules).
+7. **invest-scorecard-evaluator** — write **only** `artifacts/intake/<date>-invest-scorecard.csv`. Do not add INVEST columns to the working CSV or the public Excel.
+8. **work-item-mapping-agent** (after PASS) — generic match to `feature.json` / `epic.json`; public Excel like `2026-10-08-user-stories-from-transcript-v2.xlsx` (User Story `ID` = Feature workItemId).
 
 ## Output paths
 

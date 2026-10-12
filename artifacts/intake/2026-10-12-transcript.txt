@@ -1,0 +1,4561 @@
+D365 Finance - General Ledger UST Led Workshop-20260928_125637UTC-Meeting Recording
+
+0:11
+Hey, Anil.
+
+0:12
+Hey, Vijay.
+
+0:15
+Hello.
+
+0:16
+Hi, Sandeep.
+
+0:16
+Hi, Vijay.
+
+0:18
+Can you hear me?
+
+0:18
+OK?
+
+0:20
+Yep.
+
+0:20
+Loud and clear.
+
+0:22
+Thank you.
+
+0:26
+Hello.
+
+0:35
+Hey.
+
+0:35
+Good morning, Susan.
+
+0:36
+Hi, Suresh.
+
+0:37
+Hello.
+
+0:37
+Hi, Susan.
+
+0:38
+There.
+
+0:39
+I was hoping that you guys were able to join without me hopping on.
+
+0:42
+Were you guys not able to?
+
+0:45
+No.
+
+0:46
+We joined with the UST IDs.
+
+0:48
+Excellent.
+
+0:49
+Join with the partner IDs.
+
+0:50
+I think it will let us in without any.
+
+0:52
+Perfect.
+
+0:53
+OK.
+
+0:53
+All right.
+
+0:53
+Perfect.
+
+0:54
+We'll do that.
+
+0:54
+Yeah.
+
+0:55
+All right.
+
+0:55
+Thank you very much.
+
+0:56
+All right, I'm gonna drop.
+
+0:57
+I'm not gonna be in this one.
+
+0:58
+I'm kind of watching the other one right now.
+
+1:00
+Yep.
+
+1:00
+Sure.
+
+1:00
+Thank you.
+
+1:01
+OK, bye, guys.
+
+1:02
+Thank you.
+
+1:02
+Yeah.
+
+1:03
+Thank you.
+
+2:17
+Hello.
+
+2:18
+Hi Narayan.
+
+2:21
+Hi Anil.
+
+2:22
+Hi, Narayan.
+
+2:24
+Hi.
+
+2:27
+Hello, everyone.
+
+2:28
+Hi, Narayan.
+
+2:29
+Good morning.
+
+2:30
+Good evening.
+
+2:32
+Thank you.
+
+2:32
+Good to you.
+
+2:34
+Good morning.
+
+2:37
+Should have Steven joining and I primarily he should be the the main person for this call.
+
+2:44
+I just joined in and I'll have to drop off shortly.
+
+2:47
+But yeah, Steven should be able to help from our side.
+
+2:53
+Yeah, OK.
+
+3:30
+Let's give a couple of minutes to join the folks and then we can kick off.
+
+3:34
+Hi, Stephen.
+
+3:38
+Hi.
+
+3:50
+Hey, Arunath.
+
+3:51
+Hi.
+
+3:57
+Hi all.
+
+4:47
+Let's give more couple of minutes folks to join and then we can kick off.
+
+5:30
+We have Stephen, Narayan and Liz joined the call.
+
+5:34
+Are we waiting for anyone else?
+
+5:36
+Stephen or Narayan, can you confirm?
+
+5:40
+Matthias has also joined.
+
+5:44
+I think it Sarah also accepted, I think para paleran 6:00 o'clock for Sarah, I think it is very early, so she might join later.
+
+5:58
+So we can probably start.
+
+6:05
+OK, Sure.
+
+6:06
+We kick off now.
+
+6:08
+Yeah, let's go ahead.
+
+6:09
+Sure.
+
+6:11
+So welcome to this finance and Operation processing modeling workshop.
+
+6:18
+This is our first workshop in the series.
+
+6:21
+My name is Sandeep Tandu.
+
+6:23
+I'm Finance functional consultant having experience of 20 plus years in implementing D 365 finance and operations.
+
+6:32
+I live in Wisconsin, Madison.
+
+6:34
+I have my colleague Anil joining us from India and I'll request Anil and team sitting in India to introduce themselves.
+
+6:44
+And then I'll also request heart stream team to, you know, introduce and then we can kick off from there.
+
+6:51
+Anil, Yep, thank you, Sandeep.
+
+6:55
+So hi everyone.
+
+6:56
+Good morning, Good evening.
+
+6:57
+So I am Anil Kumar Jupudi.
+
+6:59
+So I will be along with Sandeep running this workshop today.
+
+7:03
+And for the finance workshops, so our primary role is finance functional consultant.
+
+7:08
+So I will be working with you to get the requirements, understand your business, get those configurations done and work with you closely until the go live.
+
+7:18
+Yep, thank you.
+
+7:20
+Yeah, yeah.
+
+7:21
+Hi everyone, myself, Vuttam, I am a solution architect from India.
+
+7:28
+Basically I am owning the solution.
+
+7:31
+So anything related, anything in the business process, you can feel free to reach out to me so that we can align the solution.
+
+7:38
+Yeah, next who will go next?
+
+7:41
+Vijay, Hi.
+
+7:48
+Hello everyone this side Vijay here.
+
+7:51
+I am a supply chain functional consultant for the supply chain management processes.
+
+7:57
+I work from India.
+
+7:59
+Thank you.
+
+8:02
+Hi, this is Mohammad Mohammad Farahanuman.
+
+8:04
+I am also supply chain consultant.
+
+8:07
+I am living in New Jersey and I will be on site consultant for SCM Prasanna.
+
+8:23
+Hi everyone.
+
+8:24
+Kasana here.
+
+8:25
+And I'm part of the ISV team reporting to Prem on the management side.
+
+8:32
+So I'm here in Phoenix, Arizona and I have around 78 years on the Microsoft services experience.
+
+8:38
+So what's it about me?
+
+8:40
+Thank you.
+
+8:43
+Hey, this is Durga.
+
+8:45
+I'm the integration architect for this engagement and I'm looking forward to you work with you on this engagement.
+
+8:55
+Hi.
+
+8:55
+Good morning.
+
+8:56
+My name is Aldo Daggers.
+
+8:57
+I'm sorry, although you are breaking.
+
+9:06
+Can you hear me now?
+
+9:07
+Better.
+
+9:09
+Better.
+
+9:09
+Yeah.
+
+9:10
+OK.
+
+9:10
+Sorry about it.
+
+9:12
+My name is Aldo Daggers.
+
+9:13
+I'm based here in Chicago, Illinois.
+
+9:17
+And most of Swedes architecting death and outside.
+
+9:22
+Nice to meet you all.
+
+9:26
+I'll go.
+
+9:26
+My name is Sarah.
+
+9:29
+Sarah Richie.
+
+9:30
+I'm in.
+
+9:32
+I'm in Washington, bright and early and I am a PM across multiple work streams end to end.
+
+9:42
+Hello, my name is Keith Kipjian.
+
+9:43
+Basically in UK and supply chain consultant in this meeting I will be the square square to look the meeting minutes.
+
+9:54
+Thank you guys.
+
+10:01
+Can we request to hard stream team to introduce themselves Yeah one more if we're done with UST side.
+
+10:07
+Hey there no problem.
+
+10:09
+Hi I'll Patrick Jovenotso, I'm the program manager at large for the D 365 implementation.
+
+10:16
+So just joining the first of these today and we'll be on intermittently, but if there's anything from overall scheduling or concerns about the workshop purposes or our outcomes, anything on those levels, I'm happy to help in the future.
+
+10:34
+Thanks.
+
+10:38
+OK, So I click off on the Heart Stream side then.
+
+10:40
+So I'm Stephen Way.
+
+10:42
+I'm the chief accountant for the Heart Stream Group.
+
+10:45
+My backgrounds with Phillips worked for Phillips for many years and then took on that heartstring role, and it was divested last year.
+
+10:54
+Yeah.
+
+10:54
+So I have a team of financial controllers reporting to me.
+
+10:58
+I think to spread the low, we'll probably need to get more people involved in the team periodically.
+
+11:03
+But yeah, I haven't introduced everybody on the call yet today.
+
+11:08
+So yeah, as we move into different processes and things, they'll probably get other people involved.
+
+11:16
+Yeah, there's a few more on our side.
+
+11:18
+So Liz, do you want to introduce yourself perhaps?
+
+11:21
+Yeah, Hi, I'm Liz McGinn.
+
+11:22
+I've been working with RDT Phillips for 10 years now, so I work alongside Steven across all the accounts.
+
+11:34
+Matthias, can you introduce self perhaps?
+
+11:40
+Yes.
+
+11:41
+Hi, my name is Mataush.
+
+11:43
+I'm supporting Stephen with consolidation reporting related tasks.
+
+11:47
+Before I worked for Phillips for last 7 years in consolidation and group reporting.
+
+11:54
+Thanks.
+
+11:55
+Thank you.
+
+11:59
+Narayan, do you wanna?
+
+12:00
+Yep, Narayan Bhusal, I lead the treasury function for Heartstream, a core treasury professional.
+
+12:06
+But as you can, you know, imagine with Heart Stream, we are pretty lean finance team.
+
+12:11
+So I also, you know, lead the, the, the credit and collection process together with the treasury.
+
+12:16
+And I will be, you know, involved in a lot of these calls, maybe as a just as a listener, But I'm sure we'll be working very closely on the treasury and credit and collections AR related workshops in the future.
+
+12:30
+Nice to meet you all and looking forward to working with you, Sarah.
+
+12:37
+So you managed to join very early like going on camera perhaps to introduce yourself?
+
+12:43
+Sure.
+
+12:43
+I'm Sarah Pellerin and I'm as Steven referenced out of Bothell.
+
+12:48
+I had been with Phillips for about the past Phillips heart stream for about the past 3 years.
+
+12:53
+And my main function I'm a finance business partner.
+
+12:56
+I do the management reporting and also partner with the sales the US sales team.
+
+13:09
+OK, thanks.
+
+13:09
+So I think that's all from our side at the moment.
+
+13:13
+So thanks hard stream team for the introduction and looking forward to work closely with you.
+
+13:21
+Before begin, I would like to take one moment to thank you or say thank you to the finance and Operation team for providing detailed and thoughtful answers to our questionnaires.
+
+13:35
+Finance questions.
+
+13:37
+I know, I know 192 questions was a big list to answer and we appreciate your efforts, time and those answers are really, you know, helpful for us.
+
+13:50
+I would also like to thank Sarah and the team which provided the chart of accounts, profit center, cost centers and business unit details.
+
+14:03
+Those were super helpful and that has given us some head start in a configuration.
+
+14:08
+So let us jump to the today's agenda.
+
+14:18
+We will begin with quick overview of finance and operation that will give you the look and feel of finance app and some navigation at high level.
+
+14:29
+However, you will have an detail training session going forward so you can get into the application and do some transactions.
+
+14:38
+Next is we are going to review the chart of accounts and then details sent by Sarah.
+
+14:44
+We have few questions around that as well as we are also going to look at the feedback you provided on the financial questions.
+
+14:51
+So that will that that will set the stage for today's discussion.
+
+14:55
+And this and today's scope for discussion is we are going to talk about core GL setup and we'll have a break for 10 minutes.
+
+15:05
+After that, we will be showcasing you the outer box capabilities around accrual and deferral management and the Ledger allocations.
+
+15:16
+Now expectation of this workshop is, you know, we want to make some decisions.
+
+15:23
+So what we will do, we will keep our focus on these 3 main areas and we want to make this more interactive if you have any questions.
+
+15:34
+Yeah, definitely we are going to address those questions, but those if some questions are not part of today's scope, what we will do we will park those and at the end of this workshop if we get some time we will address those.
+
+15:48
+If not definitely we will address those in you know the relevant workshops, upcoming workshops.
+
+15:53
+So let me quickly jump into D 365 and you know give you the overview of finance operation app.
+
+15:59
+One thing I would like to mention, we have a short name for Dynamics 365 Finance and Operation which is called as an FNO.
+
+16:08
+So going forward I am going to say FNO instead of whole name of you know D 365 Finance and Operation.
+
+16:15
+OK, so let me quickly jump into D 365 and we can kick off there.
+
+16:19
+Thank you.
+
+16:31
+Let me share my screen.
+
+16:46
+Can you see my D 365 screen?
+
+16:50
+Yeah, we can see it something so D 365 or other.
+
+16:59
+FNO is a cloud based system and once you click on the URL then you land into the home page of finance and operation.
+
+17:10
+Once you land in onto the finance and operation home page, you can see lot of you know, windows here.
+
+17:17
+You know these are called as an workspaces.
+
+17:20
+The workspaces you can see as an kind of a snapshot of different business functions.
+
+17:26
+Some of the workspaces are also powered by Power BI.
+
+17:31
+Those are analytical, analytical workshops workspaces.
+
+17:34
+So let me quickly look at 1:00 you know general Ledger processing once you click on the this tile which is called as an workspace that gives you overview of different activities happening in that business function.
+
+17:51
+You know for example you can see I have 2 non posted journals or all non posted journals are 16.
+
+17:58
+So you get an visibility of number of journals and what are their statuses and these are all pre pre built filter.
+
+18:09
+So you do not have to go and you know filter on the journal and then statuses and find out what is the number happening there.
+
+18:17
+So that is how this workspaces are arranged.
+
+18:23
+I logged in as an administrator so you can see there are lot of tiles showing up.
+
+18:28
+However when you login you may not see all of them.
+
+18:33
+Those will be displayed based on your rules and user permissions.
+
+18:37
+OK, so let us look at 1:00 of them which is analytical.
+
+18:41
+For example, if I am going to click on the financial analysis for current company, this work workspace is analytical workspace and gives you some analytical information.
+
+18:55
+This is very useful when we are going to you know work into the D 365 and gives you a lot of information.
+
+19:05
+It gives you a financial overview, what is happening around your revenue, trial balance, cash flow, expenses.
+
+19:12
+You can jump to the trial balance directly from here or a balance sheet from this workspace.
+
+19:19
+OK, So let me go back to the Sandeep, sorry to interrupt you.
+
+19:25
+I think somebody raised his hand, maybe they might have some question.
+
+19:29
+Narayan.
+
+19:30
+Sure.
+
+19:31
+Yeah, yeah, hi.
+
+19:32
+Thanks.
+
+19:33
+Quick question, right, I mean on the I mean you said you you signed in as a as an administrator and you have bunch of workspaces there is there.
+
+19:41
+So do we know already like which are the ones that is being designed for us or is that still a discovery question?
+
+19:50
+So that you know, we know that you know when you show a certain things that we know that this is already you know included in the in the module that we are subscribed to or will be subscribing to do do we have that list?
+
+20:01
+Sure, sure Narin and that is a great question.
+
+20:04
+See, we have.
+
+20:05
+We have an opportunity to look at the workspaces available for that specific module and I am going to talk about that, you know in next 5 minutes.
+
+20:15
+OK, OK, thank you.
+
+20:17
+Thank you.
+
+20:19
+So coming back to the home screen, if if you look at the left side, there is a calendar and and below the calendar, you can see there is a list of items.
+
+20:36
+There could be list of items which are assigned to me, you know, So for example, if there is a workflow submitted for my approval, then it will come and sit into this, you know section and simultaneously you will also get an email that there is an workflow needs to be approved.
+
+20:56
+So this is the this is going to be the list of all activities assigned to me.
+
+21:00
+OK, if you look at the top of this screen, then you can see there is a search button.
+
+21:10
+OK, this search button is you know it helps you to directly navigate to the business function.
+
+21:17
+It is like in SAP, you have transaction codes, right?
+
+21:21
+If if you have to go to the journal, journal, then you have to type the transaction code FB 550 and then it takes you to the general general.
+
+21:32
+So it is the same thing.
+
+21:33
+I instead of putting the transaction code, you have to type directly the business function and then system will take you to that business function.
+
+21:44
+So that is the good navigation opportunity or option you have here.
+
+21:50
+OK, if, if I move to the left of this, then you can see there is a USMF, you know, which is a legal entity.
+
+22:00
+It shows that which legal entity I am working in.
+
+22:03
+And in your case you have your legal entities called out and then you can if you click on this legal entities, you can get into the list of the legal entities.
+
+22:13
+For example, we have set a few legal entities here and you can pick and choose the legal entity and then you can, you know, start translating in that legal entity to the left.
+
+22:29
+To the right of this we have 2 more icons.
+
+22:34
+One is copilot.
+
+22:35
+This is a good utility and it could be, you know, helpful for you to understand few business functions.
+
+22:43
+You can ask questions to copilot.
+
+22:46
+So let us see, OK, I am not able to connect with the copilot, but you know, if you type some questions say for example, if you want to know how to create credit notes so you can ask a question to Co pilot that I want to create a credit note for a customer, what are my options?
+
+23:07
+And Co pilot will, you know provide you all the options.
+
+23:13
+This is helpful when you have a new join and you want to bring him up to the speed.
+
+23:18
+So this could be the one of the tool which can be used for the training as well.
+
+23:26
+To the right of this we have Action Center and Action Center actually populates the information.
+
+23:39
+It gives you some details what has happened.
+
+23:43
+So we will we will have an detailed discussion when we get into the training and we have also set up over here.
+
+23:49
+OK, I think it's still thinking, but you know, let me move on to my left side.
+
+23:58
+If I click on this 3 dots OK, so that opens the module list of finance and operation and all the modules of finance and operations are you know alphabetically listed.
+
+24:10
+If I Scroll down, I have general Ledger OK.
+
+24:14
+If I click on the general Ledger module then it opens the general Ledger form and all the modules are they are structured you know similar way you know.
+
+24:25
+So we have transactional window then we have enquiries and report, we have setups and this is how it is, you know structured.
+
+24:41
+We have 2 buttons over here.
+
+24:43
+If you click on the expand all then all the functions you can see, you know it is available.
+
+24:48
+Of course this is based on your user permission and role assigned to.
+
+24:54
+And there is one more button actually which you can collapse all the functions and you have all the parent of business functions listed and then you can click on each and then go to the required business function.
+
+25:10
+You have one more option here.
+
+25:11
+You know of creating your favourites if you are accountant and you are working on creating journals and you don't want to go and type and come to the navigation or you don't have to click several several things and come back to the journal journal.
+
+25:33
+You can make just you know click on this star.
+
+25:36
+So it makes you know favourite.
+
+25:38
+So when you choose that business function as in favourite, then it actually resides here in the favourite and all the favourites.
+
+25:46
+You know, you can, I can directly come here and click on the journal journal and then journal journal is opened.
+
+25:55
+So let me go back to the journal journal and you know, let's look at the question Narayanan asked.
+
+26:01
+So on each general Ledger module, we have list of the workspaces specific to that module.
+
+26:11
+So if and provided that you have access to those, but you know all the managers will have access to all the workspaces.
+
+26:20
+So this is the same thing in here.
+
+26:22
+And if I go to the accounts payable module, then we have workspaces related to the vendor invoice entry.
+
+26:30
+When the invoice automation vendor payments, it gives you details about the vendor payments.
+
+26:38
+So this is how the workspaces are aligned with each module, OK.
+
+26:44
+And then you get all the details about that vendor payments.
+
+26:49
+So let me go back to the home screen and on the top again you have one more option for the navigation of the workspaces.
+
+27:01
+Those are all the workspaces are listed here in this list under Workspaces.
+
+27:06
+OK, favourites we have seen there is one more option to look at what you have done recently.
+
+27:12
+If you you don't have anything, you know, specifically made favorite.
+
+27:17
+So you can come here and find out what you have done recently.
+
+27:20
+And if you want to, you know, go to the say, for example, I want to go to the main accounts, click here and it takes to the main account.
+
+27:29
+So let me pause here.
+
+27:30
+Any questions, concerns.
+
+27:34
+So you should managers have can access all of the work streams or areas, but is there segregation of duty built into it?
+
+27:44
+Yeah, for different levels.
+
+27:45
+So invoice processors be different from payment processing and that sort of thing or do the managers have access to it all the transactions within it?
+
+27:56
+Yeah, Yeah.
+
+27:57
+So let me you know, quickly jump into the user roles and permission.
+
+28:01
+Those are under system administration and that gives us, you know, understanding of the security.
+
+28:11
+So under security we have users and you can assign a role to the users and we have several roles out of box available in FNO.
+
+28:28
+And these roles gives you the, you know permissions.
+
+28:31
+You can assign multiple rules to user but you have very specific requirement for rule.
+
+28:39
+Then we can definitely look at that requirement and configure or customise that specific rule and tailor the business function functions around that.
+
+28:50
+So we have several those are out of box and to best of my experience, most of them, you know are enough, enough to take care of the day to day activities of in your organization.
+
+29:04
+However, as I said, we can we have an opportunity to look at a very specific requirement.
+
+29:09
+Say for example, you want to create a rule for very niche business activity where it's it's it's very controlled, you know, so when which cannot be catered out of box with those rules available, we can definitely look at that.
+
+29:27
+Hope that answers your question, Stephen.
+
+29:30
+Yeah, I hope we can manage if you are the box throws, but we probably need to assign multiple ones.
+
+29:36
+As Narayan said, we're a small team, so yeah, but we can work through that.
+
+29:40
+OK, yeah, yeah.
+
+29:41
+But sure, you know what we'll do, we'll have an session where we can talk about those roles and what permissions are, you know, provided using that role.
+
+29:49
+So you can decide to which user what role to be assigned, OK.
+
+29:54
+And that can be tested during our UID sessions and we haven't scope for improvement on that.
+
+30:03
+So Sandeep, I have back to my question, right?
+
+30:06
+So I think I'm asking on a like a little bit of a higher level question, right?
+
+30:11
+So all the works is workspaces that we see here.
+
+30:15
+Are these standard that, you know as a company hard stream will have access to or that I think that's where I was trying to understand what is going to be available for, for us as a company.
+
+30:24
+I understand that different users will have different accesses.
+
+30:26
+For example, I'm particularly interested when I saw the bank management module there.
+
+30:30
+So is that something will be available to us or that something still to be designed what we are going to be subscribed for because some of these systems you know, I think you pay per module.
+
+30:40
+So is this the standard module that we are going to get or are those yet to be decided, you know designed and decide?
+
+30:48
+Yeah, good question Narayan.
+
+30:50
+So all the work spaces available right now, those are out of box.
+
+30:54
+Those are available for hard stream users.
+
+30:57
+You do not, I, I think you do not have to pay anything in addition to those.
+
+31:01
+Those are I think what by your all licenses I think but you know Patrick or Uttam you know will be if they want to respond to this question.
+
+31:11
+Yeah.
+
+31:11
+If you have purchased finance license then you will get finance related all the workspaces.
+
+31:17
+And if you are having supply chain then supply chain workspaces will be available based on your security rules.
+
+31:23
+You will get the workspaces in once you logged in into the system.
+
+31:29
+Now Sandeep is System Administrator so you can see all of the workspaces assigned to him.
+
+31:35
+But we will give you once you understand the system gradually we will give some access to some users and we will showcase how it will, it will looks like.
+
+31:43
+So one, one or 2 examples we can in upcoming calls where there are various workshops are going on.
+
+31:48
+So then in that calls when we give actual demos we will showcase with few examples if you are handling cash and bank then how many cash and banks related workspaces are available so that you will get visibility.
+
+32:01
+Yeah, got it.
+
+32:03
+OK, thank you.
+
+32:04
+Thank you.
+
+32:06
+Thanks Uttam.
+
+32:07
+And there are on top of that this workspaces are so user friendly and you can create your own workspaces.
+
+32:16
+You know, users can create their own workspaces that also will, you know, demonstrate during our one of these sessions.
+
+32:23
+So you have a data, right And then then you want to create a workspace out of that.
+
+32:28
+There is utility available and you can create on your own spaces.
+
+32:32
+So it is it is very easy to do that after training.
+
+32:36
+So answer to your question, yes, all workspaces available.
+
+32:40
+On top of that, you can create your own, you know, we can also help you and you can create your own workspaces.
+
+32:45
+OK, OK, so let me jump back to the presentation and then we can start looking at the next item on our agenda is we would like to review the chart of accounts and the details provided by Sarah and Tim.
+
+33:08
+And we will also look at the financial questions and that will set stage for our today's conversation.
+
+33:15
+So let me share the let me pull up the Excel related to the chartered accounts first.
+
+33:31
+Yeah, alright.
+
+33:37
+So can you see my screen?
+
+33:38
+I am sharing the excel for the chartered accounts provided.
+
+33:43
+OK.
+
+33:44
+OK.
+
+33:45
+So what we know that you have those numbers of Ledger accounts and we have details about that.
+
+33:55
+Those are already in the system.
+
+33:57
+I am going to share once we get there how we have configured this as in base.
+
+34:03
+However, we have an opportunity to you know, improve it, OK.
+
+34:08
+Maybe we are also going to look at in the demo data how Microsoft recommends to create your chart of accounts.
+
+34:18
+OK, so that is the next, you know, item on our agenda.
+
+34:23
+So I have a question related to this exchange rate types, which is RMBK definitely.
+
+34:30
+We will also, you know talk about it when we get into the currency discussions.
+
+34:36
+But can anybody help me on this like RMBK, what does it mean and how it is, you know, operated in your hard stems currency revaluation process?
+
+34:54
+Matias, can you help at all on that?
+
+34:55
+And it's managed for us in the Philips systems at the moment.
+
+34:59
+So it's not something we're actually actively involved in.
+
+35:02
+Thought I'd need to go away and try and find out.
+
+35:04
+Yeah, Unless you have any insight Matias to share there?
+
+35:09
+Sure, sure.
+
+35:10
+I can.
+
+35:11
+I can try to help with that.
+
+35:13
+So what is the concern right now?
+
+35:18
+So what is this exchange rate type and how this exchange rate type is used in your currency revaluation process?
+
+35:27
+So, so this is the exchange type that was used by by Phillips and for the monthly evaluation.
+
+35:36
+So, so the balance sheet exchange tab would be the balance sheet sheet effects would be the current mouth exchange rate and the previous mouth would be used for PNL for, for the Phillips, for for the house consolidation.
+
+35:53
+We use actually the same rate for for file, for balance sheet and PNL.
+
+35:59
+So there are a couple of different different rates.
+
+36:02
+This one, this RMBK is used for the for the for the actuals.
+
+36:10
+This is the monthly rate for actuals.
+
+36:11
+There are also some different rates for some average rates, a couple of different rates.
+
+36:16
+So I don't remember by heart that you know different naming, but this one is used for the actual.
+
+36:24
+So I didn't know exactly what is expected over here to to put.
+
+36:28
+So I put the type of rate that is used in the system by by Phillips because we we based it on the Phillips master data for the monthly exchange rate.
+
+36:43
+Thanks so much.
+
+36:44
+That is that is helpful because you know, we would like to also align with your terminology at this point of time.
+
+36:50
+Maybe this is terminology.
+
+36:52
+So what I understand is you have exchange rate type used by Phillips and this exchange drive is used during the revaluation.
+
+37:01
+OK.
+
+37:02
+So I mean thanks for but we are going to talk about that once we come to the currency exchange rate.
+
+37:08
+OK, now I have few more questions around the chart accounts and the the cost centers with me also in that excel.
+
+37:26
+OK, so this is, you know list of all, all your legal entities and the countries those legal entities are.
+
+37:34
+And then company course when used we we'll be going we'll be using same, you know company course while we configure the D 365 graph in in our environment.
+
+37:48
+OK, so these are all countries we know and thanks for providing those details upfront.
+
+37:54
+So let's jump into other things like cost centers, OK?
+
+37:58
+So can anybody help us to understand what are the business units and how they are used in transactions in Heart Stream and what type of reports are, you know, built around those?
+
+38:16
+You know, so let us start with business unit, but we would also would like to understand about the profit center and cost centers.
+
+38:24
+So can somebody help us here?
+
+38:29
+Yep.
+
+38:29
+So, yeah, so business units within Heart Stream there are group by nature of products and services.
+
+38:39
+So then the profit centers map into each of those business units.
+
+38:46
+Yeah, as you can see there as sort of the next level down.
+
+38:51
+And so that's yeah, how we run the business in terms of differentiating those business units, but also how we differentiate between for transfer pricing purposes between the entrepreneur entity, legal entity that owns the intellectual property related to those business units.
+
+39:13
+So if we just go back to the other the BU list at minute, I can explain which there.
+
+39:19
+Yeah.
+
+39:20
+So, so home and public is essentially our AED device business.
+
+39:28
+So that's the defibrillator products that might sell to public bodies and to home users for non professional users to respond to a cardiac arrest.
+
+39:43
+And so yeah, those products are our FRX and our string HS one products at the next level down.
+
+39:54
+I might need some help from APM.
+
+39:56
+Sarah know what that distinction is, but.
+
+40:01
+We could just probably just even skip that one and just map everything else into other because it's a it's a legacy.
+
+40:08
+Yeah.
+
+40:09
+So some things you might watch tidy up.
+
+40:11
+Yeah, just sorry, sorry to interrupt that this row 2 and 4 is it doesn't belong to emergency carrier right, right.
+
+40:20
+Yeah, OK.
+
+40:24
+The monitoring is not also part of that.
+
+40:28
+Let me yeah, I think we can we can share like a revised list of fmrius and profit centers to make sure that right now that right now actually we have I think Philips muscle data has a little bit different numbers because we created like a legacy and Mius still still valid within Philips hierarchy.
+
+40:59
+I can send you both.
+
+41:01
+Both.
+
+41:01
+Yeah, sorry.
+
+41:03
+Yeah, we let's talk about this offline because I think a lot of this this is what's actually in right now the hard stream system I believe.
+
+41:13
+OK, OK, right.
+
+41:15
+Yeah, OK.
+
+41:16
+So what is this as well?
+
+41:18
+OK.
+
+41:18
+So what I understood that you have some business unit those are not active and not been used right now and you're going to clean those and you know send this back.
+
+41:30
+OK, so thanks.
+
+41:32
+We'll we'll work offline on that.
+
+41:35
+OK.
+
+41:36
+Anil has a question.
+
+41:37
+Yeah, just a quick question.
+
+41:38
+So I mean, when you're doing this, I mean or redoing this rather, is this list of not just the BU profit centers, cost centers applicable across regions, across legal entities or is it specific to us that we are talking?
+
+41:52
+No, it's across all, all company codes.
+
+41:56
+Yeah, because you have management wise that's how we look at the business.
+
+41:59
+So that is produces 2 versions of the consolidation, one which looks through the legal entity structure and just based on the business unit and profit center roll up and then one which is legal entity level so that we can see that the breakdown by the legal entities.
+
+42:21
+OK, got it.
+
+42:24
+So I have a question here.
+
+42:25
+When, when, when you get into profit center, I can see, you know there is a kind of an relationship here within profit center and business unit.
+
+42:34
+So do you expect any rollover?
+
+42:37
+For example, let's look at this one BU8277.
+
+42:43
+It's also here which is assigned to profit Center 834 as well as it is also assigned to profit center BL 5.
+
+42:54
+So it's kind, is it a kind of a child parent relationship here?
+
+42:58
+Yeah, this is the hierarchy.
+
+43:00
+So then there is a whole yeah, this is the whole product tree.
+
+43:03
+So, so emergency care would be the the highest note and and then we have a couple different Mrus, the list.
+
+43:11
+We will send you the updated list and the MRU, each of the MRU has different profit centers assigned.
+
+43:18
+So there can be like 23 couple couple of different profit centers assigned to one MRU.
+
+43:23
+So, so each each posting on those profit centers or call centers related to those profit centers in local ledgers will then roll up into relevant BU or MRU.
+
+43:38
+So, so the column C over here, OK.
+
+43:42
+And then so column A is local ledgers is SAP reporting Column C would be consolidated view.
+
+43:53
+OK, yeah.
+
+43:54
+And material level then roll it to profit center level.
+
+43:58
+So for instance, all products and accessories related to the DFM 100 material level will map through into the 834 profit center, which then rolls up into the PU 8277 acute care business unit level.
+
+44:16
+OK, Yeah, thank you.
+
+44:18
+Let let me move.
+
+44:20
+Anil, you have anything any more questions?
+
+44:24
+OK, so let's move on to the next one.
+
+44:27
+This is the cost center details.
+
+44:30
+And what we understood is you have cost centers specific to a legal entity.
+
+44:36
+And can we understand more about the cost centers, how those are used in the transactions?
+
+44:42
+And after that, we would like to also understand all the business we need a profit center and call centers, how they reflect in your reporting side.
+
+44:50
+So there are 2 questions.
+
+44:51
+So Sarah, do you want to take that one?
+
+44:55
+It's probably bit more your area in terms of how they get build up for sure.
+
+44:59
+So reporting and things basically most expense transactions should have a cost center assigned.
+
+45:06
+So these are call centers that are managed by, I guess our, our managers within the company are, you know.
+
+45:16
+So we, it is divided that we do have more of a hierarchy here, but I didn't include that because I didn't know if that is what you needed, but I could provide that if necessary.
+
+45:25
+For example, we have it's divided into functions 1000 which are your, I guessed manufacturing cost, 2000 which are your selling cost.
+
+45:38
+So those are going to be your selling cost centers and there's some hierarchy and that for example, there's a US hierarchy with several cost centers underneath.
+
+45:46
+3000 are your G&A cost centers.
+
+45:49
+So that's going to be your management, your finance, legal IT, we have quality service, PMO, etcetera.
+
+45:58
+And then 5000 are your R&D cost centers and again, there's additional hierarchy in that.
+
+46:05
+So if you need to have the full hierarchy with kind of what how we roll up the cost centers, let me know, I can easily add that.
+
+46:14
+Sure, Sarah, I mean that that could be the objective to understand your hierarchies so we can configure the system, you know, accordingly.
+
+46:24
+But I think this is good conversation.
+
+46:26
+We are getting some insight on your cost center BU and profit center their hierarchy and we'll we'll talk offline and you know, try to understand those other specific details.
+
+46:40
+OK, So cost centers maybe so have to mention the cost center has also profit center aside, right.
+
+46:49
+So in colony you have center, yeah.
+
+46:52
+So, so that means that it determines 22 things.
+
+46:55
+There's going to be view allocation that you previously you had profit center to be mapping, right.
+
+47:01
+So, so when someone book on call center from row 4, it will hit all, yeah, all 57 profit center, right and cost of sales because it's function area 1000.
+
+47:15
+So there are, those are 2 things, MRIU plus, yeah, whatever this is like manufacturing or selling cost or R&D, etcetera.
+
+47:28
+So the intent is that you should be able to use the the BU 's to get I guess function product line functionality is the intent of it.
+
+47:42
+OK.
+
+47:43
+And the other thing I would mention I think on when we set up the cost centers because they need to be set up at company code level.
+
+47:50
+So we tried to replicate a similar sort of structured normal nomenclature between the company codes, but yeah, they all had to be set up individually under each legal entity company code.
+
+48:00
+So if there was a way perhaps in Microsoft Dynamics that we can just operate a same standard cost center approach across all legal entities.
+
+48:09
+Yeah, maybe with some different owners or, or the same owners.
+
+48:12
+And that would possibly be worth looking at in terms of a simplest structure or simplification we could make.
+
+48:19
+So, yeah, yes, Stephen, the sorry just a moment.
+
+48:24
+So coming back to your concern Stephen, we have certain configurations which are global.
+
+48:32
+So those are across available across all the legal entities and financial dimensions which we are going to configure your cost centers, profit centers and business units is the financial dimensions.
+
+48:45
+Those are available across all the legal entities.
+
+48:48
+However, we have opportunities to link some of the, I mean the way you have cost centers like for example those are very specific to some of the legal entities that options also we have for the configurations, OK.
+
+49:02
+So I think we can cover that.
+
+49:04
+OK, hopefully.
+
+49:05
+Yeah, there's some things like R&D don't exist in all the legal entities.
+
+49:09
+So it's but yeah, our cost center management is quite messy at the moment.
+
+49:14
+Have to go in company, go by company code and manage authorization matrices and things company code by company code.
+
+49:20
+So yeah, if there's a way of manage it across the whole legal entity structure and that would be good.
+
+49:26
+Sure.
+
+49:27
+Thank you.
+
+49:28
+Anil, please.
+
+49:29
+No, no, yeah.
+
+49:30
+I was going to ask on the similar lines that you wanted that cost center to be available like a global thing or, you know, legal entity specific only.
+
+49:39
+Yeah.
+
+49:39
+Or is it a mix of both?
+
+49:40
+So yeah, it probably is the mix of both.
+
+49:44
+But yeah, where we could standardize across all legal entities, then I think we should try and try and do that.
+
+49:50
+Yeah, Yeah.
+
+49:51
+I mean by by by design, the standard cost center concept is like global, but if you want to restrict it to a legal entity for some reason, yeah, we can do that through a work around or through the financial dimension as well.
+
+50:07
+And my second question is, I mean, just to understand this and summarise.
+
+50:11
+So your cost centers roll up to your profit centers that rolls up to your business unit.
+
+50:17
+So while in in another word, let's say if I'm, if a user is creating a transaction, an accountant is creating.
+
+50:23
+So if he gives the cost center is, is it the initial, what you say Ms unit or the dimension that he's capturing along with the Ledger account?
+
+50:33
+Or is it something else that you are capturing at a, let's say voucher level?
+
+50:41
+Sorry, can you just say that again?
+
+50:42
+I'm not sure.
+
+50:43
+Yeah.
+
+50:43
+OK, so OK, yeah, 2 parts to the question.
+
+50:45
+Let's get to the first one.
+
+50:47
+So aren't my understanding is cost centers roll up to profit centers and that rolls up to the business unit, is that hierarchy of understanding correct?
+
+50:57
+Not exactly.
+
+50:58
+I don't think so Cost centers are flagged profit centers, but cost centers don't necessarily roll up the profit centers.
+
+51:05
+Profit centers if they had material transactions going through say for just sales of products and those wouldn't sit in the cost center.
+
+51:13
+So the profit center activity can include the cost centers, but it it doesn't include all cost center activity, if you see what I mean.
+
+51:22
+OK, got it makes sense.
+
+51:23
+Yeah yeah, yeah, yeah, yeah.
+
+51:25
+OK.
+
+51:26
+And, and and if you can, you know, help us to, you know, provide some reports, you know existing reports that will give us more insight on this hierarchy and then roll ups.
+
+51:38
+But yeah, we'll we'll park that as Saraj also mentioned that there are other hierarchy level details.
+
+51:46
+So Anil, we will wait for that and then, you know, we can start configuring this in the system.
+
+51:51
+OK, OK, thank you.
+
+51:57
+So this is all about the details about the segments and chart up accounts.
+
+52:02
+Let me also pull now the big list of our questions.
+
+52:10
+And OK, so can you see my screen and I have filtered the the questions, you know, in respective scope for today's discussion.
+
+52:19
+OK, so thanks again.
+
+52:22
+One thought just on before we move on from the mappings, I guess there's a link into the spike chain work streams then in terms of that material setup to map into the profit centers.
+
+52:35
+So, yeah, I, I think that that yeah, we probably just also just to make sure that in terms of material set up some things that those are then mapping into that that dimension as well on the profit centers.
+
+52:48
+Yeah, yeah, of course.
+
+52:50
+Yes, yeah, Stephen, we have an opportunity to map it with the SCM like site and warehouse.
+
+52:58
+Uttam, you want to throw some light on that before we proceed?
+
+53:06
+That's fine.
+
+53:07
+I just want to make sure that that financial dimensions can be tracked up to site level as well as if you wanted to have product level also it is possible, it is there, the feasibility is there to mention that.
+
+53:21
+So every transaction it is out of populated as a proper center or cost center.
+
+53:27
+So, but yeah, let's take detailed requirement.
+
+53:30
+Sandeep, what we wanted to track a material level so we can configure that way.
+
+53:36
+Sure, thanks.
+
+53:37
+Thanks.
+
+53:39
+So let's come back to the questionnaire.
+
+53:42
+This is the big questionnaire as I mentioned 192 but we have few for the scope of today's discussion.
+
+53:50
+So we have all the details.
+
+53:51
+So the 1I have you know highlighted as a green.
+
+53:56
+So those information is already with us.
+
+53:58
+We have details about your all legal entities and the currency exchange rates for that legal entity.
+
+54:06
+Those are already configured, some of them are already configured in the system.
+
+54:09
+We try to configure your US legal entity and India legal entity just to showcase how it looks like.
+
+54:16
+OK.
+
+54:17
+And now we have question around I think we have already discussed this, but let's understand the feedback from your side that you have business related profit center and cost center.
+
+54:29
+So you don't use departments right now.
+
+54:35
+And we also you know talked about this functional areas and how those those are associated with your business unit call centers and departments.
+
+54:48
+Anil, do you have any questions around this or we can if not then I can proceed to the next.
+
+54:55
+Yeah, this is fine.
+
+54:56
+So, yeah, I mean, once you have some reporting shared with us, right, on what all different levels you are pulling different reports, then we can see and map these.
+
+55:08
+Yeah.
+
+55:09
+And yeah, like Sandeep also stated, our understanding was that, no, there is nothing like a department or you know, line of business that you are tracking apart from what we discussed through cost center, profit center and business unit.
+
+55:24
+Yeah, thank you.
+
+55:24
+I'm just tracking those dimensions.
+
+55:26
+Yeah, yeah.
+
+55:28
+OK.
+
+55:29
+Yeah.
+
+55:30
+So we have details about the segments Now.
+
+55:34
+Next question was, you know, do you have an global chart of accounts and you mentioned that, yes, and we can configure a global chart of accounts that can be shared across all the legal entities, OK.
+
+55:47
+So that is already configured in the system as I mentioned.
+
+55:51
+OK.
+
+55:54
+Now next question was around the classification of the accounts, you know Ledger accounts, are they categorized for example cash account as people inventory, is that the case?
+
+56:08
+Then the feedback was all GL accounts at Poca level.
+
+56:13
+So we would like to understand the terminology here, what does it mean by Poca and if there are any other levels in your chart of accounts.
+
+56:27
+So can anyone help us here?
+
+56:31
+Yeah, so poker level, that's just the general Ledger level, that's a sort of terminology starts with Phillips one chart of accounts.
+
+56:39
+So sorry for using that acronym, but yeah, basically general Ledger level in SAP is what was meant by that.
+
+56:49
+But those mapped into a, what we call a financial statement item level in the consolidation system, which is a grouping of different general Ledger accounts, which yeah, is grouped by nature.
+
+57:01
+So that would be inventory, trade, debtors, the receivables and that sort of thing.
+
+57:08
+And then financial statement item level rolls up to a higher level hierarchy reporting item level, highest levels, stock, debtors, cash, etcetera.
+
+57:19
+In the in the consolidation file that I yeah, I did attach the the consolidation file.
+
+57:23
+So you can see sort of the drill down between the reporting item level to the FS item level.
+
+57:30
+And then underneath the FS item level is the sort of SAP general Ledger trial balance level.
+
+57:39
+OK, Yeah, thanks Stephen.
+
+57:40
+I think we would like to you know, have a look at your reports.
+
+57:43
+I think that will, as I mentioned, that will give us some more understanding that.
+
+57:47
+And Sarah question if I can, sorry if I can add something, if you have any questions related to master data to, to the reporting hierarchies, you can also ping me like in meantime and and we can have some hot, hot, hot cons.
+
+58:04
+I can explain you everything if you need.
+
+58:06
+OK, perfect.
+
+58:09
+Sure.
+
+58:10
+So I just have a quick question regarding the chart of accounts.
+
+58:14
+So we agreed that it is one global chart of accounts that is there.
+
+58:17
+So are there like any exceptions around like GL account is created and it's only applicable for example, let's say to China or let's say India and it's to be not used by other regions.
+
+58:32
+Do you have something like that or all accounts are accessible to all?
+
+58:40
+I think all accounts in theory could be accessible to all, but may only be used it in one company code for some reason.
+
+58:47
+But I think across our company codes I don't can't think of any instances that might be unique in our sense.
+
+58:56
+There are certain there are for example KPNC related accounts, right?
+
+59:02
+Which which should be restricted to US 56 and not used by others.
+
+59:09
+Yeah.
+
+59:09
+And like Steven said, by default they can be used by all the company codes, but they are not always created in our company codes.
+
+59:16
+So, so it's, it's usually whenever they are needed, they are opened in in certain company codes.
+
+59:23
+So but but but they can they can be used by all except like some specific accounts created for KPNV for example, reporting that can be used only by US 56.
+
+59:39
+Yeah.
+
+59:39
+So you US 56 is our holding company level consolidation.
+
+59:44
+So yeah, yeah, good call out Anil.
+
+59:50
+So what we understood it is that you have some specific Ledger accounts and those could could be accessed for from that specific legal entity.
+
+1:00:00
+There could be some tax Ledger accounts, say for example GST which is very specific to India.
+
+1:00:09
+And do you want that those kind of an accounts are not available or cannot be transacted in other legal entities entities is that?
+
+1:00:19
+Yeah, looking at India tax process is probably a separate discussion that's sort of definitely worth taking offline.
+
+1:00:26
+I'm learning a lot on that.
+
+1:00:28
+But Bala would be our more specialist knowledge on that and we might even want to get emphasis involved in that discussion because yeah, if there are opportunities to do something differently in Microsoft Dynamics is the way we're doing it in that area, then definitely we were having a look at.
+
+1:00:44
+Sure.
+
+1:00:47
+Thanks, Stephen.
+
+1:00:49
+Let's move on.
+
+1:00:50
+The next question was related to the posting types.
+
+1:00:53
+I think we have covered that chart up accounts.
+
+1:01:00
+We have also your chart up account, so we know your number ranges.
+
+1:01:04
+So I think I don't want to get into that discussion right now.
+
+1:01:07
+This already been provided to us from your Philips system or SSP system.
+
+1:01:16
+OK, Now next question is have seen your chart up accounts.
+
+1:01:20
+Anil has also seen that it's, it's the, you know, list of all the Ledger accounts, but we don't see anywhere you have an requirement of totalling and do you have an requirement of totalling?
+
+1:01:34
+For example, you know, you, you want to have an insight of what is my total assets or what is my total expense?
+
+1:01:43
+Is that an kind of a requirement?
+
+1:01:45
+We have a capabilities when I'll talk talk to you through the chart up accounts.
+
+1:01:51
+We can see that, but we have those capabilities around and we have an option here to improve the existing chart of accounts and make it more efficient from the reporting perspective.
+
+1:02:05
+I'd probably like to see how that looks like.
+
+1:02:07
+I should, yeah, totally totals in reporting and in our reports and things, but I'm not sure I want to see totals in a in a trial balance say, because I think I just add confusion in terms of checking the double entry and it's all balancing off and that sort of thing.
+
+1:02:19
+But yeah, so we haven't not, I haven't got that concept in SAP, but let's see how it works in Microsoft Dynamics and see if it's useful or not, I guess.
+
+1:02:28
+Yeah.
+
+1:02:28
+So I mean, just to give a little bit more understanding.
+
+1:02:32
+So this is at a main account or a, you know, GL account level.
+
+1:02:36
+But in the reports you all have your, you know, section wise, subsection wise totals.
+
+1:02:41
+Like say you're doing a balance sheet, you have, you know, current assets, total assets, liabilities, all those totals are there.
+
+1:02:48
+So I mean, if you want it at a GL account level also to maintain that is this.
+
+1:02:52
+But generally just as you said, people prefer not to have just to avoid the duplication.
+
+1:02:59
+But if you still prefer this capability is there within dynamics so to go forward.
+
+1:03:04
+Yeah, my my inclination is no, because we're not used to working in that way.
+
+1:03:08
+And I think they just we've had more confusion as long as it totals are in the reports and things.
+
+1:03:13
+So yeah, we can have a little look and see if it considered useful.
+
+1:03:16
+But yeah, probably probably not.
+
+1:03:17
+Yeah, sure, sure.
+
+1:03:21
+Yeah.
+
+1:03:21
+Thanks Anil.
+
+1:03:23
+So let's move on to the next one.
+
+1:03:27
+Regarding the fiscal calendar and we understood that you have fiscal calendar shared across all the legal entities except India.
+
+1:03:39
+I have configured that in the system when when we are there, I can we are intended to move in the on to the same fiscal year after we've done 2025.
+
+1:03:49
+If we were just we couldn't change the period end for year one.
+
+1:03:53
+So by the time we go live I think should be coterminous on our year end, just need to make sure that happens.
+
+1:04:01
+So OK, maybe not setting it up, but OK.
+
+1:04:07
+So Stephen, what what I understood that you know, then in that case when we implement and go live with FNO, we'll have only one fiscal year calendar.
+
+1:04:19
+You know, we we don't need any separate fiscal calendar for India.
+
+1:04:22
+OK.
+
+1:04:22
+Is that my understanding correct, Correct.
+
+1:04:25
+Yes, I need to just make sure it happens that the the intention is also completed this year 2025 with or 2026 of March year end.
+
+1:04:32
+We'll do December 20, 26 year end for India as well and bring it into line.
+
+1:04:36
+So yeah, by the time we go live next year, sure we should should be good terminus year ends, Yeah.
+
+1:04:43
+Just to reiterate, I mean India understood but Australia has also that generally the tax year starting from July to June.
+
+1:04:51
+So we are aligned on Jan to December only for Australia as well, right.
+
+1:04:57
+Yeah, I think our year end is December is December year end in Australia as well prepared December.
+
+1:05:03
+OK, Yeah, OK.
+
+1:05:03
+Yeah.
+
+1:05:10
+OK.
+
+1:05:10
+Now next question was related to the periods and we understood the way the periods are configured in SAP you have P 13 and P 16 specifically for closing and here in routines.
+
+1:05:25
+So we'll we'll look at the, you know, fiscal years and then periods how they are configured in D 365 opportunities there for your posting adjustment and year end closing periods once we get into the system.
+
+1:05:43
+OK, fiscal year.
+
+1:05:46
+Do you next question was, do you wish to allow posting of transaction to the previous period?
+
+1:05:52
+And there is comment like to be see is that an kind of an requirement Stephen there if you close a month, I mean, see you know, in finance and operation, we have a soft close and we have control who are opening the previous periods.
+
+1:06:11
+In case there is a requirement to post any entry in previous periods, we can open that.
+
+1:06:19
+In controlled manner with specific user permission and we can do that.
+
+1:06:23
+But now the question is, do you like to have that kind of an requirement going forward?
+
+1:06:32
+I think it's probably good to have the option to do it in a controlled way in case there's a need to.
+
+1:06:37
+Yeah, but yeah, I love what I did trial way.
+
+1:06:41
+I also in a way better have the retained earnings adjustment as and when.
+
+1:06:46
+But yeah, I I think we have that ability to reopen in a controlled way now.
+
+1:06:51
+And so, yeah, keeping that opportunity probably does make sense.
+
+1:06:55
+Sure.
+
+1:06:56
+And as I said, we can you know, assign a specific user to, you know, come and you know, create a transaction once that previous period is open, OK.
+
+1:07:10
+Our countries, I think we have our answer here also currencies, we have our answer.
+
+1:07:15
+Next is how often you need to update the exchange rates and are these exchange rates shared by all legal entities?
+
+1:07:25
+So the answer was monthly update of exchange rates and supported by all company codes.
+
+1:07:34
+So I think we will we will talk about that you know currency exchange rate once I jump into the D 365 we have several opportunities there.
+
+1:07:44
+I will talk about that.
+
+1:07:45
+OK.
+
+1:07:47
+Next question was about the closing rates for your month end closing.
+
+1:07:56
+So what what type of rates you are using, We have some understanding on the exchange rate, but we will we will talk about that in detail once we get into D 365.
+
+1:08:09
+Another question was about the revaluation and the answer was yes, it's it's a primary requirement of any organization which is operating in multi currency kind of scenario.
+
+1:08:22
+Yeah.
+
+1:08:25
+We have one question related to the general types.
+
+1:08:28
+I think we can park this when we talk about the general automation.
+
+1:08:33
+We have a lot of capabilities around the general transaction management.
+
+1:08:40
+We will talk about that when we come to the general automation workshop.
+
+1:08:45
+So most of them are related to the journal.
+
+1:08:48
+So I will park those for for some time.
+
+1:08:52
+One of the question which was answered that you know if you want to post those automatically after approved and there was an answer was yes, we will see that in our journal automation workshop.
+
+1:09:07
+So most of them are related to the now general raiser processing.
+
+1:09:12
+I am going to stop here, sorry.
+
+1:09:16
+Stop talking about these journal, journals transaction.
+
+1:09:20
+Let us talk about now requirement around the accruals and deferrals.
+
+1:09:29
+So do you have any specific requirement around the accruals and revenue deferral?
+
+1:09:38
+We would like to discuss those upfront and also we have an demonstration scheduled to showcase those capabilities.
+
+1:09:48
+I am, I am not sure why cannot have those questions here, but definitely and the reason I am asking this question because I was looking at the worksheets which were embedded into this system.
+
+1:10:03
+Let me open one of them.
+
+1:10:07
+Just let me open one of them and bring it on the screen.
+
+1:10:20
+I think this was the one.
+
+1:10:23
+OK, Can you explain?
+
+1:10:29
+Can someone explain what are these activities?
+
+1:10:33
+My assumption is these are your period close activities and we see lot of accrual transactions are done.
+
+1:10:42
+So lets understand those and then we can move from here.
+
+1:10:49
+Yeah, so it's basically the checklist of activities we keep track of in our month end close process.
+
+1:10:59
+Yeah.
+
+1:10:59
+So closing the Ledger books for the fixed asset and doing the depreciation run.
+
+1:11:05
+The payroll processing is a manual journal that's prepared from the payroll reports.
+
+1:11:13
+So that's why that's on the list as well.
+
+1:11:15
+There BRS is the bank reconciliations and the sub Ledger close then automatically happens on working day plus 2 for the ARAP sub Ledger closes and then yeah, the accruals and provision so that these are all entries that are common across all the company codes, but they're really they're manually controlled.
+
+1:11:45
+So they're just recurring entries every month really.
+
+1:11:48
+So we keep track that them we've completed them and we're posting them for each company code Yeah.
+
+1:11:55
+And they're manually determined and then a manual journal to enter them in every month.
+
+1:12:03
+Yeah.
+
+1:12:03
+And then further down the bottom then compliance monitor is a check in SAP to check the entries complete in the month are compliant for consolidation processing as well.
+
+1:12:25
+And then yeah, other Max steps.
+
+1:12:29
+So we need to repost some intercompany entries which are automatically posting, which are related to Philips from intercompany to 3rd party because it's just we've got a legacy of being on the bullet system that we need to do that every month and then running Forex routines.
+
+1:12:51
+And then we do the pre TSR is a review process of the the trial balance with month to month variations being analysed.
+
+1:13:04
+Yeah to just sense check the completeness before we close and if we're missing any entries or yeah or we can understand take care of significant fluctuations what tomorrow.
+
+1:13:19
+OK, thanks Stephen.
+
+1:13:20
+That was quite detailed feedback.
+
+1:13:23
+In financial operation, we have a tool in general leisure module, which is called as a period close activity, which is, you know, part of one of our workspaces that gives you an opportunity to create the tasks and we'll talk about that in detail.
+
+1:13:40
+So we have a similar tool to, you know, track your period and close activity and bring any efficiencies in that process.
+
+1:13:49
+OK, so let me Anil, sorry, Anil, you were saying something.
+
+1:13:54
+No, no, Yeah, this is good information, Stephen.
+
+1:13:57
+So just wanted to understand what's your typical timeline for current month end closing and year end close?
+
+1:14:05
+Yeah.
+
+1:14:05
+So we have to follow the Phillips timeline still because we're still on their system and process.
+
+1:14:10
+So I think it's set out on those deadlines there.
+
+1:14:13
+Yeah, the sub Ledger closes are managed across the world in Phillips on working day 2 and then the general Ledger closes on working day 4A different time zones across the world.
+
+1:14:25
+So, yeah, so we yeah, all all of this is completed in that same.
+
+1:14:29
+Working day one to 4.
+
+1:14:31
+And then Matthias, whereas the consolidation for us yeah, might start working on it or the end of working day 4, otherwise working Day 5 and then not shared with Sarah and DFPN 18.
+
+1:14:44
+OK, perfect.
+
+1:14:46
+Got it.
+
+1:14:51
+Thank you.
+
+1:14:52
+Now going to the next, I'll be going back to the presentation and I'll walk you through some of the slides.
+
+1:15:02
+And then we again jump back to finance and operation to showcase you the details about legal entities, fiscal calendar, chart up accounts and financial dimensions.
+
+1:15:15
+OK, so we were sitting.
+
+1:15:19
+Sorry, we're going to take a little break at some point.
+
+1:15:23
+Is that Oh yeah, yeah.
+
+1:15:24
+Just wondering.
+
+1:15:25
+Yeah, let yeah we have a scheduled break at after one and a half hours.
+
+1:15:32
+So let me finish this quickly and then we can break at 9:30 CST and then we can start getting into D 365.
+
+1:15:44
+OK, so quick I will not be you know taking much time on the slides UST team has shared some links knowledge base.
+
+1:15:56
+So team, hopefully you get a chance to browse through some knowledge base.
+
+1:16:03
+Sorry, next section was bring to workshop.
+
+1:16:07
+So we have everything and we have chart up details about chart up accounts, main account, financial dimensions like your cost centers, department and you know, profit centers.
+
+1:16:19
+We know your fiscal year structure and period structure and currencies.
+
+1:16:27
+So we are going to talk about that when I get into the t 365 outcome of this workshop is we have to be you know make some decisions and definitely I am sure we are going to make some decisions today.
+
+1:16:42
+Some of them will have to differ.
+
+1:16:45
+So yeah, we will.
+
+1:16:46
+We will definitely you know talk about that when we conclude.
+
+1:16:50
+OK.
+
+1:16:50
+So let me move on.
+
+1:16:53
+I will talk about key definitions in finance and operation quickly and then we are you know getting into a break, OK.
+
+1:17:00
+So chart accounts, it's all you know we have talked about that.
+
+1:17:03
+We have also talked about the main account.
+
+1:17:06
+I would like to focus on account structure.
+
+1:17:09
+I mean this is a new terminology for hard stream team.
+
+1:17:13
+So account structure is in combination of main account and then financial dimensions, you know that determines the postings and this postings helps us you know bring out the required reporting.
+
+1:17:29
+So we have a configuration of account structure and we are going to talk about that in detail when we get into finance and operation financial dimensions.
+
+1:17:45
+Again, this is a terminology for us.
+
+1:17:50
+In FNO, your cost centre, your profit centre, your business units will treat those as an financial dimensions and those will be tagged on the transactions.
+
+1:18:03
+For example, you are creating a general journal and if you want to post expense then in that case you will be, you know, assigning the cost relevant cost centre to that specific transaction.
+
+1:18:15
+This is how you know those financial dimensions are used, but definitely we are going to talk about that and showcase you how it works.
+
+1:18:24
+Currencies, we know all your currency requirements and those are already there in the system.
+
+1:18:32
+Microsoft provides all the currencies by default and we can define different exchange types and we have an opportunity to bring in the currency exchange rates integration from exchange rate provider like Oinda, which actually integrates seamlessly with finance and operation and brings in daily exchange rate.
+
+1:18:59
+We'll we'll see that if that is kind of an opportunity you're looking forward to bring in your current exchange rate or currency exchange rate management process.
+
+1:19:11
+Anil, you have any questions up till now?
+
+1:19:15
+No, put something.
+
+1:19:18
+Alright, so fiscal calendars and lasers, we understood your requirements around fiscal calendar.
+
+1:19:25
+So we are going to look at those in the system.
+
+1:19:30
+So before jumping into now D 365, I think we can break for just need one minute.
+
+1:19:38
+Sorry, sorry, something.
+
+1:19:39
+So just one minute to summarize or get everybody on the same page.
+
+1:19:43
+So yeah, Steven and team, you're all seeing this terminology, right?
+
+1:19:47
+So main accounts is nothing but your Ledger account.
+
+1:19:50
+So we might be using these terminology interchangeably.
+
+1:19:53
+So the actual screen on D 365 is called main accounts, but that exactly refers to the GL account.
+
+1:20:00
+So the entire list of all these main accounts is your chart of accounts, which is we can call it global COA, whatever we want to name it.
+
+1:20:06
+So that's.
+
+1:20:11
+It could be your business unit costs and profit center, everything is a financial dimension.
+
+1:20:15
+So yeah, I hope that's terminology linking back to your SP terminologies fair in understanding.
+
+1:20:25
+OK, makes sense.
+
+1:20:27
+Yeah.
+
+1:20:32
+Thanks everyone.
+
+1:20:32
+We can come back in 15 minutes and then we can start looking into finance operation app.
+
+1:20:41
+Thank you.
+
+1:20:42
+OK, thanks then.
+
+1:20:44
+Thank you.
+
+1:33:43
+Hello, welcome back.
+
+1:33:45
+Let's give a couple of minutes folks to come back.
+
+1:33:49
+If everyone is back, then let's kick off for the next session.
+
+1:35:30
+Can we have a quick raise of hands to see if you are back and then we can get started?
+
+1:35:35
+Steven, of course we can see you, but just for the sake of others, OK, Let's is back.
+
+1:35:45
+Ara Matus.
+
+1:35:46
+OK.
+
+1:36:06
+All right, I think we can keep.
+
+1:36:08
+Yeah, I think we can get started.
+
+1:36:09
+Yep.
+
+1:36:10
+Yeah.
+
+1:36:10
+Thank you all.
+
+1:36:12
+Thank you.
+
+1:36:13
+Let me share my screen again.
+
+1:36:20
+Can you see my screen?
+
+1:36:23
+Yes, Sandeep, go ahead.
+
+1:36:24
+Yeah, thank you.
+
+1:36:29
+So what we have done based on information we have received about legal entity chart up accounts, your main accounts, we started configuring legal entities into T 365 financial operation environment.
+
+1:36:48
+So this is environment which is you know UST environment, but we will be using for some time to configure FNO.
+
+1:37:02
+OK, so let me start talking about the legal entities.
+
+1:37:06
+You know if if we click on this window which gives you a list of the legal entities and we have started building up one legal entity which is US 55 which is hard hard stream USLLC.
+
+1:37:23
+Same time we have an legal entity also configured which is your holding company which will be your consolidation company.
+
+1:37:31
+So all consolidation transactions will reside here.
+
+1:37:35
+As an example, we have also configured one legal entity which is India legal entity.
+
+1:37:42
+Just ignore this code because before getting the you know your company codes.
+
+1:37:49
+We already have this in in the system, but you know going forward will we will configure all the legal entities based on the company course provided to us.
+
+1:38:01
+OK.
+
+1:38:02
+So in the legal entity, let me you know, let us see how the legal entities are structured in financial operations.
+
+1:38:12
+Let me go to the organization administration module where the legal entities are you know configured under organization.
+
+1:38:20
+I will click on the legal entities and you can see all the legal entity list which are configured in the system.
+
+1:38:30
+OK, so let us look look at some critical configurations which are required to start with.
+
+1:38:38
+OK, so we have the name of the this legal entity and your company code.
+
+1:38:43
+OK, so this is already configured in the system.
+
+1:38:47
+We have search name which is same as your company name.
+
+1:38:55
+It could be different, you know, if you want to, you know, address or search based on different popular name of that legal entity, we can do that.
+
+1:39:05
+Another important setup here on the general Fasttab is the language.
+
+1:39:13
+OK, so language actually drives all the system communication in the language which is set up on the legal entities.
+
+1:39:24
+So all this system related documents workflows, those will be you know in the language which is set up here under legal entities include another important sorry, any questions?
+
+1:39:42
+The languages that drive invoicing in local languages customers not sorry.
+
+1:39:49
+Can you say again sorry?
+
+1:39:52
+Yeah.
+
+1:39:52
+When you say system language, would that include the language that's printed on invoices, say to customers?
+
+1:40:01
+Stephen, sorry, it is very voice.
+
+1:40:10
+So Stephen, you would like to know what could be the language on the invoices printed, the customer invoices, that's what your question is.
+
+1:40:23
+Yeah, sorry.
+
+1:40:23
+Is that better now?
+
+1:40:26
+Yeah, much better.
+
+1:40:27
+Yeah, yeah, yeah, sorry.
+
+1:40:29
+Yeah, Yeah.
+
+1:40:31
+So my question was just does the language setting also drive printing of invoices, say, to customers?
+
+1:40:40
+Yeah, that's correct.
+
+1:40:41
+But do you have an requirement of printing invoice customer invoices in different languages?
+
+1:40:50
+Yeah.
+
+1:40:50
+So I think in China, Japan for instance, we need local language and that sort of thing.
+
+1:40:56
+So, yeah, OK, OK, I'll take that question something.
+
+1:41:00
+Yeah.
+
+1:41:00
+So the language is not just on this legal entity form.
+
+1:41:03
+It is at a customer master level also if something needs to be driven by or per customer.
+
+1:41:09
+So we can, you know, configure reports or create the reports and drive based on the language over there.
+
+1:41:15
+But this is more of a language at the legal entity or the company code level.
+
+1:41:21
+So this drives basically, for example, if you if you're in the Australia legal entry and you select this en AU.
+
+1:41:28
+So the for the taxation, the BAS statement kicks in there.
+
+1:41:32
+Let's say you are in UK.
+
+1:41:33
+So they're the making tax digital, you know, the integration with the HMRC kicks in.
+
+1:41:38
+So those terminology and those functionalities will hide or enable based on the language and the localization.
+
+1:41:44
+So you must have heard the localization from our teams earlier as well.
+
+1:41:47
+So the localization is basically driven based on the language that you select on the legal entity Master here.
+
+1:41:55
+Yeah, yeah.
+
+1:41:56
+Thanks Anil.
+
+1:41:57
+Thanks for the update.
+
+1:41:58
+And as as Anil has mentioned this localizations also you know, drive test from the address actually when you create a legal entity and provide the address, then we we have a function which actually looks into the system company addresses and the localization kicks in accordingly.
+
+1:42:22
+So lets look at you know, one of the example, you know, if I am into US legal entity, how the tax looks like.
+
+1:42:30
+You know, if I go to the tax module and look at the taxes, you know, you can see this sales tax quotes which are you know, familiar to the US tax structure.
+
+1:42:46
+OK.
+
+1:42:46
+But you know for example, if I change my legal entity and if I go to the India legal entity based on the address which is you know, country is India.
+
+1:43:07
+So system looks at the address country and then the localization actually kicks in.
+
+1:43:14
+So if I go to the tax module then you can see you know various tax related components like GST and other you know tax requirements which are and other regulatory It is not only tax but other regulatory requirements kicks in based on this configuration of the address country language and then system looks at it and those localizations are enabled.
+
+1:43:48
+This, this also gives you opportunity to work in multiple legal entities.
+
+1:43:53
+You know, if anyone wants to run a trial balance, for example, you are into India legal entity, working in India legal entity you run trial balance here but also you want to also run a trial balance in US.
+
+1:44:08
+You can come here, change the legal entity and then run a trial balance in U.S.
+
+1:44:14
+company provided that you have users and permissions access to multiple legal entities.
+
+1:44:23
+OK, so this is about the legal entities.
+
+1:44:33
+We have few more important configurations here like you know registration I D's.
+
+1:44:40
+If if we get into India legal entities, we have specific requirement about PAN and 10 registration I D's.
+
+1:44:49
+Those can be also set up in the system.
+
+1:44:52
+OK, Next is the, you know there is a banking information requirement also but that is not an mandatory.
+
+1:45:12
+Yeah.
+
+1:45:13
+If you have bank account you would like to associate with the legal entity, you can do it here provided that all your banks are configured in the cash and bank model, OK.
+
+1:45:25
+But it does not have any significant, significant impact on the configuration.
+
+1:45:31
+It is not an mandatory requirement here.
+
+1:45:37
+So these are few actually configurations which are required.
+
+1:45:40
+We have few things related to the tax registration as I mentioned then 1099 kind of an requirement where if you want to you know, add your federal tax ID which can be reproduced on your reports.
+
+1:45:57
+Those you need to configure will definitely come back to you to get all these details.
+
+1:46:04
+So this is all about legal entities.
+
+1:46:08
+Next is the number sequences.
+
+1:46:12
+So we, we have engine to create the number sequences in D 365 when we start configuring new legal entity.
+
+1:46:22
+So let me jump to the organization administration module and take you to the number sequence.
+
+1:46:30
+So this these are all number sequences generated when we create a new legal entity.
+
+1:46:36
+And those are those are created for each legal entity when you start operating.
+
+1:46:42
+OK, here we have an opportunity to change the number sequence and make it more compatible to your business requirement.
+
+1:46:52
+So for example, if you are creating an journal for inter company and you want to identify that voucher.
+
+1:47:05
+So what we can do is we can create a new number sequence and that number sequence will start with inter Co and you assign that number sequence to the journal which we are going to, you know, create for the intercompany transaction.
+
+1:47:26
+So I have a set up here.
+
+1:47:27
+I am just quickly get into that.
+
+1:47:32
+OK.
+
+1:47:32
+So we have different journal names and say for example, Interco, this is the journal we are going to use for creating intercompany transactions.
+
+1:47:42
+What we can do is we can go and modify this voucher series and associate this with the, you know, intercompany journal.
+
+1:47:51
+And when you create a new transaction, you can see that Interco, it starts with Interco.
+
+1:47:58
+So that will be helpful for you if you want to identify the intercompany transaction and that is available across all the, you know, modules and all the transactions, we can definitely configure the number sequences as per your requirement.
+
+1:48:16
+So let me pause here.
+
+1:48:18
+Do you have that those kind of an requirement?
+
+1:48:20
+Are you using specific number sequences starting with some specific alphabets?
+
+1:48:28
+No, we have nothing equivalent.
+
+1:48:29
+I think in SAP it just auto generates the next transaction number.
+
+1:48:34
+So yeah.
+
+1:48:37
+So I don't think you have a specific requirement but yeah it may be useful.
+
+1:48:41
+I could see so, but I mean these are also auto generated, you know.
+
+1:48:47
+So only configuration is adding the the alphabets while considering the number sequence.
+
+1:48:56
+But if you find this useful, we can configure those number sequences for you.
+
+1:49:03
+Yeah, could be useful, I guess.
+
+1:49:04
+Yeah, Now next, next I'll go to the physical calendars.
+
+1:49:17
+Let me go to the general Ledger, OK, and get into the physical calendars.
+
+1:49:23
+OK.
+
+1:49:23
+So what we have done based on the information that you need in separate fiscal calendar for India, I have defined 2 different fiscal calendars one is for India and one for us.
+
+1:49:37
+But you know going forward we will definitely have only one.
+
+1:49:42
+So how the fiscal calendars are structured in D 365 FNO.
+
+1:49:48
+So when you create a new year in a fiscal calendar, then you can see for that particular year periods are created.
+
+1:50:02
+You know there are 12 periods which you can transact in.
+
+1:50:08
+But you can also see there are periods like.
+
+1:50:12
+Zero and period 13.
+
+1:50:14
+So.
+
+1:50:15
+Zero and period 13 are periods created.
+
+1:50:20
+Those are system created periods and those cannot be transacted manually.
+
+1:50:25
+Those comes into picture when you do your month end year end closing.
+
+1:50:32
+So what happens when you create a year end then balances are start, you know opening balances are transferred to the period zero and then 13 will have your closing entries.
+
+1:50:47
+So its similar what we have seen on the SAP site.
+
+1:50:51
+So you have 12 and then you have some adjustment.
+
+1:50:58
+And closing.
+
+1:51:01
+Let me pause here.
+
+1:51:03
+Any thoughts, any questions, concerns?
+
+1:51:05
+No, I don't think so.
+
+1:51:10
+That's clear.
+
+1:51:11
+Any thoughts for this?
+
+1:51:14
+Anil, do you want to add anything over here?
+
+1:51:16
+Sorry, no, Sandeep.
+
+1:51:20
+So just a quick disclaimer I would like to give.
+
+1:51:22
+So I mean we can still discuss this but yeah if we start from the physical calendar from 2026, it can create like a forward calendars but not backward calendars.
+
+1:51:35
+So we are assuming lets say we are going live in 27, we can create calendar from 2026.
+
+1:51:41
+So any you know transactions which you will want to adjust in 2026, that will be the first year.
+
+1:51:47
+So hope that's the understanding and we are all on the same page.
+
+1:51:55
+OK, Yeah, we haven't discussed cut over migration planning, but I imagine we would go at a point in time and not cut over history as it were.
+
+1:52:06
+Yeah, yeah, yeah.
+
+1:52:08
+OK, OK.
+
+1:52:12
+And when you transition to New Year, actually you can come here and you know just click this button and create a new year into that fiscal calendar.
+
+1:52:24
+So it is easy, you know create a new once you close your existing financial.
+
+1:52:39
+Now let us talk about the currencies.
+
+1:52:42
+One of the important configurations, as I mentioned, finance and operation provides you all the currencies those are defaulted.
+
+1:52:56
+So this is our currency screen.
+
+1:53:01
+We have some configurations around here like rounding rules.
+
+1:53:08
+We can set up rounding rules and we can also set up the, you know, currency gender.
+
+1:53:16
+May be this is only relevant for the EU legal entities.
+
+1:53:22
+The next part of the currency setup is the exchange rate types.
+
+1:53:27
+OK And you have option of creating different exchange type.
+
+1:53:36
+For our demonstration purpose, I have created a Philips as an exchange rate type and when you click on the exchange rates then you get the exchange rate pairs.
+
+1:53:48
+And what is the exchange rate configured here?
+
+1:53:53
+OK.
+
+1:53:54
+So as I mentioned that we have an opportunity to integrate with currency exchange provider Oinda, OK, Oinda which is seamlessly integrated with FNO and updates the currency exchange rate daily.
+
+1:54:11
+Actually that provides you opportunity to ensure that your financial transactions are always reflect most current rate and also, you know, help you to minimise the monetary losses in today's highly volatile currency exchange environment.
+
+1:54:33
+We can definitely talk about that you if you have an appetite for that kind of an integration.
+
+1:54:42
+But just to mention, when I was talking to XJ and talked about this, he said, you know, definitely we can look at it, but you know, as a team you can decide and let us know, you know the way forward on the currency exchange rate configurations.
+
+1:54:59
+OK?
+
+1:55:06
+Now let us come back to the another important function about the currency revaluation.
+
+1:55:17
+OK, in FNO, currency revaluation run separately across 4 modules because each module maintains its own opening balances.
+
+1:55:29
+So we have currency revaluation happening for the GL account, which actually revalues the balance sheet and income statement main accounts.
+
+1:55:41
+Then we have currency revaluation can be done in ER where it revalues open customer transaction and update the sub legers.
+
+1:55:55
+Same thing with the A P, so it revalues open vendor transactions and update sub legers.
+
+1:56:04
+And the last it also you know gives you an opportunity to revalue your foreign currency in cash and bank modem.
+
+1:56:11
+So let me quickly get into one of the modem OK accounts lets accounts receivable and its under periodic task foreign currency revaluation.
+
+1:56:28
+Let me jump to another environment where we have some data.
+
+1:56:33
+So let me jump into a demo company and come back to accounts receivable and periodic task.
+
+1:56:47
+Under periodic task we have foreign currency reevaluation.
+
+1:56:54
+So it gives you opportunity to, you know, simulate your currency exchange revaluation that gives you insight what's going on.
+
+1:57:04
+And if you are OK, you can you can post those activities.
+
+1:57:09
+And this is the actually screen where you can track your various currency revaluation activities.
+
+1:57:20
+You have an opportunity to reverse the currency revaluation.
+
+1:57:26
+What has been done?
+
+1:57:27
+And it also, you know, shows you that this revaluation for this.
+
+1:57:33
+Was reversed.
+
+1:57:36
+Let me pause here.
+
+1:57:38
+Have any questions, concerns, thoughts on currency revaluation if it is different than your existing system?
+
+1:57:51
+No, I think that makes sense.
+
+1:57:52
+Thanks.
+
+1:57:55
+All right, OK, so now let me jump to chart up accounts.
+
+1:58:04
+Sandeep, sorry, just yeah, sorry to interrupt.
+
+1:58:07
+We I think missed the Ledger calendars.
+
+1:58:10
+Can you may be correctly sorry, sorry, sorry.
+
+1:58:12
+Yeah, Yeah, good, good call out.
+
+1:58:14
+Yeah, I think when we get into the let me go back to the physical calendars.
+
+1:58:26
+Thanks.
+
+1:58:27
+Anila pointing out, so we have a separate utility for Ledger calendars and that gives us an option to control the postings to various modules, right.
+
+1:58:47
+So for example, if you look at this then we have legal entity here and it gives you a status.
+
+1:58:55
+What is the status of this.
+
+1:58:57
+Once, once you so let me go back on 25, OK, so you can see some of them are you know permanently close that is because the year and all run for that financial year.
+
+1:59:15
+So let me come back to 2026 for each legal entity, when we look at the period, then.
+
+1:59:25
+First opening.
+
+1:59:26
+Is always closed.
+
+1:59:27
+As I mentioned you cannot create any manual entries, but the periods which we can transact, we have a lot of opportunity to control those you know periods.
+
+1:59:38
+So once you do your month end closing, what you can do is you can come here and change the status and you can say on hold we don't want to do a permanently close, use permanently close option because then you don't get an opportunity to come back and reopen the period and then post the entries.
+
+2:00:01
+So.
+
+2:00:02
+It is always recommended to, you know, put the period on hold.
+
+2:00:08
+Stephen, any question?
+
+2:00:12
+No, OK.
+
+2:00:14
+And this can be done on, you know, modular level, you know, you can, you can put on hold and then this actually gives you an opportunity to assign the users to come back and create the entries over here.
+
+2:00:35
+So we have all the models here, Ledger, sales tax, bank, customer master, vendor, master sales, order, purchasing, inventory, production project, fixed asset, payroll expenses.
+
+2:00:50
+So it's all the list of the all modules and any point of time if you close a period and you want to only pass and JV, then what you can do is you can you can give an access for the users over here based on this configuration system allows you to proceed for the transactions.
+
+2:01:18
+So if you put the period on hold, does that mean all of the ledgers are on hold?
+
+2:01:23
+So yeah, from a vendor.
+
+2:01:27
+OK.
+
+2:01:27
+So is it possible to close the customer and vendor before the general?
+
+2:01:33
+Yeah, definitely we can.
+
+2:01:34
+We can do that.
+
+2:01:36
+Yeah.
+
+2:01:37
+OK.
+
+2:01:39
+Yeah, sorry, I mean just to elaborate on that thought.
+
+2:01:42
+Yeah, Steven.
+
+2:01:42
+So you can still have the, let's say at a legal entity level the period is open because let's say all your month and activity is not completed.
+
+2:01:50
+But let's say if your a P&AR is completed, you can see the customer and vendor columns, right.
+
+2:01:55
+Those you can put change back to none so that nobody will be able to change it.
+
+2:02:01
+Or you can give the access to a selective list of users.
+
+2:02:04
+I mean we can group them as a user group.
+
+2:02:07
+And let's say only the financial controller or one or 2 other people can make the changes and rest of the not regular a P or a R teams cannot make those changes.
+
+2:02:15
+So that kind of restriction is also standard.
+
+2:02:18
+So we can group those users and then give the selective access or completely remove access at that module level or the horizontal, the legal entity level also we can completely, I mean, keep that on hold.
+
+2:02:29
+So that's the flexibility we have.
+
+2:02:31
+OK.
+
+2:02:33
+Yeah, Thanks, Anil.
+
+2:02:36
+That was helpful.
+
+2:02:37
+Let's move on to the chart up accounts.
+
+2:02:42
+So for chart up accounts, again, I'm going to go to the general Ledger and chart up accounts.
+
+2:02:52
+Under accounts, we have chart up accounts.
+
+2:02:58
+So you can you can have a multiple chart of accounts.
+
+2:03:01
+Right now I am into a demo data, so that's the reason you can see several chart of accounts here.
+
+2:03:07
+But let me jump back to the US 55 and then go back to the general Ledger chart of accounts.
+
+2:03:23
+OK, so we have chart of accounts which is Heartstream Global COA chart accounts.
+
+2:03:34
+That's how I have configured it.
+
+2:03:37
+But here we have an opportunity to, you know, look at this name, what I have configured.
+
+2:03:44
+So if you have any specific name in mind, so we can use that same name when we go into a new environment and create the chart of accounts for Heartstream.
+
+2:04:03
+I think that name is good enough to be honest, but yeah, OK, OK, alright.
+
+2:04:07
+OK.
+
+2:04:08
+So for the chart of accounts, now we have different main accounts and these main accounts are, you know, coming from the data provider with Sara.
+
+2:04:18
+So all of them are in the in the system.
+
+2:04:21
+Yeah.
+
+2:04:22
+So let's click on one of them and what we have here.
+
+2:04:28
+OK so just ignore few things here because I was trying to import this data.
+
+2:04:36
+So important thing is you know the main account number or a main account ID.
+
+2:04:42
+OK so this is your main account ID.
+
+2:04:44
+When you create new you have to provide this main account ID and then name for this particular main account.
+
+2:04:53
+OK, Here we have certain setups like let me redid this, sorry to interrupt, couple of hands to raise.
+
+2:05:01
+Have you addressed their queries or I just joined, so I'm troubling you here.
+
+2:05:07
+I think it was asked at the start of the meeting for me to understand if everybody came back from Bray Kuttam.
+
+2:05:14
+That was my understanding.
+
+2:05:15
+May be Sahana and Matthews, you can confirm if you have some questions, if you don't have any questions, then low down if you have just raise your hand and then yeah, we will address your questions.
+
+2:05:28
+Yeah, thank you guys.
+
+2:05:33
+Sorry, Sir, go ahead.
+
+2:05:34
+No, no problem.
+
+2:05:35
+You know, I understand, you know, because you you see some hand raised and you may be wondering, I mean, there are so many questions.
+
+2:05:42
+Yeah, those are, you know, kind of an roll call Anil talk.
+
+2:05:46
+OK, so yeah, thank you.
+
+2:05:48
+Thanks.
+
+2:05:49
+Please lower your hand so it not create any confusion.
+
+2:05:54
+But if still you have an genuine questions here, please let it be you know and we can address that.
+
+2:06:00
+OK, so let me jump back to the main account.
+
+2:06:03
+So this is the account number and then details about that account.
+
+2:06:09
+So which is into the account name.
+
+2:06:11
+We have main account type.
+
+2:06:14
+Actually this is provided out of box and next exercise will be, you know, to assign this main account type to the Ledger accounts provided.
+
+2:06:29
+So that will do Sara, we can do that offline.
+
+2:06:35
+OK, one more configuration we have here is main account category.
+
+2:06:43
+OK, so main account category.
+
+2:06:44
+Let me jump to the main account category is form for lab stores or I can go to my favourite and you know find out where is my main account category.
+
+2:06:57
+If it is not there, then I make it as an favourite and come back.
+
+2:07:02
+So let me go to the general teachers chart of accounts, accounts and main account.
+
+2:07:10
+Let me you know add this is in favourite so it is available in my favourite window.
+
+2:07:17
+So what are the main account categories?
+
+2:07:22
+FNO provides this default main account categories, those are associated with the Ledger accounts.
+
+2:07:30
+And if we do that then we can leverage out of box financial reports in finance and operations.
+
+2:07:40
+So our next one of our next task will be, you know lets look at all the main account categories provided as a default in finance and operation and whether that makes sense and assign it to the Ledger accounts so we can leverage the financial reports which are there out of box.
+
+2:08:04
+If not, then what we can do is we can then add new main account categories to this list and then we will have to go and, you know, customise the, you know, financial reports accordingly.
+
+2:08:18
+So it is always recommended to, you know, try to map this account categories to your existing Ledger accounts.
+
+2:08:27
+So let me jump back to the main accounts.
+
+2:08:42
+There are few options available on the main account form where you can, you know, use legal entity overrides.
+
+2:08:51
+OK, so legal entity overrides gives you an opportunity to default dimensions for that specific legal entity or you want to, you know, block some legal entity using specific dimension.
+
+2:09:10
+So the example I think could be let me go back to the general Ledger here in demo data and main accounts.
+
+2:09:33
+So for example, for this bank account, I've been as in I'm just making up kind of scenario.
+
+2:09:40
+So you add your legal entity which is your USMF entity and click on the default dimensions.
+
+2:09:47
+Then what you can do is you know if if you want to, you have an opportunity here to select 2 options.
+
+2:09:55
+Here you know you have not fixed or a fixed value.
+
+2:09:57
+For example, if I select the fixed value here, I can use one of the values from the dimension and that can be defaulted when you create the transaction.
+
+2:10:10
+Typically this is used when you have a legal entity as your one of the financial dimension and then that legal entity dimension is defaulted.
+
+2:10:27
+When you start creating any transaction if it is a general transaction or if it is a sales transaction or it is a purchase transaction that gives that gives you an opportunity to you know segregate your reports on the legal entity level and also you know create the financial reports accordingly.
+
+2:10:52
+One thing I would like to also mention that when when we are going to create the financial reports that definitely we will be talking when we come to the consolidation.
+
+2:11:09
+So let me park that.
+
+2:11:11
+Let me move on to the another setups.
+
+2:11:16
+What we have here we have few setups on the main accounts like posting types.
+
+2:11:23
+So posting types, this is specifically, you know, required when you want to validate certain type of transaction, for example, not tax.
+
+2:11:36
+OK, so lets look at the tax account.
+
+2:11:47
+Ohh OK, yeah.
+
+2:11:48
+So let me click on this California tax.
+
+2:11:54
+So you can see that specifically for tax accounts, we have chosen this.
+
+2:11:59
+So it validates the posting type and that gives an opportunity to, you know, validate the transaction and create the reports accordingly in the system.
+
+2:12:17
+Anil, do you want to jump in?
+
+2:12:19
+Yep, sure, more information.
+
+2:12:22
+So basically this posting validation addresses 2 concerns or 2 features to be available.
+
+2:12:28
+One is just like Sandeep said regarding sales tax or any specific type of transaction that this account should be used.
+
+2:12:36
+So it will restrict that to that particular transaction only.
+
+2:12:39
+For example, I cannot use this Ledger account 202100 in any other lets say normal JV.
+
+2:12:46
+So that will restrict me saying that it is a sales tax account cannot be used, something like that.
+
+2:12:50
+So we have a big list of posting type restrictions that we can use and configure that is one on the left side user ID.
+
+2:12:57
+You can see I can also restrict this GL account to a set of users or one user so that apart from that set of users or one particular user, nobody else will be able to transact with that GL account.
+
+2:13:11
+So that flexibility or you know, configuration can be done at the GL level.
+
+2:13:16
+So these are the 2 important things that, you know, functionalities that we can configure at a main account level with the posting validation.
+
+2:13:31
+Thanks.
+
+2:13:32
+Thanks for the details.
+
+2:13:35
+So next configuration could be, you know, the currency translation for financial reporters.
+
+2:13:41
+So you can set up the currency exchange rate type here, which currency exchange rate type you would like to use when you do your consultation.
+
+2:13:54
+However, you get an also another opportunity to configure the exchange rates on the consultation rules that we are going to talk when we get into consultation workshop.
+
+2:14:09
+So these are all, you know, related setups for your main account.
+
+2:14:16
+So important is your main account number.
+
+2:14:20
+Then if you can get into the main account types which are provided as in default in D 365 and then account categories.
+
+2:14:31
+So we will talk to you offline, we will provide you the options which are available.
+
+2:14:37
+So it will be easier to, you know, make that assignment with your Ledger account.
+
+2:14:47
+Let me stop any any concerns, questions on the main accounts.
+
+2:14:51
+Yeah, so questions.
+
+2:14:55
+So the main accounts we've set up based on our existing in use general Ledger accounts.
+
+2:15:04
+How easy is it to add to that later if we decided we need another general Ledger account that yeah, something that captures in our existing codes?
+
+2:15:13
+Sure.
+
+2:15:14
+Yeah.
+
+2:15:14
+So good question.
+
+2:15:15
+I think that that is a part and parcel of our finance activity.
+
+2:15:20
+So if and again, you know, it depends on your user rule and permission and your internal process when you create a new Ledger account in finance and operation, it is easy, you know, So you have to go here, click new OK and then start typing the main account number name and select the account, type what you have, select the main account category and these are all you know, that's all.
+
+2:15:55
+I think that is that is enough for you, you know, to create the Ledger account.
+
+2:16:00
+In case you have specific requirement on Ledger entity overwrites, definitely you can come here and, you know, configure those.
+
+2:16:08
+Yeah.
+
+2:16:08
+So yeah, that's that's the way he can create new.
+
+2:16:12
+But now the question is, Stefan, do you have an kind of an process when you want to create a main account or do you need to get some approvals?
+
+2:16:25
+And then after the approvals, one needs to come to, you know, system and create the yeah.
+
+2:16:33
+So currently, I mean, it's not really possible to create something completely new, but on the Philips chart of accounts, there are literally thousands of codes and we're only using a very small subset of those.
+
+2:16:48
+So it's usually there's a code there that we can use.
+
+2:16:51
+And it's a question of mentioned earlier, requesting to open up that code and getting, yeah, my approval for the code to be opened up for our company codes is the way that it happens at the moment.
+
+2:17:04
+So yeah, probably we if we limit ourselves to the codes that we've got in existence, then yeah, we should just have some sort of approval process to to add a add to that if transaction occurs that we don't have a code that can apply to already.
+
+2:17:23
+So sure, thank you.
+
+2:17:29
+You have a question that matters.
+
+2:17:35
+OK.
+
+2:17:35
+I think you've still got your hand up.
+
+2:17:36
+Just Matthias, I don't know if you actually got questions.
+
+2:17:41
+Is it?
+
+2:17:41
+No, So no, not not for that.
+
+2:17:43
+I wanted to have some other questions, but maybe maybe later one other question on this.
+
+2:17:49
+So codes that we shared that we've got in use because of the way SAP works, because we've got often there's a manual code and then an automated code.
+
+2:18:03
+And so we have a sort of duplication and we don't necessarily need all of those codes going forward.
+
+2:18:11
+So I'm wondering it's probably cleaner for cutover that we have a sort of one to one code match.
+
+2:18:19
+But maybe going forward in Microsoft Dynamics, we aren't going to actually use all of these codes that we're setting up.
+
+2:18:25
+So we might want to actually just turn off or retire the codes later on if they're not in active use.
+
+2:18:32
+So I wonder if that's a possibility then in terms of cleaning it up going forward, you know, we just just switch off the codes or something and let them fall away.
+
+2:18:42
+Any thoughts about how that might work?
+
+2:18:46
+Yeah, but Stephen, sorry, sorry.
+
+2:18:49
+Go ahead.
+
+2:18:50
+Go ahead.
+
+2:18:50
+No, no.
+
+2:18:52
+Yeah.
+
+2:18:53
+So we can suspend them temporarily or for an active, I mean, for a period, we can suspend them.
+
+2:18:59
+So that functionality is there available.
+
+2:19:02
+So depending on like if you want to use them later, but you want to bring in those main accounts into the system, then yeah, it it'll make sense to bring in those, maybe suspend for a time being or not transact on them until you like decide on them.
+
+2:19:17
+That's one.
+
+2:19:18
+Otherwise, yeah, we can have like a one to one mapping and bring in only the necessary ones and then those can be transacted going forward.
+
+2:19:28
+OK.
+
+2:19:28
+Yeah, sort of thought thinking about, I think it's probably better for the cutover that we keep a one to one translation and then yeah, look at how we clean it up maybe later on rather than maybe it creates more complication for the kind of a process if we we try to reduce it to begin with with multiple codes mapping into one or something.
+
+2:19:47
+So but yeah, it's something to think about.
+
+2:19:50
+OK.
+
+2:19:51
+But that doesn't does that mean we are bringing all the SP main accounts here or only the ones that you are using and then you will further refine down later going down I think, I think we only take the ones we are using and we may add to that between now and when we actually reach sharp cut over a point.
+
+2:20:07
+Yeah, but I don't really want to bring in all the Philips several 1000 it is.
+
+2:20:14
+But yeah, maybe then there's a stage 2 where we actually took put some of the.
+
+2:20:21
+On hold and and stop using them actively if we don't need them under Microsoft Dynamics because things are just set up to work in a certain way under SAP historically so OK makes sense yeah sure Stefan we can do that and right now we have only active codes imported but still you want to re look look at those we can definitely have an opportunity to do that and then import the new JL accounts to finance and operation.
+
+2:20:54
+Before moving on I would like to bring your attention towards 2 important configurations like do not allow manual entry.
+
+2:21:04
+So what does this mean?
+
+2:21:06
+You know, see if you're creating a Ledger and sub Ledger kind of a transaction, like for example, account receivable account systems gives an opportunity or configuration or a control where you stop a manual entry.
+
+2:21:22
+So if if you click on this, for example, yeah, this is this is your bank account, right?
+
+2:21:27
+So banks are Ledger and sub Ledger.
+
+2:21:31
+So we don't want to use the account 110110 on your Ledger transaction.
+
+2:21:38
+OK, if you if you click on this, do not allow manual entry.
+
+2:21:42
+So in that case, what we will have to do is you will have to go to the bank cash in bank module or use the transaction type is a bank, select the bank.
+
+2:21:52
+So entry gets posted into the bank as a sub Ledger and in turn it get posted to the Ledger account.
+
+2:22:00
+OK, so that gives you some control.
+
+2:22:02
+So and that helps, you know, to reconcile your balances in GL, right.
+
+2:22:06
+Sometimes if this is open, then, you know, few users are, you know, directly coming to the journal Ledger and, you know, journal and creating a transaction using this GL account directly.
+
+2:22:19
+Hope this makes sense, Stephen.
+
+2:22:21
+Yeah, it's a bit what I was just mentioning there.
+
+2:22:24
+Yeah, there are similar controls in SAP.
+
+2:22:26
+So yeah, we want to take advantage of that for some ledgers and things as you say.
+
+2:22:29
+Yeah, OK, perfect.
+
+2:22:32
+And there is one more actually configuration where foreign currency revaluation, whether you're going to use this GL account for foreign currency revaluation or not, you can configure it over here.
+
+2:22:43
+And I think we have that information on the chart of accounts data Sarah has provided.
+
+2:22:50
+OK, so that is all about main accounts.
+
+2:22:53
+Let lets now move on to the you know very important configuration which is called as an financial dimensions.
+
+2:23:02
+So let me go to the general Ledger again, collapse all under chart of accounts, we have financial dimensions.
+
+2:23:16
+OK, let me jump into the entity where we have configured the financial dimensions with respect to heart stream.
+
+2:23:33
+So let me go again to general pleasure dimensions, financial dimensions.
+
+2:23:49
+So financial dimensions are the segments and right now you can see that we have business units, cost centre, profit centre.
+
+2:24:04
+You can also configure, you know project as an financial dimension and you have opportunity to configure maximum 10:50 financial dimensions in this system.
+
+2:24:20
+But there is a caveat, the more financial dimensions you have, it impacts the performance of the system.
+
+2:24:29
+So financial dimensions are mainly used with the main accounts on leisure transactions.
+
+2:24:37
+So the data is categorised and then it can be reproduced in the form of report and analysis.
+
+2:24:45
+So if if I look at the business unit and there is actually a child kind of an relationship where we can say dimension values, OK, So all your business units are you know configured as in dimension values, OK.
+
+2:25:06
+And here, here you have several opportunities of the configuration.
+
+2:25:11
+If you if, if, if you don't want anything then you can suspend that.
+
+2:25:17
+You can also assign an owner for this specific business unit value.
+
+2:25:23
+And in addition to that we have similar capabilities what we have seen under main accounts legal entity overrides.
+
+2:25:32
+So here you can control the how you want to display or make the financial dimension values available during the transaction.
+
+2:25:46
+And this financial dimensions are actually backed by operating units in D 360 finance or operation.
+
+2:25:54
+Let me go to the organization administration and show you what does it mean.
+
+2:26:01
+So operating units under organization, so you can, you can create the operating units and let us see what options we have here.
+
+2:26:14
+You know, we can create an operating units for departments.
+
+2:26:20
+Right now hard stream is not using department, but I have repurposed it.
+
+2:26:27
+I will talk about it later.
+
+2:26:28
+We have cost centers, value streams, business unit and retail channels.
+
+2:26:34
+You know these are out of box operating units and this gives an opportunity to create an hierarchy for the operating units and use it in reporting.
+
+2:26:48
+So when you have to create a new financial dimension, it is backed by operating unit then you will have to come here and create a a new operating unit choosing the operating unit types.
+
+2:27:02
+OK, so that's how the operating units are structured in D 360 finance operation.
+
+2:27:10
+Let me delete this here can and jump back to the financial dimensions into the general Ledger and dimensions financial dimensions.
+
+2:27:25
+So what I have done is you know I have repurpose, we don't have an operating unit for the profit centre.
+
+2:27:33
+So what I have done you know I repurpose this department as an profit centre.
+
+2:27:39
+So that gives an opportunity to you know create the hierarchies.
+
+2:27:43
+So we have business unit, cost centre, profit centre.
+
+2:27:47
+Now if you are also tracking the details about projects, we can create the project as an financial dimension and that is the you know decision we will have to make how many financial dimensions we need.
+
+2:28:04
+So for that I think we will have to look into your reporting structure, what kind of reports you drive you get and then you know discuss that further.
+
+2:28:15
+OK.
+
+2:28:15
+So if you need any information about the data or sales data related to region or retail channel channel that definitely can be incorporated.
+
+2:28:29
+So how this, you know, financial dimensions comes into picture during the transaction.
+
+2:28:39
+So let's let let's quickly look at, you know, one of the transaction.
+
+2:28:42
+Let me go to the general Ledger, it's today's sorry.
+
+2:28:48
+Yeah.
+
+2:28:48
+Sorry, Rachel, just ask the question on the functional area in relation to the cost center.
+
+2:28:53
+I don't think you're on the call at the start, Rachel, we discussed how the cost is and cost centers rolled into profit, Sorry, cost centers roll into functional areas and we shared some examples of that.
+
+2:29:05
+And I think, yeah, we're going to provide some reports to the team.
+
+2:29:10
+So that might be an additional financial dimension that we want to incorporate.
+
+2:29:16
+But yeah, I don't think that was appreciated yet.
+
+2:29:18
+So thank, thank you for that.
+
+2:29:21
+Yeah.
+
+2:29:21
+I would typically think that that with regards to the financial dimensions, that functional area would be a pretty big one.
+
+2:29:30
+That's why when I didn't see that mentioned, I kind of raise some concern to me.
+
+2:29:38
+OK.
+
+2:29:42
+Yeah, man, we can create a new financial dimension if required by the functional area.
+
+2:29:48
+And I mean from after you give us the data, we'll see what's the dependency or mapping and we can map that to let's say the cost center or you know, business unit as well and set up the relation as per that.
+
+2:30:02
+Yeah, typically the functional area will be tied to the cost center master data.
+
+2:30:07
+So a cost center would drive the functional area.
+
+2:30:12
+But, and this is of course so Phillips way of working and I don't know if this is going to be applicable to Heartstream or not, but sometimes there'll be conflicts because sometimes certain GL accounts are restricted to particular functional areas, like for instance, cost of goods sold, a bomb account, right, couldn't post to say a finance cost center would be restricted to a financial area 1000.
+
+2:30:40
+So so I don't the something to think about.
+
+2:30:45
+Yeah, Rachel, we have those opportunities to configure those rules.
+
+2:30:51
+We have 2 things here.
+
+2:30:52
+You know we have legal entity overrides that also help us to you know configure those kind of an controls or we have an, you know, account structure which is, you know the next topic we are going to talk about that gives us an control on and we can set up several rules on the as an account structure that helps us to you know control the transaction posting to a specific account or a range of accounts.
+
+2:31:23
+Yeah, we are going to definitely look at that after we finish this financial dimensions.
+
+2:31:31
+OK.
+
+2:31:32
+So just quickly just as a I mean I thought I mean it need not be like hard and fast if you see the 2 examples on the left right AU5511160AU5511161.
+
+2:31:47
+So if can it be like a linear one to north mapping between that functional area and the cost center?
+
+2:31:54
+Also, maybe you can think of having like a, you know, dot separated or a- separated so that it can be in one dimension only rather than creating a new dimension altogether.
+
+2:32:03
+I mean, just a thought.
+
+2:32:05
+You can think about it how we can configure or, you know, draft this new structure based on that.
+
+2:32:10
+We can, you know, create this.
+
+2:32:13
+I think it'll be important with regards to our Pnl.
+
+2:32:16
+I mean, I meant this might be a Matus or Steven question, right?
+
+2:32:20
+And we did try to create some logic in our cost center naming where for instance, if it follows the dot starts with a one, right, those should be cost of goods.
+
+2:32:31
+If it's a 2, it should be selling 3 G&A.
+
+2:32:35
+But again, not everything is going to flow through to a cost center.
+
+2:32:40
+I think that with, if we want to build a consulted P&L, you're certainly going to need to have functional area in there as a, as a, as a, as a dimension.
+
+2:32:52
+Yeah, yeah.
+
+2:32:54
+OK, got it.
+
+2:32:54
+I mean it is not that we should not, I am just thinking if we can do it, but otherwise that is OK.
+
+2:32:59
+We can create that new dimension and like you said, we can have the dependent condition set up in the account structure or here saying that, you know, for this particular functional area only this cost center is allowed, something like that.
+
+2:33:12
+So that dependency between financial dimensions can also be established and, you know, maintained.
+
+2:33:25
+Alright, Anil.
+
+2:33:26
+Thanks Rachel.
+
+2:33:28
+We have noted your concerns and definitely we'll address those when we, you know, start talking about configuring the financial dimensions and account structures in the environment.
+
+2:33:41
+Thank you.
+
+2:33:42
+And I'm, I'm and I appreciate those are very valid concerns.
+
+2:33:47
+So we'll address those when we get, you know start configuring the system.
+
+2:33:53
+So let me jump to some transaction to showcase how the, you know, financial dimension are used in the transaction.
+
+2:34:04
+So let me go to the general journal.
+
+2:34:07
+So lets look at first journal journal and definitely we can look at some of the sale or purchase transaction.
+
+2:34:15
+OK, so in a journal journal, if we create a journal journal and we have lines for this journal.
+
+2:34:25
+Let me click on the lines.
+
+2:34:32
+OK, so when you create a line for as an voucher you you an opportunity to decide what type of this account is.
+
+2:34:43
+So lets assume that you are going to create a voucher for as a journal journal.
+
+2:34:49
+So once account type is Ledger is selected, when I go to the next section which is account, it gives me the list of Ledger accounts.
+
+2:35:02
+So this account type controls actually what is you know available as an account.
+
+2:35:08
+Say for example, if I select a vendor as an account type, then a vendor list is opened.
+
+2:35:14
+OK here same thing with the customer.
+
+2:35:16
+So lets understand for the Ledger.
+
+2:35:19
+So now if if I open this Ledger account and if I look at any expense account.
+
+2:35:25
+So I think expense accounts are starting with 6, Yeah, yeah.
+
+2:35:32
+So yeah you can choose any expense account when you are doing a transaction say let us pick this up, OK.
+
+2:35:41
+And then you have cost centre business unit showing up based on the you know account structure we have configured that will come to the next.
+
+2:35:52
+So what is required here is if you are in U.S.
+
+2:35:56
+company, we will set up this cost centers.
+
+2:36:00
+So only you know US cost centers are available for you to select.
+
+2:36:06
+OK.
+
+2:36:07
+And then you can select the business unit.
+
+2:36:10
+You know what is the business unit?
+
+2:36:12
+Yes, this is how the transaction will happen and this these are how the, you know financial dimensions are available to choose on a transaction.
+
+2:36:22
+So when I post this transaction that gives me visibility when I run a trial balance in finance operation, I think let me jump back to the Contoso data and show you how the trial balance looks like.
+
+2:36:39
+OK, so perhaps all enquiries and we have a tool actually which you can do run and create the trial balance.
+
+2:36:52
+Here you have a several options.
+
+2:36:54
+You know running this trial balance in different options like you can only run it for main accounts.
+
+2:37:00
+Let me choose main accounts and this is a configuration behind which is called as an financial dimension set.
+
+2:37:07
+So I am running this trial balance from first of Jan to 31st of December and I have an opportunity to select any range.
+
+2:37:19
+In addition to that I have an option of selecting the date interval as well.
+
+2:37:23
+So those date intervals are configured in the system and then data to specific that date interval will show up.
+
+2:37:31
+So click on the calculator balance.
+
+2:37:39
+So this is how you know you can get the details on on the trial balance and these are links actually you know if I click on the link then it takes you to the details of the transaction.
+
+2:37:53
+Anyway we are going to talk about this in the our journal automation.
+
+2:37:57
+The purpose of getting into journal was you know showcasing you how the financial dimensions are available.
+
+2:38:08
+Now to look at the data, if I post something related to cost centre and I want to look at that data from that perspective, what I can do is I can come here and select the this dimension set which is main account and cost centre.
+
+2:38:23
+OK.
+
+2:38:24
+Now the same data will be you know displayed in different perspective.
+
+2:38:29
+So I am I want to look at my expense accounts based on my cost centres so that that you can see OK, so here you have an opportunity to again filter the accounts.
+
+2:38:43
+So I will see accounts contains with 6 which probably my all cost center expense accounts.
+
+2:38:53
+So I can see now, now say for example, the freight, I know freight is posted for cost using cost center one zero 0110.
+
+2:39:08
+So that is how the data is getting segregated based on the financial dimensions you choose on the transactions.
+
+2:39:18
+OK, let us look at another example.
+
+2:39:22
+I want to run my data now from different perspective, OK.
+
+2:39:26
+So let us look at I want to look at my main account, business unit, department and project.
+
+2:39:35
+So same data if there are transaction posted using the financial dimensions, that data will you know get displayed accordingly.
+
+2:39:47
+So this is a very powerful tool within FNO.
+
+2:39:51
+You can look at the same data from different perspective.
+
+2:39:54
+OK, so this is all about the GL same thing.
+
+2:39:58
+You know, if, if I want to go to the sales order, say let me go to the sales order.
+
+2:40:11
+And look at any order which is there, OK.
+
+2:40:20
+And we are going to talk about that you know in upcoming workshops.
+
+2:40:26
+But the purpose of this demonstration is looking at the financial dimension.
+
+2:40:34
+So this is how the, you know, sales order is structured.
+
+2:40:37
+Definitely we are going to talk about that.
+
+2:40:39
+You have a header, so all the customer related information is there in the header on the lines what item you are selling, OK.
+
+2:40:47
+And in the detail level you have more details about that line.
+
+2:40:51
+OK.
+
+2:40:51
+So here we have a financial dimensions again.
+
+2:40:55
+So when you create a sales order and we have a lot of opportunities of configuration making it you know default or mandatory.
+
+2:41:02
+And then when you create those, those are you know financial dimensions like business unit is assigned.
+
+2:41:11
+So you can always assign it to the customer or you know we can default based on the the type of that sales order.
+
+2:41:22
+OK.
+
+2:41:22
+So on all type of transactions like sales, purchase and JV is this financial dimensions are available and those can be you know, viewed in the reporting format which I have shown you in the trial balance.
+
+2:41:39
+OK, let me pause here.
+
+2:41:41
+Any questions related to the financial dimensions?
+
+2:41:47
+No, nothing else at the moment I think.
+
+2:41:49
+Thanks.
+
+2:41:50
+OK.
+
+2:41:51
+Now in addition to financial dimension, we have one more utility which is called as an financial tax.
+
+2:42:01
+This is new function added by Microsoft to provide you more attributes to assign the data or assign this attribute to the transaction to reproduce the reports.
+
+2:42:17
+And it is called as an financial tax because we have limitations on creating financial dimensions.
+
+2:42:26
+The more financial dimensions you create, it will impact the performance.
+
+2:42:32
+So that is the reason actually Microsoft has introduced new utility called as in financial tags.
+
+2:42:41
+So let's look at the financial tags.
+
+2:42:46
+Sarah has a question, Sandeep.
+
+2:42:48
+Yeah, go ahead, Sarah.
+
+2:42:49
+Sure.
+
+2:42:49
+Yeah, go ahead, Sarah.
+
+2:42:51
+Just curious, what's the typical number of dimensions or the optimal number of dimensions that you see to the best of our experience, Sarah, we recommend not more than 4 or 5.
+
+2:43:06
+OK, thanks.
+
+2:43:08
+And then we have another opportunity of using the dimension that we will talk when we get into the account structure.
+
+2:43:19
+OK, alright.
+
+2:43:21
+So this is all its all I was sorry I was talking about the financial tags.
+
+2:43:27
+So let me go back to the general Ledger and where are the financial tags.
+
+2:43:37
+I think let me let me use this utility sometime you forget, you know.
+
+2:43:55
+See if the moment I start typing into search window, the first word is financial.
+
+2:44:03
+So all the you know, it is like an word, you know right how the how you create an searching.
+
+2:44:13
+So I got this is under under chat of accounts.
+
+2:44:17
+OK, yeah, alright.
+
+2:44:19
+So you you can create new financial tags as as per your requirement.
+
+2:44:25
+So let us see what opportunities we have.
+
+2:44:30
+Say for example you want to create the financial and you want to track your customer.
+
+2:44:35
+So you can create a financial tag for customer and you have an opportunity to use it from the customer list.
+
+2:44:46
+So, So what does it mean is when you create a new customer system actually automatically creates the financial tag for that customer.
+
+2:44:58
+So you don't have to create a new financial tag every time.
+
+2:45:04
+Another thing is you will have to you know activate this and we have some rules to be set up.
+
+2:45:19
+But the point I was trying to make is, you know, you have some attribute which is important, critical from your reporting purpose and we don't have an option because we want to impact our performance defining as in financial dimension, you have option of creating the financial tax.
+
+2:45:43
+Now only caveat for the financial tag is those are not integrated with financial reporter or a trial balance.
+
+2:45:51
+We looked, you know, but as a practice what I have seen in my previous experience, customers are willing to use financial tags with the, you know, BI reporting.
+
+2:46:04
+Now that is the new trend coming up.
+
+2:46:07
+So we can develop BI reports and we can face those details on the transaction with respect to financial tags on BI reporting.
+
+2:46:16
+So that is one of the option, but you know we will have to take a, you know decision if you want to use the financial tax.
+
+2:46:24
+OK.
+
+2:46:25
+Now last but not least, I think we have only 15 minutes for this session and what we will do Anil, we will defer those 2 things tomorrow regarding the accrual and deferrals and then allocation.
+
+2:46:44
+So let me quickly jump into account structure, which is very critical configuration for us.
+
+2:46:55
+So let me go back to the general Ledger, collapse all chart of account structure and configure account structure.
+
+2:47:09
+Now you can, you know, have multiple account structure defined as per requirement of the business.
+
+2:47:21
+As a practice, I have seen that there are 2 account structure usually configured in the system like manufacturing which takes care of your P&L account and then you know, manufacturing balance sheet.
+
+2:47:39
+These are the names, you know, just ignore the names, but let us look at this balance sheet account structure.
+
+2:47:47
+So here what we can do is we can select the range of accounts and assign these segments to this account structure.
+
+2:48:01
+Right now you can see there are several, but this segment action gives you an opportunity to add or delete the segment.
+
+2:48:11
+So let me jump back to the US 55 and look at the account structure there.
+
+2:48:22
+I have just created a preliminary one account structure and this is going to be our kind of an decision making process around how you want to configure your account structures.
+
+2:48:33
+OK so I have created only one account structure here right now and it includes everything you know.
+
+2:48:42
+It includes all your account and this 2 dots indicates that you can use a range.
+
+2:48:51
+OK so whenever you create a transaction this account structure rule kicks in and this gives you the ability to control it.
+
+2:49:03
+So for example now what does this mean?
+
+2:49:05
+You know under call centre I have this symbols here that's that means all values are available, you know.
+
+2:49:15
+So we have opportunities here to make it specific as Rachel mentioned that say for example, let me jump back to this account structure which is related to the BNL.
+
+2:49:29
+That will give us more insight.
+
+2:49:34
+OK.
+
+2:49:35
+Yeah.
+
+2:49:35
+So, so this is how you have an option of, you know, configuring the account structure, say for example, now this is your range and you want to have everything available in the transaction business units.
+
+2:49:52
+But for the departments you have a specific requirement, OK.
+
+2:49:56
+Or for the call centers you have a very specific requirement, OK, next range is in the next range you have a different requirement about the department, OK.
+
+2:50:09
+And that's how the cost centers you want to control on those transaction for those main accounts in day 365 financial operation.
+
+2:50:22
+I am sure it and now we are getting into really you know complex but you know we will definitely, you know talk about it when we get into the configuration and walk you through how it impacts when we start talking about the, you know, general transactions.
+
+2:50:40
+Let me pause here.
+
+2:50:42
+Anil, you want to add anything here?
+
+2:50:46
+Yeah.
+
+2:50:46
+So like you covered and we discussed also if there is any, you know dependency or if something to be restricted, something to be added or let's say for a one specific account.
+
+2:50:59
+I mean in this example it's not there.
+
+2:51:02
+Let's say between the, you know, account number 400,000 and 999999, let's say for one account only you want let's say department value to be little different.
+
+2:51:12
+So that can also be configured.
+
+2:51:16
+So it is not that it is not rigid that it it has to be for a range even at.
+
+2:51:20
+I mean if there are exceptions, we can handle them here.
+
+2:51:22
+If it is for their for a complete range that can also be handled.
+
+2:51:27
+So like allowing blank values, adding a specific value only or allowing a specific value only.
+
+2:51:33
+Those dependencies or rules can be set up with our account structures.
+
+2:51:40
+Thanks Anil.
+
+2:51:40
+And this is very flexible configuration and gives us infinite opportunities to set up the rules.
+
+2:51:50
+And this is actually the foundation actually we will be very careful and spending a lot of time to configure the, you know, account structure.
+
+2:52:01
+We have one more additional functionality around the account structure is, you know, advanced rule.
+
+2:52:07
+OK, so let us look at what what is the advanced rule.
+
+2:52:11
+So what we have done is we have we have configured our financial dimensions as a business unit, department and call center.
+
+2:52:22
+But you have a specific requirement for example you are booking, booking and travel OK and you want to add worker on that specific transaction.
+
+2:52:34
+Now, I don't have an I, I don't want to add worker as an dimension because I am not going to use it on all my other general general accounts, lecture accounts, right?
+
+2:52:47
+So I, it will be very specific to account related to the travel.
+
+2:52:52
+In that case, what I can do is I can, you know, create advance rule, OK.
+
+2:52:59
+And this advance rule actually drives the transaction and bring in this, you know, segment or a financial dimension, which are alternatively used.
+
+2:53:13
+You know, sometime it is called as in financial dimension, but in account structure it is, you know, called as in segment.
+
+2:53:20
+So what we can do is, you know, let us look at again, quickly jump into journal journal and see how it impacts on the transaction side.
+
+2:53:38
+Before going there, let me also quickly show you the how how the rule is set up.
+
+2:53:45
+So let us look at this travel rule.
+
+2:53:48
+OK, So what does travel rule does it it actually allows all the you know, worker, which is defined as an financial dimension to bring it on the transaction.
+
+2:54:01
+So lets look at the transaction.
+
+2:54:07
+So for example like create a new transaction for general, general OK, go to the lines.
+
+2:54:24
+And I choose my travel expense.
+
+2:54:29
+So which is this one?
+
+2:54:37
+OK, If I choose that, then you can see that you know worker is, you know, showing up as an financial damage because I have configured at once account structure related to the travel.
+
+2:54:59
+OK.
+
+2:55:00
+If if I choose another expense account, OK, I say selling expense or advertising expense, OK and then start looking at see you don't see the worker worker hasn't damaged here.
+
+2:55:15
+So that gives you a additional functionality if you want to configure or you want to, you know, tag a different dimension or specific dimension or a specific account.
+
+2:55:28
+OK, so let me stop here.
+
+2:55:32
+We have 8 minutes.
+
+2:55:33
+So let's look at if you have any questions or right now we can summarise for today's workshop.
+
+2:55:49
+I have a question.
+
+2:55:50
+Do you have any validation on transaction level?
+
+2:55:55
+Meaning that for example we have some specific transaction types for balance sheet items which are not available for each GR account.
+
+2:56:08
+So, so certain GR accounts can post with certain transaction types.
+
+2:56:13
+For example there are some additions deductions for provisions but you cannot book it on cash accounts.
+
+2:56:20
+For example, so and so.
+
+2:56:23
+So we have the matrix of also for the transaction types which are listed by the type of item and each account has like a specific sub Python type that determines which sub Python can be used and on transaction level it should be already validated so.
+
+2:56:45
+So you should not be able to use transaction type which is not dedicated for for particular account.
+
+2:56:54
+We also have some transaction types which are automatic.
+
+2:56:59
+For example there are dedicated revaluation accounts which automatically have like 085 transaction types of revaluation like type assigned.
+
+2:57:12
+So it, it, it Do you also foreseeing those kind of solutions over here?
+
+2:57:21
+Yeah, sure.
+
+2:57:22
+We have those kind of a capabilities and we have seen when we were talking about main accounts, right.
+
+2:57:30
+So those can be configured on the main account and that gets validated when you do transaction, when you post the transaction.
+
+2:57:41
+Anil, do you want to add anything to this?
+
+2:57:44
+Yeah, sure.
+
+2:57:46
+So, yeah, to your first question, yes, at a transaction level, you want to restrict some of the GL accounts.
+
+2:57:53
+Yes, that's possible.
+
+2:57:54
+I mean that's one of the topics for tomorrow general automation we have in the journal names, per journal name, let's say if, if it is an expense journal, you can restrict it to let's say only few GL codes that can be done or per a person that we have talked about, right.
+
+2:58:11
+At a GL level, GL account level, if you want it to restrict to certain users that can also be done or within the GL account if you want to have a restriction at the financial dimension level that we can do it through the accounting structure.
+
+2:58:27
+If you have some examples or complex examples that you think maybe you can share a couple, you can play it back quickly in our, I think the transaction types we have in SAP, there are less for a financial dimension.
+
+2:58:43
+I think they're more so that we can financially report for instance, picking up cash flow movements appropriately to adjust in the cash flow statement or for analysis of fixed asset note with additions, disposals, etcetera.
+
+2:59:03
+So I imagine that those financial statements are driven in Microsoft Dynamics already in.
+
+2:59:12
+Therefore, maybe we don't need the transaction types, but I think we probably need to see a demonstration of how those reports are pulled together in Microsoft Dynamics.
+
+2:59:22
+And so we can then make a informed decision around what's required on the transaction types and things.
+
+2:59:27
+So, yeah, yeah, yeah, right.
+
+2:59:30
+You're right, Steven.
+
+2:59:31
+Those are driven directly from the GL accounts, not from the transaction codes.
+
+2:59:36
+That that, Yeah, that part you have, right?
+
+2:59:38
+Yeah.
+
+2:59:38
+So it it might be that that is therefore becomes redundant from what we're used to seeing in in SAP and for the consolidation.
+
+2:59:44
+But yeah, we probably need to see and understand how all of that works first of all.
+
+2:59:59
+All right, let me go back to the presentation and where we started.
+
+3:00:09
+So what we did, we had overview of T 365 finance and operation that gave you flavour of finance and operation app and then navigation.
+
+3:00:21
+We also reviewed your chart of accounts, cost centre, profit centre and business units data and looked at the, you know financial questions.
+
+3:00:32
+We went through cordial setups, but we could not complete the next 2 agenda items like accrual, deferral and Ledger allocations.
+
+3:00:45
+We are going to talk about that tomorrow.
+
+3:00:50
+We have made some decisions like how, how we want our chart of accounts.
+
+3:00:58
+We will wait Sarah, for the updated information on the chart of accounts and then the hierarchy details and we can bring those into financial operation and showcase you.
+
+3:01:16
+We have also have some decisions around financial dimensions that business unit, your cost centers and profit centers are going to be your primary, but we also need to know if you knew if you want any additional financial dimensions going forward.
+
+3:01:37
+And on the account structure side, we have seen how the account structure is configured in the system, how it gives us a flexibility to create rules.
+
+3:01:55
+You can create rules specific to account.
+
+3:01:59
+And in addition to that, we also saw you have an advance account structure capability on top of existing account structure if you want to add any specific financial dimension to a specific transaction like travel.
+
+3:02:18
+OK, so this is a summary of what we did today.
+
+3:02:22
+We went through all the critical configurations like legal entity, main accounts, fiscal calendar, leisure calendars, currency exchange rates.
+
+3:02:35
+So that's what all we covered today.
+
+3:02:38
+Anil, if I missed anything I would like to add.
+
+3:02:43
+Yeah, I mean, yeah, mostly we've covered like in the chat I've, you know, messaged Liz, Stephen and Matthews.
+
+3:02:53
+So yeah, we will have some placeholder for Wednesday.
+
+3:02:56
+Let us talk to I mean Sarah and Patrick and we'll get some slot of yours maybe for hour for an hour or hour and half.
+
+3:03:05
+I don't know if tomorrows call deal team is going to join.
+
+3:03:09
+If they are going to join, we will go ahead with them and then finish their part and then we will jump to this residual agenda.
+
+3:03:16
+If they are not joining, then we can continue with this and then we will take the payroll integration part this.
+
+3:03:23
+So we will keep you posted on.
+
+3:03:26
+But yeah, there could be a probable session on Wednesday for an hour to hour and half, 90 minutes.
+
+3:03:31
+Yeah.
+
+3:03:36
+OK, everybody's fine.
+
+3:03:37
+Yeah, yeah, I'll, yeah.
+
+3:03:40
+So what we can.
+
+3:03:43
+Sorry, sorry.
+
+3:03:43
+One minute only.
+
+3:03:44
+We will share fit and gaps.
+
+3:03:49
+Mostly we will waste on the today's call, we will generate the fit if any gaps is there, we will also add that that gap.
+
+3:03:56
+Definitely after this meeting, we will share the minutes of meeting so that you can check the minutes of meeting.
+
+3:04:01
+If anything is missing, just reply on that email so that we can address those if anything we missed out.
+
+3:04:08
+Definitely fit and gaps we will generate and we can discuss tomorrow or a doc meeting.
+
+3:04:14
+We will schedule it on Wednesday.
+
+3:04:16
+That day we will complete the fit, gap and pending topics like accruals and all allocations.
+
+3:04:23
+Thanks for your time.
+
+3:04:24
+Thank you very much.
+
+3:04:26
+Bye.
+
+3:04:26
+Thanks very much.
+
+3:04:27
+Thank you.
+
+3:04:28
+Thank you all.
+
+3:04:28
+Have a nice day.
+
+3:04:29
+Bye.
+
+3:04:29
+Bye.

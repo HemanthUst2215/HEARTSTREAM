@@ -1,13 +1,13 @@
 ﻿# work-item-reference-matcher
 
 ## Purpose
-Match each generated user story to work items in `artifacts/work-items/**/*.json` using IDF-weighted title/description coverage + fuzzy scoring; populate ReferenceWorkItemIds and MatchScores in **user-stories.csv**.
+Match generated stories to work items for legacy **user-stories.csv** pipelines (IDF + fuzzy). **Not** the Phase 5 mapper for transcript intake.
 
 ## Parent
-business-analyst-agent
+business-analyst-agent (legacy CSV pipeline only)
 
 ## Must / Must NOT
-- Must: For `/generate-user-stories-from-transcript`, use **work-item-mapping-agent** / `scripts/map-user-stories-to-work-items.py` (catalog `ID` on Epic/Feature rows). Do not run a retired `/generate-user-story` pipeline.
+- Must: For `/generate-user-stories-from-transcript`, defer to **work-item-mapping-agent** / `scripts/map-user-stories-to-work-items.py` — `epic.json` + `feature.json` only, generic config thresholds (rule `32-catalog-only-work-item-mapping.mdc`). Do not run a retired `/generate-user-story` pipeline or duplicate mapping in this subagent.
 - Must: Include **all** matches ≥ threshold, sorted by score descending; pipe-delimited IDs and scores.
 - Must NOT: Rely on exact title match only; drop valid lower-ranked matches.
 

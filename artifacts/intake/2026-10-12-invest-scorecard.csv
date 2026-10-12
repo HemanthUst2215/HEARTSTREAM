@@ -1,0 +1,23 @@
+﻿UserStoryID,Title,IndependentScore,NegotiableScore,ValuableScore,EstimableScore,SmallScore,TestableScore,OverallScore,InvestStatus,Recommendations
+,Configure a global chart of accounts shared across legal entities,9,7,9,5,8,4,7.0,Needs Refinement,Estimable: Concrete scope signals help estimation.; Testable: Add observable Given/When/Then criteria.
+,Restrict selected main accounts to designated legal entities,9,8,9,5,8,4,7.2,Needs Refinement,Estimable: Concrete scope signals help estimation.; Testable: Add observable Given/When/Then criteria.
+,Map main account categories for out-of-box financial reporting,9,7,9,5,8,4,7.0,Needs Refinement,Estimable: Concrete scope signals help estimation.; Testable: Add observable Given/When/Then criteria.
+,Suspend unused legacy main accounts after cutover,9,7,9,5,8,4,7.0,Needs Refinement,Estimable: Concrete scope signals help estimation.; Testable: Add observable Given/When/Then criteria.
+,Block manual general journal posting to sub-ledger control accounts,9,7,9,5,8,4,7.0,Needs Refinement,Estimable: Concrete scope signals help estimation.; Testable: Add observable Given/When/Then criteria.
+,Require approval before activating new main accounts,9,8,9,5,8,4,7.2,Needs Refinement,Estimable: Concrete scope signals help estimation.; Testable: Add observable Given/When/Then criteria.
+,Omit main-account-level totaling on trial balance,9,7,9,5,8,4,7.0,Needs Refinement,Estimable: Concrete scope signals help estimation.; Testable: Add observable Given/When/Then criteria.
+,Configure business unit profit center and cost center dimensions,9,7,9,5,8,4,7.0,Needs Refinement,Estimable: Concrete scope signals help estimation.; Testable: Add observable Given/When/Then criteria.
+,Standardize cost center master data across legal entities,9,7,9,5,8,4,7.0,Needs Refinement,Estimable: Concrete scope signals help estimation.; Testable: Add observable Given/When/Then criteria.
+,Represent functional area for consolidated P and L reporting,9,8,9,5,8,7,7.7,Pass,Estimable: Concrete scope signals help estimation.
+,Enforce account structure rules for dimension combinations,9,8,9,4,8,4,7.0,Needs Refinement,Estimable: Concrete scope signals help estimation.; Testable: Add observable Given/When/Then criteria.
+,Default profit center and cost center on SCM-driven transactions,9,7,9,5,8,4,7.0,Needs Refinement,Estimable: Concrete scope signals help estimation.; Testable: Add observable Given/When/Then criteria.
+,Limit active financial dimensions for performance,9,7,9,5,8,4,7.0,Needs Refinement,Estimable: Concrete scope signals help estimation.; Testable: Add observable Given/When/Then criteria.
+,Align all legal entities to a single fiscal calendar at go-live,9,7,9,4,8,4,6.8,Needs Refinement,Estimable: Concrete scope signals help estimation.; Testable: Add observable Given/When/Then criteria.
+,Allow controlled posting to prior periods after soft close,9,7,9,4,8,4,6.8,Needs Refinement,Estimable: Concrete scope signals help estimation.; Testable: Add observable Given/When/Then criteria.
+,Close AR and AP modules before general ledger period,9,7,9,5,8,4,7.0,Needs Refinement,Estimable: Concrete scope signals help estimation.; Testable: Add observable Given/When/Then criteria.
+,Maintain monthly exchange rates shared across company codes,9,7,9,5,8,4,7.0,Needs Refinement,Estimable: Concrete scope signals help estimation.; Testable: Add observable Given/When/Then criteria.
+,Run foreign currency revaluation across GL and sub-ledgers,9,7,9,4,8,9,7.7,Needs Refinement,Estimable: Concrete scope signals help estimation.
+,Track month-end close tasks in period close workspace,9,7,9,5,8,4,7.0,Needs Refinement,Estimable: Concrete scope signals help estimation.; Testable: Add observable Given/When/Then criteria.
+,Configure segregation of duties through security roles,9,7,9,5,8,4,7.0,Needs Refinement,Estimable: Concrete scope signals help estimation.; Testable: Add observable Given/When/Then criteria.
+,Use identifiable voucher number sequences for intercompany journals,9,7,9,4,8,4,6.8,Needs Refinement,Estimable: Concrete scope signals help estimation.; Testable: Add observable Given/When/Then criteria.
+,Print customer invoices in local language per customer,9,8,9,4,8,9,7.8,Needs Refinement,Estimable: Concrete scope signals help estimation.

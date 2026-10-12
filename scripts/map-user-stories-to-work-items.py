@@ -6,9 +6,12 @@ Reads artifacts/work-items/*.json. Writes one public Excel (stories + IDs) and a
 Does not change Title, Description, Acceptance Criteria, or other source cells.
 
 Do not invent Epic/Feature titles from the transcript. Match each User Story
-to existing Features in artifacts/work-items JSON, then write those catalog
-Epic and Feature rows into the workbook with their ADO IDs. Fill story
-Catalog Epic and Feature rows keep their own ADO IDs in `ID`. Each matched User Story's `ID` is that Feature's workItemId. No extra EPIC ID / FEATURE ID columns.
+to existing Features in feature.json (parent Epic in epic.json) using generic
+similarity only — thresholds and paths from `.cursor/config.yaml` →
+`work_item_mapping`. Never hardcode domain phrases, epic IDs, or topic tables.
+Catalog Epic and Feature rows keep their own ADO IDs in `ID`. Each matched User
+Story row uses a Feature workItemId in `ID` (up to max_related_features).
+No extra EPIC ID / FEATURE ID columns.
 """
 from __future__ import annotations
 
@@ -22,7 +25,6 @@ from difflib import SequenceMatcher
 from datetime import datetime, timezone
 from io import BytesIO
 from pathlib import Path
-from collections import defaultdict
 from typing import Any
 from xml.sax.saxutils import escape
 
@@ -40,11 +42,8 @@ STOPWORDS = frozenset(
     need so that user story via vs etc also only when after before
     """.split()
 )
-# Too common in this catalog to count as a unique Feature match by themselves.
-WEAK_MATCH_TOKENS = STOPWORDS | frozenset(
-    "partner data sales order management customer record create sync available "
-    "user crm process integration processing".split()
-)
+# Tokens too short or generic to require in feature↔story relevance (scoring only).
+WEAK_MATCH_TOKENS = STOPWORDS
 TOKEN_RE = re.compile(r"[a-z0-9]+", re.I)
 # Never add these to the public Excel; catalog IDs use the rulebook `ID` column.
 DROP_COLUMNS = ("EPIC ID", "FEATURE ID", "WORKSHOP ID")
@@ -55,6 +54,10 @@ SKIP_JSON_NAMES = {
     "schema-profile",
     "validation-report",
 }
+CATALOG_EPIC_JSON = "epic.json"
+CATALOG_FEATURE_JSON = "feature.json"
+WORKSHOP_CATALOG_JSON = "work-items.json"
+DEFAULT_MAX_RELATED_FEATURES = 3
 
 
 def tokenize(text: str) -> list[str]:
@@ -122,7 +125,21 @@ def load_yaml_mapping(config_path: Path) -> dict[str, Any]:
     return data.get("work_item_mapping") or {}
 
 
-def load_work_items(work_items_dir: Path) -> dict[str, list[dict[str, Any]]]:
+def _catalog_file_for_type(wit: str, path_name: str, cfg: dict[str, Any]) -> bool:
+    epic_f = cfg.get("catalog_epic_json", CATALOG_EPIC_JSON)
+    feature_f = cfg.get("catalog_feature_json", CATALOG_FEATURE_JSON)
+    workshop_f = cfg.get("workshop_catalog_json", WORKSHOP_CATALOG_JSON)
+    if wit == "Epic":
+        return path_name == epic_f
+    if wit == "Feature":
+        return path_name == feature_f
+    if wit == "Workshop":
+        return path_name == workshop_f
+    return False
+
+
+def load_work_items(work_items_dir: Path, cfg: dict[str, Any] | None = None) -> dict[str, list[dict[str, Any]]]:
+    mapping_cfg = cfg or {}
     buckets: dict[str, list[dict[str, Any]]] = {"Epic": [], "Feature": [], "Workshop": []}
     seen: set[tuple[str, str]] = set()
     if not work_items_dir.is_dir():
@@ -143,6 +160,8 @@ def load_work_items(work_items_dir: Path) -> dict[str, list[dict[str, Any]]]:
                 continue
             wit = (item.get("workItemType") or "").strip()
             if wit not in buckets:
+                continue
+            if not _catalog_file_for_type(wit, path.name, mapping_cfg):
                 continue
             wid = str(item.get("workItemId") or item.get("source", {}).get("id") or "").strip()
             if not wid:
@@ -190,37 +209,37 @@ def pick_strong(
     return top, f"strong ({top_score:.1f})"
 
 
-def pick_best(
-    scores: list[tuple[float, dict[str, Any]]],
-) -> tuple[dict[str, Any] | None, str]:
-    """Highest-scoring catalog Feature, even below the strong threshold."""
-    positive = [(s, c) for s, c in scores if s > 0]
-    if not positive:
-        return None, "no_positive_score"
-    positive.sort(key=lambda x: x[0], reverse=True)
-    top_score, top = positive[0]
-    return top, f"best ({top_score:.1f})"
-
-
-def pick_strong_unique_title(
+def pick_top_feature_matches(
     scores: list[tuple[float, dict[str, Any]]],
     threshold: float,
     margin: float,
-) -> tuple[dict[str, Any] | None, str]:
-    """Ignore Features that share a normalized title across multiple catalog IDs."""
-    by_core: dict[str, list[tuple[float, dict[str, Any]]]] = defaultdict(list)
-    for score, cand in scores:
-        by_core[normalize_title(cand.get("title") or "")].append((score, cand))
-    unique: list[tuple[float, dict[str, Any]]] = []
-    for core, group in by_core.items():
-        if not core:
-            continue
-        ids = {c["id"] for _s, c in group}
-        if len(ids) == 1:
-            unique.append(max(group, key=lambda x: x[0]))
-    if not unique:
-        return None, "no_unique_catalog_title"
-    return pick_strong(unique, threshold, margin)
+    max_features: int,
+) -> tuple[list[tuple[dict[str, Any], float, str]], str]:
+    """Up to max_features catalog Features at or above threshold within winner margin of the top."""
+    if max_features < 1:
+        max_features = 1
+    ranked = sorted(scores, key=lambda x: x[0], reverse=True)
+    if not ranked or ranked[0][0] < threshold:
+        top = ranked[0][0] if ranked else 0.0
+        return [], f"below_threshold ({top:.1f} < {threshold})"
+    top_score = ranked[0][0]
+    winners: list[tuple[dict[str, Any], float, str]] = []
+    for score, cand in ranked:
+        if score < threshold:
+            break
+        if (top_score - score) >= margin:
+            break
+        winners.append((cand, score, f"strong ({score:.1f})"))
+        if len(winners) >= max_features:
+            break
+    if not winners:
+        return [], f"below_threshold ({top_score:.1f} < {threshold})"
+    summary = (
+        f"multi_strong ({len(winners)} features within margin {margin})"
+        if len(winners) > 1
+        else winners[0][2]
+    )
+    return winners, summary
 
 
 def score_titles(query_title: str, candidates: list[dict[str, Any]]) -> list[tuple[float, dict[str, Any]]]:
@@ -261,108 +280,102 @@ def feature_is_relevant_to_story(feat_title: str, story_title: str) -> bool:
     return False
 
 
-def score_story_to_catalog_feature(story_title: str, blob: str, feature: dict[str, Any]) -> float:
-    feat_title = feature.get("title") or ""
-    text = blob or story_title
-    if not feature_is_relevant_to_story(feat_title, story_title) and not feature_is_relevant_to_story(feat_title, text):
+def feature_catalog_text(item: dict[str, Any]) -> str:
+    return f"{item.get('title') or ''} {item.get('description') or ''}"
+
+
+def description_overlap_score(story_text: str, catalog_text: str) -> float:
+    ftoks = set(tokenize(normalize_title(catalog_text)))
+    stoks = set(tokenize(normalize_title(story_text)))
+    if not ftoks or not stoks:
         return 0.0
-    base = title_score(feat_title, text)
-    core = normalize_title(feat_title)
-    words = [w for w in core.split() if w not in STOPWORDS and len(w) > 3]
-    st = story_title.lower()
-    if len(words) >= 2:
-        hits = sum(1 for i in range(len(words) - 1) if f"{words[i]} {words[i + 1]}" in st)
-        if hits:
-            base = min(100.0, base + 18.0 * hits)
-    return round(base, 1)
+    inter = token_overlap(ftoks, stoks)
+    strong = {t for t in inter if len(t) > 3 and t not in WEAK_MATCH_TOKENS}
+    if len(strong) < 2:
+        return 0.0
+    return min(100.0, 35.0 + 12.0 * len(strong))
 
 
-# Story phrase → distinctive catalog Feature title fragment.
-# First hit wins. IDs are resolved from feature.json, never invented.
-TOPIC_HINTS: list[tuple[tuple[str, ...], str]] = [
-    (("install base",), "install base management"),
-    (("escalat",), "escalation"),
-    (("training",), "partner training"),
-    (("account-planning",), "channel partner strategy"),
-    (("account planning",), "channel partner strategy"),
-    (("legal entity",), "partner data available in crm"),
-    (("visibility",), "partner data available in crm"),
-    (("read-only",), "partner data available in crm"),
-    (("record owner",), "partner data available in crm"),
-    (("sync", "onboarding"), "data synchronization"),
-    (("onboarding",), "partner onboarding"),
-    (("approved partner",), "partner onboarding"),
-    (("distribute leads",), "partner lead generation"),
-    (("own leads",), "lead registration"),
-    (("account manager",), "lead registration"),
-    (("lead",), "lead registration"),
-    (("deal registration",), "opportunity management"),
-    (("pipeline",), "opportunity management"),
-    (("spare",), "service contract management"),
-    (("service-partner",), "service contract management"),
-    (("service partner",), "service contract management"),
-    (("discount",), "quotation & pricing"),
-    (("pricing",), "quotation & pricing"),
-    (("sales order",), "order capture"),
-    (("quote",), "quotation & pricing"),
-    (("quotation",), "quotation & pricing"),
-    (("opportunity",), "opportunity management"),
-    (("reseller",), "partner contracting"),
-    (("sales-partner contract",), "partner contracting"),
-    (("list price",), "contract management"),
-    (("contract duration",), "contract management"),
-    (("finalized contract",), "contracting"),
-    (("approval",), "quotation"),
-    (("requested delivery",), "order capture"),
-    (("customs",), "fulfillment & shipment"),
-    (("shipment",), "fulfillment & shipment"),
-    (("lock order",), "fulfillment & shipment"),
-    (("fulfillment status",), "fulfillment & shipment"),
-    (("contract",), "contract"),
-]
-
-B2B_SALES_EPICS = {"67461", "67462", "67557"}
+def workshop_context_tokens(workshop_text: str) -> set[str]:
+    return {
+        t
+        for t in tokenize(normalize_title(workshop_text))
+        if len(t) > 3 and t not in WEAK_MATCH_TOKENS
+    }
 
 
-def _topic_fragment(text: str) -> str:
-    lowered = text.lower()
-    for phrases, title_fragment in TOPIC_HINTS:
-        if all(p in lowered for p in phrases):
-            return title_fragment
-    return ""
+def apply_workshop_context_gate(
+    score: float,
+    feature: dict[str, Any],
+    epic: dict[str, Any] | None,
+    workshop_tokens: set[str],
+    min_overlap: int,
+) -> float:
+    if score <= 0 or min_overlap <= 0 or not workshop_tokens:
+        return score
+    bundle = f"{feature_catalog_text(feature)} {feature_catalog_text(epic) if epic else ''}"
+    cat_tokens = {
+        t for t in tokenize(normalize_title(bundle)) if len(t) > 3 and t not in WEAK_MATCH_TOKENS
+    }
+    strong = {t for t in token_overlap(workshop_tokens, cat_tokens) if len(t) > 3}
+    if len(strong) < min_overlap:
+        return 0.0
+    return score
 
 
-def find_topic_feature(
+def score_story_to_catalog_feature(
     story_title: str,
     blob: str,
-    features: list[dict[str, Any]],
+    feature: dict[str, Any],
+    epic: dict[str, Any] | None = None,
+    workshop_tokens: set[str] | None = None,
+    workshop_min_overlap: int = 0,
+) -> float:
+    feat_title = feature.get("title") or ""
+    text = blob or story_title
+    catalog = feature_catalog_text(feature)
+    desc_score = description_overlap_score(text, catalog)
+    title_relevant = feature_is_relevant_to_story(feat_title, story_title) or feature_is_relevant_to_story(
+        feat_title, text
+    )
+    if not title_relevant and desc_score < 40.0:
+        base = 0.0
+    else:
+        base = max(title_score(feat_title, text), title_score(catalog, text), desc_score)
+        core = normalize_title(feat_title)
+        words = [w for w in core.split() if w not in STOPWORDS and len(w) > 3]
+        st = story_title.lower()
+        if len(words) >= 2:
+            hits = sum(1 for i in range(len(words) - 1) if f"{words[i]} {words[i + 1]}" in st)
+            if hits:
+                base = min(100.0, base + 18.0 * hits)
+    return round(
+        apply_workshop_context_gate(
+            base, feature, epic, workshop_tokens or set(), workshop_min_overlap
+        ),
+        1,
+    )
+
+
+def _feature_epic_match(
+    feature: dict[str, Any],
     epic_by_id: dict[str, dict[str, Any]],
+    feat_why: str,
+    score: float,
 ) -> dict[str, Any] | None:
-    fragment = _topic_fragment(story_title) or _topic_fragment(blob)
-    if not fragment:
+    parent = str(feature.get("parent_id") or "")
+    epic = epic_by_id.get(parent)
+    if not epic:
         return None
-    frag = normalize_title(fragment)
-    hits = [
-        f
-        for f in features
-        if frag and frag in normalize_title(f.get("title") or "")
-        and str(f.get("parent_id") or "") in epic_by_id
-    ]
-    if not hits:
-        return None
-    preferred = [f for f in hits if str(f.get("parent_id") or "") in B2B_SALES_EPICS]
-    pool = preferred or hits
-
-    def rank(feat: dict[str, Any]) -> tuple[float, int, str]:
-        title = normalize_title(feat.get("title") or "")
-        exact = 0 if title == frag or title.startswith(frag) else 1
-        coverage = len(frag) / max(len(title), 1)
-        parent = str(feat.get("parent_id"))
-        epic_rank = 0 if parent == "67462" else 1 if parent == "67557" else 2
-        return (exact, epic_rank, -coverage, title)
-
-    pool.sort(key=rank)
-    return pool[0]
+    return {
+        "epic_id": str(epic["id"]),
+        "feature_id": str(feature["id"]),
+        "feature": feature,
+        "epic": epic,
+        "feat_why": feat_why,
+        "epic_why": f"parent of feature {feature['id']}",
+        "score": score,
+    }
 
 
 def resolve_story_to_existing(
@@ -371,53 +384,72 @@ def resolve_story_to_existing(
     buckets: dict[str, list[dict[str, Any]]],
     threshold: float,
     margin: float,
+    workshop_context: str = "",
+    max_features: int = DEFAULT_MAX_RELATED_FEATURES,
+    workshop_min_overlap: int = 0,
 ) -> dict[str, Any]:
-    """Map a User Story to an existing Feature whose parent Epic is in the catalog.
-
-    A strong unique Feature is preferred. If none clears the threshold, the
-    highest-scoring catalog Feature with a parent Epic is used so every story
-    receives a Feature ID. No new Epic/Feature is created.
-    """
+    """Map to existing feature.json rows; parent Epic must exist in epic.json (generic scoring)."""
     features = buckets.get("Feature") or []
     epic_by_id = {e["id"]: e for e in (buckets.get("Epic") or [])}
-    feat_scores = [(score_story_to_catalog_feature(story_title, blob, f), f) for f in features]
-    feature = find_topic_feature(story_title, blob or story_title, features, epic_by_id)
-    feat_why = "topic match to catalog feature title" if feature else ""
-    if not feature:
-        feature, feat_why = pick_strong_unique_title(feat_scores, threshold, margin)
-    if not feature:
-        feature, feat_why = pick_best(feat_scores)
+    w_tokens = workshop_context_tokens(workshop_context)
+    feat_scores: list[tuple[float, dict[str, Any]]] = []
+    for f in features:
+        parent = str(f.get("parent_id") or "")
+        epic = epic_by_id.get(parent)
+        feat_scores.append(
+            (
+                score_story_to_catalog_feature(
+                    story_title,
+                    blob,
+                    f,
+                    epic=epic,
+                    workshop_tokens=w_tokens,
+                    workshop_min_overlap=workshop_min_overlap,
+                ),
+                f,
+            )
+        )
+    winners, feat_why = pick_top_feature_matches(feat_scores, threshold, margin, max_features)
+    matches: list[dict[str, Any]] = []
+    for feature, score, why in winners:
+        hit = _feature_epic_match(feature, epic_by_id, why, score)
+        if hit:
+            matches.append(hit)
     empty: dict[str, Any] = {
         "epic_id": "",
         "feature_id": "",
-        "feature": feature,
+        "feature": None,
         "epic": None,
+        "matches": [],
         "feat_scores": feat_scores,
         "epic_scores": [],
         "feat_why": feat_why,
         "epic_why": "skipped",
         "pair": "unmatched",
     }
-    if not feature:
+    if not matches:
+        if winners:
+            orphan = winners[0][0]
+            empty["feature"] = orphan
+            empty["pair"] = "feature_without_epic"
+            empty["feat_why"] = f"{feat_why}; withheld (parent epic not in catalog)"
+            parent = str(orphan.get("parent_id") or "")
+            empty["epic_why"] = f"parent {parent or '(none)'} not in epic.json"
+            return empty
         empty["pair"] = "no_feature"
-        empty["epic_why"] = "skipped (no unique catalog feature)"
+        empty["epic_why"] = "skipped (no catalog feature above threshold)"
         return empty
-    parent = str(feature.get("parent_id") or "")
-    epic = epic_by_id.get(parent)
-    if not epic:
-        empty["pair"] = "feature_without_epic"
-        empty["feat_why"] = f"{feat_why}; withheld (parent epic not in catalog)"
-        empty["epic_why"] = f"parent {parent or '(none)'} not in epic.json"
-        return empty
+    first = matches[0]
     return {
-        "epic_id": str(epic["id"]),
-        "feature_id": str(feature["id"]),
-        "feature": feature,
-        "epic": epic,
+        "epic_id": first["epic_id"],
+        "feature_id": first["feature_id"],
+        "feature": first["feature"],
+        "epic": first["epic"],
+        "matches": matches,
         "feat_scores": feat_scores,
-        "epic_scores": [(100.0, epic)],
+        "epic_scores": [(100.0, first["epic"])],
         "feat_why": feat_why,
-        "epic_why": f"parent of feature {feature['id']}",
+        "epic_why": first["epic_why"],
         "pair": "matched",
     }
 
@@ -446,6 +478,8 @@ def map_stories(
     buckets: dict[str, list[dict[str, Any]]],
     threshold: float,
     margin: float,
+    max_features: int = DEFAULT_MAX_RELATED_FEATURES,
+    workshop_min_overlap: int = 0,
 ) -> tuple[list[dict[str, str]], list[dict[str, Any]]]:
     keys = _row_keys(rows)
     workshops: list[dict[str, str]] = []
@@ -456,6 +490,7 @@ def map_stories(
     workshop_scores: list[tuple[float, dict[str, Any]]] = []
     workshop_why = "no_csv_workshop"
     last_workshop_title = ""
+    workshop_context = ""
     matched_features: dict[str, dict[str, Any]] = {}
     matched_epics: dict[str, dict[str, Any]] = {}
 
@@ -468,6 +503,7 @@ def map_stories(
 
         if wit == "Workshop":
             last_workshop_title = title
+            workshop_context = story_blob(row)
             workshop_scores = score_titles(title, buckets.get("Workshop") or [])
             workshop_pick, workshop_why = pick_strong(workshop_scores, threshold, margin)
             if workshop_pick:
@@ -478,50 +514,112 @@ def map_stories(
             trailing.append(out)
             continue
 
-        pair = resolve_story_to_existing(title, story_blob(row), buckets, threshold, margin)
-        feature_id = pair["feature_id"] if pair["pair"] == "matched" else ""
-        epic_id = pair["epic_id"] if pair["pair"] == "matched" else ""
-        workshop_id = workshop_pick["id"] if workshop_pick else ""
-        if pair["pair"] == "matched" and pair["feature"] and pair["epic"]:
-            matched_features[feature_id] = pair["feature"]
-            matched_epics[epic_id] = pair["epic"]
-            out["ID"] = feature_id
-
-        cat_feat_scores = pair["feat_scores"]
-        feature = pair["feature"]
-        epic = pair["epic"]
-        log_entries.append(
-            {
-                "csvRow": idx + 2,
-                "title": title,
-                "status": "matched" if pair["pair"] == "matched" else "unmatched",
-                "pair": pair["pair"],
-                "catalogFeatureTitle": feature["title"] if feature else "",
-                "catalogEpicTitle": epic["title"] if epic else "",
-                "epicId": epic_id,
-                "featureId": feature_id,
-                "workshopId": workshop_id,
-                "feature": {
-                    "id": feature_id,
-                    "title": feature["title"] if feature else "",
-                    "score": round(cat_feat_scores[0][0], 1) if cat_feat_scores else 0,
-                    "rationale": pair["feat_why"],
-                },
-                "epic": {
-                    "id": epic_id,
-                    "title": epic["title"] if epic else "",
-                    "score": 100.0 if epic_id else 0,
-                    "rationale": pair["epic_why"],
-                },
-                "workshop": {
-                    "id": workshop_id,
-                    "title": workshop_pick["title"] if workshop_pick else last_workshop_title,
-                    "score": round(workshop_scores[0][0], 1) if workshop_scores else 0,
-                    "rationale": workshop_why,
-                },
-            }
+        pair = resolve_story_to_existing(
+            title,
+            story_blob(row),
+            buckets,
+            threshold,
+            margin,
+            workshop_context=workshop_context,
+            max_features=max_features,
+            workshop_min_overlap=workshop_min_overlap,
         )
-        stories.append(out)
+        workshop_id = workshop_pick["id"] if workshop_pick else ""
+        cat_feat_scores = pair["feat_scores"]
+        story_matches = pair.get("matches") or []
+        if pair["pair"] == "matched" and story_matches:
+            feature_ids: list[str] = []
+            match_details: list[dict[str, Any]] = []
+            for m in story_matches:
+                fid = m["feature_id"]
+                eid = m["epic_id"]
+                feature_ids.append(fid)
+                matched_features[fid] = m["feature"]
+                matched_epics[eid] = m["epic"]
+                match_details.append(
+                    {
+                        "featureId": fid,
+                        "epicId": eid,
+                        "catalogFeatureTitle": m["feature"]["title"],
+                        "catalogEpicTitle": m["epic"]["title"],
+                        "score": round(m.get("score", 0.0), 1),
+                        "rationale": m["feat_why"],
+                    }
+                )
+                story_out = {k: out.get(k) or "" for k in keys}
+                story_out["ID"] = fid
+                stories.append(story_out)
+            first = story_matches[0]
+            log_entries.append(
+                {
+                    "csvRow": idx + 2,
+                    "title": title,
+                    "status": "matched",
+                    "pair": pair["pair"],
+                    "catalogFeatureTitle": first["feature"]["title"],
+                    "catalogEpicTitle": first["epic"]["title"],
+                    "epicId": first["epic_id"],
+                    "featureId": first["feature_id"],
+                    "featureIds": feature_ids,
+                    "matches": match_details,
+                    "workshopId": workshop_id,
+                    "feature": {
+                        "id": first["feature_id"],
+                        "title": first["feature"]["title"],
+                        "score": round(cat_feat_scores[0][0], 1) if cat_feat_scores else 0,
+                        "rationale": pair["feat_why"],
+                    },
+                    "epic": {
+                        "id": first["epic_id"],
+                        "title": first["epic"]["title"],
+                        "score": 100.0,
+                        "rationale": first["epic_why"],
+                    },
+                    "workshop": {
+                        "id": workshop_id,
+                        "title": workshop_pick["title"] if workshop_pick else last_workshop_title,
+                        "score": round(workshop_scores[0][0], 1) if workshop_scores else 0,
+                        "rationale": workshop_why,
+                    },
+                }
+            )
+        else:
+            feature = pair.get("feature")
+            epic = pair.get("epic")
+            log_entries.append(
+                {
+                    "csvRow": idx + 2,
+                    "title": title,
+                    "status": "unmatched",
+                    "pair": pair["pair"],
+                    "catalogFeatureTitle": feature["title"] if feature else "",
+                    "catalogEpicTitle": epic["title"] if epic else "",
+                    "epicId": "",
+                    "featureId": "",
+                    "featureIds": [],
+                    "matches": [],
+                    "workshopId": workshop_id,
+                    "feature": {
+                        "id": "",
+                        "title": feature["title"] if feature else "",
+                        "score": round(cat_feat_scores[0][0], 1) if cat_feat_scores else 0,
+                        "rationale": pair["feat_why"],
+                    },
+                    "epic": {
+                        "id": "",
+                        "title": epic["title"] if epic else "",
+                        "score": 0,
+                        "rationale": pair["epic_why"],
+                    },
+                    "workshop": {
+                        "id": workshop_id,
+                        "title": workshop_pick["title"] if workshop_pick else last_workshop_title,
+                        "score": round(workshop_scores[0][0], 1) if workshop_scores else 0,
+                        "rationale": workshop_why,
+                    },
+                }
+            )
+            stories.append(out)
 
     epic_rows = [
         catalog_item_row(keys, "Epic", e)
@@ -677,6 +775,8 @@ def main() -> int:
     cfg = load_yaml_mapping(Path(args.config))
     threshold = float(args.threshold if args.threshold is not None else cfg.get("strong_threshold", 62))
     margin = float(args.margin if args.margin is not None else cfg.get("winner_margin", 8))
+    max_features = int(cfg.get("max_related_features", DEFAULT_MAX_RELATED_FEATURES))
+    workshop_min_overlap = int(cfg.get("workshop_context_min_overlap", 0))
 
     source = Path(args.csv)
     if not source.is_file():
@@ -688,8 +788,15 @@ def main() -> int:
         source_headers = list(reader.fieldnames or [])
         rows = [{k: (r.get(k) or "") for k in source_headers} for r in reader]
 
-    buckets = load_work_items(Path(args.work_items_dir))
-    mapped, log_entries = map_stories(rows, buckets, threshold, margin)
+    buckets = load_work_items(Path(args.work_items_dir), cfg)
+    mapped, log_entries = map_stories(
+        rows,
+        buckets,
+        threshold,
+        margin,
+        max_features=max_features,
+        workshop_min_overlap=workshop_min_overlap,
+    )
     headers = [h for h in source_headers if h not in DROP_COLUMNS]
     if "ID" not in headers:
         headers.insert(0, "ID")

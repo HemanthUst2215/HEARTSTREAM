@@ -86,10 +86,15 @@ work_item_mapping:
   command: generate-user-stories-from-transcript
   agent: work-item-mapping-agent
   work_items_dir: artifacts/work-items
+  catalog_epic_json: epic.json
+  catalog_feature_json: feature.json
+  workshop_catalog_json: work-items.json
   map_script: scripts/map-user-stories-to-work-items.py
-  strong_threshold: 62   # 0-100 title similarity; below this, IDs stay blank
-  winner_margin: 8       # top score must beat runner-up by this or leave blank (ambiguous)
-  require_both_epic_and_feature: true  # fill both IDs only when a catalog Feature uniquely matches the story and its parent Epic exists in JSON
+  strong_threshold: 62   # 0-100 similarity; below this, User Story ID stays blank
+  winner_margin: 8       # Features within this band of the top score may each get a row (up to max_related_features)
+  max_related_features: 3
+  workshop_context_min_overlap: 2  # min shared tokens (CSV workshop row vs feature+epic text); set 0 to disable
+  require_both_epic_and_feature: true
   id_column: ID  # catalog Epic/Feature/Workshop IDs only; do not add EPIC ID / FEATURE ID columns
   public_xlsx: artifacts/intake/<date>-user-stories-from-transcript.xlsx
   invest_separate: artifacts/intake/<date>-invest-scorecard.csv

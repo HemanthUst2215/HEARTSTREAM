@@ -1,0 +1,8 @@
+{
+  "date": "2026-10-12",
+  "command": "/process-work-items-csv",
+  "profiles": [
+    "artifacts/work-items/2026-10-12-schema-profile-epic.json",
+    "artifacts/work-items/2026-10-12-schema-profile-feature.json"
+  ]
+}

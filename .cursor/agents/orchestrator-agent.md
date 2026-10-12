@@ -50,8 +50,8 @@ Plan → Act → Validate → Refine (max 3 ceiling).
 | Iteration 1 Validate meets DoD | Stop. Do not Refine. Do not start iteration 2. |
 | Gap scripts/runs without br-coverage-validator PASS | Refuse. Expand cases. Implementers must not write the coverage file. Slice tests on implement-* are not blocked by expand PASS (ASSUMPTION-PCC-002). |
 | Subagent below quality gate | Re-delegate with feedback (max 3; Refine only from findings) |
-| `/generate-user-stories-from-transcript` CSV validator PASS | Spawn **work-item-mapping-agent** (explicit name) for Epic/Feature/Workshop ID mapping; do not skip when `artifacts/work-items/` has JSON |
-| `/generate-user-stories-from-transcript` mapping skipped | Only if work-items catalog empty — Open DQ; still write the one Excel (IDs blank) + separate INVEST CSV |
+| `/generate-user-stories-from-transcript` CSV validator PASS | Spawn **work-item-mapping-agent** (explicit name); run `map-user-stories-to-work-items.py` with `work_item_mapping` from config (generic scoring — rule `32-catalog-only-work-item-mapping.mdc`) |
+| `/generate-user-stories-from-transcript` mapping skipped | Only if `epic.json` or `feature.json` (config paths) lacks usable `workItems[]` — Open DQ; still write public Excel (IDs blank) + INVEST CSV. Do not skip because other JSON exists under `artifacts/work-items/` |
 | `/evaluate-user-stories` | Route **user-story-evaluation-agent** after intake-safety exit 0. **allocate-run** first — never overwrite a prior evaluation HTML/JSON. Refuse when a required path is absent. Do not treat scores as Accepted while `ASSUMPTION-USEVAL-001` is pending |
 | `/generate-test-cases-from-user-stories` | Route **test-agent** mode `from-user-story-excel` after intake-safety exit 0. Load `docs/intake/msd-test-case-rulebook.yaml` only — never the bootstrap execution-plan Excel. Refuse when `user_story_excel` is absent. Do not spawn quality-agent. Do not generate cases during framework/bootstrap-only work |
 | `fix-queue.json` has `auto_fix: true` open | `/close-eval-gaps` (inner of `/run-eval`) |

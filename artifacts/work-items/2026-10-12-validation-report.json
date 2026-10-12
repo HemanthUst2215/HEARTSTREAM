@@ -1,0 +1,19 @@
+{
+  "date": "2026-10-12",
+  "command": "/process-work-items-csv",
+  "verdict": "PASS",
+  "reports": [
+    {
+      "source": "EPIC.csv",
+      "path": "artifacts/work-items/2026-10-12-validation-report-epic.json",
+      "verdict": "PASS",
+      "rowCount": 17
+    },
+    {
+      "source": "Feature.csv",
+      "path": "artifacts/work-items/2026-10-12-validation-report-feature.json",
+      "verdict": "PASS",
+      "rowCount": 221
+    }
+  ]
+}

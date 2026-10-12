@@ -1,0 +1,28 @@
+---
+description: Catalog-only Epic/Feature mapping for transcript user stories (no hardcoded domains)
+alwaysApply: true
+---
+
+# Catalog-Only Work Item Mapping
+
+Applies to `/generate-user-stories-from-transcript`, **work-item-mapping-agent**, **business-analyst-agent** mode `transcript-ado-csv`, `scripts/map-user-stories-to-work-items.py`, and related subagents (`work-item-hierarchy-matcher`, `transcript-story-extractor`).
+
+## Do
+
+- Load Epic and Feature catalogs from paths in `.cursor/config.yaml` → `work_item_mapping` (`catalog_epic_json`, `catalog_feature_json`). Workshop scope IDs come from `workshop_catalog_json` only for Workshop row context — never as Feature parents or User Story `ID`.
+- After CSV validation PASS, spawn **work-item-mapping-agent** by explicit name every run; run `map-user-stories-to-work-items.py` with thresholds from config (`strong_threshold`, `winner_margin`, `max_related_features`, `workshop_context_min_overlap`).
+- Match with **generic** title/description token overlap only. Allow multiple User Story rows (one per qualifying Feature, up to `max_related_features`) when scores are within `winner_margin` of the top Feature.
+- Leave User Story `ID` blank when no catalog Feature meets the threshold and parent Epic exists in `epic.json`.
+- Register Open DQ when `epic.json` or `feature.json` is missing or has no `workItems[]` — still deliver working CSV, public Excel (IDs blank), and INVEST scorecard.
+
+## Don't
+
+- Hardcode domain phrases, epic ID lists, topic hint tables, or finance/GL/B2B routing in agents, skills, or the mapper script.
+- Invent Epic or Feature titles or IDs from the transcript; promote Workshop rows to Feature headers; add `EPIC ID` / `FEATURE ID` columns.
+- Let business-analyst-agent fill catalog Feature `ID` on the public Excel — mapping is Phase 5 only.
+- Skip work-item-mapping-agent because other JSON exists under `artifacts/work-items/` (e.g. validation reports, schema profiles).
+
+## Reference
+
+- Skill: `.cursor/skills/work-item-mapping/SKILL.md`
+- Command: `.cursor/commands/generate-user-stories-from-transcript.md`

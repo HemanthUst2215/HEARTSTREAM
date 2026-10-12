@@ -12,7 +12,8 @@ business-analyst-agent (mode `transcript-ado-csv`)
 ## Inputs
 - Transcript path or intake notes from transcript-analyzer
 - Rulebook path (default `docs/intake/user-story-csv-rulebook.yaml`)
-- Optional hints only (never new Epic/Feature rows)
+- **Required context:** `artifacts/work-items/epic.json` and `artifacts/work-items/feature.json` (for Feature alignment notes in extraction — no new Epic/Feature rows)
+- Optional operator hints only (never new Epic/Feature IDs; no hardcoded domain/epic routing — mapping is generic in Phase 5 per rule `32-catalog-only-work-item-mapping.mdc`)
 
 ## Outputs
 - Section in `artifacts/intake/<date>-transcript-story-extraction.md` (candidate table + provenance)

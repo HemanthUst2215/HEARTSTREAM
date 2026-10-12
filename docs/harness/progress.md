@@ -2,15 +2,16 @@
 
 | Field | Value |
 |-------|-------|
-| **Updated** | 2026-10-09 |
-| **Last command** | `/generate-test-cases-from-user-stories` |
+| **Updated** | 2026-10-12 |
+| **Last command** | `/generate-user-stories-from-transcript` |
 
 ## Pipeline
 
 | Stage | Status |
 |-------|--------|
 | Factory installed | **Done** |
-| `/generate-user-story` or `/generate-brd` | Pending |
+| `/generate-user-stories-from-transcript` | **Done** (`artifacts/intake/2026-10-12-user-stories-from-transcript.xlsx`, INVEST `artifacts/intake/2026-10-12-invest-scorecard.csv`; audit `2026-10-12-generate-user-stories-from-transcript-gl-workshop.md`) |
+| `/generate-brd` | Pending |
 | `/generate-test-cases-from-user-stories` | **Done** (`artifacts/intake/2026-10-09-msd-e2e-test-cases.xlsx`; audit `2026-10-09-generate-test-cases-from-user-stories-v2.md`) |
 | Plan (`/plan-governed-stories`, `/plan-sprint`, or `/plan-bounded-context`) | Pending |
 | `/implement-api` | Pending |

@@ -1,0 +1,41 @@
+{
+  "command": "/process-work-items-csv",
+  "date": "2026-10-12",
+  "mode": "full",
+  "sources": [
+    {
+      "path": "EPIC.csv",
+      "rowCount": 17,
+      "scan": { "exitCode": 0, "result": "CLEAN" }
+    },
+    {
+      "path": "Feature.csv",
+      "rowCount": 221,
+      "scan": { "exitCode": 0, "result": "CLEAN" }
+    }
+  ],
+  "outputs": [
+    {
+      "source": "EPIC.csv",
+      "json": "artifacts/work-items/epic.json",
+      "summaryMd": "artifacts/work-items/epic-summary.md",
+      "schemaProfile": "artifacts/work-items/2026-10-12-schema-profile-epic.json",
+      "validationReport": "artifacts/work-items/2026-10-12-validation-report-epic.json",
+      "rowCount": 17,
+      "validationVerdict": "PASS"
+    },
+    {
+      "source": "Feature.csv",
+      "json": "artifacts/work-items/feature.json",
+      "summaryMd": "artifacts/work-items/feature-summary.md",
+      "schemaProfile": "artifacts/work-items/2026-10-12-schema-profile-feature.json",
+      "validationReport": "artifacts/work-items/2026-10-12-validation-report-feature.json",
+      "rowCount": 221,
+      "validationVerdict": "PASS"
+    }
+  ],
+  "notes": [
+    "One CSV → one JSON; no merge with work-items.json (Workshop).",
+    "Per-stem validation and schema-profile files preserved after transform."
+  ]
+}

@@ -1,0 +1,1095 @@
+{
+  "generatedAt": "2026-10-12T07:02:31.279289+00:00",
+  "sourceCsv": "artifacts\\intake\\.pipeline\\2026-10-12-user-stories-working.csv",
+  "threshold": 62.0,
+  "margin": 8.0,
+  "requireBothEpicAndFeature": true,
+  "catalogCounts": {
+    "Epic": 17,
+    "Feature": 221,
+    "Workshop": 119
+  },
+  "userStoryCount": 22,
+  "matched": 18,
+  "unmatched": 4,
+  "stories": [
+    {
+      "csvRow": 3,
+      "title": "Configure a global chart of accounts shared across legal entities",
+      "status": "matched",
+      "pair": "matched",
+      "catalogFeatureTitle": "2. Service Contract Management",
+      "catalogEpicTitle": "03. B2B Direct Service & Solution Delivery",
+      "epicId": "67557",
+      "featureId": "67560",
+      "featureIds": [
+        "67560"
+      ],
+      "matches": [
+        {
+          "featureId": "67560",
+          "epicId": "67557",
+          "catalogFeatureTitle": "2. Service Contract Management",
+          "catalogEpicTitle": "03. B2B Direct Service & Solution Delivery",
+          "score": 83.0,
+          "rationale": "strong (83.0)"
+        }
+      ],
+      "workshopId": "",
+      "feature": {
+        "id": "67560",
+        "title": "2. Service Contract Management",
+        "score": 0.0,
+        "rationale": "strong (83.0)"
+      },
+      "epic": {
+        "id": "67557",
+        "title": "03. B2B Direct Service & Solution Delivery",
+        "score": 100.0,
+        "rationale": "parent of feature 67560"
+      },
+      "workshop": {
+        "id": "",
+        "title": "02. Finance - General Ledger UST Led Workshop - 28/Sep/2026",
+        "score": 17.2,
+        "rationale": "below_threshold (17.2 < 62.0)"
+      }
+    },
+    {
+      "csvRow": 4,
+      "title": "Restrict selected main accounts to designated legal entities",
+      "status": "unmatched",
+      "pair": "no_feature",
+      "catalogFeatureTitle": "",
+      "catalogEpicTitle": "",
+      "epicId": "",
+      "featureId": "",
+      "featureIds": [],
+      "matches": [],
+      "workshopId": "",
+      "feature": {
+        "id": "",
+        "title": "",
+        "score": 0.0,
+        "rationale": "below_threshold (59.0 < 62.0)"
+      },
+      "epic": {
+        "id": "",
+        "title": "",
+        "score": 0,
+        "rationale": "skipped (no catalog feature above threshold)"
+      },
+      "workshop": {
+        "id": "",
+        "title": "02. Finance - General Ledger UST Led Workshop - 28/Sep/2026",
+        "score": 17.2,
+        "rationale": "below_threshold (17.2 < 62.0)"
+      }
+    },
+    {
+      "csvRow": 5,
+      "title": "Map main account categories for out-of-box financial reporting",
+      "status": "matched",
+      "pair": "matched",
+      "catalogFeatureTitle": "4. Opportunity Management",
+      "catalogEpicTitle": "01. B2B Direct Sales",
+      "epicId": "67461",
+      "featureId": "67489",
+      "featureIds": [
+        "67489"
+      ],
+      "matches": [
+        {
+          "featureId": "67489",
+          "epicId": "67461",
+          "catalogFeatureTitle": "4. Opportunity Management",
+          "catalogEpicTitle": "01. B2B Direct Sales",
+          "score": 95.0,
+          "rationale": "strong (95.0)"
+        }
+      ],
+      "workshopId": "",
+      "feature": {
+        "id": "67489",
+        "title": "4. Opportunity Management",
+        "score": 0.0,
+        "rationale": "strong (95.0)"
+      },
+      "epic": {
+        "id": "67461",
+        "title": "01. B2B Direct Sales",
+        "score": 100.0,
+        "rationale": "parent of feature 67489"
+      },
+      "workshop": {
+        "id": "",
+        "title": "02. Finance - General Ledger UST Led Workshop - 28/Sep/2026",
+        "score": 17.2,
+        "rationale": "below_threshold (17.2 < 62.0)"
+      }
+    },
+    {
+      "csvRow": 6,
+      "title": "Suspend unused legacy main accounts after cutover",
+      "status": "matched",
+      "pair": "matched",
+      "catalogFeatureTitle": "6. Partner Data Available in CRM & synchronization with FnO",
+      "catalogEpicTitle": "02. B2B Direct Through Reseller",
+      "epicId": "67462",
+      "featureId": "67510",
+      "featureIds": [
+        "67510",
+        "67658",
+        "67667"
+      ],
+      "matches": [
+        {
+          "featureId": "67510",
+          "epicId": "67462",
+          "catalogFeatureTitle": "6. Partner Data Available in CRM & synchronization with FnO",
+          "catalogEpicTitle": "02. B2B Direct Through Reseller",
+          "score": 71.0,
+          "rationale": "strong (71.0)"
+        },
+        {
+          "featureId": "67658",
+          "epicId": "67650",
+          "catalogFeatureTitle": "6. Entitlement Renewal (D365 CE)",
+          "catalogEpicTitle": "10. Auto-renewal Subscription",
+          "score": 71.0,
+          "rationale": "strong (71.0)"
+        },
+        {
+          "featureId": "67667",
+          "epicId": "67660",
+          "catalogFeatureTitle": "5. Entitlement Renewal (D365 CE)",
+          "catalogEpicTitle": "11. Subscription Renewal (Non-Auto)",
+          "score": 71.0,
+          "rationale": "strong (71.0)"
+        }
+      ],
+      "workshopId": "",
+      "feature": {
+        "id": "67510",
+        "title": "6. Partner Data Available in CRM & synchronization with FnO",
+        "score": 0.0,
+        "rationale": "multi_strong (3 features within margin 8.0)"
+      },
+      "epic": {
+        "id": "67462",
+        "title": "02. B2B Direct Through Reseller",
+        "score": 100.0,
+        "rationale": "parent of feature 67510"
+      },
+      "workshop": {
+        "id": "",
+        "title": "02. Finance - General Ledger UST Led Workshop - 28/Sep/2026",
+        "score": 17.2,
+        "rationale": "below_threshold (17.2 < 62.0)"
+      }
+    },
+    {
+      "csvRow": 7,
+      "title": "Block manual general journal posting to sub-ledger control accounts",
+      "status": "matched",
+      "pair": "matched",
+      "catalogFeatureTitle": "16. Invoicing",
+      "catalogEpicTitle": "01. B2B Direct Sales",
+      "epicId": "67461",
+      "featureId": "67500",
+      "featureIds": [
+        "67500"
+      ],
+      "matches": [
+        {
+          "featureId": "67500",
+          "epicId": "67461",
+          "catalogFeatureTitle": "16. Invoicing",
+          "catalogEpicTitle": "01. B2B Direct Sales",
+          "score": 71.0,
+          "rationale": "strong (71.0)"
+        }
+      ],
+      "workshopId": "",
+      "feature": {
+        "id": "67500",
+        "title": "16. Invoicing",
+        "score": 0.0,
+        "rationale": "strong (71.0)"
+      },
+      "epic": {
+        "id": "67461",
+        "title": "01. B2B Direct Sales",
+        "score": 100.0,
+        "rationale": "parent of feature 67500"
+      },
+      "workshop": {
+        "id": "",
+        "title": "02. Finance - General Ledger UST Led Workshop - 28/Sep/2026",
+        "score": 17.2,
+        "rationale": "below_threshold (17.2 < 62.0)"
+      }
+    },
+    {
+      "csvRow": 8,
+      "title": "Require approval before activating new main accounts",
+      "status": "matched",
+      "pair": "matched",
+      "catalogFeatureTitle": "4. Install Base Management",
+      "catalogEpicTitle": "03. B2B Direct Service & Solution Delivery",
+      "epicId": "67557",
+      "featureId": "67562",
+      "featureIds": [
+        "67562",
+        "67507",
+        "67560"
+      ],
+      "matches": [
+        {
+          "featureId": "67562",
+          "epicId": "67557",
+          "catalogFeatureTitle": "4. Install Base Management",
+          "catalogEpicTitle": "03. B2B Direct Service & Solution Delivery",
+          "score": 83.0,
+          "rationale": "strong (83.0)"
+        },
+        {
+          "featureId": "67507",
+          "epicId": "67462",
+          "catalogFeatureTitle": "3. Partner Contracting & Commercial Setup",
+          "catalogEpicTitle": "02. B2B Direct Through Reseller",
+          "score": 83.0,
+          "rationale": "strong (83.0)"
+        },
+        {
+          "featureId": "67560",
+          "epicId": "67557",
+          "catalogFeatureTitle": "2. Service Contract Management",
+          "catalogEpicTitle": "03. B2B Direct Service & Solution Delivery",
+          "score": 83.0,
+          "rationale": "strong (83.0)"
+        }
+      ],
+      "workshopId": "",
+      "feature": {
+        "id": "67562",
+        "title": "4. Install Base Management",
+        "score": 0.0,
+        "rationale": "multi_strong (3 features within margin 8.0)"
+      },
+      "epic": {
+        "id": "67557",
+        "title": "03. B2B Direct Service & Solution Delivery",
+        "score": 100.0,
+        "rationale": "parent of feature 67562"
+      },
+      "workshop": {
+        "id": "",
+        "title": "02. Finance - General Ledger UST Led Workshop - 28/Sep/2026",
+        "score": 17.2,
+        "rationale": "below_threshold (17.2 < 62.0)"
+      }
+    },
+    {
+      "csvRow": 9,
+      "title": "Omit main-account-level totaling on trial balance",
+      "status": "matched",
+      "pair": "matched",
+      "catalogFeatureTitle": "4. Opportunity Management",
+      "catalogEpicTitle": "01. B2B Direct Sales",
+      "epicId": "67461",
+      "featureId": "67489",
+      "featureIds": [
+        "67489",
+        "67562"
+      ],
+      "matches": [
+        {
+          "featureId": "67489",
+          "epicId": "67461",
+          "catalogFeatureTitle": "4. Opportunity Management",
+          "catalogEpicTitle": "01. B2B Direct Sales",
+          "score": 83.0,
+          "rationale": "strong (83.0)"
+        },
+        {
+          "featureId": "67562",
+          "epicId": "67557",
+          "catalogFeatureTitle": "4. Install Base Management",
+          "catalogEpicTitle": "03. B2B Direct Service & Solution Delivery",
+          "score": 83.0,
+          "rationale": "strong (83.0)"
+        }
+      ],
+      "workshopId": "",
+      "feature": {
+        "id": "67489",
+        "title": "4. Opportunity Management",
+        "score": 0.0,
+        "rationale": "multi_strong (2 features within margin 8.0)"
+      },
+      "epic": {
+        "id": "67461",
+        "title": "01. B2B Direct Sales",
+        "score": 100.0,
+        "rationale": "parent of feature 67489"
+      },
+      "workshop": {
+        "id": "",
+        "title": "02. Finance - General Ledger UST Led Workshop - 28/Sep/2026",
+        "score": 17.2,
+        "rationale": "below_threshold (17.2 < 62.0)"
+      }
+    },
+    {
+      "csvRow": 10,
+      "title": "Configure business unit profit center and cost center dimensions",
+      "status": "matched",
+      "pair": "matched",
+      "catalogFeatureTitle": "9. Partner Lead Generation & Performance",
+      "catalogEpicTitle": "02. B2B Direct Through Reseller",
+      "epicId": "67462",
+      "featureId": "67514",
+      "featureIds": [
+        "67514",
+        "67494",
+        "67491"
+      ],
+      "matches": [
+        {
+          "featureId": "67514",
+          "epicId": "67462",
+          "catalogFeatureTitle": "9. Partner Lead Generation & Performance",
+          "catalogEpicTitle": "02. B2B Direct Through Reseller",
+          "score": 71.0,
+          "rationale": "strong (71.0)"
+        },
+        {
+          "featureId": "67494",
+          "epicId": "67461",
+          "catalogFeatureTitle": "9. Contract Management",
+          "catalogEpicTitle": "01. B2B Direct Sales",
+          "score": 71.0,
+          "rationale": "strong (71.0)"
+        },
+        {
+          "featureId": "67491",
+          "epicId": "67461",
+          "catalogFeatureTitle": "6. Commercial Pricing Management",
+          "catalogEpicTitle": "01. B2B Direct Sales",
+          "score": 71.0,
+          "rationale": "strong (71.0)"
+        }
+      ],
+      "workshopId": "",
+      "feature": {
+        "id": "67514",
+        "title": "9. Partner Lead Generation & Performance",
+        "score": 0.0,
+        "rationale": "multi_strong (3 features within margin 8.0)"
+      },
+      "epic": {
+        "id": "67462",
+        "title": "02. B2B Direct Through Reseller",
+        "score": 100.0,
+        "rationale": "parent of feature 67514"
+      },
+      "workshop": {
+        "id": "",
+        "title": "02. Finance - General Ledger UST Led Workshop - 28/Sep/2026",
+        "score": 17.2,
+        "rationale": "below_threshold (17.2 < 62.0)"
+      }
+    },
+    {
+      "csvRow": 11,
+      "title": "Standardize cost center master data across legal entities",
+      "status": "matched",
+      "pair": "matched",
+      "catalogFeatureTitle": "6. Commercial Pricing Management",
+      "catalogEpicTitle": "01. B2B Direct Sales",
+      "epicId": "67461",
+      "featureId": "67491",
+      "featureIds": [
+        "67491",
+        "67564",
+        "67562"
+      ],
+      "matches": [
+        {
+          "featureId": "67491",
+          "epicId": "67461",
+          "catalogFeatureTitle": "6. Commercial Pricing Management",
+          "catalogEpicTitle": "01. B2B Direct Sales",
+          "score": 83.0,
+          "rationale": "strong (83.0)"
+        },
+        {
+          "featureId": "67564",
+          "epicId": "67557",
+          "catalogFeatureTitle": "6. Commercial Pricing Management",
+          "catalogEpicTitle": "03. B2B Direct Service & Solution Delivery",
+          "score": 83.0,
+          "rationale": "strong (83.0)"
+        },
+        {
+          "featureId": "67562",
+          "epicId": "67557",
+          "catalogFeatureTitle": "4. Install Base Management",
+          "catalogEpicTitle": "03. B2B Direct Service & Solution Delivery",
+          "score": 83.0,
+          "rationale": "strong (83.0)"
+        }
+      ],
+      "workshopId": "",
+      "feature": {
+        "id": "67491",
+        "title": "6. Commercial Pricing Management",
+        "score": 0.0,
+        "rationale": "multi_strong (3 features within margin 8.0)"
+      },
+      "epic": {
+        "id": "67461",
+        "title": "01. B2B Direct Sales",
+        "score": 100.0,
+        "rationale": "parent of feature 67491"
+      },
+      "workshop": {
+        "id": "",
+        "title": "02. Finance - General Ledger UST Led Workshop - 28/Sep/2026",
+        "score": 17.2,
+        "rationale": "below_threshold (17.2 < 62.0)"
+      }
+    },
+    {
+      "csvRow": 12,
+      "title": "Represent functional area for consolidated P and L reporting",
+      "status": "matched",
+      "pair": "matched",
+      "catalogFeatureTitle": "6.1 Partner Data Available in F&O",
+      "catalogEpicTitle": "02. B2B Direct Through Reseller",
+      "epicId": "67462",
+      "featureId": "67511",
+      "featureIds": [
+        "67511"
+      ],
+      "matches": [
+        {
+          "featureId": "67511",
+          "epicId": "67462",
+          "catalogFeatureTitle": "6.1 Partner Data Available in F&O",
+          "catalogEpicTitle": "02. B2B Direct Through Reseller",
+          "score": 80.0,
+          "rationale": "strong (80.0)"
+        }
+      ],
+      "workshopId": "",
+      "feature": {
+        "id": "67511",
+        "title": "6.1 Partner Data Available in F&O",
+        "score": 0.0,
+        "rationale": "strong (80.0)"
+      },
+      "epic": {
+        "id": "67462",
+        "title": "02. B2B Direct Through Reseller",
+        "score": 100.0,
+        "rationale": "parent of feature 67511"
+      },
+      "workshop": {
+        "id": "",
+        "title": "02. Finance - General Ledger UST Led Workshop - 28/Sep/2026",
+        "score": 17.2,
+        "rationale": "below_threshold (17.2 < 62.0)"
+      }
+    },
+    {
+      "csvRow": 13,
+      "title": "Enforce account structure rules for dimension combinations",
+      "status": "matched",
+      "pair": "matched",
+      "catalogFeatureTitle": "3. Partner Contracting & Commercial Setup",
+      "catalogEpicTitle": "02. B2B Direct Through Reseller",
+      "epicId": "67462",
+      "featureId": "67507",
+      "featureIds": [
+        "67507"
+      ],
+      "matches": [
+        {
+          "featureId": "67507",
+          "epicId": "67462",
+          "catalogFeatureTitle": "3. Partner Contracting & Commercial Setup",
+          "catalogEpicTitle": "02. B2B Direct Through Reseller",
+          "score": 71.0,
+          "rationale": "strong (71.0)"
+        }
+      ],
+      "workshopId": "",
+      "feature": {
+        "id": "67507",
+        "title": "3. Partner Contracting & Commercial Setup",
+        "score": 0.0,
+        "rationale": "strong (71.0)"
+      },
+      "epic": {
+        "id": "67462",
+        "title": "02. B2B Direct Through Reseller",
+        "score": 100.0,
+        "rationale": "parent of feature 67507"
+      },
+      "workshop": {
+        "id": "",
+        "title": "02. Finance - General Ledger UST Led Workshop - 28/Sep/2026",
+        "score": 17.2,
+        "rationale": "below_threshold (17.2 < 62.0)"
+      }
+    },
+    {
+      "csvRow": 14,
+      "title": "Default profit center and cost center on SCM-driven transactions",
+      "status": "matched",
+      "pair": "matched",
+      "catalogFeatureTitle": "5. Product & Pricing Management",
+      "catalogEpicTitle": "03. B2B Direct Service & Solution Delivery",
+      "epicId": "67557",
+      "featureId": "67563",
+      "featureIds": [
+        "67563",
+        "67490",
+        "67665"
+      ],
+      "matches": [
+        {
+          "featureId": "67563",
+          "epicId": "67557",
+          "catalogFeatureTitle": "5. Product & Pricing Management",
+          "catalogEpicTitle": "03. B2B Direct Service & Solution Delivery",
+          "score": 95.0,
+          "rationale": "strong (95.0)"
+        },
+        {
+          "featureId": "67490",
+          "epicId": "67461",
+          "catalogFeatureTitle": "5. Product & Pricing Management",
+          "catalogEpicTitle": "01. B2B Direct Sales",
+          "score": 95.0,
+          "rationale": "strong (95.0)"
+        },
+        {
+          "featureId": "67665",
+          "epicId": "67660",
+          "catalogFeatureTitle": "4. Order Processing (Retail Operations)",
+          "catalogEpicTitle": "11. Subscription Renewal (Non-Auto)",
+          "score": 95.0,
+          "rationale": "strong (95.0)"
+        }
+      ],
+      "workshopId": "",
+      "feature": {
+        "id": "67563",
+        "title": "5. Product & Pricing Management",
+        "score": 0.0,
+        "rationale": "multi_strong (3 features within margin 8.0)"
+      },
+      "epic": {
+        "id": "67557",
+        "title": "03. B2B Direct Service & Solution Delivery",
+        "score": 100.0,
+        "rationale": "parent of feature 67563"
+      },
+      "workshop": {
+        "id": "",
+        "title": "02. Finance - General Ledger UST Led Workshop - 28/Sep/2026",
+        "score": 17.2,
+        "rationale": "below_threshold (17.2 < 62.0)"
+      }
+    },
+    {
+      "csvRow": 15,
+      "title": "Limit active financial dimensions for performance",
+      "status": "matched",
+      "pair": "matched",
+      "catalogFeatureTitle": "5. Partner Onboarding & Enablement with Partner data synchronization",
+      "catalogEpicTitle": "02. B2B Direct Through Reseller",
+      "epicId": "67462",
+      "featureId": "67509",
+      "featureIds": [
+        "67509",
+        "67506",
+        "67520"
+      ],
+      "matches": [
+        {
+          "featureId": "67509",
+          "epicId": "67462",
+          "catalogFeatureTitle": "5. Partner Onboarding & Enablement with Partner data synchronization",
+          "catalogEpicTitle": "02. B2B Direct Through Reseller",
+          "score": 71.0,
+          "rationale": "strong (71.0)"
+        },
+        {
+          "featureId": "67506",
+          "epicId": "67462",
+          "catalogFeatureTitle": "2. Partner Onboarding & Qualification",
+          "catalogEpicTitle": "02. B2B Direct Through Reseller",
+          "score": 71.0,
+          "rationale": "strong (71.0)"
+        },
+        {
+          "featureId": "67520",
+          "epicId": "67462",
+          "catalogFeatureTitle": "15. Customer Contracting & Contract Synchronization with FnO",
+          "catalogEpicTitle": "02. B2B Direct Through Reseller",
+          "score": 71.0,
+          "rationale": "strong (71.0)"
+        }
+      ],
+      "workshopId": "",
+      "feature": {
+        "id": "67509",
+        "title": "5. Partner Onboarding & Enablement with Partner data synchronization",
+        "score": 0.0,
+        "rationale": "multi_strong (3 features within margin 8.0)"
+      },
+      "epic": {
+        "id": "67462",
+        "title": "02. B2B Direct Through Reseller",
+        "score": 100.0,
+        "rationale": "parent of feature 67509"
+      },
+      "workshop": {
+        "id": "",
+        "title": "02. Finance - General Ledger UST Led Workshop - 28/Sep/2026",
+        "score": 17.2,
+        "rationale": "below_threshold (17.2 < 62.0)"
+      }
+    },
+    {
+      "csvRow": 16,
+      "title": "Align all legal entities to a single fiscal calendar at go-live",
+      "status": "unmatched",
+      "pair": "no_feature",
+      "catalogFeatureTitle": "",
+      "catalogEpicTitle": "",
+      "epicId": "",
+      "featureId": "",
+      "featureIds": [],
+      "matches": [],
+      "workshopId": "",
+      "feature": {
+        "id": "",
+        "title": "",
+        "score": 0.0,
+        "rationale": "below_threshold (0.0 < 62.0)"
+      },
+      "epic": {
+        "id": "",
+        "title": "",
+        "score": 0,
+        "rationale": "skipped (no catalog feature above threshold)"
+      },
+      "workshop": {
+        "id": "",
+        "title": "02. Finance - General Ledger UST Led Workshop - 28/Sep/2026",
+        "score": 17.2,
+        "rationale": "below_threshold (17.2 < 62.0)"
+      }
+    },
+    {
+      "csvRow": 17,
+      "title": "Allow controlled posting to prior periods after soft close",
+      "status": "matched",
+      "pair": "matched",
+      "catalogFeatureTitle": "6. Entitlement Renewal (D365 CE)",
+      "catalogEpicTitle": "10. Auto-renewal Subscription",
+      "epicId": "67650",
+      "featureId": "67658",
+      "featureIds": [
+        "67658",
+        "67676",
+        "67667"
+      ],
+      "matches": [
+        {
+          "featureId": "67658",
+          "epicId": "67650",
+          "catalogFeatureTitle": "6. Entitlement Renewal (D365 CE)",
+          "catalogEpicTitle": "10. Auto-renewal Subscription",
+          "score": 71.0,
+          "rationale": "strong (71.0)"
+        },
+        {
+          "featureId": "67676",
+          "epicId": "67669",
+          "catalogFeatureTitle": "6. Entitlement Extension",
+          "catalogEpicTitle": "12. Subscription via PO",
+          "score": 71.0,
+          "rationale": "strong (71.0)"
+        },
+        {
+          "featureId": "67667",
+          "epicId": "67660",
+          "catalogFeatureTitle": "5. Entitlement Renewal (D365 CE)",
+          "catalogEpicTitle": "11. Subscription Renewal (Non-Auto)",
+          "score": 71.0,
+          "rationale": "strong (71.0)"
+        }
+      ],
+      "workshopId": "",
+      "feature": {
+        "id": "67658",
+        "title": "6. Entitlement Renewal (D365 CE)",
+        "score": 0.0,
+        "rationale": "multi_strong (3 features within margin 8.0)"
+      },
+      "epic": {
+        "id": "67650",
+        "title": "10. Auto-renewal Subscription",
+        "score": 100.0,
+        "rationale": "parent of feature 67658"
+      },
+      "workshop": {
+        "id": "",
+        "title": "02. Finance - General Ledger UST Led Workshop - 28/Sep/2026",
+        "score": 17.2,
+        "rationale": "below_threshold (17.2 < 62.0)"
+      }
+    },
+    {
+      "csvRow": 18,
+      "title": "Close AR and AP modules before general ledger period",
+      "status": "matched",
+      "pair": "matched",
+      "catalogFeatureTitle": "6. Entitlement Renewal (D365 CE)",
+      "catalogEpicTitle": "10. Auto-renewal Subscription",
+      "epicId": "67650",
+      "featureId": "67658",
+      "featureIds": [
+        "67658",
+        "67667",
+        "67500"
+      ],
+      "matches": [
+        {
+          "featureId": "67658",
+          "epicId": "67650",
+          "catalogFeatureTitle": "6. Entitlement Renewal (D365 CE)",
+          "catalogEpicTitle": "10. Auto-renewal Subscription",
+          "score": 71.0,
+          "rationale": "strong (71.0)"
+        },
+        {
+          "featureId": "67667",
+          "epicId": "67660",
+          "catalogFeatureTitle": "5. Entitlement Renewal (D365 CE)",
+          "catalogEpicTitle": "11. Subscription Renewal (Non-Auto)",
+          "score": 71.0,
+          "rationale": "strong (71.0)"
+        },
+        {
+          "featureId": "67500",
+          "epicId": "67461",
+          "catalogFeatureTitle": "16. Invoicing",
+          "catalogEpicTitle": "01. B2B Direct Sales",
+          "score": 71.0,
+          "rationale": "strong (71.0)"
+        }
+      ],
+      "workshopId": "",
+      "feature": {
+        "id": "67658",
+        "title": "6. Entitlement Renewal (D365 CE)",
+        "score": 0.0,
+        "rationale": "multi_strong (3 features within margin 8.0)"
+      },
+      "epic": {
+        "id": "67650",
+        "title": "10. Auto-renewal Subscription",
+        "score": 100.0,
+        "rationale": "parent of feature 67658"
+      },
+      "workshop": {
+        "id": "",
+        "title": "02. Finance - General Ledger UST Led Workshop - 28/Sep/2026",
+        "score": 17.2,
+        "rationale": "below_threshold (17.2 < 62.0)"
+      }
+    },
+    {
+      "csvRow": 19,
+      "title": "Maintain monthly exchange rates shared across company codes",
+      "status": "matched",
+      "pair": "matched",
+      "catalogFeatureTitle": "2. Cart & Checkout",
+      "catalogEpicTitle": "07. B2C AED Shop",
+      "epicId": "67607",
+      "featureId": "67610",
+      "featureIds": [
+        "67610"
+      ],
+      "matches": [
+        {
+          "featureId": "67610",
+          "epicId": "67607",
+          "catalogFeatureTitle": "2. Cart & Checkout",
+          "catalogEpicTitle": "07. B2C AED Shop",
+          "score": 71.0,
+          "rationale": "strong (71.0)"
+        }
+      ],
+      "workshopId": "",
+      "feature": {
+        "id": "67610",
+        "title": "2. Cart & Checkout",
+        "score": 0.0,
+        "rationale": "strong (71.0)"
+      },
+      "epic": {
+        "id": "67607",
+        "title": "07. B2C AED Shop",
+        "score": 100.0,
+        "rationale": "parent of feature 67610"
+      },
+      "workshop": {
+        "id": "",
+        "title": "02. Finance - General Ledger UST Led Workshop - 28/Sep/2026",
+        "score": 17.2,
+        "rationale": "below_threshold (17.2 < 62.0)"
+      }
+    },
+    {
+      "csvRow": 20,
+      "title": "Run foreign currency revaluation across GL and sub-ledgers",
+      "status": "unmatched",
+      "pair": "no_feature",
+      "catalogFeatureTitle": "",
+      "catalogEpicTitle": "",
+      "epicId": "",
+      "featureId": "",
+      "featureIds": [],
+      "matches": [],
+      "workshopId": "",
+      "feature": {
+        "id": "",
+        "title": "",
+        "score": 0.0,
+        "rationale": "below_threshold (59.0 < 62.0)"
+      },
+      "epic": {
+        "id": "",
+        "title": "",
+        "score": 0,
+        "rationale": "skipped (no catalog feature above threshold)"
+      },
+      "workshop": {
+        "id": "",
+        "title": "02. Finance - General Ledger UST Led Workshop - 28/Sep/2026",
+        "score": 17.2,
+        "rationale": "below_threshold (17.2 < 62.0)"
+      }
+    },
+    {
+      "csvRow": 21,
+      "title": "Track month-end close tasks in period close workspace",
+      "status": "matched",
+      "pair": "matched",
+      "catalogFeatureTitle": "7. Sales Order Synchronization (Finance)",
+      "catalogEpicTitle": "09. Software Upgrade",
+      "epicId": "67635",
+      "featureId": "67643",
+      "featureIds": [
+        "67643",
+        "67658",
+        "67667"
+      ],
+      "matches": [
+        {
+          "featureId": "67643",
+          "epicId": "67635",
+          "catalogFeatureTitle": "7. Sales Order Synchronization (Finance)",
+          "catalogEpicTitle": "09. Software Upgrade",
+          "score": 83.0,
+          "rationale": "strong (83.0)"
+        },
+        {
+          "featureId": "67658",
+          "epicId": "67650",
+          "catalogFeatureTitle": "6. Entitlement Renewal (D365 CE)",
+          "catalogEpicTitle": "10. Auto-renewal Subscription",
+          "score": 83.0,
+          "rationale": "strong (83.0)"
+        },
+        {
+          "featureId": "67667",
+          "epicId": "67660",
+          "catalogFeatureTitle": "5. Entitlement Renewal (D365 CE)",
+          "catalogEpicTitle": "11. Subscription Renewal (Non-Auto)",
+          "score": 83.0,
+          "rationale": "strong (83.0)"
+        }
+      ],
+      "workshopId": "",
+      "feature": {
+        "id": "67643",
+        "title": "7. Sales Order Synchronization (Finance)",
+        "score": 0.0,
+        "rationale": "multi_strong (3 features within margin 8.0)"
+      },
+      "epic": {
+        "id": "67635",
+        "title": "09. Software Upgrade",
+        "score": 100.0,
+        "rationale": "parent of feature 67643"
+      },
+      "workshop": {
+        "id": "",
+        "title": "02. Finance - General Ledger UST Led Workshop - 28/Sep/2026",
+        "score": 17.2,
+        "rationale": "below_threshold (17.2 < 62.0)"
+      }
+    },
+    {
+      "csvRow": 22,
+      "title": "Configure segregation of duties through security roles",
+      "status": "matched",
+      "pair": "matched",
+      "catalogFeatureTitle": "20. Payment Collection",
+      "catalogEpicTitle": "02. B2B Direct Through Reseller",
+      "epicId": "67462",
+      "featureId": "67525",
+      "featureIds": [
+        "67525",
+        "67502"
+      ],
+      "matches": [
+        {
+          "featureId": "67525",
+          "epicId": "67462",
+          "catalogFeatureTitle": "20. Payment Collection",
+          "catalogEpicTitle": "02. B2B Direct Through Reseller",
+          "score": 83.0,
+          "rationale": "strong (83.0)"
+        },
+        {
+          "featureId": "67502",
+          "epicId": "67461",
+          "catalogFeatureTitle": "18 Cash Collection",
+          "catalogEpicTitle": "01. B2B Direct Sales",
+          "score": 83.0,
+          "rationale": "strong (83.0)"
+        }
+      ],
+      "workshopId": "",
+      "feature": {
+        "id": "67525",
+        "title": "20. Payment Collection",
+        "score": 0.0,
+        "rationale": "multi_strong (2 features within margin 8.0)"
+      },
+      "epic": {
+        "id": "67462",
+        "title": "02. B2B Direct Through Reseller",
+        "score": 100.0,
+        "rationale": "parent of feature 67525"
+      },
+      "workshop": {
+        "id": "",
+        "title": "02. Finance - General Ledger UST Led Workshop - 28/Sep/2026",
+        "score": 17.2,
+        "rationale": "below_threshold (17.2 < 62.0)"
+      }
+    },
+    {
+      "csvRow": 23,
+      "title": "Use identifiable voucher number sequences for intercompany journals",
+      "status": "unmatched",
+      "pair": "no_feature",
+      "catalogFeatureTitle": "",
+      "catalogEpicTitle": "",
+      "epicId": "",
+      "featureId": "",
+      "featureIds": [],
+      "matches": [],
+      "workshopId": "",
+      "feature": {
+        "id": "",
+        "title": "",
+        "score": 0.0,
+        "rationale": "below_threshold (59.0 < 62.0)"
+      },
+      "epic": {
+        "id": "",
+        "title": "",
+        "score": 0,
+        "rationale": "skipped (no catalog feature above threshold)"
+      },
+      "workshop": {
+        "id": "",
+        "title": "02. Finance - General Ledger UST Led Workshop - 28/Sep/2026",
+        "score": 17.2,
+        "rationale": "below_threshold (17.2 < 62.0)"
+      }
+    },
+    {
+      "csvRow": 24,
+      "title": "Print customer invoices in local language per customer",
+      "status": "matched",
+      "pair": "matched",
+      "catalogFeatureTitle": "20. Payment Collection",
+      "catalogEpicTitle": "02. B2B Direct Through Reseller",
+      "epicId": "67462",
+      "featureId": "67525",
+      "featureIds": [
+        "67525",
+        "67502",
+        "67482"
+      ],
+      "matches": [
+        {
+          "featureId": "67525",
+          "epicId": "67462",
+          "catalogFeatureTitle": "20. Payment Collection",
+          "catalogEpicTitle": "02. B2B Direct Through Reseller",
+          "score": 71.0,
+          "rationale": "strong (71.0)"
+        },
+        {
+          "featureId": "67502",
+          "epicId": "67461",
+          "catalogFeatureTitle": "18 Cash Collection",
+          "catalogEpicTitle": "01. B2B Direct Sales",
+          "score": 71.0,
+          "rationale": "strong (71.0)"
+        },
+        {
+          "featureId": "67482",
+          "epicId": "67461",
+          "catalogFeatureTitle": "1. Customer Data & Segmentation",
+          "catalogEpicTitle": "01. B2B Direct Sales",
+          "score": 71.0,
+          "rationale": "strong (71.0)"
+        }
+      ],
+      "workshopId": "",
+      "feature": {
+        "id": "67525",
+        "title": "20. Payment Collection",
+        "score": 0.0,
+        "rationale": "multi_strong (3 features within margin 8.0)"
+      },
+      "epic": {
+        "id": "67462",
+        "title": "02. B2B Direct Through Reseller",
+        "score": 100.0,
+        "rationale": "parent of feature 67525"
+      },
+      "workshop": {
+        "id": "",
+        "title": "02. Finance - General Ledger UST Led Workshop - 28/Sep/2026",
+        "score": 17.2,
+        "rationale": "below_threshold (17.2 < 62.0)"
+      }
+    }
+  ]
+}

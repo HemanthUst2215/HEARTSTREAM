@@ -69,3 +69,4 @@ These `.mdc` files use `alwaysApply: true` (Cursor loads them automatically):
 - `.cursor/rules/11-intake-planning-governance.mdc`
 - `.cursor/rules/22-behavior-provenance-and-anti-invention.mdc`
 - `.cursor/rules/30-production-fix-governance.mdc`
+- `.cursor/rules/32-catalog-only-work-item-mapping.mdc`

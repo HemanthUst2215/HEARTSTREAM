@@ -8,7 +8,7 @@ business-analyst-agent (mode `transcript-ado-csv`)
 - Must: read `docs/intake/user-story-csv-rulebook.yaml` only for schema; build row dicts and persist `artifacts/intake/<date>-user-story-rows.json`, then run `python scripts/ado_user_story_csv.py write --json <rows.json> --out artifacts/intake/.pipeline/<date>-user-stories-working.csv` (never hand-write CSV text; working CSV is internal, not a public Excel).
 - Must: emit rows in `ado_export_layout.row_order` — Workshop, then User Stories, then Issue/Risk. Must NOT emit new Epic or Feature rows.
 - Must: User Story Area Path left blank unless transcript specifies; each AC bullet on its own line in the Acceptance Criteria cell; Issue/Risk use Risk/Impact/Mitigation in Description with empty AC.
-- Must: leave ID blank unless transcript cited an existing ADO ID; quote fields per RFC4180.
+- Must: leave ID blank on User Stories (and never emit Epic/Feature rows); catalog Feature `ID` is applied only in Phase 5 by **work-item-mapping-agent** from `feature.json`. Quote fields per RFC4180.
 - Must NOT: add/remove/rename columns; emit new Epic or Feature rows; embed AC only in Description; read bootstrap setup CSV.
 
 ## Inputs

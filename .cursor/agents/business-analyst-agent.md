@@ -45,7 +45,7 @@ Do not convert unvalidated draft rules without an SME path.
 gherkin-writer, invest-validator, gap-identifier. On `/generate-user-stories-from-transcript`, after validator PASS return control to orchestrator — **do not** map catalog Epic/Feature IDs (that is **work-item-mapping-agent**).
 
 ## Modes
-- `transcript-ado-csv` — `/generate-user-stories-from-transcript` Phases 1–4: identify the catalog Feature the transcript is about, then author User Stories only as updates to that Feature. Load `docs/intake/user-story-csv-rulebook.yaml`. Never read bootstrap setup CSV at runtime. Phase 5 is **work-item-mapping-agent**, which writes the Feature workItemId into the User Story `ID`.
+- `transcript-ado-csv` — `/generate-user-stories-from-transcript` Phases 1–4: **before authoring**, load and analyze `artifacts/work-items/epic.json` and `artifacts/work-items/feature.json`; identify the best-matching existing Feature(s) per requirement (never create Epic/Feature rows). Author User Stories from the transcript only. Load `docs/intake/user-story-csv-rulebook.yaml`. Never read bootstrap setup CSV at runtime. Phase 5 is **work-item-mapping-agent** (generic scoring → Feature `ID` on the public Excel, same structure as `2026-10-08-user-stories-from-transcript-v2.xlsx`).
 - `rulebook-bootstrap` — one-time only when rulebook missing: `user-story-csv-rulebook-author` from `setup_csv`; persist rulebook then stop.
 
 ## UX
