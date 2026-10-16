@@ -1,0 +1,59 @@
+# Workshop prerequisite scope (runtime contract for /generate-user-stories-from-transcript)
+# Prerequisite document(s) define approved scope; transcript supplies requirements; MoM supplies minuted decisions; stories require all three inputs at runtime.
+
+schema_version: '1.0'
+rulebook_id: workshop-prerequisite-scope-v1
+status: Active
+provenance:
+  behavior_id: RB-PREREQ-001
+  statement: User stories from workshop transcripts must align with prerequisite workshop materials and MSD365 business
+    entity catalog before ADO export.
+  confidence: explicit
+runtime_contract:
+  statement: Load this rulebook and the persisted knowledge-base JSON before transcript-story-extractor runs. Prerequisite
+    source files are bootstrap inputs only after intake-safety PASS; agents use the JSON + markdown summary at runtime.
+  knowledge_base_json: artifacts/intake/<date>-workshop-prerequisite-knowledge-base.json
+  knowledge_base_md: artifacts/intake/<date>-workshop-prerequisite-knowledge-base.md
+  prerequisite_analyzer: workshop-prerequisite-analyzer
+  skill: .cursor/skills/workshop-prerequisite-analysis/SKILL.md
+scope_policy:
+  behavior_id: RB-PREREQ-002
+  primary_source: prerequisite knowledge base defines in-scope objectives, modules, processes, terminology, and constraints
+  secondary_source: workshop transcript provides detailed implementable requirements
+  tertiary_source: Minutes of Meeting (MoM) document provides official minuted decisions, agenda topics, and action items for the same session
+  rule: Generate a User Story only when (1) the transcript explicitly supports it with a locator, (2) the MoM supports it with a mom_locator (section, agenda item, or table reference), and (3) it aligns with at least one in-scope objective or module entry in the knowledge base. Reject topics that contradict prerequisite out-of-scope statements or fall outside stated workshop objectives. MoM ↔ transcript conflicts must be logged as Open DQ; do not silently resolve.
+  out_of_scope_action: Do not emit a User Story; record in transcript-story-extraction.md under Out of scope / excluded
+    (prerequisite) with prerequisite and transcript locators.
+msd365_entity_policy:
+  behavior_id: RB-PREREQ-003
+  catalog_json: docs/intake/msd365-business-entity-catalog.json
+  rulebook_ref: docs/intake/msd365-business-entity-scope-rulebook.yaml
+  rule: Every User Story must map to exactly one catalog.entries row (domain, application, business_entity). Use only
+    business_entity names from catalog.business_entities when non-empty. Do not invent entities.
+assignment:
+  behavior_id: RB-PREREQ-004
+  location: artifacts/intake/<date>-user-story-rows.json (per User Story; not ADO CSV columns)
+  fields:
+    prerequisite_refs: Non-empty array of scope IDs from knowledge_base.scope.in_scope_objectives or in_scope_modules
+      (e.g. OBJ-001, MOD-003)
+    transcript_locator: Timestamp, line, or speaker tag in the workshop transcript
+    transcript_source_path: Path to transcript file used for the story
+    mom_locator: Section heading, agenda item, table row, or paragraph reference in the MoM
+    mom_source_path: Path to MoM file (or persisted normalized extract) used for the story
+    msd365_domain: From msd365-business-entity-catalog.json
+    msd365_application: From catalog
+    msd365_business_entity: From catalog; empty string when catalog row has empty business entity
+traceability:
+  behavior_id: RB-PREREQ-005
+  extraction_md: artifacts/intake/<date>-transcript-story-extraction.md must include traceability table linking prerequisite
+    ref, transcript locator, mom locator, story title, and MSD365 triple
+validation:
+  workshop_scope_script: scripts/validate-user-story-workshop-scope.py
+  business_entity_script: scripts/validate-user-story-business-entity-scope.py
+  compliance_subagent: workshop-scope-compliance-validator
+  mandatory_for: generate-user-stories-from-transcript
+  checks:
+  - Knowledge-base JSON exists and lists at least one in_scope_objectives or in_scope_modules entry
+  - Each User Story has non-empty prerequisite_refs with valid IDs
+  - Each User Story has non-empty transcript_locator, transcript_source_path, mom_locator, and mom_source_path (use validate-user-story-workshop-scope.py --require-mom)
+  - MSD365 triple validates against catalog

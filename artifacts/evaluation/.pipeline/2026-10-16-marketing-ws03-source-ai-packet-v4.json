@@ -1,0 +1,544 @@
+{
+  "schema_version": "1.0",
+  "kind": "source-analysis-packet",
+  "side": "generated",
+  "status": "packet",
+  "inputs": {
+    "user_story_csv": "C:\\Users\\308279\\Documents\\HEARTSTREAM-1\\artifacts\\evaluation\\.pipeline\\2026-10-16-marketing-ws03-generated.csv",
+    "kb_index": "C:\\Users\\308279\\Documents\\HEARTSTREAM-1\\artifacts\\evaluation\\.pipeline\\2026-10-16-marketing-ws03-source-kb-index-v4.json",
+    "unified_knowledge_base": "C:\\Users\\308279\\Documents\\HEARTSTREAM-1\\artifacts\\evaluation\\.pipeline\\2026-10-16-marketing-ws03-source-knowledge-base-v4.json"
+  },
+  "header_findings": [],
+  "user_stories": [
+    {
+      "story_key": "generated-US-4",
+      "side": "generated",
+      "row_number": 4,
+      "id": "",
+      "title": "Connect CRM account and contact master data to Customer Insights",
+      "description": "As a marketing data steward, I need to connect Dynamics 365 CRM account and contact master data as Customer Insights data sources, so that marketing audiences use the same customer records as CRM.",
+      "acceptance_criteria": [
+        "- CRM accounts and contacts are available as ingestible data sources in Customer Insights.",
+        "- Connection uses organization credentials without separate marketing-only logins.",
+        "- Source refresh expectations are documented for marketing operations."
+      ],
+      "area_path": "",
+      "epic": null,
+      "feature": {
+        "row_number": 3,
+        "id": "",
+        "title": "70 - External Analytics Data Ingestion & Unification",
+        "work_item_type": "Feature"
+      },
+      "structural": {
+        "title_ok": true,
+        "description_ok": true,
+        "format_ok": true,
+        "role": "marketing data steward",
+        "role_specific": true,
+        "ac_count": 3,
+        "ac_hyphen_format_ok": true,
+        "negative_boundary_signal_lines": [
+          "- Connection uses organization credentials without separate marketing-only logins."
+        ],
+        "need_count": 1
+      }
+    },
+    {
+      "story_key": "generated-US-5",
+      "side": "generated",
+      "row_number": 5,
+      "id": "",
+      "title": "Ingest sales order and engagement data for unified profiles",
+      "description": "As a marketing analyst, I need to ingest sales orders and digital engagement data into Customer Insights, so that unified profiles reflect purchases and campaign interactions.",
+      "acceptance_criteria": [
+        "- Sales order data can be mapped into Customer Insights as a data source.",
+        "- Engagement sources (for example web, email, events) can be linked to the same profile model.",
+        "- Marketing users can verify that profile metrics update after source refresh."
+      ],
+      "area_path": "",
+      "epic": null,
+      "feature": {
+        "row_number": 3,
+        "id": "",
+        "title": "70 - External Analytics Data Ingestion & Unification",
+        "work_item_type": "Feature"
+      },
+      "structural": {
+        "title_ok": true,
+        "description_ok": true,
+        "format_ok": true,
+        "role": "marketing analyst",
+        "role_specific": true,
+        "ac_count": 3,
+        "ac_hyphen_format_ok": true,
+        "negative_boundary_signal_lines": [],
+        "need_count": 1
+      }
+    },
+    {
+      "story_key": "generated-US-6",
+      "side": "generated",
+      "row_number": 6,
+      "id": "",
+      "title": "Define match rules for unified customer profiles",
+      "description": "As a marketing data steward, I need to configure match and merge rules for accounts, contacts, and partner records in Customer Insights, so that duplicate profiles are resolved before segmentation.",
+      "acceptance_criteria": [
+        "- Match keys (for example email, partner identifier combinations) are configured for profile unification.",
+        "- Duplicate profiles are surfaced for resolution per agreed marketing data governance.",
+        "- Unified profiles show a single 360 view per resolved customer or partner contact."
+      ],
+      "area_path": "",
+      "epic": null,
+      "feature": {
+        "row_number": 3,
+        "id": "",
+        "title": "70 - External Analytics Data Ingestion & Unification",
+        "work_item_type": "Feature"
+      },
+      "structural": {
+        "title_ok": true,
+        "description_ok": true,
+        "format_ok": true,
+        "role": "marketing data steward",
+        "role_specific": true,
+        "ac_count": 3,
+        "ac_hyphen_format_ok": true,
+        "negative_boundary_signal_lines": [],
+        "need_count": 1
+      }
+    },
+    {
+      "story_key": "generated-US-7",
+      "side": "generated",
+      "row_number": 7,
+      "id": "",
+      "title": "Use ship-to attributes in Customer Insights segment rules",
+      "description": "As a marketing analyst, I need to use segment rules that use ship-to city or address attributes from sales orders when available, so that geographic targeting reflects delivery location not only account headquarters.",
+      "acceptance_criteria": [
+        "- Sales order ship-to fields are available as segment attributes when order data is ingested.",
+        "- Sample segment can filter customers or orders by ship-to city (workshop Houston example pattern).",
+        "- Documentation notes gaps when ship-to attributes are not yet populated in source data."
+      ],
+      "area_path": "",
+      "epic": null,
+      "feature": {
+        "row_number": 3,
+        "id": "",
+        "title": "70 - External Analytics Data Ingestion & Unification",
+        "work_item_type": "Feature"
+      },
+      "structural": {
+        "title_ok": true,
+        "description_ok": true,
+        "format_ok": true,
+        "role": "marketing analyst",
+        "role_specific": true,
+        "ac_count": 3,
+        "ac_hyphen_format_ok": true,
+        "negative_boundary_signal_lines": [
+          "- Documentation notes gaps when ship-to attributes are not yet populated in source data."
+        ],
+        "need_count": 1
+      }
+    },
+    {
+      "story_key": "generated-US-8",
+      "side": "generated",
+      "row_number": 8,
+      "id": "",
+      "title": "Update install base segment after partner tracing import",
+      "description": "As a marketing analyst, I need to update device or install-base segment attributes after late partner tracing files are imported, so that vertical market classification reflects tracings received after shipment.",
+      "acceptance_criteria": [
+        "- Tracing or spreadsheet import can update install-base or device records linked to distributor shipments.",
+        "- Updated attributes are available for Customer Insights segmentation after processing.",
+        "- Process documents manual versus automated tracing timelines discussed in workshop."
+      ],
+      "area_path": "",
+      "epic": null,
+      "feature": {
+        "row_number": 3,
+        "id": "",
+        "title": "70 - External Analytics Data Ingestion & Unification",
+        "work_item_type": "Feature"
+      },
+      "structural": {
+        "title_ok": true,
+        "description_ok": true,
+        "format_ok": true,
+        "role": "marketing analyst",
+        "role_specific": true,
+        "ac_count": 3,
+        "ac_hyphen_format_ok": true,
+        "negative_boundary_signal_lines": [],
+        "need_count": 1
+      }
+    },
+    {
+      "story_key": "generated-US-9",
+      "side": "generated",
+      "row_number": 9,
+      "id": "",
+      "title": "Ingest distributor sold-to location from partner channel into CI",
+      "description": "As a marketing data steward, I need to ingest distributor-reported sold-to location from the partner channel into data available to Customer Insights, so that vertical segmentation improves when partners report where units were sold.",
+      "acceptance_criteria": [
+        "- Partner portal or channel submission can capture sold-to location or vertical per serial or order line.",
+        "- Ingested values are linked to distributor and device or order context for analytics.",
+        "- Data appears in Customer Insights sources after agreed refresh interval."
+      ],
+      "area_path": "",
+      "epic": null,
+      "feature": {
+        "row_number": 3,
+        "id": "",
+        "title": "70 - External Analytics Data Ingestion & Unification",
+        "work_item_type": "Feature"
+      },
+      "structural": {
+        "title_ok": true,
+        "description_ok": true,
+        "format_ok": true,
+        "role": "marketing data steward",
+        "role_specific": true,
+        "ac_count": 3,
+        "ac_hyphen_format_ok": true,
+        "negative_boundary_signal_lines": [],
+        "need_count": 1
+      }
+    },
+    {
+      "story_key": "generated-US-11",
+      "side": "generated",
+      "row_number": 11,
+      "id": "",
+      "title": "Provide account-level marketing profiles with contact drill-down",
+      "description": "As a marketer, I need to view unified Customer Insights profiles at account level with linked contacts, so that I can plan account-based campaigns without losing contact-level detail.",
+      "acceptance_criteria": [
+        "- Unified profile view supports account-centric navigation discussed in workshop.",
+        "- Linked contacts are visible from the account profile context.",
+        "- Marketing users can build segments using account attributes and related contact attributes."
+      ],
+      "area_path": "",
+      "epic": null,
+      "feature": {
+        "row_number": 10,
+        "id": "",
+        "title": "61 - Marketing Research Insights Planning",
+        "work_item_type": "Feature"
+      },
+      "structural": {
+        "title_ok": true,
+        "description_ok": true,
+        "format_ok": true,
+        "role": "marketer",
+        "role_specific": true,
+        "ac_count": 3,
+        "ac_hyphen_format_ok": true,
+        "negative_boundary_signal_lines": [],
+        "need_count": 1
+      }
+    },
+    {
+      "story_key": "generated-US-12",
+      "side": "generated",
+      "row_number": 12,
+      "id": "",
+      "title": "Enable worldwide marketing analytics visibility for product marketing",
+      "description": "As a global product marketer, I need to access Customer Insights analytics and audiences that are not limited to a single sales region, so that worldwide product planning uses consistent customer insight.",
+      "acceptance_criteria": [
+        "- Role or audience scoping allows product marketing to view agreed global insight datasets.",
+        "- Regional sales-only restrictions do not block worldwide marketing views defined in workshop.",
+        "- Access approach is documented for US, Canada, LATAM, Europe, and Asia stakeholders as applicable."
+      ],
+      "area_path": "",
+      "epic": null,
+      "feature": {
+        "row_number": 10,
+        "id": "",
+        "title": "61 - Marketing Research Insights Planning",
+        "work_item_type": "Feature"
+      },
+      "structural": {
+        "title_ok": true,
+        "description_ok": true,
+        "format_ok": true,
+        "role": "global product marketer",
+        "role_specific": true,
+        "ac_count": 3,
+        "ac_hyphen_format_ok": true,
+        "negative_boundary_signal_lines": [
+          "- Regional sales-only restrictions do not block worldwide marketing views defined in workshop."
+        ],
+        "need_count": 1
+      }
+    },
+    {
+      "story_key": "generated-US-13",
+      "side": "generated",
+      "row_number": 13,
+      "id": "",
+      "title": "Analyze account consumable purchase patterns for marketing outreach",
+      "description": "As a marketer, I need to analyze account-level consumable purchase history alongside equipment context in Customer Insights, so that I can identify accounts that stopped buying Philips consumables.",
+      "acceptance_criteria": [
+        "- Purchase history for consumable part numbers can be associated with unified account profiles when purchase data is in scope.",
+        "- Marketers can filter accounts with equipment history but missing recent consumable purchases.",
+        "- Workshop dependency on complete purchase data linkage is documented."
+      ],
+      "area_path": "",
+      "epic": null,
+      "feature": {
+        "row_number": 10,
+        "id": "",
+        "title": "61 - Marketing Research Insights Planning",
+        "work_item_type": "Feature"
+      },
+      "structural": {
+        "title_ok": true,
+        "description_ok": true,
+        "format_ok": true,
+        "role": "marketer",
+        "role_specific": true,
+        "ac_count": 3,
+        "ac_hyphen_format_ok": true,
+        "negative_boundary_signal_lines": [],
+        "need_count": 1
+      }
+    },
+    {
+      "story_key": "generated-US-15",
+      "side": "generated",
+      "row_number": 15,
+      "id": "",
+      "title": "Detect vertical sales trends for targeted campaigns",
+      "description": "As a field marketer, I need to see emerging vertical sales trends over short periods, so that I can launch timely campaigns when a vertical market momentum spike is detected.",
+      "acceptance_criteria": [
+        "- Marketing analytics can compare sales or shipment volumes by vertical over a configurable recent window.",
+        "- Trend or threshold signal is available to marketing without waiting six months for manual tracing consolidation.",
+        "- Output can seed audience selection for Customer Insights campaigns."
+      ],
+      "area_path": "",
+      "epic": null,
+      "feature": {
+        "row_number": 14,
+        "id": "",
+        "title": "38 - Brand Reputation Campaign Management",
+        "work_item_type": "Feature"
+      },
+      "structural": {
+        "title_ok": true,
+        "description_ok": true,
+        "format_ok": true,
+        "role": "field marketer",
+        "role_specific": true,
+        "ac_count": 3,
+        "ac_hyphen_format_ok": true,
+        "negative_boundary_signal_lines": [
+          "- Trend or threshold signal is available to marketing without waiting six months for manual tracing consolidation."
+        ],
+        "need_count": 1
+      }
+    },
+    {
+      "story_key": "generated-US-17",
+      "side": "generated",
+      "row_number": 17,
+      "id": "",
+      "title": "Create dynamic segments by vertical end-market",
+      "description": "As a product marketer, I need to create dynamic Customer Insights segments by vertical end-market (for example hospital, EMS, education), so that I can target campaigns by where products are sold or used.",
+      "acceptance_criteria": [
+        "- Segment rules can filter on vertical or market category attributes when present on accounts, contacts, or orders.",
+        "- At least the priority verticals discussed in workshop (hospital, EMS, fire, military) can be represented as segment criteria.",
+        "- Segments refresh automatically when underlying source data changes."
+      ],
+      "area_path": "",
+      "epic": null,
+      "feature": {
+        "row_number": 16,
+        "id": "",
+        "title": "60 - Marketing Strategy & Activation Planning",
+        "work_item_type": "Feature"
+      },
+      "structural": {
+        "title_ok": true,
+        "description_ok": true,
+        "format_ok": true,
+        "role": "product marketer",
+        "role_specific": true,
+        "ac_count": 3,
+        "ac_hyphen_format_ok": true,
+        "negative_boundary_signal_lines": [
+          "- At least the priority verticals discussed in workshop (hospital, EMS, fire, military) can be represented as segment criteria."
+        ],
+        "need_count": 1
+      }
+    },
+    {
+      "story_key": "generated-US-18",
+      "side": "generated",
+      "row_number": 18,
+      "id": "",
+      "title": "Capture end-market segment at e-commerce order entry",
+      "description": "As a marketing operations lead, I need to capture end-market or vertical category during e-commerce order entry when feasible, so that Customer Insights segmentation is accurate at order time.",
+      "acceptance_criteria": [
+        "- Order capture exposes a field or classification for end-market or vertical where business rules require it.",
+        "- Captured values flow to data available for Customer Insights segmentation.",
+        "- Workshop limitation that not all order nuances are capturable is recorded as open design input."
+      ],
+      "area_path": "",
+      "epic": null,
+      "feature": {
+        "row_number": 16,
+        "id": "",
+        "title": "60 - Marketing Strategy & Activation Planning",
+        "work_item_type": "Feature"
+      },
+      "structural": {
+        "title_ok": true,
+        "description_ok": true,
+        "format_ok": true,
+        "role": "marketing operations lead",
+        "role_specific": true,
+        "ac_count": 3,
+        "ac_hyphen_format_ok": true,
+        "negative_boundary_signal_lines": [
+          "- Workshop limitation that not all order nuances are capturable is recorded as open design input."
+        ],
+        "need_count": 1
+      }
+    },
+    {
+      "story_key": "generated-US-19",
+      "side": "generated",
+      "row_number": 19,
+      "id": "",
+      "title": "Detect vertical sales trends for targeted campaigns",
+      "description": "As a field marketer, I need to see emerging vertical sales trends over short periods, so that I can launch timely campaigns when a vertical market momentum spike is detected.",
+      "acceptance_criteria": [
+        "- Marketing analytics can compare sales or shipment volumes by vertical over a configurable recent window.",
+        "- Trend or threshold signal is available to marketing without waiting six months for manual tracing consolidation.",
+        "- Output can seed audience selection for Customer Insights campaigns."
+      ],
+      "area_path": "",
+      "epic": null,
+      "feature": {
+        "row_number": 16,
+        "id": "",
+        "title": "60 - Marketing Strategy & Activation Planning",
+        "work_item_type": "Feature"
+      },
+      "structural": {
+        "title_ok": true,
+        "description_ok": true,
+        "format_ok": true,
+        "role": "field marketer",
+        "role_specific": true,
+        "ac_count": 3,
+        "ac_hyphen_format_ok": true,
+        "negative_boundary_signal_lines": [
+          "- Trend or threshold signal is available to marketing without waiting six months for manual tracing consolidation."
+        ],
+        "need_count": 1
+      }
+    },
+    {
+      "story_key": "generated-US-20",
+      "side": "generated",
+      "row_number": 20,
+      "id": "",
+      "title": "Identify distributors serving multiple vertical markets",
+      "description": "As a marketing analyst, I need to build intersecting segments that find distributors active in more than one vertical market, so that I can tailor messaging for multi-vertical partners.",
+      "acceptance_criteria": [
+        "- Separate segment definitions exist per vertical (for example hospital-focused distributors).",
+        "- An intersection or combined segment returns distributors qualifying for more than one vertical rule.",
+        "- Results are exportable for campaign audience selection."
+      ],
+      "area_path": "",
+      "epic": null,
+      "feature": {
+        "row_number": 16,
+        "id": "",
+        "title": "60 - Marketing Strategy & Activation Planning",
+        "work_item_type": "Feature"
+      },
+      "structural": {
+        "title_ok": true,
+        "description_ok": true,
+        "format_ok": true,
+        "role": "marketing analyst",
+        "role_specific": true,
+        "ac_count": 3,
+        "ac_hyphen_format_ok": true,
+        "negative_boundary_signal_lines": [],
+        "need_count": 1
+      }
+    }
+  ],
+  "feature_list_rows": [
+    {
+      "feature_key": "SOW-1",
+      "feature_name": "70 - External Analytics Data Ingestion & Unification",
+      "workshop_code": "WS-CE-01",
+      "bpm_topic": "External Analytics Data Ingestion & Unification",
+      "annexure_minutes": 70,
+      "source_path": "C:\\Users\\308279\\Documents\\HEARTSTREAM-1\\artifacts\\work-items\\SOW.json",
+      "source_locator": "SOW.rows[0]",
+      "source_type": "Feature List"
+    },
+    {
+      "feature_key": "SOW-2",
+      "feature_name": "61 - Marketing Research Insights Planning",
+      "workshop_code": "WS-CE-02",
+      "bpm_topic": "Marketing Research Insights Planning",
+      "annexure_minutes": 61,
+      "source_path": "C:\\Users\\308279\\Documents\\HEARTSTREAM-1\\artifacts\\work-items\\SOW.json",
+      "source_locator": "SOW.rows[1]",
+      "source_type": "Feature List"
+    },
+    {
+      "feature_key": "SOW-3",
+      "feature_name": "54 - Global Marketing Content Activation",
+      "workshop_code": "WS-CE-03",
+      "bpm_topic": "Global Marketing Content Activation",
+      "annexure_minutes": 54,
+      "source_path": "C:\\Users\\308279\\Documents\\HEARTSTREAM-1\\artifacts\\work-items\\SOW.json",
+      "source_locator": "SOW.rows[2]",
+      "source_type": "Feature List"
+    },
+    {
+      "feature_key": "SOW-4",
+      "feature_name": "38 - Brand Reputation Campaign Management",
+      "workshop_code": "WS-CE-04",
+      "bpm_topic": "Brand Reputation Campaign Management",
+      "annexure_minutes": 38,
+      "source_path": "C:\\Users\\308279\\Documents\\HEARTSTREAM-1\\artifacts\\work-items\\SOW.json",
+      "source_locator": "SOW.rows[3]",
+      "source_type": "Feature List"
+    },
+    {
+      "feature_key": "SOW-5",
+      "feature_name": "58 - Marketing Asset Governance & Campaign Readiness",
+      "workshop_code": "WS-CE-05",
+      "bpm_topic": "Marketing Asset Governance & Campaign Readiness",
+      "annexure_minutes": 58,
+      "source_path": "C:\\Users\\308279\\Documents\\HEARTSTREAM-1\\artifacts\\work-items\\SOW.json",
+      "source_locator": "SOW.rows[4]",
+      "source_type": "Feature List"
+    },
+    {
+      "feature_key": "SOW-6",
+      "feature_name": "60 - Marketing Strategy & Activation Planning",
+      "workshop_code": "WS-CE-06",
+      "bpm_topic": "Marketing Strategy & Activation Planning",
+      "annexure_minutes": 60,
+      "source_path": "C:\\Users\\308279\\Documents\\HEARTSTREAM-1\\artifacts\\work-items\\SOW.json",
+      "source_locator": "SOW.rows[5]",
+      "source_type": "Feature List"
+    }
+  ],
+  "kb_index_note": "Mechanical index only. source-knowledge-base-unifier merges this into unified_knowledge_base JSON with cited requirements.",
+  "analysis_contract": "C:\\Users\\308279\\Documents\\HEARTSTREAM-1\\.cursor\\templates\\user-story-source-analysis-contract.yaml",
+  "forbidden": [
+    "Do not read or compare the other CSV side.",
+    "Do not perform manual vs AI matching or benchmarking."
+  ]
+}

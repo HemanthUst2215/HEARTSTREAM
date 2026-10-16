@@ -1,9 +1,0 @@
-{
-  "status": "PASS",
-  "critical": 0,
-  "findings": [],
-  "row_count": 27,
-  "rulebook_id": "ado-user-story-csv-v1",
-  "csv": "C:\\Users\\308279\\Documents\\HEARTSTREAM-1\\artifacts\\intake\\.pipeline\\2026-10-12-user-stories-working.csv",
-  "rulebook": "C:\\Users\\308279\\Documents\\HEARTSTREAM-1\\docs\\intake\\user-story-csv-rulebook.yaml"
-}

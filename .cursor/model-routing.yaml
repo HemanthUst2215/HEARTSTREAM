@@ -63,6 +63,7 @@ tier_by_command:
   prepare-cutover: reasoning
   generate-user-stories-from-transcript: reasoning
   evaluate-user-stories: reasoning
+  generate-html-for-user-stories: reasoning
   ingest-figma-sketch: coding
   figma-to-nextjs: coding
   implement-api: coding

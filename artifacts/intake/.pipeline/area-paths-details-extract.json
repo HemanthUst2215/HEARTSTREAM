@@ -1,0 +1,849 @@
+{
+  "entries": [
+    {
+      "domain": "CRM",
+      "application": "Customer Insights",
+      "business_entity": "Lead to Opportunity",
+      "node1": "Day2"
+    },
+    {
+      "domain": "CRM",
+      "application": "Customer Insights",
+      "business_entity": "Service to Resolution",
+      "node1": "Day2"
+    },
+    {
+      "domain": "CRM",
+      "application": "Customer Insights",
+      "business_entity": "Record to Report",
+      "node1": "Day2"
+    },
+    {
+      "domain": "CRM",
+      "application": "Sales",
+      "business_entity": "Lead to Opportunity",
+      "node1": "Day2"
+    },
+    {
+      "domain": "CRM",
+      "application": "Sales",
+      "business_entity": "Opportunity to Order",
+      "node1": "Day2"
+    },
+    {
+      "domain": "CRM",
+      "application": "Sales",
+      "business_entity": "Quote to Cash",
+      "node1": "Day2"
+    },
+    {
+      "domain": "CRM",
+      "application": "Sales",
+      "business_entity": "Order to Cash",
+      "node1": "Day2"
+    },
+    {
+      "domain": "CRM",
+      "application": "Sales",
+      "business_entity": "Service to Resolution",
+      "node1": "Day2"
+    },
+    {
+      "domain": "CRM",
+      "application": "Sales",
+      "business_entity": "Record to Report",
+      "node1": "Day2"
+    },
+    {
+      "domain": "CRM",
+      "application": "Customer Service",
+      "business_entity": "Record to Report",
+      "node1": "Day2"
+    },
+    {
+      "domain": "CRM",
+      "application": "Customer Service",
+      "business_entity": "Service to Resolution",
+      "node1": "Day2"
+    },
+    {
+      "domain": "CRM",
+      "application": "Customer Service",
+      "business_entity": "Lead to Opportunity",
+      "node1": "Day2"
+    },
+    {
+      "domain": "CRM",
+      "application": "Customer Service",
+      "business_entity": "Order to Cash",
+      "node1": "Day2"
+    },
+    {
+      "domain": "Finance",
+      "application": "Acquire to Retire",
+      "business_entity": "Fixed Assets",
+      "node1": "Day2"
+    },
+    {
+      "domain": "Finance",
+      "application": "Customer and Channel Management",
+      "business_entity": "Omnichannel and Channel Management",
+      "node1": "Day2"
+    },
+    {
+      "domain": "Finance",
+      "application": "Customer and Channel Management",
+      "business_entity": "Product and Catalog Management",
+      "node1": "Day2"
+    },
+    {
+      "domain": "Finance",
+      "application": "Customer and Channel Management",
+      "business_entity": "Order Management and Fulfillment",
+      "node1": "Day2"
+    },
+    {
+      "domain": "Finance",
+      "application": "Customer and Channel Management",
+      "business_entity": "Customer and Account Management",
+      "node1": "Day2"
+    },
+    {
+      "domain": "Finance",
+      "application": "Customer and Channel Management",
+      "business_entity": "Partner and B2B Sales",
+      "node1": "Day2"
+    },
+    {
+      "domain": "Finance",
+      "application": "Hire to Retire",
+      "business_entity": "General Ledger",
+      "node1": "Day2"
+    },
+    {
+      "domain": "Finance",
+      "application": "Order to Cash",
+      "business_entity": "Accounts Receivable",
+      "node1": "Day2"
+    },
+    {
+      "domain": "Finance",
+      "application": "Order to Cash",
+      "business_entity": "Credit and Collections",
+      "node1": "Day2"
+    },
+    {
+      "domain": "Finance",
+      "application": "Order to Cash",
+      "business_entity": "Sales and Order Management",
+      "node1": "Day2"
+    },
+    {
+      "domain": "Finance",
+      "application": "Order to Cash",
+      "business_entity": "Order Management and Fulfillment",
+      "node1": "Day2"
+    },
+    {
+      "domain": "Finance",
+      "application": "Order to Cash",
+      "business_entity": "Pricing, Promotions and Discounts",
+      "node1": "Day2"
+    },
+    {
+      "domain": "Finance",
+      "application": "Order to Cash",
+      "business_entity": "Customer and Account Management",
+      "node1": "Day2"
+    },
+    {
+      "domain": "Finance",
+      "application": "Order to Cash",
+      "business_entity": "Payment, Tax and Regulatory Compliance",
+      "node1": "Day2"
+    },
+    {
+      "domain": "Finance",
+      "application": "Order to Cash",
+      "business_entity": "Partner and B2B Sales",
+      "node1": "Day2"
+    },
+    {
+      "domain": "Finance",
+      "application": "Order to Cash",
+      "business_entity": "Subscription and Licensing",
+      "node1": "Day2"
+    },
+    {
+      "domain": "Finance",
+      "application": "Procure to Pay",
+      "business_entity": "Accounts Payable",
+      "node1": "Day2"
+    },
+    {
+      "domain": "Finance",
+      "application": "Procure to Pay",
+      "business_entity": "Audit and Compliance",
+      "node1": "Day2"
+    },
+    {
+      "domain": "Finance",
+      "application": "Procure to Pay",
+      "business_entity": "Procurement and Sourcing",
+      "node1": "Day2"
+    },
+    {
+      "domain": "Finance",
+      "application": "Procure to Pay",
+      "business_entity": "Product and Catalog Management",
+      "node1": "Day2"
+    },
+    {
+      "domain": "Finance",
+      "application": "Record to Report",
+      "business_entity": "General Ledger",
+      "node1": "Day2"
+    },
+    {
+      "domain": "Finance",
+      "application": "Record to Report",
+      "business_entity": "Cash and Bank Management",
+      "node1": "Day2"
+    },
+    {
+      "domain": "Finance",
+      "application": "Record to Report",
+      "business_entity": "Tax Management",
+      "node1": "Day2"
+    },
+    {
+      "domain": "Finance",
+      "application": "Record to Report",
+      "business_entity": "Cost Accounting",
+      "node1": "Day2"
+    },
+    {
+      "domain": "Finance",
+      "application": "Record to Report",
+      "business_entity": "Project Management and Accounting",
+      "node1": "Day2"
+    },
+    {
+      "domain": "Finance",
+      "application": "Record to Report",
+      "business_entity": "Financial Consolidation and Reporting",
+      "node1": "Day2"
+    },
+    {
+      "domain": "Finance",
+      "application": "Record to Report",
+      "business_entity": "Intercompany Accounting",
+      "node1": "Day2"
+    },
+    {
+      "domain": "Finance",
+      "application": "Record to Report",
+      "business_entity": "Analytics, Reporting and AI",
+      "node1": "Day2"
+    },
+    {
+      "domain": "Finance",
+      "application": "Record to Report",
+      "business_entity": "Integration and Connectivity",
+      "node1": "Day2"
+    },
+    {
+      "domain": "SCM",
+      "application": "Design to Release (PLM)",
+      "business_entity": "Engineering Change Requests",
+      "node1": "Day2"
+    },
+    {
+      "domain": "SCM",
+      "application": "Design to Release (PLM)",
+      "business_entity": "Engineering Change Orders",
+      "node1": "Day2"
+    },
+    {
+      "domain": "SCM",
+      "application": "Design to Release (PLM)",
+      "business_entity": "Product Version Management",
+      "node1": "Day2"
+    },
+    {
+      "domain": "SCM",
+      "application": "Design to Release (PLM)",
+      "business_entity": "Product Configuration",
+      "node1": "Day2"
+    },
+    {
+      "domain": "SCM",
+      "application": "Design to Release (PLM)",
+      "business_entity": "Product Lifecycle Management",
+      "node1": "Day2"
+    },
+    {
+      "domain": "SCM",
+      "application": "Design to Release (PLM)",
+      "business_entity": "BOM and Route Management",
+      "node1": "Day2"
+    },
+    {
+      "domain": "SCM",
+      "application": "Design to Release (PLM)",
+      "business_entity": "Product and Catalog Management",
+      "node1": "Day2"
+    },
+    {
+      "domain": "SCM",
+      "application": "Forecast to Stock",
+      "business_entity": "Master Planning and Demand Forecasting",
+      "node1": "Day2"
+    },
+    {
+      "domain": "SCM",
+      "application": "Plan-to-Produce",
+      "business_entity": "Production Control",
+      "node1": "Day2"
+    },
+    {
+      "domain": "SCM",
+      "application": "Governance, Risk and Compliance",
+      "business_entity": "Tax Management",
+      "node1": "Day2"
+    },
+    {
+      "domain": "SCM",
+      "application": "Governance, Risk and Compliance",
+      "business_entity": "Audit and Compliance",
+      "node1": "Day2"
+    },
+    {
+      "domain": "SCM",
+      "application": "Governance, Risk and Compliance",
+      "business_entity": "Sales and Order Management",
+      "node1": "Day2"
+    },
+    {
+      "domain": "SCM",
+      "application": "Governance, Risk and Compliance",
+      "business_entity": "Quality Management",
+      "node1": "Day2"
+    },
+    {
+      "domain": "SCM",
+      "application": "Governance, Risk and Compliance",
+      "business_entity": "Service Management",
+      "node1": "Day2"
+    },
+    {
+      "domain": "SCM",
+      "application": "Governance, Risk and Compliance",
+      "business_entity": "EHS and Sustainability",
+      "node1": "Day2"
+    },
+    {
+      "domain": "SCM",
+      "application": "Governance, Risk and Compliance",
+      "business_entity": "Customer and Account Management",
+      "node1": "Day2"
+    },
+    {
+      "domain": "SCM",
+      "application": "Governance, Risk and Compliance",
+      "business_entity": "Payment, Tax and Regulatory Compliance",
+      "node1": "Day2"
+    },
+    {
+      "domain": "SCM",
+      "application": "Governance, Risk and Compliance",
+      "business_entity": "Service and Aftersales",
+      "node1": "Day2"
+    },
+    {
+      "domain": "SCM",
+      "application": "Inventory",
+      "business_entity": "Inventory Management",
+      "node1": "Day2"
+    },
+    {
+      "domain": "SCM",
+      "application": "Fulfilment",
+      "business_entity": "Order Management and Fulfillment",
+      "node1": "Day2"
+    },
+    {
+      "domain": "SCM",
+      "application": "Warehouse-to-Ship",
+      "business_entity": "Warehouse and Transportation Management",
+      "node1": "Day2"
+    },
+    {
+      "domain": "SCM",
+      "application": "Master Data Management",
+      "business_entity": "Product Information Management",
+      "node1": "Day2"
+    },
+    {
+      "domain": "SCM",
+      "application": "Master Data Management",
+      "business_entity": "Product and Catalog Management",
+      "node1": "Day2"
+    },
+    {
+      "domain": "SCM",
+      "application": "Service to Resolution",
+      "business_entity": "Returns Management",
+      "node1": "Day2"
+    },
+    {
+      "domain": "SCM",
+      "application": "Service to Resolution",
+      "business_entity": "Service Management",
+      "node1": "Day2"
+    },
+    {
+      "domain": "SCM",
+      "application": "Service to Resolution",
+      "business_entity": "Service and Aftersales",
+      "node1": "Day2"
+    },
+    {
+      "domain": "SCM",
+      "application": "Customer and Channel Management",
+      "business_entity": "Omnichannel and Channel Management",
+      "node1": "Day2"
+    },
+    {
+      "domain": "SCM",
+      "application": "Customer and Channel Management",
+      "business_entity": "Product and Catalog Management",
+      "node1": "Day2"
+    },
+    {
+      "domain": "SCM",
+      "application": "Customer and Channel Management",
+      "business_entity": "Order Management and Fulfillment",
+      "node1": "Day2"
+    },
+    {
+      "domain": "SCM",
+      "application": "Customer and Channel Management",
+      "business_entity": "Customer and Account Management",
+      "node1": "Day2"
+    },
+    {
+      "domain": "SCM",
+      "application": "Customer and Channel Management",
+      "business_entity": "Partner and B2B Sales",
+      "node1": "Day2"
+    },
+    {
+      "domain": "SCM",
+      "application": "Order to Cash",
+      "business_entity": "Accounts Receivable",
+      "node1": "Day2"
+    },
+    {
+      "domain": "SCM",
+      "application": "Order to Cash",
+      "business_entity": "Credit and Collections",
+      "node1": "Day2"
+    },
+    {
+      "domain": "SCM",
+      "application": "Order to Cash",
+      "business_entity": "Sales and Order Management",
+      "node1": "Day2"
+    },
+    {
+      "domain": "SCM",
+      "application": "Order to Cash",
+      "business_entity": "Order Management and Fulfillment",
+      "node1": "Day2"
+    },
+    {
+      "domain": "SCM",
+      "application": "Order to Cash",
+      "business_entity": "Pricing, Promotions and Discounts",
+      "node1": "Day2"
+    },
+    {
+      "domain": "SCM",
+      "application": "Order to Cash",
+      "business_entity": "Customer and Account Management",
+      "node1": "Day2"
+    },
+    {
+      "domain": "SCM",
+      "application": "Order to Cash",
+      "business_entity": "Payment, Tax and Regulatory Compliance",
+      "node1": "Day2"
+    },
+    {
+      "domain": "SCM",
+      "application": "Order to Cash",
+      "business_entity": "Partner and B2B Sales",
+      "node1": "Day2"
+    },
+    {
+      "domain": "SCM",
+      "application": "Order to Cash",
+      "business_entity": "Subscription and Licensing",
+      "node1": "Day2"
+    },
+    {
+      "domain": "SCM",
+      "application": "Procure to Pay",
+      "business_entity": "Accounts Payable",
+      "node1": "Day2"
+    },
+    {
+      "domain": "SCM",
+      "application": "Procure to Pay",
+      "business_entity": "Audit and Compliance",
+      "node1": "Day2"
+    },
+    {
+      "domain": "SCM",
+      "application": "Procure to Pay",
+      "business_entity": "Procurement and Sourcing",
+      "node1": "Day2"
+    },
+    {
+      "domain": "SCM",
+      "application": "Procure to Pay",
+      "business_entity": "Product and Catalog Management",
+      "node1": "Day2"
+    },
+    {
+      "domain": "Power Platform",
+      "application": "Business Excellence",
+      "business_entity": "Manage business processes",
+      "node1": "Day2"
+    },
+    {
+      "domain": "Power Platform",
+      "application": "Business Excellence",
+      "business_entity": "Manage change",
+      "node1": "Day2"
+    },
+    {
+      "domain": "Power Platform",
+      "application": "Business Excellence",
+      "business_entity": "Manage continuous improvements",
+      "node1": "Day2"
+    },
+    {
+      "domain": "Power Platform",
+      "application": "Business Excellence",
+      "business_entity": "Manage enterprise knowledge",
+      "node1": "Day2"
+    },
+    {
+      "domain": "Power Platform",
+      "application": "Business Excellence",
+      "business_entity": "Manage Business System",
+      "node1": "Day2"
+    },
+    {
+      "domain": "Power Platform",
+      "application": "Business Excellence",
+      "business_entity": "Manage portfolio, programs and projects",
+      "node1": "Day2"
+    },
+    {
+      "domain": "Power Platform",
+      "application": "Business Excellence",
+      "business_entity": "Conduct Real Estate planning",
+      "node1": "Day2"
+    },
+    {
+      "domain": "Power Platform",
+      "application": "Business Excellence",
+      "business_entity": "Manage Enterprise Risk",
+      "node1": "Day2"
+    },
+    {
+      "domain": "Power Platform",
+      "application": "Business Excellence",
+      "business_entity": "Manage resilience and continuity",
+      "node1": "Day2"
+    },
+    {
+      "domain": "Power Platform",
+      "application": "Business Excellence",
+      "business_entity": "Perform strategic deep dives",
+      "node1": "Day2"
+    },
+    {
+      "domain": "Power Platform",
+      "application": "Commercial",
+      "business_entity": "Manage brand",
+      "node1": "Day2"
+    },
+    {
+      "domain": "Power Platform",
+      "application": "Commercial",
+      "business_entity": "Manage integrated communications",
+      "node1": "Day2"
+    },
+    {
+      "domain": "Power Platform",
+      "application": "Commercial",
+      "business_entity": "Product Management",
+      "node1": "Day2"
+    },
+    {
+      "domain": "Power Platform",
+      "application": "IT",
+      "business_entity": "IT Technology Selection",
+      "node1": "Day2"
+    },
+    {
+      "domain": "Power Platform",
+      "application": "IT",
+      "business_entity": "Deliver, Manage and Support IT",
+      "node1": "Day2"
+    },
+    {
+      "domain": "Power Platform",
+      "application": "Legal",
+      "business_entity": "Strategy to Integrated Roadmap",
+      "node1": "Day2"
+    },
+    {
+      "domain": "Power Platform",
+      "application": "Legal",
+      "business_entity": "Compliance Governance and Legal",
+      "node1": "Day2"
+    },
+    {
+      "domain": "Power Platform",
+      "application": "Legal",
+      "business_entity": "Manage Data Management",
+      "node1": "Day2"
+    },
+    {
+      "domain": "Power Platform",
+      "application": "Security",
+      "business_entity": "Third Party Management",
+      "node1": "Day2"
+    },
+    {
+      "domain": "Power Platform",
+      "application": "Security",
+      "business_entity": "Data Management",
+      "node1": "Day2"
+    },
+    {
+      "domain": "Power Platform",
+      "application": "Security",
+      "business_entity": "Business Continuity",
+      "node1": "Day2"
+    },
+    {
+      "domain": "Power Platform",
+      "application": "Security",
+      "business_entity": "Risk Management",
+      "node1": "Day2"
+    },
+    {
+      "domain": "PLM",
+      "application": "Engineering change management",
+      "business_entity": "Commercial",
+      "node1": "Day2"
+    },
+    {
+      "domain": "PLM",
+      "application": "Engineering change management",
+      "business_entity": "RandD",
+      "node1": "Day2"
+    },
+    {
+      "domain": "ISV",
+      "application": "DEEL",
+      "business_entity": "",
+      "node1": "Day2"
+    },
+    {
+      "domain": "ISV",
+      "application": "Docusign",
+      "business_entity": "",
+      "node1": "Day2"
+    },
+    {
+      "domain": "ISV",
+      "application": "PTC Arena",
+      "business_entity": "",
+      "node1": "Day2"
+    },
+    {
+      "domain": "ISV",
+      "application": "SKG",
+      "business_entity": "",
+      "node1": "Day2"
+    },
+    {
+      "domain": "ISV",
+      "application": "SPS Commerce",
+      "business_entity": "",
+      "node1": "Day2"
+    },
+    {
+      "domain": "ISV",
+      "application": "Veeva",
+      "business_entity": "",
+      "node1": "Day2"
+    },
+    {
+      "domain": "ISV",
+      "application": "Vertex",
+      "business_entity": "",
+      "node1": "Day2"
+    },
+    {
+      "domain": "ISV",
+      "application": "Zinfi",
+      "business_entity": "",
+      "node1": "Day2"
+    },
+    {
+      "domain": "E2E Business Model",
+      "application": "",
+      "business_entity": "",
+      "node1": "Day2"
+    },
+    {
+      "domain": "Data Migration",
+      "application": "",
+      "business_entity": "",
+      "node1": "Day2"
+    },
+    {
+      "domain": "Infrastructure",
+      "application": "",
+      "business_entity": "",
+      "node1": "Day2"
+    }
+  ],
+  "domains": [
+    "CRM",
+    "Data Migration",
+    "E2E Business Model",
+    "Finance",
+    "ISV",
+    "Infrastructure",
+    "PLM",
+    "Power Platform",
+    "SCM"
+  ],
+  "applications": [
+    "",
+    "Acquire to Retire",
+    "Business Excellence",
+    "Commercial",
+    "Customer Insights",
+    "Customer Service",
+    "Customer and Channel Management",
+    "DEEL",
+    "Design to Release (PLM)",
+    "Docusign",
+    "Engineering change management",
+    "Forecast to Stock",
+    "Fulfilment",
+    "Governance, Risk and Compliance",
+    "Hire to Retire",
+    "IT",
+    "Inventory",
+    "Legal",
+    "Master Data Management",
+    "Order to Cash",
+    "PTC Arena",
+    "Plan-to-Produce",
+    "Procure to Pay",
+    "Record to Report",
+    "SKG",
+    "SPS Commerce",
+    "Sales",
+    "Security",
+    "Service to Resolution",
+    "Veeva",
+    "Vertex",
+    "Warehouse-to-Ship",
+    "Zinfi"
+  ],
+  "business_entities": [
+    "",
+    "Accounts Payable",
+    "Accounts Receivable",
+    "Analytics, Reporting and AI",
+    "Audit and Compliance",
+    "BOM and Route Management",
+    "Business Continuity",
+    "Cash and Bank Management",
+    "Commercial",
+    "Compliance Governance and Legal",
+    "Conduct Real Estate planning",
+    "Cost Accounting",
+    "Credit and Collections",
+    "Customer and Account Management",
+    "Data Management",
+    "Deliver, Manage and Support IT",
+    "EHS and Sustainability",
+    "Engineering Change Orders",
+    "Engineering Change Requests",
+    "Financial Consolidation and Reporting",
+    "Fixed Assets",
+    "General Ledger",
+    "IT Technology Selection",
+    "Integration and Connectivity",
+    "Intercompany Accounting",
+    "Inventory Management",
+    "Lead to Opportunity",
+    "Manage Business System",
+    "Manage Data Management",
+    "Manage Enterprise Risk",
+    "Manage brand",
+    "Manage business processes",
+    "Manage change",
+    "Manage continuous improvements",
+    "Manage enterprise knowledge",
+    "Manage integrated communications",
+    "Manage portfolio, programs and projects",
+    "Manage resilience and continuity",
+    "Master Planning and Demand Forecasting",
+    "Omnichannel and Channel Management",
+    "Opportunity to Order",
+    "Order Management and Fulfillment",
+    "Order to Cash",
+    "Partner and B2B Sales",
+    "Payment, Tax and Regulatory Compliance",
+    "Perform strategic deep dives",
+    "Pricing, Promotions and Discounts",
+    "Procurement and Sourcing",
+    "Product Configuration",
+    "Product Information Management",
+    "Product Lifecycle Management",
+    "Product Management",
+    "Product Version Management",
+    "Product and Catalog Management",
+    "Production Control",
+    "Project Management and Accounting",
+    "Quality Management",
+    "Quote to Cash",
+    "RandD",
+    "Record to Report",
+    "Returns Management",
+    "Risk Management",
+    "Sales and Order Management",
+    "Service Management",
+    "Service and Aftersales",
+    "Service to Resolution",
+    "Strategy to Integrated Roadmap",
+    "Subscription and Licensing",
+    "Tax Management",
+    "Third Party Management",
+    "Warehouse and Transportation Management"
+  ]
+}

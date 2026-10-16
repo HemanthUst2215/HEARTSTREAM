@@ -1,0 +1,14 @@
+﻿UserStoryID,Title,IndependentScore,NegotiableScore,ValuableScore,EstimableScore,SmallScore,TestableScore,OverallScore,InvestStatus,Recommendations
+,Connect CRM account and contact master data to Customer Insights,9,7,9,5,8,4,7.0,Needs Refinement,Estimable: Concrete scope signals help estimation.; Testable: Add observable Given/When/Then criteria.
+,Ingest sales order and engagement data for unified profiles,9,7,9,4,8,4,6.8,Needs Refinement,Estimable: Concrete scope signals help estimation.; Testable: Add observable Given/When/Then criteria.
+,Define match rules for unified customer profiles,9,7,9,5,8,4,7.0,Needs Refinement,Estimable: Concrete scope signals help estimation.; Testable: Add observable Given/When/Then criteria.
+,Create dynamic segments by vertical end-market,9,8,9,4,8,9,7.8,Needs Refinement,Estimable: Concrete scope signals help estimation.
+,Identify distributors serving multiple vertical markets,9,7,9,5,8,4,7.0,Needs Refinement,Estimable: Concrete scope signals help estimation.; Testable: Add observable Given/When/Then criteria.
+,Use ship-to attributes in Customer Insights segment rules,9,8,9,4,8,9,7.8,Needs Refinement,Estimable: Concrete scope signals help estimation.
+,Capture end-market segment at e-commerce order entry,9,8,9,5,8,4,7.2,Needs Refinement,Estimable: Concrete scope signals help estimation.; Testable: Add observable Given/When/Then criteria.
+,Provide account-level marketing profiles with contact drill-down,9,7,9,4,8,4,6.8,Needs Refinement,Estimable: Concrete scope signals help estimation.; Testable: Add observable Given/When/Then criteria.
+,Enable worldwide marketing analytics visibility for product marketing,9,7,9,4,8,4,6.8,Needs Refinement,Estimable: Concrete scope signals help estimation.; Testable: Add observable Given/When/Then criteria.
+,Update install base segment after partner tracing import,9,8,9,4,8,4,7.0,Needs Refinement,Estimable: Concrete scope signals help estimation.; Testable: Add observable Given/When/Then criteria.
+,Detect vertical sales trends for targeted campaigns,9,7,9,5,8,4,7.0,Needs Refinement,Estimable: Concrete scope signals help estimation.; Testable: Add observable Given/When/Then criteria.
+,Ingest distributor sold-to location from partner channel into CI,9,7,9,4,8,4,6.8,Needs Refinement,Estimable: Concrete scope signals help estimation.; Testable: Add observable Given/When/Then criteria.
+,Analyze account consumable purchase patterns for marketing outreach,9,7,9,4,8,9,7.7,Needs Refinement,Estimable: Concrete scope signals help estimation.

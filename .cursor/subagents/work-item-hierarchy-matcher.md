@@ -10,7 +10,7 @@ work-item-mapping-agent
 - Must: Use `scripts/map-user-stories-to-work-items.py` as the scoring source of truth.
 - Must: Require score ≥ `strong_threshold` and apply `winner_margin` + `max_related_features` from config.
 - Must: Emit matched Epic/Feature header rows with catalog `ID` only.
-- Must: Set User Story `ID` to catalog Feature workItemId(s); blank when no Feature qualifies.
+- Must: Keep User Story `ID` blank; nest stories under the matched Feature row(s) in Epic → Feature → User Stories order.
 - Must NOT: Create new Epics/Features; map Workshop items as Features; mutate story fields; invent IDs.
 
 ## Inputs

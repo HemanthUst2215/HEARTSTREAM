@@ -3,11 +3,14 @@
 
 All `/generate-test-cases-from-user-stories` Excel output must be written through
 `write_workbook()` and pass `validate_workbook()`. Column names, sheet names,
-ID patterns, and enums come from docs/intake/msd-test-case-rulebook.yaml.
+ID patterns, enums, and styling come from docs/intake/msd-test-case-rulebook.yaml.
+Styling fallbacks in this module are intentional (static presentation only);
+register/coverage cell values must come from case JSON, never from hardcoded data here.
 """
 from __future__ import annotations
 
 import csv
+import html
 import re
 from collections import Counter, defaultdict
 from pathlib import Path
@@ -22,6 +25,7 @@ try:
     from openpyxl import Workbook, load_workbook
     from openpyxl.styles import Alignment, Font, PatternFill
     from openpyxl.utils import get_column_letter
+    from openpyxl.worksheet.table import Table, TableStyleInfo
     from openpyxl.worksheet.worksheet import Worksheet
 except ImportError:  # pragma: no cover
     Workbook = None  # type: ignore
@@ -95,6 +99,59 @@ def cell_str(value: Any) -> str:
     if isinstance(value, float) and value.is_integer():
         return str(int(value))
     return str(value).strip()
+
+
+def html_unescape_cell(value: str, enabled: bool) -> str:
+    if not enabled:
+        return value
+    return html.unescape(value)
+
+
+def bind_aliases(rulebook: dict[str, Any], bind_key: str, canonical: str) -> list[str]:
+    spec = ((rulebook.get("input") or {}).get("field_bind_aliases") or {}).get(bind_key)
+    if isinstance(spec, list) and spec:
+        out: list[str] = []
+        for item in spec:
+            token = cell_str(item)
+            if token and token not in out:
+                out.append(token)
+        return out or [canonical]
+    return [canonical]
+
+
+def first_nonempty(row: dict[str, str], columns: list[str]) -> str:
+    for col in columns:
+        val = cell_str(row.get(col))
+        if val:
+            return val
+    return ""
+
+
+def resolve_bound_field(row: dict[str, str], rulebook: dict[str, Any], bind_key: str, canonical: str) -> str:
+    return first_nonempty(row, bind_aliases(rulebook, bind_key, canonical))
+
+
+def resolve_title(row: dict[str, str], work_item_type: str, rulebook: dict[str, Any], canonical: str) -> str:
+    spec = (rulebook.get("input") or {}).get("title_resolution") or {}
+    by_type = spec.get("by_work_item_type") or {}
+    order = by_type.get(work_item_type) or spec.get("default") or bind_aliases(rulebook, "title", canonical)
+    return first_nonempty(row, [str(c) for c in order]) or resolve_bound_field(row, rulebook, "title", canonical)
+
+
+def strip_numbering_prefix(rulebook: dict[str, Any], text: str) -> str:
+    original = cell_str(text)
+    if not original:
+        return original
+    patterns = ((rulebook.get("input") or {}).get("grouping") or {}).get("numbering_prefix_patterns") or []
+    t = original
+    for pat in patterns:
+        t = re.sub(str(pat), "", t, count=1).strip()
+    return t or original
+
+
+def area_path_leaf(path: str) -> str:
+    parts = [p.strip() for p in re.split(r"[\\/]", cell_str(path)) if p.strip()]
+    return parts[-1] if parts else ""
 
 
 def join_unique(values: list[str], sep: str) -> str:
@@ -187,13 +244,105 @@ def _merge_title(
     subtitle: bool = False,
 ) -> None:
     colors = _style_colors(styling)
+    band_align = dict(styling.get("title_band_alignment") or {})
     ws.merge_cells(start_row=row, start_column=1, end_row=row, end_column=col_count)
     cell = ws.cell(row, 1, text)
     cell.font = _make_font(styling, size=font_size, bold=bold, color=colors["on_dark"])
     cell.fill = _solid_fill(colors["title_band"])
-    cell.alignment = Alignment(wrap_text=True, vertical="center")
+    cell.alignment = Alignment(
+        wrap_text=bool(band_align.get("wrap_text", False)),
+        vertical=str(band_align.get("vertical") or "center"),
+    )
     if not subtitle and styling.get("title_row_height"):
         ws.row_dimensions[row].height = float(styling["title_row_height"])
+
+
+def _chars_per_line(col_width: float) -> int:
+    return max(8, int(col_width * 1.1))
+
+
+def _wrapped_line_count(text: str, col_width: float) -> int:
+    if not text.strip():
+        return 1
+    lines = 0
+    for para in text.split("\n"):
+        para = para.strip()
+        if not para:
+            lines += 1
+            continue
+        cpl = _chars_per_line(col_width)
+        lines += max(1, (len(para) + cpl - 1) // cpl)
+    return max(1, lines)
+
+
+def _set_auto_data_row_height(
+    ws: Worksheet,
+    row: int,
+    wrap_col_indexes: list[int],
+    styling: dict[str, Any],
+    sheet_key: str,
+) -> None:
+    sheet = _sheet_style(styling, sheet_key)
+    fixed = sheet.get("data_row_height")
+    if isinstance(fixed, (int, float)):
+        ws.row_dimensions[row].height = float(fixed)
+        return
+    spec = sheet.get("auto_row_height") or {}
+    if not spec:
+        return
+    min_h = float(spec.get("min", 51))
+    max_h = float(spec.get("max", 119))
+    line_h = float(spec.get("line_height", 17))
+    max_lines = 1
+    for c in wrap_col_indexes:
+        width = ws.column_dimensions[get_column_letter(c)].width
+        if width is None:
+            width = 12.0
+        max_lines = max(max_lines, _wrapped_line_count(str(ws.cell(row, c).value or ""), float(width)))
+    ws.row_dimensions[row].height = min(max_h, max(min_h, max_lines * line_h))
+
+
+def _apply_body_font_to_row(
+    ws: Worksheet,
+    row: int,
+    col_count: int,
+    styling: dict[str, Any],
+) -> None:
+    body = float(styling.get("body_font_size") or 12)
+    for c in range(1, col_count + 1):
+        cell = ws.cell(row, c)
+        if cell.font is None or cell.font.name in (None, "Calibri"):
+            cell.font = _make_font(styling, size=body, bold=False)
+
+
+def _attach_excel_table(
+    ws: Worksheet,
+    styling: dict[str, Any],
+    sheet_key: str,
+    header_row: int,
+    col_count: int,
+    last_data_row: int,
+) -> None:
+    if Table is None or TableStyleInfo is None:
+        return
+    if last_data_row < header_row:
+        return
+    sheet = _sheet_style(styling, sheet_key)
+    spec = dict(sheet.get("excel_table") or {})
+    if spec.get("enabled") is False:
+        return
+    ref = f"A{header_row}:{get_column_letter(col_count)}{last_data_row}"
+    display = str(spec.get("display_name") or spec.get("name") or f"Msd{sheet_key.title()}")
+    tab = Table(displayName=display, ref=ref)
+    tab.name = str(spec.get("name") or display)
+    tab.tableStyleInfo = TableStyleInfo(
+        name=str(spec.get("style") or "TableStyleMedium2"),
+        showFirstColumn=bool(spec.get("show_first_column", False)),
+        showLastColumn=bool(spec.get("show_last_column", False)),
+        showRowStripes=bool(spec.get("show_row_stripes", True)),
+        showColumnStripes=bool(spec.get("show_column_stripes", False)),
+    )
+    ws.add_table(tab)
 
 
 def _write_table_header_row(
@@ -275,14 +424,31 @@ def _style_metrics_block(
     for c in range(col_start, col_start + header_span):
         cell = ws.cell(header_row, c)
         cell.font = _make_font(styling, size=body, bold=True, color=colors["on_dark"])
+    metrics_header_h = styling.get("metrics_header_row_height")
+    if metrics_header_h is not None:
+        ws.row_dimensions[header_row].height = float(metrics_header_h)
+    value_size = float(styling.get("metrics_value_font_size") or body)
+    value_bold = bool(styling.get("metrics_value_bold", False))
     for r_i in range(row_count):
         r = data_start + r_i
         row_fill = basis_fill if design_basis_span else data_fill
-        _paint_cells(ws, r, col_start, col_start + (design_basis_span or data_cols) - 1, row_fill)
+        span_end = col_start + (design_basis_span or data_cols) - 1
+        _paint_cells(ws, r, col_start, span_end, row_fill)
         for c in range(col_start, col_start + data_cols):
             cell = ws.cell(r, c)
-            cell.font = _make_font(styling, size=body, bold=False)
-            cell.alignment = Alignment(wrap_text=bool(design_basis_span and c > col_start), vertical="top")
+            is_value = c == col_start + 1 and data_cols >= 2 and not design_basis_span
+            if design_basis_span and c > col_start:
+                cell.font = _make_font(styling, size=body, bold=False)
+                cell.alignment = Alignment(wrap_text=True, vertical="top")
+            elif is_value:
+                cell.font = _make_font(styling, size=value_size, bold=value_bold)
+                cell.alignment = Alignment(vertical="top")
+            else:
+                cell.font = _make_font(styling, size=body, bold=False)
+                cell.alignment = Alignment(vertical="top")
+        for c in range(col_start, span_end + 1):
+            if ws.cell(r, c).font is None or ws.cell(r, c).font.name in (None, "Calibri"):
+                ws.cell(r, c).font = _make_font(styling, size=body, bold=False)
 
 
 def denormalize_register_rows(rulebook: dict[str, Any], cases: list[dict[str, Any]]) -> list[dict[str, str]]:
@@ -491,22 +657,28 @@ def _write_coverage_sheet(
         bold=False,
         subtitle=True,
     )
-    _write_metrics(ws, rulebook, styling, register_rows)
+    _write_metrics(ws, rulebook, styling, register_rows, sheet_width=n)
     header_row = int(cfg["table_header_row"])
     _write_table_header_row(ws, header_row, cols, styling, "coverage")
+    cov_hdr_h = cov_sheet.get("table_header_row_height")
+    if cov_hdr_h is not None:
+        ws.row_dimensions[header_row].height = float(cov_hdr_h)
     wrap_headers = {role(rulebook, "coverage", r) for r in cov_sheet.get("wrap_roles", [])}
     wrap_idx = [i for i, h in enumerate(cols, start=1) if h in wrap_headers]
+    for i, w in enumerate(_column_widths_for_sheet(styling, "coverage", cols), start=1):
+        if w is not None:
+            ws.column_dimensions[get_column_letter(i)].width = w
     start = int(cfg["data_start_row"])
     for i, row in enumerate(cov_rows):
         r = start + i
         for c, h in enumerate(cols, start=1):
             ws.cell(r, c, row.get(h, ""))
         _apply_data_row_style(ws, r, n, styling, wrap_idx)
+        _set_auto_data_row_height(ws, r, wrap_idx or list(range(1, n + 1)), styling, "coverage")
+    if cov_rows:
+        _attach_excel_table(ws, styling, "coverage", header_row, n, start + len(cov_rows) - 1)
     if cfg.get("freeze_panes"):
         ws.freeze_panes = cfg["freeze_panes"]
-    for i, w in enumerate(_column_widths_for_sheet(styling, "coverage", cols), start=1):
-        if w is not None:
-            ws.column_dimensions[get_column_letter(i)].width = w
 
 
 def _write_metrics(
@@ -514,11 +686,14 @@ def _write_metrics(
     rulebook: dict[str, Any],
     styling: dict[str, Any],
     register_rows: list[dict[str, str]],
+    *,
+    sheet_width: int = 0,
 ) -> None:
     metrics = rulebook["metrics"]
     cfg = sheet_cfg(rulebook, "coverage")
     header_row = int(cfg["metrics_header_row"])
     data_start = int(cfg["metrics_data_start_row"])
+    last_metric_row = header_row
     blocks: list[tuple[str, int, int, int]] = [
         ("coverage_block", 1, 2, 0),
         ("execution_block", 4, 2, 0),
@@ -554,6 +729,10 @@ def _write_metrics(
             data_cols,
             design_basis_span=basis_span,
         )
+        last_metric_row = max(last_metric_row, data_start + row_count - 1)
+    if sheet_width > 0:
+        for r in range(header_row, last_metric_row + 1):
+            _apply_body_font_to_row(ws, r, sheet_width, styling)
 
 
 def _write_register_sheet(
@@ -590,20 +769,27 @@ def _write_register_sheet(
         bold=False,
         subtitle=True,
     )
-    _write_table_header_row(ws, int(cfg["table_header_row"]), cols, styling, "register")
+    subtitle_row = int(cfg["subtitle_row"])
+    table_header_row = int(cfg["table_header_row"])
+    for gap_row in range(subtitle_row + 1, table_header_row):
+        _apply_body_font_to_row(ws, gap_row, n, styling)
+    _write_table_header_row(ws, table_header_row, cols, styling, "register")
     wrap_headers = {role(rulebook, "register", r) for r in rulebook["columns"]["register"].get("wrap_roles", [])}
     wrap_idx = [i for i, h in enumerate(cols, start=1) if h in wrap_headers]
+    for i, w in enumerate(_column_widths_for_sheet(styling, "register", cols), start=1):
+        if w is not None:
+            ws.column_dimensions[get_column_letter(i)].width = w
     start = int(cfg["data_start_row"])
     for i, row in enumerate(register_rows):
         r = start + i
         for c, h in enumerate(cols, start=1):
             ws.cell(r, c, row.get(h, ""))
         _apply_data_row_style(ws, r, n, styling, wrap_idx)
+        _set_auto_data_row_height(ws, r, wrap_idx, styling, "register")
+    if register_rows:
+        _attach_excel_table(ws, styling, "register", table_header_row, n, start + len(register_rows) - 1)
     if cfg.get("freeze_panes"):
         ws.freeze_panes = cfg["freeze_panes"]
-    for i, w in enumerate(_column_widths_for_sheet(styling, "register", cols), start=1):
-        if w is not None:
-            ws.column_dimensions[get_column_letter(i)].width = w
 
 
 def _write_isv_sheet(

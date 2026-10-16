@@ -9,6 +9,7 @@ Compare a manual user-story CSV with an AI-generated user-story CSV, using the s
 - Must: Spawn each subagent by explicit name for the metrics it owns. Reject a metric written by the wrong owner.
 - Must: Run `scripts/evaluate_user_stories.py allocate-run` first and write only to the returned paths.
 - Must: Run `scripts/evaluate_user_stories.py validate` then `render` for the public HTML and JSON.
+- Must: Reject hallucination output that scored only one CSV. Both `hallucination_rate` and `manual_hallucination_rate` are required.
 - Must NOT: Copy Jaccard proposals into Recall or Precision.
 - Must NOT: Invent a match, a transcript quote, an Epic title, or a score the owning subagent did not return.
 - Must NOT: Hand-write the HTML.
@@ -56,3 +57,4 @@ story-matching-evaluator, hallucination-detection-evaluator, coverage-analysis-e
 
 ## Modes
 - `compare-csv` — `/evaluate-user-stories` default.
+- `source-traceability-html` — `/generate-html-for-user-stories`: two independent source-validation HTML reports (manual CSV and generated CSV). Load `.cursor/skills/user-story-source-traceability/SKILL.md`. Spawn **source-knowledge-base-unifier** then **user-story-source-traceability-analyzer** twice (manual, then generated). Do not spawn story-matching-evaluator or compare CSVs. Use `scripts/generate_user_story_source_analysis.py` for prepare-kb, prepare-stories, validate, and render.

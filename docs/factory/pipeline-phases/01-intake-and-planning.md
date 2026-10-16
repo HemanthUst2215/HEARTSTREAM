@@ -91,15 +91,17 @@ Applies to `/generate-brd`, `/generate-user-stories-from-transcript`, `/generate
 
 | # | Step | Who | What |
 |---|------|-----|------|
-| C2.0 | Load contract | orchestrator | Require `transcript_path`; refuse if rulebook missing and no one-time `setup_csv` |
-| C2.1 | Safety scan | orchestrator | Step A on transcript |
-| C2.2 | Load rulebook | business-analyst-agent | `docs/intake/user-story-csv-rulebook.yaml` only — never bootstrap CSV at runtime |
-| C2.3 | Analyze | transcript-analyzer + transcript-story-extractor | Cited facts → User Story candidates |
-| C2.4 | Write CSV | ado-user-story-csv-writer | Exact rulebook headers; Workshop + User Stories only (no new Epic/Feature rows) |
-| C2.5 | Validate | user-story-csv-compliance-validator | `scripts/validate-user-story-csv.py` exit 0 |
+| C2.0 | Load contract | orchestrator | Require `transcript_path` and `prerequisite_paths`; refuse if rulebook missing and no one-time `setup_csv` |
+| C2.1 | Safety scan | orchestrator | Step A on prerequisite docs + transcript |
+| C2.1b | Prerequisite KB | workshop-prerequisite-analyzer | Knowledge-base MD/JSON from prerequisite materials (scope authority) |
+| C2.2 | Load rulebooks | business-analyst-agent | `user-story-csv-rulebook.yaml`, `workshop-prerequisite-scope-rulebook.yaml`, `msd365-business-entity-scope-rulebook.yaml` — never bootstrap CSV at runtime |
+| C2.3 | Analyze | transcript-analyzer + transcript-story-extractor | Cited facts → User Story candidates aligned with prerequisite scope + MSD365 catalog |
+| C2.4 | Write CSV | ado-user-story-csv-writer | Exact rulebook headers; Workshop + User Stories only (no new Epic/Feature rows); row JSON carries scope metadata |
+| C2.5 | Validate scope | workshop-scope-compliance-validator | Workshop + entity scope scripts exit 0 |
+| C2.5b | Validate CSV | user-story-csv-compliance-validator | `scripts/validate-user-story-csv.py` exit 0 |
 | C2.6 | Persist | business-analyst-agent | Internal working CSV `artifacts/intake/.pipeline/<date>-user-stories-working.csv` + extraction notes |
 | C2.6b | INVEST | invest-scorecard-evaluator | `artifacts/intake/<date>-invest-scorecard.csv` (separate file only; not a sheet or columns on the Excel) |
-| C2.7 | Map hierarchy IDs | **work-item-mapping-agent** | Strong-match Epic/Feature/Workshop IDs into **one** public Excel `artifacts/intake/<date>-user-stories-from-transcript.xlsx` + internal mapping log. No `*-mapped.csv` / second workbook. Skip only if work-items JSON absent (Open DQ). |
+| C2.7 | Map catalog hierarchy | **work-item-mapping-agent** | Strong-match stories to catalog Epic/Feature; write **one** public Excel with Workshop → Epic → Feature → User Stories (blank story ID) layout + mapping log. No `*-mapped.csv` / second workbook. Skip only if work-items JSON absent (Open DQ). |
 | C2.8 | Audit + harness | | `artifacts/audit/<date>-generate-user-stories-from-transcript-<task>.md` |
 
 **Must:** INVEST-sized stories; `As a … I need … so that …` in Description; `- ` AC bullets (ASCII). No Priority/Story Point columns.

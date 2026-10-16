@@ -1,5 +1,11 @@
 #!/usr/bin/env python3
-"""Regenerate a known workshop CSV using canonical layout helpers (dev/regression only)."""
+"""DEV / REGRESSION ONLY — sample row corpus for layout and validator tests.
+
+Not invoked by `/generate-user-stories-from-transcript` at runtime. Production runs
+author rows from the transcript + rulebook + catalogs only. Replace or extend the
+fixture functions when adding regression cases; do not treat this module as a
+domain template for future workshops.
+"""
 from __future__ import annotations
 
 import sys
@@ -17,6 +23,7 @@ except ImportError:
 
 from ado_user_story_csv_layout import (  # noqa: E402
     acceptance_criteria_cell,
+    apply_generation_defaults,
     blank_row,
     headers_from_rulebook,
     issue_description_cell,
@@ -312,7 +319,17 @@ def ce_workshop_2026_09_28_rows() -> list[dict[str, str]]:
 
 
 def emit_csv(path: Path, rows: list[dict[str, str]]) -> None:
-    write_csv(path, _headers(), rows)
+    if yaml is None:
+        raise SystemExit("pip install pyyaml")
+    rb = yaml.safe_load(RULEBOOK.read_text(encoding="utf-8"))
+    headers = headers_from_rulebook(rb)
+    projected: list[dict[str, str]] = []
+    for row in rows:
+        apply_generation_defaults(rb, row)
+        if "Title" not in headers:
+            row.pop("Title", None)
+        projected.append({h: row.get(h) or "" for h in headers})
+    write_csv(path, headers, projected)
 
 
 def main() -> None:

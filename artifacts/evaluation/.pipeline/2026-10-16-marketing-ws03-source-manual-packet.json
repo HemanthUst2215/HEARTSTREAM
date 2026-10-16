@@ -1,0 +1,1415 @@
+{
+  "schema_version": "1.0",
+  "kind": "source-analysis-packet",
+  "side": "manual",
+  "status": "packet",
+  "inputs": {
+    "user_story_csv": "C:\\Users\\308279\\Documents\\HEARTSTREAM-1\\artifacts\\evaluation\\.pipeline\\2026-10-16-marketing-ws03-manual.csv",
+    "kb_index": "C:\\Users\\308279\\Documents\\HEARTSTREAM-1\\artifacts\\evaluation\\.pipeline\\2026-10-16-marketing-ws03-source-kb-index.json",
+    "unified_knowledge_base": "C:\\Users\\308279\\Documents\\HEARTSTREAM-1\\artifacts\\evaluation\\.pipeline\\2026-10-16-marketing-ws03-source-knowledge-base.json"
+  },
+  "header_findings": [],
+  "user_stories": [
+    {
+      "story_key": "manual-US-4",
+      "side": "manual",
+      "row_number": 4,
+      "id": "111535",
+      "title": "Define External Analytics Data Sources and Requirements",
+      "description": "<div><b>As a</b>&nbsp;Marketing Data Administrator,&nbsp; </div><div><br> </div><div> </div><div><b>I should ,&nbsp;</b>define the approved external analytics platforms, datasets, events, attributes, history, refresh frequency,&nbsp; </div><div><br> </div><div><b>So that </b>only relevant data is brought into Customer Insights - Data. </div>",
+      "acceptance_criteria": [
+        "<div><span>1. All relevant analytics platforms are identified.<br></span><div>2. Required datasets, events, dimensions, measures, and historical periods are documented.<br> </div><div>3. Batch and real-time ingestion requirements are classified.<br> </div><div>4. Required refresh frequency and data volume estimates are documented.<br> </div><div>5. Customer-identification fields and matching keys are identified.<br> </div><div>6. Reporting, segmentation, and journey-activation use cases are documented.<br> </div><div>7. Business and technical owners approve the source inventory and requirements. </div> </div>"
+      ],
+      "area_path": "CRM",
+      "epic": null,
+      "feature": {
+        "row_number": 3,
+        "id": "104629",
+        "title": "70-External Analytics Data Ingestion & Unification",
+        "work_item_type": "Feature"
+      },
+      "structural": {
+        "title_ok": true,
+        "description_ok": false,
+        "format_ok": false,
+        "role": "",
+        "role_specific": false,
+        "ac_count": 1,
+        "ac_hyphen_format_ok": false,
+        "negative_boundary_signal_lines": [],
+        "need_count": 0
+      }
+    },
+    {
+      "story_key": "manual-US-5",
+      "side": "manual",
+      "row_number": 5,
+      "id": "111553",
+      "title": "Map External Analytics Data to the Customer Insights Data Model",
+      "description": "<div><b>As a</b> Marketing Data Administrator,&nbsp; </div><div><br> </div><div><b>I should</b> map external analytics data to the appropriate Customer Insights entities and attributes, </div><div><br> </div><div><b>So that</b> digital behavior can be consistently interpreted and used across customer profiles, segments, and analytics. </div>",
+      "acceptance_criteria": [
+        "<span>1. Source-to-target mappings are documented for all approved fields. <br></span><div>2. Customer identifiers, event types, timestamps, channels, campaigns attributes are mapped.<br> </div><div>3. Data types and formats are standardized.<br> </div><div>4. Mandatory mapping validations are applied.<br> </div><div>5. Sample source records are validated against the resulting Customer Insights records. </div><div><span>6. Business owners approve the meaning and usage of key analytics attributes.</span><br> </div>"
+      ],
+      "area_path": "CRM",
+      "epic": null,
+      "feature": {
+        "row_number": 3,
+        "id": "104629",
+        "title": "70-External Analytics Data Ingestion & Unification",
+        "work_item_type": "Feature"
+      },
+      "structural": {
+        "title_ok": true,
+        "description_ok": false,
+        "format_ok": false,
+        "role": "",
+        "role_specific": false,
+        "ac_count": 1,
+        "ac_hyphen_format_ok": false,
+        "negative_boundary_signal_lines": [],
+        "need_count": 0
+      }
+    },
+    {
+      "story_key": "manual-US-6",
+      "side": "manual",
+      "row_number": 6,
+      "id": "111554",
+      "title": "Configure Scheduled Batch Analytics Data Ingestion",
+      "description": "<div><b>As a </b>Marketing Data Administrator,&nbsp; </div><div><br> </div><div><b>I should</b> configure scheduled batch ingestion of external analytics data,&nbsp; </div><div><br> </div><div><b>so that</b> customer behavior, engagement, and conversion information is refreshed at an agreed frequency. </div>",
+      "acceptance_criteria": [
+        "<div>1. The batch ingestion frequency is defined and configured.&nbsp; </div><div>2. The process imports only the approved datasets and historical range.&nbsp; </div><div>3. Incremental ingestion or another approved loading approach is implemented.&nbsp; </div><div>4. Duplicate ingestion is prevented or managed.&nbsp; </div><div>5. Successful and unsuccessful batch executions can be monitored.&nbsp; </div><div>6. Refreshed data becomes available for downstream profile and segment processing. </div>"
+      ],
+      "area_path": "CRM",
+      "epic": null,
+      "feature": {
+        "row_number": 3,
+        "id": "104629",
+        "title": "70-External Analytics Data Ingestion & Unification",
+        "work_item_type": "Feature"
+      },
+      "structural": {
+        "title_ok": true,
+        "description_ok": false,
+        "format_ok": false,
+        "role": "",
+        "role_specific": false,
+        "ac_count": 1,
+        "ac_hyphen_format_ok": false,
+        "negative_boundary_signal_lines": [
+          "<div>1. The batch ingestion frequency is defined and configured.&nbsp; </div><div>2. The process imports only the approved datasets and historical range.&nbsp; </div><div>3. Incremental ingestion or another approved loading approach is implemented.&nbsp; </div><div>4. Duplicate ingestion is prevented or managed.&nbsp; </div><div>5. Successful and unsuccessful batch executions can be monitored.&nbsp; </div><div>6. Refreshed data becomes available for downstream profile and segment processing. </div>"
+        ],
+        "need_count": 0
+      }
+    },
+    {
+      "story_key": "manual-US-7",
+      "side": "manual",
+      "row_number": 7,
+      "id": "111555",
+      "title": "Implement Real-Time Behavioral Data Ingestion",
+      "description": "<div><b>As a </b>Marketer,&nbsp; </div><div><br> </div><div><b>I should </b>receive approved digital behavioral events,&nbsp; </div><div><br> </div><div><b>so that </b>time-sensitive engagement signals can support customer analysis, segmentation, and journey activation. </div>",
+      "acceptance_criteria": [
+        "<div>1. Real-time business use cases and eligible event types are approved.&nbsp; </div><div>2. The source, integration platform, event schema, expected volume, and latency are defined.&nbsp; </div><div>3. Event validation and duplicate-event handling are implemented.&nbsp; </div><div>4. Successfully processed events are available in the target analytical environment.&nbsp; </div>"
+      ],
+      "area_path": "CRM",
+      "epic": null,
+      "feature": {
+        "row_number": 3,
+        "id": "104629",
+        "title": "70-External Analytics Data Ingestion & Unification",
+        "work_item_type": "Feature"
+      },
+      "structural": {
+        "title_ok": true,
+        "description_ok": false,
+        "format_ok": false,
+        "role": "",
+        "role_specific": false,
+        "ac_count": 1,
+        "ac_hyphen_format_ok": false,
+        "negative_boundary_signal_lines": [],
+        "need_count": 0
+      }
+    },
+    {
+      "story_key": "manual-US-8",
+      "side": "manual",
+      "row_number": 8,
+      "id": "111556",
+      "title": "Associate Identifiable Digital Behavior with Customer Profiles",
+      "description": "<div><b>As a</b> Marketing Analyst, </div><div><br> </div><div><b>I should</b> associate identifiable digital interactions with the correct customer or contact profile,&nbsp; </div><div><br> </div><div><b>so that</b> I can understand individual engagement and create behavior-based audiences within the customer insights unified profile </div>",
+      "acceptance_criteria": [
+        "<div>1. Identifiable events are associated with the correct unified customer profile.&nbsp; </div><div>2. A single event is not incorrectly associated with multiple profiles. </div><div>3. Match confidence and exception-handling rules are defined.&nbsp; </div><div>4. Matched behavioral activities are visible against the appropriate profile.&nbsp; </div>"
+      ],
+      "area_path": "CRM",
+      "epic": null,
+      "feature": {
+        "row_number": 3,
+        "id": "104629",
+        "title": "70-External Analytics Data Ingestion & Unification",
+        "work_item_type": "Feature"
+      },
+      "structural": {
+        "title_ok": true,
+        "description_ok": false,
+        "format_ok": false,
+        "role": "",
+        "role_specific": false,
+        "ac_count": 1,
+        "ac_hyphen_format_ok": false,
+        "negative_boundary_signal_lines": [
+          "<div>1. Identifiable events are associated with the correct unified customer profile.&nbsp; </div><div>2. A single event is not incorrectly associated with multiple profiles. </div><div>3. Match confidence and exception-handling rules are defined.&nbsp; </div><div>4. Matched behavioral activities are visible against the appropriate profile.&nbsp; </div>"
+        ],
+        "need_count": 0
+      }
+    },
+    {
+      "story_key": "manual-US-9",
+      "side": "manual",
+      "row_number": 9,
+      "id": "111557",
+      "title": "Unify External Analytics Data with Customer and Engagement Data",
+      "description": "<div><b>As a</b> Marketing Analyst,&nbsp; </div><div><br> </div><div><b>I should</b>&nbsp;be able to unify external analytics data together with customer, account and engagement information,&nbsp; </div><div><br> </div><div><b>so that</b> I can analyze the customer using a consolidated profile. </div>",
+      "acceptance_criteria": [
+        "<div>1. Approved analytics data is included in the Customer Insights unification process.&nbsp; </div><div>2. Required customer, account, and interaction relationships are configured.&nbsp; </div><div>3. Duplicate customer profiles are handled according to approved rules.&nbsp; </div><div>4. Unified profiles display the agreed digital-engagement indicators.&nbsp; </div><div>5. Profile refresh completes according to the agreed schedule.&nbsp; </div>"
+      ],
+      "area_path": "CRM",
+      "epic": null,
+      "feature": {
+        "row_number": 3,
+        "id": "104629",
+        "title": "70-External Analytics Data Ingestion & Unification",
+        "work_item_type": "Feature"
+      },
+      "structural": {
+        "title_ok": true,
+        "description_ok": false,
+        "format_ok": false,
+        "role": "",
+        "role_specific": false,
+        "ac_count": 1,
+        "ac_hyphen_format_ok": false,
+        "negative_boundary_signal_lines": [],
+        "need_count": 0
+      }
+    },
+    {
+      "story_key": "manual-US-10",
+      "side": "manual",
+      "row_number": 10,
+      "id": "111558",
+      "title": "Create Customer Measures from External Analytics Data",
+      "description": "<div><b>As a</b> Marketing Analyst,&nbsp; </div><div><br> </div><div><b>I should</b> calculate reusable customer measures from digital analytics and behavioral data,&nbsp; </div><div><br> </div><div><b>so that</b> customer engagement and digital activity can be consistently analyzed and used for targeting. </div>",
+      "acceptance_criteria": [
+        "<div>1. Priority customer measures are defined and approved. </div><div>2. Calculation logic and lookback periods are documented.&nbsp; </div><div>3. Measures refresh with the relevant source data.&nbsp; </div><div>4. Calculated values are available on the appropriate customer profiles.&nbsp; </div><div>5. Measures can be used in segments where supported.&nbsp; </div><div>6. Results are validated against representative source data. </div>"
+      ],
+      "area_path": "CRM",
+      "epic": null,
+      "feature": {
+        "row_number": 3,
+        "id": "104629",
+        "title": "70-External Analytics Data Ingestion & Unification",
+        "work_item_type": "Feature"
+      },
+      "structural": {
+        "title_ok": true,
+        "description_ok": false,
+        "format_ok": false,
+        "role": "",
+        "role_specific": false,
+        "ac_count": 1,
+        "ac_hyphen_format_ok": false,
+        "negative_boundary_signal_lines": [],
+        "need_count": 0
+      }
+    },
+    {
+      "story_key": "manual-US-11",
+      "side": "manual",
+      "row_number": 11,
+      "id": "111560",
+      "title": "Make Unified Analytics Data Available for Journey Activation",
+      "description": "<div><b>As a</b> Marketer,&nbsp; </div><div><br> </div><div><b>I should</b> use approved analytics-based segments and engagement signals in Customer Insights - Journeys,&nbsp; </div><div><br> </div><div><b>so that</b> campaign audiences and communications reflect recent digital behavior. </div>",
+      "acceptance_criteria": [
+        "<div>1. Approved analytics-driven segments are available to Customer Insights - Journeys.&nbsp; </div><div>2. Segment membership is transferred within the agreed refresh timeframe.&nbsp; </div><div>3. Consent and communication preferences are evaluated before activation.&nbsp; </div><div>4. Test profiles validate expected journey entry behavior.&nbsp; </div><div>5. Journey interactions remain traceable to the activated audience.&nbsp; </div>"
+      ],
+      "area_path": "CRM",
+      "epic": null,
+      "feature": {
+        "row_number": 3,
+        "id": "104629",
+        "title": "70-External Analytics Data Ingestion & Unification",
+        "work_item_type": "Feature"
+      },
+      "structural": {
+        "title_ok": true,
+        "description_ok": false,
+        "format_ok": false,
+        "role": "",
+        "role_specific": false,
+        "ac_count": 1,
+        "ac_hyphen_format_ok": false,
+        "negative_boundary_signal_lines": [],
+        "need_count": 0
+      }
+    },
+    {
+      "story_key": "manual-US-12",
+      "side": "manual",
+      "row_number": 12,
+      "id": "111561",
+      "title": "Monitor Analytics Data Ingestion and Processing",
+      "description": "<div><b>As a</b> Data Operations User,&nbsp; </div><div><br> </div><div><b>I should</b> monitor external analytics ingestion, processing, and refresh activities,&nbsp; </div><div><br> </div><div><b>so that</b> failures and data-quality issues can be identified and resolved before they affect segmentation or reporting. </div>",
+      "acceptance_criteria": [
+        "<div>1. Ingestion execution status is available to authorized users. </div><div>2. Source and target record counts can be reviewed.&nbsp; </div><div>3. Alerts Indications are generated for failures.&nbsp; </div><div>4. Failed data can be corrected and reprocessed.&nbsp; </div>"
+      ],
+      "area_path": "CRM",
+      "epic": null,
+      "feature": {
+        "row_number": 3,
+        "id": "104629",
+        "title": "70-External Analytics Data Ingestion & Unification",
+        "work_item_type": "Feature"
+      },
+      "structural": {
+        "title_ok": true,
+        "description_ok": false,
+        "format_ok": false,
+        "role": "",
+        "role_specific": false,
+        "ac_count": 1,
+        "ac_hyphen_format_ok": false,
+        "negative_boundary_signal_lines": [],
+        "need_count": 0
+      }
+    },
+    {
+      "story_key": "manual-US-13",
+      "side": "manual",
+      "row_number": 13,
+      "id": "111562",
+      "title": "Validate External Analytics Data Quality",
+      "description": "<div><b>As a</b> Marketing Data Administrator,&nbsp; </div><div><br> </div><div><b>I should</b> validate the completeness, accuracy, consistency, and timeliness of external analytics data,&nbsp; </div><div><br> </div><div><b>so that</b> marketing analysis and segmentation are based on reliable information. </div>",
+      "acceptance_criteria": [
+        "<div>1. Data quality of External Analytics Data can be validated and tracked for errors </div><div>2. Invalid and incomplete records are identified.&nbsp; </div><div>2. Duplicate-event controls are implemented.&nbsp; </div><div>3. Data recency and refresh completion are monitored.&nbsp; </div><div>4. Quality exceptions are reported to the responsible owner.&nbsp; </div>"
+      ],
+      "area_path": "CRM",
+      "epic": null,
+      "feature": {
+        "row_number": 3,
+        "id": "104629",
+        "title": "70-External Analytics Data Ingestion & Unification",
+        "work_item_type": "Feature"
+      },
+      "structural": {
+        "title_ok": true,
+        "description_ok": false,
+        "format_ok": false,
+        "role": "",
+        "role_specific": false,
+        "ac_count": 1,
+        "ac_hyphen_format_ok": false,
+        "negative_boundary_signal_lines": [
+          "<div>1. Data quality of External Analytics Data can be validated and tracked for errors </div><div>2. Invalid and incomplete records are identified.&nbsp; </div><div>2. Duplicate-event controls are implemented.&nbsp; </div><div>3. Data recency and refresh completion are monitored.&nbsp; </div><div>4. Quality exceptions are reported to the responsible owner.&nbsp; </div>"
+        ],
+        "need_count": 0
+      }
+    },
+    {
+      "story_key": "manual-US-14",
+      "side": "manual",
+      "row_number": 14,
+      "id": "111563",
+      "title": "Access External Analytics Data for Marketing Out of Box Reporting",
+      "description": "<div><b>As a</b> Marketing Analyst,<b>&nbsp;</b> </div><div><b><br></b> </div><div><b>I should</b>&nbsp;be able to access OOB analytics data for reporting,&nbsp; </div><div><br> </div><div><b>so that</b> I can evaluate customer behavior, channel engagement, campaign effectiveness, and conversion trends. </div>",
+      "acceptance_criteria": [
+        "<div>1. Reporting-ready analytics datasets and measures are identified.&nbsp; </div><div>2. Standard Customer Insights analytics are used where they meet the requirement.&nbsp; </div><div>3. Reported totals are reconciled with the approved source or unified dataset. </div>"
+      ],
+      "area_path": "CRM",
+      "epic": null,
+      "feature": {
+        "row_number": 3,
+        "id": "104629",
+        "title": "70-External Analytics Data Ingestion & Unification",
+        "work_item_type": "Feature"
+      },
+      "structural": {
+        "title_ok": true,
+        "description_ok": false,
+        "format_ok": false,
+        "role": "",
+        "role_specific": false,
+        "ac_count": 1,
+        "ac_hyphen_format_ok": false,
+        "negative_boundary_signal_lines": [],
+        "need_count": 0
+      }
+    },
+    {
+      "story_key": "manual-US-17",
+      "side": "manual",
+      "row_number": 17,
+      "id": "111575",
+      "title": "Configure Access to Approved Marketing Assets from MediaValet",
+      "description": "<div><b>As a </b>Marketer, </div><div><br> </div><div><b> I should </b>be able to&nbsp;access approved marketing assets from MediaValet while building marketing communications, </div><div><br> </div><div><b>&nbsp;so that</b> only approved content is used in customer-facing campaigns and journeys. </div>",
+      "acceptance_criteria": [
+        "<div>1. Approved assets are available to marketing users in media valet.&nbsp; </div><div>2. Users can identify approved content versions.&nbsp; </div><div>3. Marketers can locate required assets efficiently.&nbsp; </div>"
+      ],
+      "area_path": "CRM",
+      "epic": null,
+      "feature": {
+        "row_number": 16,
+        "id": "110483",
+        "title": "54-Global Marketing Content Activation",
+        "work_item_type": "Feature"
+      },
+      "structural": {
+        "title_ok": true,
+        "description_ok": false,
+        "format_ok": false,
+        "role": "",
+        "role_specific": false,
+        "ac_count": 1,
+        "ac_hyphen_format_ok": false,
+        "negative_boundary_signal_lines": [],
+        "need_count": 0
+      }
+    },
+    {
+      "story_key": "manual-US-18",
+      "side": "manual",
+      "row_number": 18,
+      "id": "111576",
+      "title": "Create Marketing Email Templates Using Approved Assets",
+      "description": "<div><b>As a </b>Marketer,&nbsp; </div><div><b><br></b> </div><div><b>I should </b>be able to<b>&nbsp;</b>create reusable email templates using approved MediaValet content,&nbsp; </div><div><b><br></b> </div><div><b>so that</b> campaigns can be launched quickly while maintaining consistency. </div>",
+      "acceptance_criteria": [
+        "<div>1. Email templates can be created using available assets.&nbsp; </div><div>2. Branding standards are maintained.&nbsp; </div><div>3. Templates support personalization fields.&nbsp; </div><div>4. Templates can be previewed and tested.&nbsp; </div><div>5. Templates can be reused across campaigns.&nbsp; </div><div>6. Only authorized users can publish templates. </div>"
+      ],
+      "area_path": "CRM",
+      "epic": null,
+      "feature": {
+        "row_number": 16,
+        "id": "110483",
+        "title": "54-Global Marketing Content Activation",
+        "work_item_type": "Feature"
+      },
+      "structural": {
+        "title_ok": true,
+        "description_ok": false,
+        "format_ok": false,
+        "role": "",
+        "role_specific": false,
+        "ac_count": 1,
+        "ac_hyphen_format_ok": false,
+        "negative_boundary_signal_lines": [
+          "<div>1. Email templates can be created using available assets.&nbsp; </div><div>2. Branding standards are maintained.&nbsp; </div><div>3. Templates support personalization fields.&nbsp; </div><div>4. Templates can be previewed and tested.&nbsp; </div><div>5. Templates can be reused across campaigns.&nbsp; </div><div>6. Only authorized users can publish templates. </div>"
+        ],
+        "need_count": 0
+      }
+    },
+    {
+      "story_key": "manual-US-19",
+      "side": "manual",
+      "row_number": 19,
+      "id": "111577",
+      "title": "Create Campaign Landing Pages Using Approved Assets",
+      "description": "<div><b>As a</b> Marketer,&nbsp; </div><div><br> </div><div><b>I should</b>&nbsp;be able to build landing pages using approved content and imagery,&nbsp; </div><div><br> </div><div><b>so that</b> campaign audiences receive consistent information and messaging. </div>",
+      "acceptance_criteria": [
+        "<div>1. Landing pages support approved content.&nbsp; </div><div>2. Branding guidelines are maintained.&nbsp; </div><div>3. Forms can be embedded where required.&nbsp; </div><div>4. Landing page interactions are trackable.&nbsp; </div><div>5. Pages can be previewed before activation.&nbsp; </div><div>6. Pages can be associated with campaigns and journeys. </div>"
+      ],
+      "area_path": "CRM",
+      "epic": null,
+      "feature": {
+        "row_number": 16,
+        "id": "110483",
+        "title": "54-Global Marketing Content Activation",
+        "work_item_type": "Feature"
+      },
+      "structural": {
+        "title_ok": true,
+        "description_ok": false,
+        "format_ok": false,
+        "role": "",
+        "role_specific": false,
+        "ac_count": 1,
+        "ac_hyphen_format_ok": false,
+        "negative_boundary_signal_lines": [],
+        "need_count": 0
+      }
+    },
+    {
+      "story_key": "manual-US-20",
+      "side": "manual",
+      "row_number": 20,
+      "id": "111578",
+      "title": "Create Marketing Forms for Campaign Responses",
+      "description": "<div><b>As a </b>Marketer, </div><div><b><br></b> </div><div><b>I should</b> configure marketing forms, </div><div><br> </div><div><b>so that</b> campaign responses and customer interest can be captured and tracked. </div>",
+      "acceptance_criteria": [
+        "<div>1. Forms capture agreed business information.&nbsp; </div><div>2. Mandatory-field validation is supported.&nbsp; </div><div>3. Form responses are recorded successfully.&nbsp; </div><div>4. Consent center / preference center link is included where required.&nbsp; </div><div>5. Submitted responses are available for downstream processing. </div>"
+      ],
+      "area_path": "CRM",
+      "epic": null,
+      "feature": {
+        "row_number": 16,
+        "id": "110483",
+        "title": "54-Global Marketing Content Activation",
+        "work_item_type": "Feature"
+      },
+      "structural": {
+        "title_ok": true,
+        "description_ok": false,
+        "format_ok": false,
+        "role": "",
+        "role_specific": false,
+        "ac_count": 1,
+        "ac_hyphen_format_ok": false,
+        "negative_boundary_signal_lines": [],
+        "need_count": 0
+      }
+    },
+    {
+      "story_key": "manual-US-21",
+      "side": "manual",
+      "row_number": 21,
+      "id": "111579",
+      "title": "Configure Personalized Marketing Content",
+      "description": "<div><b>As a </b>Marketer,&nbsp; </div><div><br> </div><div><b>I should</b>&nbsp;be able to personalize marketing communications using customer profile information,&nbsp; </div><div><br> </div><div><b>so that</b> marketing messages are more relevant to recipients. </div>",
+      "acceptance_criteria": [
+        "<div>1. Personalization fields are supported in email and sms&nbsp; </div><div>2. Customer attributes can be inserted into communications.&nbsp; </div><div>3. Preview and testing functionality is available.&nbsp; </div><div>4. Missing data handling is defined.&nbsp; </div><div>5. Personalization works consistently across journeys.&nbsp; </div><div>6. Personalized communications are delivered successfully. </div>"
+      ],
+      "area_path": "CRM",
+      "epic": null,
+      "feature": {
+        "row_number": 16,
+        "id": "110483",
+        "title": "54-Global Marketing Content Activation",
+        "work_item_type": "Feature"
+      },
+      "structural": {
+        "title_ok": true,
+        "description_ok": false,
+        "format_ok": false,
+        "role": "",
+        "role_specific": false,
+        "ac_count": 1,
+        "ac_hyphen_format_ok": false,
+        "negative_boundary_signal_lines": [],
+        "need_count": 0
+      }
+    },
+    {
+      "story_key": "manual-US-22",
+      "side": "manual",
+      "row_number": 22,
+      "id": "111580",
+      "title": "Configure Audience-Specific Content Variations",
+      "description": "<div><b>As a </b>Marketer,&nbsp; </div><div><b><br></b> </div><div><b>I should </b>be able to deliver different approved content variations to specific audiences, </div><div>&nbsp; </div><div><b>so that</b> communications remain relevant across customer groups and markets. </div>",
+      "acceptance_criteria": [
+        "<div>1. Multiple approved content variations can be configured.&nbsp; </div><div>2. Audience assignment rules are supported.&nbsp; </div><div>3. Correct variations are delivered to intended audiences.&nbsp; </div><div>4. Variations can be tested prior to activation.&nbsp; </div><div>5. Default content behavior is defined.&nbsp; </div><div>6. Engagement reporting remains available by variation. </div>"
+      ],
+      "area_path": "CRM",
+      "epic": null,
+      "feature": {
+        "row_number": 16,
+        "id": "110483",
+        "title": "54-Global Marketing Content Activation",
+        "work_item_type": "Feature"
+      },
+      "structural": {
+        "title_ok": true,
+        "description_ok": false,
+        "format_ok": false,
+        "role": "",
+        "role_specific": false,
+        "ac_count": 1,
+        "ac_hyphen_format_ok": false,
+        "negative_boundary_signal_lines": [],
+        "need_count": 0
+      }
+    },
+    {
+      "story_key": "manual-US-23",
+      "side": "manual",
+      "row_number": 23,
+      "id": "111586",
+      "title": "Support Product Launch Communications",
+      "description": "<div><b>As a</b> Marketer,&nbsp; </div><div><br> </div><div><b>I should</b> deliver launch-related communications using approved launch content,&nbsp; </div><div><br> </div><div><b>so that</b> customers, partners, and stakeholders receive timely product information. </div>",
+      "acceptance_criteria": [
+        "<div>1. Approved launch content is available for activation.&nbsp; </div><div>2. Launch audiences can be segmented.&nbsp; </div><div>3. Product launch journeys can be configured.&nbsp; </div><div>4. Launch communications can be tested.&nbsp; </div><div>5. Delivery status is measurable.&nbsp; </div><div>6. Engagement metrics are available. </div>"
+      ],
+      "area_path": "CRM",
+      "epic": null,
+      "feature": {
+        "row_number": 16,
+        "id": "110483",
+        "title": "54-Global Marketing Content Activation",
+        "work_item_type": "Feature"
+      },
+      "structural": {
+        "title_ok": true,
+        "description_ok": false,
+        "format_ok": false,
+        "role": "",
+        "role_specific": false,
+        "ac_count": 1,
+        "ac_hyphen_format_ok": false,
+        "negative_boundary_signal_lines": [],
+        "need_count": 0
+      }
+    },
+    {
+      "story_key": "manual-US-24",
+      "side": "manual",
+      "row_number": 24,
+      "id": "111587",
+      "title": "Support Service and Solution Communications",
+      "description": "<div><b>As a</b> Marketer, </div><div><br> </div><div><b>I should </b>deliver service and solution communications using approved content,&nbsp; </div><div><br> </div><div><b>so that </b>customers receive consistent information regarding products, services, and solutions. </div>",
+      "acceptance_criteria": [
+        "<div>1. Approved service content is available.&nbsp; </div><div>2. Relevant audiences can be identified.&nbsp; </div><div>3. Communications can be launched through journeys.&nbsp; </div><div>4. Customer interactions are measurable.&nbsp; </div><div>5. Communication history is retained.&nbsp; </div><div>6. Reporting is available. </div>"
+      ],
+      "area_path": "CRM",
+      "epic": null,
+      "feature": {
+        "row_number": 16,
+        "id": "110483",
+        "title": "54-Global Marketing Content Activation",
+        "work_item_type": "Feature"
+      },
+      "structural": {
+        "title_ok": true,
+        "description_ok": false,
+        "format_ok": false,
+        "role": "",
+        "role_specific": false,
+        "ac_count": 1,
+        "ac_hyphen_format_ok": false,
+        "negative_boundary_signal_lines": [],
+        "need_count": 0
+      }
+    },
+    {
+      "story_key": "manual-US-25",
+      "side": "manual",
+      "row_number": 25,
+      "id": "111588",
+      "title": "Support Multi-Region Marketing Communications",
+      "description": "<div><b>As a</b> Global Marketer,&nbsp; </div><div><br> </div><div><b>I should </b>activate communications across multiple regions,&nbsp; </div><div><br> </div><div><b>so that</b> regional marketing teams can execute campaigns using a common approach. </div>",
+      "acceptance_criteria": [
+        "<div>1. Regional audiences can be identified.&nbsp; </div><div>2. Regional content variations can be configured.&nbsp; </div><div>3. Regional delivery schedules are supported.&nbsp; </div><div>4. Communications comply with applicable regional settings.&nbsp; </div><div>5. Results can be filtered by region.",
+        "6. Regional activation can be governed centrally. </div>"
+      ],
+      "area_path": "CRM",
+      "epic": null,
+      "feature": {
+        "row_number": 16,
+        "id": "110483",
+        "title": "54-Global Marketing Content Activation",
+        "work_item_type": "Feature"
+      },
+      "structural": {
+        "title_ok": true,
+        "description_ok": false,
+        "format_ok": false,
+        "role": "",
+        "role_specific": false,
+        "ac_count": 2,
+        "ac_hyphen_format_ok": false,
+        "negative_boundary_signal_lines": [],
+        "need_count": 0
+      }
+    },
+    {
+      "story_key": "manual-US-26",
+      "side": "manual",
+      "row_number": 26,
+      "id": "111589",
+      "title": "Support Multi-Language Marketing Communications",
+      "description": "<div><b>As a</b> Global Marketer,&nbsp; </div><div><b><br></b> </div><div><b>I should </b>deliver communications in multiple languages,&nbsp; </div><div><br> </div><div><b>so that</b> recipients receive messages in their preferred language where supported. </div>",
+      "acceptance_criteria": [
+        "<div>1. Multiple language versions can be configured.&nbsp; </div><div>2. Language selection rules are supported.&nbsp; </div><div>3. Communications display correctly in supported languages.&nbsp; </div><div>4. Language-specific previews are available.&nbsp; </div><div>5. Engagement can be measured by language.&nbsp; </div><div>6. Fallback language rules are defined. </div>"
+      ],
+      "area_path": "CRM",
+      "epic": null,
+      "feature": {
+        "row_number": 16,
+        "id": "110483",
+        "title": "54-Global Marketing Content Activation",
+        "work_item_type": "Feature"
+      },
+      "structural": {
+        "title_ok": true,
+        "description_ok": false,
+        "format_ok": false,
+        "role": "",
+        "role_specific": false,
+        "ac_count": 1,
+        "ac_hyphen_format_ok": false,
+        "negative_boundary_signal_lines": [],
+        "need_count": 0
+      }
+    },
+    {
+      "story_key": "manual-US-27",
+      "side": "manual",
+      "row_number": 27,
+      "id": "111590",
+      "title": "Track Content Utilization Across Marketing Activities",
+      "description": "<div><b>As a</b> Marketing Manager,&nbsp;&nbsp; </div><div><br> </div><div><b>I should</b> understand where approved content is being used,&nbsp; </div><div><br> </div><div><b>so that </b>content reuse and effectiveness can be monitored. </div>",
+      "acceptance_criteria": [
+        "<div>1. Content usage can be traced across campaigns and journeys. e.g emails, SMS's, Marketing forms, Landing pages etc </div><div>2. Frequently used assets can be identified.&nbsp; </div><div>3. Reporting is available for content utilization.&nbsp; </div>"
+      ],
+      "area_path": "CRM",
+      "epic": null,
+      "feature": {
+        "row_number": 16,
+        "id": "110483",
+        "title": "54-Global Marketing Content Activation",
+        "work_item_type": "Feature"
+      },
+      "structural": {
+        "title_ok": true,
+        "description_ok": false,
+        "format_ok": false,
+        "role": "",
+        "role_specific": false,
+        "ac_count": 1,
+        "ac_hyphen_format_ok": false,
+        "negative_boundary_signal_lines": [],
+        "need_count": 0
+      }
+    },
+    {
+      "story_key": "manual-US-28",
+      "side": "manual",
+      "row_number": 28,
+      "id": "111591",
+      "title": "Measure Content Engagement Performance",
+      "description": "<div><b>As a</b> Marketing Manager,&nbsp; </div><div><b><br></b> </div><div><b>I should </b>measure engagement against content delivered through campaigns and journeys,&nbsp; </div><div><b><br></b> </div><div><b>so that</b> future communications can be optimized. </div>",
+      "acceptance_criteria": [
+        "<div>1. Open, click, and engagement metrics are available on emails.&nbsp; </div><div>2. Results can be reviewed by content asset or communication.&nbsp; </div><div>3. Performance trends can be analyzed.&nbsp; </div><div>4. Low-performing content can be identified.&nbsp; </div><div>5. Reporting is available to authorized users. </div>"
+      ],
+      "area_path": "CRM",
+      "epic": null,
+      "feature": {
+        "row_number": 16,
+        "id": "110483",
+        "title": "54-Global Marketing Content Activation",
+        "work_item_type": "Feature"
+      },
+      "structural": {
+        "title_ok": true,
+        "description_ok": false,
+        "format_ok": false,
+        "role": "",
+        "role_specific": false,
+        "ac_count": 1,
+        "ac_hyphen_format_ok": false,
+        "negative_boundary_signal_lines": [],
+        "need_count": 0
+      }
+    },
+    {
+      "story_key": "manual-US-29",
+      "side": "manual",
+      "row_number": 29,
+      "id": "111684",
+      "title": "Ingest Internal Source Data into Customer Insights - Data",
+      "description": "<div><b>As a </b>Marketing Data Administrator,&nbsp; </div><div><br> </div><div><b>I should</b> ingest customer, order, shipment, partner and eCommerce data from the agreed internal sources into Customer Insights - Data, </div><div><br> </div><div><b>So that</b> unified profiles and segments are built on the data the business trusts. </div>",
+      "acceptance_criteria": [
+        "<div>1. Release-1 source systems are confirmed (CRM, F&amp;O orders and shipments, Zinfi partner data, eCommerce).&nbsp; </div><div>2. Required tables and attributes are identified for each source.&nbsp; </div><div>3. Connections and refresh schedules are configured.&nbsp; </div><div>4. Loaded record counts are reconciled to the source.&nbsp; </div><div>5. Account and contact relationships are preserved, so the profile is account-level with contact drill-down.&nbsp; </div><div>6. Failed refreshes are visible to administrators.&nbsp; </div><div>7. Ingested data is available for unification. </div>"
+      ],
+      "area_path": "CRM",
+      "epic": null,
+      "feature": {
+        "row_number": 16,
+        "id": "110483",
+        "title": "54-Global Marketing Content Activation",
+        "work_item_type": "Feature"
+      },
+      "structural": {
+        "title_ok": true,
+        "description_ok": false,
+        "format_ok": false,
+        "role": "",
+        "role_specific": false,
+        "ac_count": 1,
+        "ac_hyphen_format_ok": false,
+        "negative_boundary_signal_lines": [],
+        "need_count": 0
+      }
+    },
+    {
+      "story_key": "manual-US-30",
+      "side": "manual",
+      "row_number": 30,
+      "id": "111685",
+      "title": "Configure Branded Sender and Email Domain Authentication",
+      "description": "<div><b>As a</b> Marketer,&nbsp; </div><div><br> </div><div><b>I should</b> send emails from an approved, brand-appropriate sender name on an authenticated domain,&nbsp; </div><div><br> </div><div><b>So that</b> recipients trust and open the email and it reaches the inbox. </div>",
+      "acceptance_criteria": [
+        "<div>1. Approved sender names are configured per brand or region (for example a Philips-branded sender where licensed).&nbsp; </div><div>2. Only authorised users can change sender settings.&nbsp; </div><div>3. Sender setup is documented. </div>"
+      ],
+      "area_path": "CRM",
+      "epic": null,
+      "feature": {
+        "row_number": 16,
+        "id": "110483",
+        "title": "54-Global Marketing Content Activation",
+        "work_item_type": "Feature"
+      },
+      "structural": {
+        "title_ok": true,
+        "description_ok": false,
+        "format_ok": false,
+        "role": "",
+        "role_specific": false,
+        "ac_count": 1,
+        "ac_hyphen_format_ok": false,
+        "negative_boundary_signal_lines": [
+          "<div>1. Approved sender names are configured per brand or region (for example a Philips-branded sender where licensed).&nbsp; </div><div>2. Only authorised users can change sender settings.&nbsp; </div><div>3. Sender setup is documented. </div>"
+        ],
+        "need_count": 0
+      }
+    },
+    {
+      "story_key": "manual-US-32",
+      "side": "manual",
+      "row_number": 32,
+      "id": "111592",
+      "title": "Define Brand Campaign Audiences",
+      "description": "<div><b>As a</b> Marketer,&nbsp; </div><div><br> </div><div><b>I should</b> identify and create target audiences for brand awareness campaigns,&nbsp; </div><div><br> </div><div><b>so that</b> communications reach the intended customer, partner, and prospect groups. </div>",
+      "acceptance_criteria": [
+        "<div>1. Audiences can be defined using available segmentation criteria.&nbsp; </div><div>2. Dynamic and static audience selection is supported.&nbsp; </div><div>3. Audience counts can be reviewed prior to activation.&nbsp; </div><div>4. Audience membership can be validated.&nbsp; </div><div>5. Segments can be reused across campaigns.&nbsp; </div><div>6. Audience definitions are available within Customer Insights Journeys. </div>"
+      ],
+      "area_path": "CRM",
+      "epic": null,
+      "feature": {
+        "row_number": 31,
+        "id": "110484",
+        "title": "38-Brand Reputation Campaign Management",
+        "work_item_type": "Feature"
+      },
+      "structural": {
+        "title_ok": true,
+        "description_ok": false,
+        "format_ok": false,
+        "role": "",
+        "role_specific": false,
+        "ac_count": 1,
+        "ac_hyphen_format_ok": false,
+        "negative_boundary_signal_lines": [],
+        "need_count": 0
+      }
+    },
+    {
+      "story_key": "manual-US-33",
+      "side": "manual",
+      "row_number": 33,
+      "id": "111594",
+      "title": "Execute Brand Awareness Communications",
+      "description": "<div><b>As a</b> Marketer, </div><div><br> </div><div><b>I should</b> deliver brand awareness communications to selected audiences,&nbsp; </div><div><b><br></b> </div><div><b>so that</b> Heartstream can improve market visibility and audience engagement. </div>",
+      "acceptance_criteria": [
+        "<div>1. Communications are delivered to the intended audience.&nbsp; </div><div>2. Delivery status is available.&nbsp; </div><div>3. Communication history is retained.&nbsp; </div><div>4. Multiple campaigns can run concurrently.&nbsp; </div><div>5. Communication metrics are captured.&nbsp; </div><div>6. Failed deliveries can be monitored. </div>"
+      ],
+      "area_path": "CRM",
+      "epic": null,
+      "feature": {
+        "row_number": 31,
+        "id": "110484",
+        "title": "38-Brand Reputation Campaign Management",
+        "work_item_type": "Feature"
+      },
+      "structural": {
+        "title_ok": true,
+        "description_ok": false,
+        "format_ok": false,
+        "role": "",
+        "role_specific": false,
+        "ac_count": 1,
+        "ac_hyphen_format_ok": false,
+        "negative_boundary_signal_lines": [],
+        "need_count": 0
+      }
+    },
+    {
+      "story_key": "manual-US-34",
+      "side": "manual",
+      "row_number": 34,
+      "id": "111595",
+      "title": "Configure Event Communication Journeys",
+      "description": "<div><b>As a </b>Marketer,&nbsp; </div><div><br> </div><div><b>I should</b> configure event-related communications,&nbsp; </div><div><br> </div><div><b>so that</b> event invitations, reminders, and follow-up communications can be managed consistently. </div>",
+      "acceptance_criteria": [
+        "<div>1. Event audiences can be selected.&nbsp; </div><div>2. Invitation and reminder communications are supported.&nbsp; </div><div>3. Event response tracking is available.&nbsp; </div><div>4. Follow-up communications can be configured.&nbsp; </div><div>5. Event communication journeys can be tested.&nbsp; </div><div>6. Engagement metrics are available. </div>"
+      ],
+      "area_path": "CRM",
+      "epic": null,
+      "feature": {
+        "row_number": 31,
+        "id": "110484",
+        "title": "38-Brand Reputation Campaign Management",
+        "work_item_type": "Feature"
+      },
+      "structural": {
+        "title_ok": true,
+        "description_ok": false,
+        "format_ok": false,
+        "role": "",
+        "role_specific": false,
+        "ac_count": 1,
+        "ac_hyphen_format_ok": false,
+        "negative_boundary_signal_lines": [],
+        "need_count": 0
+      }
+    },
+    {
+      "story_key": "manual-US-35",
+      "side": "manual",
+      "row_number": 35,
+      "id": "111597",
+      "title": "Generate Leads from Brand Campaign Activities",
+      "description": "<div><b>As a</b> Marketer,&nbsp; </div><div><br> </div><div><b>I should </b>capture leads generated from brand campaign interactions,&nbsp; </div><div><br> </div><div><b>so that</b> interested prospects can enter the lead management process. </div>",
+      "acceptance_criteria": [
+        "<div>1. Lead capture mechanisms are supported.&nbsp; </div><div>2. Lead source attribution is retained.&nbsp; </div><div>3. Leads are available for qualification.&nbsp; </div><div>4. Campaign association is retained.&nbsp; </div><div>5. Lead generation metrics are available in reporting via dashboard or views etc. </div>"
+      ],
+      "area_path": "CRM",
+      "epic": null,
+      "feature": {
+        "row_number": 31,
+        "id": "110484",
+        "title": "38-Brand Reputation Campaign Management",
+        "work_item_type": "Feature"
+      },
+      "structural": {
+        "title_ok": true,
+        "description_ok": false,
+        "format_ok": false,
+        "role": "",
+        "role_specific": false,
+        "ac_count": 1,
+        "ac_hyphen_format_ok": false,
+        "negative_boundary_signal_lines": [],
+        "need_count": 0
+      }
+    },
+    {
+      "story_key": "manual-US-36",
+      "side": "manual",
+      "row_number": 36,
+      "id": "111598",
+      "title": "Associate Campaign Responses to Customer Profiles",
+      "description": "<div><b>As a</b> Marketing Analyst,&nbsp; </div><div><b><br></b> </div><div><b>I should</b> associate campaign interactions with customer profiles,&nbsp; </div><div><br> </div><div><b>so that</b> future segmentation and engagement analysis can leverage campaign history. </div>",
+      "acceptance_criteria": [
+        "<div>1. Campaign interactions are associated with customer profiles targeted in Journeys </div><div>2. Interaction history is visible.&nbsp; </div><div>3. Historical campaign participation is available.&nbsp; </div>"
+      ],
+      "area_path": "CRM",
+      "epic": null,
+      "feature": {
+        "row_number": 31,
+        "id": "110484",
+        "title": "38-Brand Reputation Campaign Management",
+        "work_item_type": "Feature"
+      },
+      "structural": {
+        "title_ok": true,
+        "description_ok": false,
+        "format_ok": false,
+        "role": "",
+        "role_specific": false,
+        "ac_count": 1,
+        "ac_hyphen_format_ok": false,
+        "negative_boundary_signal_lines": [],
+        "need_count": 0
+      }
+    },
+    {
+      "story_key": "manual-US-37",
+      "side": "manual",
+      "row_number": 37,
+      "id": "111599",
+      "title": "Measure Brand Campaign Performance",
+      "description": "<div><b>As a</b> Marketing Manager,<br><br><b>I should</b> measure brand campaign performance, <br><br><b>So that</b> the effectiveness of awareness programs can be evaluated. </div>",
+      "acceptance_criteria": [
+        "<div>1. Standard journey analytics are available. </div><div>2. Engagement metrics are visible. </div><div>3. Results can be reviewed by campaign. </div><div>4. Performance trends can be monitored.&nbsp; </div><div>5. Results are available to authorized users. </div>"
+      ],
+      "area_path": "CRM",
+      "epic": null,
+      "feature": {
+        "row_number": 31,
+        "id": "110484",
+        "title": "38-Brand Reputation Campaign Management",
+        "work_item_type": "Feature"
+      },
+      "structural": {
+        "title_ok": true,
+        "description_ok": false,
+        "format_ok": false,
+        "role": "",
+        "role_specific": false,
+        "ac_count": 1,
+        "ac_hyphen_format_ok": false,
+        "negative_boundary_signal_lines": [],
+        "need_count": 0
+      }
+    },
+    {
+      "story_key": "manual-US-38",
+      "side": "manual",
+      "row_number": 38,
+      "id": "111601",
+      "title": "Provide Brand Campaign Performance Dashboards",
+      "description": "<div><span><b>As a</b> Marketing Manager,<br></span><div><br> </div><div><b>I should</b> access campaign performance dashboards,<br> </div><div><br> </div><span><b>So that</b> brand campaign effectiveness can be monitored through a single view.</span> </div>",
+      "acceptance_criteria": [
+        "<span>1. Campaign KPIs are available.<br></span><div>2. Engagement metrics are visible.<br> </div><div>3. Dashboard information supports campaign analysis.<br> </div><div>4. Users can filter results using agreed dimensions.<br> </div><div>5. Data refresh schedules are defined.<br> </div><span>6. Access is controlled according to security requirements.</span>"
+      ],
+      "area_path": "CRM",
+      "epic": null,
+      "feature": {
+        "row_number": 31,
+        "id": "110484",
+        "title": "38-Brand Reputation Campaign Management",
+        "work_item_type": "Feature"
+      },
+      "structural": {
+        "title_ok": true,
+        "description_ok": false,
+        "format_ok": false,
+        "role": "",
+        "role_specific": false,
+        "ac_count": 1,
+        "ac_hyphen_format_ok": false,
+        "negative_boundary_signal_lines": [],
+        "need_count": 0
+      }
+    },
+    {
+      "story_key": "manual-US-39",
+      "side": "manual",
+      "row_number": 39,
+      "id": "111602",
+      "title": "Configure Marketing Consent and Subscription Preferences",
+      "description": "<div><span><b>As a</b> Marketer,<br></span><div><br> </div><div><b>I should</b> manage customer consent and communication preferences,<br> </div><div><br> </div><span><b>So that</b> only eligible recipients receive brand and marketing communications in accordance with their choices and applicable regional requirements.</span> </div>",
+      "acceptance_criteria": [
+        "<div><span>1. Consent is configured using the agreed compliance profiles, purposes, and topics.<br></span> </div><div><div>2. Communication preferences are managed by supported channel and purpose, where applicable.<br> </div><div>3. Recipients can update their preferences through the agreed preference-center experience.<br> </div><div>4. Unsubscribed or ineligible recipients are excluded from applicable journeys.<br> </div><div>5. Consent is evaluated before each communication is sent.<br> </div><div>6. Changes to preferences affect subsequent journey eligibility.<br> </div><div>7. Consent records and changes are retained for audit and compliance purposes.<br> </div><div>8. Regional consent requirements are supported through the agreed compliance-profile design. </div> </div>"
+      ],
+      "area_path": "CRM",
+      "epic": null,
+      "feature": {
+        "row_number": 31,
+        "id": "110484",
+        "title": "38-Brand Reputation Campaign Management",
+        "work_item_type": "Feature"
+      },
+      "structural": {
+        "title_ok": true,
+        "description_ok": false,
+        "format_ok": false,
+        "role": "",
+        "role_specific": false,
+        "ac_count": 1,
+        "ac_hyphen_format_ok": false,
+        "negative_boundary_signal_lines": [],
+        "need_count": 0
+      }
+    },
+    {
+      "story_key": "manual-US-41",
+      "side": "manual",
+      "row_number": 41,
+      "id": "111607",
+      "title": "Verify Campaign Readiness Before Activation",
+      "description": "<div><span><b>As a</b> Marketer,<br></span><div><br> </div><div><b>I should</b> verify audience, journey configuration, schedule, and approved content before campaign launch,<br> </div><div><br> </div><span><b>So that</b> campaigns are deployed accurately and consistently.</span> </div>",
+      "acceptance_criteria": [
+        "<div><span>1. Campaign readiness checklist is completed before activation.<br></span><div>2. Target audience is validated.<br> </div><div>3. Journey configuration is reviewed.<br> </div><div>4. Content references are confirmed.<br> </div><div>5. Schedule is verified.<br> </div><span>6. Campaign can proceed to activation only after readiness review.</span> </div>"
+      ],
+      "area_path": "CRM",
+      "epic": null,
+      "feature": {
+        "row_number": 40,
+        "id": "110485",
+        "title": "58-Marketing Asset Governance & Campaign Readiness",
+        "work_item_type": "Feature"
+      },
+      "structural": {
+        "title_ok": true,
+        "description_ok": false,
+        "format_ok": false,
+        "role": "",
+        "role_specific": false,
+        "ac_count": 1,
+        "ac_hyphen_format_ok": false,
+        "negative_boundary_signal_lines": [
+          "<div><span>1. Campaign readiness checklist is completed before activation.<br></span><div>2. Target audience is validated.<br> </div><div>3. Journey configuration is reviewed.<br> </div><div>4. Content references are confirmed.<br> </div><div>5. Schedule is verified.<br> </div><span>6. Campaign can proceed to activation only after readiness review.</span> </div>"
+        ],
+        "need_count": 0
+      }
+    },
+    {
+      "story_key": "manual-US-42",
+      "side": "manual",
+      "row_number": 42,
+      "id": "111611",
+      "title": "Monitor Campaign Readiness and Deployment Status",
+      "description": "<div><span><b>As a</b> Marketing Manager,<br></span><div><br> </div><div><b>I should</b> monitor campaigns that are planned, in preparation, active, or completed,<br> </div><div><br> </div><span><b>So that</b> campaign execution status remains visible across the marketing organization.</span> </div>",
+      "acceptance_criteria": [
+        "<div><span>1. Campaign status is visible.<br></span><div>2. Draft and active campaigns can be distinguished.<br> </div><div>3. Campaign schedules are available.<br> </div><div>4. Readiness status can be reviewed.<br> </div><div>5. Deployment history is retained.<br> </div><span>6. Authorized users can access campaign status information.</span> </div>"
+      ],
+      "area_path": "CRM",
+      "epic": null,
+      "feature": {
+        "row_number": 40,
+        "id": "110485",
+        "title": "58-Marketing Asset Governance & Campaign Readiness",
+        "work_item_type": "Feature"
+      },
+      "structural": {
+        "title_ok": true,
+        "description_ok": false,
+        "format_ok": false,
+        "role": "",
+        "role_specific": false,
+        "ac_count": 1,
+        "ac_hyphen_format_ok": false,
+        "negative_boundary_signal_lines": [],
+        "need_count": 0
+      }
+    },
+    {
+      "story_key": "manual-US-43",
+      "side": "manual",
+      "row_number": 43,
+      "id": "111612",
+      "title": "Provide Campaign Governance and Readiness Dashboards",
+      "description": "<div><span><b>As a</b> Marketing Manager,<br></span><div><br> </div><div><b>I should</b> access readiness and governance dashboards,<br> </div><div><br> </div><span><b>So that</b> campaign preparation and activation activities can be monitored effectively.</span> </div>",
+      "acceptance_criteria": [
+        "<div><span>1. Readiness metrics are available via dashboard or views.<br></span> </div><div><div>2. Planned and active campaigns can be reviewed.<br> </div><div>3. Dashboard access is security controlled. </div> </div>"
+      ],
+      "area_path": "CRM",
+      "epic": null,
+      "feature": {
+        "row_number": 40,
+        "id": "110485",
+        "title": "58-Marketing Asset Governance & Campaign Readiness",
+        "work_item_type": "Feature"
+      },
+      "structural": {
+        "title_ok": true,
+        "description_ok": false,
+        "format_ok": false,
+        "role": "",
+        "role_specific": false,
+        "ac_count": 1,
+        "ac_hyphen_format_ok": false,
+        "negative_boundary_signal_lines": [],
+        "need_count": 0
+      }
+    },
+    {
+      "story_key": "manual-US-45",
+      "side": "manual",
+      "row_number": 45,
+      "id": "111613",
+      "title": "Define Marketing Strategy Target Audiences",
+      "description": "<div><span><b>As a</b> Marketing Planner,<br></span><div><br> </div><div><b>I should</b> define the customer, account, partner, distributor, market, and regional audiences relevant to a marketing strategy,<br> </div><div><br> </div><span><b>So that</b> activation plans are directed toward the intended business populations.</span> </div>",
+      "acceptance_criteria": [
+        "<div><span>1. Target-audience criteria can be defined using available customer, account, partner, distributor, geographic, and market attributes.<br></span><div>2. Audience definitions align with the agreed segmentation framework.<br> </div><div>3. Audience membership and counts can be reviewed before activation.<br> </div><div>4. Audience definitions can be refined as underlying data changes.<br> </div><div>5. Authorized users can access and maintain the audience criteria.<br> </div><span>6. Approved audiences can be used in Customer Insights - Journeys.</span> </div>"
+      ],
+      "area_path": "CRM",
+      "epic": null,
+      "feature": {
+        "row_number": 44,
+        "id": "110486",
+        "title": "60-Marketing Strategy & Activation Planning",
+        "work_item_type": "Feature"
+      },
+      "structural": {
+        "title_ok": true,
+        "description_ok": false,
+        "format_ok": false,
+        "role": "",
+        "role_specific": false,
+        "ac_count": 1,
+        "ac_hyphen_format_ok": false,
+        "negative_boundary_signal_lines": [],
+        "need_count": 0
+      }
+    },
+    {
+      "story_key": "manual-US-46",
+      "side": "manual",
+      "row_number": 46,
+      "id": "111614",
+      "title": "Create Strategic Customer and Account Segments",
+      "description": "<div><span><b>As a</b> Marketing Planner,<br></span><div><br> </div><div><b>I should</b> create reusable segments for customers and accounts prioritized by the marketing strategy,<br> </div><div><br> </div><span><b>So that</b> strategic audiences can be consistently targeted across marketing programs.</span> </div>",
+      "acceptance_criteria": [
+        "<div><span>1. Segments can be created using agreed customer and account attributes.<br></span><div>2. Segmentation can consider region, industry, vertical, product ownership, account classification, and engagement where data is available.<br> </div><div>3. Segment membership can be previewed and validated.<br> </div><div>4. Dynamic segments refresh when underlying data changes.<br> </div><div>5. Segment definitions and intended uses are documented.<br> </div><span>6. Segments are available for journey activation.</span> </div>"
+      ],
+      "area_path": "CRM",
+      "epic": null,
+      "feature": {
+        "row_number": 44,
+        "id": "110486",
+        "title": "60-Marketing Strategy & Activation Planning",
+        "work_item_type": "Feature"
+      },
+      "structural": {
+        "title_ok": true,
+        "description_ok": false,
+        "format_ok": false,
+        "role": "",
+        "role_specific": false,
+        "ac_count": 1,
+        "ac_hyphen_format_ok": false,
+        "negative_boundary_signal_lines": [],
+        "need_count": 0
+      }
+    },
+    {
+      "story_key": "manual-US-47",
+      "side": "manual",
+      "row_number": 47,
+      "id": "111615",
+      "title": "Create Strategic Partner and Distributor Segments",
+      "description": "<div><span><b>As a</b> Channel Marketing Planner,<br></span><div><br> </div><div><b>I should</b> create strategic partner and distributor segments,<br> </div><div><br> </div><span><b>So that</b> activation plans can differentiate communications based on partner importance, coverage, performance, and business characteristics.</span> </div>",
+      "acceptance_criteria": [
+        "<div><span>1. Partner and distributor data required for segmentation is identified.<br></span> </div><div><div>2. Segments can use agreed attributes such as partner type, region, tier (if applicable), product portfolio, and performance where available.<br> </div><div>3. Strategic distributors can be distinguished from other partners.<br> </div><div>4. Partner contacts are associated with the appropriate accounts.<br> </div><div>5. Segment membership can be validated and refreshed.<br> </div><span>6. Approved segments can be activated through journeys.</span> </div>"
+      ],
+      "area_path": "CRM",
+      "epic": null,
+      "feature": {
+        "row_number": 44,
+        "id": "110486",
+        "title": "60-Marketing Strategy & Activation Planning",
+        "work_item_type": "Feature"
+      },
+      "structural": {
+        "title_ok": true,
+        "description_ok": false,
+        "format_ok": false,
+        "role": "",
+        "role_specific": false,
+        "ac_count": 1,
+        "ac_hyphen_format_ok": false,
+        "negative_boundary_signal_lines": [],
+        "need_count": 0
+      }
+    },
+    {
+      "story_key": "manual-US-48",
+      "side": "manual",
+      "row_number": 48,
+      "id": "111617",
+      "title": "Configure Strategy-Aligned Customer Journeys",
+      "description": "<div><span><b>As a</b> Marketer,<br></span><div><br> </div><div><b>I should</b> configure customer journeys aligned with the approved marketing activation plan,<br> </div><div><br> </div><span><b>So that</b> strategic audiences receive the planned communications at the appropriate time.</span> </div>",
+      "acceptance_criteria": [
+        "<div><span>1. The journey uses an approved strategic audience or segment.<br></span><div>2. Journey entry, exit, and exclusion criteria are defined.<br> </div><div>3. Communication steps, timing, waits, and branches reflect the activation plan.<br> </div><div>4. Approved marketing content is used.<br> </div><div>5. Consent and communication eligibility are evaluated before delivery.<br> </div><div>6. The journey can be previewed, tested, and activated.<br> </div><span>7. Journey interactions are captured for measurement.</span> </div>"
+      ],
+      "area_path": "CRM",
+      "epic": null,
+      "feature": {
+        "row_number": 44,
+        "id": "110486",
+        "title": "60-Marketing Strategy & Activation Planning",
+        "work_item_type": "Feature"
+      },
+      "structural": {
+        "title_ok": true,
+        "description_ok": false,
+        "format_ok": false,
+        "role": "",
+        "role_specific": false,
+        "ac_count": 1,
+        "ac_hyphen_format_ok": false,
+        "negative_boundary_signal_lines": [],
+        "need_count": 0
+      }
+    },
+    {
+      "story_key": "manual-US-49",
+      "side": "manual",
+      "row_number": 49,
+      "id": "111618",
+      "title": "Personalize Communications for Strategic Audiences",
+      "description": "<div><span><b>As a</b> Marketer,<br></span><div><br> </div><div><b>I should </b>personalize strategy-aligned communications using available customer, account, partner, and audience information,<br> </div><div><br> </div><span><b>So that</b> each strategic audience receives relevant messaging.</span> </div>",
+      "acceptance_criteria": [
+        "<div><span>1. Approved profile attributes can be used for personalization.<br></span><div>2. Content variations can be configured for defined audiences.<br> </div><div>3. Conditional content can be applied where supported.<br> </div><div>4. Default content is defined when personalization data is unavailable.<br> </div><div>5. Each supported variation can be previewed and tested.<br> </div><span>6. Personalization respects consent, privacy, and regional requirements.</span> </div>"
+      ],
+      "area_path": "CRM",
+      "epic": null,
+      "feature": {
+        "row_number": 44,
+        "id": "110486",
+        "title": "60-Marketing Strategy & Activation Planning",
+        "work_item_type": "Feature"
+      },
+      "structural": {
+        "title_ok": true,
+        "description_ok": false,
+        "format_ok": false,
+        "role": "",
+        "role_specific": false,
+        "ac_count": 1,
+        "ac_hyphen_format_ok": false,
+        "negative_boundary_signal_lines": [],
+        "need_count": 0
+      }
+    },
+    {
+      "story_key": "manual-US-50",
+      "side": "manual",
+      "row_number": 50,
+      "id": "111619",
+      "title": "Activate Marketing Programs Across Priority Markets",
+      "description": "<div><span><b>As a</b> Global or Regional Marketer,<br></span><div><br> </div><div><b>I should</b> activate marketing programs for selected markets and regions,<br> </div><div><br> </div><span><b>So that</b> approved strategies can be executed consistently while accommodating relevant regional differences.</span> </div>",
+      "acceptance_criteria": [
+        "<div><span>1. Target markets and regions can be identified using available profile data.<br></span><div>2. Region-specific audiences and schedules can be configured.<br> </div><div>3. Approved regional content variations can be used where applicable.<br> </div><div>4. Regional consent and communication requirements are applied.<br> </div><div>5. Journey execution can be monitored by region or market.<br> </div><span>6. Results can be compared across activated markets where data is available.</span> </div>"
+      ],
+      "area_path": "CRM",
+      "epic": null,
+      "feature": {
+        "row_number": 44,
+        "id": "110486",
+        "title": "60-Marketing Strategy & Activation Planning",
+        "work_item_type": "Feature"
+      },
+      "structural": {
+        "title_ok": true,
+        "description_ok": false,
+        "format_ok": false,
+        "role": "",
+        "role_specific": false,
+        "ac_count": 1,
+        "ac_hyphen_format_ok": false,
+        "negative_boundary_signal_lines": [],
+        "need_count": 0
+      }
+    },
+    {
+      "story_key": "manual-US-51",
+      "side": "manual",
+      "row_number": 51,
+      "id": "111620",
+      "title": "Measure Marketing Activation Plan Performance",
+      "description": "<div><span><b>As a</b> Marketing Manager,<br></span><div><br> </div><div><b>I should</b> measure audience engagement and journey performance against the intended activation plan,<br> </div><div><br> </div><span><b>So that</b> I can determine whether the marketing strategy is being executed effectively.</span> </div>",
+      "acceptance_criteria": [
+        "<div><span>1. Engagement measures are available for activated journeys and communications.<br></span> </div><div><div>2. Results can be reviewed by strategic audience, market, region, or program where supported.<br> </div><div>3. Delivery, opens, clicks, responses, and available conversion indicators can be monitored.<br> </div><div>4. Segment membership and engagement trends can be compared.<br> </div><div>5. Standard Customer Insights analytics are used as the baseline.<br> </div><div>6. Reporting requirements are supported by available OOB standard analytics provided by system </div> </div>"
+      ],
+      "area_path": "CRM",
+      "epic": null,
+      "feature": {
+        "row_number": 44,
+        "id": "110486",
+        "title": "60-Marketing Strategy & Activation Planning",
+        "work_item_type": "Feature"
+      },
+      "structural": {
+        "title_ok": true,
+        "description_ok": false,
+        "format_ok": false,
+        "role": "",
+        "role_specific": false,
+        "ac_count": 1,
+        "ac_hyphen_format_ok": false,
+        "negative_boundary_signal_lines": [],
+        "need_count": 0
+      }
+    },
+    {
+      "story_key": "manual-US-52",
+      "side": "manual",
+      "row_number": 52,
+      "id": "111621",
+      "title": "Refine Strategic Audiences Using Activation Insights",
+      "description": "<div><span><b>As a</b> Marketing Planner,<br></span><div><br> </div><div><b>I should</b> use engagement and response insights to refine strategic audiences,<br> </div><div><br> </div><span><b>So that</b> future marketing activation becomes more relevant and effective.</span> </div>",
+      "acceptance_criteria": [
+        "<div><span>1. Journey and communication engagement data is available for audience analysis.<br></span> </div><div><div>2. Responding and non-responding audience groups can be identified.<br> </div><div>3. Segment criteria can be adjusted using approved engagement indicators.<br> </div><div>4. Revised segment membership can be previewed and validated.<br> </div><div>5. Refined audiences can be reused in future activation plans and journeys. </div> </div>"
+      ],
+      "area_path": "CRM",
+      "epic": null,
+      "feature": {
+        "row_number": 44,
+        "id": "110486",
+        "title": "60-Marketing Strategy & Activation Planning",
+        "work_item_type": "Feature"
+      },
+      "structural": {
+        "title_ok": true,
+        "description_ok": false,
+        "format_ok": false,
+        "role": "",
+        "role_specific": false,
+        "ac_count": 1,
+        "ac_hyphen_format_ok": false,
+        "negative_boundary_signal_lines": [],
+        "need_count": 0
+      }
+    }
+  ],
+  "feature_list_rows": [
+    {
+      "feature_key": "SOW-1",
+      "feature_name": "70 - External Analytics Data Ingestion & Unification",
+      "workshop_code": "WS-CE-01",
+      "bpm_topic": "External Analytics Data Ingestion & Unification",
+      "annexure_minutes": 70,
+      "source_path": "C:\\Users\\308279\\Documents\\HEARTSTREAM-1\\artifacts\\work-items\\SOW.json",
+      "source_locator": "SOW.rows[0]",
+      "source_type": "Feature List"
+    },
+    {
+      "feature_key": "SOW-2",
+      "feature_name": "61 - Marketing Research Insights Planning",
+      "workshop_code": "WS-CE-02",
+      "bpm_topic": "Marketing Research Insights Planning",
+      "annexure_minutes": 61,
+      "source_path": "C:\\Users\\308279\\Documents\\HEARTSTREAM-1\\artifacts\\work-items\\SOW.json",
+      "source_locator": "SOW.rows[1]",
+      "source_type": "Feature List"
+    },
+    {
+      "feature_key": "SOW-3",
+      "feature_name": "54 - Global Marketing Content Activation",
+      "workshop_code": "WS-CE-03",
+      "bpm_topic": "Global Marketing Content Activation",
+      "annexure_minutes": 54,
+      "source_path": "C:\\Users\\308279\\Documents\\HEARTSTREAM-1\\artifacts\\work-items\\SOW.json",
+      "source_locator": "SOW.rows[2]",
+      "source_type": "Feature List"
+    },
+    {
+      "feature_key": "SOW-4",
+      "feature_name": "38 - Brand Reputation Campaign Management",
+      "workshop_code": "WS-CE-04",
+      "bpm_topic": "Brand Reputation Campaign Management",
+      "annexure_minutes": 38,
+      "source_path": "C:\\Users\\308279\\Documents\\HEARTSTREAM-1\\artifacts\\work-items\\SOW.json",
+      "source_locator": "SOW.rows[3]",
+      "source_type": "Feature List"
+    },
+    {
+      "feature_key": "SOW-5",
+      "feature_name": "58 - Marketing Asset Governance & Campaign Readiness",
+      "workshop_code": "WS-CE-05",
+      "bpm_topic": "Marketing Asset Governance & Campaign Readiness",
+      "annexure_minutes": 58,
+      "source_path": "C:\\Users\\308279\\Documents\\HEARTSTREAM-1\\artifacts\\work-items\\SOW.json",
+      "source_locator": "SOW.rows[4]",
+      "source_type": "Feature List"
+    },
+    {
+      "feature_key": "SOW-6",
+      "feature_name": "60 - Marketing Strategy & Activation Planning",
+      "workshop_code": "WS-CE-06",
+      "bpm_topic": "Marketing Strategy & Activation Planning",
+      "annexure_minutes": 60,
+      "source_path": "C:\\Users\\308279\\Documents\\HEARTSTREAM-1\\artifacts\\work-items\\SOW.json",
+      "source_locator": "SOW.rows[5]",
+      "source_type": "Feature List"
+    }
+  ],
+  "kb_index_note": "Mechanical index only. source-knowledge-base-unifier merges this into unified_knowledge_base JSON with cited requirements.",
+  "analysis_contract": "C:\\Users\\308279\\Documents\\HEARTSTREAM-1\\.cursor\\templates\\user-story-source-analysis-contract.yaml",
+  "forbidden": [
+    "Do not read or compare the other CSV side.",
+    "Do not perform manual vs AI matching or benchmarking."
+  ]
+}

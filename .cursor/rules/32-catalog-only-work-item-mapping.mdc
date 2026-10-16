@@ -5,15 +5,17 @@ alwaysApply: true
 
 # Catalog-Only Work Item Mapping
 
-Applies to `/generate-user-stories-from-transcript`, **work-item-mapping-agent**, **business-analyst-agent** mode `transcript-ado-csv`, `scripts/map-user-stories-to-work-items.py`, and related subagents (`work-item-hierarchy-matcher`, `transcript-story-extractor`).
+Applies to `/generate-user-stories-from-transcript`, **work-item-mapping-agent**, **business-analyst-agent** mode `transcript-ado-csv`, `scripts/map-user-stories-to-sow-features.py` (default), and related subagents (`work-item-hierarchy-matcher`, `transcript-story-extractor`).
 
 ## Do
 
-- Load Epic and Feature catalogs from paths in `.cursor/config.yaml` → `work_item_mapping` (`catalog_epic_json`, `catalog_feature_json`). Workshop scope IDs come from `workshop_catalog_json` only for Workshop row context — never as Feature parents or User Story `ID`.
-- After CSV validation PASS, spawn **work-item-mapping-agent** by explicit name every run; run `map-user-stories-to-work-items.py` with thresholds from config (`strong_threshold`, `winner_margin`, `max_related_features`, `workshop_context_min_overlap`).
-- Match with **generic** title/description token overlap only. Allow multiple User Story rows (one per qualifying Feature, up to `max_related_features`) when scores are within `winner_margin` of the top Feature.
-- Leave User Story `ID` blank when no catalog Feature meets the threshold and parent Epic exists in `epic.json`.
-- Register Open DQ when `epic.json` or `feature.json` is missing or has no `workItems[]` — still deliver working CSV, public Excel (IDs blank), and INVEST scorecard.
+- When `work_item_mapping.feature_source` is `sow_json` (default): load **only** `artifacts/work-items/SOW.json` for Feature rows. **Ignore** `epic.json` and `feature.json` for transcript user-story mapping.
+- After CSV validation PASS, spawn **work-item-mapping-agent** by explicit name every run; run `map-user-stories-to-sow-features.py` with thresholds from config (`strong_threshold`, `winner_margin`, `max_related_features`).
+- SOW Feature row: Title 2 = `<Annexure ID minutes> - <BPM topic>`, Description = BPM topic, `ID` blank, `Annexure ID1` = minutes. No Epic rows.
+- Match with **generic** title/description token overlap and optional `prerequisite_refs` → `WS-CE-*` from row JSON. Allow multiple User Story copies (up to `max_related_features`) when scores are within `winner_margin`.
+- Public Excel row order: Workshop → SOW Features (with stories) in SOW.json order → unmatched User Stories → Issue/Risk. User Story `ID` stays blank.
+- Register Open DQ when `SOW.json` is missing or has no `rows[]` — still deliver working CSV and INVEST scorecard; Excel may omit Feature hierarchy.
+- Legacy ADO catalog mapping (`map-user-stories-to-work-items.py` + epic/feature JSON) applies only when config explicitly sets `feature_source: ado_catalog`.
 
 ## Don't
 

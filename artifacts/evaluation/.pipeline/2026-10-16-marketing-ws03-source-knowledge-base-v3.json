@@ -1,0 +1,527 @@
+{
+  "schema_version": "1.0",
+  "kind": "unified-source-knowledge-base",
+  "sources": [
+    {
+      "path": "C:\\Users\\308279\\Documents\\HEARTSTREAM-1\\artifacts\\intake\\2026-10-13-marketing-ws03-transcript.txt",
+      "role": "transcript"
+    },
+    {
+      "path": "C:\\Users\\308279\\Documents\\HEARTSTREAM-1\\artifacts\\intake\\.pipeline\\2026-10-16-marketing-ws03-mom.txt",
+      "role": "mom"
+    },
+    {
+      "path": "C:\\Users\\308279\\Documents\\HEARTSTREAM-1\\artifacts\\intake\\.pipeline\\2026-10-13-marketing-ws03-prerequisite.txt",
+      "role": "preread"
+    },
+    {
+      "path": "C:\\Users\\308279\\Documents\\HEARTSTREAM-1\\artifacts\\work-items\\SOW.json",
+      "role": "feature_list"
+    }
+  ],
+  "requirements": [
+    {
+      "id": "OBJ-001",
+      "statement": "External analytics data ingestion and unification in D365 Customer Insights (WS-CE-01).",
+      "source_type": "Pre-read Materials",
+      "source_path": "Pre- read material - 03. D365_CE_ Day 03_Marketing 1_30092026.pptx",
+      "source_locator": "WS-CE-01 / slide External Analytics Data Ingestion & Unification",
+      "confidence": "explicit"
+    },
+    {
+      "id": "OBJ-002",
+      "statement": "Marketing research insights planning using Customer Insights audiences and analytics (WS-CE-02).",
+      "source_type": "Pre-read Materials",
+      "source_path": "Pre- read material - 03. D365_CE_ Day 03_Marketing 1_30092026.pptx",
+      "source_locator": "WS-CE-02",
+      "confidence": "explicit"
+    },
+    {
+      "id": "OBJ-003",
+      "statement": "Global marketing content activation via Customer Insights Journeys (WS-CE-03).",
+      "source_type": "Pre-read Materials",
+      "source_path": "Pre- read material - 03. D365_CE_ Day 03_Marketing 1_30092026.pptx",
+      "source_locator": "WS-CE-03",
+      "confidence": "explicit"
+    },
+    {
+      "id": "OBJ-004",
+      "statement": "Brand reputation campaign management with journeys, segmentation, and performance analytics (WS-CE-04).",
+      "source_type": "Pre-read Materials",
+      "source_path": "Pre- read material - 03. D365_CE_ Day 03_Marketing 1_30092026.pptx",
+      "source_locator": "WS-CE-04",
+      "confidence": "explicit"
+    },
+    {
+      "id": "OBJ-005",
+      "statement": "Marketing asset governance and campaign readiness (WS-CE-05).",
+      "source_type": "Pre-read Materials",
+      "source_path": "Pre- read material - 03. D365_CE_ Day 03_Marketing 1_30092026.pptx",
+      "source_locator": "WS-CE-05",
+      "confidence": "explicit"
+    },
+    {
+      "id": "OBJ-006",
+      "statement": "Marketing strategy and activation planning with KPI tracking (WS-CE-06).",
+      "source_type": "Pre-read Materials",
+      "source_path": "Pre- read material - 03. D365_CE_ Day 03_Marketing 1_30092026.pptx",
+      "source_locator": "WS-CE-06",
+      "confidence": "explicit"
+    },
+    {
+      "id": "MOD-001",
+      "statement": "D365 Customer Insights data sources, profile unification, and dynamic segmentation for distributor and vertical-market models.",
+      "source_type": "Pre-read Materials",
+      "source_path": "Pre- read material - 03. D365_CE_ Day 03_Marketing 1_30092026.pptx",
+      "source_locator": "Process Flow 1; transcript agenda external analytics focus",
+      "confidence": "explicit"
+    },
+    {
+      "id": "MOD-002",
+      "statement": "Account and contact 360 views in Customer Insights for marketing audiences (distinct from Sales CRM day-to-day).",
+      "source_type": "Pre-read Materials",
+      "source_path": "Pre- read material - 03. D365_CE_ Day 03_Marketing 1_30092026.pptx",
+      "source_locator": "Unified customer profile; transcript 58:17\u20131:02:06",
+      "confidence": "derived"
+    },
+    {
+      "id": "OOS-001",
+      "statement": "Deep lead-to-opportunity sales process design (separate CRM sales workshops).",
+      "source_type": "Pre-read Materials",
+      "source_path": "artifacts/intake/2026-10-13-marketing-ws03-transcript.txt",
+      "source_locator": "10:17\u201310:23 James; session reframed to marketing not lead management",
+      "confidence": "explicit"
+    },
+    {
+      "id": "CHUNK-Transcript-lines 1-40",
+      "statement": "Customer Insights - Lead to Opportunity UST Led Workshop\nPatrick Giovinazzo with Philips Electronics Nederland B.V., Philips Clinical Informatics, Philips India Ltd, Philips Electronics North America Corporation\nRecorded on Sep 30, 2026 via Microsoft Teams, 3h 36m\nParticipants\nUST\nPatrick Giovinazzo, Delivery - Med Tech\nNitesh Dambale\nTheodore Vecchio\nArvind Manjunath Bhat\nAshok Kumar Manjunath\nDathatreya Upputuri\nDurga Prasad Seelamanthula\nGeorge Abraham\nGuruprasad Srinivasa\nHarinath Munugoti\nM",
+      "source_type": "Transcript",
+      "source_path": "C:\\Users\\308279\\Documents\\HEARTSTREAM-1\\artifacts\\intake\\2026-10-13-marketing-ws03-transcript.txt",
+      "source_locator": "lines 1-40",
+      "confidence": "explicit"
+    },
+    {
+      "id": "CHUNK-Transcript-lines 41-80",
+      "statement": "Transcript\n0:07 | Nitesh\nokay. Hi, James. Good morning.\n1:35 | Nitesh\nGood day. Everybody. Hey, Patrick. Morning. Hello, everyone.\n1:46 | James\nGood.\n1:46 | Nitesh\nMorning. Good evening.\n2:15 | Nitesh\nI see James, Nick Taylor and Rajiv, if the, and,\n2:26 | Nitesh\nI see Brian as well. So five people from heartstreams and if anyone can confirm, we can get started with the session or we are waiting for people to join in, James, let.\n2:41 | James\nme, look at the list here. Hold on sure.\n2:53 | James",
+      "source_type": "Transcript",
+      "source_path": "C:\\Users\\308279\\Documents\\HEARTSTREAM-1\\artifacts\\intake\\2026-10-13-marketing-ws03-transcript.txt",
+      "source_locator": "lines 41-80",
+      "confidence": "explicit"
+    },
+    {
+      "id": "CHUNK-Transcript-lines 81-120",
+      "statement": "We, we,\n6:20 | James\nwe are,\n6:21 | Pankaj\ntaking it as a feedback and will try to connect internally and\u2026 work on the correct title of the meeting as well. So, we have considered customer insights or the marketing within the value stream of lead to opportunity. And that's why the meeting title was including the opportunity name as well.\n6:42 | Brian\nOK. And we are missing a bunch of people, yes.\n6:45 | James\nYeah, we are missing a bunch of people.\n6:48 | Brian\nOK. Yeah. I was confused too, Jim,",
+      "source_type": "Transcript",
+      "source_path": "C:\\Users\\308279\\Documents\\HEARTSTREAM-1\\artifacts\\intake\\2026-10-13-marketing-ws03-transcript.txt",
+      "source_locator": "lines 81-120",
+      "confidence": "explicit"
+    },
+    {
+      "id": "CHUNK-Transcript-lines 121-160",
+      "statement": "Thank you.\n10:50 | James\nBye bye. Thanks. All right. So.\n10:55 | Nitesh\nLet me then start by sharing my screen and James and Brian probably do call out if, in case, you know, you feel this content is again to be shared with the rest of the stakeholders from different regions for which they are also, you know, for them, also, this particular content is relevant and they should be aware. Okay? So.\n11:16 | Brian\nJim, were you asked to round up all of the marketing people or no? Did someone ask?\n11:",
+      "source_type": "Transcript",
+      "source_path": "C:\\Users\\308279\\Documents\\HEARTSTREAM-1\\artifacts\\intake\\2026-10-13-marketing-ws03-transcript.txt",
+      "source_locator": "lines 121-160",
+      "confidence": "explicit"
+    },
+    {
+      "id": "CHUNK-Transcript-lines 161-200",
+      "statement": "No, I'm just thinking, you are right on, we did have some program and promotional approval processes within Philips. When we left Philips, we lost access to those systems and we are really, I'll say we're flying by the seat of our pants now, right? We, we just, we have, we manage everything on a spreadsheet and we post everything on shared sites and we don't have any type of a formal promotion or program approval template that we're using today, aside from meeting with people and deciding what w",
+      "source_type": "Transcript",
+      "source_path": "C:\\Users\\308279\\Documents\\HEARTSTREAM-1\\artifacts\\intake\\2026-10-13-marketing-ws03-transcript.txt",
+      "source_locator": "lines 161-200",
+      "confidence": "explicit"
+    },
+    {
+      "id": "CHUNK-Transcript-lines 201-240",
+      "statement": "To be another question, I had like, you know, you have companies that have their own name that have been bought by bigger distributors. And so, they have their own name and so we could treat them as their own customer. But we know they're being influenced by the fact that they've been bought, they're being influenced by top management. So they're actually part of a bigger company because either they're a sub or they've been bought, right?\n35:23 | James\nAnd still do business separately, right? Ye",
+      "source_type": "Transcript",
+      "source_path": "C:\\Users\\308279\\Documents\\HEARTSTREAM-1\\artifacts\\intake\\2026-10-13-marketing-ws03-transcript.txt",
+      "source_locator": "lines 201-240",
+      "confidence": "explicit"
+    },
+    {
+      "id": "CHUNK-Transcript-lines 241-280",
+      "statement": "You, I was just pulled into this. So I'm just trying to understand here. Can you show how AI model here can support\u2026 us with the customer insights and how that actually looks in practice? Because now you're just clicking around and I have a bit of a hard time following apologies for that. Yeah. Understood.\n51:08 | Nitesh\nA very valid question. So AI model is to you purely based on the AI, you know, segmentation or the AI model which you will be using. It is not in this particular platform, you w",
+      "source_type": "Transcript",
+      "source_path": "C:\\Users\\308279\\Documents\\HEARTSTREAM-1\\artifacts\\intake\\2026-10-13-marketing-ws03-transcript.txt",
+      "source_locator": "lines 241-280",
+      "confidence": "explicit"
+    },
+    {
+      "id": "CHUNK-Transcript-lines 281-320",
+      "statement": "Yeah. I just, I was going to ask if the account manager could be prompted to keep that information up to date, but you're saying that they're not even able to access this portion, and that's gonna in my opinion create major friction because we don't\u2026 somebody like in my role who is a field marketer, we don't interface with accounts that way.\n1:02:06 | Nitesh\nOkay. We.\n1:02:07 | Jessica\ncouldn't possibly keep that up. That would be a full time job. You can change my title to title updater.\n1:02:1",
+      "source_type": "Transcript",
+      "source_path": "C:\\Users\\308279\\Documents\\HEARTSTREAM-1\\artifacts\\intake\\2026-10-13-marketing-ws03-transcript.txt",
+      "source_locator": "lines 281-320",
+      "confidence": "explicit"
+    },
+    {
+      "id": "CHUNK-Transcript-lines 321-360",
+      "statement": "think we'd want complaints in there. We'd want, you know, like\u2026 even like the medical oriented complaints if there were any, because that's going to influence how we design the next products and what we need to think about for those. And then non complaint feedback too, like, hey, I would like to have another button, you know, that kind of thing has to be in there too.\n1:06:55 | Nitesh\nSure. Would we be able to have?\n1:07:00 | Mattias\nCfms data linked to the accounts because then the cfms proces",
+      "source_type": "Transcript",
+      "source_path": "C:\\Users\\308279\\Documents\\HEARTSTREAM-1\\artifacts\\intake\\2026-10-13-marketing-ws03-transcript.txt",
+      "source_locator": "lines 321-360",
+      "confidence": "explicit"
+    },
+    {
+      "id": "CHUNK-Transcript-lines 361-400",
+      "statement": "And.\n1:18:40 | Kaitie\nalso, the customer insights from our direct channel in some ways can help influence how we interact with.\n1:18:48 | Nitesh\nLeads.\n1:18:49 | Kaitie\nThat come through. We will have some consumer behavior learnings that we can apply to how we interact with leads that come across the desk so slightly.\n1:19:00 | James\nDifferent.\n1:19:01 | Kaitie\nBut there can be crossover in how we utilize the data.\n1:19:06 | Nitesh\nOkay. So I get that customers are also intended, but at the sam",
+      "source_type": "Transcript",
+      "source_path": "C:\\Users\\308279\\Documents\\HEARTSTREAM-1\\artifacts\\intake\\2026-10-13-marketing-ws03-transcript.txt",
+      "source_locator": "lines 361-400",
+      "confidence": "explicit"
+    },
+    {
+      "id": "CHUNK-Transcript-lines 401-440",
+      "statement": "Months later.\n1:22:55 | Brian\nMaybe what I feel differently about is maybe we need more than just the high level, like if there's a trend, in dentist offices where we start seeing more sales, you know, over the course of a week or two weeks, maybe that's a signal to us that something hot is going on. There's something about that market that we need to. Maybe we need to run a campaign directed at them, you know, like if we could get that signal early from a marketing perspective, then that would ",
+      "source_type": "Transcript",
+      "source_path": "C:\\Users\\308279\\Documents\\HEARTSTREAM-1\\artifacts\\intake\\2026-10-13-marketing-ws03-transcript.txt",
+      "source_locator": "lines 401-440",
+      "confidence": "explicit"
+    },
+    {
+      "id": "CHUNK-Transcript-lines 441-480",
+      "statement": "But certainly, we can run the campaigns, especially this type of campaigns. We can through marketing channel. You can create one thing and we can run.\n1:29:09 | Nitesh\nThat, yes, yes, we.\n1:29:10 | Shaik\nCan capture as well. How many registered with that?\n1:29:13 | James\nYes, yes.\n1:29:15 | Nitesh\nTo be very Frank and short, the more data you bring in or capture against an install base. One thing, is 100 percent sure any sales order which is getting out of dynamics will have an install base crea",
+      "source_type": "Transcript",
+      "source_path": "C:\\Users\\308279\\Documents\\HEARTSTREAM-1\\artifacts\\intake\\2026-10-13-marketing-ws03-transcript.txt",
+      "source_locator": "lines 441-480",
+      "confidence": "explicit"
+    },
+    {
+      "id": "CHUNK-Transcript-lines 481-520",
+      "statement": "might be with shippers. Yes.\n1:38:27 | James\nMultiple ship, choose one. So.\n1:38:29 | Nitesh\nAnd.\n1:38:30 | James\nall of the data is tied to this old, yes, yes. And therefore, it wouldn't cripple our customer insights capabilities for marketing.\n1:38:39 | Nitesh\nSo it don't it because we are dealing with two different things here, James, customer remains, same, what you are saying, build to ship to that comes on the sales order. Very easy to manage over there. Okay, specific fields, right? Okay.",
+      "source_type": "Transcript",
+      "source_path": "C:\\Users\\308279\\Documents\\HEARTSTREAM-1\\artifacts\\intake\\2026-10-13-marketing-ws03-transcript.txt",
+      "source_locator": "lines 481-520",
+      "confidence": "explicit"
+    },
+    {
+      "id": "CHUNK-Transcript-lines 521-560",
+      "statement": "satisfaction scoring all that kind of stuff. Yeah, we should be doing again. I think what I can say is in the last five years or so, the campaigns that we've done, we've simply worked with industry organizations and basically purchased contact lists, right? So that's that is one thing that we do, is, we go to the people who are experts in the space who have the contacts who have the databases. It's it's not giving us insights into that market, but it's giving us the actual\u2026 contacts in that mark",
+      "source_type": "Transcript",
+      "source_path": "C:\\Users\\308279\\Documents\\HEARTSTREAM-1\\artifacts\\intake\\2026-10-13-marketing-ws03-transcript.txt",
+      "source_locator": "lines 521-560",
+      "confidence": "explicit"
+    },
+    {
+      "id": "CHUNK-Transcript-lines 561-600",
+      "statement": "Would I would love to, after each direct sale ships, you know, you give them a number of months to install to pay their invoice, leave their invoice, you know, to have some experience with the product and then you send them a survey, hey, how was it dealing with our salesperson? And how was it dealing with our systems? And how was it, you know, how's the product doing and blah, blah, blah. So I would absolutely love that as a standard part of business, every direct sale that we do. OK.\n2:01:01 |",
+      "source_type": "Transcript",
+      "source_path": "C:\\Users\\308279\\Documents\\HEARTSTREAM-1\\artifacts\\intake\\2026-10-13-marketing-ws03-transcript.txt",
+      "source_locator": "lines 561-600",
+      "confidence": "explicit"
+    },
+    {
+      "id": "CHUNK-Transcript-lines 601-640",
+      "statement": "Thing or approach in your world. What do you think? What is the best approach you follow currently with respect to all such data which you received starting with the, to capture, the source data that is the data view by, I am pretty sure you receive excel sheets for the prospective buyers. That is something which has been worked upon by the sales team. Understood, what else do you receive? And how do you store that? If at all, anything can be leveraged from the customer inside data perspective, ",
+      "source_type": "Transcript",
+      "source_path": "C:\\Users\\308279\\Documents\\HEARTSTREAM-1\\artifacts\\intake\\2026-10-13-marketing-ws03-transcript.txt",
+      "source_locator": "lines 601-640",
+      "confidence": "explicit"
+    },
+    {
+      "id": "CHUNK-Transcript-lines 641-680",
+      "statement": "Correct. So, so if zinfi is going to be the official.\n2:13:17 | Nitesh\nApproved shareable?\n2:13:18 | James\nContent, for our partners, then great. Then that's all the approved stuff, right? Maybe we utilized. Again, this is another business decision that has to be made about how we utilize dynamics, right? Maybe this is just a, an internal do not share\u2026 repository that we can utilize for marketing purposes, upstream and downstream.\n2:13:44 | Nitesh\nYou? OK, great. Did?\n2:13:49 | James\nThat make s",
+      "source_type": "Transcript",
+      "source_path": "C:\\Users\\308279\\Documents\\HEARTSTREAM-1\\artifacts\\intake\\2026-10-13-marketing-ws03-transcript.txt",
+      "source_locator": "lines 641-680",
+      "confidence": "explicit"
+    },
+    {
+      "id": "CHUNK-Transcript-lines 681-720",
+      "statement": "So, but anyway into regulatory, yeah, sometimes.\n2:27:36 | Brian\nIt's the same person. But yeah, anyway, yep, that's a good overview. Thanks, Jim. Okay.\n2:27:41 | Nitesh\nSo, if we keep that conversation to it, mediavalet will continue, that is certain and all the marketing content activation approvals that will continue to be like as you discussed. And then, okay, so we take that as the confirmation.\n2:28:02 | James\nSo, let me pause for a quick second. We made a decision to go to mediavalet befo",
+      "source_type": "Transcript",
+      "source_path": "C:\\Users\\308279\\Documents\\HEARTSTREAM-1\\artifacts\\intake\\2026-10-13-marketing-ws03-transcript.txt",
+      "source_locator": "lines 681-720",
+      "confidence": "explicit"
+    },
+    {
+      "id": "CHUNK-Transcript-lines 721-760",
+      "statement": "If we, so if we create, yeah. So if.\n2:33:10 | James\na, I don't.\n2:33:12 | Brian\nknow, I'm not sure how this works, but.\n2:33:14 | James\nIf I get.\n2:33:15 | Brian\nAn email from\u2026 if a distributor wants to use one of our assets in media valley in an email that they're sending out like,\n2:33:27 | James\na photo, they're not going.\n2:33:29 | Brian\nTo put a link to media valet into that email, they're going to download the photo and then put it into that email, right? Correct?\n2:33:37 | Kaitie\nCorrect",
+      "source_type": "Transcript",
+      "source_path": "C:\\Users\\308279\\Documents\\HEARTSTREAM-1\\artifacts\\intake\\2026-10-13-marketing-ws03-transcript.txt",
+      "source_locator": "lines 721-760",
+      "confidence": "explicit"
+    },
+    {
+      "id": "CHUNK-Transcript-lines 761-800",
+      "statement": "And if you want to put an action down to like give it like have Lynn baker, who knows most about it to give you a demo of it, of how we use it, you know, sometimes when you go to these media like the media value website, there's a whole lot of fluff, and you don't actually see what it does. So exactly you could take, you could take an action and we would be happy to give you a demo of our, you know, share our screen.\n2:35:40 | Nitesh\nDo you said like we need to reach out or this action will be o",
+      "source_type": "Transcript",
+      "source_path": "C:\\Users\\308279\\Documents\\HEARTSTREAM-1\\artifacts\\intake\\2026-10-13-marketing-ws03-transcript.txt",
+      "source_locator": "lines 761-800",
+      "confidence": "explicit"
+    },
+    {
+      "id": "CHUNK-Transcript-lines 801-840",
+      "statement": "This way I save it. Next time this email reaches you, click in this particular email. The redirection will be done at the same time, the benefit of this particular initiatives or these emails. When you are reviewing your marketing campaign, you will be in a position to have a look at what exactly this means in your journey. For example, let me just try and show you one email which is the, you know, already been sent?\n2:44:28 | Rajeev\nCan I ask one question, please?\n2:44:30 | Nitesh\nPlease, pleas",
+      "source_type": "Transcript",
+      "source_path": "C:\\Users\\308279\\Documents\\HEARTSTREAM-1\\artifacts\\intake\\2026-10-13-marketing-ws03-transcript.txt",
+      "source_locator": "lines 801-840",
+      "confidence": "explicit"
+    },
+    {
+      "id": "CHUNK-Transcript-lines 841-880",
+      "statement": "The third question, target audience and segmentation, we spoke about it on multiple occasions. So not like we would not like to delve into that particular question. We'll simply move on to the next one which is your success measures. So when you think of executing this marketing, you know, initiatives or marketing campaigns, one thing where what we got to know was the turnaround time after a sale, that was the customer inside data part. But when you are actually executing this kind of content or",
+      "source_type": "Transcript",
+      "source_path": "C:\\Users\\308279\\Documents\\HEARTSTREAM-1\\artifacts\\intake\\2026-10-13-marketing-ws03-transcript.txt",
+      "source_locator": "lines 841-880",
+      "confidence": "explicit"
+    },
+    {
+      "id": "CHUNK-Transcript-lines 881-920",
+      "statement": "We, I'm not sure I have the answer to all of your questions, but we use a company called trustarc, TRUST a RC. And they are the ones who manage those buttons and security preferences when you get onto our websites. Okay? So for email, you know, again, we don't have emails of our customers today.\n3:01:58 | Ashwini\nAnd we're.\n3:01:59 | Brian\nstarting to collect emails of our customers and starting to get permission from them to do marketing to them. But I have never done an email campaign. So we w",
+      "source_type": "Transcript",
+      "source_path": "C:\\Users\\308279\\Documents\\HEARTSTREAM-1\\artifacts\\intake\\2026-10-13-marketing-ws03-transcript.txt",
+      "source_locator": "lines 881-920",
+      "confidence": "explicit"
+    },
+    {
+      "id": "CHUNK-Transcript-lines 921-960",
+      "statement": "When it comes to heartstream, let's say day two working.\n3:04:55 | Nitesh\nSo,\n3:04:55 | Pankaj\nwill there be a single marketing team for across the globe and have a, yeah.\n3:05:07 | Brian\nGo ahead.\n3:05:08 | Nitesh\nJames, that's a good question.\n3:05:09 | James\nWe're a little fragmented right now.\n3:05:13 | Nitesh\nHuh.\n3:05:15 | Ashwini\nThe four members? Yeah, sorry, go ahead Brent.\n3:05:20 | Nitesh\nYou know, compared to.\n3:05:22 | Brian\nWhat Philips was, we're very consolidated. Okay. So, Phili",
+      "source_type": "Transcript",
+      "source_path": "C:\\Users\\308279\\Documents\\HEARTSTREAM-1\\artifacts\\intake\\2026-10-13-marketing-ws03-transcript.txt",
+      "source_locator": "lines 921-960",
+      "confidence": "explicit"
+    },
+    {
+      "id": "CHUNK-Transcript-lines 961-1000",
+      "statement": "Katie, Rajiv?\n3:07:00 | James\nI just hope I just hope you got what I said earlier about to get the maximum out of this marketing module, of dynamics, we have to work really hard on the data migration to make sure that what we move is what we need to put in work instructions for users to capture as much customer contact information, emails phone numbers, names, market segmentation as possible either in the CRM for sales or at time of order entry when orders are booked. Because if we miss that opp",
+      "source_type": "Transcript",
+      "source_path": "C:\\Users\\308279\\Documents\\HEARTSTREAM-1\\artifacts\\intake\\2026-10-13-marketing-ws03-transcript.txt",
+      "source_locator": "lines 961-1000",
+      "confidence": "explicit"
+    },
+    {
+      "id": "CHUNK-Transcript-lines 1001-1040",
+      "statement": "Pull together.\n3:15:19 | Kaitie\nWhat that workflow looks like. But yeah, there's two different buckets when we talk about things getting approved. One is where we're making content with claims in it, that is one workflow. And one is creating a campaign with that approved content.\n3:15:34 | James\nYep. Go ahead. If one element of the campaign is a promotion, then you add finance to the approval, right? If there's no sales promotion involved where we give discounts, right? In one way or another, th",
+      "source_type": "Transcript",
+      "source_path": "C:\\Users\\308279\\Documents\\HEARTSTREAM-1\\artifacts\\intake\\2026-10-13-marketing-ws03-transcript.txt",
+      "source_locator": "lines 1001-1040",
+      "confidence": "explicit"
+    },
+    {
+      "id": "CHUNK-Transcript-lines 1041-1041",
+      "statement": "Call eight, seven, seven, four, zero, four, four, one, two nine.",
+      "source_type": "Transcript",
+      "source_path": "C:\\Users\\308279\\Documents\\HEARTSTREAM-1\\artifacts\\intake\\2026-10-13-marketing-ws03-transcript.txt",
+      "source_locator": "lines 1041-1041",
+      "confidence": "explicit"
+    },
+    {
+      "id": "CHUNK-MoM-lines 1-40",
+      "statement": "Zinfi Workshop  \nMinutes of Meeting  \n  \n \n \n \n \n \n \n \n\n \n \n            \nContents \n1 SUMMARY ........................................................................................................................................ 3 \n2 KEY DISCUSSION POINTS ................................................................................................................ 3 \n3 DECISIONS MADE ..............................................................................................................",
+      "source_type": "MoM",
+      "source_path": "C:\\Users\\308279\\Documents\\HEARTSTREAM-1\\artifacts\\intake\\.pipeline\\2026-10-16-marketing-ws03-mom.txt",
+      "source_locator": "lines 1-40",
+      "confidence": "explicit"
+    },
+    {
+      "id": "CHUNK-MoM-lines 41-80",
+      "statement": "2 KEY DISCUSSION POINTS \nSr Topic Discussion Summary \n1 Workshop scope and \nstakeholder alignment \n\u2022 HeartStream highlighted that the workshop title created \nconfusion, resulting in key marketing stakeholders not attending \nthe session. \n \n\u2022 It was agreed that future workshop titles and communications \nshould clearly identify Marketing / Customer Insights topics to \nensure appropriate stakeholder participation. \n \n\u2022 HeartStream indicated that additional regional and global \nmarketing representat",
+      "source_type": "MoM",
+      "source_path": "C:\\Users\\308279\\Documents\\HEARTSTREAM-1\\artifacts\\intake\\.pipeline\\2026-10-16-marketing-ws03-mom.txt",
+      "source_locator": "lines 41-80",
+      "confidence": "explicit"
+    },
+    {
+      "id": "CHUNK-MoM-lines 81-120",
+      "statement": "Date: 30th September 2026 Time: 06.00 AM \u2013 09.00 AM PST \nMeeting \nFacilitator: \nUST Team Place: Microsoft Teams \nMeeting \nObjective: \n1) Review Dynamics 365 Customer Insights (Marketing) capabilities and applicability for \nHeartStream. \n2) Understand current marketing processes, customer insight sources, and campaign \nmanagement practices. \n3) Identify marketing data sources, segmentation requirements, and customer/distributor \nprofiling needs. \n4) Discuss content governance, asset management, a",
+      "source_type": "MoM",
+      "source_path": "C:\\Users\\308279\\Documents\\HEARTSTREAM-1\\artifacts\\intake\\.pipeline\\2026-10-16-marketing-ws03-mom.txt",
+      "source_locator": "lines 81-120",
+      "confidence": "explicit"
+    },
+    {
+      "id": "CHUNK-MoM-lines 121-160",
+      "statement": "within a unified view. \n \n\u2022 HeartStream emphasized that global distributors operating \nacross multiple regions must be supported within the future-state \ncustomer and partner profile model. \n \n\u2022 HeartStream confirmed that future marketing activities must \nsupport both distributor-led and direct-to-customer business \nmodels. \n \n4 Segmentation strategy and \nmarket visibility \n\u2022 HeartStream highlighted the need to segment customers by key \nmarket categories such as Hospitals, EMS, Fire, Military an",
+      "source_type": "MoM",
+      "source_path": "C:\\Users\\308279\\Documents\\HEARTSTREAM-1\\artifacts\\intake\\.pipeline\\2026-10-16-marketing-ws03-mom.txt",
+      "source_locator": "lines 121-160",
+      "confidence": "explicit"
+    },
+    {
+      "id": "CHUNK-MoM-lines 161-200",
+      "statement": "sources of marketing insight. \n \n \n            \n \n\u2022 HeartStream confirmed that industry market-share information is \nreceived periodically through third-party consolidated reports and \ncould potentially be leveraged for analysis. \n \n6 Customer feedback and \nsurvey management \n\u2022 HeartStream expressed interest in implementing structured \ncustomer satisfaction surveys as part of future-state marketing \ncapabilities. \n \n\u2022 It was suggested that direct customers could receive surveys \nfollowing produc",
+      "source_type": "MoM",
+      "source_path": "C:\\Users\\308279\\Documents\\HEARTSTREAM-1\\artifacts\\intake\\.pipeline\\2026-10-16-marketing-ws03-mom.txt",
+      "source_locator": "lines 161-200",
+      "confidence": "explicit"
+    },
+    {
+      "id": "CHUNK-MoM-lines 201-240",
+      "statement": "\u2022 It was agreed that improved data capture processes would \ndirectly impact the quality of segmentation and marketing \noutcomes. \n \n8 Customer master data and \nmigration considerations \n\u2022 HeartStream highlighted concerns regarding duplicate customer \nrecords, fragmented account structures and inconsistent \ncustomer numbering across existing systems. \n \n\u2022 It was agreed that customer data cleansing will be critical prior to \nmigration into Dynamics 365. \n \n\u2022 HeartStream emphasized that poor-qualit",
+      "source_type": "MoM",
+      "source_path": "C:\\Users\\308279\\Documents\\HEARTSTREAM-1\\artifacts\\intake\\.pipeline\\2026-10-16-marketing-ws03-mom.txt",
+      "source_locator": "lines 201-240",
+      "confidence": "explicit"
+    },
+    {
+      "id": "CHUNK-MoM-lines 241-280",
+      "statement": "10 Marketing content \ngovernance \n\u2022 HeartStream confirmed that externally published marketing \ncontent currently undergoes approval by Marketing, Quality, \nClinical, Legal and Regulatory stakeholders. \n \n\u2022 It was emphasized that only approved content should be used in \ncustomer-facing communications and campaigns. \n \n\u2022 HeartStream differentiated between formally approved customer-\nfacing content and internal competitive intelligence used for \nbusiness planning purposes. \n \n\u2022 It was suggested tha",
+      "source_type": "MoM",
+      "source_path": "C:\\Users\\308279\\Documents\\HEARTSTREAM-1\\artifacts\\intake\\.pipeline\\2026-10-16-marketing-ws03-mom.txt",
+      "source_locator": "lines 241-280",
+      "confidence": "explicit"
+    },
+    {
+      "id": "CHUNK-MoM-lines 281-320",
+      "statement": "\u2022 It was demonstrated that campaigns could be triggered through \npredefined segments or business events within Dynamics 365. \n \n \n            \n \n\u2022 HeartStream acknowledged the value of automated customer \noutreach for activities such as product awareness, upgrade \ncampaigns and engagement programs. \n \n\u2022 It was agreed that future campaign capabilities should support \ndistributor-focused as well as direct-customer marketing \ninitiatives. \n \n13 Campaign approvals and \ngovernance \n\u2022 HeartStream clar",
+      "source_type": "MoM",
+      "source_path": "C:\\Users\\308279\\Documents\\HEARTSTREAM-1\\artifacts\\intake\\.pipeline\\2026-10-16-marketing-ws03-mom.txt",
+      "source_locator": "lines 281-320",
+      "confidence": "explicit"
+    },
+    {
+      "id": "CHUNK-MoM-lines 321-360",
+      "statement": "through engagement metrics, landing page activity, click-through \nrates and conversion indicators \n \n\u2022 HeartStream highlighted the need to understand campaign \neffectiveness and its contribution to downstream sales \noutcomes. \n \n\u2022 It was discussed that reporting should provide visibility into \ncustomer and segment-level trends to support future marketing \ndecisions. \n \n15 Marketing channels and \nconsent management \n\u2022 HeartStream confirmed that email is expected to be the primary \nmarketing chann",
+      "source_type": "MoM",
+      "source_path": "C:\\Users\\308279\\Documents\\HEARTSTREAM-1\\artifacts\\intake\\.pipeline\\2026-10-16-marketing-ws03-mom.txt",
+      "source_locator": "lines 321-360",
+      "confidence": "explicit"
+    },
+    {
+      "id": "CHUNK-MoM-lines 361-400",
+      "statement": "\u2022 HeartStream indicated that only a limited number of users are \nexpected to create and manage campaigns globally. \n \n\u2022 It was confirmed that appropriate role-based access controls will \nbe required while still enabling global visibility for authorized \nmarketing users. \n \n \n \n3 DECISIONS MADE \nSr Topic Discussion Summary \n1 Marketing stakeholder \nparticipation \n\u2022 It was agreed that future Marketing / Customer Insights \nworkshops should include additional marketing stakeholders, as \nthe current ",
+      "source_type": "MoM",
+      "source_path": "C:\\Users\\308279\\Documents\\HEARTSTREAM-1\\artifacts\\intake\\.pipeline\\2026-10-16-marketing-ws03-mom.txt",
+      "source_locator": "lines 361-400",
+      "confidence": "explicit"
+    },
+    {
+      "id": "CHUNK-MoM-lines 401-440",
+      "statement": "\u2022 HeartStream agreed that customer surveys and feedback \ncollection should form part of the future-state marketing \ncapability to improve customer understanding and insight \ngeneration. \n \n6 Marketing content \ngovernance \n\u2022 It was agreed that only approved marketing content should be \nused in marketing campaigns and customer communications. \n \n \n            \n \n\u2022 Existing Legal, Regulatory, Clinical, Quality and Marketing \napproval processes will continue to govern content approval. \n \n7 Campaign",
+      "source_type": "MoM",
+      "source_path": "C:\\Users\\308279\\Documents\\HEARTSTREAM-1\\artifacts\\intake\\.pipeline\\2026-10-16-marketing-ws03-mom.txt",
+      "source_locator": "lines 401-440",
+      "confidence": "explicit"
+    },
+    {
+      "id": "CHUNK-MoM-lines 441-480",
+      "statement": "\u2022 SMS, social media and additional digital engagement channels \nwill be considered as future-state capabilities. \n \n11 Customer data quality and \nmigration \n\u2022 It was agreed that customer master data cleansing, deduplication \nand account rationalization activities will be required prior to \nmigration to ensure effective marketing segmentation and \nreporting. \n \n12 Segmentation data capture \n\u2022 It was agreed that market segmentation information should be \ncaptured as early as possible within the co",
+      "source_type": "MoM",
+      "source_path": "C:\\Users\\308279\\Documents\\HEARTSTREAM-1\\artifacts\\intake\\.pipeline\\2026-10-16-marketing-ws03-mom.txt",
+      "source_locator": "lines 441-480",
+      "confidence": "explicit"
+    },
+    {
+      "id": "CHUNK-MoM-lines 481-520",
+      "statement": "Customer and partner \nmaster data contains \nduplicates and \nCustomer Insights \nsegmentation, reporting \nand analytics may be \nPerform data profiling, \ncleansing, deduplication and \nHeartStream \nBusiness / Data \nTeam / UST \n \n \n            \nfragmented account \nstructures \ninaccurate if duplicate \nrecords are migrated into \nDynamics 365. \naccount rationalization \nactivities prior to migration. \nMarket segmentation \ndata is not \nconsistently captured \nduring sales and order \nprocesses \nFuture marke",
+      "source_type": "MoM",
+      "source_path": "C:\\Users\\308279\\Documents\\HEARTSTREAM-1\\artifacts\\intake\\.pipeline\\2026-10-16-marketing-ws03-mom.txt",
+      "source_locator": "lines 481-520",
+      "confidence": "explicit"
+    },
+    {
+      "id": "CHUNK-MoM-lines 521-560",
+      "statement": "information is spread \nacross multiple teams \nand repositories \nValuable market \nintelligence may remain \ninaccessible, inconsistent \nor unavailable for \nmarketing analysis and \nplanning. \nEstablish a centralized \nrepository and governance \nmodel for capturing and \nmanaging marketing insights. \nHeartStream \nMarketing / UST \nFuture-state content \nmanagement \napproach (MediaValet \nvs Dynamics 365) \nremains undecided \nDuplicate capabilities, \nintegration complexity or \nunnecessary tools may be \nint",
+      "source_type": "MoM",
+      "source_path": "C:\\Users\\308279\\Documents\\HEARTSTREAM-1\\artifacts\\intake\\.pipeline\\2026-10-16-marketing-ws03-mom.txt",
+      "source_locator": "lines 521-560",
+      "confidence": "explicit"
+    },
+    {
+      "id": "CHUNK-MoM-lines 561-600",
+      "statement": "sentiment and market \nintelligence data to support \ncampaign planning and \nproduct decisions. \nDefine future customer \nfeedback and survey strategy \nleveraging Dynamics 365 \nCustomer Insights \ncapabilities. \nHeartStream \nMarketing \nMarketing campaign \napproval workflow is \nnot fully defined \nInconsistent campaign \ngovernance may result in \nunauthorized \ncommunications or \ndelayed campaign \nexecution. \nDefine approval workflow \ncovering campaign ownership, \nreview responsibilities and \napproval h",
+      "source_type": "MoM",
+      "source_path": "C:\\Users\\308279\\Documents\\HEARTSTREAM-1\\artifacts\\intake\\.pipeline\\2026-10-16-marketing-ws03-mom.txt",
+      "source_locator": "lines 561-600",
+      "confidence": "explicit"
+    },
+    {
+      "id": "CHUNK-MoM-lines 601-640",
+      "statement": "mechanisms. \nHeartStream \nMarketing / Legal / \nUST \nRequired marketing \nstakeholders were not \nrepresented in the \nworkshop due to \nworkshop naming and \nattendance confusion \nCertain regional marketing \nrequirements may not have \nbeen captured, potentially \nleading to solution gaps. \nConduct follow-up sessions \nwith broader marketing \nstakeholder participation and \nvalidate captured \nrequirements. \nHeartStream \nMarketing / UST \nReliance on manual \ntracing reports to \nidentify end-market \nsales \n",
+      "source_type": "MoM",
+      "source_path": "C:\\Users\\308279\\Documents\\HEARTSTREAM-1\\artifacts\\intake\\.pipeline\\2026-10-16-marketing-ws03-mom.txt",
+      "source_locator": "lines 601-640",
+      "confidence": "explicit"
+    },
+    {
+      "id": "CHUNK-MoM-lines 641-680",
+      "statement": "5 ACTION ITEMS \nSr Category Action Owner Tentative \nDue Date \n1 Segmentation \nProvide the list of marketing segments and target \naudiences that HeartStream would like to support \nin Dynamics 365 Customer Insights, including \ndistributor, customer and market-based \nsegmentation requirements. \nHeartStream \nMarketing TBD \n2 Marketing Data \nSources \nShare details of current marketing data sources, \nincluding trade show lead files, external lead \nproviders and any market intelligence datasets \nused b",
+      "source_type": "MoM",
+      "source_path": "C:\\Users\\308279\\Documents\\HEARTSTREAM-1\\artifacts\\intake\\.pipeline\\2026-10-16-marketing-ws03-mom.txt",
+      "source_locator": "lines 641-680",
+      "confidence": "explicit"
+    },
+    {
+      "id": "CHUNK-MoM-lines 681-720",
+      "statement": "feedback survey requirements, including target \naudience, timing and expected reporting \nrequirements. \nHeartStream \nMarketing TBD \n6 Data & Migration \nAnalyze customer master data quality, duplicate \naccount scenarios and market segmentation \nattributes required to support future marketing \ninitiatives. \nHeartStream \nBusiness / UST \nData Team \nTBD \n7 Market \nClassification \nReview how market categories (Hospital, EMS, \nFire, Military, AED Channels, Dental, Schools, \netc.) can be captured within",
+      "source_type": "MoM",
+      "source_path": "C:\\Users\\308279\\Documents\\HEARTSTREAM-1\\artifacts\\intake\\.pipeline\\2026-10-16-marketing-ws03-mom.txt",
+      "source_locator": "lines 681-720",
+      "confidence": "explicit"
+    },
+    {
+      "id": "CHUNK-MoM-lines 721-760",
+      "statement": "Governance \nDefine future-state campaign approval workflow, \nincluding marketing, finance and other stakeholder \napprovals required prior to campaign execution. \nHeartStream \nMarketing TBD \n11 Consent \nManagement \nProvide details of the current consent \nmanagement approach, including TrustArc usage \nand any regional privacy compliance \nrequirements. \nHeartStream \nMarketing / \nCompliance Team \nTBD \n12 Reporting & \nKPIs \nDefine marketing KPIs, campaign success \nmeasures, conversion metrics and rep",
+      "source_type": "MoM",
+      "source_path": "C:\\Users\\308279\\Documents\\HEARTSTREAM-1\\artifacts\\intake\\.pipeline\\2026-10-16-marketing-ws03-mom.txt",
+      "source_locator": "lines 721-760",
+      "confidence": "explicit"
+    },
+    {
+      "id": "CHUNK-MoM-lines 761-782",
+      "statement": "15 \nFuture \nWorkshop \nCoverage \nIdentify additional marketing stakeholders from \nglobal and regional teams who should participate \nin future marketing workshops. \nHeartStream \nMarketing TBD \n16 Requirement \nValidation \nReview workshop findings, assumptions and \ndiscussion outcomes and provide feedback or \ncorrections where required. \nHeartStream \nBusiness TBD",
+      "source_type": "MoM",
+      "source_path": "C:\\Users\\308279\\Documents\\HEARTSTREAM-1\\artifacts\\intake\\.pipeline\\2026-10-16-marketing-ws03-mom.txt",
+      "source_locator": "lines 761-782",
+      "confidence": "explicit"
+    },
+    {
+      "id": "CHUNK-Pre-read Materials-lines 1-40",
+      "statement": "D365 CE Solution Modelling Workshop Marketing |   Sept 2026\n\nContents Workshop Annexure ID BPM Duration (minutes) WS-CE-01 70 External Analytics Data Ingestion & Unification 120 WS-CE-02 61 Marketing Research Insights Planning 15 54 Global Marketing Content Activation 20 38 Brand Reputation Campaign Management 20 58 Marketing Asset Governance & Campaign Readiness 35 60 Marketing Strategy & Activation Planning 10\n\nExternal Analytics Data Ingestion & Unification 01\n\nPre-read: External Analytics Da",
+      "source_type": "Pre-read Materials",
+      "source_path": "C:\\Users\\308279\\Documents\\HEARTSTREAM-1\\artifacts\\intake\\.pipeline\\2026-10-13-marketing-ws03-prerequisite.txt",
+      "source_locator": "lines 1-40",
+      "confidence": "explicit"
+    },
+    {
+      "id": "CHUNK-Pre-read Materials-lines 41-51",
+      "statement": "Process Flow 5 \u2013 Marketing Asset Governance & Campaign Readiness Standard D365 Customer Insights out-of-the-box, no customisation assumed\n\nProcess details: Marketing Asset Governance & Campaign Readiness Marketing Asset Management Definition: Marketing assets are created, maintained, and stored in approved repositories for use in campaigns and communications. Assets may include emails, documents, images, videos, and campaign materials. Marketing teams should use approved assets from designated r",
+      "source_type": "Pre-read Materials",
+      "source_path": "C:\\Users\\308279\\Documents\\HEARTSTREAM-1\\artifacts\\intake\\.pipeline\\2026-10-13-marketing-ws03-prerequisite.txt",
+      "source_locator": "lines 41-51",
+      "confidence": "explicit"
+    }
+  ],
+  "features": [
+    {
+      "feature_name": "70 - External Analytics Data Ingestion & Unification",
+      "workshop_code": "WS-CE-01",
+      "source_path": "C:\\Users\\308279\\Documents\\HEARTSTREAM-1\\artifacts\\work-items\\SOW.json",
+      "source_locator": "SOW.rows[0]"
+    },
+    {
+      "feature_name": "61 - Marketing Research Insights Planning",
+      "workshop_code": "WS-CE-02",
+      "source_path": "C:\\Users\\308279\\Documents\\HEARTSTREAM-1\\artifacts\\work-items\\SOW.json",
+      "source_locator": "SOW.rows[1]"
+    },
+    {
+      "feature_name": "54 - Global Marketing Content Activation",
+      "workshop_code": "WS-CE-03",
+      "source_path": "C:\\Users\\308279\\Documents\\HEARTSTREAM-1\\artifacts\\work-items\\SOW.json",
+      "source_locator": "SOW.rows[2]"
+    },
+    {
+      "feature_name": "38 - Brand Reputation Campaign Management",
+      "workshop_code": "WS-CE-04",
+      "source_path": "C:\\Users\\308279\\Documents\\HEARTSTREAM-1\\artifacts\\work-items\\SOW.json",
+      "source_locator": "SOW.rows[3]"
+    },
+    {
+      "feature_name": "58 - Marketing Asset Governance & Campaign Readiness",
+      "workshop_code": "WS-CE-05",
+      "source_path": "C:\\Users\\308279\\Documents\\HEARTSTREAM-1\\artifacts\\work-items\\SOW.json",
+      "source_locator": "SOW.rows[4]"
+    },
+    {
+      "feature_name": "60 - Marketing Strategy & Activation Planning",
+      "workshop_code": "WS-CE-06",
+      "source_path": "C:\\Users\\308279\\Documents\\HEARTSTREAM-1\\artifacts\\work-items\\SOW.json",
+      "source_locator": "SOW.rows[5]"
+    }
+  ],
+  "prerequisite_kb_ref": "C:\\Users\\308279\\Documents\\HEARTSTREAM-1\\artifacts\\intake\\2026-10-13-marketing-ws03-workshop-prerequisite-knowledge-base.json"
+}

@@ -59,6 +59,7 @@ def _evaluation() -> dict:
         ("negative_boundary_coverage", "acceptance-criteria-evaluator", "ratio", "n/a", None),
         ("granularity", "story-matching-evaluator", "ratio", "100% (1/1)", 1.0),
         ("hallucination_rate", "hallucination-detection-evaluator", "ratio", "0% (0/1)", 0.0),
+        ("manual_hallucination_rate", "hallucination-detection-evaluator", "ratio", "0% (0/1)", 0.0),
     ]
     metrics = []
     for metric_id, owner, kind, display, score in specs:

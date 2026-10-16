@@ -1,0 +1,1727 @@
+{
+  "schema_version": "1.0",
+  "kind": "hallucination-manual-batch",
+  "batch": "A",
+  "owner": "hallucination-detection-evaluator",
+  "confidence": "high",
+  "stories": [
+    {
+      "story_key": "manual-US-4",
+      "side": "manual",
+      "title": "Define External Analytics Data Sources and Requirements",
+      "has_unsupported_claim": true,
+      "transcript_states_requirement": true,
+      "requirement_rationale": "The workshop asks which analytics platforms, survey tools, and third-party sources should be brought into Customer Insights, and states defining/connecting sources. It does not state a documented inventory of datasets, events, batch vs real-time, volumes, matching keys, use cases, or owner approval.",
+      "claims": [
+        {
+          "text": "Define External Analytics Data Sources and Requirements",
+          "field": "title",
+          "supported": true,
+          "transcript_refs": [
+            {"locator": "L219", "excerpt": "getting this data itself is a activity, you define the source, you connect to the source system, you get the data"},
+            {"locator": "L333", "excerpt": "external analytics sources and inscope. So, do you currently have any analytics platform using which the data is to be brought onto the system"}
+          ]
+        },
+        {
+          "text": "As a Marketing Data Administrator, I should define the approved external analytics platforms, datasets, events, attributes, history, refresh frequency, so that only relevant data is brought into Customer Insights - Data.",
+          "field": "description",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span states a Marketing Data Administrator or a documented inventory of datasets, events, attributes, history, and refresh frequency; nearest L333", "excerpt": "do you currently have any analytics platform using which the data is to be brought onto the system? Which we just showed any survey tools, any third party agencies"}
+          ]
+        },
+        {
+          "text": "All relevant analytics platforms are identified.",
+          "field": "acceptance_criteria",
+          "supported": true,
+          "transcript_refs": [
+            {"locator": "L333", "excerpt": "do you currently have any analytics platform using which the data is to be brought onto the system"}
+          ]
+        },
+        {
+          "text": "Required datasets, events, dimensions, measures, and historical periods are documented.",
+          "field": "acceptance_criteria",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span states documenting datasets, events, dimensions, measures, and historical periods for analytics sources; nearest L219", "excerpt": "engagement data could be your website data, your campaign interaction history, emails, events, digital engagement"}
+          ]
+        },
+        {
+          "text": "Batch and real-time ingestion requirements are classified.",
+          "field": "acceptance_criteria",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span classifies batch versus real-time analytics ingestion requirements; nearest L219", "excerpt": "when the update happens in sap at a regular interval, this data also refreshes"}
+          ]
+        },
+        {
+          "text": "Required refresh frequency and data volume estimates are documented.",
+          "field": "acceptance_criteria",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span states documenting refresh frequency or data volume estimates; nearest L219", "excerpt": "the data keeps on refreshing on regular intervals, you have the most updated profile which you have created"}
+          ]
+        },
+        {
+          "text": "Customer-identification fields and matching keys are identified.",
+          "field": "acceptance_criteria",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: matching keys are described as a unification technique, not as an identified source-requirements deliverable; nearest L219", "excerpt": "how exactly you are going to, you know, map them. So it could be their partner id. It could be their email address. That one key will decide"}
+          ]
+        },
+        {
+          "text": "Reporting, segmentation, and journey-activation use cases are documented.",
+          "field": "acceptance_criteria",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span states documenting reporting, segmentation, and journey-activation use cases as source requirements; nearest L163", "excerpt": "what marketing audiences and segments are required? What customer journeys you will be implementing"}
+          ]
+        },
+        {
+          "text": "Business and technical owners approve the source inventory and requirements.",
+          "field": "acceptance_criteria",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span states business and technical owners approve an analytics source inventory; nearest L333", "excerpt": "do you currently have any analytics platform using which the data is to be brought onto the system"}
+          ]
+        },
+        {
+          "text": "70-External Analytics Data Ingestion & Unification",
+          "field": "feature",
+          "supported": true,
+          "transcript_refs": [
+            {"locator": "L219", "excerpt": "delve into the first topic as per the agenda, external analytics, data ingestion and unification"}
+          ]
+        }
+      ]
+    },
+    {
+      "story_key": "manual-US-5",
+      "side": "manual",
+      "title": "Map External Analytics Data to the Customer Insights Data Model",
+      "has_unsupported_claim": true,
+      "transcript_states_requirement": true,
+      "requirement_rationale": "The transcript states transforming/cleansing source metadata and mapping partner contacts with keys into a unique profile. It does not state source-to-target field mapping, standardized data types, mapping validations, sample-record checks, or owner approval of analytics attributes.",
+      "claims": [
+        {
+          "text": "Map External Analytics Data to the Customer Insights Data Model",
+          "field": "title",
+          "supported": true,
+          "transcript_refs": [
+            {"locator": "L219", "excerpt": "then you transform that data, basically all the metadata and everything can be cleansed"},
+            {"locator": "L219", "excerpt": "if you are getting in partner contacts, all the partner contacts from various sources, how exactly you are going to, you know, map them"}
+          ]
+        },
+        {
+          "text": "As a Marketing Data Administrator, I should map external analytics data to the appropriate Customer Insights entities and attributes, so that digital behavior can be consistently interpreted and used across customer profiles, segments, and analytics.",
+          "field": "description",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span states mapping analytics fields to CI entities/attributes so digital behavior is consistently interpreted across profiles, segments, and analytics; nearest L219", "excerpt": "Unify them, deduplicate them, consolidate them. And that's how you'll be able to set up a base"}
+          ]
+        },
+        {
+          "text": "Source-to-target mappings are documented for all approved fields.",
+          "field": "acceptance_criteria",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span states documented source-to-target mappings for approved fields; nearest L219", "excerpt": "It will be combination of various fields which will be deciding how a particular profile is to be created"}
+          ]
+        },
+        {
+          "text": "Customer identifiers, event types, timestamps, channels, campaigns attributes are mapped.",
+          "field": "acceptance_criteria",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span maps event types, timestamps, channels, or campaign attributes; nearest L219", "excerpt": "engagement data could be your website data, your campaign interaction history, emails, events, digital engagement"}
+          ]
+        },
+        {
+          "text": "Data types and formats are standardized.",
+          "field": "acceptance_criteria",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span states standardizing analytics data types and formats; nearest L219", "excerpt": "then you transform that data, basically all the metadata and everything can be cleansed"}
+          ]
+        },
+        {
+          "text": "Mandatory mapping validations are applied.",
+          "field": "acceptance_criteria",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span states mandatory mapping validations; nearest L219", "excerpt": "Once everything is done, the data is successfully established as one of the source"}
+          ]
+        },
+        {
+          "text": "Sample source records are validated against the resulting Customer Insights records.",
+          "field": "acceptance_criteria",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span states validating sample source records against Customer Insights records; nearest L219", "excerpt": "you get a true 360 degree record, enrich this profile continuously"}
+          ]
+        },
+        {
+          "text": "Business owners approve the meaning and usage of key analytics attributes.",
+          "field": "acceptance_criteria",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span states business owners approve analytics attribute meaning; nearest L333", "excerpt": "we would like to know more from heartstream perspective, what is applicable, what is not applicable"}
+          ]
+        },
+        {
+          "text": "70-External Analytics Data Ingestion & Unification",
+          "field": "feature",
+          "supported": true,
+          "transcript_refs": [
+            {"locator": "L219", "excerpt": "external analytics, data ingestion and unification"}
+          ]
+        }
+      ]
+    },
+    {
+      "story_key": "manual-US-6",
+      "side": "manual",
+      "title": "Configure Scheduled Batch Analytics Data Ingestion",
+      "has_unsupported_claim": true,
+      "transcript_states_requirement": true,
+      "requirement_rationale": "The transcript states a pipeline that refreshes linked source data at regular intervals so profiles stay current. It does not state configuring batch jobs, approved historical range, incremental load, duplicate-ingest handling, or batch success/failure monitoring.",
+      "claims": [
+        {
+          "text": "Configure Scheduled Batch Analytics Data Ingestion",
+          "field": "title",
+          "supported": true,
+          "transcript_refs": [
+            {"locator": "L219", "excerpt": "when the update happens in sap at a regular interval, this data also refreshes"}
+          ]
+        },
+        {
+          "text": "As a Marketing Data Administrator, I should configure scheduled batch ingestion of external analytics data, so that customer behavior, engagement, and conversion information is refreshed at an agreed frequency.",
+          "field": "description",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: regular SAP-style refresh is stated; no span states configuring batch analytics ingest so behavior, engagement, and conversion refresh at an agreed frequency; nearest L219", "excerpt": "once this entire pipeline is set up and the data keeps on refreshing on regular intervals, you have the most updated profile"}
+          ]
+        },
+        {
+          "text": "The batch ingestion frequency is defined and configured.",
+          "field": "acceptance_criteria",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span states defining or configuring a batch ingestion frequency; nearest L219", "excerpt": "when the update happens in sap at a regular interval, this data also refreshes"}
+          ]
+        },
+        {
+          "text": "The process imports only the approved datasets and historical range.",
+          "field": "acceptance_criteria",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span states importing only approved datasets and a historical range; nearest L219", "excerpt": "Once you have this data, I mean, getting this data itself is a activity, you define the source"}
+          ]
+        },
+        {
+          "text": "Incremental ingestion or another approved loading approach is implemented.",
+          "field": "acceptance_criteria",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span states incremental ingestion or an approved loading approach; nearest L219", "excerpt": "this system continuously keeps on. Updating whenever this data is updated"}
+          ]
+        },
+        {
+          "text": "Duplicate ingestion is prevented or managed.",
+          "field": "acceptance_criteria",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: duplicate profile resolution is stated, not duplicate batch ingestion; nearest L219", "excerpt": "you unify this data in just everything from multiple sources, resolve all the duplicates"}
+          ]
+        },
+        {
+          "text": "Successful and unsuccessful batch executions can be monitored.",
+          "field": "acceptance_criteria",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span states monitoring successful or unsuccessful batch executions; nearest L219", "excerpt": "Once everything is done, the data is successfully established as one of the source"}
+          ]
+        },
+        {
+          "text": "Refreshed data becomes available for downstream profile and segment processing.",
+          "field": "acceptance_criteria",
+          "supported": true,
+          "transcript_refs": [
+            {"locator": "L219", "excerpt": "as and when the data gets an updated, if the trigger is hit that particular contact or that profile is ended into there or is added to that particular segment"}
+          ]
+        },
+        {
+          "text": "70-External Analytics Data Ingestion & Unification",
+          "field": "feature",
+          "supported": true,
+          "transcript_refs": [
+            {"locator": "L219", "excerpt": "external analytics, data ingestion and unification"}
+          ]
+        }
+      ]
+    },
+    {
+      "story_key": "manual-US-7",
+      "side": "manual",
+      "title": "Implement Real-Time Behavioral Data Ingestion",
+      "has_unsupported_claim": true,
+      "transcript_states_requirement": false,
+      "requirement_rationale": "Real time in the transcript is journey execution visibility, not ingesting digital behavioral events in real time. A later span says Heartstream has less real-time market experience as distance from the customer grows.",
+      "claims": [
+        {
+          "text": "Implement Real-Time Behavioral Data Ingestion",
+          "field": "title",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span states real-time behavioral-event ingestion; nearest L163", "excerpt": "you send or plan this entire journey design, it, execute it. And in real time, you get to see what exactly is happening"}
+          ]
+        },
+        {
+          "text": "As a Marketer, I should receive approved digital behavioral events, so that time-sensitive engagement signals can support customer analysis, segmentation, and journey activation.",
+          "field": "description",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: engagement data can be ingested, but no span states receiving approved real-time behavioral events for time-sensitive signals; nearest L219", "excerpt": "engagement data could be your website data, your campaign interaction history, emails, events, digital engagement"}
+          ]
+        },
+        {
+          "text": "Real-time business use cases and eligible event types are approved.",
+          "field": "acceptance_criteria",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span states approved real-time use cases or eligible event types; nearest L589", "excerpt": "As you get further from the customer, you have less real time experience of what's going on"}
+          ]
+        },
+        {
+          "text": "The source, integration platform, event schema, expected volume, and latency are defined.",
+          "field": "acceptance_criteria",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span defines event schema, volume, or latency for real-time ingest; nearest L219", "excerpt": "there are a lot of data sources like which you can bring it together"}
+          ]
+        },
+        {
+          "text": "Event validation and duplicate-event handling are implemented.",
+          "field": "acceptance_criteria",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span states event validation or duplicate-event handling; nearest L219", "excerpt": "resolve all the duplicates. Go ahead and create a unified profile"}
+          ]
+        },
+        {
+          "text": "Successfully processed events are available in the target analytical environment.",
+          "field": "acceptance_criteria",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span states processed real-time events available in an analytical environment; nearest L219", "excerpt": "All this data is combined together which becomes your unified customer profile"}
+          ]
+        },
+        {
+          "text": "70-External Analytics Data Ingestion & Unification",
+          "field": "feature",
+          "supported": true,
+          "transcript_refs": [
+            {"locator": "L219", "excerpt": "external analytics, data ingestion and unification"}
+          ]
+        }
+      ]
+    },
+    {
+      "story_key": "manual-US-8",
+      "side": "manual",
+      "title": "Associate Identifiable Digital Behavior with Customer Profiles",
+      "has_unsupported_claim": true,
+      "transcript_states_requirement": true,
+      "requirement_rationale": "Engagement and website data unify into a 360 profile and can appear on the activity timeline. The transcript does not state one-event-to-one-profile guarantees, match-confidence rules, or exception handling.",
+      "claims": [
+        {
+          "text": "Associate Identifiable Digital Behavior with Customer Profiles",
+          "field": "title",
+          "supported": true,
+          "transcript_refs": [
+            {"locator": "L219", "excerpt": "engagement data could be your website data, your campaign interaction history, emails, events, digital engagement"},
+            {"locator": "L329", "excerpt": "we'll have to figure out a way to tie that to a particular profile against which you are trying to see this insights"}
+          ]
+        },
+        {
+          "text": "As a Marketing Analyst, I should associate identifiable digital interactions with the correct customer or contact profile, so that I can understand individual engagement and create behavior-based audiences within the customer insights unified profile.",
+          "field": "description",
+          "supported": true,
+          "transcript_refs": [
+            {"locator": "L219", "excerpt": "All this data is combined together which becomes your unified customer profile"},
+            {"locator": "L179", "excerpt": "You'll be able to derive the segments and the beauty of the system is it not only caters to just the fields but the behavioral aspect as well"}
+          ]
+        },
+        {
+          "text": "Identifiable events are associated with the correct unified customer profile.",
+          "field": "acceptance_criteria",
+          "supported": true,
+          "transcript_refs": [
+            {"locator": "L219", "excerpt": "you unify this data in just everything from multiple sources, resolve all the duplicates. Go ahead and create a unified profile"}
+          ]
+        },
+        {
+          "text": "A single event is not incorrectly associated with multiple profiles.",
+          "field": "acceptance_criteria",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span states a single event must not associate to multiple profiles; nearest L219", "excerpt": "resolve all the duplicates. Go ahead and create a unified profile. You get a true 360 degree record"}
+          ]
+        },
+        {
+          "text": "Match confidence and exception-handling rules are defined.",
+          "field": "acceptance_criteria",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span states match confidence or exception-handling rules for events; nearest L219", "excerpt": "It will be combination of various fields which will be deciding how a particular profile is to be created"}
+          ]
+        },
+        {
+          "text": "Matched behavioral activities are visible against the appropriate profile.",
+          "field": "acceptance_criteria",
+          "supported": true,
+          "transcript_refs": [
+            {"locator": "L267", "excerpt": "even the activity timeline you could see, say, for example, Ryan and chubb is one of the, you know, like a customer"}
+          ]
+        },
+        {
+          "text": "70-External Analytics Data Ingestion & Unification",
+          "field": "feature",
+          "supported": true,
+          "transcript_refs": [
+            {"locator": "L219", "excerpt": "external analytics, data ingestion and unification"}
+          ]
+        }
+      ]
+    },
+    {
+      "story_key": "manual-US-9",
+      "side": "manual",
+      "title": "Unify External Analytics Data with Customer and Engagement Data",
+      "has_unsupported_claim": true,
+      "transcript_states_requirement": true,
+      "requirement_rationale": "The transcript states unifying customer, engagement, and other sources, resolving duplicates, and creating a 360 profile that refreshes. It does not state configured account/interaction relationships, agreed digital-engagement indicators on the profile, or an agreed refresh schedule.",
+      "claims": [
+        {
+          "text": "Unify External Analytics Data with Customer and Engagement Data",
+          "field": "title",
+          "supported": true,
+          "transcript_refs": [
+            {"locator": "L219", "excerpt": "All this data is combined together which becomes your unified customer profile"}
+          ]
+        },
+        {
+          "text": "As a Marketing Analyst, I should be able to unify external analytics data together with customer, account and engagement information, so that I can analyze the customer using a consolidated profile.",
+          "field": "description",
+          "supported": true,
+          "transcript_refs": [
+            {"locator": "L219", "excerpt": "customer data, is your CRM master data, demographic data, contact account, relationship information, engagement data could be your website data"}
+          ]
+        },
+        {
+          "text": "Approved analytics data is included in the Customer Insights unification process.",
+          "field": "acceptance_criteria",
+          "supported": true,
+          "transcript_refs": [
+            {"locator": "L219", "excerpt": "you unify this data in just everything from multiple sources, resolve all the duplicates"}
+          ]
+        },
+        {
+          "text": "Required customer, account, and interaction relationships are configured.",
+          "field": "acceptance_criteria",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: relationship information is a source type, not a configured relationship model; nearest L219", "excerpt": "contact account, relationship information, engagement data could be your website data"}
+          ]
+        },
+        {
+          "text": "Duplicate customer profiles are handled according to approved rules.",
+          "field": "acceptance_criteria",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: duplicates are resolved; no span states approved duplicate-handling rules; nearest L219", "excerpt": "resolve all the duplicates. Go ahead and create a unified profile"}
+          ]
+        },
+        {
+          "text": "Unified profiles display the agreed digital-engagement indicators.",
+          "field": "acceptance_criteria",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span states agreed digital-engagement indicators on unified profiles; nearest L267", "excerpt": "whatever you see on screen is configurable, even the activity timeline"}
+          ]
+        },
+        {
+          "text": "Profile refresh completes according to the agreed schedule.",
+          "field": "acceptance_criteria",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: regular-interval refresh is stated, not an agreed schedule; nearest L219", "excerpt": "the data keeps on refreshing on regular intervals, you have the most updated profile"}
+          ]
+        },
+        {
+          "text": "70-External Analytics Data Ingestion & Unification",
+          "field": "feature",
+          "supported": true,
+          "transcript_refs": [
+            {"locator": "L219", "excerpt": "external analytics, data ingestion and unification"}
+          ]
+        }
+      ]
+    },
+    {
+      "story_key": "manual-US-10",
+      "side": "manual",
+      "title": "Create Customer Measures from External Analytics Data",
+      "has_unsupported_claim": true,
+      "transcript_states_requirement": true,
+      "requirement_rationale": "Customer Insights can set up configurable measures and predictions on profiles. The transcript does not state measures derived from external analytics, approved calculation logic, lookback periods, segment use, or source-data validation.",
+      "claims": [
+        {
+          "text": "Create Customer Measures from External Analytics Data",
+          "field": "title",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: measures exist on CI profiles; no span states creating them from external analytics data; nearest L333", "excerpt": "for a business, you would like to set up some measures. Measures are nothing but numbers"}
+          ]
+        },
+        {
+          "text": "As a Marketing Analyst, I should calculate reusable customer measures from digital analytics and behavioral data, so that customer engagement and digital activity can be consistently analyzed and used for targeting.",
+          "field": "description",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span states reusable measures from digital analytics/behavioral data for targeting; nearest L333", "excerpt": "these measures, what you see on the right hand side, these blocks are actually configurable elements which you would like to have on any profile"}
+          ]
+        },
+        {
+          "text": "Priority customer measures are defined and approved.",
+          "field": "acceptance_criteria",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span states defining and approving priority customer measures; nearest L333", "excerpt": "we will help you with that. What exactly can be set up against the customer profile"}
+          ]
+        },
+        {
+          "text": "Calculation logic and lookback periods are documented.",
+          "field": "acceptance_criteria",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span documents measure calculation logic or lookback periods; nearest L333", "excerpt": "Measures are nothing but numbers. Basically, you would like to have some predictions"}
+          ]
+        },
+        {
+          "text": "Measures refresh with the relevant source data.",
+          "field": "acceptance_criteria",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span states measures refresh with source data; nearest L219", "excerpt": "the data keeps on refreshing on regular intervals, you have the most updated profile"}
+          ]
+        },
+        {
+          "text": "Calculated values are available on the appropriate customer profiles.",
+          "field": "acceptance_criteria",
+          "supported": true,
+          "transcript_refs": [
+            {"locator": "L333", "excerpt": "these measures, what you see on the right hand side, these blocks are actually configurable elements which you would like to have on any profile"}
+          ]
+        },
+        {
+          "text": "Measures can be used in segments where supported.",
+          "field": "acceptance_criteria",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span states using measures in segments; nearest L227", "excerpt": "Once you have this particular data and unification done, you come on to segments"}
+          ]
+        },
+        {
+          "text": "Results are validated against representative source data.",
+          "field": "acceptance_criteria",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span states validating measure results against source data; nearest L333", "excerpt": "This is, you know, as of now, I have loaded the healthcare demo"}
+          ]
+        },
+        {
+          "text": "70-External Analytics Data Ingestion & Unification",
+          "field": "feature",
+          "supported": true,
+          "transcript_refs": [
+            {"locator": "L219", "excerpt": "external analytics, data ingestion and unification"}
+          ]
+        }
+      ]
+    },
+    {
+      "story_key": "manual-US-11",
+      "side": "manual",
+      "title": "Make Unified Analytics Data Available for Journey Activation",
+      "has_unsupported_claim": true,
+      "transcript_states_requirement": true,
+      "requirement_rationale": "Unified data is used to create segments that journeys consume. The transcript does not state an agreed segment-membership transfer timeframe or test-profile validation of journey entry. Consent before reach-out is stated separately.",
+      "claims": [
+        {
+          "text": "Make Unified Analytics Data Available for Journey Activation",
+          "field": "title",
+          "supported": true,
+          "transcript_refs": [
+            {"locator": "L163", "excerpt": "Data is nothing but the data which we talked about bringing in data from multiple places, unifying them, making meaningful output of it and then targeting it for your marketing activities and journeys"}
+          ]
+        },
+        {
+          "text": "As a Marketer, I should use approved analytics-based segments and engagement signals in Customer Insights - Journeys, so that campaign audiences and communications reflect recent digital behavior.",
+          "field": "description",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: segments from unified data feed journeys; no span states analytics-based segments so communications reflect recent digital behavior; nearest L219", "excerpt": "as and when the data gets an updated, if the trigger is hit that particular contact or that profile is ended into there or is added to that particular segment"}
+          ]
+        },
+        {
+          "text": "Approved analytics-driven segments are available to Customer Insights - Journeys.",
+          "field": "acceptance_criteria",
+          "supported": true,
+          "transcript_refs": [
+            {"locator": "L175", "excerpt": "once you have this segment, it is nothing but group of people whom you are in a position to target. You can, you know, consume and that particular data and have the journeys executed"}
+          ]
+        },
+        {
+          "text": "Segment membership is transferred within the agreed refresh timeframe.",
+          "field": "acceptance_criteria",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span states an agreed timeframe for transferring segment membership to journeys; nearest L821", "excerpt": "The segment is dynamic in nature gets updated"}
+          ]
+        },
+        {
+          "text": "Consent and communication preferences are evaluated before activation.",
+          "field": "acceptance_criteria",
+          "supported": true,
+          "transcript_refs": [
+            {"locator": "L879", "excerpt": "only the one who has approved the marketing reach out will be done"}
+          ]
+        },
+        {
+          "text": "Test profiles validate expected journey entry behavior.",
+          "field": "acceptance_criteria",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span states test profiles validating journey entry; nearest L821", "excerpt": "anyone falling in that particular segment, this journey will immediately execute in an automated manner"}
+          ]
+        },
+        {
+          "text": "Journey interactions remain traceable to the activated audience.",
+          "field": "acceptance_criteria",
+          "supported": true,
+          "transcript_refs": [
+            {"locator": "L163", "excerpt": "how my journey is progressing? What is the benefit I'm getting out of it? How many conversions have happened"}
+          ]
+        },
+        {
+          "text": "70-External Analytics Data Ingestion & Unification",
+          "field": "feature",
+          "supported": true,
+          "transcript_refs": [
+            {"locator": "L159", "excerpt": "majority of this particular session is going to be focused on the external analytics data ingestion and unification"}
+          ]
+        }
+      ]
+    },
+    {
+      "story_key": "manual-US-12",
+      "side": "manual",
+      "title": "Monitor Analytics Data Ingestion and Processing",
+      "has_unsupported_claim": true,
+      "transcript_states_requirement": false,
+      "requirement_rationale": "The transcript describes a refresh pipeline, not operations monitoring, record-count review, failure alerts, or reprocessing failed analytics loads.",
+      "claims": [
+        {
+          "text": "Monitor Analytics Data Ingestion and Processing",
+          "field": "title",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span states monitoring analytics ingestion or processing; nearest L219", "excerpt": "once this entire pipeline is set up and the data keeps on refreshing on regular intervals"}
+          ]
+        },
+        {
+          "text": "As a Data Operations User, I should monitor external analytics ingestion, processing, and refresh activities, so that failures and data-quality issues can be identified and resolved before they affect segmentation or reporting.",
+          "field": "description",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span names a Data Operations User or monitoring ingest failures before they affect segments; nearest L219", "excerpt": "Once everything is done, the data is successfully established as one of the source"}
+          ]
+        },
+        {
+          "text": "Ingestion execution status is available to authorized users.",
+          "field": "acceptance_criteria",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span states ingestion execution status for authorized users; nearest L219", "excerpt": "you will be as a user logging on to the system using your organization's user id and password"}
+          ]
+        },
+        {
+          "text": "Source and target record counts can be reviewed.",
+          "field": "acceptance_criteria",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span states reviewing source and target record counts; nearest L219", "excerpt": "Once you have the data source established, you go on to the next step with all the different table and sources"}
+          ]
+        },
+        {
+          "text": "Alerts Indications are generated for failures.",
+          "field": "acceptance_criteria",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span states alerts for ingestion failures; nearest L219", "excerpt": "Ignore the error. What you see on screen, this is the trial system"}
+          ]
+        },
+        {
+          "text": "Failed data can be corrected and reprocessed.",
+          "field": "acceptance_criteria",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span states correcting and reprocessing failed analytics data; nearest L219", "excerpt": "then you transform that data, basically all the metadata and everything can be cleansed"}
+          ]
+        },
+        {
+          "text": "70-External Analytics Data Ingestion & Unification",
+          "field": "feature",
+          "supported": true,
+          "transcript_refs": [
+            {"locator": "L219", "excerpt": "external analytics, data ingestion and unification"}
+          ]
+        }
+      ]
+    },
+    {
+      "story_key": "manual-US-13",
+      "side": "manual",
+      "title": "Validate External Analytics Data Quality",
+      "has_unsupported_claim": true,
+      "transcript_states_requirement": false,
+      "requirement_rationale": "Cleansing metadata and deduplication are platform steps. The transcript does not state validating completeness, accuracy, consistency, and timeliness of external analytics, tracking invalid records, or reporting quality exceptions to an owner.",
+      "claims": [
+        {
+          "text": "Validate External Analytics Data Quality",
+          "field": "title",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span states validating external analytics data quality; nearest L219", "excerpt": "then you transform that data, basically all the metadata and everything can be cleansed"}
+          ]
+        },
+        {
+          "text": "As a Marketing Data Administrator, I should validate the completeness, accuracy, consistency, and timeliness of external analytics data, so that marketing analysis and segmentation are based on reliable information.",
+          "field": "description",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span states completeness, accuracy, consistency, or timeliness validation of analytics data; nearest L219", "excerpt": "There are a lot of processes of deduplication enriching the data, removing the irrelevant information"}
+          ]
+        },
+        {
+          "text": "Data quality of External Analytics Data can be validated and tracked for errors",
+          "field": "acceptance_criteria",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span states tracking analytics data-quality errors; nearest L219", "excerpt": "then you transform that data, basically all the metadata and everything can be cleansed"}
+          ]
+        },
+        {
+          "text": "Invalid and incomplete records are identified.",
+          "field": "acceptance_criteria",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span states identifying invalid or incomplete analytics records; nearest L219", "excerpt": "removing the irrelevant information"}
+          ]
+        },
+        {
+          "text": "Duplicate-event controls are implemented.",
+          "field": "acceptance_criteria",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: profile deduplication is stated, not duplicate-event controls; nearest L219", "excerpt": "resolve all the duplicates. Go ahead and create a unified profile"}
+          ]
+        },
+        {
+          "text": "Data recency and refresh completion are monitored.",
+          "field": "acceptance_criteria",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span states monitoring data recency or refresh completion; nearest L219", "excerpt": "the data keeps on refreshing on regular intervals, you have the most updated profile"}
+          ]
+        },
+        {
+          "text": "Quality exceptions are reported to the responsible owner.",
+          "field": "acceptance_criteria",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span states reporting quality exceptions to an owner; nearest L333", "excerpt": "this task would be a question request for document, request for format"}
+          ]
+        },
+        {
+          "text": "70-External Analytics Data Ingestion & Unification",
+          "field": "feature",
+          "supported": true,
+          "transcript_refs": [
+            {"locator": "L219", "excerpt": "external analytics, data ingestion and unification"}
+          ]
+        }
+      ]
+    },
+    {
+      "story_key": "manual-US-14",
+      "side": "manual",
+      "title": "Access External Analytics Data for Marketing Out of Box Reporting",
+      "has_unsupported_claim": true,
+      "transcript_states_requirement": false,
+      "requirement_rationale": "Sales-performance analytics are pointed to F&O and Power BI rather than Customer Insights out-of-box reporting of external analytics. CI home-page measures are a demo of profile numbers, not OOB marketing reports of channel engagement or conversion trends.",
+      "claims": [
+        {
+          "text": "Access External Analytics Data for Marketing Out of Box Reporting",
+          "field": "title",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span states OOB Customer Insights reporting of external analytics; nearest L259", "excerpt": "You need not have to bring in that data in here just to have a look at what exactly I'm doing with respect to business Power, BI reports or Power BI dashboard are another sources"}
+          ]
+        },
+        {
+          "text": "As a Marketing Analyst, I should be able to access OOB analytics data for reporting, so that I can evaluate customer behavior, channel engagement, campaign effectiveness, and conversion trends.",
+          "field": "description",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: campaign opens/clicks are later journey metrics, not OOB analytics reporting of external data; nearest L853", "excerpt": "How many people have opened my email? How many of them have visited that particular page?"}
+          ]
+        },
+        {
+          "text": "Reporting-ready analytics datasets and measures are identified.",
+          "field": "acceptance_criteria",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span identifies reporting-ready analytics datasets; nearest L333", "excerpt": "you would like to set up some measures. Measures are nothing but numbers"}
+          ]
+        },
+        {
+          "text": "Standard Customer Insights analytics are used where they meet the requirement.",
+          "field": "acceptance_criteria",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span states using standard CI analytics when they meet the requirement; nearest L259", "excerpt": "You do have rich analytics in that particular system"}
+          ]
+        },
+        {
+          "text": "Reported totals are reconciled with the approved source or unified dataset.",
+          "field": "acceptance_criteria",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span states reconciling reported totals to source or unified data; nearest L259", "excerpt": "Power, BI reports or Power BI dashboard are another sources where you can have this analytics achieved"}
+          ]
+        },
+        {
+          "text": "70-External Analytics Data Ingestion & Unification",
+          "field": "feature",
+          "supported": true,
+          "transcript_refs": [
+            {"locator": "L219", "excerpt": "external analytics, data ingestion and unification"}
+          ]
+        }
+      ]
+    },
+    {
+      "story_key": "manual-US-17",
+      "side": "manual",
+      "title": "Configure Access to Approved Marketing Assets from MediaValet",
+      "has_unsupported_claim": true,
+      "transcript_states_requirement": true,
+      "requirement_rationale": "MediaValet is the current global approved-asset repository and will continue; Dynamics emails pull from an authorized library. The transcript does not state configuring MediaValet access inside campaign build or efficient asset search.",
+      "claims": [
+        {
+          "text": "Configure Access to Approved Marketing Assets from MediaValet",
+          "field": "title",
+          "supported": true,
+          "transcript_refs": [
+            {"locator": "L657", "excerpt": "Today. We have a global repository, it's called mediavalet"},
+            {"locator": "L685", "excerpt": "mediavalet will continue, that is certain and all the marketing content activation approvals that will continue"}
+          ]
+        },
+        {
+          "text": "As a Marketer, I should be able to access approved marketing assets from MediaValet while building marketing communications, so that only approved content is used in customer-facing campaigns and journeys.",
+          "field": "description",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: MediaValet stores approved assets; no span states accessing MediaValet while building Dynamics communications; nearest L783", "excerpt": "this is going to be from the authorized content repository"}
+          ]
+        },
+        {
+          "text": "Approved assets are available to marketing users in media valet.",
+          "field": "acceptance_criteria",
+          "supported": true,
+          "transcript_refs": [
+            {"locator": "L657", "excerpt": "we have product images, we have brochures, tablets, we have tech specs, anything that we've published can go on to mediavalet"}
+          ]
+        },
+        {
+          "text": "Users can identify approved content versions.",
+          "field": "acceptance_criteria",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: DMR sign-off is stated, not identifying approved content versions in MediaValet; nearest L661", "excerpt": "those electronic signatures have been recorded. So if there were any auditor to come by and say, well, who approved this, we would have that record"}
+          ]
+        },
+        {
+          "text": "Marketers can locate required assets efficiently.",
+          "field": "acceptance_criteria",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span states efficient location of required assets; nearest L783", "excerpt": "how this particular image got in here is through the library which we are managing within dynamics"}
+          ]
+        },
+        {
+          "text": "54-Global Marketing Content Activation",
+          "field": "feature",
+          "supported": true,
+          "transcript_refs": [
+            {"locator": "L655", "excerpt": "this particular part, what you see on screen global market content activation is all about the content which you will be using for marketing initiative"}
+          ]
+        }
+      ]
+    },
+    {
+      "story_key": "manual-US-18",
+      "side": "manual",
+      "title": "Create Marketing Email Templates Using Approved Assets",
+      "has_unsupported_claim": true,
+      "transcript_states_requirement": true,
+      "requirement_rationale": "Emails and email templates are built from an authorized Dynamics library. The transcript does not state branding enforcement on templates, personalization fields, preview/test, reuse across campaigns, or a publish permission for templates.",
+      "claims": [
+        {
+          "text": "Create Marketing Email Templates Using Approved Assets",
+          "field": "title",
+          "supported": true,
+          "transcript_refs": [
+            {"locator": "L795", "excerpt": "authorized content which will be loaded into dynamics for building an email templates"},
+            {"locator": "L783", "excerpt": "this is going to be from the authorized content repository"}
+          ]
+        },
+        {
+          "text": "As a Marketer, I should be able to create reusable email templates using approved MediaValet content, so that campaigns can be launched quickly while maintaining consistency.",
+          "field": "description",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: email templates use authorized library content; no span states reusable templates from MediaValet for faster consistent launches; nearest L795", "excerpt": "Sharepoint or your authorized content which will be loaded into dynamics for building an email templates"}
+          ]
+        },
+        {
+          "text": "Email templates can be created using available assets.",
+          "field": "acceptance_criteria",
+          "supported": true,
+          "transcript_refs": [
+            {"locator": "L783", "excerpt": "I'll have one additional element added. Let's say image I'm adding choose an image"}
+          ]
+        },
+        {
+          "text": "Branding standards are maintained.",
+          "field": "acceptance_criteria",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: brand compliance is a human process, not a template AC; nearest L835", "excerpt": "we have very strict branding because we are licensing the Philips brand"}
+          ]
+        },
+        {
+          "text": "Templates support personalization fields.",
+          "field": "acceptance_criteria",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span states personalization fields on email templates; nearest L799", "excerpt": "you can have a lot of other stuff added. You could have, a button can be added"}
+          ]
+        },
+        {
+          "text": "Templates can be previewed and tested.",
+          "field": "acceptance_criteria",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span states previewing or testing email templates; nearest L783", "excerpt": "This system specifically deals with having all this content prepared beforehand, your emails"}
+          ]
+        },
+        {
+          "text": "Templates can be reused across campaigns.",
+          "field": "acceptance_criteria",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: content is prepared beforehand; no span states reusing templates across campaigns; nearest L783", "excerpt": "you are in a position to have them readily available with all the content, whatever you want. And then that's how they are being used in marketing. Journeys"}
+          ]
+        },
+        {
+          "text": "Only authorized users can publish templates.",
+          "field": "acceptance_criteria",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: limited global users generate emails; no span states publishing templates is restricted; nearest L857", "excerpt": "a manageable number of people globally that would have access to create and upload approved sources, approved content, generate emails, landing pages"}
+          ]
+        },
+        {
+          "text": "54-Global Marketing Content Activation",
+          "field": "feature",
+          "supported": true,
+          "transcript_refs": [
+            {"locator": "L655", "excerpt": "global market content activation is all about the content which you will be using for marketing initiative"}
+          ]
+        }
+      ]
+    },
+    {
+      "story_key": "manual-US-19",
+      "side": "manual",
+      "title": "Create Campaign Landing Pages Using Approved Assets",
+      "has_unsupported_claim": true,
+      "transcript_states_requirement": true,
+      "requirement_rationale": "Journeys can create landing pages, embed them, put media on them, and measure clicks. The transcript does not state branding on pages, embedded marketing forms, preview before activation, or using approved assets specifically.",
+      "claims": [
+        {
+          "text": "Create Campaign Landing Pages Using Approved Assets",
+          "field": "title",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: landing pages can be created; no span states they are built using approved assets; nearest L853", "excerpt": "the particular platform has the capability of creating landing pages"}
+          ]
+        },
+        {
+          "text": "As a Marketer, I should be able to build landing pages using approved content and imagery, so that campaign audiences receive consistent information and messaging.",
+          "field": "description",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span states building landing pages from approved content/imagery for consistent messaging; nearest L853", "excerpt": "It is just drag and drop build your page, embed that in the journey"}
+          ]
+        },
+        {
+          "text": "Landing pages support approved content.",
+          "field": "acceptance_criteria",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: pages can include media; not that they support approved content; nearest L853", "excerpt": "On that page? The possibilities are endless. You can put in media"}
+          ]
+        },
+        {
+          "text": "Branding guidelines are maintained.",
+          "field": "acceptance_criteria",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span states landing pages maintain branding guidelines; nearest L835", "excerpt": "there's lots of brand compliance that we have to keep our eyes on"}
+          ]
+        },
+        {
+          "text": "Forms can be embedded where required.",
+          "field": "acceptance_criteria",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: a feedback-system link can be placed on the page, not an embedded marketing form; nearest L853", "excerpt": "you can put in, you know, a link or a button to your feedback management system"}
+          ]
+        },
+        {
+          "text": "Landing page interactions are trackable.",
+          "field": "acceptance_criteria",
+          "supported": true,
+          "transcript_refs": [
+            {"locator": "L851", "excerpt": "we could measure the number of hits clicks against that landing page, which was tied specifically to that campaign"},
+            {"locator": "L853", "excerpt": "how many of them have landed on that particular page"}
+          ]
+        },
+        {
+          "text": "Pages can be previewed before activation.",
+          "field": "acceptance_criteria",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span states previewing landing pages before activation; nearest L853", "excerpt": "It is just drag and drop build your page, embed that in the journey"}
+          ]
+        },
+        {
+          "text": "Pages can be associated with campaigns and journeys.",
+          "field": "acceptance_criteria",
+          "supported": true,
+          "transcript_refs": [
+            {"locator": "L853", "excerpt": "build your page, embed that in the journey, send out that as an email as a link"}
+          ]
+        },
+        {
+          "text": "54-Global Marketing Content Activation",
+          "field": "feature",
+          "supported": true,
+          "transcript_refs": [
+            {"locator": "L655", "excerpt": "global market content activation is all about the content which you will be using for marketing initiative"}
+          ]
+        }
+      ]
+    },
+    {
+      "story_key": "manual-US-20",
+      "side": "manual",
+      "title": "Create Marketing Forms for Campaign Responses",
+      "has_unsupported_claim": true,
+      "transcript_states_requirement": true,
+      "requirement_rationale": "Marketing forms are named as campaign content to build. Website CFMS feedback forms are a different span. The transcript does not state campaign-form fields, mandatory validation, preference-center links on forms, or downstream processing of campaign form responses.",
+      "claims": [
+        {
+          "text": "Create Marketing Forms for Campaign Responses",
+          "field": "title",
+          "supported": true,
+          "transcript_refs": [
+            {"locator": "L795", "excerpt": "the first step to have this particular campaign build is building in marketing content, like your emails, your marketing form, your SMSS"}
+          ]
+        },
+        {
+          "text": "As a Marketer, I should configure marketing forms, so that campaign responses and customer interest can be captured and tracked.",
+          "field": "description",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: marketing forms are listed as content; no span states configuring them to capture and track campaign responses; nearest L795", "excerpt": "building in marketing content, like your emails, your marketing form, your SMSS"}
+          ]
+        },
+        {
+          "text": "Forms capture agreed business information.",
+          "field": "acceptance_criteria",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span states campaign forms capture agreed business information; nearest L329", "excerpt": "you open up this particular form and you fill in the information based on the persona"}
+          ]
+        },
+        {
+          "text": "Mandatory-field validation is supported.",
+          "field": "acceptance_criteria",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span states mandatory-field validation on marketing forms; nearest L329", "excerpt": "if we should change the form or the fields on that form, we can do that"}
+          ]
+        },
+        {
+          "text": "Form responses are recorded successfully.",
+          "field": "acceptance_criteria",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: CFMS website feedback is received; no span states campaign form responses are recorded; nearest L329", "excerpt": "this particular information is received by hard stream and actioned upon"}
+          ]
+        },
+        {
+          "text": "Consent center / preference center link is included where required.",
+          "field": "acceptance_criteria",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: preference center is required on marketing email, not on forms; nearest L879", "excerpt": "it is mandatory for marketeer to send one link of preference center"}
+          ]
+        },
+        {
+          "text": "Submitted responses are available for downstream processing.",
+          "field": "acceptance_criteria",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span states campaign form submissions available for downstream processing; nearest L329", "excerpt": "this particular information is received by hard stream and actioned upon"}
+          ]
+        },
+        {
+          "text": "54-Global Marketing Content Activation",
+          "field": "feature",
+          "supported": true,
+          "transcript_refs": [
+            {"locator": "L655", "excerpt": "global market content activation is all about the content which you will be using for marketing initiative"}
+          ]
+        }
+      ]
+    },
+    {
+      "story_key": "manual-US-21",
+      "side": "manual",
+      "title": "Configure Personalized Marketing Content",
+      "has_unsupported_claim": true,
+      "transcript_states_requirement": false,
+      "requirement_rationale": "The transcript covers audience/segment targeting and email content. It does not state inserting customer-profile attributes into email or SMS, missing-data handling, or personalization across journeys. SMS is a future wish, not current.",
+      "claims": [
+        {
+          "text": "Configure Personalized Marketing Content",
+          "field": "title",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span states personalizing marketing content from customer profile information; nearest L775", "excerpt": "approved templates, legal compliance, cleared messaging, and regional and local marketing adaption"}
+          ]
+        },
+        {
+          "text": "As a Marketer, I should be able to personalize marketing communications using customer profile information, so that marketing messages are more relevant to recipients.",
+          "field": "description",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span states personalizing communications using profile information; nearest L277", "excerpt": "if you can, I don't know give some sort of which type of information should this contact actually receive"}
+          ]
+        },
+        {
+          "text": "Personalization fields are supported in email and sms",
+          "field": "acceptance_criteria",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span states personalization fields in email or SMS; nearest L877", "excerpt": "love to get into SMS with our consumers. That's something we need to build for the future. We're not doing it today"}
+          ]
+        },
+        {
+          "text": "Customer attributes can be inserted into communications.",
+          "field": "acceptance_criteria",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span states inserting customer attributes into communications; nearest L799", "excerpt": "you can have a lot of other stuff added. You could have, a button can be added"}
+          ]
+        },
+        {
+          "text": "Preview and testing functionality is available.",
+          "field": "acceptance_criteria",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span states preview and testing of personalized content; nearest L783", "excerpt": "I have opened up this email, I need to go ahead and add one image in the header"}
+          ]
+        },
+        {
+          "text": "Missing data handling is defined.",
+          "field": "acceptance_criteria",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span states missing-data handling for personalization; nearest L219", "excerpt": "It will be combination of various fields which will be deciding how a particular profile is to be created"}
+          ]
+        },
+        {
+          "text": "Personalization works consistently across journeys.",
+          "field": "acceptance_criteria",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span states consistent personalization across journeys; nearest L821", "excerpt": "when you are actually defining the journey, which is this one that has the possibility of using or drafting this entire journey"}
+          ]
+        },
+        {
+          "text": "Personalized communications are delivered successfully.",
+          "field": "acceptance_criteria",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span states delivery of personalized communications; nearest L175", "excerpt": "have the journeys executed for sending them emailers"}
+          ]
+        },
+        {
+          "text": "54-Global Marketing Content Activation",
+          "field": "feature",
+          "supported": true,
+          "transcript_refs": [
+            {"locator": "L655", "excerpt": "global market content activation is all about the content which you will be using for marketing initiative"}
+          ]
+        }
+      ]
+    },
+    {
+      "story_key": "manual-US-22",
+      "side": "manual",
+      "title": "Configure Audience-Specific Content Variations",
+      "has_unsupported_claim": true,
+      "transcript_states_requirement": false,
+      "requirement_rationale": "Regional and local marketing adaptation is named as a campaign-content topic. The transcript does not state configuring multiple content variations, audience assignment rules, default content, testing variations, or engagement reporting by variation.",
+      "claims": [
+        {
+          "text": "Configure Audience-Specific Content Variations",
+          "field": "title",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span states audience-specific content variations; nearest L775", "excerpt": "approved templates, legal compliance, cleared messaging, and regional and local marketing adaption"}
+          ]
+        },
+        {
+          "text": "As a Marketer, I should be able to deliver different approved content variations to specific audiences, so that communications remain relevant across customer groups and markets.",
+          "field": "description",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span states delivering different approved content variations to specific audiences; nearest L775", "excerpt": "regional and local marketing adaption"}
+          ]
+        },
+        {
+          "text": "Multiple approved content variations can be configured.",
+          "field": "acceptance_criteria",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span states configuring multiple approved content variations; nearest L783", "excerpt": "you could see all the approved content"}
+          ]
+        },
+        {
+          "text": "Audience assignment rules are supported.",
+          "field": "acceptance_criteria",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: segments select who receives a journey, not content-variation assignment rules; nearest L821", "excerpt": "you simply say start this journey with segment as"}
+          ]
+        },
+        {
+          "text": "Correct variations are delivered to intended audiences.",
+          "field": "acceptance_criteria",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span states delivering the correct content variation to an audience; nearest L985", "excerpt": "if you're running a campaign especially for the North America region, what should not trigger the emails to the Europe region customers"}
+          ]
+        },
+        {
+          "text": "Variations can be tested prior to activation.",
+          "field": "acceptance_criteria",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span states testing content variations before activation; nearest L863", "excerpt": "do you have any approval criteria in place? That particular campaign is to be reviewed approved"}
+          ]
+        },
+        {
+          "text": "Default content behavior is defined.",
+          "field": "acceptance_criteria",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span states default content behavior for variations; nearest L775", "excerpt": "regional and local marketing adaption"}
+          ]
+        },
+        {
+          "text": "Engagement reporting remains available by variation.",
+          "field": "acceptance_criteria",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span states engagement reporting by content variation; nearest L853", "excerpt": "How many people have opened my email? How many of them have visited that particular page?"}
+          ]
+        },
+        {
+          "text": "54-Global Marketing Content Activation",
+          "field": "feature",
+          "supported": true,
+          "transcript_refs": [
+            {"locator": "L655", "excerpt": "global market content activation is all about the content which you will be using for marketing initiative"}
+          ]
+        }
+      ]
+    },
+    {
+      "story_key": "manual-US-23",
+      "side": "manual",
+      "title": "Support Product Launch Communications",
+      "has_unsupported_claim": true,
+      "transcript_states_requirement": true,
+      "requirement_rationale": "A hypothetical journey emails a newly launched product to a segment of prior AED buyers. The transcript does not state approved launch content, testable launch journeys, or launch-specific delivery and engagement metrics.",
+      "claims": [
+        {
+          "text": "Support Product Launch Communications",
+          "field": "title",
+          "supported": true,
+          "transcript_refs": [
+            {"locator": "L163", "excerpt": "our marketing team wants to target them for sending in emails with respect to a new product which is recently launched"}
+          ]
+        },
+        {
+          "text": "As a Marketer, I should deliver launch-related communications using approved launch content, so that customers, partners, and stakeholders receive timely product information.",
+          "field": "description",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: launch emails to a buyer segment are hypothetical; no span states approved launch content to customers, partners, and stakeholders; nearest L163", "excerpt": "sending in emails with respect to a new product which is recently launched"}
+          ]
+        },
+        {
+          "text": "Approved launch content is available for activation.",
+          "field": "acceptance_criteria",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span states approved launch content available for activation; nearest L783", "excerpt": "this is going to be from the authorized content repository"}
+          ]
+        },
+        {
+          "text": "Launch audiences can be segmented.",
+          "field": "acceptance_criteria",
+          "supported": true,
+          "transcript_refs": [
+            {"locator": "L163", "excerpt": "you wish to have one segment, a group of people who has purchased aeds two years back"}
+          ]
+        },
+        {
+          "text": "Product launch journeys can be configured.",
+          "field": "acceptance_criteria",
+          "supported": true,
+          "transcript_refs": [
+            {"locator": "L163", "excerpt": "once this group is achieved in journey, what we do is we create a campaign design, the entire journey"}
+          ]
+        },
+        {
+          "text": "Launch communications can be tested.",
+          "field": "acceptance_criteria",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span states testing launch communications; nearest L163", "excerpt": "I'll show you the system. It's pretty simple"}
+          ]
+        },
+        {
+          "text": "Delivery status is measurable.",
+          "field": "acceptance_criteria",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: journey progress can be watched; no span states measurable delivery status for launch communications; nearest L163", "excerpt": "in real time, you get to see what exactly is happening"}
+          ]
+        },
+        {
+          "text": "Engagement metrics are available.",
+          "field": "acceptance_criteria",
+          "supported": true,
+          "transcript_refs": [
+            {"locator": "L853", "excerpt": "How many people have opened my email? How many of them have visited that particular page?"}
+          ]
+        },
+        {
+          "text": "54-Global Marketing Content Activation",
+          "field": "feature",
+          "supported": true,
+          "transcript_refs": [
+            {"locator": "L655", "excerpt": "global market content activation is all about the content which you will be using for marketing initiative"}
+          ]
+        }
+      ]
+    },
+    {
+      "story_key": "manual-US-24",
+      "side": "manual",
+      "title": "Support Service and Solution Communications",
+      "has_unsupported_claim": true,
+      "transcript_states_requirement": false,
+      "requirement_rationale": "Service-management complaints and CFMS feedback can appear on a profile timeline. The transcript does not state marketing communications about products, services, and solutions using approved service content.",
+      "claims": [
+        {
+          "text": "Support Service and Solution Communications",
+          "field": "title",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span states service or solution marketing communications; nearest L267", "excerpt": "If, in case Ryan goes ahead and registers a complaint which is recorded in your service management system, you will be able to have a look at it"}
+          ]
+        },
+        {
+          "text": "As a Marketer, I should deliver service and solution communications using approved content, so that customers receive consistent information regarding products, services, and solutions.",
+          "field": "description",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span states delivering service and solution communications with approved content; nearest L655", "excerpt": "This content could be images. It could be video files, it could be an emailer consisting the product information"}
+          ]
+        },
+        {
+          "text": "Approved service content is available.",
+          "field": "acceptance_criteria",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span states approved service content; nearest L657", "excerpt": "we have product images, we have brochures, tablets, we have tech specs"}
+          ]
+        },
+        {
+          "text": "Relevant audiences can be identified.",
+          "field": "acceptance_criteria",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: general segmentation exists; no span identifies audiences for service/solution communications; nearest L267", "excerpt": "carve out a segment saying all the people who have registered complaints in the last six months"}
+          ]
+        },
+        {
+          "text": "Communications can be launched through journeys.",
+          "field": "acceptance_criteria",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: journeys send campaign emails; no span launches service/solution communications through journeys; nearest L175", "excerpt": "have the journeys executed for sending them emailers"}
+          ]
+        },
+        {
+          "text": "Customer interactions are measurable.",
+          "field": "acceptance_criteria",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span states measurable interactions for service/solution communications; nearest L853", "excerpt": "you will be as a marketer in a position to have a look at what exactly is happening on ground"}
+          ]
+        },
+        {
+          "text": "Communication history is retained.",
+          "field": "acceptance_criteria",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: campaign interaction history is a data source type, not retained service-communication history; nearest L219", "excerpt": "your campaign interaction history, emails, events, digital engagement"}
+          ]
+        },
+        {
+          "text": "Reporting is available.",
+          "field": "acceptance_criteria",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span states reporting for service/solution communications; nearest L163", "excerpt": "how marketing performance are going to be measured"}
+          ]
+        },
+        {
+          "text": "54-Global Marketing Content Activation",
+          "field": "feature",
+          "supported": true,
+          "transcript_refs": [
+            {"locator": "L655", "excerpt": "global market content activation is all about the content which you will be using for marketing initiative"}
+          ]
+        }
+      ]
+    },
+    {
+      "story_key": "manual-US-25",
+      "side": "manual",
+      "title": "Support Multi-Region Marketing Communications",
+      "has_unsupported_claim": true,
+      "transcript_states_requirement": true,
+      "requirement_rationale": "Regional audiences, regional/local adaptation, and not triggering a North America campaign to Europe are discussed. The transcript does not state regional content variations, delivery schedules, regional settings compliance, results filtered by region, or centrally governed regional activation as a common approach for regional teams.",
+      "claims": [
+        {
+          "text": "Support Multi-Region Marketing Communications",
+          "field": "title",
+          "supported": true,
+          "transcript_refs": [
+            {"locator": "L775", "excerpt": "approved templates, legal compliance, cleared messaging, and regional and local marketing adaption"},
+            {"locator": "L985", "excerpt": "if you're running a campaign especially for the North America region, what should not trigger the emails to the Europe region customers"}
+          ]
+        },
+        {
+          "text": "As a Global Marketer, I should activate communications across multiple regions, so that regional marketing teams can execute campaigns using a common approach.",
+          "field": "description",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: worldwide product-marketing insight and NA-vs-EU campaign isolation are stated, not a common approach for regional teams to execute campaigns; nearest L305", "excerpt": "those of us in product marketing, absolutely need to see the worldwide picture"}
+          ]
+        },
+        {
+          "text": "Regional audiences can be identified.",
+          "field": "acceptance_criteria",
+          "supported": true,
+          "transcript_refs": [
+            {"locator": "L175", "excerpt": "you want to have list of all partner contacts who are serving a specific region"}
+          ]
+        },
+        {
+          "text": "Regional content variations can be configured.",
+          "field": "acceptance_criteria",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: regional adaptation is named, not configuring regional content variations; nearest L775", "excerpt": "regional and local marketing adaption"}
+          ]
+        },
+        {
+          "text": "Regional delivery schedules are supported.",
+          "field": "acceptance_criteria",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span states regional delivery schedules; nearest L821", "excerpt": "a repeating journey where all audience member repeats the journey or one time journey"}
+          ]
+        },
+        {
+          "text": "Communications comply with applicable regional settings.",
+          "field": "acceptance_criteria",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: GDPR in Europe is asked; no span states communications comply with regional settings; nearest L899", "excerpt": "Have a project… the GDPR compliance wise, I think Pankaj that's the question, right? Is there any specific consent management being taken care in Europe region?"}
+          ]
+        },
+        {
+          "text": "Results can be filtered by region.",
+          "field": "acceptance_criteria",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span states filtering campaign results by region; nearest L305", "excerpt": "there could be regional differences in those features. So we would need to see that access"}
+          ]
+        },
+        {
+          "text": "Regional activation can be governed centrally.",
+          "field": "acceptance_criteria",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: a regional head may approve a campaign; that is not central governance of regional activation; nearest L993", "excerpt": "this campaign needs to be verified by some person, a regional head or a marketing manager of North America"}
+          ]
+        },
+        {
+          "text": "54-Global Marketing Content Activation",
+          "field": "feature",
+          "supported": true,
+          "transcript_refs": [
+            {"locator": "L655", "excerpt": "global market content activation is all about the content which you will be using for marketing initiative"}
+          ]
+        }
+      ]
+    },
+    {
+      "story_key": "manual-US-26",
+      "side": "manual",
+      "title": "Support Multi-Language Marketing Communications",
+      "has_unsupported_claim": true,
+      "transcript_states_requirement": false,
+      "requirement_rationale": "No span states multi-language delivery, preferred language, language selection, language-specific previews, engagement by language, or fallback language.",
+      "claims": [
+        {
+          "text": "Support Multi-Language Marketing Communications",
+          "field": "title",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span states multi-language marketing communications; nearest L775", "excerpt": "approved templates, legal compliance, cleared messaging, and regional and local marketing adaption"}
+          ]
+        },
+        {
+          "text": "As a Global Marketer, I should deliver communications in multiple languages, so that recipients receive messages in their preferred language where supported.",
+          "field": "description",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span states preferred-language delivery; nearest L775", "excerpt": "regional and local marketing adaption"}
+          ]
+        },
+        {
+          "text": "Multiple language versions can be configured.",
+          "field": "acceptance_criteria",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span states configuring multiple language versions; nearest L775", "excerpt": "regional and local marketing adaption"}
+          ]
+        },
+        {
+          "text": "Language selection rules are supported.",
+          "field": "acceptance_criteria",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span states language selection rules; nearest L879", "excerpt": "the customer or the end recipient can click, open up the preference center and opt out"}
+          ]
+        },
+        {
+          "text": "Communications display correctly in supported languages.",
+          "field": "acceptance_criteria",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span states communications display correctly in supported languages; nearest L783", "excerpt": "This system specifically deals with having all this content prepared beforehand, your emails"}
+          ]
+        },
+        {
+          "text": "Language-specific previews are available.",
+          "field": "acceptance_criteria",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span states language-specific previews; nearest L67", "excerpt": "I have minimized the preview window"}
+          ]
+        },
+        {
+          "text": "Engagement can be measured by language.",
+          "field": "acceptance_criteria",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span states engagement measured by language; nearest L853", "excerpt": "How many people have opened my email?"}
+          ]
+        },
+        {
+          "text": "Fallback language rules are defined.",
+          "field": "acceptance_criteria",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span states fallback language rules; nearest L775", "excerpt": "regional and local marketing adaption"}
+          ]
+        },
+        {
+          "text": "54-Global Marketing Content Activation",
+          "field": "feature",
+          "supported": true,
+          "transcript_refs": [
+            {"locator": "L655", "excerpt": "global market content activation is all about the content which you will be using for marketing initiative"}
+          ]
+        }
+      ]
+    },
+    {
+      "story_key": "manual-US-27",
+      "side": "manual",
+      "title": "Track Content Utilization Across Marketing Activities",
+      "has_unsupported_claim": true,
+      "transcript_states_requirement": false,
+      "requirement_rationale": "Approved library images are used in emails. The transcript does not state tracing where approved content is used across campaigns, identifying frequently used assets, or content-utilization reporting.",
+      "claims": [
+        {
+          "text": "Track Content Utilization Across Marketing Activities",
+          "field": "title",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span states tracking content utilization across marketing activities; nearest L783", "excerpt": "how this particular image got in here is through the library which we are managing within dynamics"}
+          ]
+        },
+        {
+          "text": "As a Marketing Manager, I should understand where approved content is being used, so that content reuse and effectiveness can be monitored.",
+          "field": "description",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span states monitoring where approved content is reused or how effective it is; nearest L783", "excerpt": "People will be having access to the approved content only for downloading the, you know, media files"}
+          ]
+        },
+        {
+          "text": "Content usage can be traced across campaigns and journeys. e.g emails, SMS's, Marketing forms, Landing pages etc",
+          "field": "acceptance_criteria",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span traces content usage across emails, SMS, forms, and landing pages; nearest L783", "excerpt": "having all this content prepared beforehand, your emails, your messages, your web pages, landing pages"}
+          ]
+        },
+        {
+          "text": "Frequently used assets can be identified.",
+          "field": "acceptance_criteria",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span states identifying frequently used assets; nearest L783", "excerpt": "you could see all the approved content"}
+          ]
+        },
+        {
+          "text": "Reporting is available for content utilization.",
+          "field": "acceptance_criteria",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span states content-utilization reporting; nearest L163", "excerpt": "what capabilities belongs to customer insight versus your digital asset management platform or dam"}
+          ]
+        },
+        {
+          "text": "54-Global Marketing Content Activation",
+          "field": "feature",
+          "supported": true,
+          "transcript_refs": [
+            {"locator": "L655", "excerpt": "global market content activation is all about the content which you will be using for marketing initiative"}
+          ]
+        }
+      ]
+    }
+  ],
+  "hallucinated_keys": [
+    "manual-US-4",
+    "manual-US-5",
+    "manual-US-6",
+    "manual-US-7",
+    "manual-US-8",
+    "manual-US-9",
+    "manual-US-10",
+    "manual-US-11",
+    "manual-US-12",
+    "manual-US-13",
+    "manual-US-14",
+    "manual-US-17",
+    "manual-US-18",
+    "manual-US-19",
+    "manual-US-20",
+    "manual-US-21",
+    "manual-US-22",
+    "manual-US-23",
+    "manual-US-24",
+    "manual-US-25",
+    "manual-US-26",
+    "manual-US-27"
+  ],
+  "supported_requirement_keys": [
+    "manual-US-4",
+    "manual-US-5",
+    "manual-US-6",
+    "manual-US-8",
+    "manual-US-9",
+    "manual-US-10",
+    "manual-US-11",
+    "manual-US-17",
+    "manual-US-18",
+    "manual-US-19",
+    "manual-US-20",
+    "manual-US-23",
+    "manual-US-25"
+  ],
+  "unsupported_requirement_keys": [
+    "manual-US-7",
+    "manual-US-12",
+    "manual-US-13",
+    "manual-US-14",
+    "manual-US-21",
+    "manual-US-22",
+    "manual-US-24",
+    "manual-US-26",
+    "manual-US-27"
+  ]
+}

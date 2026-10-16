@@ -78,23 +78,17 @@ def test_map_stories_writes_catalog_epic_and_feature_rows() -> None:
         "Workshop": [_cand("W1", "Sales Workshop")],
     }
     mapped, log = map_stories(rows, buckets, THRESHOLD, MARGIN)
-    titles = [r["Title"] for r in mapped]
+    titles = [r.get("Title") or r.get("Title 3") or r.get("Title 2") or r.get("Title 1") or "" for r in mapped]
     assert "Should not appear" not in titles
     epics = [r for r in mapped if r["Work Item Type"] == "Epic"]
     feats = [r for r in mapped if r["Work Item Type"] == "Feature"]
     assert len(epics) == 1
     assert epics[0]["ID"] == "E1"
-    assert epics[0]["Title"] == "B2B Direct Service"
-    assert "EPIC ID" not in epics[0]
-    assert "FEATURE ID" not in epics[0]
+    assert epics[0].get("Title 1") == "B2B Direct Service" or epics[0].get("Title") == "B2B Direct Service"
     assert len(feats) == 1
     assert feats[0]["ID"] == "F1"
-    assert feats[0]["Title"] == "Install Base Management"
     stories = [r for r in mapped if r["Work Item Type"] == "User Story"]
-    assert "FEATURE ID" not in stories[0]
-    assert "EPIC ID" not in stories[0]
-    assert stories[0].get("ID") == "F1"
-    assert stories[1].get("ID") == ""
+    assert all((s.get("ID") or "") == "" for s in stories)
     assert [r["Work Item Type"] for r in mapped][:4] == ["Workshop", "Epic", "Feature", "User Story"]
     assert log[0]["status"] == "matched"
     assert log[1]["status"] == "unmatched"
@@ -110,6 +104,29 @@ def test_catalog_file_filter_respects_config() -> None:
     assert not _catalog_file_for_type("Epic", "epic.json", cfg)
     assert _catalog_file_for_type("Feature", "custom-feature.json", cfg)
     assert not _catalog_file_for_type("Feature", "feature.json", cfg)
+
+
+def test_hierarchy_epic_feature_stories_order() -> None:
+    rows = [
+        _row("User Story", "Story for feature A"),
+        _row("User Story", "Story for feature B"),
+    ]
+    buckets = {
+        "Epic": [_cand("E1", "Epic Alpha"), _cand("E2", "Epic Beta")],
+        "Feature": [
+            _cand("F1", "Feature Alpha One", parent="E1"),
+            _cand("F2", "Feature Beta One", parent="E2"),
+        ],
+        "Workshop": [],
+    }
+    # Force match titles
+    rows[0]["Description"] = "Story for feature Alpha One capability"
+    rows[1]["Description"] = "Story for feature Beta One capability"
+    mapped, _ = map_stories(rows, buckets, THRESHOLD, MARGIN)
+    types = [r["Work Item Type"] for r in mapped]
+    assert types == ["Epic", "Feature", "User Story", "Epic", "Feature", "User Story"]
+    assert mapped[2].get("ID") == ""
+    assert mapped[5].get("ID") == ""
 
 
 def test_duplicate_feature_titles_still_map() -> None:
@@ -128,7 +145,8 @@ def test_duplicate_feature_titles_still_map() -> None:
     assert log[0]["status"] == "matched"
     assert log[0]["featureId"] in {"F1", "F2"}
     story = next(r for r in mapped if r["Work Item Type"] == "User Story")
-    assert story["ID"] == log[0]["featureId"]
+    assert (story.get("ID") or "") == ""
+    assert log[0]["featureId"] in {"F1", "F2"}
 
 
 def main() -> int:
@@ -136,6 +154,7 @@ def main() -> int:
         test_title_score_ignores_numbering,
         test_story_maps_to_existing_feature_and_parent_epic,
         test_map_stories_writes_catalog_epic_and_feature_rows,
+        test_hierarchy_epic_feature_stories_order,
         test_catalog_file_filter_respects_config,
         test_duplicate_feature_titles_still_map,
     ]

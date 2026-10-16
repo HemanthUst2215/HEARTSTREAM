@@ -1,0 +1,71 @@
+# Structural contract for /generate-html-for-user-stories analysis JSON.
+# Semantic judgments are owned by user-story-source-traceability-analyzer.
+schema_version: "1.0"
+assumption_id: ASSUMPTION-USHTML-001
+status: Draft — Pending Method Review
+
+allowed_match_types:
+  - Exact Match
+  - Partial Match
+  - No Match
+
+# Match type is tied to source_references, not independent retrieval scores.
+match_type_rules:
+  behavior_id: USHTML-MATCH-001
+  statement: >
+    Assign No Match only when there is no supporting source reference (empty
+    source_references or every excerpt is "No Supporting Evidence Found"). When at
+    least one supporting reference exists, Match type must be Partial Match or
+    Exact Match. Use Exact Match when cited spans substantiate the full story;
+    otherwise Partial Match.
+  no_evidence_excerpt: "No Supporting Evidence Found"
+
+feature_mapping_rules:
+  behavior_id: USHTML-FEAT-001
+  statement: >
+    why_mapped_to_feature must explain the business/SOW topic link using cited
+    workshop sources (transcript, MoM, pre-read, SOW feature list). CSV row
+    order or "preceding Feature row" is not an acceptable justification.
+  forbidden_why_mapped_substrings:
+    - "preceding Feature row"
+    - "Nearest preceding"
+
+allowed_derived_sources:
+  - Transcript
+  - MoM
+  - Pre-read Materials
+  - Feature List
+
+allowed_coverage_assessment:
+  - Fully Supported
+  - Partially Supported
+  - Unsupported
+
+story_required_fields:
+  - story_key
+  - user_story_id
+  - user_story_title
+  - feature_name
+  - match_type
+  - derived_sources
+  - source_references
+  - why_generated
+  - why_mapped_to_feature
+  - supporting_business_context
+  - coverage_assessment
+  - confidence_score
+  - recommended_action
+
+matrix_row_requirements_not_in_stories_fields:
+  - requirement
+  - source_type
+  - source_locator
+  - why_not_converted
+
+executive_summary_required_fields:
+  - total_user_stories
+  - exact_matches
+  - partial_matches
+  - no_matches
+  - fully_supported_stories
+  - overall_traceability_score

@@ -1,0 +1,104 @@
+{
+  "schema_version": "1.0",
+  "knowledge_base_id": "2026-10-16-marketing-ws03-workshop-prerequisite-kb",
+  "sources": [
+    {
+      "path": "Pre- read material - 03. D365_CE_ Day 03_Marketing 1_30092026.pptx",
+      "title": "D365 CE Solution Modelling Workshop Marketing Sept 2026 pre-read",
+      "extracted_text": "artifacts/intake/.pipeline/2026-10-16-marketing-ws03-prerequisite.txt"
+    },
+    {
+      "path": "MOM_Marketing 1 - 30092026 (1).pdf",
+      "title": "Customer Insights (Marketing) Workshop MoM 30-Sep-2026",
+      "extracted_text": "artifacts/intake/.pipeline/2026-10-16-marketing-ws03-mom.txt"
+    }
+  ],
+  "scope": {
+    "in_scope_objectives": [
+      {
+        "id": "OBJ-001",
+        "statement": "External analytics data ingestion and unification in D365 Customer Insights (WS-CE-01).",
+        "source_path": "Pre- read material - 03. D365_CE_ Day 03_Marketing 1_30092026.pptx",
+        "source_locator": "WS-CE-01 / slide External Analytics Data Ingestion & Unification",
+        "confidence": "explicit"
+      },
+      {
+        "id": "OBJ-002",
+        "statement": "Marketing research insights planning using Customer Insights audiences and analytics (WS-CE-02).",
+        "source_path": "Pre- read material - 03. D365_CE_ Day 03_Marketing 1_30092026.pptx",
+        "source_locator": "WS-CE-02",
+        "confidence": "explicit"
+      },
+      {
+        "id": "OBJ-003",
+        "statement": "Global marketing content activation via Customer Insights Journeys (WS-CE-03).",
+        "source_path": "Pre- read material - 03. D365_CE_ Day 03_Marketing 1_30092026.pptx",
+        "source_locator": "WS-CE-03",
+        "confidence": "explicit"
+      },
+      {
+        "id": "OBJ-004",
+        "statement": "Brand reputation campaign management with journeys, segmentation, and performance analytics (WS-CE-04).",
+        "source_path": "Pre- read material - 03. D365_CE_ Day 03_Marketing 1_30092026.pptx",
+        "source_locator": "WS-CE-04",
+        "confidence": "explicit"
+      },
+      {
+        "id": "OBJ-005",
+        "statement": "Marketing asset governance and campaign readiness (WS-CE-05).",
+        "source_path": "Pre- read material - 03. D365_CE_ Day 03_Marketing 1_30092026.pptx",
+        "source_locator": "WS-CE-05",
+        "confidence": "explicit"
+      },
+      {
+        "id": "OBJ-006",
+        "statement": "Marketing strategy and activation planning with KPI tracking (WS-CE-06).",
+        "source_path": "Pre- read material - 03. D365_CE_ Day 03_Marketing 1_30092026.pptx",
+        "source_locator": "WS-CE-06",
+        "confidence": "explicit"
+      }
+    ],
+    "in_scope_modules": [
+      {
+        "id": "MOD-001",
+        "statement": "D365 Customer Insights data sources, profile unification, and dynamic segmentation for distributor and vertical-market models.",
+        "source_path": "Pre- read material - 03. D365_CE_ Day 03_Marketing 1_30092026.pptx",
+        "source_locator": "Process Flow 1; MoM topic 4 Segmentation strategy",
+        "confidence": "explicit"
+      },
+      {
+        "id": "MOD-002",
+        "statement": "Account and contact 360 views in Customer Insights for marketing audiences (distinct from Sales CRM day-to-day).",
+        "source_path": "Pre- read material - 03. D365_CE_ Day 03_Marketing 1_30092026.pptx",
+        "source_locator": "Unified customer profile; MoM topic 3 Customer and partner profile requirements",
+        "confidence": "derived"
+      }
+    ],
+    "out_of_scope": [
+      {
+        "id": "OOS-001",
+        "statement": "Deep lead-to-opportunity sales process design (separate CRM sales workshops).",
+        "source_path": "artifacts/intake/2026-10-16-transcript.txt",
+        "source_locator": "10:17–10:23 James; session reframed to marketing not lead management",
+        "confidence": "explicit"
+      }
+    ]
+  },
+  "terminology": [
+    {
+      "term": "Customer Insights",
+      "definition": "Microsoft Dynamics 365 marketing module discussed in workshop (industry term: marketing).",
+      "source_path": "artifacts/intake/2026-10-16-transcript.txt",
+      "source_locator": "5:18–9:05"
+    }
+  ],
+  "constraints": [
+    {
+      "id": "CON-001",
+      "statement": "Standard D365 Customer Insights OOTB assumed in pre-read process flows unless workshop decides otherwise.",
+      "source_path": "Pre- read material - 03. D365_CE_ Day 03_Marketing 1_30092026.pptx",
+      "source_locator": "Process Flow 1 header",
+      "confidence": "explicit"
+    }
+  ]
+}

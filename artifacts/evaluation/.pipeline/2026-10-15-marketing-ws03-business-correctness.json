@@ -1,0 +1,93 @@
+{
+  "schema_version": "1.0",
+  "kind": "business-correctness",
+  "owner": "business-correctness-evaluator",
+  "confidence": "high",
+  "overrides": [],
+  "findings": [
+    {
+      "id": "F-M-001",
+      "match_id": "M-001",
+      "manual_key": "manual-US-46",
+      "generated_key": "generated-US-17",
+      "kind": "business_outcome_result",
+      "statement": "M-001 generated-US-17 keeps the transcript actor class (a marketer creating segments) and the transcript condition (vertical end-market: hospital vs EMS vs non-healthcare, including education/K-12). It changes the result: L177 states segmentation so the business can see how much is selling into each vertical from shipment/tracing data; generated-US-17's so-that is campaign targeting by where products are sold or used. 'Used' is not in the cited spans (sold/shipped/tracings).",
+      "source_path": "artifacts/evaluation/.pipeline/2026-10-15-marketing-ws03-transcript.txt",
+      "source_locator": "L177",
+      "confidence": "derived"
+    }
+  ],
+  "metrics": [
+    {
+      "metric_id": "title_description_format_compliance",
+      "name": "Title and Description Format Compliance",
+      "owner": "business-correctness-evaluator",
+      "kind": "ratio",
+      "display": "100% (14/14)",
+      "score": 1.0,
+      "numerator": 14,
+      "denominator": 14,
+      "na": false,
+      "overrides": [],
+      "evidence": [
+        {
+          "statement": "Packet structural_summary.generated.format_ok_count is 14 of 14 generated User Story rows. No row override: every Title is a short capability name that does not start with 'As a', and every Description matches generation.user_story.description_format / user_story.description_format pattern 'As a <role>, I need to <need>, so that <benefit>.'",
+          "source_path": "artifacts/evaluation/.pipeline/2026-10-15-marketing-ws03-evaluation-packet.json",
+          "source_locator": "structural_summary.generated.format_ok_count",
+          "confidence": "explicit"
+        },
+        {
+          "statement": "Rulebook pattern confirmed on generated-US-4 through generated-US-20: Title 3 is an imperative capability (title_formats.user_story); Description is a single As-a / I-need-to / so-that sentence ending with a period.",
+          "source_path": "docs/intake/user-story-csv-rulebook.yaml",
+          "source_locator": "title_formats.user_story; user_story.description_format",
+          "confidence": "explicit"
+        },
+        {
+          "statement": "Finding F-M-001 (evidence only; format score unchanged): match M-001 generated-US-17 does not break the rulebook sentence pattern, but it changes the transcript result. L177: vertical segmentation (hospitals versus EMS versus non-healthcare) to know sales into those markets from tracings of where devices shipped. generated-US-17 so-that: target campaigns by where products are sold or used. Actor remains a marketer; condition remains vertical end-market.",
+          "source_path": "artifacts/evaluation/.pipeline/2026-10-15-marketing-ws03-transcript.txt",
+          "source_locator": "L177",
+          "confidence": "derived"
+        }
+      ]
+    },
+    {
+      "metric_id": "role_specificity",
+      "name": "Role Specificity",
+      "owner": "business-correctness-evaluator",
+      "kind": "ratio",
+      "display": "100% (14/14)",
+      "score": 1.0,
+      "numerator": 14,
+      "denominator": 14,
+      "na": false,
+      "assumption_id": "ASSUMPTION-USEVAL-002",
+      "overrides": [],
+      "evidence": [
+        {
+          "statement": "ASSUMPTION-USEVAL-002: a role is specific when the Description captures a non-empty role and that role, compared case-insensitively, is not exactly 'user' or 'users'. Packet structural_summary.generated.role_specific_count is 14 of 14. Captured roles: marketing data steward, marketing analyst, marketer, global product marketer, field marketer, product marketer, marketing operations lead. None equal user or users. No row override.",
+          "source_path": ".cursor/templates/user-story-evaluation-metrics.yaml",
+          "source_locator": "metrics.role_specificity / ASSUMPTION-USEVAL-002",
+          "confidence": "assumption"
+        },
+        {
+          "statement": "Packet generated_stories[*].structural.role_specific is true on every generated User Story row (generated-US-4 through generated-US-20).",
+          "source_path": "artifacts/evaluation/.pipeline/2026-10-15-marketing-ws03-evaluation-packet.json",
+          "source_locator": "structural_summary.generated.role_specific_count",
+          "confidence": "explicit"
+        },
+        {
+          "statement": "Finding F-M-001 actor check (evidence only; role score unchanged): generated-US-17 role 'product marketer' is not generic under ASSUMPTION-USEVAL-002. L177/L397 do not name that job title; James speaks as Heartstream marketing requesting vertical segments. That is not a change of actor class (still a marketer creating segments), so role_specificity is not overridden.",
+          "source_path": "artifacts/evaluation/.pipeline/2026-10-15-marketing-ws03-story-matches.json",
+          "source_locator": "matches[M-001].generated_keys",
+          "confidence": "derived"
+        }
+      ]
+    }
+  ],
+  "open_items": [
+    {
+      "id": "ASSUMPTION-USEVAL-002",
+      "statement": "Role specificity method (generic roles are exactly user or users, case-insensitive) remains Draft — Pending Method Review."
+    }
+  ]
+}

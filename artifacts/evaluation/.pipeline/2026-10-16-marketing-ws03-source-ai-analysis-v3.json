@@ -1,0 +1,592 @@
+{
+  "schema_version": "1.0",
+  "kind": "user-story-source-analysis",
+  "side": "generated",
+  "status": "Draft \u2014 Pending Method Review",
+  "assumption_id": "ASSUMPTION-USHTML-001",
+  "inputs": {
+    "user_story_csv": "C:\\Users\\308279\\Documents\\HEARTSTREAM-1\\artifacts\\evaluation\\.pipeline\\2026-10-16-marketing-ws03-generated.csv",
+    "unified_knowledge_base": "C:\\Users\\308279\\Documents\\HEARTSTREAM-1\\artifacts\\evaluation\\.pipeline\\2026-10-16-marketing-ws03-source-knowledge-base-v3.json"
+  },
+  "executive_summary": {
+    "total_user_stories": 14,
+    "exact_matches": 0,
+    "partial_matches": 14,
+    "no_matches": 0,
+    "fully_supported_stories": 0,
+    "overall_traceability_score": "50.0"
+  },
+  "stories": [
+    {
+      "story_key": "generated-US-4",
+      "user_story_id": "",
+      "user_story_title": "Connect CRM account and contact master data to Customer Insights",
+      "feature_name": "70 - External Analytics Data Ingestion & Unification",
+      "match_type": "Partial Match",
+      "derived_sources": [
+        "Pre-read Materials",
+        "MoM"
+      ],
+      "source_references": [
+        {
+          "source_type": "Pre-read Materials",
+          "locator": "Unified customer profile; transcript 58:17\u20131:02:06",
+          "excerpt": "Account and contact 360 views in Customer Insights for marketing audiences (distinct from Sales CRM day-to-day)."
+        },
+        {
+          "source_type": "MoM",
+          "locator": "lines 481-520",
+          "excerpt": "Customer and partner \nmaster data contains \nduplicates and \nCustomer Insights \nsegmentation, reporting \nand analytics may be \nPerform data profiling, \ncleansing, deduplication and \nHeartStream \nBusiness / Data \nTeam / UST \n \n \n            \nfragmented account \nstructures \ninaccura"
+        },
+        {
+          "source_type": "MoM",
+          "locator": "lines 201-240",
+          "excerpt": "\u2022 It was agreed that improved data capture processes would \ndirectly impact the quality of segmentation and marketing \noutcomes. \n \n8 Customer master data and \nmigration considerations \n\u2022 HeartStream highlighted concerns regarding duplicate customer \nrecords, fragmented account s"
+        }
+      ],
+      "why_generated": "Workshop requirement reflected in cited source spans.",
+      "why_mapped_to_feature": "Nearest preceding Feature row in CSV.",
+      "supporting_business_context": "Account and contact 360 views in Customer Insights for marketing audiences (distinct from Sales CRM day-to-day).",
+      "coverage_assessment": "Partially Supported",
+      "confidence_score": "0.17",
+      "recommended_action": "Clarify with workshop"
+    },
+    {
+      "story_key": "generated-US-5",
+      "user_story_id": "",
+      "user_story_title": "Ingest sales order and engagement data for unified profiles",
+      "feature_name": "70 - External Analytics Data Ingestion & Unification",
+      "match_type": "Partial Match",
+      "derived_sources": [
+        "Pre-read Materials",
+        "MoM",
+        "Transcript"
+      ],
+      "source_references": [
+        {
+          "source_type": "Pre-read Materials",
+          "locator": "Process Flow 1; transcript agenda external analytics focus",
+          "excerpt": "D365 Customer Insights data sources, profile unification, and dynamic segmentation for distributor and vertical-market models."
+        },
+        {
+          "source_type": "MoM",
+          "locator": "lines 321-360",
+          "excerpt": "through engagement metrics, landing page activity, click-through \nrates and conversion indicators \n \n\u2022 HeartStream highlighted the need to understand campaign \neffectiveness and its contribution to downstream sales \noutcomes. \n \n\u2022 It was discussed that reporting should provide vi"
+        },
+        {
+          "source_type": "Transcript",
+          "locator": "lines 481-520",
+          "excerpt": "might be with shippers. Yes.\n1:38:27 | James\nMultiple ship, choose one. So.\n1:38:29 | Nitesh\nAnd.\n1:38:30 | James\nall of the data is tied to this old, yes, yes. And therefore, it wouldn't cripple our customer insights capabilities for marketing.\n1:38:39 | Nitesh\nSo it don't it be"
+        }
+      ],
+      "why_generated": "Workshop requirement reflected in cited source spans.",
+      "why_mapped_to_feature": "Nearest preceding Feature row in CSV.",
+      "supporting_business_context": "D365 Customer Insights data sources, profile unification, and dynamic segmentation for distributor and vertical-market models.",
+      "coverage_assessment": "Partially Supported",
+      "confidence_score": "0.11",
+      "recommended_action": "Clarify with workshop"
+    },
+    {
+      "story_key": "generated-US-6",
+      "user_story_id": "",
+      "user_story_title": "Define match rules for unified customer profiles",
+      "feature_name": "70 - External Analytics Data Ingestion & Unification",
+      "match_type": "Partial Match",
+      "derived_sources": [
+        "Pre-read Materials",
+        "MoM"
+      ],
+      "source_references": [
+        {
+          "source_type": "Pre-read Materials",
+          "locator": "Process Flow 1; transcript agenda external analytics focus",
+          "excerpt": "D365 Customer Insights data sources, profile unification, and dynamic segmentation for distributor and vertical-market models."
+        },
+        {
+          "source_type": "Pre-read Materials",
+          "locator": "Unified customer profile; transcript 58:17\u20131:02:06",
+          "excerpt": "Account and contact 360 views in Customer Insights for marketing audiences (distinct from Sales CRM day-to-day)."
+        },
+        {
+          "source_type": "MoM",
+          "locator": "lines 481-520",
+          "excerpt": "Customer and partner \nmaster data contains \nduplicates and \nCustomer Insights \nsegmentation, reporting \nand analytics may be \nPerform data profiling, \ncleansing, deduplication and \nHeartStream \nBusiness / Data \nTeam / UST \n \n \n            \nfragmented account \nstructures \ninaccura"
+        }
+      ],
+      "why_generated": "Workshop requirement reflected in cited source spans.",
+      "why_mapped_to_feature": "Nearest preceding Feature row in CSV.",
+      "supporting_business_context": "D365 Customer Insights data sources, profile unification, and dynamic segmentation for distributor and vertical-market models.",
+      "coverage_assessment": "Partially Supported",
+      "confidence_score": "0.13",
+      "recommended_action": "Clarify with workshop"
+    },
+    {
+      "story_key": "generated-US-7",
+      "user_story_id": "",
+      "user_story_title": "Use ship-to attributes in Customer Insights segment rules",
+      "feature_name": "70 - External Analytics Data Ingestion & Unification",
+      "match_type": "Partial Match",
+      "derived_sources": [
+        "Transcript",
+        "MoM",
+        "Pre-read Materials"
+      ],
+      "source_references": [
+        {
+          "source_type": "Transcript",
+          "locator": "lines 481-520",
+          "excerpt": "might be with shippers. Yes.\n1:38:27 | James\nMultiple ship, choose one. So.\n1:38:29 | Nitesh\nAnd.\n1:38:30 | James\nall of the data is tied to this old, yes, yes. And therefore, it wouldn't cripple our customer insights capabilities for marketing.\n1:38:39 | Nitesh\nSo it don't it be"
+        },
+        {
+          "source_type": "MoM",
+          "locator": "lines 481-520",
+          "excerpt": "Customer and partner \nmaster data contains \nduplicates and \nCustomer Insights \nsegmentation, reporting \nand analytics may be \nPerform data profiling, \ncleansing, deduplication and \nHeartStream \nBusiness / Data \nTeam / UST \n \n \n            \nfragmented account \nstructures \ninaccura"
+        },
+        {
+          "source_type": "Pre-read Materials",
+          "locator": "Unified customer profile; transcript 58:17\u20131:02:06",
+          "excerpt": "Account and contact 360 views in Customer Insights for marketing audiences (distinct from Sales CRM day-to-day)."
+        }
+      ],
+      "why_generated": "Workshop requirement reflected in cited source spans.",
+      "why_mapped_to_feature": "Nearest preceding Feature row in CSV.",
+      "supporting_business_context": "might be with shippers. Yes.\n1:38:27 | James\nMultiple ship, choose one. So.\n1:38:29 | Nitesh\nAnd.\n1:38:30 | James\nall of the data is tied to this old, yes, yes. And therefore, it wouldn't cripple our ",
+      "coverage_assessment": "Partially Supported",
+      "confidence_score": "0.11",
+      "recommended_action": "Clarify with workshop"
+    },
+    {
+      "story_key": "generated-US-8",
+      "user_story_id": "",
+      "user_story_title": "Update install base segment after partner tracing import",
+      "feature_name": "70 - External Analytics Data Ingestion & Unification",
+      "match_type": "Partial Match",
+      "derived_sources": [
+        "Pre-read Materials",
+        "MoM"
+      ],
+      "source_references": [
+        {
+          "source_type": "Pre-read Materials",
+          "locator": "Process Flow 1; transcript agenda external analytics focus",
+          "excerpt": "D365 Customer Insights data sources, profile unification, and dynamic segmentation for distributor and vertical-market models."
+        },
+        {
+          "source_type": "MoM",
+          "locator": "lines 121-160",
+          "excerpt": "within a unified view. \n \n\u2022 HeartStream emphasized that global distributors operating \nacross multiple regions must be supported within the future-state \ncustomer and partner profile model. \n \n\u2022 HeartStream confirmed that future marketing activities must \nsupport both distributor"
+        },
+        {
+          "source_type": "MoM",
+          "locator": "lines 641-680",
+          "excerpt": "5 ACTION ITEMS \nSr Category Action Owner Tentative \nDue Date \n1 Segmentation \nProvide the list of marketing segments and target \naudiences that HeartStream would like to support \nin Dynamics 365 Customer Insights, including \ndistributor, customer and market-based \nsegmentation re"
+        }
+      ],
+      "why_generated": "Workshop requirement reflected in cited source spans.",
+      "why_mapped_to_feature": "Nearest preceding Feature row in CSV.",
+      "supporting_business_context": "D365 Customer Insights data sources, profile unification, and dynamic segmentation for distributor and vertical-market models.",
+      "coverage_assessment": "Partially Supported",
+      "confidence_score": "0.12",
+      "recommended_action": "Clarify with workshop"
+    },
+    {
+      "story_key": "generated-US-9",
+      "user_story_id": "",
+      "user_story_title": "Ingest distributor sold-to location from partner channel into CI",
+      "feature_name": "70 - External Analytics Data Ingestion & Unification",
+      "match_type": "Partial Match",
+      "derived_sources": [
+        "Pre-read Materials",
+        "MoM",
+        "Transcript"
+      ],
+      "source_references": [
+        {
+          "source_type": "Pre-read Materials",
+          "locator": "Process Flow 1; transcript agenda external analytics focus",
+          "excerpt": "D365 Customer Insights data sources, profile unification, and dynamic segmentation for distributor and vertical-market models."
+        },
+        {
+          "source_type": "MoM",
+          "locator": "lines 481-520",
+          "excerpt": "Customer and partner \nmaster data contains \nduplicates and \nCustomer Insights \nsegmentation, reporting \nand analytics may be \nPerform data profiling, \ncleansing, deduplication and \nHeartStream \nBusiness / Data \nTeam / UST \n \n \n            \nfragmented account \nstructures \ninaccura"
+        },
+        {
+          "source_type": "Transcript",
+          "locator": "lines 841-880",
+          "excerpt": "The third question, target audience and segmentation, we spoke about it on multiple occasions. So not like we would not like to delve into that particular question. We'll simply move on to the next one which is your success measures. So when you think of executing this marketing,"
+        }
+      ],
+      "why_generated": "Workshop requirement reflected in cited source spans.",
+      "why_mapped_to_feature": "Nearest preceding Feature row in CSV.",
+      "supporting_business_context": "D365 Customer Insights data sources, profile unification, and dynamic segmentation for distributor and vertical-market models.",
+      "coverage_assessment": "Partially Supported",
+      "confidence_score": "0.14",
+      "recommended_action": "Clarify with workshop"
+    },
+    {
+      "story_key": "generated-US-11",
+      "user_story_id": "",
+      "user_story_title": "Provide account-level marketing profiles with contact drill-down",
+      "feature_name": "61 - Marketing Research Insights Planning",
+      "match_type": "Partial Match",
+      "derived_sources": [
+        "Pre-read Materials",
+        "MoM"
+      ],
+      "source_references": [
+        {
+          "source_type": "Pre-read Materials",
+          "locator": "Unified customer profile; transcript 58:17\u20131:02:06",
+          "excerpt": "Account and contact 360 views in Customer Insights for marketing audiences (distinct from Sales CRM day-to-day)."
+        },
+        {
+          "source_type": "Pre-read Materials",
+          "locator": "WS-CE-02",
+          "excerpt": "Marketing research insights planning using Customer Insights audiences and analytics (WS-CE-02)."
+        },
+        {
+          "source_type": "MoM",
+          "locator": "lines 361-400",
+          "excerpt": "\u2022 HeartStream indicated that only a limited number of users are \nexpected to create and manage campaigns globally. \n \n\u2022 It was confirmed that appropriate role-based access controls will \nbe required while still enabling global visibility for authorized \nmarketing users. \n \n \n \n3 "
+        }
+      ],
+      "why_generated": "Workshop requirement reflected in cited source spans.",
+      "why_mapped_to_feature": "Nearest preceding Feature row in CSV.",
+      "supporting_business_context": "Account and contact 360 views in Customer Insights for marketing audiences (distinct from Sales CRM day-to-day).",
+      "coverage_assessment": "Partially Supported",
+      "confidence_score": "0.11",
+      "recommended_action": "Clarify with workshop"
+    },
+    {
+      "story_key": "generated-US-12",
+      "user_story_id": "",
+      "user_story_title": "Enable worldwide marketing analytics visibility for product marketing",
+      "feature_name": "61 - Marketing Research Insights Planning",
+      "match_type": "Partial Match",
+      "derived_sources": [
+        "MoM",
+        "Pre-read Materials"
+      ],
+      "source_references": [
+        {
+          "source_type": "MoM",
+          "locator": "lines 361-400",
+          "excerpt": "\u2022 HeartStream indicated that only a limited number of users are \nexpected to create and manage campaigns globally. \n \n\u2022 It was confirmed that appropriate role-based access controls will \nbe required while still enabling global visibility for authorized \nmarketing users. \n \n \n \n3 "
+        },
+        {
+          "source_type": "Pre-read Materials",
+          "locator": "WS-CE-02",
+          "excerpt": "Marketing research insights planning using Customer Insights audiences and analytics (WS-CE-02)."
+        },
+        {
+          "source_type": "MoM",
+          "locator": "lines 41-80",
+          "excerpt": "2 KEY DISCUSSION POINTS \nSr Topic Discussion Summary \n1 Workshop scope and \nstakeholder alignment \n\u2022 HeartStream highlighted that the workshop title created \nconfusion, resulting in key marketing stakeholders not attending \nthe session. \n \n\u2022 It was agreed that future workshop tit"
+        }
+      ],
+      "why_generated": "Workshop requirement reflected in cited source spans.",
+      "why_mapped_to_feature": "Nearest preceding Feature row in CSV.",
+      "supporting_business_context": "\u2022 HeartStream indicated that only a limited number of users are \nexpected to create and manage campaigns globally. \n \n\u2022 It was confirmed that appropriate role-based access controls will \nbe required w",
+      "coverage_assessment": "Partially Supported",
+      "confidence_score": "0.16",
+      "recommended_action": "Clarify with workshop"
+    },
+    {
+      "story_key": "generated-US-13",
+      "user_story_id": "",
+      "user_story_title": "Analyze account consumable purchase patterns for marketing outreach",
+      "feature_name": "61 - Marketing Research Insights Planning",
+      "match_type": "Partial Match",
+      "derived_sources": [
+        "Pre-read Materials",
+        "MoM"
+      ],
+      "source_references": [
+        {
+          "source_type": "Pre-read Materials",
+          "locator": "Unified customer profile; transcript 58:17\u20131:02:06",
+          "excerpt": "Account and contact 360 views in Customer Insights for marketing audiences (distinct from Sales CRM day-to-day)."
+        },
+        {
+          "source_type": "MoM",
+          "locator": "lines 41-80",
+          "excerpt": "2 KEY DISCUSSION POINTS \nSr Topic Discussion Summary \n1 Workshop scope and \nstakeholder alignment \n\u2022 HeartStream highlighted that the workshop title created \nconfusion, resulting in key marketing stakeholders not attending \nthe session. \n \n\u2022 It was agreed that future workshop tit"
+        },
+        {
+          "source_type": "MoM",
+          "locator": "lines 681-720",
+          "excerpt": "feedback survey requirements, including target \naudience, timing and expected reporting \nrequirements. \nHeartStream \nMarketing TBD \n6 Data & Migration \nAnalyze customer master data quality, duplicate \naccount scenarios and market segmentation \nattributes required to support futur"
+        }
+      ],
+      "why_generated": "Workshop requirement reflected in cited source spans.",
+      "why_mapped_to_feature": "Nearest preceding Feature row in CSV.",
+      "supporting_business_context": "Account and contact 360 views in Customer Insights for marketing audiences (distinct from Sales CRM day-to-day).",
+      "coverage_assessment": "Partially Supported",
+      "confidence_score": "0.08",
+      "recommended_action": "Clarify with workshop"
+    },
+    {
+      "story_key": "generated-US-15",
+      "user_story_id": "",
+      "user_story_title": "Detect vertical sales trends for targeted campaigns",
+      "feature_name": "38 - Brand Reputation Campaign Management",
+      "match_type": "Partial Match",
+      "derived_sources": [
+        "Transcript",
+        "Pre-read Materials"
+      ],
+      "source_references": [
+        {
+          "source_type": "Transcript",
+          "locator": "lines 401-440",
+          "excerpt": "Months later.\n1:22:55 | Brian\nMaybe what I feel differently about is maybe we need more than just the high level, like if there's a trend, in dentist offices where we start seeing more sales, you know, over the course of a week or two weeks, maybe that's a signal to us that somet"
+        },
+        {
+          "source_type": "Pre-read Materials",
+          "locator": "WS-CE-02",
+          "excerpt": "Marketing research insights planning using Customer Insights audiences and analytics (WS-CE-02)."
+        },
+        {
+          "source_type": "Pre-read Materials",
+          "locator": "Unified customer profile; transcript 58:17\u20131:02:06",
+          "excerpt": "Account and contact 360 views in Customer Insights for marketing audiences (distinct from Sales CRM day-to-day)."
+        }
+      ],
+      "why_generated": "Workshop requirement reflected in cited source spans.",
+      "why_mapped_to_feature": "Nearest preceding Feature row in CSV.",
+      "supporting_business_context": "Months later.\n1:22:55 | Brian\nMaybe what I feel differently about is maybe we need more than just the high level, like if there's a trend, in dentist offices where we start seeing more sales, you know",
+      "coverage_assessment": "Partially Supported",
+      "confidence_score": "0.08",
+      "recommended_action": "Clarify with workshop"
+    },
+    {
+      "story_key": "generated-US-17",
+      "user_story_id": "",
+      "user_story_title": "Create dynamic segments by vertical end-market",
+      "feature_name": "60 - Marketing Strategy & Activation Planning",
+      "match_type": "Partial Match",
+      "derived_sources": [
+        "MoM",
+        "Pre-read Materials"
+      ],
+      "source_references": [
+        {
+          "source_type": "MoM",
+          "locator": "lines 681-720",
+          "excerpt": "feedback survey requirements, including target \naudience, timing and expected reporting \nrequirements. \nHeartStream \nMarketing TBD \n6 Data & Migration \nAnalyze customer master data quality, duplicate \naccount scenarios and market segmentation \nattributes required to support futur"
+        },
+        {
+          "source_type": "Pre-read Materials",
+          "locator": "Process Flow 1; transcript agenda external analytics focus",
+          "excerpt": "D365 Customer Insights data sources, profile unification, and dynamic segmentation for distributor and vertical-market models."
+        },
+        {
+          "source_type": "MoM",
+          "locator": "lines 641-680",
+          "excerpt": "5 ACTION ITEMS \nSr Category Action Owner Tentative \nDue Date \n1 Segmentation \nProvide the list of marketing segments and target \naudiences that HeartStream would like to support \nin Dynamics 365 Customer Insights, including \ndistributor, customer and market-based \nsegmentation re"
+        }
+      ],
+      "why_generated": "Workshop requirement reflected in cited source spans.",
+      "why_mapped_to_feature": "Nearest preceding Feature row in CSV.",
+      "supporting_business_context": "feedback survey requirements, including target \naudience, timing and expected reporting \nrequirements. \nHeartStream \nMarketing TBD \n6 Data & Migration \nAnalyze customer master data quality, duplicate ",
+      "coverage_assessment": "Partially Supported",
+      "confidence_score": "0.12",
+      "recommended_action": "Clarify with workshop"
+    },
+    {
+      "story_key": "generated-US-18",
+      "user_story_id": "",
+      "user_story_title": "Capture end-market segment at e-commerce order entry",
+      "feature_name": "60 - Marketing Strategy & Activation Planning",
+      "match_type": "Partial Match",
+      "derived_sources": [
+        "MoM",
+        "Transcript",
+        "Pre-read Materials"
+      ],
+      "source_references": [
+        {
+          "source_type": "MoM",
+          "locator": "lines 481-520",
+          "excerpt": "Customer and partner \nmaster data contains \nduplicates and \nCustomer Insights \nsegmentation, reporting \nand analytics may be \nPerform data profiling, \ncleansing, deduplication and \nHeartStream \nBusiness / Data \nTeam / UST \n \n \n            \nfragmented account \nstructures \ninaccura"
+        },
+        {
+          "source_type": "Transcript",
+          "locator": "lines 961-1000",
+          "excerpt": "Katie, Rajiv?\n3:07:00 | James\nI just hope I just hope you got what I said earlier about to get the maximum out of this marketing module, of dynamics, we have to work really hard on the data migration to make sure that what we move is what we need to put in work instructions for u"
+        },
+        {
+          "source_type": "Pre-read Materials",
+          "locator": "Process Flow 1; transcript agenda external analytics focus",
+          "excerpt": "D365 Customer Insights data sources, profile unification, and dynamic segmentation for distributor and vertical-market models."
+        }
+      ],
+      "why_generated": "Workshop requirement reflected in cited source spans.",
+      "why_mapped_to_feature": "Nearest preceding Feature row in CSV.",
+      "supporting_business_context": "Customer and partner \nmaster data contains \nduplicates and \nCustomer Insights \nsegmentation, reporting \nand analytics may be \nPerform data profiling, \ncleansing, deduplication and \nHeartStream \nBusine",
+      "coverage_assessment": "Partially Supported",
+      "confidence_score": "0.14",
+      "recommended_action": "Clarify with workshop"
+    },
+    {
+      "story_key": "generated-US-19",
+      "user_story_id": "",
+      "user_story_title": "Detect vertical sales trends for targeted campaigns",
+      "feature_name": "60 - Marketing Strategy & Activation Planning",
+      "match_type": "Partial Match",
+      "derived_sources": [
+        "Transcript",
+        "Pre-read Materials"
+      ],
+      "source_references": [
+        {
+          "source_type": "Transcript",
+          "locator": "lines 401-440",
+          "excerpt": "Months later.\n1:22:55 | Brian\nMaybe what I feel differently about is maybe we need more than just the high level, like if there's a trend, in dentist offices where we start seeing more sales, you know, over the course of a week or two weeks, maybe that's a signal to us that somet"
+        },
+        {
+          "source_type": "Pre-read Materials",
+          "locator": "WS-CE-02",
+          "excerpt": "Marketing research insights planning using Customer Insights audiences and analytics (WS-CE-02)."
+        },
+        {
+          "source_type": "Pre-read Materials",
+          "locator": "Unified customer profile; transcript 58:17\u20131:02:06",
+          "excerpt": "Account and contact 360 views in Customer Insights for marketing audiences (distinct from Sales CRM day-to-day)."
+        }
+      ],
+      "why_generated": "Workshop requirement reflected in cited source spans.",
+      "why_mapped_to_feature": "Nearest preceding Feature row in CSV.",
+      "supporting_business_context": "Months later.\n1:22:55 | Brian\nMaybe what I feel differently about is maybe we need more than just the high level, like if there's a trend, in dentist offices where we start seeing more sales, you know",
+      "coverage_assessment": "Partially Supported",
+      "confidence_score": "0.08",
+      "recommended_action": "Clarify with workshop"
+    },
+    {
+      "story_key": "generated-US-20",
+      "user_story_id": "",
+      "user_story_title": "Identify distributors serving multiple vertical markets",
+      "feature_name": "60 - Marketing Strategy & Activation Planning",
+      "match_type": "Partial Match",
+      "derived_sources": [
+        "Transcript",
+        "MoM"
+      ],
+      "source_references": [
+        {
+          "source_type": "Transcript",
+          "locator": "lines 801-840",
+          "excerpt": "This way I save it. Next time this email reaches you, click in this particular email. The redirection will be done at the same time, the benefit of this particular initiatives or these emails. When you are reviewing your marketing campaign, you will be in a position to have a loo"
+        },
+        {
+          "source_type": "MoM",
+          "locator": "lines 121-160",
+          "excerpt": "within a unified view. \n \n\u2022 HeartStream emphasized that global distributors operating \nacross multiple regions must be supported within the future-state \ncustomer and partner profile model. \n \n\u2022 HeartStream confirmed that future marketing activities must \nsupport both distributor"
+        },
+        {
+          "source_type": "Transcript",
+          "locator": "lines 401-440",
+          "excerpt": "Months later.\n1:22:55 | Brian\nMaybe what I feel differently about is maybe we need more than just the high level, like if there's a trend, in dentist offices where we start seeing more sales, you know, over the course of a week or two weeks, maybe that's a signal to us that somet"
+        }
+      ],
+      "why_generated": "Workshop requirement reflected in cited source spans.",
+      "why_mapped_to_feature": "Nearest preceding Feature row in CSV.",
+      "supporting_business_context": "This way I save it. Next time this email reaches you, click in this particular email. The redirection will be done at the same time, the benefit of this particular initiatives or these emails. When yo",
+      "coverage_assessment": "Partially Supported",
+      "confidence_score": "0.07",
+      "recommended_action": "Clarify with workshop"
+    }
+  ],
+  "feature_traceability_matrix": [
+    {
+      "feature_name": "70 - External Analytics Data Ingestion & Unification",
+      "mapped_user_stories": [
+        "Connect CRM account and contact master data to Customer Insights",
+        "Ingest sales order and engagement data for unified profiles",
+        "Define match rules for unified customer profiles",
+        "Use ship-to attributes in Customer Insights segment rules",
+        "Update install base segment after partner tracing import",
+        "Ingest distributor sold-to location from partner channel into CI"
+      ],
+      "coverage_percent": 42.9,
+      "missing_requirements": []
+    },
+    {
+      "feature_name": "61 - Marketing Research Insights Planning",
+      "mapped_user_stories": [
+        "Provide account-level marketing profiles with contact drill-down",
+        "Enable worldwide marketing analytics visibility for product marketing",
+        "Analyze account consumable purchase patterns for marketing outreach"
+      ],
+      "coverage_percent": 21.4,
+      "missing_requirements": []
+    },
+    {
+      "feature_name": "54 - Global Marketing Content Activation",
+      "mapped_user_stories": [],
+      "coverage_percent": 0.0,
+      "missing_requirements": [
+        "54 - Global Marketing Content Activation"
+      ]
+    },
+    {
+      "feature_name": "38 - Brand Reputation Campaign Management",
+      "mapped_user_stories": [
+        "Detect vertical sales trends for targeted campaigns"
+      ],
+      "coverage_percent": 7.1,
+      "missing_requirements": []
+    },
+    {
+      "feature_name": "58 - Marketing Asset Governance & Campaign Readiness",
+      "mapped_user_stories": [],
+      "coverage_percent": 0.0,
+      "missing_requirements": [
+        "58 - Marketing Asset Governance & Campaign Readiness"
+      ]
+    },
+    {
+      "feature_name": "60 - Marketing Strategy & Activation Planning",
+      "mapped_user_stories": [
+        "Create dynamic segments by vertical end-market",
+        "Capture end-market segment at e-commerce order entry",
+        "Detect vertical sales trends for targeted campaigns",
+        "Identify distributors serving multiple vertical markets"
+      ],
+      "coverage_percent": 28.6,
+      "missing_requirements": []
+    }
+  ],
+  "source_coverage_summary": {
+    "transcript_percent": 50.0,
+    "mom_percent": 85.7,
+    "preread_percent": 92.9,
+    "feature_list_percent": 100.0
+  },
+  "coverage_gap_analysis": {
+    "feature_requirements_not_in_stories": [
+      {
+        "statement": "54 - Global Marketing Content Activation",
+        "source_type": "Feature List",
+        "source_path": "C:\\Users\\308279\\Documents\\HEARTSTREAM-1\\artifacts\\work-items\\SOW.json",
+        "source_locator": "SOW.rows[2]",
+        "confidence": "explicit"
+      },
+      {
+        "statement": "58 - Marketing Asset Governance & Campaign Readiness",
+        "source_type": "Feature List",
+        "source_path": "C:\\Users\\308279\\Documents\\HEARTSTREAM-1\\artifacts\\work-items\\SOW.json",
+        "source_locator": "SOW.rows[4]",
+        "confidence": "explicit"
+      }
+    ],
+    "source_requirements_not_captured": [],
+    "unmapped_user_stories": [],
+    "missing_business_scenarios": []
+  },
+  "open_items": [
+    "ASSUMPTION-USHTML-001 pending method review.",
+    "MoM PDF intake-safety exit 1 (card-number-shaped false positives); run used normalized mom .txt."
+  ]
+}

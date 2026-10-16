@@ -1,0 +1,1985 @@
+{
+  "schema_version": "1.0",
+  "kind": "hallucination-manual-batch",
+  "batch": "B",
+  "owner": "hallucination-detection-evaluator",
+  "confidence": "high",
+  "stories": [
+    {
+      "story_key": "manual-US-28",
+      "side": "manual",
+      "title": "Measure Content Engagement Performance",
+      "has_unsupported_claim": true,
+      "transcript_states_requirement": true,
+      "requirement_rationale": "The transcript states that marketers can see email opens, link clicks, and landing-page visits for journey emails. It does not state content-asset review, trend analysis, low-performing content identification, or authorized reporting access.",
+      "claims": [
+        {
+          "text": "Measure Content Engagement Performance",
+          "field": "title",
+          "supported": true,
+          "transcript_refs": [
+            {"locator": "L853", "excerpt": "How many people have opened my email? How many of them have visited that particular page?"}
+          ]
+        },
+        {
+          "text": "I should measure engagement against content delivered through campaigns and journeys",
+          "field": "description",
+          "supported": true,
+          "transcript_refs": [
+            {"locator": "L853", "excerpt": "you will be as a marketer in a position to have a look at what exactly is happening on ground. How many people have opened my email?"}
+          ]
+        },
+        {
+          "text": "so that future communications can be optimized",
+          "field": "description",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span states optimizing future communications from content engagement; nearest L311", "excerpt": "How do I get this to more and more people? What my data says, how do I improve?"}
+          ]
+        },
+        {
+          "text": "Open, click, and engagement metrics are available on emails.",
+          "field": "acceptance_criteria",
+          "supported": true,
+          "transcript_refs": [
+            {"locator": "L853", "excerpt": "how many of them in the email have clicked that particular button? How many of them have landed on that particular page?"}
+          ]
+        },
+        {
+          "text": "Results can be reviewed by content asset or communication.",
+          "field": "acceptance_criteria",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span states review by content asset or communication; nearest L801", "excerpt": "When you are reviewing your marketing campaign, you will be in a position to have a look at what exactly this means in your journey"}
+          ]
+        },
+        {
+          "text": "Performance trends can be analyzed.",
+          "field": "acceptance_criteria",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span states content performance trends; nearest L853", "excerpt": "How many people have opened my email? How many of them have visited that particular page?"}
+          ]
+        },
+        {
+          "text": "Low-performing content can be identified.",
+          "field": "acceptance_criteria",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span states identifying low-performing content; nearest L853", "excerpt": "How many of them have visited the page but never went on to the order management system?"}
+          ]
+        },
+        {
+          "text": "Reporting is available to authorized users.",
+          "field": "acceptance_criteria",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span states authorized-user reporting of content engagement; nearest L857", "excerpt": "it would just be a manageable number of people globally that would have access to create and upload approved sources"}
+          ]
+        },
+        {
+          "text": "54-Global Marketing Content Activation",
+          "field": "feature",
+          "supported": true,
+          "transcript_refs": [
+            {"locator": "L655", "excerpt": "this particular part, what you see on screen global market content activation is all about the content which you will be using for marketing initiative"}
+          ]
+        }
+      ]
+    },
+    {
+      "story_key": "manual-US-29",
+      "side": "manual",
+      "title": "Ingest Internal Source Data into Customer Insights - Data",
+      "has_unsupported_claim": true,
+      "transcript_states_requirement": true,
+      "requirement_rationale": "The transcript states ingesting CRM, sales orders, partner, and e-commerce data into Customer Insights and unifying profiles. It does not confirm a Release-1 source list including F&O and Zinfi partner data, table inventories, record-count reconciliation, or failed-refresh visibility. Zinfi is discussed as a partner content channel, not a data source.",
+      "claims": [
+        {
+          "text": "Ingest Internal Source Data into Customer Insights - Data",
+          "field": "title",
+          "supported": true,
+          "transcript_refs": [
+            {"locator": "L163", "excerpt": "customer insight data is nothing but ingesting data from CRM web, surveys, third party"},
+            {"locator": "L219", "excerpt": "customer data, is your CRM master data, demographic data, contact account, relationship information"}
+          ]
+        },
+        {
+          "text": "I should ingest customer, order, shipment, partner and eCommerce data from the agreed internal sources into Customer Insights - Data",
+          "field": "description",
+          "supported": true,
+          "transcript_refs": [
+            {"locator": "L255", "excerpt": "Once you have the partner information brought in as one of the data source and the sales order also brought into the system as one of the data source"},
+            {"locator": "L347", "excerpt": "regarding E commerce. There is going to be a number of available sources depending on what E commerce platform we're talking about"}
+          ]
+        },
+        {
+          "text": "so that unified profiles and segments are built on the data the business trusts",
+          "field": "description",
+          "supported": true,
+          "transcript_refs": [
+            {"locator": "L219", "excerpt": "All this data is combined together which becomes your unified customer profile"}
+          ]
+        },
+        {
+          "text": "Release-1 source systems are confirmed (CRM, F&O orders and shipments, Zinfi partner data, eCommerce).",
+          "field": "acceptance_criteria",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span confirms Release-1 sources including F&O and Zinfi partner data ingest; nearest L259 and L641", "excerpt": "if you use fno, it is finance and operation system for having the sales order and invoices captured. You need not have to bring in that data in here just to have a look at what exactly I'm doing with respect to business"}
+          ]
+        },
+        {
+          "text": "Required tables and attributes are identified for each source.",
+          "field": "acceptance_criteria",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span states identifying required tables and attributes per source; nearest L219", "excerpt": "You simply click on data and say data sources, there are a lot of data sources like which you can bring it together"}
+          ]
+        },
+        {
+          "text": "Connections and refresh schedules are configured.",
+          "field": "acceptance_criteria",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span states configuring connections and refresh schedules as a Heartstream requirement; nearest L219", "excerpt": "when the update happens in sap at a regular interval, this data also refreshes"}
+          ]
+        },
+        {
+          "text": "Loaded record counts are reconciled to the source.",
+          "field": "acceptance_criteria",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span states reconciling loaded record counts to source; nearest L219", "excerpt": "Unify them, deduplicate them, consolidate them"}
+          ]
+        },
+        {
+          "text": "Account and contact relationships are preserved, so the profile is account-level with contact drill-down.",
+          "field": "acceptance_criteria",
+          "supported": true,
+          "transcript_refs": [
+            {"locator": "L273", "excerpt": "I kind of lean towards account but I would love to have the ability to dig deeper into contacts"}
+          ]
+        },
+        {
+          "text": "Failed refreshes are visible to administrators.",
+          "field": "acceptance_criteria",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span states failed refreshes visible to administrators; nearest L219", "excerpt": "the data keeps on refreshing on regular intervals, you have the most updated profile"}
+          ]
+        },
+        {
+          "text": "Ingested data is available for unification.",
+          "field": "acceptance_criteria",
+          "supported": true,
+          "transcript_refs": [
+            {"locator": "L219", "excerpt": "you unify this data in just everything from multiple sources, resolve all the duplicates. Go ahead and create a unified profile"}
+          ]
+        },
+        {
+          "text": "54-Global Marketing Content Activation",
+          "field": "feature",
+          "supported": true,
+          "transcript_refs": [
+            {"locator": "L655", "excerpt": "global market content activation is all about the content which you will be using for marketing initiative"}
+          ]
+        }
+      ]
+    },
+    {
+      "story_key": "manual-US-30",
+      "side": "manual",
+      "title": "Configure Branded Sender and Email Domain Authentication",
+      "has_unsupported_claim": true,
+      "transcript_states_requirement": false,
+      "requirement_rationale": "Philips brand licensing and compliance are discussed. No span states branded sender names, authenticated email domains, or restricting who can change sender settings.",
+      "claims": [
+        {
+          "text": "Configure Branded Sender and Email Domain Authentication",
+          "field": "title",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span states branded sender or email domain authentication; nearest L835", "excerpt": "we have very strict branding because we are licensing the Philips brand for some of our products for the next 15 years"}
+          ]
+        },
+        {
+          "text": "I should send emails from an approved, brand-appropriate sender name on an authenticated domain",
+          "field": "description",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span states approved sender names or authenticated domains; nearest L835", "excerpt": "there's lots of brand compliance that we have to keep our eyes on"}
+          ]
+        },
+        {
+          "text": "so that recipients trust and open the email and it reaches the inbox",
+          "field": "description",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span states inbox delivery or recipient trust from sender authentication; nearest L853", "excerpt": "How many people have opened my email?"}
+          ]
+        },
+        {
+          "text": "Approved sender names are configured per brand or region (for example a Philips-branded sender where licensed).",
+          "field": "acceptance_criteria",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span states configuring sender names per brand or region; nearest L835", "excerpt": "we are licensing the Philips brand for some of our products for the next 15 years"}
+          ]
+        },
+        {
+          "text": "Only authorised users can change sender settings.",
+          "field": "acceptance_criteria",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span states authorised users changing sender settings; nearest L857", "excerpt": "a manageable number of people globally that would have access to create and upload approved sources, approved content, generate emails"}
+          ]
+        },
+        {
+          "text": "Sender setup is documented.",
+          "field": "acceptance_criteria",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span states documenting sender setup; nearest L835", "excerpt": "Lynn who keeps her eye out for brand compliance"}
+          ]
+        },
+        {
+          "text": "54-Global Marketing Content Activation",
+          "field": "feature",
+          "supported": true,
+          "transcript_refs": [
+            {"locator": "L655", "excerpt": "global market content activation is all about the content which you will be using for marketing initiative"}
+          ]
+        }
+      ]
+    },
+    {
+      "story_key": "manual-US-32",
+      "side": "manual",
+      "title": "Define Brand Campaign Audiences",
+      "has_unsupported_claim": true,
+      "transcript_states_requirement": true,
+      "requirement_rationale": "The transcript states creating segments and marketing lists to run campaigns, including a dental-market email blast example. It does not state reviewing audience counts before activation, validating membership, or reusing segments across campaigns.",
+      "claims": [
+        {
+          "text": "Define Brand Campaign Audiences",
+          "field": "title",
+          "supported": true,
+          "transcript_refs": [
+            {"locator": "L163", "excerpt": "what marketing audiences and segments are required?"},
+            {"locator": "L831", "excerpt": "the journey is nothing but the actual campaign, what you are running to this particular marketing list"}
+          ]
+        },
+        {
+          "text": "I should identify and create target audiences for brand awareness campaigns",
+          "field": "description",
+          "supported": true,
+          "transcript_refs": [
+            {"locator": "L175", "excerpt": "once you have this segment, it is nothing but group of people whom you are in a position to target"}
+          ]
+        },
+        {
+          "text": "so that communications reach the intended customer, partner, and prospect groups",
+          "field": "description",
+          "supported": true,
+          "transcript_refs": [
+            {"locator": "L831", "excerpt": "this campaign needs to be run only for particular people of contacts or accounts"}
+          ]
+        },
+        {
+          "text": "Audiences can be defined using available segmentation criteria.",
+          "field": "acceptance_criteria",
+          "supported": true,
+          "transcript_refs": [
+            {"locator": "L227", "excerpt": "the rules are pretty simple customer where city is equal to Houston"}
+          ]
+        },
+        {
+          "text": "Dynamic and static audience selection is supported.",
+          "field": "acceptance_criteria",
+          "supported": true,
+          "transcript_refs": [
+            {"locator": "L821", "excerpt": "The segment is dynamic in nature gets updated"},
+            {"locator": "L831", "excerpt": "You add 10 members to this marketing list and prepare this list that is nothing but a segment"}
+          ]
+        },
+        {
+          "text": "Audience counts can be reviewed prior to activation.",
+          "field": "acceptance_criteria",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span states reviewing audience counts before activation; nearest L333", "excerpt": "it says, customer with 10 mile of 10 Miles of the azure maps, 100 customers or 100 members"}
+          ]
+        },
+        {
+          "text": "Audience membership can be validated.",
+          "field": "acceptance_criteria",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span states validating audience membership; nearest L821", "excerpt": "anyone falling in that particular segment, this journey will immediately execute"}
+          ]
+        },
+        {
+          "text": "Segments can be reused across campaigns.",
+          "field": "acceptance_criteria",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span states reusing segments across campaigns; nearest L821", "excerpt": "You create this segment only once"}
+          ]
+        },
+        {
+          "text": "Audience definitions are available within Customer Insights Journeys.",
+          "field": "acceptance_criteria",
+          "supported": true,
+          "transcript_refs": [
+            {"locator": "L821", "excerpt": "you simply say start this journey with segment as"}
+          ]
+        },
+        {
+          "text": "38-Brand Reputation Campaign Management",
+          "field": "feature",
+          "supported": true,
+          "transcript_refs": [
+            {"locator": "L775", "excerpt": "although the name says brand reputation campaign management, it really boils down to what exactly you are going to use"}
+          ]
+        }
+      ]
+    },
+    {
+      "story_key": "manual-US-33",
+      "side": "manual",
+      "title": "Execute Brand Awareness Communications",
+      "has_unsupported_claim": true,
+      "transcript_states_requirement": true,
+      "requirement_rationale": "The workshop later treats Dynamics journeys as the way to run outreach campaigns and send emails to a marketing list. It does not state delivery-status visibility, retained communication history, concurrent campaigns, or failed-delivery monitoring, and it does not state a market-visibility benefit.",
+      "claims": [
+        {
+          "text": "Execute Brand Awareness Communications",
+          "field": "title",
+          "supported": true,
+          "transcript_refs": [
+            {"locator": "L811", "excerpt": "would this would Five be how we do all of our outreach campaigns"},
+            {"locator": "L821", "excerpt": "the journey is nothing but the actual campaign, what you are running to this particular marketing list"}
+          ]
+        },
+        {
+          "text": "I should deliver brand awareness communications to selected audiences",
+          "field": "description",
+          "supported": true,
+          "transcript_refs": [
+            {"locator": "L831", "excerpt": "you create a one campaign and you just design this campaign needs to be run only for particular people of contacts or accounts"}
+          ]
+        },
+        {
+          "text": "so that Heartstream can improve market visibility and audience engagement",
+          "field": "description",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span states improving market visibility via brand awareness communications; nearest L843", "excerpt": "we want to be able to tie business that is a result of a specific campaign"}
+          ]
+        },
+        {
+          "text": "Communications are delivered to the intended audience.",
+          "field": "acceptance_criteria",
+          "supported": true,
+          "transcript_refs": [
+            {"locator": "L821", "excerpt": "anyone falling in that particular segment, this journey will immediately execute in an automated manner"}
+          ]
+        },
+        {
+          "text": "Delivery status is available.",
+          "field": "acceptance_criteria",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span states campaign delivery status; nearest L853", "excerpt": "you will be as a marketer in a position to have a look at what exactly is happening on ground"}
+          ]
+        },
+        {
+          "text": "Communication history is retained.",
+          "field": "acceptance_criteria",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span states retaining communication history; nearest L219", "excerpt": "engagement data could be your website data, your campaign interaction history, emails, events, digital engagement"}
+          ]
+        },
+        {
+          "text": "Multiple campaigns can run concurrently.",
+          "field": "acceptance_criteria",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span states multiple campaigns running concurrently; nearest L821", "excerpt": "the moment you say new journey, the system gives you trigger base or segment base"}
+          ]
+        },
+        {
+          "text": "Communication metrics are captured.",
+          "field": "acceptance_criteria",
+          "supported": true,
+          "transcript_refs": [
+            {"locator": "L853", "excerpt": "look who all people have clicked the link, how many of them in the email have clicked that particular button"}
+          ]
+        },
+        {
+          "text": "Failed deliveries can be monitored.",
+          "field": "acceptance_criteria",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span states monitoring failed deliveries; nearest L853", "excerpt": "How many people have opened my email?"}
+          ]
+        },
+        {
+          "text": "38-Brand Reputation Campaign Management",
+          "field": "feature",
+          "supported": true,
+          "transcript_refs": [
+            {"locator": "L833", "excerpt": "So brand reputation and campaign management, what we thought was all these assets and images and materials which are approved"}
+          ]
+        }
+      ]
+    },
+    {
+      "story_key": "manual-US-34",
+      "side": "manual",
+      "title": "Configure Event Communication Journeys",
+      "has_unsupported_claim": true,
+      "transcript_states_requirement": false,
+      "requirement_rationale": "Trade-show lead capture is a data-source discussion. Reminder and follow-up are stated for a two-year-purchase journey, not event invitations, reminders, or follow-up journeys.",
+      "claims": [
+        {
+          "text": "Configure Event Communication Journeys",
+          "field": "title",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span states event invitation, reminder, or follow-up journeys; nearest L335", "excerpt": "The lead data from different events where the trade show organizer provides a lead capturing system"}
+          ]
+        },
+        {
+          "text": "I should configure event-related communications",
+          "field": "description",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span states configuring event-related communications; nearest L335", "excerpt": "The lead data from different events where the trade show organizer provides a lead capturing system"}
+          ]
+        },
+        {
+          "text": "so that event invitations, reminders, and follow-up communications can be managed consistently",
+          "field": "description",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: reminder/follow-up is for two-year purchase, not events; nearest L819", "excerpt": "automatically send them a reminder and then follow up and then we can program that"}
+          ]
+        },
+        {
+          "text": "Event audiences can be selected.",
+          "field": "acceptance_criteria",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span states selecting event audiences; nearest L335", "excerpt": "at a trade show, you meet all kinds of people depending on the trade show"}
+          ]
+        },
+        {
+          "text": "Invitation and reminder communications are supported.",
+          "field": "acceptance_criteria",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span states event invitation communications; nearest L819", "excerpt": "automatically send them a reminder and then follow up"}
+          ]
+        },
+        {
+          "text": "Event response tracking is available.",
+          "field": "acceptance_criteria",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span states event response tracking; nearest L219", "excerpt": "engagement data could be your website data, your campaign interaction history, emails, events, digital engagement"}
+          ]
+        },
+        {
+          "text": "Follow-up communications can be configured.",
+          "field": "acceptance_criteria",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: follow-up is not stated for events; nearest L819", "excerpt": "automatically send them a reminder and then follow up and then we can program that"}
+          ]
+        },
+        {
+          "text": "Event communication journeys can be tested.",
+          "field": "acceptance_criteria",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span states testing event communication journeys; nearest L821", "excerpt": "the moment you say new journey, the system gives you trigger base or segment base"}
+          ]
+        },
+        {
+          "text": "Engagement metrics are available.",
+          "field": "acceptance_criteria",
+          "supported": true,
+          "transcript_refs": [
+            {"locator": "L853", "excerpt": "How many people have opened my email? How many of them have visited that particular page?"}
+          ]
+        },
+        {
+          "text": "38-Brand Reputation Campaign Management",
+          "field": "feature",
+          "supported": true,
+          "transcript_refs": [
+            {"locator": "L775", "excerpt": "although the name says brand reputation campaign management"}
+          ]
+        }
+      ]
+    },
+    {
+      "story_key": "manual-US-35",
+      "side": "manual",
+      "title": "Generate Leads from Brand Campaign Activities",
+      "has_unsupported_claim": true,
+      "transcript_states_requirement": true,
+      "requirement_rationale": "The transcript states that new leads generated from a designed journey can be tracked. It does not state lead-source attribution, qualification handoff, retained campaign association, or lead-generation dashboards. Trade-show leads are intake, not brand-campaign capture.",
+      "claims": [
+        {
+          "text": "Generate Leads from Brand Campaign Activities",
+          "field": "title",
+          "supported": true,
+          "transcript_refs": [
+            {"locator": "L163", "excerpt": "If, in case there are any new leads which got generated, everything can be tracked using this journey which we are designing"}
+          ]
+        },
+        {
+          "text": "I should capture leads generated from brand campaign interactions",
+          "field": "description",
+          "supported": true,
+          "transcript_refs": [
+            {"locator": "L163", "excerpt": "If, in case there are any new leads which got generated, everything can be tracked using this journey which we are designing"}
+          ]
+        },
+        {
+          "text": "so that interested prospects can enter the lead management process",
+          "field": "description",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span states prospects entering a lead management process from brand campaigns; nearest L341", "excerpt": "if it is just leads which are to be actioned upon by sales team in Europe and for other region, if it is to be distributed to your resellers"}
+          ]
+        },
+        {
+          "text": "Lead capture mechanisms are supported.",
+          "field": "acceptance_criteria",
+          "supported": true,
+          "transcript_refs": [
+            {"locator": "L163", "excerpt": "If, in case there are any new leads which got generated, everything can be tracked using this journey"}
+          ]
+        },
+        {
+          "text": "Lead source attribution is retained.",
+          "field": "acceptance_criteria",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span states retaining lead source attribution; nearest L163", "excerpt": "If, in case there are any new leads which got generated, everything can be tracked using this journey"}
+          ]
+        },
+        {
+          "text": "Leads are available for qualification.",
+          "field": "acceptance_criteria",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span states leads available for qualification from brand campaigns; nearest L341", "excerpt": "leads which are to be actioned upon by sales team in Europe"}
+          ]
+        },
+        {
+          "text": "Campaign association is retained.",
+          "field": "acceptance_criteria",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span states retaining campaign association on generated leads; nearest L163", "excerpt": "everything can be tracked using this journey which we are designing"}
+          ]
+        },
+        {
+          "text": "Lead generation metrics are available in reporting via dashboard or views etc.",
+          "field": "acceptance_criteria",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span states lead-generation dashboards or views; nearest L387", "excerpt": "So conversion time, engagement rate, conversion rate, segment, growth, campaign, return on investment"}
+          ]
+        },
+        {
+          "text": "38-Brand Reputation Campaign Management",
+          "field": "feature",
+          "supported": true,
+          "transcript_refs": [
+            {"locator": "L775", "excerpt": "although the name says brand reputation campaign management"}
+          ]
+        }
+      ]
+    },
+    {
+      "story_key": "manual-US-36",
+      "side": "manual",
+      "title": "Associate Campaign Responses to Customer Profiles",
+      "has_unsupported_claim": true,
+      "transcript_states_requirement": true,
+      "requirement_rationale": "Campaign interaction history is named as engagement data on the unified profile. The transcript does not state association only for journey-targeted profiles, visible interaction history in the UI, or using that history for future segmentation analysis.",
+      "claims": [
+        {
+          "text": "Associate Campaign Responses to Customer Profiles",
+          "field": "title",
+          "supported": true,
+          "transcript_refs": [
+            {"locator": "L219", "excerpt": "engagement data could be your website data, your campaign interaction history, emails, events, digital engagement"}
+          ]
+        },
+        {
+          "text": "I should associate campaign interactions with customer profiles",
+          "field": "description",
+          "supported": true,
+          "transcript_refs": [
+            {"locator": "L219", "excerpt": "All this data is combined together which becomes your unified customer profile"}
+          ]
+        },
+        {
+          "text": "so that future segmentation and engagement analysis can leverage campaign history",
+          "field": "description",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span states using campaign history for future segmentation; nearest L219", "excerpt": "that's how you go ahead and create a segment"}
+          ]
+        },
+        {
+          "text": "Campaign interactions are associated with customer profiles targeted in Journeys",
+          "field": "acceptance_criteria",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: campaign interaction history is a data type, not association for journey-targeted profiles; nearest L219", "excerpt": "engagement data could be your website data, your campaign interaction history, emails, events, digital engagement"}
+          ]
+        },
+        {
+          "text": "Interaction history is visible.",
+          "field": "acceptance_criteria",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span states campaign interaction history is visible on the profile; nearest L219", "excerpt": "your campaign interaction history, emails, events, digital engagement"}
+          ]
+        },
+        {
+          "text": "Historical campaign participation is available.",
+          "field": "acceptance_criteria",
+          "supported": true,
+          "transcript_refs": [
+            {"locator": "L219", "excerpt": "engagement data could be your website data, your campaign interaction history, emails, events, digital engagement"}
+          ]
+        },
+        {
+          "text": "38-Brand Reputation Campaign Management",
+          "field": "feature",
+          "supported": true,
+          "transcript_refs": [
+            {"locator": "L775", "excerpt": "although the name says brand reputation campaign management"}
+          ]
+        }
+      ]
+    },
+    {
+      "story_key": "manual-US-37",
+      "side": "manual",
+      "title": "Measure Brand Campaign Performance",
+      "has_unsupported_claim": true,
+      "transcript_states_requirement": true,
+      "requirement_rationale": "The transcript asks how marketing performance will be measured and states opens, clicks, landing-page hits, and connect rate for a campaign. It does not state standard journey analytics, performance trends, or authorized-user access to results.",
+      "claims": [
+        {
+          "text": "Measure Brand Campaign Performance",
+          "field": "title",
+          "supported": true,
+          "transcript_refs": [
+            {"locator": "L163", "excerpt": "how marketing performance are going to be measured"},
+            {"locator": "L853", "excerpt": "for us brand, campaign success measurement and KPIs, you very well summed it up the reach"}
+          ]
+        },
+        {
+          "text": "I should measure brand campaign performance",
+          "field": "description",
+          "supported": true,
+          "transcript_refs": [
+            {"locator": "L841", "excerpt": "when you are actually executing this kind of content or this kind of campaigns, what do you think is a success measure"}
+          ]
+        },
+        {
+          "text": "So that the effectiveness of awareness programs can be evaluated",
+          "field": "description",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span states evaluating awareness-program effectiveness; nearest L843", "excerpt": "we want to be able to tie business that is a result of a specific campaign"}
+          ]
+        },
+        {
+          "text": "Standard journey analytics are available.",
+          "field": "acceptance_criteria",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span names standard journey analytics; nearest L853", "excerpt": "the particular platform has the capability of creating landing pages"}
+          ]
+        },
+        {
+          "text": "Engagement metrics are visible.",
+          "field": "acceptance_criteria",
+          "supported": true,
+          "transcript_refs": [
+            {"locator": "L853", "excerpt": "How many people have opened my email? How many of them have visited that particular page?"}
+          ]
+        },
+        {
+          "text": "Results can be reviewed by campaign.",
+          "field": "acceptance_criteria",
+          "supported": true,
+          "transcript_refs": [
+            {"locator": "L843", "excerpt": "we want to see what type of a connect rate we have on… landing page, let's say for that campaign"}
+          ]
+        },
+        {
+          "text": "Performance trends can be monitored.",
+          "field": "acceptance_criteria",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span states monitoring campaign performance trends; nearest L387", "excerpt": "conversion time, engagement rate, conversion rate, segment, growth, campaign, return on investment"}
+          ]
+        },
+        {
+          "text": "Results are available to authorized users.",
+          "field": "acceptance_criteria",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span states authorized-user access to campaign results; nearest L949", "excerpt": "we are assuming that marketing team will have read only access to entire data"}
+          ]
+        },
+        {
+          "text": "38-Brand Reputation Campaign Management",
+          "field": "feature",
+          "supported": true,
+          "transcript_refs": [
+            {"locator": "L853", "excerpt": "for us brand, campaign success measurement and KPIs"}
+          ]
+        }
+      ]
+    },
+    {
+      "story_key": "manual-US-38",
+      "side": "manual",
+      "title": "Provide Brand Campaign Performance Dashboards",
+      "has_unsupported_claim": true,
+      "transcript_states_requirement": false,
+      "requirement_rationale": "Power BI is named for ERP/sales analytics, and marketers can look at journey opens and clicks. A brand-campaign performance dashboard as a single filterable view with defined refresh and security is not stated.",
+      "claims": [
+        {
+          "text": "Provide Brand Campaign Performance Dashboards",
+          "field": "title",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span states a brand campaign performance dashboard; nearest L259", "excerpt": "Power, BI reports or Power BI dashboard are another sources where you can have this analytics achieved"}
+          ]
+        },
+        {
+          "text": "I should access campaign performance dashboards",
+          "field": "description",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span states accessing campaign performance dashboards; nearest L853", "excerpt": "you will be as a marketer in a position to have a look at what exactly is happening on ground"}
+          ]
+        },
+        {
+          "text": "So that brand campaign effectiveness can be monitored through a single view",
+          "field": "description",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span states a single-view brand campaign dashboard; nearest L853", "excerpt": "for us brand, campaign success measurement and KPIs, you very well summed it up the reach"}
+          ]
+        },
+        {
+          "text": "Campaign KPIs are available.",
+          "field": "acceptance_criteria",
+          "supported": true,
+          "transcript_refs": [
+            {"locator": "L387", "excerpt": "conversion time, engagement rate, conversion rate, segment, growth, campaign, return on investment"}
+          ]
+        },
+        {
+          "text": "Engagement metrics are visible.",
+          "field": "acceptance_criteria",
+          "supported": true,
+          "transcript_refs": [
+            {"locator": "L853", "excerpt": "How many people have opened my email?"}
+          ]
+        },
+        {
+          "text": "Dashboard information supports campaign analysis.",
+          "field": "acceptance_criteria",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span states dashboard information for campaign analysis; nearest L259", "excerpt": "Power, BI reports or Power BI dashboard are another sources where you can have this analytics achieved"}
+          ]
+        },
+        {
+          "text": "Users can filter results using agreed dimensions.",
+          "field": "acceptance_criteria",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span states filtering campaign dashboard dimensions; nearest L843", "excerpt": "an email blast to, you know, all of the dentists in the pacific northwest"}
+          ]
+        },
+        {
+          "text": "Data refresh schedules are defined.",
+          "field": "acceptance_criteria",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span states dashboard data refresh schedules; nearest L219", "excerpt": "when the update happens in sap at a regular interval, this data also refreshes"}
+          ]
+        },
+        {
+          "text": "Access is controlled according to security requirements.",
+          "field": "acceptance_criteria",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span states security-controlled campaign dashboard access; nearest L949", "excerpt": "marketing team will have read only access to entire data"}
+          ]
+        },
+        {
+          "text": "38-Brand Reputation Campaign Management",
+          "field": "feature",
+          "supported": true,
+          "transcript_refs": [
+            {"locator": "L775", "excerpt": "although the name says brand reputation campaign management"}
+          ]
+        }
+      ]
+    },
+    {
+      "story_key": "manual-US-39",
+      "side": "manual",
+      "title": "Configure Marketing Consent and Subscription Preferences",
+      "has_unsupported_claim": true,
+      "transcript_states_requirement": true,
+      "requirement_rationale": "The transcript states consent rules, a mandatory preference-center opt-out link, collecting permission, Philips opt-in, TrustArc on websites, and GDPR. It does not state CI compliance profiles/purposes/topics, per-send consent evaluation, audit retention, or regional compliance-profile design.",
+      "claims": [
+        {
+          "text": "Configure Marketing Consent and Subscription Preferences",
+          "field": "title",
+          "supported": true,
+          "transcript_refs": [
+            {"locator": "L163", "excerpt": "What would be the trigger consent?"},
+            {"locator": "L879", "excerpt": "it is mandatory for marketeer to send one link of preference center where the customer or the end recipient can click, open up the preference center and opt out"}
+          ]
+        },
+        {
+          "text": "I should manage customer consent and communication preferences",
+          "field": "description",
+          "supported": true,
+          "transcript_refs": [
+            {"locator": "L879", "excerpt": "Do you have anything with respect to consent management in heartstream's ecosystem where you are supposed to manage these consents?"}
+          ]
+        },
+        {
+          "text": "So that only eligible recipients receive brand and marketing communications in accordance with their choices and applicable regional requirements",
+          "field": "description",
+          "supported": true,
+          "transcript_refs": [
+            {"locator": "L879", "excerpt": "only the one who has approved the marketing reach out will be done"},
+            {"locator": "L905", "excerpt": "we've got to be compliant with GDPR"}
+          ]
+        },
+        {
+          "text": "Consent is configured using the agreed compliance profiles, purposes, and topics.",
+          "field": "acceptance_criteria",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span states compliance profiles, purposes, and topics; nearest L881", "excerpt": "we use a company called trustarc, TRUST a RC. And they are the ones who manage those buttons and security preferences when you get onto our websites"}
+          ]
+        },
+        {
+          "text": "Communication preferences are managed by supported channel and purpose, where applicable.",
+          "field": "acceptance_criteria",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span states preferences by channel and purpose; nearest L881", "excerpt": "they are the ones who manage those buttons and security preferences when you get onto our websites"}
+          ]
+        },
+        {
+          "text": "Recipients can update their preferences through the agreed preference-center experience.",
+          "field": "acceptance_criteria",
+          "supported": true,
+          "transcript_refs": [
+            {"locator": "L879", "excerpt": "the customer or the end recipient can click, open up the preference center and opt out of such kind of messages"}
+          ]
+        },
+        {
+          "text": "Unsubscribed or ineligible recipients are excluded from applicable journeys.",
+          "field": "acceptance_criteria",
+          "supported": true,
+          "transcript_refs": [
+            {"locator": "L879", "excerpt": "only the one who has approved the marketing reach out will be done"}
+          ]
+        },
+        {
+          "text": "Consent is evaluated before each communication is sent.",
+          "field": "acceptance_criteria",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span states consent evaluation before each send; nearest L879", "excerpt": "only the one who has approved the marketing reach out will be done"}
+          ]
+        },
+        {
+          "text": "Changes to preferences affect subsequent journey eligibility.",
+          "field": "acceptance_criteria",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span states preference changes affecting subsequent journey eligibility; nearest L885", "excerpt": "we would need to have that capability to like, hey, opt out"}
+          ]
+        },
+        {
+          "text": "Consent records and changes are retained for audit and compliance purposes.",
+          "field": "acceptance_criteria",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span states retaining consent records for audit; nearest L905", "excerpt": "we've got to be compliant with GDPR but there's nothing outside of like industry standard practice"}
+          ]
+        },
+        {
+          "text": "Regional consent requirements are supported through the agreed compliance-profile design.",
+          "field": "acceptance_criteria",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: GDPR is stated; compliance-profile design is not; nearest L899", "excerpt": "Is there any specific consent management being taken care in Europe region?"}
+          ]
+        },
+        {
+          "text": "38-Brand Reputation Campaign Management",
+          "field": "feature",
+          "supported": true,
+          "transcript_refs": [
+            {"locator": "L775", "excerpt": "although the name says brand reputation campaign management"}
+          ]
+        }
+      ]
+    },
+    {
+      "story_key": "manual-US-41",
+      "side": "manual",
+      "title": "Verify Campaign Readiness Before Activation",
+      "has_unsupported_claim": true,
+      "transcript_states_requirement": true,
+      "requirement_rationale": "The transcript states marketing review/approval before an email blast is turned on, plus later agreement that a higher-level marketing approver must verify the campaign. It does not state a readiness checklist, audience validation, journey-configuration review, or schedule verification.",
+      "claims": [
+        {
+          "text": "Verify Campaign Readiness Before Activation",
+          "field": "title",
+          "supported": true,
+          "transcript_refs": [
+            {"locator": "L863", "excerpt": "before launching a particular campaign, let's say, for example, you're designing a email blast campaign, do you have any approval criteria in place?"},
+            {"locator": "L991", "excerpt": "someone at a higher level in marketing needs to approve"}
+          ]
+        },
+        {
+          "text": "I should verify audience, journey configuration, schedule, and approved content before campaign launch",
+          "field": "description",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: approval of campaign and approved content is stated; audience, journey config, and schedule are not; nearest L865", "excerpt": "we're pulling from an I'll say an approved playbook of content. And as long as we don't do any crazy messaging, we review it through the marketing team and it goes out"}
+          ]
+        },
+        {
+          "text": "So that campaigns are deployed accurately and consistently",
+          "field": "description",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span states accurate consistent deployment as the readiness benefit; nearest L989", "excerpt": "someone has to verify the content even if it is approved. So it is reaching to the right persons"}
+          ]
+        },
+        {
+          "text": "Campaign readiness checklist is completed before activation.",
+          "field": "acceptance_criteria",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span states a campaign readiness checklist; nearest L1003", "excerpt": "We check a box that says, I understand that the content in this campaign is all made from approved documents"}
+          ]
+        },
+        {
+          "text": "Target audience is validated.",
+          "field": "acceptance_criteria",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span states validating the target audience as a readiness step; nearest L985", "excerpt": "if you're running a campaign especially for the North America region, what should not trigger the emails to the Europe region customers"}
+          ]
+        },
+        {
+          "text": "Journey configuration is reviewed.",
+          "field": "acceptance_criteria",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span states reviewing journey configuration before activation; nearest L863", "excerpt": "That particular campaign is to be reviewed approved? And only then it will be, you know, turned on for execution"}
+          ]
+        },
+        {
+          "text": "Content references are confirmed.",
+          "field": "acceptance_criteria",
+          "supported": true,
+          "transcript_refs": [
+            {"locator": "L865", "excerpt": "We do not attach any literature or web content that has not already been approved"}
+          ]
+        },
+        {
+          "text": "Schedule is verified.",
+          "field": "acceptance_criteria",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span states verifying campaign schedule; nearest L863", "excerpt": "only then it will be, you know, turned on for execution"}
+          ]
+        },
+        {
+          "text": "Campaign can proceed to activation only after readiness review.",
+          "field": "acceptance_criteria",
+          "supported": true,
+          "transcript_refs": [
+            {"locator": "L991", "excerpt": "I don't think any marketing rep can just do willy nilly whatever they want as long as they use approved content. I think there has to be a process of approvals"}
+          ]
+        },
+        {
+          "text": "58-Marketing Asset Governance & Campaign Readiness",
+          "field": "feature",
+          "supported": true,
+          "transcript_refs": [
+            {"locator": "L163", "excerpt": "marketing, asset governance and campaign readiness. That is one aspect we are going to cover"}
+          ]
+        }
+      ]
+    },
+    {
+      "story_key": "manual-US-42",
+      "side": "manual",
+      "title": "Monitor Campaign Readiness and Deployment Status",
+      "has_unsupported_claim": true,
+      "transcript_states_requirement": false,
+      "requirement_rationale": "Campaign readiness is pre-launch approval, not monitoring planned, in-preparation, active, or completed deployment status.",
+      "claims": [
+        {
+          "text": "Monitor Campaign Readiness and Deployment Status",
+          "field": "title",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span states monitoring planned vs active vs completed campaign status; nearest L863", "excerpt": "That particular campaign is to be reviewed approved? And only then it will be, you know, turned on for execution"}
+          ]
+        },
+        {
+          "text": "I should monitor campaigns that are planned, in preparation, active, or completed",
+          "field": "description",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span states campaign lifecycle statuses; nearest L863", "excerpt": "before launching a particular campaign"}
+          ]
+        },
+        {
+          "text": "So that campaign execution status remains visible across the marketing organization",
+          "field": "description",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span states organization-wide campaign execution status; nearest L853", "excerpt": "you will be as a marketer in a position to have a look at what exactly is happening on ground"}
+          ]
+        },
+        {
+          "text": "Campaign status is visible.",
+          "field": "acceptance_criteria",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span states visible campaign status; nearest L853", "excerpt": "have a look at what exactly is happening on ground"}
+          ]
+        },
+        {
+          "text": "Draft and active campaigns can be distinguished.",
+          "field": "acceptance_criteria",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span states distinguishing draft and active campaigns; nearest L781", "excerpt": "let me try and open one demo, you know, draft email"}
+          ]
+        },
+        {
+          "text": "Campaign schedules are available.",
+          "field": "acceptance_criteria",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span states campaign schedules being available; nearest L821", "excerpt": "a repeating journey where all audience member repeats the journey or one time journey"}
+          ]
+        },
+        {
+          "text": "Readiness status can be reviewed.",
+          "field": "acceptance_criteria",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: readiness is approval discussion, not a reviewable status field; nearest L863", "excerpt": "do you have any approval criteria in place?"}
+          ]
+        },
+        {
+          "text": "Deployment history is retained.",
+          "field": "acceptance_criteria",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span states retaining deployment history; nearest L219", "excerpt": "your campaign interaction history"}
+          ]
+        },
+        {
+          "text": "Authorized users can access campaign status information.",
+          "field": "acceptance_criteria",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span states authorized access to campaign status; nearest L857", "excerpt": "less than four people globally guessing"}
+          ]
+        },
+        {
+          "text": "58-Marketing Asset Governance & Campaign Readiness",
+          "field": "feature",
+          "supported": true,
+          "transcript_refs": [
+            {"locator": "L163", "excerpt": "marketing, asset governance and campaign readiness"}
+          ]
+        }
+      ]
+    },
+    {
+      "story_key": "manual-US-43",
+      "side": "manual",
+      "title": "Provide Campaign Governance and Readiness Dashboards",
+      "has_unsupported_claim": true,
+      "transcript_states_requirement": false,
+      "requirement_rationale": "The agenda names asset governance and campaign readiness. No span states readiness or governance dashboards or views.",
+      "claims": [
+        {
+          "text": "Provide Campaign Governance and Readiness Dashboards",
+          "field": "title",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span states campaign governance or readiness dashboards; nearest L163", "excerpt": "marketing, asset governance and campaign readiness"}
+          ]
+        },
+        {
+          "text": "I should access readiness and governance dashboards",
+          "field": "description",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span states accessing readiness and governance dashboards; nearest L259", "excerpt": "Power, BI reports or Power BI dashboard are another sources where you can have this analytics achieved"}
+          ]
+        },
+        {
+          "text": "So that campaign preparation and activation activities can be monitored effectively",
+          "field": "description",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span states monitoring preparation and activation via dashboards; nearest L863", "excerpt": "That particular campaign is to be reviewed approved?"}
+          ]
+        },
+        {
+          "text": "Readiness metrics are available via dashboard or views.",
+          "field": "acceptance_criteria",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span states readiness metrics via dashboard or views; nearest L163", "excerpt": "marketing, asset governance and campaign readiness"}
+          ]
+        },
+        {
+          "text": "Planned and active campaigns can be reviewed.",
+          "field": "acceptance_criteria",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span states reviewing planned and active campaigns on a dashboard; nearest L863", "excerpt": "before launching a particular campaign"}
+          ]
+        },
+        {
+          "text": "Dashboard access is security controlled.",
+          "field": "acceptance_criteria",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span states security-controlled readiness dashboard access; nearest L949", "excerpt": "marketing team will have read only access to entire data"}
+          ]
+        },
+        {
+          "text": "58-Marketing Asset Governance & Campaign Readiness",
+          "field": "feature",
+          "supported": true,
+          "transcript_refs": [
+            {"locator": "L855", "excerpt": "move ahead on our last topic… asset governance and campaign readiness and marketing strategy and activation planning"}
+          ]
+        }
+      ]
+    },
+    {
+      "story_key": "manual-US-45",
+      "side": "manual",
+      "title": "Define Marketing Strategy Target Audiences",
+      "has_unsupported_claim": true,
+      "transcript_states_requirement": true,
+      "requirement_rationale": "The transcript states required marketing audiences and segments, vertical markets, partner/region conditions, and using segments in journeys. It does not state an agreed segmentation framework, reviewing counts before activation, or authorized maintenance of audience criteria.",
+      "claims": [
+        {
+          "text": "Define Marketing Strategy Target Audiences",
+          "field": "title",
+          "supported": true,
+          "transcript_refs": [
+            {"locator": "L163", "excerpt": "what marketing audiences and segments are required?"},
+            {"locator": "L911", "excerpt": "marketing strategy and activation planning, we've covered in the previous discussions, what segmentation requirements are"}
+          ]
+        },
+        {
+          "text": "I should define the customer, account, partner, distributor, market, and regional audiences relevant to a marketing strategy",
+          "field": "description",
+          "supported": true,
+          "transcript_refs": [
+            {"locator": "L177", "excerpt": "we do a lot of segmentation around hospitals versus emergency medical services, versus kind of non healthcare vertical"},
+            {"locator": "L175", "excerpt": "you want to have list of all partner contacts who are serving a specific region"}
+          ]
+        },
+        {
+          "text": "So that activation plans are directed toward the intended business populations",
+          "field": "description",
+          "supported": true,
+          "transcript_refs": [
+            {"locator": "L175", "excerpt": "once you have this segment, it is nothing but group of people whom you are in a position to target"}
+          ]
+        },
+        {
+          "text": "Target-audience criteria can be defined using available customer, account, partner, distributor, geographic, and market attributes.",
+          "field": "acceptance_criteria",
+          "supported": true,
+          "transcript_refs": [
+            {"locator": "L177", "excerpt": "we could segment our markets that way with the tool"},
+            {"locator": "L227", "excerpt": "customer where city is equal to Houston"}
+          ]
+        },
+        {
+          "text": "Audience definitions align with the agreed segmentation framework.",
+          "field": "acceptance_criteria",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span states an agreed segmentation framework; nearest L187", "excerpt": "asking about what are the different type of segments you would like to implement in the system"}
+          ]
+        },
+        {
+          "text": "Audience membership and counts can be reviewed before activation.",
+          "field": "acceptance_criteria",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span states reviewing membership and counts before activation; nearest L333", "excerpt": "100 customers or 100 members"}
+          ]
+        },
+        {
+          "text": "Audience definitions can be refined as underlying data changes.",
+          "field": "acceptance_criteria",
+          "supported": true,
+          "transcript_refs": [
+            {"locator": "L821", "excerpt": "The segment is dynamic in nature gets updated"}
+          ]
+        },
+        {
+          "text": "Authorized users can access and maintain the audience criteria.",
+          "field": "acceptance_criteria",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span states authorized users maintaining audience criteria; nearest L449", "excerpt": "once you know how a sample segment is to be created, you work on it day in day out"}
+          ]
+        },
+        {
+          "text": "Approved audiences can be used in Customer Insights - Journeys.",
+          "field": "acceptance_criteria",
+          "supported": true,
+          "transcript_refs": [
+            {"locator": "L821", "excerpt": "you simply say start this journey with segment as"}
+          ]
+        },
+        {
+          "text": "60-Marketing Strategy & Activation Planning",
+          "field": "feature",
+          "supported": true,
+          "transcript_refs": [
+            {"locator": "L911", "excerpt": "marketing strategy and activation planning, we've covered in the previous discussions"}
+          ]
+        }
+      ]
+    },
+    {
+      "story_key": "manual-US-46",
+      "side": "manual",
+      "title": "Create Strategic Customer and Account Segments",
+      "has_unsupported_claim": true,
+      "transcript_states_requirement": true,
+      "requirement_rationale": "A match does not prove every claim. The transcript states creating customer/account segments (verticals, city, product purchase) that are dynamic and usable in journeys. It does not state strategy-prioritized reusable segments, membership preview/validation, documented intended uses, or segmentation on engagement.",
+      "claims": [
+        {
+          "text": "Create Strategic Customer and Account Segments",
+          "field": "title",
+          "supported": true,
+          "transcript_refs": [
+            {"locator": "L177", "excerpt": "Do a lot of segmentation around hospitals versus emergency medical services, versus kind of non healthcare vertical"},
+            {"locator": "L273", "excerpt": "I kind of lean towards account but I would love to have the ability to dig deeper into contacts"}
+          ]
+        },
+        {
+          "text": "I should create reusable segments for customers and accounts prioritized by the marketing strategy",
+          "field": "description",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: create-once segments are stated; prioritized by marketing strategy is not; nearest L821", "excerpt": "You create this segment only once condition would be all the customers who had purchased aed device"}
+          ]
+        },
+        {
+          "text": "So that strategic audiences can be consistently targeted across marketing programs",
+          "field": "description",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span states consistent targeting across marketing programs; nearest L175", "excerpt": "once you have this segment, it is nothing but group of people whom you are in a position to target"}
+          ]
+        },
+        {
+          "text": "Segments can be created using agreed customer and account attributes.",
+          "field": "acceptance_criteria",
+          "supported": true,
+          "transcript_refs": [
+            {"locator": "L227", "excerpt": "the rules are pretty simple customer where city is equal to Houston"}
+          ]
+        },
+        {
+          "text": "Segmentation can consider region, industry, vertical, product ownership, account classification, and engagement where data is available.",
+          "field": "acceptance_criteria",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: vertical, region, and product purchase are stated; engagement as a segmentation dimension is not; nearest L177", "excerpt": "we do a lot of segmentation around hospitals versus emergency medical services"}
+          ]
+        },
+        {
+          "text": "Segment membership can be previewed and validated.",
+          "field": "acceptance_criteria",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: Insights preview is an AI suggestion feature, not membership validation; nearest L231", "excerpt": "if I have to talk about suggestions inside preview"}
+          ]
+        },
+        {
+          "text": "Dynamic segments refresh when underlying data changes.",
+          "field": "acceptance_criteria",
+          "supported": true,
+          "transcript_refs": [
+            {"locator": "L821", "excerpt": "The segment is dynamic in nature gets updated"}
+          ]
+        },
+        {
+          "text": "Segment definitions and intended uses are documented.",
+          "field": "acceptance_criteria",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span states documenting segment definitions and intended uses; nearest L187", "excerpt": "what are the different type of segments you would like to implement in the system"}
+          ]
+        },
+        {
+          "text": "Segments are available for journey activation.",
+          "field": "acceptance_criteria",
+          "supported": true,
+          "transcript_refs": [
+            {"locator": "L821", "excerpt": "start this journey with segment as"}
+          ]
+        },
+        {
+          "text": "60-Marketing Strategy & Activation Planning",
+          "field": "feature",
+          "supported": true,
+          "transcript_refs": [
+            {"locator": "L911", "excerpt": "marketing strategy and activation planning, we've covered in the previous discussions, what segmentation requirements are"}
+          ]
+        }
+      ]
+    },
+    {
+      "story_key": "manual-US-47",
+      "side": "manual",
+      "title": "Create Strategic Partner and Distributor Segments",
+      "has_unsupported_claim": true,
+      "transcript_states_requirement": true,
+      "requirement_rationale": "The transcript states fetching partners by conditions, building partner segments, multi-vertical distributors, and partner contacts on accounts. It does not state identifying required partner data, partner tier or product-portfolio attributes, distinguishing strategic distributors, or validating membership.",
+      "claims": [
+        {
+          "text": "Create Strategic Partner and Distributor Segments",
+          "field": "title",
+          "supported": true,
+          "transcript_refs": [
+            {"locator": "L175", "excerpt": "it can fetch all such partners with what relevant information you want and whatever conditions you want"},
+            {"locator": "L181", "excerpt": "we have distributors, who will do business in more than one segment"}
+          ]
+        },
+        {
+          "text": "I should create strategic partner and distributor segments",
+          "field": "description",
+          "supported": true,
+          "transcript_refs": [
+            {"locator": "L175", "excerpt": "you can build segments. And once you have this segment, it is nothing but group of people whom you are in a position to target"}
+          ]
+        },
+        {
+          "text": "So that activation plans can differentiate communications based on partner importance, coverage, performance, and business characteristics",
+          "field": "description",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: partner conditions and performance analysis are stated; differentiating communications by importance/coverage is not; nearest L253", "excerpt": "we want to analyze all the deliveries in the us market to understand which partners are performing better than expected"}
+          ]
+        },
+        {
+          "text": "Partner and distributor data required for segmentation is identified.",
+          "field": "acceptance_criteria",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: sources are discussed, not that required partner data is identified; nearest L255", "excerpt": "Once you have the partner information brought in as one of the data source"}
+          ]
+        },
+        {
+          "text": "Segments can use agreed attributes such as partner type, region, tier (if applicable), product portfolio, and performance where available.",
+          "field": "acceptance_criteria",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: region and sales performance are stated; partner tier and product portfolio are not; nearest L175", "excerpt": "list of all partner contacts who are serving a specific region"}
+          ]
+        },
+        {
+          "text": "Strategic distributors can be distinguished from other partners.",
+          "field": "acceptance_criteria",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span distinguishes strategic distributors from other partners; nearest L181", "excerpt": "we have distributors, who will do business in more than one segment"}
+          ]
+        },
+        {
+          "text": "Partner contacts are associated with the appropriate accounts.",
+          "field": "acceptance_criteria",
+          "supported": true,
+          "transcript_refs": [
+            {"locator": "L175", "excerpt": "I am now your partner and Nitesh becomes your partner contact. So this contact information with category as partner will be available in dynamic CRM"}
+          ]
+        },
+        {
+          "text": "Segment membership can be validated and refreshed.",
+          "field": "acceptance_criteria",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: dynamic refresh is stated; validating partner segment membership is not; nearest L821", "excerpt": "The segment is dynamic in nature gets updated"}
+          ]
+        },
+        {
+          "text": "Approved segments can be activated through journeys.",
+          "field": "acceptance_criteria",
+          "supported": true,
+          "transcript_refs": [
+            {"locator": "L175", "excerpt": "have the journeys executed for sending them emailers"}
+          ]
+        },
+        {
+          "text": "60-Marketing Strategy & Activation Planning",
+          "field": "feature",
+          "supported": true,
+          "transcript_refs": [
+            {"locator": "L911", "excerpt": "what segmentation requirements are, how campaign activation approach and ownership"}
+          ]
+        }
+      ]
+    },
+    {
+      "story_key": "manual-US-48",
+      "side": "manual",
+      "title": "Configure Strategy-Aligned Customer Journeys",
+      "has_unsupported_claim": true,
+      "transcript_states_requirement": true,
+      "requirement_rationale": "The transcript states segment-based and trigger-based journeys, using approved content, and capturing journey activity. It does not state strategy-aligned activation plans, entry/exit/exclusion, waits/branches, consent-before-delivery, or preview/test before activate.",
+      "claims": [
+        {
+          "text": "Configure Strategy-Aligned Customer Journeys",
+          "field": "title",
+          "supported": true,
+          "transcript_refs": [
+            {"locator": "L163", "excerpt": "What customer journeys you will be implementing or must be implemented?"},
+            {"locator": "L821", "excerpt": "the moment you say new journey, the system gives you trigger base or segment base"}
+          ]
+        },
+        {
+          "text": "I should configure customer journeys aligned with the approved marketing activation plan",
+          "field": "description",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: journeys are stated; alignment to an approved activation plan is not; nearest L911", "excerpt": "how campaign activation approach and ownership? Is that is understood"}
+          ]
+        },
+        {
+          "text": "So that strategic audiences receive the planned communications at the appropriate time",
+          "field": "description",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span states planned communications at the appropriate time; nearest L821", "excerpt": "the moment any new purchase happen or the shipment is confirmed, you need to target that particular distributor"}
+          ]
+        },
+        {
+          "text": "The journey uses an approved strategic audience or segment.",
+          "field": "acceptance_criteria",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: journeys use a segment; approved strategic audience is not stated; nearest L821", "excerpt": "you simply say start this journey with segment as"}
+          ]
+        },
+        {
+          "text": "Journey entry, exit, and exclusion criteria are defined.",
+          "field": "acceptance_criteria",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: repeating vs one-time start is stated; exit and exclusion criteria are not; nearest L821", "excerpt": "a repeating journey where all audience member repeats the journey or one time journey where newly added audience member can start anytime"}
+          ]
+        },
+        {
+          "text": "Communication steps, timing, waits, and branches reflect the activation plan.",
+          "field": "acceptance_criteria",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span states waits, branches, or activation-plan timing; nearest L821", "excerpt": "drafting this entire journey as you like"}
+          ]
+        },
+        {
+          "text": "Approved marketing content is used.",
+          "field": "acceptance_criteria",
+          "supported": true,
+          "transcript_refs": [
+            {"locator": "L865", "excerpt": "we're pulling from an I'll say an approved playbook of content"}
+          ]
+        },
+        {
+          "text": "Consent and communication eligibility are evaluated before delivery.",
+          "field": "acceptance_criteria",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: consent is a separate topic, not evaluated before each journey delivery; nearest L879", "excerpt": "only the one who has approved the marketing reach out will be done"}
+          ]
+        },
+        {
+          "text": "The journey can be previewed, tested, and activated.",
+          "field": "acceptance_criteria",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span states previewing or testing a journey before activation; nearest L821", "excerpt": "the moment you say new journey, the system gives you trigger base or segment base"}
+          ]
+        },
+        {
+          "text": "Journey interactions are captured for measurement.",
+          "field": "acceptance_criteria",
+          "supported": true,
+          "transcript_refs": [
+            {"locator": "L163", "excerpt": "in real time, you get to see what exactly is happening"},
+            {"locator": "L853", "excerpt": "How many people have opened my email?"}
+          ]
+        },
+        {
+          "text": "60-Marketing Strategy & Activation Planning",
+          "field": "feature",
+          "supported": true,
+          "transcript_refs": [
+            {"locator": "L911", "excerpt": "how campaign activation approach and ownership"}
+          ]
+        }
+      ]
+    },
+    {
+      "story_key": "manual-US-49",
+      "side": "manual",
+      "title": "Personalize Communications for Strategic Audiences",
+      "has_unsupported_claim": true,
+      "transcript_states_requirement": false,
+      "requirement_rationale": "Audience targeting is stated. Profile-attribute personalization, content variations, conditional content, defaults, and preview of variations are not stated. Regional adaptation is an agenda phrase, not personalization.",
+      "claims": [
+        {
+          "text": "Personalize Communications for Strategic Audiences",
+          "field": "title",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span states personalizing communications with profile attributes; nearest L175", "excerpt": "once you have this segment, it is nothing but group of people whom you are in a position to target"}
+          ]
+        },
+        {
+          "text": "I should personalize strategy-aligned communications using available customer, account, partner, and audience information",
+          "field": "description",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span states personalization using profile information; nearest L279", "excerpt": "if you can, I don't know give some sort of which type of information should this contact actually receive"}
+          ]
+        },
+        {
+          "text": "So that each strategic audience receives relevant messaging",
+          "field": "description",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span states relevant messaging via personalization; nearest L843", "excerpt": "If we have a dental market campaign, right? And we, and we do an email blast to, you know, all of the dentists"}
+          ]
+        },
+        {
+          "text": "Approved profile attributes can be used for personalization.",
+          "field": "acceptance_criteria",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span states using profile attributes for personalization; nearest L227", "excerpt": "On the right hand side, what you see is nothing but the attributes"}
+          ]
+        },
+        {
+          "text": "Content variations can be configured for defined audiences.",
+          "field": "acceptance_criteria",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span states content variations per audience; nearest L775", "excerpt": "regional and local marketing adaption"}
+          ]
+        },
+        {
+          "text": "Conditional content can be applied where supported.",
+          "field": "acceptance_criteria",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span states conditional content; nearest L783", "excerpt": "I'll have one additional element added. Let's say image I'm adding"}
+          ]
+        },
+        {
+          "text": "Default content is defined when personalization data is unavailable.",
+          "field": "acceptance_criteria",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span states default content when personalization data is unavailable; nearest L783", "excerpt": "this system specifically deals with having all this content prepared beforehand"}
+          ]
+        },
+        {
+          "text": "Each supported variation can be previewed and tested.",
+          "field": "acceptance_criteria",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span states previewing personalization variations; nearest L781", "excerpt": "let me try and open one demo, you know, draft email"}
+          ]
+        },
+        {
+          "text": "Personalization respects consent, privacy, and regional requirements.",
+          "field": "acceptance_criteria",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: consent is stated without tying it to personalization; nearest L879", "excerpt": "consent management plays an important role"}
+          ]
+        },
+        {
+          "text": "60-Marketing Strategy & Activation Planning",
+          "field": "feature",
+          "supported": true,
+          "transcript_refs": [
+            {"locator": "L911", "excerpt": "marketing strategy and activation planning, we've covered in the previous discussions"}
+          ]
+        }
+      ]
+    },
+    {
+      "story_key": "manual-US-50",
+      "side": "manual",
+      "title": "Activate Marketing Programs Across Priority Markets",
+      "has_unsupported_claim": true,
+      "transcript_states_requirement": false,
+      "requirement_rationale": "Worldwide product-insight access and a consolidated regional marketing org are discussed. A North America campaign should not email Europe is an approval question, not a stated system requirement to activate programs across priority markets with region-specific schedules, content, consent, and comparable results.",
+      "claims": [
+        {
+          "text": "Activate Marketing Programs Across Priority Markets",
+          "field": "title",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span states activating marketing programs across priority markets; nearest L305", "excerpt": "those of us in product marketing, absolutely need to see the worldwide picture"}
+          ]
+        },
+        {
+          "text": "I should activate marketing programs for selected markets and regions",
+          "field": "description",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: NA vs Europe is an approval constraint, not region activation; nearest L985", "excerpt": "if you're running a campaign especially for the North America region, what should not trigger the emails to the Europe region customers"}
+          ]
+        },
+        {
+          "text": "So that approved strategies can be executed consistently while accommodating relevant regional differences",
+          "field": "description",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: regional product-feature differences are upstream insights, not activation; nearest L305", "excerpt": "there could be regional differences in those features"}
+          ]
+        },
+        {
+          "text": "Target markets and regions can be identified using available profile data.",
+          "field": "acceptance_criteria",
+          "supported": true,
+          "transcript_refs": [
+            {"locator": "L227", "excerpt": "customer where city is equal to Houston"},
+            {"locator": "L175", "excerpt": "partner contacts who are serving a specific region"}
+          ]
+        },
+        {
+          "text": "Region-specific audiences and schedules can be configured.",
+          "field": "acceptance_criteria",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: region audiences exist; region-specific schedules do not; nearest L175", "excerpt": "list of all partner contacts who are serving a specific region"}
+          ]
+        },
+        {
+          "text": "Approved regional content variations can be used where applicable.",
+          "field": "acceptance_criteria",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: regional adaptation is an agenda phrase, not content variations; nearest L775", "excerpt": "legal compliance, cleared messaging, and regional and local marketing adaption"}
+          ]
+        },
+        {
+          "text": "Regional consent and communication requirements are applied.",
+          "field": "acceptance_criteria",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: GDPR is stated; applying regional consent in activation is not; nearest L905", "excerpt": "we've got to be compliant with GDPR"}
+          ]
+        },
+        {
+          "text": "Journey execution can be monitored by region or market.",
+          "field": "acceptance_criteria",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span states monitoring journeys by region or market; nearest L853", "excerpt": "you will be as a marketer in a position to have a look at what exactly is happening on ground"}
+          ]
+        },
+        {
+          "text": "Results can be compared across activated markets where data is available.",
+          "field": "acceptance_criteria",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span states comparing results across markets; nearest L305", "excerpt": "we would need to see… customer insights as to what they might want in the next product worldwide"}
+          ]
+        },
+        {
+          "text": "60-Marketing Strategy & Activation Planning",
+          "field": "feature",
+          "supported": true,
+          "transcript_refs": [
+            {"locator": "L911", "excerpt": "marketing strategy and activation planning"}
+          ]
+        }
+      ]
+    },
+    {
+      "story_key": "manual-US-51",
+      "side": "manual",
+      "title": "Measure Marketing Activation Plan Performance",
+      "has_unsupported_claim": true,
+      "transcript_states_requirement": true,
+      "requirement_rationale": "The transcript states measuring campaign success (opens, clicks, landing-page hits, desire to tie to sale). It does not state slicing by strategic audience/market/region/program, comparing membership vs engagement trends, or OOB Customer Insights analytics as the baseline.",
+      "claims": [
+        {
+          "text": "Measure Marketing Activation Plan Performance",
+          "field": "title",
+          "supported": true,
+          "transcript_refs": [
+            {"locator": "L163", "excerpt": "how marketing performance are going to be measured"},
+            {"locator": "L843", "excerpt": "we want to be able to tie business that is a result of a specific campaign"}
+          ]
+        },
+        {
+          "text": "I should measure audience engagement and journey performance against the intended activation plan",
+          "field": "description",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: engagement measurement is stated; against an intended activation plan is not; nearest L853", "excerpt": "How many people have opened my email?"}
+          ]
+        },
+        {
+          "text": "So that I can determine whether the marketing strategy is being executed effectively",
+          "field": "description",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span states judging whether the marketing strategy is executed effectively; nearest L843", "excerpt": "everything is out to go after more business"}
+          ]
+        },
+        {
+          "text": "Engagement measures are available for activated journeys and communications.",
+          "field": "acceptance_criteria",
+          "supported": true,
+          "transcript_refs": [
+            {"locator": "L853", "excerpt": "How many people have opened my email? How many of them have visited that particular page?"}
+          ]
+        },
+        {
+          "text": "Results can be reviewed by strategic audience, market, region, or program where supported.",
+          "field": "acceptance_criteria",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: connect rate for a named campaign is stated; slices by audience/market/region/program are not; nearest L843", "excerpt": "we want to see what type of a connect rate we have on… landing page, let's say for that campaign"}
+          ]
+        },
+        {
+          "text": "Delivery, opens, clicks, responses, and available conversion indicators can be monitored.",
+          "field": "acceptance_criteria",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: opens, clicks, and landing hits are stated; delivery and responses as a bundle are not; nearest L853", "excerpt": "look who all people have clicked the link, how many of them in the email have clicked that particular button"}
+          ]
+        },
+        {
+          "text": "Segment membership and engagement trends can be compared.",
+          "field": "acceptance_criteria",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span states comparing segment membership and engagement trends; nearest L387", "excerpt": "engagement rate, conversion rate, segment, growth"}
+          ]
+        },
+        {
+          "text": "Standard Customer Insights analytics are used as the baseline.",
+          "field": "acceptance_criteria",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span states standard Customer Insights analytics as the baseline; nearest L853", "excerpt": "the current platform which you just saw the journey segregation"}
+          ]
+        },
+        {
+          "text": "Reporting requirements are supported by available OOB standard analytics provided by system",
+          "field": "acceptance_criteria",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span names OOB standard analytics for reporting; nearest L853", "excerpt": "the capabilities of the system, whatever it is offered is nearly, you know, meeting the requirement"}
+          ]
+        },
+        {
+          "text": "60-Marketing Strategy & Activation Planning",
+          "field": "feature",
+          "supported": true,
+          "transcript_refs": [
+            {"locator": "L911", "excerpt": "marketing strategy and activation planning"}
+          ]
+        }
+      ]
+    },
+    {
+      "story_key": "manual-US-52",
+      "side": "manual",
+      "title": "Refine Strategic Audiences Using Activation Insights",
+      "has_unsupported_claim": true,
+      "transcript_states_requirement": false,
+      "requirement_rationale": "Improving reach from analytics is stated generally. No span states refining segment criteria from journey responders versus non-responders and reusing those audiences.",
+      "claims": [
+        {
+          "text": "Refine Strategic Audiences Using Activation Insights",
+          "field": "title",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span states refining strategic audiences from journey engagement insights; nearest L311", "excerpt": "How do I get this to more and more people? What my data says, how do I improve? How do I make it more reachable"}
+          ]
+        },
+        {
+          "text": "I should use engagement and response insights to refine strategic audiences",
+          "field": "description",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span states using engagement insights to refine audiences; nearest L311", "excerpt": "What my data says, how do I improve?"}
+          ]
+        },
+        {
+          "text": "So that future marketing activation becomes more relevant and effective",
+          "field": "description",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span states future activation becoming more relevant from refined audiences; nearest L311", "excerpt": "How do I make it more reachable and all those kind of stuff the system is capable enough"}
+          ]
+        },
+        {
+          "text": "Journey and communication engagement data is available for audience analysis.",
+          "field": "acceptance_criteria",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: engagement data exists for campaign review, not for audience analysis; nearest L853", "excerpt": "How many people have opened my email?"}
+          ]
+        },
+        {
+          "text": "Responding and non-responding audience groups can be identified.",
+          "field": "acceptance_criteria",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span states identifying responders vs non-responders as audience groups; nearest L853", "excerpt": "How many of them have visited the page but never went on to the order management system?"}
+          ]
+        },
+        {
+          "text": "Segment criteria can be adjusted using approved engagement indicators.",
+          "field": "acceptance_criteria",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span states adjusting segment criteria using engagement indicators; nearest L821", "excerpt": "The segment is dynamic in nature gets updated"}
+          ]
+        },
+        {
+          "text": "Revised segment membership can be previewed and validated.",
+          "field": "acceptance_criteria",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span states previewing revised segment membership; nearest L231", "excerpt": "suggestions inside preview"}
+          ]
+        },
+        {
+          "text": "Refined audiences can be reused in future activation plans and journeys.",
+          "field": "acceptance_criteria",
+          "supported": false,
+          "transcript_refs": [
+            {"locator": "search: no span states reusing refined audiences in future plans; nearest L821", "excerpt": "You create this segment only once"}
+          ]
+        },
+        {
+          "text": "60-Marketing Strategy & Activation Planning",
+          "field": "feature",
+          "supported": true,
+          "transcript_refs": [
+            {"locator": "L911", "excerpt": "marketing strategy and activation planning, we've covered in the previous discussions"}
+          ]
+        }
+      ]
+    }
+  ],
+  "hallucinated_keys": [
+    "manual-US-28",
+    "manual-US-29",
+    "manual-US-30",
+    "manual-US-32",
+    "manual-US-33",
+    "manual-US-34",
+    "manual-US-35",
+    "manual-US-36",
+    "manual-US-37",
+    "manual-US-38",
+    "manual-US-39",
+    "manual-US-41",
+    "manual-US-42",
+    "manual-US-43",
+    "manual-US-45",
+    "manual-US-46",
+    "manual-US-47",
+    "manual-US-48",
+    "manual-US-49",
+    "manual-US-50",
+    "manual-US-51",
+    "manual-US-52"
+  ],
+  "supported_requirement_keys": [
+    "manual-US-28",
+    "manual-US-29",
+    "manual-US-32",
+    "manual-US-33",
+    "manual-US-35",
+    "manual-US-36",
+    "manual-US-37",
+    "manual-US-39",
+    "manual-US-41",
+    "manual-US-45",
+    "manual-US-46",
+    "manual-US-47",
+    "manual-US-48",
+    "manual-US-51"
+  ],
+  "unsupported_requirement_keys": [
+    "manual-US-30",
+    "manual-US-34",
+    "manual-US-38",
+    "manual-US-42",
+    "manual-US-43",
+    "manual-US-49",
+    "manual-US-50",
+    "manual-US-52"
+  ]
+}

@@ -69,7 +69,7 @@ Plan → Act → Observe → Reflect (max 3). Iteration 1 Observe pass (`validat
 - **One owner per metric.** The parent rejects a metric whose `owner` is not the contract owner.
 - Coverage classifies generated-only rows as `valid_extra` or `noise` only by citing hallucination-detection-evaluator evidence. Disagreement → `BLOCKED_CONFLICT` and Open DQ. Do not average.
 - Structural format, role, and bullet-count signals in the packet may be adopted by the owning subagent. An override needs its own evidence row.
-- Hallucination claims need a transcript locator. Silence is not support.
+- Hallucination claims need a transcript locator. Silence is not support. Judge **both** CSVs against the transcript (`hallucination_rate` and `manual_hallucination_rate`). Do not skip the manual stories.
 - Do not invent Epic or Feature titles. Context is the nearest preceding Epic and Feature row in that CSV.
 - **Canonical render:** `python scripts/evaluate_user_stories.py render`. Agents must not hand-write the HTML.
 - Report status stays **Draft — Pending Method Review** while `ASSUMPTION-USEVAL-001` (and `ASSUMPTION-USEVAL-002` for role specificity) are pending. Do not mark the evaluation Accepted.

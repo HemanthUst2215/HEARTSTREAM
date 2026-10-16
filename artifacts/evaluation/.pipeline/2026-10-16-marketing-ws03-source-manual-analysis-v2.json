@@ -1,0 +1,1707 @@
+{
+  "schema_version": "1.0",
+  "kind": "user-story-source-analysis",
+  "side": "manual",
+  "status": "Draft \u2014 Pending Method Review",
+  "assumption_id": "ASSUMPTION-USHTML-001",
+  "inputs": {
+    "user_story_csv": "C:\\Users\\308279\\Documents\\HEARTSTREAM-1\\artifacts\\evaluation\\.pipeline\\2026-10-16-marketing-ws03-manual.csv",
+    "unified_knowledge_base": "C:\\Users\\308279\\Documents\\HEARTSTREAM-1\\artifacts\\evaluation\\.pipeline\\2026-10-16-marketing-ws03-source-knowledge-base-v2.json"
+  },
+  "executive_summary": {
+    "total_user_stories": 44,
+    "exact_matches": 0,
+    "partial_matches": 44,
+    "no_matches": 0,
+    "fully_supported_stories": 0,
+    "potential_hallucinations": 44,
+    "hallucinated_stories": 0,
+    "overall_traceability_score": "50.0"
+  },
+  "stories": [
+    {
+      "story_key": "manual-US-4",
+      "user_story_id": "111535",
+      "user_story_title": "Define External Analytics Data Sources and Requirements",
+      "feature_name": "70-External Analytics Data Ingestion & Unification",
+      "match_type": "Partial Match",
+      "derived_sources": [
+        "Pre-read Materials",
+        "MoM"
+      ],
+      "source_references": [
+        {
+          "source_type": "Pre-read Materials",
+          "locator": "WS-CE-01 / slide External Analytics Data Ingestion & Unification",
+          "excerpt": "External analytics data ingestion and unification in D365 Customer Insights (WS-CE-01)."
+        },
+        {
+          "source_type": "MoM",
+          "locator": "lines 641-680",
+          "excerpt": "5 ACTION ITEMS \nSr Category Action Owner Tentative \nDue Date \n1 Segmentation \nProvide the list of marketing segments and target \naudiences that HeartStream would like to support \nin Dynamics 365 Customer Insights, including \ndistributor, customer and market-based \nsegmentation re"
+        },
+        {
+          "source_type": "MoM",
+          "locator": "lines 481-520",
+          "excerpt": "Customer and partner \nmaster data contains \nduplicates and \nCustomer Insights \nsegmentation, reporting \nand analytics may be \nPerform data profiling, \ncleansing, deduplication and \nHeartStream \nBusiness / Data \nTeam / UST \n \n \n            \nfragmented account \nstructures \ninaccura"
+        }
+      ],
+      "why_generated": "Workshop requirement reflected in cited source spans.",
+      "why_mapped_to_feature": "Nearest preceding Feature row in CSV.",
+      "supporting_business_context": "External analytics data ingestion and unification in D365 Customer Insights (WS-CE-01).",
+      "coverage_assessment": "Partially Supported",
+      "hallucination_assessment": "Potential Hallucination",
+      "hallucination_reason": "Some AC or title terms are not echoed in cited sources.",
+      "confidence_score": "0.10",
+      "recommended_action": "Clarify with workshop"
+    },
+    {
+      "story_key": "manual-US-5",
+      "user_story_id": "111553",
+      "user_story_title": "Map External Analytics Data to the Customer Insights Data Model",
+      "feature_name": "70-External Analytics Data Ingestion & Unification",
+      "match_type": "Partial Match",
+      "derived_sources": [
+        "MoM",
+        "Pre-read Materials"
+      ],
+      "source_references": [
+        {
+          "source_type": "MoM",
+          "locator": "lines 641-680",
+          "excerpt": "5 ACTION ITEMS \nSr Category Action Owner Tentative \nDue Date \n1 Segmentation \nProvide the list of marketing segments and target \naudiences that HeartStream would like to support \nin Dynamics 365 Customer Insights, including \ndistributor, customer and market-based \nsegmentation re"
+        },
+        {
+          "source_type": "MoM",
+          "locator": "lines 481-520",
+          "excerpt": "Customer and partner \nmaster data contains \nduplicates and \nCustomer Insights \nsegmentation, reporting \nand analytics may be \nPerform data profiling, \ncleansing, deduplication and \nHeartStream \nBusiness / Data \nTeam / UST \n \n \n            \nfragmented account \nstructures \ninaccura"
+        },
+        {
+          "source_type": "Pre-read Materials",
+          "locator": "WS-CE-01 / slide External Analytics Data Ingestion & Unification",
+          "excerpt": "External analytics data ingestion and unification in D365 Customer Insights (WS-CE-01)."
+        }
+      ],
+      "why_generated": "Workshop requirement reflected in cited source spans.",
+      "why_mapped_to_feature": "Nearest preceding Feature row in CSV.",
+      "supporting_business_context": "5 ACTION ITEMS \nSr Category Action Owner Tentative \nDue Date \n1 Segmentation \nProvide the list of marketing segments and target \naudiences that HeartStream would like to support \nin Dynamics 365 Custo",
+      "coverage_assessment": "Partially Supported",
+      "hallucination_assessment": "Potential Hallucination",
+      "hallucination_reason": "Some AC or title terms are not echoed in cited sources.",
+      "confidence_score": "0.09",
+      "recommended_action": "Clarify with workshop"
+    },
+    {
+      "story_key": "manual-US-6",
+      "user_story_id": "111554",
+      "user_story_title": "Configure Scheduled Batch Analytics Data Ingestion",
+      "feature_name": "70-External Analytics Data Ingestion & Unification",
+      "match_type": "Partial Match",
+      "derived_sources": [
+        "Pre-read Materials",
+        "MoM"
+      ],
+      "source_references": [
+        {
+          "source_type": "Pre-read Materials",
+          "locator": "WS-CE-01 / slide External Analytics Data Ingestion & Unification",
+          "excerpt": "External analytics data ingestion and unification in D365 Customer Insights (WS-CE-01)."
+        },
+        {
+          "source_type": "MoM",
+          "locator": "lines 441-480",
+          "excerpt": "\u2022 SMS, social media and additional digital engagement channels \nwill be considered as future-state capabilities. \n \n11 Customer data quality and \nmigration \n\u2022 It was agreed that customer master data cleansing, deduplication \nand account rationalization activities will be required"
+        },
+        {
+          "source_type": "MoM",
+          "locator": "lines 321-360",
+          "excerpt": "through engagement metrics, landing page activity, click-through \nrates and conversion indicators \n \n\u2022 HeartStream highlighted the need to understand campaign \neffectiveness and its contribution to downstream sales \noutcomes. \n \n\u2022 It was discussed that reporting should provide vi"
+        }
+      ],
+      "why_generated": "Workshop requirement reflected in cited source spans.",
+      "why_mapped_to_feature": "Nearest preceding Feature row in CSV.",
+      "supporting_business_context": "External analytics data ingestion and unification in D365 Customer Insights (WS-CE-01).",
+      "coverage_assessment": "Partially Supported",
+      "hallucination_assessment": "Potential Hallucination",
+      "hallucination_reason": "Some AC or title terms are not echoed in cited sources.",
+      "confidence_score": "0.10",
+      "recommended_action": "Clarify with workshop"
+    },
+    {
+      "story_key": "manual-US-7",
+      "user_story_id": "111555",
+      "user_story_title": "Implement Real-Time Behavioral Data Ingestion",
+      "feature_name": "70-External Analytics Data Ingestion & Unification",
+      "match_type": "Partial Match",
+      "derived_sources": [
+        "MoM"
+      ],
+      "source_references": [
+        {
+          "source_type": "MoM",
+          "locator": "lines 681-720",
+          "excerpt": "feedback survey requirements, including target \naudience, timing and expected reporting \nrequirements. \nHeartStream \nMarketing TBD \n6 Data & Migration \nAnalyze customer master data quality, duplicate \naccount scenarios and market segmentation \nattributes required to support futur"
+        },
+        {
+          "source_type": "MoM",
+          "locator": "lines 441-480",
+          "excerpt": "\u2022 SMS, social media and additional digital engagement channels \nwill be considered as future-state capabilities. \n \n11 Customer data quality and \nmigration \n\u2022 It was agreed that customer master data cleansing, deduplication \nand account rationalization activities will be required"
+        },
+        {
+          "source_type": "MoM",
+          "locator": "lines 281-320",
+          "excerpt": "\u2022 It was demonstrated that campaigns could be triggered through \npredefined segments or business events within Dynamics 365. \n \n \n            \n \n\u2022 HeartStream acknowledged the value of automated customer \noutreach for activities such as product awareness, upgrade \ncampaigns and e"
+        }
+      ],
+      "why_generated": "Workshop requirement reflected in cited source spans.",
+      "why_mapped_to_feature": "Nearest preceding Feature row in CSV.",
+      "supporting_business_context": "feedback survey requirements, including target \naudience, timing and expected reporting \nrequirements. \nHeartStream \nMarketing TBD \n6 Data & Migration \nAnalyze customer master data quality, duplicate ",
+      "coverage_assessment": "Partially Supported",
+      "hallucination_assessment": "Potential Hallucination",
+      "hallucination_reason": "Some AC or title terms are not echoed in cited sources.",
+      "confidence_score": "0.10",
+      "recommended_action": "Clarify with workshop"
+    },
+    {
+      "story_key": "manual-US-8",
+      "user_story_id": "111556",
+      "user_story_title": "Associate Identifiable Digital Behavior with Customer Profiles",
+      "feature_name": "70-External Analytics Data Ingestion & Unification",
+      "match_type": "Partial Match",
+      "derived_sources": [
+        "MoM",
+        "Pre-read Materials"
+      ],
+      "source_references": [
+        {
+          "source_type": "MoM",
+          "locator": "lines 361-400",
+          "excerpt": "\u2022 HeartStream indicated that only a limited number of users are \nexpected to create and manage campaigns globally. \n \n\u2022 It was confirmed that appropriate role-based access controls will \nbe required while still enabling global visibility for authorized \nmarketing users. \n \n \n \n3 "
+        },
+        {
+          "source_type": "Pre-read Materials",
+          "locator": "Unified customer profile; transcript 58:17\u20131:02:06",
+          "excerpt": "Account and contact 360 views in Customer Insights for marketing audiences (distinct from Sales CRM day-to-day)."
+        },
+        {
+          "source_type": "MoM",
+          "locator": "lines 441-480",
+          "excerpt": "\u2022 SMS, social media and additional digital engagement channels \nwill be considered as future-state capabilities. \n \n11 Customer data quality and \nmigration \n\u2022 It was agreed that customer master data cleansing, deduplication \nand account rationalization activities will be required"
+        }
+      ],
+      "why_generated": "Workshop requirement reflected in cited source spans.",
+      "why_mapped_to_feature": "Nearest preceding Feature row in CSV.",
+      "supporting_business_context": "\u2022 HeartStream indicated that only a limited number of users are \nexpected to create and manage campaigns globally. \n \n\u2022 It was confirmed that appropriate role-based access controls will \nbe required w",
+      "coverage_assessment": "Partially Supported",
+      "hallucination_assessment": "Potential Hallucination",
+      "hallucination_reason": "Some AC or title terms are not echoed in cited sources.",
+      "confidence_score": "0.10",
+      "recommended_action": "Clarify with workshop"
+    },
+    {
+      "story_key": "manual-US-9",
+      "user_story_id": "111557",
+      "user_story_title": "Unify External Analytics Data with Customer and Engagement Data",
+      "feature_name": "70-External Analytics Data Ingestion & Unification",
+      "match_type": "Partial Match",
+      "derived_sources": [
+        "MoM",
+        "Pre-read Materials"
+      ],
+      "source_references": [
+        {
+          "source_type": "MoM",
+          "locator": "lines 441-480",
+          "excerpt": "\u2022 SMS, social media and additional digital engagement channels \nwill be considered as future-state capabilities. \n \n11 Customer data quality and \nmigration \n\u2022 It was agreed that customer master data cleansing, deduplication \nand account rationalization activities will be required"
+        },
+        {
+          "source_type": "Pre-read Materials",
+          "locator": "WS-CE-01 / slide External Analytics Data Ingestion & Unification",
+          "excerpt": "External analytics data ingestion and unification in D365 Customer Insights (WS-CE-01)."
+        },
+        {
+          "source_type": "Pre-read Materials",
+          "locator": "WS-CE-02",
+          "excerpt": "Marketing research insights planning using Customer Insights audiences and analytics (WS-CE-02)."
+        }
+      ],
+      "why_generated": "Workshop requirement reflected in cited source spans.",
+      "why_mapped_to_feature": "Nearest preceding Feature row in CSV.",
+      "supporting_business_context": "\u2022 SMS, social media and additional digital engagement channels \nwill be considered as future-state capabilities. \n \n11 Customer data quality and \nmigration \n\u2022 It was agreed that customer master data c",
+      "coverage_assessment": "Partially Supported",
+      "hallucination_assessment": "Potential Hallucination",
+      "hallucination_reason": "Some AC or title terms are not echoed in cited sources.",
+      "confidence_score": "0.14",
+      "recommended_action": "Clarify with workshop"
+    },
+    {
+      "story_key": "manual-US-10",
+      "user_story_id": "111558",
+      "user_story_title": "Create Customer Measures from External Analytics Data",
+      "feature_name": "70-External Analytics Data Ingestion & Unification",
+      "match_type": "Partial Match",
+      "derived_sources": [
+        "Pre-read Materials",
+        "MoM"
+      ],
+      "source_references": [
+        {
+          "source_type": "Pre-read Materials",
+          "locator": "WS-CE-01 / slide External Analytics Data Ingestion & Unification",
+          "excerpt": "External analytics data ingestion and unification in D365 Customer Insights (WS-CE-01)."
+        },
+        {
+          "source_type": "MoM",
+          "locator": "lines 441-480",
+          "excerpt": "\u2022 SMS, social media and additional digital engagement channels \nwill be considered as future-state capabilities. \n \n11 Customer data quality and \nmigration \n\u2022 It was agreed that customer master data cleansing, deduplication \nand account rationalization activities will be required"
+        },
+        {
+          "source_type": "MoM",
+          "locator": "lines 641-680",
+          "excerpt": "5 ACTION ITEMS \nSr Category Action Owner Tentative \nDue Date \n1 Segmentation \nProvide the list of marketing segments and target \naudiences that HeartStream would like to support \nin Dynamics 365 Customer Insights, including \ndistributor, customer and market-based \nsegmentation re"
+        }
+      ],
+      "why_generated": "Workshop requirement reflected in cited source spans.",
+      "why_mapped_to_feature": "Nearest preceding Feature row in CSV.",
+      "supporting_business_context": "External analytics data ingestion and unification in D365 Customer Insights (WS-CE-01).",
+      "coverage_assessment": "Partially Supported",
+      "hallucination_assessment": "Potential Hallucination",
+      "hallucination_reason": "Some AC or title terms are not echoed in cited sources.",
+      "confidence_score": "0.08",
+      "recommended_action": "Clarify with workshop"
+    },
+    {
+      "story_key": "manual-US-11",
+      "user_story_id": "111560",
+      "user_story_title": "Make Unified Analytics Data Available for Journey Activation",
+      "feature_name": "70-External Analytics Data Ingestion & Unification",
+      "match_type": "Partial Match",
+      "derived_sources": [
+        "Pre-read Materials",
+        "MoM"
+      ],
+      "source_references": [
+        {
+          "source_type": "Pre-read Materials",
+          "locator": "lines 41-51",
+          "excerpt": "Process Flow 5 \u2013 Marketing Asset Governance & Campaign Readiness Standard D365 Customer Insights out-of-the-box, no customisation assumed\n\nProcess details: Marketing Asset Governance & Campaign Readiness Marketing Asset Management Definition: Marketing assets are created, maintai"
+        },
+        {
+          "source_type": "MoM",
+          "locator": "lines 441-480",
+          "excerpt": "\u2022 SMS, social media and additional digital engagement channels \nwill be considered as future-state capabilities. \n \n11 Customer data quality and \nmigration \n\u2022 It was agreed that customer master data cleansing, deduplication \nand account rationalization activities will be required"
+        },
+        {
+          "source_type": "MoM",
+          "locator": "lines 281-320",
+          "excerpt": "\u2022 It was demonstrated that campaigns could be triggered through \npredefined segments or business events within Dynamics 365. \n \n \n            \n \n\u2022 HeartStream acknowledged the value of automated customer \noutreach for activities such as product awareness, upgrade \ncampaigns and e"
+        }
+      ],
+      "why_generated": "Workshop requirement reflected in cited source spans.",
+      "why_mapped_to_feature": "Nearest preceding Feature row in CSV.",
+      "supporting_business_context": "Process Flow 5 \u2013 Marketing Asset Governance & Campaign Readiness Standard D365 Customer Insights out-of-the-box, no customisation assumed\n\nProcess details: Marketing Asset Governance & Campaign Readin",
+      "coverage_assessment": "Partially Supported",
+      "hallucination_assessment": "Potential Hallucination",
+      "hallucination_reason": "Some AC or title terms are not echoed in cited sources.",
+      "confidence_score": "0.10",
+      "recommended_action": "Clarify with workshop"
+    },
+    {
+      "story_key": "manual-US-12",
+      "user_story_id": "111561",
+      "user_story_title": "Monitor Analytics Data Ingestion and Processing",
+      "feature_name": "70-External Analytics Data Ingestion & Unification",
+      "match_type": "Partial Match",
+      "derived_sources": [
+        "Pre-read Materials",
+        "MoM"
+      ],
+      "source_references": [
+        {
+          "source_type": "Pre-read Materials",
+          "locator": "WS-CE-01 / slide External Analytics Data Ingestion & Unification",
+          "excerpt": "External analytics data ingestion and unification in D365 Customer Insights (WS-CE-01)."
+        },
+        {
+          "source_type": "MoM",
+          "locator": "lines 441-480",
+          "excerpt": "\u2022 SMS, social media and additional digital engagement channels \nwill be considered as future-state capabilities. \n \n11 Customer data quality and \nmigration \n\u2022 It was agreed that customer master data cleansing, deduplication \nand account rationalization activities will be required"
+        },
+        {
+          "source_type": "MoM",
+          "locator": "lines 481-520",
+          "excerpt": "Customer and partner \nmaster data contains \nduplicates and \nCustomer Insights \nsegmentation, reporting \nand analytics may be \nPerform data profiling, \ncleansing, deduplication and \nHeartStream \nBusiness / Data \nTeam / UST \n \n \n            \nfragmented account \nstructures \ninaccura"
+        }
+      ],
+      "why_generated": "Workshop requirement reflected in cited source spans.",
+      "why_mapped_to_feature": "Nearest preceding Feature row in CSV.",
+      "supporting_business_context": "External analytics data ingestion and unification in D365 Customer Insights (WS-CE-01).",
+      "coverage_assessment": "Partially Supported",
+      "hallucination_assessment": "Potential Hallucination",
+      "hallucination_reason": "Some AC or title terms are not echoed in cited sources.",
+      "confidence_score": "0.09",
+      "recommended_action": "Clarify with workshop"
+    },
+    {
+      "story_key": "manual-US-13",
+      "user_story_id": "111562",
+      "user_story_title": "Validate External Analytics Data Quality",
+      "feature_name": "70-External Analytics Data Ingestion & Unification",
+      "match_type": "Partial Match",
+      "derived_sources": [
+        "MoM"
+      ],
+      "source_references": [
+        {
+          "source_type": "MoM",
+          "locator": "lines 441-480",
+          "excerpt": "\u2022 SMS, social media and additional digital engagement channels \nwill be considered as future-state capabilities. \n \n11 Customer data quality and \nmigration \n\u2022 It was agreed that customer master data cleansing, deduplication \nand account rationalization activities will be required"
+        },
+        {
+          "source_type": "MoM",
+          "locator": "lines 201-240",
+          "excerpt": "\u2022 It was agreed that improved data capture processes would \ndirectly impact the quality of segmentation and marketing \noutcomes. \n \n8 Customer master data and \nmigration considerations \n\u2022 HeartStream highlighted concerns regarding duplicate customer \nrecords, fragmented account s"
+        },
+        {
+          "source_type": "MoM",
+          "locator": "lines 641-680",
+          "excerpt": "5 ACTION ITEMS \nSr Category Action Owner Tentative \nDue Date \n1 Segmentation \nProvide the list of marketing segments and target \naudiences that HeartStream would like to support \nin Dynamics 365 Customer Insights, including \ndistributor, customer and market-based \nsegmentation re"
+        }
+      ],
+      "why_generated": "Workshop requirement reflected in cited source spans.",
+      "why_mapped_to_feature": "Nearest preceding Feature row in CSV.",
+      "supporting_business_context": "\u2022 SMS, social media and additional digital engagement channels \nwill be considered as future-state capabilities. \n \n11 Customer data quality and \nmigration \n\u2022 It was agreed that customer master data c",
+      "coverage_assessment": "Partially Supported",
+      "hallucination_assessment": "Potential Hallucination",
+      "hallucination_reason": "Some AC or title terms are not echoed in cited sources.",
+      "confidence_score": "0.08",
+      "recommended_action": "Clarify with workshop"
+    },
+    {
+      "story_key": "manual-US-14",
+      "user_story_id": "111563",
+      "user_story_title": "Access External Analytics Data for Marketing Out of Box Reporting",
+      "feature_name": "70-External Analytics Data Ingestion & Unification",
+      "match_type": "Partial Match",
+      "derived_sources": [
+        "Pre-read Materials",
+        "MoM"
+      ],
+      "source_references": [
+        {
+          "source_type": "Pre-read Materials",
+          "locator": "lines 41-51",
+          "excerpt": "Process Flow 5 \u2013 Marketing Asset Governance & Campaign Readiness Standard D365 Customer Insights out-of-the-box, no customisation assumed\n\nProcess details: Marketing Asset Governance & Campaign Readiness Marketing Asset Management Definition: Marketing assets are created, maintai"
+        },
+        {
+          "source_type": "MoM",
+          "locator": "lines 321-360",
+          "excerpt": "through engagement metrics, landing page activity, click-through \nrates and conversion indicators \n \n\u2022 HeartStream highlighted the need to understand campaign \neffectiveness and its contribution to downstream sales \noutcomes. \n \n\u2022 It was discussed that reporting should provide vi"
+        },
+        {
+          "source_type": "Pre-read Materials",
+          "locator": "WS-CE-01 / slide External Analytics Data Ingestion & Unification",
+          "excerpt": "External analytics data ingestion and unification in D365 Customer Insights (WS-CE-01)."
+        }
+      ],
+      "why_generated": "Workshop requirement reflected in cited source spans.",
+      "why_mapped_to_feature": "Nearest preceding Feature row in CSV.",
+      "supporting_business_context": "Process Flow 5 \u2013 Marketing Asset Governance & Campaign Readiness Standard D365 Customer Insights out-of-the-box, no customisation assumed\n\nProcess details: Marketing Asset Governance & Campaign Readin",
+      "coverage_assessment": "Partially Supported",
+      "hallucination_assessment": "Potential Hallucination",
+      "hallucination_reason": "Some AC or title terms are not echoed in cited sources.",
+      "confidence_score": "0.14",
+      "recommended_action": "Clarify with workshop"
+    },
+    {
+      "story_key": "manual-US-17",
+      "user_story_id": "111575",
+      "user_story_title": "Configure Access to Approved Marketing Assets from MediaValet",
+      "feature_name": "54-Global Marketing Content Activation",
+      "match_type": "Partial Match",
+      "derived_sources": [
+        "MoM"
+      ],
+      "source_references": [
+        {
+          "source_type": "MoM",
+          "locator": "lines 241-280",
+          "excerpt": "10 Marketing content \ngovernance \n\u2022 HeartStream confirmed that externally published marketing \ncontent currently undergoes approval by Marketing, Quality, \nClinical, Legal and Regulatory stakeholders. \n \n\u2022 It was emphasized that only approved content should be used in \ncustomer-f"
+        },
+        {
+          "source_type": "MoM",
+          "locator": "lines 401-440",
+          "excerpt": "\u2022 HeartStream agreed that customer surveys and feedback \ncollection should form part of the future-state marketing \ncapability to improve customer understanding and insight \ngeneration. \n \n6 Marketing content \ngovernance \n\u2022 It was agreed that only approved marketing content shoul"
+        },
+        {
+          "source_type": "MoM",
+          "locator": "lines 361-400",
+          "excerpt": "\u2022 HeartStream indicated that only a limited number of users are \nexpected to create and manage campaigns globally. \n \n\u2022 It was confirmed that appropriate role-based access controls will \nbe required while still enabling global visibility for authorized \nmarketing users. \n \n \n \n3 "
+        }
+      ],
+      "why_generated": "Workshop requirement reflected in cited source spans.",
+      "why_mapped_to_feature": "Nearest preceding Feature row in CSV.",
+      "supporting_business_context": "10 Marketing content \ngovernance \n\u2022 HeartStream confirmed that externally published marketing \ncontent currently undergoes approval by Marketing, Quality, \nClinical, Legal and Regulatory stakeholders.",
+      "coverage_assessment": "Partially Supported",
+      "hallucination_assessment": "Potential Hallucination",
+      "hallucination_reason": "Some AC or title terms are not echoed in cited sources.",
+      "confidence_score": "0.17",
+      "recommended_action": "Clarify with workshop"
+    },
+    {
+      "story_key": "manual-US-18",
+      "user_story_id": "111576",
+      "user_story_title": "Create Marketing Email Templates Using Approved Assets",
+      "feature_name": "54-Global Marketing Content Activation",
+      "match_type": "Partial Match",
+      "derived_sources": [
+        "MoM",
+        "Pre-read Materials"
+      ],
+      "source_references": [
+        {
+          "source_type": "MoM",
+          "locator": "lines 361-400",
+          "excerpt": "\u2022 HeartStream indicated that only a limited number of users are \nexpected to create and manage campaigns globally. \n \n\u2022 It was confirmed that appropriate role-based access controls will \nbe required while still enabling global visibility for authorized \nmarketing users. \n \n \n \n3 "
+        },
+        {
+          "source_type": "Pre-read Materials",
+          "locator": "lines 41-51",
+          "excerpt": "Process Flow 5 \u2013 Marketing Asset Governance & Campaign Readiness Standard D365 Customer Insights out-of-the-box, no customisation assumed\n\nProcess details: Marketing Asset Governance & Campaign Readiness Marketing Asset Management Definition: Marketing assets are created, maintai"
+        },
+        {
+          "source_type": "MoM",
+          "locator": "lines 241-280",
+          "excerpt": "10 Marketing content \ngovernance \n\u2022 HeartStream confirmed that externally published marketing \ncontent currently undergoes approval by Marketing, Quality, \nClinical, Legal and Regulatory stakeholders. \n \n\u2022 It was emphasized that only approved content should be used in \ncustomer-f"
+        }
+      ],
+      "why_generated": "Workshop requirement reflected in cited source spans.",
+      "why_mapped_to_feature": "Nearest preceding Feature row in CSV.",
+      "supporting_business_context": "\u2022 HeartStream indicated that only a limited number of users are \nexpected to create and manage campaigns globally. \n \n\u2022 It was confirmed that appropriate role-based access controls will \nbe required w",
+      "coverage_assessment": "Partially Supported",
+      "hallucination_assessment": "Potential Hallucination",
+      "hallucination_reason": "Some AC or title terms are not echoed in cited sources.",
+      "confidence_score": "0.12",
+      "recommended_action": "Clarify with workshop"
+    },
+    {
+      "story_key": "manual-US-19",
+      "user_story_id": "111577",
+      "user_story_title": "Create Campaign Landing Pages Using Approved Assets",
+      "feature_name": "54-Global Marketing Content Activation",
+      "match_type": "Partial Match",
+      "derived_sources": [
+        "Pre-read Materials",
+        "MoM"
+      ],
+      "source_references": [
+        {
+          "source_type": "Pre-read Materials",
+          "locator": "lines 41-51",
+          "excerpt": "Process Flow 5 \u2013 Marketing Asset Governance & Campaign Readiness Standard D365 Customer Insights out-of-the-box, no customisation assumed\n\nProcess details: Marketing Asset Governance & Campaign Readiness Marketing Asset Management Definition: Marketing assets are created, maintai"
+        },
+        {
+          "source_type": "MoM",
+          "locator": "lines 401-440",
+          "excerpt": "\u2022 HeartStream agreed that customer surveys and feedback \ncollection should form part of the future-state marketing \ncapability to improve customer understanding and insight \ngeneration. \n \n6 Marketing content \ngovernance \n\u2022 It was agreed that only approved marketing content shoul"
+        },
+        {
+          "source_type": "Pre-read Materials",
+          "locator": "WS-CE-03",
+          "excerpt": "Global marketing content activation via Customer Insights Journeys (WS-CE-03)."
+        }
+      ],
+      "why_generated": "Workshop requirement reflected in cited source spans.",
+      "why_mapped_to_feature": "Nearest preceding Feature row in CSV.",
+      "supporting_business_context": "Process Flow 5 \u2013 Marketing Asset Governance & Campaign Readiness Standard D365 Customer Insights out-of-the-box, no customisation assumed\n\nProcess details: Marketing Asset Governance & Campaign Readin",
+      "coverage_assessment": "Partially Supported",
+      "hallucination_assessment": "Potential Hallucination",
+      "hallucination_reason": "Some AC or title terms are not echoed in cited sources.",
+      "confidence_score": "0.10",
+      "recommended_action": "Clarify with workshop"
+    },
+    {
+      "story_key": "manual-US-20",
+      "user_story_id": "111578",
+      "user_story_title": "Create Marketing Forms for Campaign Responses",
+      "feature_name": "54-Global Marketing Content Activation",
+      "match_type": "Partial Match",
+      "derived_sources": [
+        "MoM"
+      ],
+      "source_references": [
+        {
+          "source_type": "MoM",
+          "locator": "lines 441-480",
+          "excerpt": "\u2022 SMS, social media and additional digital engagement channels \nwill be considered as future-state capabilities. \n \n11 Customer data quality and \nmigration \n\u2022 It was agreed that customer master data cleansing, deduplication \nand account rationalization activities will be required"
+        },
+        {
+          "source_type": "MoM",
+          "locator": "lines 761-782",
+          "excerpt": "15 \nFuture \nWorkshop \nCoverage \nIdentify additional marketing stakeholders from \nglobal and regional teams who should participate \nin future marketing workshops. \nHeartStream \nMarketing TBD \n16 Requirement \nValidation \nReview workshop findings, assumptions and \ndiscussion outcome"
+        },
+        {
+          "source_type": "MoM",
+          "locator": "lines 361-400",
+          "excerpt": "\u2022 HeartStream indicated that only a limited number of users are \nexpected to create and manage campaigns globally. \n \n\u2022 It was confirmed that appropriate role-based access controls will \nbe required while still enabling global visibility for authorized \nmarketing users. \n \n \n \n3 "
+        }
+      ],
+      "why_generated": "Workshop requirement reflected in cited source spans.",
+      "why_mapped_to_feature": "Nearest preceding Feature row in CSV.",
+      "supporting_business_context": "\u2022 SMS, social media and additional digital engagement channels \nwill be considered as future-state capabilities. \n \n11 Customer data quality and \nmigration \n\u2022 It was agreed that customer master data c",
+      "coverage_assessment": "Partially Supported",
+      "hallucination_assessment": "Potential Hallucination",
+      "hallucination_reason": "Some AC or title terms are not echoed in cited sources.",
+      "confidence_score": "0.12",
+      "recommended_action": "Clarify with workshop"
+    },
+    {
+      "story_key": "manual-US-21",
+      "user_story_id": "111579",
+      "user_story_title": "Configure Personalized Marketing Content",
+      "feature_name": "54-Global Marketing Content Activation",
+      "match_type": "Partial Match",
+      "derived_sources": [
+        "Pre-read Materials",
+        "MoM",
+        "Transcript"
+      ],
+      "source_references": [
+        {
+          "source_type": "Pre-read Materials",
+          "locator": "WS-CE-03",
+          "excerpt": "Global marketing content activation via Customer Insights Journeys (WS-CE-03)."
+        },
+        {
+          "source_type": "MoM",
+          "locator": "lines 441-480",
+          "excerpt": "\u2022 SMS, social media and additional digital engagement channels \nwill be considered as future-state capabilities. \n \n11 Customer data quality and \nmigration \n\u2022 It was agreed that customer master data cleansing, deduplication \nand account rationalization activities will be required"
+        },
+        {
+          "source_type": "Transcript",
+          "locator": "lines 841-880",
+          "excerpt": "The third question, target audience and segmentation, we spoke about it on multiple occasions. So not like we would not like to delve into that particular question. We'll simply move on to the next one which is your success measures. So when you think of executing this marketing,"
+        }
+      ],
+      "why_generated": "Workshop requirement reflected in cited source spans.",
+      "why_mapped_to_feature": "Nearest preceding Feature row in CSV.",
+      "supporting_business_context": "Global marketing content activation via Customer Insights Journeys (WS-CE-03).",
+      "coverage_assessment": "Partially Supported",
+      "hallucination_assessment": "Potential Hallucination",
+      "hallucination_reason": "Some AC or title terms are not echoed in cited sources.",
+      "confidence_score": "0.09",
+      "recommended_action": "Clarify with workshop"
+    },
+    {
+      "story_key": "manual-US-22",
+      "user_story_id": "111580",
+      "user_story_title": "Configure Audience-Specific Content Variations",
+      "feature_name": "54-Global Marketing Content Activation",
+      "match_type": "Partial Match",
+      "derived_sources": [
+        "Transcript",
+        "MoM"
+      ],
+      "source_references": [
+        {
+          "source_type": "Transcript",
+          "locator": "lines 361-400",
+          "excerpt": "And.\n1:18:40 | Kaitie\nalso, the customer insights from our direct channel in some ways can help influence how we interact with.\n1:18:48 | Nitesh\nLeads.\n1:18:49 | Kaitie\nThat come through. We will have some consumer behavior learnings that we can apply to how we interact with lead"
+        },
+        {
+          "source_type": "Transcript",
+          "locator": "lines 481-520",
+          "excerpt": "might be with shippers. Yes.\n1:38:27 | James\nMultiple ship, choose one. So.\n1:38:29 | Nitesh\nAnd.\n1:38:30 | James\nall of the data is tied to this old, yes, yes. And therefore, it wouldn't cripple our customer insights capabilities for marketing.\n1:38:39 | Nitesh\nSo it don't it be"
+        },
+        {
+          "source_type": "MoM",
+          "locator": "lines 241-280",
+          "excerpt": "10 Marketing content \ngovernance \n\u2022 HeartStream confirmed that externally published marketing \ncontent currently undergoes approval by Marketing, Quality, \nClinical, Legal and Regulatory stakeholders. \n \n\u2022 It was emphasized that only approved content should be used in \ncustomer-f"
+        }
+      ],
+      "why_generated": "Workshop requirement reflected in cited source spans.",
+      "why_mapped_to_feature": "Nearest preceding Feature row in CSV.",
+      "supporting_business_context": "And.\n1:18:40 | Kaitie\nalso, the customer insights from our direct channel in some ways can help influence how we interact with.\n1:18:48 | Nitesh\nLeads.\n1:18:49 | Kaitie\nThat come through. We will have",
+      "coverage_assessment": "Partially Supported",
+      "hallucination_assessment": "Potential Hallucination",
+      "hallucination_reason": "Some AC or title terms are not echoed in cited sources.",
+      "confidence_score": "0.09",
+      "recommended_action": "Clarify with workshop"
+    },
+    {
+      "story_key": "manual-US-23",
+      "user_story_id": "111586",
+      "user_story_title": "Support Product Launch Communications",
+      "feature_name": "54-Global Marketing Content Activation",
+      "match_type": "Partial Match",
+      "derived_sources": [
+        "Pre-read Materials",
+        "MoM"
+      ],
+      "source_references": [
+        {
+          "source_type": "Pre-read Materials",
+          "locator": "WS-CE-03",
+          "excerpt": "Global marketing content activation via Customer Insights Journeys (WS-CE-03)."
+        },
+        {
+          "source_type": "MoM",
+          "locator": "lines 241-280",
+          "excerpt": "10 Marketing content \ngovernance \n\u2022 HeartStream confirmed that externally published marketing \ncontent currently undergoes approval by Marketing, Quality, \nClinical, Legal and Regulatory stakeholders. \n \n\u2022 It was emphasized that only approved content should be used in \ncustomer-f"
+        },
+        {
+          "source_type": "MoM",
+          "locator": "lines 401-440",
+          "excerpt": "\u2022 HeartStream agreed that customer surveys and feedback \ncollection should form part of the future-state marketing \ncapability to improve customer understanding and insight \ngeneration. \n \n6 Marketing content \ngovernance \n\u2022 It was agreed that only approved marketing content shoul"
+        }
+      ],
+      "why_generated": "Workshop requirement reflected in cited source spans.",
+      "why_mapped_to_feature": "Nearest preceding Feature row in CSV.",
+      "supporting_business_context": "Global marketing content activation via Customer Insights Journeys (WS-CE-03).",
+      "coverage_assessment": "Partially Supported",
+      "hallucination_assessment": "Potential Hallucination",
+      "hallucination_reason": "Some AC or title terms are not echoed in cited sources.",
+      "confidence_score": "0.08",
+      "recommended_action": "Clarify with workshop"
+    },
+    {
+      "story_key": "manual-US-24",
+      "user_story_id": "111587",
+      "user_story_title": "Support Service and Solution Communications",
+      "feature_name": "54-Global Marketing Content Activation",
+      "match_type": "Partial Match",
+      "derived_sources": [
+        "MoM",
+        "Pre-read Materials"
+      ],
+      "source_references": [
+        {
+          "source_type": "MoM",
+          "locator": "lines 241-280",
+          "excerpt": "10 Marketing content \ngovernance \n\u2022 HeartStream confirmed that externally published marketing \ncontent currently undergoes approval by Marketing, Quality, \nClinical, Legal and Regulatory stakeholders. \n \n\u2022 It was emphasized that only approved content should be used in \ncustomer-f"
+        },
+        {
+          "source_type": "MoM",
+          "locator": "lines 401-440",
+          "excerpt": "\u2022 HeartStream agreed that customer surveys and feedback \ncollection should form part of the future-state marketing \ncapability to improve customer understanding and insight \ngeneration. \n \n6 Marketing content \ngovernance \n\u2022 It was agreed that only approved marketing content shoul"
+        },
+        {
+          "source_type": "Pre-read Materials",
+          "locator": "WS-CE-02",
+          "excerpt": "Marketing research insights planning using Customer Insights audiences and analytics (WS-CE-02)."
+        }
+      ],
+      "why_generated": "Workshop requirement reflected in cited source spans.",
+      "why_mapped_to_feature": "Nearest preceding Feature row in CSV.",
+      "supporting_business_context": "10 Marketing content \ngovernance \n\u2022 HeartStream confirmed that externally published marketing \ncontent currently undergoes approval by Marketing, Quality, \nClinical, Legal and Regulatory stakeholders.",
+      "coverage_assessment": "Partially Supported",
+      "hallucination_assessment": "Potential Hallucination",
+      "hallucination_reason": "Some AC or title terms are not echoed in cited sources.",
+      "confidence_score": "0.07",
+      "recommended_action": "Clarify with workshop"
+    },
+    {
+      "story_key": "manual-US-25",
+      "user_story_id": "111588",
+      "user_story_title": "Support Multi-Region Marketing Communications",
+      "feature_name": "54-Global Marketing Content Activation",
+      "match_type": "Partial Match",
+      "derived_sources": [
+        "MoM",
+        "Pre-read Materials"
+      ],
+      "source_references": [
+        {
+          "source_type": "MoM",
+          "locator": "lines 121-160",
+          "excerpt": "within a unified view. \n \n\u2022 HeartStream emphasized that global distributors operating \nacross multiple regions must be supported within the future-state \ncustomer and partner profile model. \n \n\u2022 HeartStream confirmed that future marketing activities must \nsupport both distributor"
+        },
+        {
+          "source_type": "Pre-read Materials",
+          "locator": "WS-CE-03",
+          "excerpt": "Global marketing content activation via Customer Insights Journeys (WS-CE-03)."
+        },
+        {
+          "source_type": "Pre-read Materials",
+          "locator": "lines 41-51",
+          "excerpt": "Process Flow 5 \u2013 Marketing Asset Governance & Campaign Readiness Standard D365 Customer Insights out-of-the-box, no customisation assumed\n\nProcess details: Marketing Asset Governance & Campaign Readiness Marketing Asset Management Definition: Marketing assets are created, maintai"
+        }
+      ],
+      "why_generated": "Workshop requirement reflected in cited source spans.",
+      "why_mapped_to_feature": "Nearest preceding Feature row in CSV.",
+      "supporting_business_context": "within a unified view. \n \n\u2022 HeartStream emphasized that global distributors operating \nacross multiple regions must be supported within the future-state \ncustomer and partner profile model. \n \n\u2022 Heart",
+      "coverage_assessment": "Partially Supported",
+      "hallucination_assessment": "Potential Hallucination",
+      "hallucination_reason": "Some AC or title terms are not echoed in cited sources.",
+      "confidence_score": "0.09",
+      "recommended_action": "Clarify with workshop"
+    },
+    {
+      "story_key": "manual-US-26",
+      "user_story_id": "111589",
+      "user_story_title": "Support Multi-Language Marketing Communications",
+      "feature_name": "54-Global Marketing Content Activation",
+      "match_type": "Partial Match",
+      "derived_sources": [
+        "MoM",
+        "Pre-read Materials"
+      ],
+      "source_references": [
+        {
+          "source_type": "MoM",
+          "locator": "lines 121-160",
+          "excerpt": "within a unified view. \n \n\u2022 HeartStream emphasized that global distributors operating \nacross multiple regions must be supported within the future-state \ncustomer and partner profile model. \n \n\u2022 HeartStream confirmed that future marketing activities must \nsupport both distributor"
+        },
+        {
+          "source_type": "MoM",
+          "locator": "lines 761-782",
+          "excerpt": "15 \nFuture \nWorkshop \nCoverage \nIdentify additional marketing stakeholders from \nglobal and regional teams who should participate \nin future marketing workshops. \nHeartStream \nMarketing TBD \n16 Requirement \nValidation \nReview workshop findings, assumptions and \ndiscussion outcome"
+        },
+        {
+          "source_type": "Pre-read Materials",
+          "locator": "lines 41-51",
+          "excerpt": "Process Flow 5 \u2013 Marketing Asset Governance & Campaign Readiness Standard D365 Customer Insights out-of-the-box, no customisation assumed\n\nProcess details: Marketing Asset Governance & Campaign Readiness Marketing Asset Management Definition: Marketing assets are created, maintai"
+        }
+      ],
+      "why_generated": "Workshop requirement reflected in cited source spans.",
+      "why_mapped_to_feature": "Nearest preceding Feature row in CSV.",
+      "supporting_business_context": "within a unified view. \n \n\u2022 HeartStream emphasized that global distributors operating \nacross multiple regions must be supported within the future-state \ncustomer and partner profile model. \n \n\u2022 Heart",
+      "coverage_assessment": "Partially Supported",
+      "hallucination_assessment": "Potential Hallucination",
+      "hallucination_reason": "Some AC or title terms are not echoed in cited sources.",
+      "confidence_score": "0.07",
+      "recommended_action": "Clarify with workshop"
+    },
+    {
+      "story_key": "manual-US-27",
+      "user_story_id": "111590",
+      "user_story_title": "Track Content Utilization Across Marketing Activities",
+      "feature_name": "54-Global Marketing Content Activation",
+      "match_type": "Partial Match",
+      "derived_sources": [
+        "MoM",
+        "Pre-read Materials"
+      ],
+      "source_references": [
+        {
+          "source_type": "MoM",
+          "locator": "lines 241-280",
+          "excerpt": "10 Marketing content \ngovernance \n\u2022 HeartStream confirmed that externally published marketing \ncontent currently undergoes approval by Marketing, Quality, \nClinical, Legal and Regulatory stakeholders. \n \n\u2022 It was emphasized that only approved content should be used in \ncustomer-f"
+        },
+        {
+          "source_type": "MoM",
+          "locator": "lines 401-440",
+          "excerpt": "\u2022 HeartStream agreed that customer surveys and feedback \ncollection should form part of the future-state marketing \ncapability to improve customer understanding and insight \ngeneration. \n \n6 Marketing content \ngovernance \n\u2022 It was agreed that only approved marketing content shoul"
+        },
+        {
+          "source_type": "Pre-read Materials",
+          "locator": "lines 41-51",
+          "excerpt": "Process Flow 5 \u2013 Marketing Asset Governance & Campaign Readiness Standard D365 Customer Insights out-of-the-box, no customisation assumed\n\nProcess details: Marketing Asset Governance & Campaign Readiness Marketing Asset Management Definition: Marketing assets are created, maintai"
+        }
+      ],
+      "why_generated": "Workshop requirement reflected in cited source spans.",
+      "why_mapped_to_feature": "Nearest preceding Feature row in CSV.",
+      "supporting_business_context": "10 Marketing content \ngovernance \n\u2022 HeartStream confirmed that externally published marketing \ncontent currently undergoes approval by Marketing, Quality, \nClinical, Legal and Regulatory stakeholders.",
+      "coverage_assessment": "Partially Supported",
+      "hallucination_assessment": "Potential Hallucination",
+      "hallucination_reason": "Some AC or title terms are not echoed in cited sources.",
+      "confidence_score": "0.09",
+      "recommended_action": "Clarify with workshop"
+    },
+    {
+      "story_key": "manual-US-28",
+      "user_story_id": "111591",
+      "user_story_title": "Measure Content Engagement Performance",
+      "feature_name": "54-Global Marketing Content Activation",
+      "match_type": "Partial Match",
+      "derived_sources": [
+        "MoM",
+        "Pre-read Materials"
+      ],
+      "source_references": [
+        {
+          "source_type": "MoM",
+          "locator": "lines 321-360",
+          "excerpt": "through engagement metrics, landing page activity, click-through \nrates and conversion indicators \n \n\u2022 HeartStream highlighted the need to understand campaign \neffectiveness and its contribution to downstream sales \noutcomes. \n \n\u2022 It was discussed that reporting should provide vi"
+        },
+        {
+          "source_type": "Pre-read Materials",
+          "locator": "lines 41-51",
+          "excerpt": "Process Flow 5 \u2013 Marketing Asset Governance & Campaign Readiness Standard D365 Customer Insights out-of-the-box, no customisation assumed\n\nProcess details: Marketing Asset Governance & Campaign Readiness Marketing Asset Management Definition: Marketing assets are created, maintai"
+        },
+        {
+          "source_type": "MoM",
+          "locator": "lines 361-400",
+          "excerpt": "\u2022 HeartStream indicated that only a limited number of users are \nexpected to create and manage campaigns globally. \n \n\u2022 It was confirmed that appropriate role-based access controls will \nbe required while still enabling global visibility for authorized \nmarketing users. \n \n \n \n3 "
+        }
+      ],
+      "why_generated": "Workshop requirement reflected in cited source spans.",
+      "why_mapped_to_feature": "Nearest preceding Feature row in CSV.",
+      "supporting_business_context": "through engagement metrics, landing page activity, click-through \nrates and conversion indicators \n \n\u2022 HeartStream highlighted the need to understand campaign \neffectiveness and its contribution to do",
+      "coverage_assessment": "Partially Supported",
+      "hallucination_assessment": "Potential Hallucination",
+      "hallucination_reason": "Some AC or title terms are not echoed in cited sources.",
+      "confidence_score": "0.13",
+      "recommended_action": "Clarify with workshop"
+    },
+    {
+      "story_key": "manual-US-29",
+      "user_story_id": "111684",
+      "user_story_title": "Ingest Internal Source Data into Customer Insights - Data",
+      "feature_name": "54-Global Marketing Content Activation",
+      "match_type": "Partial Match",
+      "derived_sources": [
+        "MoM",
+        "Pre-read Materials"
+      ],
+      "source_references": [
+        {
+          "source_type": "MoM",
+          "locator": "lines 481-520",
+          "excerpt": "Customer and partner \nmaster data contains \nduplicates and \nCustomer Insights \nsegmentation, reporting \nand analytics may be \nPerform data profiling, \ncleansing, deduplication and \nHeartStream \nBusiness / Data \nTeam / UST \n \n \n            \nfragmented account \nstructures \ninaccura"
+        },
+        {
+          "source_type": "Pre-read Materials",
+          "locator": "Unified customer profile; transcript 58:17\u20131:02:06",
+          "excerpt": "Account and contact 360 views in Customer Insights for marketing audiences (distinct from Sales CRM day-to-day)."
+        },
+        {
+          "source_type": "Pre-read Materials",
+          "locator": "Process Flow 1; transcript agenda external analytics focus",
+          "excerpt": "D365 Customer Insights data sources, profile unification, and dynamic segmentation for distributor and vertical-market models."
+        }
+      ],
+      "why_generated": "Workshop requirement reflected in cited source spans.",
+      "why_mapped_to_feature": "Nearest preceding Feature row in CSV.",
+      "supporting_business_context": "Customer and partner \nmaster data contains \nduplicates and \nCustomer Insights \nsegmentation, reporting \nand analytics may be \nPerform data profiling, \ncleansing, deduplication and \nHeartStream \nBusine",
+      "coverage_assessment": "Partially Supported",
+      "hallucination_assessment": "Potential Hallucination",
+      "hallucination_reason": "Some AC or title terms are not echoed in cited sources.",
+      "confidence_score": "0.09",
+      "recommended_action": "Clarify with workshop"
+    },
+    {
+      "story_key": "manual-US-30",
+      "user_story_id": "111685",
+      "user_story_title": "Configure Branded Sender and Email Domain Authentication",
+      "feature_name": "54-Global Marketing Content Activation",
+      "match_type": "Partial Match",
+      "derived_sources": [
+        "Transcript",
+        "MoM",
+        "Pre-read Materials"
+      ],
+      "source_references": [
+        {
+          "source_type": "Transcript",
+          "locator": "lines 801-840",
+          "excerpt": "This way I save it. Next time this email reaches you, click in this particular email. The redirection will be done at the same time, the benefit of this particular initiatives or these emails. When you are reviewing your marketing campaign, you will be in a position to have a loo"
+        },
+        {
+          "source_type": "MoM",
+          "locator": "lines 361-400",
+          "excerpt": "\u2022 HeartStream indicated that only a limited number of users are \nexpected to create and manage campaigns globally. \n \n\u2022 It was confirmed that appropriate role-based access controls will \nbe required while still enabling global visibility for authorized \nmarketing users. \n \n \n \n3 "
+        },
+        {
+          "source_type": "Pre-read Materials",
+          "locator": "lines 41-51",
+          "excerpt": "Process Flow 5 \u2013 Marketing Asset Governance & Campaign Readiness Standard D365 Customer Insights out-of-the-box, no customisation assumed\n\nProcess details: Marketing Asset Governance & Campaign Readiness Marketing Asset Management Definition: Marketing assets are created, maintai"
+        }
+      ],
+      "why_generated": "Workshop requirement reflected in cited source spans.",
+      "why_mapped_to_feature": "Nearest preceding Feature row in CSV.",
+      "supporting_business_context": "This way I save it. Next time this email reaches you, click in this particular email. The redirection will be done at the same time, the benefit of this particular initiatives or these emails. When yo",
+      "coverage_assessment": "Partially Supported",
+      "hallucination_assessment": "Potential Hallucination",
+      "hallucination_reason": "Some AC or title terms are not echoed in cited sources.",
+      "confidence_score": "0.07",
+      "recommended_action": "Clarify with workshop"
+    },
+    {
+      "story_key": "manual-US-32",
+      "user_story_id": "111592",
+      "user_story_title": "Define Brand Campaign Audiences",
+      "feature_name": "38-Brand Reputation Campaign Management",
+      "match_type": "Partial Match",
+      "derived_sources": [
+        "Pre-read Materials",
+        "MoM"
+      ],
+      "source_references": [
+        {
+          "source_type": "Pre-read Materials",
+          "locator": "lines 41-51",
+          "excerpt": "Process Flow 5 \u2013 Marketing Asset Governance & Campaign Readiness Standard D365 Customer Insights out-of-the-box, no customisation assumed\n\nProcess details: Marketing Asset Governance & Campaign Readiness Marketing Asset Management Definition: Marketing assets are created, maintai"
+        },
+        {
+          "source_type": "MoM",
+          "locator": "lines 281-320",
+          "excerpt": "\u2022 It was demonstrated that campaigns could be triggered through \npredefined segments or business events within Dynamics 365. \n \n \n            \n \n\u2022 HeartStream acknowledged the value of automated customer \noutreach for activities such as product awareness, upgrade \ncampaigns and e"
+        },
+        {
+          "source_type": "Pre-read Materials",
+          "locator": "WS-CE-02",
+          "excerpt": "Marketing research insights planning using Customer Insights audiences and analytics (WS-CE-02)."
+        }
+      ],
+      "why_generated": "Workshop requirement reflected in cited source spans.",
+      "why_mapped_to_feature": "Nearest preceding Feature row in CSV.",
+      "supporting_business_context": "Process Flow 5 \u2013 Marketing Asset Governance & Campaign Readiness Standard D365 Customer Insights out-of-the-box, no customisation assumed\n\nProcess details: Marketing Asset Governance & Campaign Readin",
+      "coverage_assessment": "Partially Supported",
+      "hallucination_assessment": "Potential Hallucination",
+      "hallucination_reason": "Some AC or title terms are not echoed in cited sources.",
+      "confidence_score": "0.09",
+      "recommended_action": "Clarify with workshop"
+    },
+    {
+      "story_key": "manual-US-33",
+      "user_story_id": "111594",
+      "user_story_title": "Execute Brand Awareness Communications",
+      "feature_name": "38-Brand Reputation Campaign Management",
+      "match_type": "Partial Match",
+      "derived_sources": [
+        "MoM"
+      ],
+      "source_references": [
+        {
+          "source_type": "MoM",
+          "locator": "lines 401-440",
+          "excerpt": "\u2022 HeartStream agreed that customer surveys and feedback \ncollection should form part of the future-state marketing \ncapability to improve customer understanding and insight \ngeneration. \n \n6 Marketing content \ngovernance \n\u2022 It was agreed that only approved marketing content shoul"
+        },
+        {
+          "source_type": "MoM",
+          "locator": "lines 281-320",
+          "excerpt": "\u2022 It was demonstrated that campaigns could be triggered through \npredefined segments or business events within Dynamics 365. \n \n \n            \n \n\u2022 HeartStream acknowledged the value of automated customer \noutreach for activities such as product awareness, upgrade \ncampaigns and e"
+        },
+        {
+          "source_type": "MoM",
+          "locator": "lines 321-360",
+          "excerpt": "through engagement metrics, landing page activity, click-through \nrates and conversion indicators \n \n\u2022 HeartStream highlighted the need to understand campaign \neffectiveness and its contribution to downstream sales \noutcomes. \n \n\u2022 It was discussed that reporting should provide vi"
+        }
+      ],
+      "why_generated": "Workshop requirement reflected in cited source spans.",
+      "why_mapped_to_feature": "Nearest preceding Feature row in CSV.",
+      "supporting_business_context": "\u2022 HeartStream agreed that customer surveys and feedback \ncollection should form part of the future-state marketing \ncapability to improve customer understanding and insight \ngeneration. \n \n6 Marketing",
+      "coverage_assessment": "Partially Supported",
+      "hallucination_assessment": "Potential Hallucination",
+      "hallucination_reason": "Some AC or title terms are not echoed in cited sources.",
+      "confidence_score": "0.07",
+      "recommended_action": "Clarify with workshop"
+    },
+    {
+      "story_key": "manual-US-34",
+      "user_story_id": "111595",
+      "user_story_title": "Configure Event Communication Journeys",
+      "feature_name": "38-Brand Reputation Campaign Management",
+      "match_type": "Partial Match",
+      "derived_sources": [
+        "Pre-read Materials",
+        "MoM",
+        "Transcript"
+      ],
+      "source_references": [
+        {
+          "source_type": "Pre-read Materials",
+          "locator": "lines 41-51",
+          "excerpt": "Process Flow 5 \u2013 Marketing Asset Governance & Campaign Readiness Standard D365 Customer Insights out-of-the-box, no customisation assumed\n\nProcess details: Marketing Asset Governance & Campaign Readiness Marketing Asset Management Definition: Marketing assets are created, maintai"
+        },
+        {
+          "source_type": "MoM",
+          "locator": "lines 321-360",
+          "excerpt": "through engagement metrics, landing page activity, click-through \nrates and conversion indicators \n \n\u2022 HeartStream highlighted the need to understand campaign \neffectiveness and its contribution to downstream sales \noutcomes. \n \n\u2022 It was discussed that reporting should provide vi"
+        },
+        {
+          "source_type": "Transcript",
+          "locator": "lines 521-560",
+          "excerpt": "satisfaction scoring all that kind of stuff. Yeah, we should be doing again. I think what I can say is in the last five years or so, the campaigns that we've done, we've simply worked with industry organizations and basically purchased contact lists, right? So that's that is one "
+        }
+      ],
+      "why_generated": "Workshop requirement reflected in cited source spans.",
+      "why_mapped_to_feature": "Nearest preceding Feature row in CSV.",
+      "supporting_business_context": "Process Flow 5 \u2013 Marketing Asset Governance & Campaign Readiness Standard D365 Customer Insights out-of-the-box, no customisation assumed\n\nProcess details: Marketing Asset Governance & Campaign Readin",
+      "coverage_assessment": "Partially Supported",
+      "hallucination_assessment": "Potential Hallucination",
+      "hallucination_reason": "Some AC or title terms are not echoed in cited sources.",
+      "confidence_score": "0.05",
+      "recommended_action": "Clarify with workshop"
+    },
+    {
+      "story_key": "manual-US-35",
+      "user_story_id": "111597",
+      "user_story_title": "Generate Leads from Brand Campaign Activities",
+      "feature_name": "38-Brand Reputation Campaign Management",
+      "match_type": "Partial Match",
+      "derived_sources": [
+        "Pre-read Materials",
+        "MoM"
+      ],
+      "source_references": [
+        {
+          "source_type": "Pre-read Materials",
+          "locator": "WS-CE-04",
+          "excerpt": "Brand reputation campaign management with journeys, segmentation, and performance analytics (WS-CE-04)."
+        },
+        {
+          "source_type": "Pre-read Materials",
+          "locator": "lines 41-51",
+          "excerpt": "Process Flow 5 \u2013 Marketing Asset Governance & Campaign Readiness Standard D365 Customer Insights out-of-the-box, no customisation assumed\n\nProcess details: Marketing Asset Governance & Campaign Readiness Marketing Asset Management Definition: Marketing assets are created, maintai"
+        },
+        {
+          "source_type": "MoM",
+          "locator": "lines 321-360",
+          "excerpt": "through engagement metrics, landing page activity, click-through \nrates and conversion indicators \n \n\u2022 HeartStream highlighted the need to understand campaign \neffectiveness and its contribution to downstream sales \noutcomes. \n \n\u2022 It was discussed that reporting should provide vi"
+        }
+      ],
+      "why_generated": "Workshop requirement reflected in cited source spans.",
+      "why_mapped_to_feature": "Nearest preceding Feature row in CSV.",
+      "supporting_business_context": "Brand reputation campaign management with journeys, segmentation, and performance analytics (WS-CE-04).",
+      "coverage_assessment": "Partially Supported",
+      "hallucination_assessment": "Potential Hallucination",
+      "hallucination_reason": "Some AC or title terms are not echoed in cited sources.",
+      "confidence_score": "0.07",
+      "recommended_action": "Clarify with workshop"
+    },
+    {
+      "story_key": "manual-US-36",
+      "user_story_id": "111598",
+      "user_story_title": "Associate Campaign Responses to Customer Profiles",
+      "feature_name": "38-Brand Reputation Campaign Management",
+      "match_type": "Partial Match",
+      "derived_sources": [
+        "MoM",
+        "Pre-read Materials"
+      ],
+      "source_references": [
+        {
+          "source_type": "MoM",
+          "locator": "lines 441-480",
+          "excerpt": "\u2022 SMS, social media and additional digital engagement channels \nwill be considered as future-state capabilities. \n \n11 Customer data quality and \nmigration \n\u2022 It was agreed that customer master data cleansing, deduplication \nand account rationalization activities will be required"
+        },
+        {
+          "source_type": "MoM",
+          "locator": "lines 281-320",
+          "excerpt": "\u2022 It was demonstrated that campaigns could be triggered through \npredefined segments or business events within Dynamics 365. \n \n \n            \n \n\u2022 HeartStream acknowledged the value of automated customer \noutreach for activities such as product awareness, upgrade \ncampaigns and e"
+        },
+        {
+          "source_type": "Pre-read Materials",
+          "locator": "WS-CE-03",
+          "excerpt": "Global marketing content activation via Customer Insights Journeys (WS-CE-03)."
+        }
+      ],
+      "why_generated": "Workshop requirement reflected in cited source spans.",
+      "why_mapped_to_feature": "Nearest preceding Feature row in CSV.",
+      "supporting_business_context": "\u2022 SMS, social media and additional digital engagement channels \nwill be considered as future-state capabilities. \n \n11 Customer data quality and \nmigration \n\u2022 It was agreed that customer master data c",
+      "coverage_assessment": "Partially Supported",
+      "hallucination_assessment": "Potential Hallucination",
+      "hallucination_reason": "Some AC or title terms are not echoed in cited sources.",
+      "confidence_score": "0.10",
+      "recommended_action": "Clarify with workshop"
+    },
+    {
+      "story_key": "manual-US-37",
+      "user_story_id": "111599",
+      "user_story_title": "Measure Brand Campaign Performance",
+      "feature_name": "38-Brand Reputation Campaign Management",
+      "match_type": "Partial Match",
+      "derived_sources": [
+        "Pre-read Materials",
+        "MoM"
+      ],
+      "source_references": [
+        {
+          "source_type": "Pre-read Materials",
+          "locator": "WS-CE-04",
+          "excerpt": "Brand reputation campaign management with journeys, segmentation, and performance analytics (WS-CE-04)."
+        },
+        {
+          "source_type": "MoM",
+          "locator": "lines 321-360",
+          "excerpt": "through engagement metrics, landing page activity, click-through \nrates and conversion indicators \n \n\u2022 HeartStream highlighted the need to understand campaign \neffectiveness and its contribution to downstream sales \noutcomes. \n \n\u2022 It was discussed that reporting should provide vi"
+        },
+        {
+          "source_type": "MoM",
+          "locator": "lines 281-320",
+          "excerpt": "\u2022 It was demonstrated that campaigns could be triggered through \npredefined segments or business events within Dynamics 365. \n \n \n            \n \n\u2022 HeartStream acknowledged the value of automated customer \noutreach for activities such as product awareness, upgrade \ncampaigns and e"
+        }
+      ],
+      "why_generated": "Workshop requirement reflected in cited source spans.",
+      "why_mapped_to_feature": "Nearest preceding Feature row in CSV.",
+      "supporting_business_context": "Brand reputation campaign management with journeys, segmentation, and performance analytics (WS-CE-04).",
+      "coverage_assessment": "Partially Supported",
+      "hallucination_assessment": "Potential Hallucination",
+      "hallucination_reason": "Some AC or title terms are not echoed in cited sources.",
+      "confidence_score": "0.12",
+      "recommended_action": "Clarify with workshop"
+    },
+    {
+      "story_key": "manual-US-38",
+      "user_story_id": "111601",
+      "user_story_title": "Provide Brand Campaign Performance Dashboards",
+      "feature_name": "38-Brand Reputation Campaign Management",
+      "match_type": "Partial Match",
+      "derived_sources": [
+        "MoM"
+      ],
+      "source_references": [
+        {
+          "source_type": "MoM",
+          "locator": "lines 321-360",
+          "excerpt": "through engagement metrics, landing page activity, click-through \nrates and conversion indicators \n \n\u2022 HeartStream highlighted the need to understand campaign \neffectiveness and its contribution to downstream sales \noutcomes. \n \n\u2022 It was discussed that reporting should provide vi"
+        },
+        {
+          "source_type": "MoM",
+          "locator": "lines 441-480",
+          "excerpt": "\u2022 SMS, social media and additional digital engagement channels \nwill be considered as future-state capabilities. \n \n11 Customer data quality and \nmigration \n\u2022 It was agreed that customer master data cleansing, deduplication \nand account rationalization activities will be required"
+        },
+        {
+          "source_type": "MoM",
+          "locator": "lines 721-760",
+          "excerpt": "Governance \nDefine future-state campaign approval workflow, \nincluding marketing, finance and other stakeholder \napprovals required prior to campaign execution. \nHeartStream \nMarketing TBD \n11 Consent \nManagement \nProvide details of the current consent \nmanagement approach, inclu"
+        }
+      ],
+      "why_generated": "Workshop requirement reflected in cited source spans.",
+      "why_mapped_to_feature": "Nearest preceding Feature row in CSV.",
+      "supporting_business_context": "through engagement metrics, landing page activity, click-through \nrates and conversion indicators \n \n\u2022 HeartStream highlighted the need to understand campaign \neffectiveness and its contribution to do",
+      "coverage_assessment": "Partially Supported",
+      "hallucination_assessment": "Potential Hallucination",
+      "hallucination_reason": "Some AC or title terms are not echoed in cited sources.",
+      "confidence_score": "0.11",
+      "recommended_action": "Clarify with workshop"
+    },
+    {
+      "story_key": "manual-US-39",
+      "user_story_id": "111602",
+      "user_story_title": "Configure Marketing Consent and Subscription Preferences",
+      "feature_name": "38-Brand Reputation Campaign Management",
+      "match_type": "Partial Match",
+      "derived_sources": [
+        "MoM"
+      ],
+      "source_references": [
+        {
+          "source_type": "MoM",
+          "locator": "lines 41-80",
+          "excerpt": "2 KEY DISCUSSION POINTS \nSr Topic Discussion Summary \n1 Workshop scope and \nstakeholder alignment \n\u2022 HeartStream highlighted that the workshop title created \nconfusion, resulting in key marketing stakeholders not attending \nthe session. \n \n\u2022 It was agreed that future workshop tit"
+        },
+        {
+          "source_type": "MoM",
+          "locator": "lines 361-400",
+          "excerpt": "\u2022 HeartStream indicated that only a limited number of users are \nexpected to create and manage campaigns globally. \n \n\u2022 It was confirmed that appropriate role-based access controls will \nbe required while still enabling global visibility for authorized \nmarketing users. \n \n \n \n3 "
+        },
+        {
+          "source_type": "MoM",
+          "locator": "lines 241-280",
+          "excerpt": "10 Marketing content \ngovernance \n\u2022 HeartStream confirmed that externally published marketing \ncontent currently undergoes approval by Marketing, Quality, \nClinical, Legal and Regulatory stakeholders. \n \n\u2022 It was emphasized that only approved content should be used in \ncustomer-f"
+        }
+      ],
+      "why_generated": "Workshop requirement reflected in cited source spans.",
+      "why_mapped_to_feature": "Nearest preceding Feature row in CSV.",
+      "supporting_business_context": "2 KEY DISCUSSION POINTS \nSr Topic Discussion Summary \n1 Workshop scope and \nstakeholder alignment \n\u2022 HeartStream highlighted that the workshop title created \nconfusion, resulting in key marketing stak",
+      "coverage_assessment": "Partially Supported",
+      "hallucination_assessment": "Potential Hallucination",
+      "hallucination_reason": "Some AC or title terms are not echoed in cited sources.",
+      "confidence_score": "0.08",
+      "recommended_action": "Clarify with workshop"
+    },
+    {
+      "story_key": "manual-US-41",
+      "user_story_id": "111607",
+      "user_story_title": "Verify Campaign Readiness Before Activation",
+      "feature_name": "58-Marketing Asset Governance & Campaign Readiness",
+      "match_type": "Partial Match",
+      "derived_sources": [
+        "MoM",
+        "Pre-read Materials"
+      ],
+      "source_references": [
+        {
+          "source_type": "MoM",
+          "locator": "lines 241-280",
+          "excerpt": "10 Marketing content \ngovernance \n\u2022 HeartStream confirmed that externally published marketing \ncontent currently undergoes approval by Marketing, Quality, \nClinical, Legal and Regulatory stakeholders. \n \n\u2022 It was emphasized that only approved content should be used in \ncustomer-f"
+        },
+        {
+          "source_type": "MoM",
+          "locator": "lines 401-440",
+          "excerpt": "\u2022 HeartStream agreed that customer surveys and feedback \ncollection should form part of the future-state marketing \ncapability to improve customer understanding and insight \ngeneration. \n \n6 Marketing content \ngovernance \n\u2022 It was agreed that only approved marketing content shoul"
+        },
+        {
+          "source_type": "Pre-read Materials",
+          "locator": "lines 41-51",
+          "excerpt": "Process Flow 5 \u2013 Marketing Asset Governance & Campaign Readiness Standard D365 Customer Insights out-of-the-box, no customisation assumed\n\nProcess details: Marketing Asset Governance & Campaign Readiness Marketing Asset Management Definition: Marketing assets are created, maintai"
+        }
+      ],
+      "why_generated": "Workshop requirement reflected in cited source spans.",
+      "why_mapped_to_feature": "Nearest preceding Feature row in CSV.",
+      "supporting_business_context": "10 Marketing content \ngovernance \n\u2022 HeartStream confirmed that externally published marketing \ncontent currently undergoes approval by Marketing, Quality, \nClinical, Legal and Regulatory stakeholders.",
+      "coverage_assessment": "Partially Supported",
+      "hallucination_assessment": "Potential Hallucination",
+      "hallucination_reason": "Some AC or title terms are not echoed in cited sources.",
+      "confidence_score": "0.09",
+      "recommended_action": "Clarify with workshop"
+    },
+    {
+      "story_key": "manual-US-42",
+      "user_story_id": "111611",
+      "user_story_title": "Monitor Campaign Readiness and Deployment Status",
+      "feature_name": "58-Marketing Asset Governance & Campaign Readiness",
+      "match_type": "Partial Match",
+      "derived_sources": [
+        "MoM",
+        "Pre-read Materials"
+      ],
+      "source_references": [
+        {
+          "source_type": "MoM",
+          "locator": "lines 361-400",
+          "excerpt": "\u2022 HeartStream indicated that only a limited number of users are \nexpected to create and manage campaigns globally. \n \n\u2022 It was confirmed that appropriate role-based access controls will \nbe required while still enabling global visibility for authorized \nmarketing users. \n \n \n \n3 "
+        },
+        {
+          "source_type": "Pre-read Materials",
+          "locator": "lines 41-51",
+          "excerpt": "Process Flow 5 \u2013 Marketing Asset Governance & Campaign Readiness Standard D365 Customer Insights out-of-the-box, no customisation assumed\n\nProcess details: Marketing Asset Governance & Campaign Readiness Marketing Asset Management Definition: Marketing assets are created, maintai"
+        },
+        {
+          "source_type": "Pre-read Materials",
+          "locator": "WS-CE-05",
+          "excerpt": "Marketing asset governance and campaign readiness (WS-CE-05)."
+        }
+      ],
+      "why_generated": "Workshop requirement reflected in cited source spans.",
+      "why_mapped_to_feature": "Nearest preceding Feature row in CSV.",
+      "supporting_business_context": "\u2022 HeartStream indicated that only a limited number of users are \nexpected to create and manage campaigns globally. \n \n\u2022 It was confirmed that appropriate role-based access controls will \nbe required w",
+      "coverage_assessment": "Partially Supported",
+      "hallucination_assessment": "Potential Hallucination",
+      "hallucination_reason": "Some AC or title terms are not echoed in cited sources.",
+      "confidence_score": "0.10",
+      "recommended_action": "Clarify with workshop"
+    },
+    {
+      "story_key": "manual-US-43",
+      "user_story_id": "111612",
+      "user_story_title": "Provide Campaign Governance and Readiness Dashboards",
+      "feature_name": "58-Marketing Asset Governance & Campaign Readiness",
+      "match_type": "Partial Match",
+      "derived_sources": [
+        "Pre-read Materials",
+        "MoM"
+      ],
+      "source_references": [
+        {
+          "source_type": "Pre-read Materials",
+          "locator": "WS-CE-05",
+          "excerpt": "Marketing asset governance and campaign readiness (WS-CE-05)."
+        },
+        {
+          "source_type": "Pre-read Materials",
+          "locator": "lines 41-51",
+          "excerpt": "Process Flow 5 \u2013 Marketing Asset Governance & Campaign Readiness Standard D365 Customer Insights out-of-the-box, no customisation assumed\n\nProcess details: Marketing Asset Governance & Campaign Readiness Marketing Asset Management Definition: Marketing assets are created, maintai"
+        },
+        {
+          "source_type": "MoM",
+          "locator": "lines 281-320",
+          "excerpt": "\u2022 It was demonstrated that campaigns could be triggered through \npredefined segments or business events within Dynamics 365. \n \n \n            \n \n\u2022 HeartStream acknowledged the value of automated customer \noutreach for activities such as product awareness, upgrade \ncampaigns and e"
+        }
+      ],
+      "why_generated": "Workshop requirement reflected in cited source spans.",
+      "why_mapped_to_feature": "Nearest preceding Feature row in CSV.",
+      "supporting_business_context": "Marketing asset governance and campaign readiness (WS-CE-05).",
+      "coverage_assessment": "Partially Supported",
+      "hallucination_assessment": "Potential Hallucination",
+      "hallucination_reason": "Some AC or title terms are not echoed in cited sources.",
+      "confidence_score": "0.13",
+      "recommended_action": "Clarify with workshop"
+    },
+    {
+      "story_key": "manual-US-45",
+      "user_story_id": "111613",
+      "user_story_title": "Define Marketing Strategy Target Audiences",
+      "feature_name": "60-Marketing Strategy & Activation Planning",
+      "match_type": "Partial Match",
+      "derived_sources": [
+        "MoM"
+      ],
+      "source_references": [
+        {
+          "source_type": "MoM",
+          "locator": "lines 681-720",
+          "excerpt": "feedback survey requirements, including target \naudience, timing and expected reporting \nrequirements. \nHeartStream \nMarketing TBD \n6 Data & Migration \nAnalyze customer master data quality, duplicate \naccount scenarios and market segmentation \nattributes required to support futur"
+        },
+        {
+          "source_type": "MoM",
+          "locator": "lines 641-680",
+          "excerpt": "5 ACTION ITEMS \nSr Category Action Owner Tentative \nDue Date \n1 Segmentation \nProvide the list of marketing segments and target \naudiences that HeartStream would like to support \nin Dynamics 365 Customer Insights, including \ndistributor, customer and market-based \nsegmentation re"
+        },
+        {
+          "source_type": "MoM",
+          "locator": "lines 481-520",
+          "excerpt": "Customer and partner \nmaster data contains \nduplicates and \nCustomer Insights \nsegmentation, reporting \nand analytics may be \nPerform data profiling, \ncleansing, deduplication and \nHeartStream \nBusiness / Data \nTeam / UST \n \n \n            \nfragmented account \nstructures \ninaccura"
+        }
+      ],
+      "why_generated": "Workshop requirement reflected in cited source spans.",
+      "why_mapped_to_feature": "Nearest preceding Feature row in CSV.",
+      "supporting_business_context": "feedback survey requirements, including target \naudience, timing and expected reporting \nrequirements. \nHeartStream \nMarketing TBD \n6 Data & Migration \nAnalyze customer master data quality, duplicate ",
+      "coverage_assessment": "Partially Supported",
+      "hallucination_assessment": "Potential Hallucination",
+      "hallucination_reason": "Some AC or title terms are not echoed in cited sources.",
+      "confidence_score": "0.12",
+      "recommended_action": "Clarify with workshop"
+    },
+    {
+      "story_key": "manual-US-46",
+      "user_story_id": "111614",
+      "user_story_title": "Create Strategic Customer and Account Segments",
+      "feature_name": "60-Marketing Strategy & Activation Planning",
+      "match_type": "Partial Match",
+      "derived_sources": [
+        "MoM"
+      ],
+      "source_references": [
+        {
+          "source_type": "MoM",
+          "locator": "lines 441-480",
+          "excerpt": "\u2022 SMS, social media and additional digital engagement channels \nwill be considered as future-state capabilities. \n \n11 Customer data quality and \nmigration \n\u2022 It was agreed that customer master data cleansing, deduplication \nand account rationalization activities will be required"
+        },
+        {
+          "source_type": "MoM",
+          "locator": "lines 281-320",
+          "excerpt": "\u2022 It was demonstrated that campaigns could be triggered through \npredefined segments or business events within Dynamics 365. \n \n \n            \n \n\u2022 HeartStream acknowledged the value of automated customer \noutreach for activities such as product awareness, upgrade \ncampaigns and e"
+        },
+        {
+          "source_type": "MoM",
+          "locator": "lines 681-720",
+          "excerpt": "feedback survey requirements, including target \naudience, timing and expected reporting \nrequirements. \nHeartStream \nMarketing TBD \n6 Data & Migration \nAnalyze customer master data quality, duplicate \naccount scenarios and market segmentation \nattributes required to support futur"
+        }
+      ],
+      "why_generated": "Workshop requirement reflected in cited source spans.",
+      "why_mapped_to_feature": "Nearest preceding Feature row in CSV.",
+      "supporting_business_context": "\u2022 SMS, social media and additional digital engagement channels \nwill be considered as future-state capabilities. \n \n11 Customer data quality and \nmigration \n\u2022 It was agreed that customer master data c",
+      "coverage_assessment": "Partially Supported",
+      "hallucination_assessment": "Potential Hallucination",
+      "hallucination_reason": "Some AC or title terms are not echoed in cited sources.",
+      "confidence_score": "0.10",
+      "recommended_action": "Clarify with workshop"
+    },
+    {
+      "story_key": "manual-US-47",
+      "user_story_id": "111615",
+      "user_story_title": "Create Strategic Partner and Distributor Segments",
+      "feature_name": "60-Marketing Strategy & Activation Planning",
+      "match_type": "Partial Match",
+      "derived_sources": [
+        "MoM"
+      ],
+      "source_references": [
+        {
+          "source_type": "MoM",
+          "locator": "lines 281-320",
+          "excerpt": "\u2022 It was demonstrated that campaigns could be triggered through \npredefined segments or business events within Dynamics 365. \n \n \n            \n \n\u2022 HeartStream acknowledged the value of automated customer \noutreach for activities such as product awareness, upgrade \ncampaigns and e"
+        },
+        {
+          "source_type": "MoM",
+          "locator": "lines 121-160",
+          "excerpt": "within a unified view. \n \n\u2022 HeartStream emphasized that global distributors operating \nacross multiple regions must be supported within the future-state \ncustomer and partner profile model. \n \n\u2022 HeartStream confirmed that future marketing activities must \nsupport both distributor"
+        },
+        {
+          "source_type": "MoM",
+          "locator": "lines 361-400",
+          "excerpt": "\u2022 HeartStream indicated that only a limited number of users are \nexpected to create and manage campaigns globally. \n \n\u2022 It was confirmed that appropriate role-based access controls will \nbe required while still enabling global visibility for authorized \nmarketing users. \n \n \n \n3 "
+        }
+      ],
+      "why_generated": "Workshop requirement reflected in cited source spans.",
+      "why_mapped_to_feature": "Nearest preceding Feature row in CSV.",
+      "supporting_business_context": "\u2022 It was demonstrated that campaigns could be triggered through \npredefined segments or business events within Dynamics 365. \n \n \n            \n \n\u2022 HeartStream acknowledged the value of automated custo",
+      "coverage_assessment": "Partially Supported",
+      "hallucination_assessment": "Potential Hallucination",
+      "hallucination_reason": "Some AC or title terms are not echoed in cited sources.",
+      "confidence_score": "0.10",
+      "recommended_action": "Clarify with workshop"
+    },
+    {
+      "story_key": "manual-US-48",
+      "user_story_id": "111617",
+      "user_story_title": "Configure Strategy-Aligned Customer Journeys",
+      "feature_name": "60-Marketing Strategy & Activation Planning",
+      "match_type": "Partial Match",
+      "derived_sources": [
+        "Pre-read Materials",
+        "MoM"
+      ],
+      "source_references": [
+        {
+          "source_type": "Pre-read Materials",
+          "locator": "WS-CE-03",
+          "excerpt": "Global marketing content activation via Customer Insights Journeys (WS-CE-03)."
+        },
+        {
+          "source_type": "MoM",
+          "locator": "lines 241-280",
+          "excerpt": "10 Marketing content \ngovernance \n\u2022 HeartStream confirmed that externally published marketing \ncontent currently undergoes approval by Marketing, Quality, \nClinical, Legal and Regulatory stakeholders. \n \n\u2022 It was emphasized that only approved content should be used in \ncustomer-f"
+        },
+        {
+          "source_type": "MoM",
+          "locator": "lines 401-440",
+          "excerpt": "\u2022 HeartStream agreed that customer surveys and feedback \ncollection should form part of the future-state marketing \ncapability to improve customer understanding and insight \ngeneration. \n \n6 Marketing content \ngovernance \n\u2022 It was agreed that only approved marketing content shoul"
+        }
+      ],
+      "why_generated": "Workshop requirement reflected in cited source spans.",
+      "why_mapped_to_feature": "Nearest preceding Feature row in CSV.",
+      "supporting_business_context": "Global marketing content activation via Customer Insights Journeys (WS-CE-03).",
+      "coverage_assessment": "Partially Supported",
+      "hallucination_assessment": "Potential Hallucination",
+      "hallucination_reason": "Some AC or title terms are not echoed in cited sources.",
+      "confidence_score": "0.09",
+      "recommended_action": "Clarify with workshop"
+    },
+    {
+      "story_key": "manual-US-49",
+      "user_story_id": "111618",
+      "user_story_title": "Personalize Communications for Strategic Audiences",
+      "feature_name": "60-Marketing Strategy & Activation Planning",
+      "match_type": "Partial Match",
+      "derived_sources": [
+        "MoM"
+      ],
+      "source_references": [
+        {
+          "source_type": "MoM",
+          "locator": "lines 681-720",
+          "excerpt": "feedback survey requirements, including target \naudience, timing and expected reporting \nrequirements. \nHeartStream \nMarketing TBD \n6 Data & Migration \nAnalyze customer master data quality, duplicate \naccount scenarios and market segmentation \nattributes required to support futur"
+        },
+        {
+          "source_type": "MoM",
+          "locator": "lines 241-280",
+          "excerpt": "10 Marketing content \ngovernance \n\u2022 HeartStream confirmed that externally published marketing \ncontent currently undergoes approval by Marketing, Quality, \nClinical, Legal and Regulatory stakeholders. \n \n\u2022 It was emphasized that only approved content should be used in \ncustomer-f"
+        },
+        {
+          "source_type": "MoM",
+          "locator": "lines 401-440",
+          "excerpt": "\u2022 HeartStream agreed that customer surveys and feedback \ncollection should form part of the future-state marketing \ncapability to improve customer understanding and insight \ngeneration. \n \n6 Marketing content \ngovernance \n\u2022 It was agreed that only approved marketing content shoul"
+        }
+      ],
+      "why_generated": "Workshop requirement reflected in cited source spans.",
+      "why_mapped_to_feature": "Nearest preceding Feature row in CSV.",
+      "supporting_business_context": "feedback survey requirements, including target \naudience, timing and expected reporting \nrequirements. \nHeartStream \nMarketing TBD \n6 Data & Migration \nAnalyze customer master data quality, duplicate ",
+      "coverage_assessment": "Partially Supported",
+      "hallucination_assessment": "Potential Hallucination",
+      "hallucination_reason": "Some AC or title terms are not echoed in cited sources.",
+      "confidence_score": "0.08",
+      "recommended_action": "Clarify with workshop"
+    },
+    {
+      "story_key": "manual-US-50",
+      "user_story_id": "111619",
+      "user_story_title": "Activate Marketing Programs Across Priority Markets",
+      "feature_name": "60-Marketing Strategy & Activation Planning",
+      "match_type": "Partial Match",
+      "derived_sources": [
+        "MoM"
+      ],
+      "source_references": [
+        {
+          "source_type": "MoM",
+          "locator": "lines 641-680",
+          "excerpt": "5 ACTION ITEMS \nSr Category Action Owner Tentative \nDue Date \n1 Segmentation \nProvide the list of marketing segments and target \naudiences that HeartStream would like to support \nin Dynamics 365 Customer Insights, including \ndistributor, customer and market-based \nsegmentation re"
+        },
+        {
+          "source_type": "MoM",
+          "locator": "lines 121-160",
+          "excerpt": "within a unified view. \n \n\u2022 HeartStream emphasized that global distributors operating \nacross multiple regions must be supported within the future-state \ncustomer and partner profile model. \n \n\u2022 HeartStream confirmed that future marketing activities must \nsupport both distributor"
+        },
+        {
+          "source_type": "MoM",
+          "locator": "lines 761-782",
+          "excerpt": "15 \nFuture \nWorkshop \nCoverage \nIdentify additional marketing stakeholders from \nglobal and regional teams who should participate \nin future marketing workshops. \nHeartStream \nMarketing TBD \n16 Requirement \nValidation \nReview workshop findings, assumptions and \ndiscussion outcome"
+        }
+      ],
+      "why_generated": "Workshop requirement reflected in cited source spans.",
+      "why_mapped_to_feature": "Nearest preceding Feature row in CSV.",
+      "supporting_business_context": "5 ACTION ITEMS \nSr Category Action Owner Tentative \nDue Date \n1 Segmentation \nProvide the list of marketing segments and target \naudiences that HeartStream would like to support \nin Dynamics 365 Custo",
+      "coverage_assessment": "Partially Supported",
+      "hallucination_assessment": "Potential Hallucination",
+      "hallucination_reason": "Some AC or title terms are not echoed in cited sources.",
+      "confidence_score": "0.08",
+      "recommended_action": "Clarify with workshop"
+    },
+    {
+      "story_key": "manual-US-51",
+      "user_story_id": "111620",
+      "user_story_title": "Measure Marketing Activation Plan Performance",
+      "feature_name": "60-Marketing Strategy & Activation Planning",
+      "match_type": "Partial Match",
+      "derived_sources": [
+        "MoM",
+        "Pre-read Materials"
+      ],
+      "source_references": [
+        {
+          "source_type": "MoM",
+          "locator": "lines 321-360",
+          "excerpt": "through engagement metrics, landing page activity, click-through \nrates and conversion indicators \n \n\u2022 HeartStream highlighted the need to understand campaign \neffectiveness and its contribution to downstream sales \noutcomes. \n \n\u2022 It was discussed that reporting should provide vi"
+        },
+        {
+          "source_type": "Pre-read Materials",
+          "locator": "WS-CE-03",
+          "excerpt": "Global marketing content activation via Customer Insights Journeys (WS-CE-03)."
+        },
+        {
+          "source_type": "Pre-read Materials",
+          "locator": "lines 41-51",
+          "excerpt": "Process Flow 5 \u2013 Marketing Asset Governance & Campaign Readiness Standard D365 Customer Insights out-of-the-box, no customisation assumed\n\nProcess details: Marketing Asset Governance & Campaign Readiness Marketing Asset Management Definition: Marketing assets are created, maintai"
+        }
+      ],
+      "why_generated": "Workshop requirement reflected in cited source spans.",
+      "why_mapped_to_feature": "Nearest preceding Feature row in CSV.",
+      "supporting_business_context": "through engagement metrics, landing page activity, click-through \nrates and conversion indicators \n \n\u2022 HeartStream highlighted the need to understand campaign \neffectiveness and its contribution to do",
+      "coverage_assessment": "Partially Supported",
+      "hallucination_assessment": "Potential Hallucination",
+      "hallucination_reason": "Some AC or title terms are not echoed in cited sources.",
+      "confidence_score": "0.10",
+      "recommended_action": "Clarify with workshop"
+    },
+    {
+      "story_key": "manual-US-52",
+      "user_story_id": "111621",
+      "user_story_title": "Refine Strategic Audiences Using Activation Insights",
+      "feature_name": "60-Marketing Strategy & Activation Planning",
+      "match_type": "Partial Match",
+      "derived_sources": [
+        "Pre-read Materials",
+        "MoM"
+      ],
+      "source_references": [
+        {
+          "source_type": "Pre-read Materials",
+          "locator": "WS-CE-02",
+          "excerpt": "Marketing research insights planning using Customer Insights audiences and analytics (WS-CE-02)."
+        },
+        {
+          "source_type": "Pre-read Materials",
+          "locator": "WS-CE-03",
+          "excerpt": "Global marketing content activation via Customer Insights Journeys (WS-CE-03)."
+        },
+        {
+          "source_type": "MoM",
+          "locator": "lines 441-480",
+          "excerpt": "\u2022 SMS, social media and additional digital engagement channels \nwill be considered as future-state capabilities. \n \n11 Customer data quality and \nmigration \n\u2022 It was agreed that customer master data cleansing, deduplication \nand account rationalization activities will be required"
+        }
+      ],
+      "why_generated": "Workshop requirement reflected in cited source spans.",
+      "why_mapped_to_feature": "Nearest preceding Feature row in CSV.",
+      "supporting_business_context": "Marketing research insights planning using Customer Insights audiences and analytics (WS-CE-02).",
+      "coverage_assessment": "Partially Supported",
+      "hallucination_assessment": "Potential Hallucination",
+      "hallucination_reason": "Some AC or title terms are not echoed in cited sources.",
+      "confidence_score": "0.09",
+      "recommended_action": "Clarify with workshop"
+    }
+  ],
+  "feature_traceability_matrix": [
+    {
+      "feature_name": "70 - External Analytics Data Ingestion & Unification",
+      "mapped_user_stories": [],
+      "coverage_percent": 0.0,
+      "missing_requirements": [
+        "70 - External Analytics Data Ingestion & Unification"
+      ]
+    },
+    {
+      "feature_name": "61 - Marketing Research Insights Planning",
+      "mapped_user_stories": [],
+      "coverage_percent": 0.0,
+      "missing_requirements": [
+        "61 - Marketing Research Insights Planning"
+      ]
+    },
+    {
+      "feature_name": "54 - Global Marketing Content Activation",
+      "mapped_user_stories": [],
+      "coverage_percent": 0.0,
+      "missing_requirements": [
+        "54 - Global Marketing Content Activation"
+      ]
+    },
+    {
+      "feature_name": "38 - Brand Reputation Campaign Management",
+      "mapped_user_stories": [],
+      "coverage_percent": 0.0,
+      "missing_requirements": [
+        "38 - Brand Reputation Campaign Management"
+      ]
+    },
+    {
+      "feature_name": "58 - Marketing Asset Governance & Campaign Readiness",
+      "mapped_user_stories": [],
+      "coverage_percent": 0.0,
+      "missing_requirements": [
+        "58 - Marketing Asset Governance & Campaign Readiness"
+      ]
+    },
+    {
+      "feature_name": "60 - Marketing Strategy & Activation Planning",
+      "mapped_user_stories": [],
+      "coverage_percent": 0.0,
+      "missing_requirements": [
+        "60 - Marketing Strategy & Activation Planning"
+      ]
+    }
+  ],
+  "source_coverage_summary": {
+    "transcript_percent": 9.1,
+    "mom_percent": 100.0,
+    "preread_percent": 70.5,
+    "feature_list_percent": 100.0
+  },
+  "coverage_gap_analysis": {
+    "feature_requirements_not_in_stories": [
+      {
+        "statement": "70 - External Analytics Data Ingestion & Unification",
+        "source_type": "Feature List",
+        "source_path": "C:\\Users\\308279\\Documents\\HEARTSTREAM-1\\artifacts\\work-items\\SOW.json",
+        "source_locator": "SOW.rows[0]",
+        "confidence": "explicit"
+      },
+      {
+        "statement": "61 - Marketing Research Insights Planning",
+        "source_type": "Feature List",
+        "source_path": "C:\\Users\\308279\\Documents\\HEARTSTREAM-1\\artifacts\\work-items\\SOW.json",
+        "source_locator": "SOW.rows[1]",
+        "confidence": "explicit"
+      },
+      {
+        "statement": "54 - Global Marketing Content Activation",
+        "source_type": "Feature List",
+        "source_path": "C:\\Users\\308279\\Documents\\HEARTSTREAM-1\\artifacts\\work-items\\SOW.json",
+        "source_locator": "SOW.rows[2]",
+        "confidence": "explicit"
+      },
+      {
+        "statement": "38 - Brand Reputation Campaign Management",
+        "source_type": "Feature List",
+        "source_path": "C:\\Users\\308279\\Documents\\HEARTSTREAM-1\\artifacts\\work-items\\SOW.json",
+        "source_locator": "SOW.rows[3]",
+        "confidence": "explicit"
+      },
+      {
+        "statement": "58 - Marketing Asset Governance & Campaign Readiness",
+        "source_type": "Feature List",
+        "source_path": "C:\\Users\\308279\\Documents\\HEARTSTREAM-1\\artifacts\\work-items\\SOW.json",
+        "source_locator": "SOW.rows[4]",
+        "confidence": "explicit"
+      },
+      {
+        "statement": "60 - Marketing Strategy & Activation Planning",
+        "source_type": "Feature List",
+        "source_path": "C:\\Users\\308279\\Documents\\HEARTSTREAM-1\\artifacts\\work-items\\SOW.json",
+        "source_locator": "SOW.rows[5]",
+        "confidence": "explicit"
+      }
+    ],
+    "source_requirements_not_captured": [],
+    "unmapped_user_stories": [],
+    "missing_business_scenarios": []
+  },
+  "open_items": [
+    "ASSUMPTION-USHTML-001 pending method review.",
+    "MoM PDF intake-safety exit 1 (card-number-shaped false positives); run used normalized mom .txt."
+  ]
+}

@@ -56,7 +56,7 @@ Rulebook (column contract, not a template): `docs/intake/user-story-csv-rulebook
 3. test-case-generator writes cases only for those Features.
 4. CSV via `scripts/ado_user_story_csv.py write`, then `scripts/validate-user-story-csv.py`. FAIL stays in Refine.
 
-**CSV shape:** Rulebook `csv.column_order` only. Section order: Epic rows, Feature rows, Test Case rows. Test Case Description follows `test_case.description_format`. Acceptance Criteria uses `- ` bullets. Test Case ID blank. Epic and Feature IDs copied from JSON.
+**CSV shape:** Rulebook `columns.stories.order` / `csv.column_order` only. Epic title in Title 1; Feature title in Title 2; Test Case title in Title 3. Section order: Epic rows, Feature rows, Test Case rows. Test Case Description follows `test_case.description_format`. Acceptance Criteria uses `- ` bullets. Test Case ID blank. Epic and Feature IDs copied from JSON.
 
 **Out of scope:** Test cases for unmatched requirements or Features that were not matched. New columns. Invented Epic or Feature titles. Executable scripts.
 

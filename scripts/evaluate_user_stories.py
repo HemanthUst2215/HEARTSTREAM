@@ -108,11 +108,31 @@ def _jaccard(a: set[str], b: set[str]) -> float:
     return len(a & b) / len(union)
 
 
+def _row_title(row: dict[str, str]) -> str:
+    """Title 1/2/3 split or a legacy single Title column."""
+    wit = (row.get("Work Item Type") or "").strip()
+    order = {
+        "Workshop": ("Title 1", "Title"),
+        "Epic": ("Title 1", "Title"),
+        "Feature": ("Title 2", "Title"),
+        "User Story": ("Title 3", "Title"),
+        "Test Case": ("Title 3", "Title"),
+        "Task": ("Title 3", "Title"),
+        "Issue": ("Title 3", "Title"),
+        "Risk": ("Title 3", "Title"),
+    }.get(wit, ("Title 3", "Title", "Title 2", "Title 1"))
+    for col in order:
+        val = (row.get(col) or "").strip()
+        if val:
+            return val
+    return ""
+
+
 def _context_snapshot(row: dict[str, str], row_number: int) -> dict:
     return {
         "row_number": row_number,
         "id": row.get("ID", ""),
-        "title": row.get("Title", ""),
+        "title": _row_title(row),
         "work_item_type": row.get("Work Item Type", ""),
     }
 
@@ -133,7 +153,7 @@ def index_stories(rows: list[dict[str, str]], side: str) -> list[dict]:
             continue
         if wit != "User Story":
             continue
-        title = row.get("Title", "")
+        title = _row_title(row)
         description = row.get("Description", "")
         ac_lines = _bullets(row.get("Acceptance Criteria", ""))
         hyphen_ok = all(line.startswith("- ") for line in ac_lines) if ac_lines else False
@@ -423,7 +443,7 @@ def _esc(value: object) -> str:
 
 
 def _is_lower_better(metric_id: str | None) -> bool:
-    return metric_id == "hallucination_rate"
+    return metric_id in {"hallucination_rate", "manual_hallucination_rate"}
 
 
 def _band_from_unit(number: float, lower_better: bool = False) -> str:

@@ -1,15 +1,59 @@
 # Template for docs/intake/user-story-csv-rulebook.yaml (copy and fill on bootstrap only)
+# Bootstrap from a User Story Excel (Title 1/2/3 split) or ADO CSV. Runtime loads the filled rulebook only.
 
-schema_version: "1.0"
-rulebook_id: "<ado-user-story-csv-vN>"
+schema_version: "2.0"
+rulebook_id: "<ado-user-story-xlsx-vN>"
 status: Active
 
 provenance:
   behavior_id: RB-USCSV-001
   statement: "<what this rulebook governs>"
   source_path: "factory-setup"
-  source_locator: "<setup_csv filename — one-time only>"
+  source_locator: "<representative User Story Excel with Title 1/2/3 layout — one-time bootstrap only>"
   confidence: explicit
+
+runtime_contract:
+  statement: >
+    Domain content comes only from the current transcript and approved catalogs —
+    never from bootstrap exports or hardcoded examples in factory scripts.
+  bootstrap_inputs: [setup_xlsx, setup_csv]
+  rule: Bootstrap files author this rulebook once; agents must not read them at runtime.
+  public_excel_layout_ref: generation.row_order.hierarchy
+  catalog_sources:
+    epic_json: artifacts/work-items/epic.json
+    feature_json: artifacts/work-items/feature.json
+    workshop_catalog_json: artifacts/work-items/work-items.json
+
+input:
+  field_bind:
+    id: ID
+    work_item_type: Work Item Type
+    title: Title 3
+    description: Description
+    acceptance_criteria: Acceptance Criteria
+    area_path: Area Path
+  field_bind_aliases:
+    title: [Title 3, Title, Title 2, Title 1]
+  title_resolution:
+    by_work_item_type:
+      Workshop: [Title 1, Title]
+      Epic: [Title 1, Title]
+      Feature: [Title 2, Title]
+      User Story: [Title 3, Title]
+
+workbook:
+  sheets:
+    stories:
+      name_template: "{project_label} User Stories- Workshop"
+      fallback_name: "User Stories- Workshop"
+  styling:
+    font_family: "Aptos Narrow"
+    body_font_size: 9
+    header_font_size: 9
+    header_bold: false
+    header_row_height: 24
+    colors:
+      workshop_highlight: "FFFF00"
 
 csv:
   encoding: utf-8
@@ -17,7 +61,17 @@ csv:
   quote_char: '"'
   line_ending: "\n"
   include_header_row: true
-  column_order: []  # exact ADO export headers in order
+  column_order: []  # MUST equal columns.stories.order
+
+columns:
+  stories:
+    order: []  # State, ID, Work Item Type, Title 1, Title 2, Title 3, Assigned To, Area Path, Description, Acceptance Criteria, Annexure ID1, Fit Gap Status, User Story Type
+    roles: {}
+    title_by_work_item_type:
+      Workshop: Title 1
+      Epic: Title 1
+      Feature: Title 2
+      User Story: Title 3
 
 work_item_types:
   allowed: []
@@ -42,11 +96,28 @@ story_point_conventions:
 
 required_fields:
   User Story:
-    required: [Work Item Type, Title, Description, Acceptance Criteria]
+    required: [Work Item Type, Title 3, Description, Acceptance Criteria]
+    area_path_default: optional
 
 validation:
   script: scripts/validate-user-story-csv.py
   rulebook_pointer: docs/intake/user-story-csv-rulebook.yaml
+
+generation:
+  transcript_authoring:
+    do_not_create: [Epic, Feature]
+    note: User Story ID stays blank on public Excel; Epic/Feature use catalog IDs only.
+  row_order:
+    hierarchy:
+      statement: >
+        Workshop → Epic (catalog ID) → Feature (catalog ID) → User Stories under that Feature
+        (blank ID) → next Feature/Epic → unmatched stories → Issue/Risk.
+      epic_block: [Epic, feature_blocks]
+      feature_block: [Feature, User Story]
+  id_column:
+    User Story: blank
+    Epic: catalog_work_item_id
+    Feature: catalog_work_item_id
 
 output_paths:
   working_csv: "artifacts/intake/.pipeline/<YYYY-MM-DD>-user-stories-working.csv"

@@ -1,25 +1,25 @@
 # hallucination-detection-evaluator
 
 ## Purpose
-Detect generated claims the transcript does not support and score Hallucination Rate.
+Detect claims the transcript does not support on **both** the manual CSV and the generated CSV, and score both Hallucination Rate metrics.
 
 ## Parent
 user-story-evaluation-agent
 
 ## Must / Must NOT
 - Must: Load `.cursor/skills/hallucination-detection/SKILL.md`.
-- Must: Judge every generated User Story against the transcript, including matched stories.
+- Must: Judge every User Story on both sides against the transcript, including matched stories.
 - Must: Return valid-extra vs noise evidence for unmatched generated rows without writing the coverage metric.
-- Must NOT: Use the manual CSV as ground truth. Must NOT: treat a missing quote as support.
+- Must NOT: Use either CSV as ground truth. Must NOT: treat a missing quote as support. Must NOT: skip the manual CSV.
 
 ## Inputs
-- Packet `generated_stories`
+- Packet `generated_stories` and `manual_stories`
 - Transcript
 - Optional story-match file
 
 ## Outputs
 - `artifacts/evaluation/.pipeline/<date>-hallucination.json`
-- Metric: `hallucination_rate`
+- Metrics: `hallucination_rate`, `manual_hallucination_rate`
 
 ## Failure modes
 Transcript empty → refuse the metric. Do not return a zero rate.

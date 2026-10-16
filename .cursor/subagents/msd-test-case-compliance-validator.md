@@ -5,7 +5,7 @@ Run `scripts/validate-msd-test-case-xlsx.py` against the generated workbook and 
 test-agent (mode `from-user-story-excel`)
 
 ## Must / Must NOT
-- Must: execute `python scripts/validate-msd-test-case-xlsx.py --xlsx <path> --rulebook docs/intake/msd-test-case-rulebook.yaml --report <json>`; persist JSON under `artifacts/intake/`.
+- Must: execute `python scripts/validate-msd-test-case-xlsx.py --xlsx <path> --rulebook docs/intake/msd-test-case-rulebook.yaml --report <json>`; persist JSON under `artifacts/intake/`. Script includes **precondition ↔ step coherence** (`scripts/msd_test_case_coherence.py`) per rulebook `validation.precondition_coherence`.
 - Must: return findings verbatim; map critical count to pass/fail.
 - Must NOT: invent a score or waive FAIL without a parent human gate; read the bootstrap execution-plan workbook.
 

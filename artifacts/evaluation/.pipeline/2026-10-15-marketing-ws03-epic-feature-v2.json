@@ -1,0 +1,82 @@
+{
+  "schema_version": "1.0",
+  "kind": "epic-feature",
+  "owner": "epic-feature-mapping-evaluator",
+  "confidence": "high",
+  "source_matches": "artifacts/evaluation/.pipeline/2026-10-15-marketing-ws03-story-matches.json",
+  "source_packet": "artifacts/evaluation/.pipeline/2026-10-15-marketing-ws03-evaluation-packet.json",
+  "matched_pairs": [
+    {
+      "match_id": "M-001",
+      "manual_key": "manual-US-46",
+      "generated_key": "generated-US-17",
+      "epic": {
+        "comparable": false,
+        "agree": null,
+        "manual": {
+          "id": null,
+          "title": null
+        },
+        "generated": {
+          "id": null,
+          "title": null
+        },
+        "reason": "Packet epic snapshot is null on both sides. Manual CSV has no Epic rows. No titles invented."
+      },
+      "feature": {
+        "comparable": true,
+        "agree": false,
+        "manual": {
+          "id": "110486",
+          "title": "60-Marketing Strategy & Activation Planning",
+          "row_number": 44
+        },
+        "generated": {
+          "id": "",
+          "title": "60 - Marketing Strategy & Activation Planning",
+          "row_number": 16
+        },
+        "reason": "IDs are not equal and non-blank (manual 110486 vs generated blank). Both IDs are not blank, so title identity is not the agreement path. Titles are not the same string (hyphen spacing: '60-Marketing' vs '60 - Marketing'). Manual User Story ID 111614 is not used as Feature id; generated User Story ID is blank."
+      }
+    }
+  ],
+  "metrics": [
+    {
+      "metric_id": "epic_agreement",
+      "owner": "epic-feature-mapping-evaluator",
+      "kind": "ratio",
+      "na": true,
+      "na_reason": "Zero comparable pairs: M-001 (manual-US-46, generated-US-17) has no epic context on either side (packet epic snapshots are null; manual CSV has no Epic rows). Do not invent Epic titles.",
+      "display": "n/a",
+      "score": null,
+      "numerator": 0,
+      "denominator": 0,
+      "evidence": [
+        {
+          "statement": "M-001 epic not comparable. Manual epic id=null title=null. Generated epic id=null title=null. Zero pairs where both sides have an epic context.",
+          "source_path": "artifacts/evaluation/.pipeline/2026-10-15-marketing-ws03-evaluation-packet.json",
+          "source_locator": "manual_stories[manual-US-46].epic; generated_stories[generated-US-17].epic",
+          "confidence": "explicit"
+        }
+      ]
+    },
+    {
+      "metric_id": "feature_agreement",
+      "owner": "epic-feature-mapping-evaluator",
+      "kind": "ratio",
+      "na": false,
+      "display": "0% (0/1)",
+      "score": 0,
+      "numerator": 0,
+      "denominator": 1,
+      "evidence": [
+        {
+          "statement": "M-001 disagree. Manual Feature ID=110486 title='60-Marketing Strategy & Activation Planning'. Generated Feature ID='' title='60 - Marketing Strategy & Activation Planning'. IDs not equal and non-blank; titles not identical.",
+          "source_path": "artifacts/evaluation/.pipeline/2026-10-15-marketing-ws03-evaluation-packet.json",
+          "source_locator": "manual_stories[manual-US-46].feature; generated_stories[generated-US-17].feature",
+          "confidence": "explicit"
+        }
+      ]
+    }
+  ]
+}

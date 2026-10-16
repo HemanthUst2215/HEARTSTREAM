@@ -1,6 +1,6 @@
 # ADO user story rows JSON (input to `ado_user_story_csv.py write`)
 
-> Agents produce this file; **never** hand-author the CSV. Template: one object per CSV row, keys = rulebook `csv.column_order` headers.
+> Agents produce this file; **never** hand-author the CSV. Template: one object per CSV row, keys = rulebook `columns.stories.order` headers (`csv.column_order` is an alias).
 
 ## Path
 
@@ -23,22 +23,23 @@ Do not add Epic/Feature objects here. Mapping writes matched catalog Epic/Featur
 [
   {
     "Work Item Type": "Workshop",
-    "Title": "01. <Workshop name>",
+    "Title 1": "WS-<id> - <topic summary>",
     "Description": "<session scope>",
-    "Area Path": "Day 2\\CRM",
-    "Start Date": "28-09-2026 08:00"
+    "Area Path": "<Iteration>\\<Area>",
+    "State": "In Review"
   },
   {
     "Work Item Type": "User Story",
-    "Title": "<short title>",
+    "Title 3": "<short title>",
     "Description": "As a <role>, I need to <need>, so that <benefit>.",
-    "Acceptance Criteria": "- <criterion one>\n- <criterion two>"
+    "Acceptance Criteria": "- <criterion one>\n- <criterion two>",
+    "State": "New"
   },
   {
     "Work Item Type": "Issue",
-    "Title": "<issue title>",
+    "Title 3": "<issue title>",
     "Description": "Risk: ...\nImpact: ...\nMitigation: ...",
-    "Area Path": "Day 2\\CRM"
+    "Area Path": "<Iteration>\\<Area>"
   }
 ]
 ```

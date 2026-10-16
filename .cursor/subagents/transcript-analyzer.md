@@ -10,6 +10,7 @@ requirements-agent
 
 ## Inputs
 - transcript_paths
+- Optional `artifacts/intake/<date>-workshop-prerequisite-knowledge-base.json` — when supplied by parent, interpret facts using prerequisite terminology and scope boundaries (do not add requirements from prerequisites alone)
 
 ## Outputs
 - artifacts/intake/<date>-intake-notes.md (facts section)

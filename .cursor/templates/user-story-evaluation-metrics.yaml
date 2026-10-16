@@ -146,7 +146,7 @@ metrics:
       for every generated row in that match that stacks or fragments a capability.
 
   - metric_id: hallucination_rate
-    name: Hallucination Rate
+    name: Hallucination Rate (Generated)
     owner: hallucination-detection-evaluator
     kind: ratio
     formula: >
@@ -155,3 +155,16 @@ metrics:
       Every counted row needs a transcript locator showing the absence of support
       (the nearest related span, or an explicit note that no span exists).
       Unsupported epic or feature titles count as hallucinations.
+      The transcript is ground truth. Do not treat the manual CSV as support.
+
+  - metric_id: manual_hallucination_rate
+    name: Hallucination Rate (Manual)
+    owner: hallucination-detection-evaluator
+    kind: ratio
+    formula: >
+      Manual User Story rows that contain at least one claim the transcript
+      does not support, divided by manual User Story rows.
+      Every counted row needs a transcript locator showing the absence of support
+      (the nearest related span, or an explicit note that no span exists).
+      Unsupported epic or feature titles count as hallucinations.
+      The transcript is ground truth. Do not treat the generated CSV as support.

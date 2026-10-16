@@ -21,7 +21,7 @@ description: >-
    python scripts/ado_user_story_csv.py write --json artifacts/intake/<date>-test-case-rows.json --out artifacts/intake/<date>-test-cases.csv --rulebook docs/intake/user-story-csv-rulebook.yaml
    python scripts/validate-user-story-csv.py --csv artifacts/intake/<date>-test-cases.csv --report artifacts/intake/<date>-test-case-validation.json
    ```
-7. Columns and Test Case Description shape come from `docs/intake/user-story-csv-rulebook.yaml` (`csv.column_order` and `test_case`). Do not add columns.
+7. Columns and Test Case Description shape come from `docs/intake/user-story-csv-rulebook.yaml` (`columns.stories.order` / `csv.column_order` and `test_case`). Epic → Title 1; Feature → Title 2; Test Case → Title 3. Do not add columns.
 
 ## Must NOT
 - Cases for Features that did not strongly match

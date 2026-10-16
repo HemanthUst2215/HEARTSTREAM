@@ -1,0 +1,65 @@
+# MSDynamics 365 Business Entity scope (permanent runtime contract)
+# Bootstrap: Area Paths.xlsx → scripts/build-msd365-business-entity-catalog.py
+# Runtime: load this file + docs/intake/msd365-business-entity-catalog.json only.
+
+schema_version: '1.0'
+rulebook_id: msd365-business-entity-scope-v1
+status: Active
+platform: microsoft_dynamics_365
+provenance:
+  behavior_id: RB-MSD365BE-001
+  statement: Allowed MSDynamics 365 Business Entity scope for transcript user stories, derived from Area Paths.xlsx Details
+    sheet.
+  source_path: Area Paths.xlsx
+  source_locator: Sheet Details; columns 2–4 (Domain, Application, Business Entity); column 1 ignored
+  confidence: explicit
+runtime_contract:
+  statement: Agents load this rulebook and the JSON catalog at runtime. Do not read Area Paths.xlsx during /generate-user-stories-from-transcript.
+  bootstrap_inputs:
+  - Area Paths.xlsx
+  catalog_json: docs/intake/msd365-business-entity-catalog.json
+  build_script: scripts/build-msd365-business-entity-catalog.py
+scope_policy:
+  behavior_id: RB-MSD365BE-002
+  in_scope_only: true
+  rule: Every implementable User Story must map to exactly one catalog.entries row (domain, application, business_entity).
+    When business_entity is non-empty it must appear in catalog.business_entities. Do not invent or import other Microsoft
+    Dynamics 365 business entities or module scopes not present in the catalog.
+  out_of_scope_action: Exclude the candidate story from output and record the reason in transcript-story-extraction.md (section
+    Out of scope / excluded).
+  transcript_exception: If the transcript discusses an out-of-catalog entity, capture as Issue or Risk — not User Story —
+    unless the workshop explicitly expands scope via an approved harness decision.
+assignment:
+  behavior_id: RB-MSD365BE-003
+  fields:
+    msd365_domain: Column 2 value from the matching catalog entry (MSDynamics 365 Domain)
+    msd365_application: Column 3 value from the matching catalog entry (MSDynamics 365 Application)
+    msd365_business_entity: Column 4 value from the matching catalog entry; use empty string when the Excel cell is empty
+  location: artifacts/intake/<date>-user-story-rows.json (per User Story row object; not an ADO CSV column)
+  matching:
+    rule: Choose the single catalog entry (domain + application + business_entity triple) that best matches the story capability
+      using transcript evidence. When domain/application are stated in the workshop, prefer an entry whose domain and application
+      align. Do not assign a business_entity value that is not listed in catalog.business_entities.
+    must_be_exact: Non-empty business_entity must match a string in catalog.business_entities exactly (including punctuation
+      and spacing). Domain and application must match catalog entry strings exactly.
+    empty_business_entity: When the matched Excel row has an empty Column 4, set msd365_business_entity to "" and still set
+      msd365_domain and msd365_application from that row.
+  area_path:
+    rule: Area Path on CSV rows remains ADO iteration\\area layout per user-story-csv-rulebook. Business entity scope is independent
+      but should be consistent with transcript module names.
+validation:
+  script: scripts/validate-user-story-business-entity-scope.py
+  mandatory_for: generate-user-stories-from-transcript
+  run_after: user-story-rows.json persisted; before or with validate-user-story-csv.py (both must PASS)
+  checks:
+  - Each User Story row has msd365_domain, msd365_application, and msd365_business_entity keys
+  - The (domain, application, business_entity) triple matches one catalog.entries row exactly
+  - If msd365_business_entity is non-empty, it appears in catalog.business_entities
+  - No User Story uses a Microsoft Dynamics 365 business entity outside catalog.business_entities
+catalog_ref:
+  path: docs/intake/msd365-business-entity-catalog.json
+  pipeline_csv: artifacts/intake/.pipeline/msd365-business-entity-catalog.csv
+  business_entity_count: 70
+  domain_count: 9
+  application_count: 32
+  entry_count: 121

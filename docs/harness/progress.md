@@ -2,7 +2,7 @@
 
 | Field | Value |
 |-------|-------|
-| **Updated** | 2026-10-12 |
+| **Updated** | 2026-10-13 |
 | **Last command** | `/generate-user-stories-from-transcript` |
 
 ## Pipeline
@@ -10,9 +10,9 @@
 | Stage | Status |
 |-------|--------|
 | Factory installed | **Done** |
-| `/generate-user-stories-from-transcript` | **Done** (`artifacts/intake/2026-10-12-user-stories-from-transcript.xlsx`, INVEST `artifacts/intake/2026-10-12-invest-scorecard.csv`; audit `2026-10-12-generate-user-stories-from-transcript-gl-workshop.md`) |
+| `/generate-user-stories-from-transcript` | **Done** (`artifacts/intake/2026-10-13-user-stories-from-transcript.xlsx`, INVEST `artifacts/intake/2026-10-13-invest-scorecard.csv`; source Sales CE R2R workshop docx; audit `2026-10-13-generate-user-stories-from-transcript-sales-ce-r2r-workshop.md`) |
 | `/generate-brd` | Pending |
-| `/generate-test-cases-from-user-stories` | **Done** (`artifacts/intake/2026-10-09-msd-e2e-test-cases.xlsx`; audit `2026-10-09-generate-test-cases-from-user-stories-v2.md`) |
+| `/generate-test-cases-from-user-stories` | **Done** (`artifacts/intake/2026-10-13-msd-e2e-test-cases.xlsx`; 5 processes / 10 cases / 41 steps; source `Finance User Stories- Workshop -WS-02.xlsx`; audit `2026-10-13-generate-test-cases-from-user-stories-finance-ws02.md`) |
 | Plan (`/plan-governed-stories`, `/plan-sprint`, or `/plan-bounded-context`) | Pending |
 | `/implement-api` | Pending |
 | `/implement-ui` | Pending |

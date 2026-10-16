@@ -1,0 +1,782 @@
+   
+   
+ 
+  
+ 
+ 
+    
+ 
+Zinfi Workshop  
+Minutes of Meeting  
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+            
+Contents 
+1 SUMMARY ........................................................................................................................................ 3 
+2 KEY DISCUSSION POINTS ................................................................................................................ 3 
+3 DECISIONS MADE ............................................................................................................................ 8 
+4 RISK AND ISSUES ............................................................................................................................. 9 
+5 ACTION ITEMS ................................................................................................................................ 11 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+            
+ 
+ 
+2 KEY DISCUSSION POINTS 
+Sr Topic Discussion Summary 
+1 Workshop scope and 
+stakeholder alignment 
+• HeartStream highlighted that the workshop title created 
+confusion, resulting in key marketing stakeholders not attending 
+the session. 
+ 
+• It was agreed that future workshop titles and communications 
+should clearly identify Marketing / Customer Insights topics to 
+ensure appropriate stakeholder participation. 
+ 
+• HeartStream indicated that additional regional and global 
+marketing representatives may need to participate in future 
+sessions covering marketing capabilities and processes. 
+ 
+2 Dynamics 365 Customer 
+Insights capabilities 
+• UST demonstrated Dynamics 365 Customer Insights capabilities, 
+including data ingestion, profile unification, segmentation, 
+marketing journeys and campaign execution. 
+ 
+1 SUMMARY 
+Meeting: Customer Insights (Marketing) Workshop 
+Date: 30th September 2026 Time: 06.00 AM – 09.00 AM PST 
+Meeting 
+Facilitator: 
+UST Team Place: Microsoft Teams 
+Meeting 
+Objective: 
+1) Review Dynamics 365 Customer Insights (Marketing) capabilities and applicability for 
+HeartStream. 
+2) Understand current marketing processes, customer insight sources, and campaign 
+management practices. 
+3) Identify marketing data sources, segmentation requirements, and customer/distributor 
+profiling needs. 
+4) Discuss content governance, asset management, approval processes, and campaign 
+readiness requirements. 
+5) Understand reporting, KPI, consent management, and marketing performance 
+measurement needs. 
+6) Capture requirements, gaps, assumptions, and follow-up actions for future-state 
+marketing capabilities. 
+HeartStream Participants: James Casella, Brian Arbanas, Mattias Jarnstrom, Kaitie Carrigan, Rajeev 
+Dhorajiwala and other business representatives 
+UST Participants: CRM, Marketing, Integration, Data, Architecture, QA and Program representatives 
+ 
+ 
+            
+• HeartStream acknowledged the potential value of leveraging 
+unified customer and partner data to support targeted marketing 
+initiatives. 
+ 
+• It was agreed that Customer Insights could act as a key enabler 
+for future segmentation, campaign management and marketing 
+analytics requirements. 
+ 
+3 Customer and partner 
+profile requirements 
+• HeartStream requested that the solution provide a consolidated 
+account-level view while allowing users to drill down into 
+associated contacts when required. 
+ 
+• It was agreed that marketing teams should be able to analyse 
+customers, distributors, hospitals and partner organizations 
+within a unified view. 
+ 
+• HeartStream emphasized that global distributors operating 
+across multiple regions must be supported within the future-state 
+customer and partner profile model. 
+ 
+• HeartStream confirmed that future marketing activities must 
+support both distributor-led and direct-to-customer business 
+models. 
+ 
+4 Segmentation strategy and 
+market visibility 
+• HeartStream highlighted the need to segment customers by key 
+market categories such as Hospitals, EMS, Fire, Military and AED 
+Channels 
+ 
+• It was requested that future segmentation capabilities also 
+support more granular verticals such as Dental, Schools, 
+Universities, Airports and other end-customer markets. 
+ 
+• HeartStream acknowledged that limited visibility currently exists 
+into where distributors ultimately sell products, restricting 
+effective market segmentation and analysis. 
+ 
+• It was agreed that additional end-customer data capture and 
+device registration processes may be required to improve future 
+segmentation accuracy. 
+ 
+5 Marketing insight and 
+research sources 
+• HeartStream confirmed that traditional market research reports 
+have provided limited value and are not currently a primary 
+source of marketing intelligence 
+ 
+• HeartStream indicated that customer surveys have not been 
+consistently conducted in recent years but would be valuable to 
+reintroduce as part of future marketing initiatives. 
+ 
+• It was highlighted that distributor feedback, sales team input and 
+direct market conversations currently serve as the primary 
+sources of marketing insight. 
+ 
+ 
+            
+ 
+• HeartStream confirmed that industry market-share information is 
+received periodically through third-party consolidated reports and 
+could potentially be leveraged for analysis. 
+ 
+6 Customer feedback and 
+survey management 
+• HeartStream expressed interest in implementing structured 
+customer satisfaction surveys as part of future-state marketing 
+capabilities. 
+ 
+• It was suggested that direct customers could receive surveys 
+following product purchase, onboarding or product usage 
+milestones. 
+ 
+• HeartStream indicated that customer feedback, complaints and 
+product experience data should be available for future marketing 
+and product planning activities. 
+ 
+• UST highlighted that Customer Insights can utilize feedback-
+related information as an additional source for segmentation and 
+analysis. 
+ 
+7 Marketing data sources 
+and profile enrichment 
+• HeartStream confirmed that marketing insights may originate 
+from CRM, eCommerce, trade shows, customer feedback 
+systems, sales transactions and distributor-provided information. 
+ 
+• It was discussed that future-state profiling should combine 
+multiple sources to create richer customer and partner insights. 
+ 
+• HeartStream emphasized the importance of capturing meaningful 
+customer information as early as possible in the customer 
+lifecycle. 
+ 
+• It was agreed that improved data capture processes would 
+directly impact the quality of segmentation and marketing 
+outcomes. 
+ 
+8 Customer master data and 
+migration considerations 
+• HeartStream highlighted concerns regarding duplicate customer 
+records, fragmented account structures and inconsistent 
+customer numbering across existing systems. 
+ 
+• It was agreed that customer data cleansing will be critical prior to 
+migration into Dynamics 365. 
+ 
+• HeartStream emphasized that poor-quality migrated data could 
+significantly reduce the value of marketing insights and 
+segmentation capabilities. 
+ 
+• UST confirmed that data quality, deduplication and account 
+rationalization activities will be important considerations during 
+migration planning. 
+ 
+ 
+ 
+            
+9 Market segmentation data 
+capture 
+• HeartStream stressed the importance of capturing market 
+segmentation information at the earliest possible stage of the 
+sales process 
+ 
+• It was suggested that sales, quoting and order processes should 
+capture market classifications wherever feasible. 
+ 
+• HeartStream noted that market segmentation captured at order 
+entry would provide significantly better marketing intelligence 
+than attempting classification months after product shipment 
+ 
+• It was agreed that future-state processes should support 
+improved segmentation data collection across the commercial 
+lifecycle 
+ 
+10 Marketing content 
+governance 
+• HeartStream confirmed that externally published marketing 
+content currently undergoes approval by Marketing, Quality, 
+Clinical, Legal and Regulatory stakeholders. 
+ 
+• It was emphasized that only approved content should be used in 
+customer-facing communications and campaigns. 
+ 
+• HeartStream differentiated between formally approved customer-
+facing content and internal competitive intelligence used for 
+business planning purposes. 
+ 
+• It was suggested that future solutions should support appropriate 
+controls around approved and non-approved content usage. 
+ 
+11 MediaValet content 
+management approach 
+• HeartStream confirmed that MediaValet currently serves as the 
+central repository for approved marketing collateral, images, 
+brochures and related assets. 
+ 
+• It was discussed that MediaValet is primarily used for storage, 
+retrieval and sharing of approved content with internal teams and 
+channel partners. 
+ 
+• HeartStream requested an assessment of whether Dynamics 365 
+could complement or replace portions of the current MediaValet 
+functionality. 
+ 
+• It was agreed that further evaluation is required before any future-
+state decisions are made regarding content management 
+architecture. 
+ 
+12 Marketing campaign 
+execution 
+• HeartStream expressed strong interest in leveraging automated 
+marketing journeys based on customer behavior, purchase 
+history and segmentation criteria. 
+ 
+• It was demonstrated that campaigns could be triggered through 
+predefined segments or business events within Dynamics 365. 
+ 
+ 
+            
+ 
+• HeartStream acknowledged the value of automated customer 
+outreach for activities such as product awareness, upgrade 
+campaigns and engagement programs. 
+ 
+• It was agreed that future campaign capabilities should support 
+distributor-focused as well as direct-customer marketing 
+initiatives. 
+ 
+13 Campaign approvals and 
+governance 
+• HeartStream clarified that content approvals and campaign 
+approvals are separate processes and should be treated 
+independently. 
+ 
+• It was agreed that previously approved content should not require 
+full regulatory review each time it is reused within a campaign. 
+ 
+• HeartStream indicated that campaign execution should still be 
+subject to appropriate marketing review and approval controls. 
+ 
+• It was noted that campaigns involving promotions, discounts or 
+commercial incentives may require additional finance approval 
+before launch. 
+ 
+14 
+Marketing performance 
+measurement and 
+reporting 
+• HeartStream indicated that current campaign reporting 
+capabilities are limited and require improvement in the future-
+state solution. 
+ 
+• It was agreed that marketing performance should be measurable 
+through engagement metrics, landing page activity, click-through 
+rates and conversion indicators 
+ 
+• HeartStream highlighted the need to understand campaign 
+effectiveness and its contribution to downstream sales 
+outcomes. 
+ 
+• It was discussed that reporting should provide visibility into 
+customer and segment-level trends to support future marketing 
+decisions. 
+ 
+15 Marketing channels and 
+consent management 
+• HeartStream confirmed that email is expected to be the primary 
+marketing channel during initial rollout phases. 
+ 
+• HeartStream expressed interest in supporting additional channels 
+such as SMS, social media and other digital engagement methods 
+in the future. 
+ 
+• It was agreed that opt-in, opt-out and communication preference 
+management capabilities are required for future marketing 
+activities. 
+ 
+ 
+ 
+            
+• HeartStream confirmed that future marketing processes must 
+comply with applicable privacy and consent management 
+requirements, including GDPR obligations where relevant. 
+ 
+16 Marketing organization and 
+access requirements 
+• HeartStream confirmed that the marketing organization operates 
+with a relatively small global team compared to the legacy Philips 
+model. 
+ 
+• It was agreed that marketing users require broad visibility into 
+customers, install base, sales activity and related business 
+information to support planning and segmentation activities. 
+ 
+• HeartStream indicated that only a limited number of users are 
+expected to create and manage campaigns globally. 
+ 
+• It was confirmed that appropriate role-based access controls will 
+be required while still enabling global visibility for authorized 
+marketing users. 
+ 
+ 
+ 
+3 DECISIONS MADE 
+Sr Topic Discussion Summary 
+1 Marketing stakeholder 
+participation 
+• It was agreed that future Marketing / Customer Insights 
+workshops should include additional marketing stakeholders, as 
+the current workshop attendance was impacted by confusion 
+around the workshop title and scope. 
+ 
+2 Customer profile approach 
+• It was agreed that the future-state marketing solution should 
+primarily support account-level visibility while allowing users to 
+drill down into associated contacts when required. 
+ 
+3 Future-state segmentation 
+strategy 
+• It was agreed that customer and distributor segmentation will be 
+a key capability of the future solution. 
+ 
+• Initial focus should be on major market segments such as 
+Hospital, EMS, Fire, Military and AED Channels, with the ability to 
+expand into more granular vertical markets over time. 
+ 
+4 Customer Insights data 
+model 
+• It was agreed that customer, distributor, partner and direct-
+consumer information should be considered when defining future 
+Customer Insights profiles and segmentation strategies. 
+ 
+5 Customer survey capability 
+• HeartStream agreed that customer surveys and feedback 
+collection should form part of the future-state marketing 
+capability to improve customer understanding and insight 
+generation. 
+ 
+6 Marketing content 
+governance 
+• It was agreed that only approved marketing content should be 
+used in marketing campaigns and customer communications. 
+ 
+ 
+            
+ 
+• Existing Legal, Regulatory, Clinical, Quality and Marketing 
+approval processes will continue to govern content approval. 
+ 
+7 Campaign approval model 
+• It was agreed that content approval and campaign approval are 
+separate processes. 
+ 
+• Approved content may be reused in campaigns without repeating 
+full content approval activities, while campaign execution will 
+remain subject to appropriate business approvals. 
+ 
+8 Marketing data visibility 
+• HeartStream confirmed that authorized marketing users should 
+have visibility to customer, install base, sales and related 
+business information required for segmentation, planning and 
+campaign execution. 
+ 
+9 Consent management 
+approach 
+• It was agreed that future marketing campaigns must support 
+consent management, opt-in/opt-out capabilities and applicable 
+GDPR/privacy compliance requirements. 
+ 
+10 Marketing channels 
+roadmap 
+• HeartStream confirmed email as the primary initial marketing 
+channel. 
+ 
+• SMS, social media and additional digital engagement channels 
+will be considered as future-state capabilities. 
+ 
+11 Customer data quality and 
+migration 
+• It was agreed that customer master data cleansing, deduplication 
+and account rationalization activities will be required prior to 
+migration to ensure effective marketing segmentation and 
+reporting. 
+ 
+12 Segmentation data capture 
+• It was agreed that market segmentation information should be 
+captured as early as possible within the commercial process to 
+support future marketing analytics and reporting needs. 
+ 
+ 
+ 
+ 
+4 RISK AND ISSUES 
+Issue Impact  Mitigation Owner 
+Limited visibility into 
+distributor end-
+customer sales and 
+market segments 
+Marketing segmentation, 
+campaign targeting and 
+market trend analysis may 
+be incomplete due to lack 
+of end-customer visibility. 
+Evaluate mechanisms to 
+capture end-customer 
+information through distributor 
+reporting, device registration, 
+tracing data and future 
+business process 
+enhancements. 
+HeartStream 
+Marketing / Sales 
+/ UST 
+Customer and partner 
+master data contains 
+duplicates and 
+Customer Insights 
+segmentation, reporting 
+and analytics may be 
+Perform data profiling, 
+cleansing, deduplication and 
+HeartStream 
+Business / Data 
+Team / UST 
+ 
+ 
+            
+fragmented account 
+structures 
+inaccurate if duplicate 
+records are migrated into 
+Dynamics 365. 
+account rationalization 
+activities prior to migration. 
+Market segmentation 
+data is not 
+consistently captured 
+during sales and order 
+processes 
+Future marketing analytics 
+and reporting may lack 
+sufficient data to identify 
+market trends and 
+customer segments. 
+Define mandatory market 
+classification attributes and 
+incorporate them into future 
+sales, opportunity and order 
+management processes. 
+HeartStream 
+Business / UST 
+CRM 
+Marketing insight 
+information is spread 
+across multiple teams 
+and repositories 
+Valuable market 
+intelligence may remain 
+inaccessible, inconsistent 
+or unavailable for 
+marketing analysis and 
+planning. 
+Establish a centralized 
+repository and governance 
+model for capturing and 
+managing marketing insights. 
+HeartStream 
+Marketing / UST 
+Future-state content 
+management 
+approach (MediaValet 
+vs Dynamics 365) 
+remains undecided 
+Duplicate capabilities, 
+integration complexity or 
+unnecessary tools may be 
+introduced if architecture 
+decisions are delayed. 
+Assess MediaValet capabilities 
+against Dynamics 365 
+Marketing requirements and 
+finalize the target content 
+management approach. 
+HeartStream 
+Marketing / UST 
+Solution 
+Architecture 
+Customer surveys and 
+structured feedback 
+mechanisms are 
+currently limited 
+Marketing teams may lack 
+sufficient customer 
+sentiment and market 
+intelligence data to support 
+campaign planning and 
+product decisions. 
+Define future customer 
+feedback and survey strategy 
+leveraging Dynamics 365 
+Customer Insights 
+capabilities. 
+HeartStream 
+Marketing 
+Marketing campaign 
+approval workflow is 
+not fully defined 
+Inconsistent campaign 
+governance may result in 
+unauthorized 
+communications or 
+delayed campaign 
+execution. 
+Define approval workflow 
+covering campaign ownership, 
+review responsibilities and 
+approval hierarchy. 
+HeartStream 
+Marketing / UST 
+Consent management 
+approach for future 
+direct-customer 
+marketing requires 
+further definition 
+Risk of non-compliance 
+with privacy and 
+communication preference 
+requirements across 
+regions. 
+Define consent capture, opt-
+in/opt-out processes and 
+integration approach with 
+existing compliance 
+mechanisms. 
+HeartStream 
+Marketing / Legal / 
+UST 
+Required marketing 
+stakeholders were not 
+represented in the 
+workshop due to 
+workshop naming and 
+attendance confusion 
+Certain regional marketing 
+requirements may not have 
+been captured, potentially 
+leading to solution gaps. 
+Conduct follow-up sessions 
+with broader marketing 
+stakeholder participation and 
+validate captured 
+requirements. 
+HeartStream 
+Marketing / UST 
+Reliance on manual 
+tracing reports to 
+identify end-market 
+sales 
+Marketing insights and 
+segmentation may be 
+delayed by several months, 
+limiting responsiveness to 
+market trends. 
+Review opportunities to 
+automate tracing updates 
+and improve distributor 
+reporting processes in the 
+future state. 
+HeartStream 
+Business / UST 
+ 
+ 
+ 
+ 
+ 
+            
+5 ACTION ITEMS 
+Sr Category Action Owner Tentative 
+Due Date 
+1 Segmentation 
+Provide the list of marketing segments and target 
+audiences that HeartStream would like to support 
+in Dynamics 365 Customer Insights, including 
+distributor, customer and market-based 
+segmentation requirements. 
+HeartStream 
+Marketing TBD 
+2 Marketing Data 
+Sources 
+Share details of current marketing data sources, 
+including trade show lead files, external lead 
+providers and any market intelligence datasets 
+used by the business. 
+HeartStream 
+Marketing TBD 
+3 Analytics Data 
+Provide a sample of the third-party market-share / 
+industry intelligence reports received by 
+HeartStream for evaluation of potential Customer 
+Insights use cases. 
+HeartStream 
+Marketing TBD 
+4 Customer 
+Insights Design 
+Assess Customer Insights segmentation and 
+profiling capabilities against HeartStream's 
+distributor, account and end-customer marketing 
+requirements. 
+UST CRM / 
+Marketing Team TBD 
+5 Customer 
+Surveys 
+Define future-state customer satisfaction and 
+feedback survey requirements, including target 
+audience, timing and expected reporting 
+requirements. 
+HeartStream 
+Marketing TBD 
+6 Data & Migration 
+Analyze customer master data quality, duplicate 
+account scenarios and market segmentation 
+attributes required to support future marketing 
+initiatives. 
+HeartStream 
+Business / UST 
+Data Team 
+TBD 
+7 Market 
+Classification 
+Review how market categories (Hospital, EMS, 
+Fire, Military, AED Channels, Dental, Schools, 
+etc.) can be captured within the opportunity, order 
+and customer lifecycle processes. 
+UST CRM / 
+HeartStream 
+Business 
+TBD 
+8 Content 
+Management 
+Conduct a detailed review of MediaValet 
+capabilities and compare them against Dynamics 
+365 Customer Insights content management and 
+asset library capabilities. 
+UST Solution 
+Architecture TBD 
+9 MediaValet 
+Assessment 
+Arrange a walkthrough/demo of MediaValet and 
+explain current business usage, content 
+governance and partner-sharing capabilities. 
+HeartStream (Lynn 
+Baker) TBD 
+10 Marketing 
+Governance 
+Define future-state campaign approval workflow, 
+including marketing, finance and other stakeholder 
+approvals required prior to campaign execution. 
+HeartStream 
+Marketing TBD 
+11 Consent 
+Management 
+Provide details of the current consent 
+management approach, including TrustArc usage 
+and any regional privacy compliance 
+requirements. 
+HeartStream 
+Marketing / 
+Compliance Team 
+TBD 
+12 Reporting & 
+KPIs 
+Define marketing KPIs, campaign success 
+measures, conversion metrics and reporting 
+requirements expected from Dynamics 365 
+Marketing. 
+HeartStream 
+Marketing TBD 
+13 Data Visibility 
+Confirm marketing user access requirements, 
+including visibility to customer, distributor, sales, 
+install-base and related business information. 
+HeartStream 
+Marketing TBD 
+14 Campaign 
+Channels 
+Define future marketing channel requirements 
+beyond email, including SMS, social media and 
+other digital engagement channels. 
+HeartStream 
+Marketing TBD 
+ 
+ 
+            
+15 
+Future 
+Workshop 
+Coverage 
+Identify additional marketing stakeholders from 
+global and regional teams who should participate 
+in future marketing workshops. 
+HeartStream 
+Marketing TBD 
+16 Requirement 
+Validation 
+Review workshop findings, assumptions and 
+discussion outcomes and provide feedback or 
+corrections where required. 
+HeartStream 
+Business TBD 
+ 
+ 
+ 
+ 
+ 
+ 

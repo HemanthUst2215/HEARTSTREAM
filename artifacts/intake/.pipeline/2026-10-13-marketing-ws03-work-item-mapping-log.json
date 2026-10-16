@@ -1,0 +1,195 @@
+{
+  "generatedAt": "2026-10-13T12:07:30.680317+00:00",
+  "sourceCsv": "c:\\Users\\308279\\Documents\\HEARTSTREAM-1\\artifacts\\intake\\.pipeline\\2026-10-13-marketing-ws03-user-stories-working.csv",
+  "sowJson": "artifacts\\work-items\\SOW.json",
+  "mappingMode": "sow_feature_story_hierarchy",
+  "threshold": 62.0,
+  "margin": 8.0,
+  "sowFeatureCount": 6,
+  "userStoryCount": 13,
+  "matched": 12,
+  "unmatched": 1,
+  "stories": [
+    {
+      "csvRow": 3,
+      "title": "Connect CRM account and contact master data to Customer Insights",
+      "status": "matched",
+      "mappingMode": "sow_json",
+      "sowMatches": [
+        {
+          "sowWorkshopCode": "WS-CE-01",
+          "sowFeatureTitle": "70 - External Analytics Data Ingestion & Unification",
+          "annexureMinutes": "70"
+        }
+      ],
+      "rationale": "prerequisite_refs→workshop_code"
+    },
+    {
+      "csvRow": 4,
+      "title": "Ingest sales order and engagement data for unified profiles",
+      "status": "matched",
+      "mappingMode": "sow_json",
+      "sowMatches": [
+        {
+          "sowWorkshopCode": "WS-CE-01",
+          "sowFeatureTitle": "70 - External Analytics Data Ingestion & Unification",
+          "annexureMinutes": "70"
+        }
+      ],
+      "rationale": "prerequisite_refs→workshop_code"
+    },
+    {
+      "csvRow": 5,
+      "title": "Define match rules for unified customer profiles",
+      "status": "matched",
+      "mappingMode": "sow_json",
+      "sowMatches": [
+        {
+          "sowWorkshopCode": "WS-CE-01",
+          "sowFeatureTitle": "70 - External Analytics Data Ingestion & Unification",
+          "annexureMinutes": "70"
+        }
+      ],
+      "rationale": "prerequisite_refs→workshop_code"
+    },
+    {
+      "csvRow": 6,
+      "title": "Create dynamic segments by vertical end-market",
+      "status": "matched",
+      "mappingMode": "sow_json",
+      "sowMatches": [
+        {
+          "sowWorkshopCode": "WS-CE-06",
+          "sowFeatureTitle": "60 - Marketing Strategy & Activation Planning",
+          "annexureMinutes": "60"
+        }
+      ],
+      "rationale": "prerequisite_refs→workshop_code"
+    },
+    {
+      "csvRow": 7,
+      "title": "Identify distributors serving multiple vertical markets",
+      "status": "unmatched",
+      "mappingMode": "sow_json",
+      "sowMatches": [],
+      "rationale": "below_threshold (17.3 < 62.0)"
+    },
+    {
+      "csvRow": 8,
+      "title": "Use ship-to attributes in Customer Insights segment rules",
+      "status": "matched",
+      "mappingMode": "sow_json",
+      "sowMatches": [
+        {
+          "sowWorkshopCode": "WS-CE-01",
+          "sowFeatureTitle": "70 - External Analytics Data Ingestion & Unification",
+          "annexureMinutes": "70"
+        }
+      ],
+      "rationale": "prerequisite_refs→workshop_code"
+    },
+    {
+      "csvRow": 9,
+      "title": "Capture end-market segment at e-commerce order entry",
+      "status": "matched",
+      "mappingMode": "sow_json",
+      "sowMatches": [
+        {
+          "sowWorkshopCode": "WS-CE-06",
+          "sowFeatureTitle": "60 - Marketing Strategy & Activation Planning",
+          "annexureMinutes": "60"
+        }
+      ],
+      "rationale": "prerequisite_refs→workshop_code"
+    },
+    {
+      "csvRow": 10,
+      "title": "Provide account-level marketing profiles with contact drill-down",
+      "status": "matched",
+      "mappingMode": "sow_json",
+      "sowMatches": [
+        {
+          "sowWorkshopCode": "WS-CE-02",
+          "sowFeatureTitle": "61 - Marketing Research Insights Planning",
+          "annexureMinutes": "61"
+        }
+      ],
+      "rationale": "prerequisite_refs→workshop_code"
+    },
+    {
+      "csvRow": 11,
+      "title": "Enable worldwide marketing analytics visibility for product marketing",
+      "status": "matched",
+      "mappingMode": "sow_json",
+      "sowMatches": [
+        {
+          "sowWorkshopCode": "WS-CE-02",
+          "sowFeatureTitle": "61 - Marketing Research Insights Planning",
+          "annexureMinutes": "61"
+        }
+      ],
+      "rationale": "prerequisite_refs→workshop_code"
+    },
+    {
+      "csvRow": 12,
+      "title": "Update install base segment after partner tracing import",
+      "status": "matched",
+      "mappingMode": "sow_json",
+      "sowMatches": [
+        {
+          "sowWorkshopCode": "WS-CE-01",
+          "sowFeatureTitle": "70 - External Analytics Data Ingestion & Unification",
+          "annexureMinutes": "70"
+        }
+      ],
+      "rationale": "prerequisite_refs→workshop_code"
+    },
+    {
+      "csvRow": 13,
+      "title": "Detect vertical sales trends for targeted campaigns",
+      "status": "matched",
+      "mappingMode": "sow_json",
+      "sowMatches": [
+        {
+          "sowWorkshopCode": "WS-CE-04",
+          "sowFeatureTitle": "38 - Brand Reputation Campaign Management",
+          "annexureMinutes": "38"
+        },
+        {
+          "sowWorkshopCode": "WS-CE-06",
+          "sowFeatureTitle": "60 - Marketing Strategy & Activation Planning",
+          "annexureMinutes": "60"
+        }
+      ],
+      "rationale": "prerequisite_refs→workshop_code"
+    },
+    {
+      "csvRow": 14,
+      "title": "Ingest distributor sold-to location from partner channel into CI",
+      "status": "matched",
+      "mappingMode": "sow_json",
+      "sowMatches": [
+        {
+          "sowWorkshopCode": "WS-CE-01",
+          "sowFeatureTitle": "70 - External Analytics Data Ingestion & Unification",
+          "annexureMinutes": "70"
+        }
+      ],
+      "rationale": "prerequisite_refs→workshop_code"
+    },
+    {
+      "csvRow": 15,
+      "title": "Analyze account consumable purchase patterns for marketing outreach",
+      "status": "matched",
+      "mappingMode": "sow_json",
+      "sowMatches": [
+        {
+          "sowWorkshopCode": "WS-CE-02",
+          "sowFeatureTitle": "61 - Marketing Research Insights Planning",
+          "annexureMinutes": "61"
+        }
+      ],
+      "rationale": "prerequisite_refs→workshop_code"
+    }
+  ]
+}

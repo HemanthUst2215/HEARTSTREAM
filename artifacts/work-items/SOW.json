@@ -1,0 +1,58 @@
+{
+  "schema_version": "1.0",
+  "document_id": "SOW",
+  "document_type": "Statement of Work — workshop annexure schedule",
+  "columns": [
+    "BPM",
+    "Workshop",
+    "Annexure ID"
+  ],
+  "column_semantics": {
+    "BPM": "Session topic (workshop process name)",
+    "Workshop": "Annexure / workshop code (e.g. WS-CE-01)",
+    "Annexure ID": "BPM duration in minutes"
+  },
+  "scope": {
+    "program": "D365 CE Solution Modelling Workshop",
+    "track": "Marketing"
+  },
+  "provenance": {
+    "behavior_id": "SOW-MKT-DAY03-001",
+    "statement": "SOW row layout per operator column mapping: BPM=topic, Workshop=annexure code, Annexure ID=minutes.",
+    "source_path": "Pre- read material - 03. D365_CE_ Day 03_Marketing 1_30092026.pptx",
+    "source_locator": "Workshop annexure table (WS-CE-01–WS-CE-06)",
+    "confidence": "explicit"
+  },
+  "rows": [
+    {
+      "BPM": "External Analytics Data Ingestion & Unification",
+      "Workshop": "WS-CE-01",
+      "Annexure ID": 70
+    },
+    {
+      "BPM": "Marketing Research Insights Planning",
+      "Workshop": "WS-CE-02",
+      "Annexure ID": 61
+    },
+    {
+      "BPM": "Global Marketing Content Activation",
+      "Workshop": "WS-CE-03",
+      "Annexure ID": 54
+    },
+    {
+      "BPM": "Brand Reputation Campaign Management",
+      "Workshop": "WS-CE-04",
+      "Annexure ID": 38
+    },
+    {
+      "BPM": "Marketing Asset Governance & Campaign Readiness",
+      "Workshop": "WS-CE-05",
+      "Annexure ID": 58
+    },
+    {
+      "BPM": "Marketing Strategy & Activation Planning",
+      "Workshop": "WS-CE-06",
+      "Annexure ID": 60
+    }
+  ]
+}

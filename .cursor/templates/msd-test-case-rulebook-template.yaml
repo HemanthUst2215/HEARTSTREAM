@@ -16,6 +16,22 @@ provenance:
 input:
   source_rulebook: docs/intake/user-story-csv-rulebook.yaml
   accepted_suffixes: [".xlsx", ".csv"]
+  required_bind_keys: [id, work_item_type, title]
+  field_bind:
+    id: ID
+    work_item_type: Work Item Type
+    title: Title
+    description: Description
+    acceptance_criteria: Acceptance Criteria
+    area_path: Area Path
+  field_bind_aliases:
+    title: [Title, Title 3, Title 2, Title 1]
+  title_resolution:
+    by_work_item_type:
+      User Story: [Title 3, Title, Title 2, Title 1]
+      Feature: [Title 2, Title, Title 1, Title 3]
+  grouping:
+    numbering_prefix_patterns: []
 
 workbook:
   sheets:
@@ -71,9 +87,16 @@ id_patterns:
 
 generation:
   case_model:
-    statement: "One positive case and one key exception/control case per grouped process."
+    statement: "Business-process E2E positive case(s) and one evidenced exception/control case per group."
+  business_process_e2e:
+    min_steps_positive: 3
+  precondition_step_coherence:
+    statement: "Preconditions must establish state before Step 1."
 
 validation:
+  precondition_coherence:
+    enabled: true
+    severity: critical
   script: scripts/validate-msd-test-case-xlsx.py
   rulebook_pointer: docs/intake/msd-test-case-rulebook.yaml
 

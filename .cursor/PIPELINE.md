@@ -12,6 +12,8 @@ Intake: `/generate-user-stories-from-transcript` (transcript → one Excel with 
 
 Satellite (audit only, no harness row): `/evaluate-user-stories` (manual CSV vs AI-generated CSV vs transcript → HTML report). Scores stay Draft — Pending Method Review until `ASSUMPTION-USEVAL-001` is accepted.
 
+Satellite: `/generate-html-for-user-stories` (manual and AI CSVs each validated vs transcript, MoM, pre-read, and SOW features → two HTML reports; no manual-vs-AI comparison). Pending `ASSUMPTION-USHTML-001`.
+
 Quality scorecards: `/validate-kpi-metrics` (quality-agent mode `kpi`).
 Figma DS URL: `/figma-to-nextjs`. Bounded context: `/plan-bounded-context`.
 

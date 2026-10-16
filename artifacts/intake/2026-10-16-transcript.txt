@@ -1,0 +1,1041 @@
+Customer Insights - Lead to Opportunity UST Led Workshop
+Patrick Giovinazzo with Philips Electronics Nederland B.V., Philips Clinical Informatics, Philips India Ltd, Philips Electronics North America Corporation
+Recorded on Sep 30, 2026 via Microsoft Teams, 3h 36m
+Participants
+UST
+Patrick Giovinazzo, Delivery - Med Tech
+Nitesh Dambale
+Theodore Vecchio
+Arvind Manjunath Bhat
+Ashok Kumar Manjunath
+Dathatreya Upputuri
+Durga Prasad Seelamanthula
+George Abraham
+Guruprasad Srinivasa
+Harinath Munugoti
+Md Ashif
+Prasanna Pavoor Venkatakrishnan Vat
+Premkumar Devarajan
+Rama Lakshmi Ravula
+Rutuja Botre
+Sarah Richey
+Shrinidi Poojari
+Uttam Bandivadekar
+Other
+James Casella
+Brian Arbanas
+Mattias Jarnstrom
+Shaik
+Kaitie Carrigan
+Pankaj Arun
+Jessica McQuay
+Rajeev Dhorajiwala
+Ashwini Banerjee
+Charulata Bendale
+Facilitator
+Jisna Jose
+Nick Morris
+Noman
+Susan Messenger
+Taylor Dezotell
+Transcript
+0:07 | Nitesh
+okay. Hi, James. Good morning.
+1:35 | Nitesh
+Good day. Everybody. Hey, Patrick. Morning. Hello, everyone.
+1:46 | James
+Good.
+1:46 | Nitesh
+Morning. Good evening.
+2:15 | Nitesh
+I see James, Nick Taylor and Rajiv, if the, and,
+2:26 | Nitesh
+I see Brian as well. So five people from heartstreams and if anyone can confirm, we can get started with the session or we are waiting for people to join in, James, let.
+2:41 | James
+me, look at the list here. Hold on sure.
+2:53 | James
+I think we're probably good to go.
+2:56 | Nitesh
+All right. So we'll get started before starting, just wanted to ensure the recording is started transcription. We have ust note taker, Patrick, you wanted to include Gong… as well? Yeah, that's.
+3:14 | Patrick
+right. Going forward, we'll use the ust licensed Gong tool to do our transcription and recaps. Soon. That's what the ust note taker is?
+3:26 | Nitesh
+OK. I think it is the facilitator. I don't think so started.
+3:33 | Pankaj
+It is on.
+3:34 | Nitesh
+It is on… facilitator is on as well. OK, Pankaj, Ansar, Ashwini, let us try to capture as much as possible. All the facilitator ust note taker is there. Just because of this transcript, which is not available. We are delving into these options. Thank you everyone for joining this call today. Today's. Session is focused on marketing. This is the first session in the series for marketing and I would like to begin by presenting my screen would need a confirmation from everyone if you are able to see my screen. Yes. Yep. Alright. So I have minimized the preview window. So if, in case there are any hand raises, Pankaj Ashwini Ansar, please do keep an eye and probably we can take in questions. So as you see on screen, this is the first workshop in its series. When we are talking about where we are talking about. Marketing. Now, marketing is the industry standard term. When we talk about Microsoft dynamics, the term you would very often hear is customer insights. So customer insight is the, you know, session. What we are going to do is we are going to discuss on all the marketing objectives and James, we have met a couple of calls. But for this particular session specifically for marketing initiatives and hard streams and at hard streams and who are the specific representatives? If you could just call out their name, it would be really great.
+5:18 | James
+So, I was unaware this was marketing because it said lead because the title of the workshop was, you know, began with leads. So I dealt with our team here in North America that moves leads from receipt through to the system. So it can be assigned to salespeople and move through the process. So I did not invite aside from Brian arbanis, I did not invite anyone from field marketing, so I can try to reach out and see if I can get someone in now or we can just work the lead portion today and deal with and bring in a couple of marketing reps tomorrow.
+6:01 | Nitesh
+Okay. Yeah.
+6:03 | Brian
+And well, Jim, also Europe, do we have folks in Europe and Asia here for marketing as well?
+6:10 | James
+No, we don't.
+6:14 | Nitesh
+OK. So the.
+6:15 | Pankaj
+lead to opportunity was the value stream name?
+6:19 | Nitesh
+We, we,
+6:20 | James
+we are,
+6:21 | Pankaj
+taking it as a feedback and will try to connect internally and… work on the correct title of the meeting as well. So, we have considered customer insights or the marketing within the value stream of lead to opportunity. And that's why the meeting title was including the opportunity name as well.
+6:42 | Brian
+OK. And we are missing a bunch of people, yes.
+6:45 | James
+Yeah, we are missing a bunch of people.
+6:48 | Brian
+OK. Yeah. I was confused too, Jim, by the way. So, yeah, OK.
+6:52 | James
+So, you are saying that today tomorrow and Friday's sessions that were titled whatever it was, lead to opportunity is really includes marketing programs and promotions, et cetera. Yes.
+7:07 | Nitesh
+Just so clarity, this session on second October, that is Friday, that is, you know, cancelled, we have a holiday in India. So the team is, you know, the team is not going to be there. So that particular session is cancelled. Probably you might be receiving the cancellation soon if it was already scheduled. Other sessions are already scheduled is what I gather. But that day is holiday. And apart from that, the invites which we are, you know, sending out or Susan might have sent you to the heartstream stakeholders that consist of, you know, the actual topics which are going to be covered. So apart from the title, there is the actual agenda which is going to be covered is conveyed via these invites. And on top of that usd stakeholders like myself, Ashwini Ansar, before this session, we usually send out the meeting agenda or the pre read package as to tell and confirm what this is what we are going to conduct the session on. So like that was, you know, the like preparations before getting into a call for these workshops. So James, I would really look up to you to guide like what is to be done? Do we cover only the leads part and marketing is to be taken later? We are totally okay with that as well. Yeah, I.
+8:31 | James
+Think Brian and I are the only marketing people on the call. So we would want to represent more in the us, and more outside the us for marketing. Okay?
+8:42 | Nitesh
+Pankaj, you wanted to say something? Yeah.
+8:45 | Pankaj
+So the meeting title is actually comprising of the dynamic model and the value stream. So it terms as customer insights and lead to opportunity. So the customer insight is nothing but the marketing module we would be discussing.
+9:05 | Nitesh
+So what we can do is, you know, James and Brian, what we'll do, we will actually execute this session, see what exactly you are able to leverage in terms of knowledge from this session. And if you feel that few other stakeholders are also to be involved, we are okay to have this session once again and, you know, execute the same content so that everyone is on same page. Does that sound okay?
+9:35 | James
+Yeah, sure. We can, we can start charging through it today. I just want to make sure if we don't need Taylor and Nick. If this is not about lead management from lead acquisition, you know, all the way through to completed opportunities, then we can let them, you know, let them loose. Yeah.
+9:56 | Nitesh
+We can like, and then probably this would be one of the communication again sent from our end to a certain clarity on these sessions that will follow. But for now, yes, if Nick and the rest of the team would like to, you know, go ahead and drop and continue with their day jobs, that is perfectly fine. So.
+10:17 | James
+What? So we're not going to be focusing on leads to opportunity on today's, call?
+10:22 | Brian
+We, so.
+10:23 | Nitesh
+Once we have the initial, the topic today was specifically beginning from the root of how exactly marketing initiates and all leads and handling the leads to the sales team and everything comes in the later part. So, yeah, okay. Okay.
+10:42 | James
+Well, thank you all very much. I think you're okay. You can always call.
+10:46 | Brian
+me back in if you need. So. Yeah, thank you.
+10:48 | James
+Guys.
+10:48 | Patrick
+Thank you.
+10:50 | James
+Bye bye. Thanks. All right. So.
+10:55 | Nitesh
+Let me then start by sharing my screen and James and Brian probably do call out if, in case, you know, you feel this content is again to be shared with the rest of the stakeholders from different regions for which they are also, you know, for them, also, this particular content is relevant and they should be aware. Okay? So.
+11:16 | Brian
+Jim, were you asked to round up all of the marketing people or no? Did someone ask?
+11:23 | Nitesh
+You to do that? No?
+11:24 | James
+I saw the title of this come through and it said lead to opportunity and the people who in the us who deal with leads and opportunities were on the call and were invited?
+11:35 | Brian
+Right. So that's just, it is that, I mean, in my invitation, it did not say, hey, make sure that you think of everyone in marketing and invite them. I would have done that, but there, it didn't it just said, hey, if you don't think your, it should be here, then you should, then you can, you know, just.
+11:55 | Nitesh
+Talk.
+11:56 | Brian
+to Susan about whether or not you need to be here so that, that's to miss you guys. Like if I can find people, you got to tell us.
+12:04 | Patrick
+Yeah, Brian, I can give some insight on why that is as it is. So Susan has been for some time circulating our overall workshop schedule that has the processes to be covered within each at that detail level. What I put in the chat and within heartstream bpos and such to get confirmation of who should attend everyone. Okay? And she's taking that as her list of people to be there and her only list of people to be there. So that's and then she schedules the meetings based on that. So we are not asking you to gather up any people. But my understanding is that Susan has already done that and that's the list that she works from.
+12:52 | James
+If this said marketing, Brian and I probably would have both raised our hands after looking at the attendee list and said, you know, we're missing a bunch of people and invited them. Yeah. And as I as.
+13:02 | Brian
+I did, I'm glad I did. Yeah, but I feel like we're still missing people. Like, I mean, we should have Matthias on here. We should have, right?
+13:11 | Nitesh
+So.
+13:13 | Brian
+Okay. Well, let's see what we can get done here to.
+13:17 | Patrick
+Reinforce that point Nitesh, maybe because she made that this around terminology because for somebody who's well versed customer insights, says marketing, right? And there may be others terminologies like that.
+13:32 | James
+Exactly. Yeah, we.
+13:34 | Patrick
+need to cover.
+13:35 | James
+Insights to us. Doesn't necessarily mean marketing, yeah, at all. Yeah.
+13:41 | Patrick
+If you can be sure to help cover that with folks as these workshops proceed. And also we'll revisit connect with Susan about the titling of them to help give more insight as to exactly what we'll cover. Okay? Sure.
+13:58 | Nitesh
+Thanks. In that case, then let us get started… correct? So we'll cover as much as possible and let's see how the decision progresses while we are at the topic. So marketing session, the agenda really was what you see on screen, we are going to focus majority of this particular session is going to be focused on the external analytics data ingestion and unification. So that is where I'm pretty sure you are a marketeer. You don't have to be briefed about what exactly we are talking about. When we say external analytics, data ingestion and unification. What we can do is we will cover this topic with respect to what the platform has to offer. And then probably you could give us insight with respect to your ways of working. Okay? Now, this external analytics data injection and unification is nothing but bringing in data from various sources to a common place, consolidating everything and then trying to take out or bring out meaningful insights out of it so that you can use them in your day to day journeys, your marketing activities, reach outs and all. So that particular aspect we are going to focus along with this topic. We are also going to tell you or show you how the screen looks like when I talk about the customer insight or marketing data module. Okay? Post that. We are going to have marketing research inside planning. There are few topics which, you know, delve into details of how exactly you do your researches, how exactly you do your planning? How about global marketing content? Basically, if, in case you are supposed to have marketing content executed or sent to a bunch of people that should be approved, right? So how this particular content is managed as of now, whether you use any dam or you use a common repository where this particular content is kept? If at all it is kept, is there any approval mechanism to have that approved before it can be utilized by the market here? That is something which we are going to see and talk anything you want to say, James or?
+16:13 | James
+No, I'm just thinking, you are right on, we did have some program and promotional approval processes within Philips. When we left Philips, we lost access to those systems and we are really, I'll say we're flying by the seat of our pants now, right? We, we just, we have, we manage everything on a spreadsheet and we post everything on shared sites and we don't have any type of a formal promotion or program approval template that we're using today, aside from meeting with people and deciding what we want to do. And, you know, having side conversations with finance to see, that what we want won't bankrupt the company, right? Yeah.
+17:01 | Nitesh
+Okay. Great insight. Thanks James. Then we are going to delve into brand repetition campaign. This is basically campaign. We are not engaging into the discussions of how a campaign is created or how it is executed, but just, we are trying to get to know how exactly it works in dynamics and what exactly is applicable for hard stream marketing, asset governance and campaign readiness. That is one aspect we are going to cover. And then finally the strategy and activation planning and what you get out of this topic as marketing for the first workshop is something we are going to cover. Okay… I'll try to be slow but if at all, I try like, I, you know, go in a flow and I'm too fast, please stop me in between and I would be happy to stop and acknowledge and answer any queries you have while we are on the topic at the end of this workshop today. Actually, we were focusing on these T key takeaways how customers will be unified basically, when you bring in a lot of data, a lot of customers, partners, data together. And if, in case you want to make meaningful segment out of it, how are you going to, you know, unify that particular data, then what marketing audiences and segments are required? What customer journeys you will be implementing or must be implemented? When we talk about marketing, what are the channels which are applicable? What would be the trigger consent? Say, for example, if some of the customers say, hey, heartstream, I don't wish to receive the marketing content and all the promotional messages. How about the consent rules and how exactly the contents are, you know, managed in your world? That is something which we are going to get to know after we discuss and then how marketing performance are going to be measured, how it will be measured basically, and what capabilities belongs to customer insight versus your digital asset management platform or dam? If at all, it is there or sharepoint, and then the reporting aspect. So these are the high level key takeaways, what we think should be from the, you know, current workshop. And if we progress, we would like to get started by telling you what is marketing in dynamics? 365, right? So, customer insight is the word which you will be hearing. We will be interchangeably using this word with marketing. But keep in mind when we talk about the Microsoft dynamics platform, customer insight is the word which you talk when you talk about marketing. Okay? I do acknowledge that customer insight is something on the, if you go literally, it is all about insights against a particular customer, right? How exactly he's like a fairing in the entire ecosystem, his lifetime value, whether he is giving us good score and all agreed. But customer insight module is designed to cater this aspect as well. Together. I'll explain how, okay. So customer insight, that is the product name. You have two flavors, one data, another, you have journeys. Now, data is nothing but the data which we talked about bringing in data from multiple places, unifying them, making meaningful output of it and then targeting it for your marketing activities and journeys. That is second part is nothing but just your campaigns and journeys or marketing initiatives. Okay? So these two, you know, modules within, the system comprises of customer insight as a holistic module. Now, if I go ahead and, you know, try to delve into detail, you could read customer insight data is nothing but ingesting data from CRM web, surveys, third party. So I'm pretty sure as of now you are having lot of, we will come to the questions but just wanted to give you a gist of while we are on the topic, what data means for us? So ingesting data from multiple sources, it could be your surveys yesterday, we discussed about customer feedback. It could be feedback as well, right? And any third party sources, any purchases done from web store or E commerce, everything if it is brought together that can be ingested in customer data, then we do go ahead and consolidate this information to unify and make a meaningful customer profile. For example, Nitesh is a customer of yours and he goes ahead on your E commerce portal and he purchases something. If this information is brought into customer inside data, you will be in a position to have that 360 degree view of a customer built saying, okay, if I open up Nitesh's, record, he has done a recent purchase at so and so time and date from this platform. If, in case, netesh gives some survey information, if that is brought together. Netesh, has, you know, also given a feedback. So this kind of insights will be filling up the customer data profile. And that brings you at a level where you have true… essentially what we are doing is after bringing in this entire information, we are unifying the data from various sources. There are a lot of processes of deduplication enriching the data, removing the irrelevant information. And then that's how you take into consideration what should be the actual customer profile? Okay? And we keep on enriching this profile. So it is not only about bringing the data once and someone sits in the back end and manually updates it. You set up a system a pipeline basically, and the data keeps on flowing in. And this particular profile keeps on refreshing and getting updated. So that was the first part when you talk about journey is nothing. But how do you? Leverage this data which you have created. Okay. So basically say, for example, if you have a segment created like all the customers who have purchased a hard stream ad device two years back, for example, I'm just hypothetically stating we'll come to the segments which you are actually interested to know, interested to use in your ecosystem. But hypothetically saying say, for example, you wish to have one segment, a group of people who has purchased aeds two years back because we want to, our marketing team wants to target them for sending in emails with respect to a new product which is recently launched, right? So what I'll do is I simply go to data, create a segment out of it, and I get that particular group. Okay. Now, once this group is achieved in journey, what we do is we create a campaign design, the entire journey. Basically, a lot of planning and activities goes into place. I'll show you the system. It's pretty simple. But essentially, what we're trying to say is if these initiatives are to be executed, it becomes very easy with the combination of this platform. Okay? So you have the data in place, you plan and design how you are going to reach out this particular segment which you derived? Are you going to send an email? Are you going to reach out via whatsapp are you going to reach out via SMS? Now? The whatsapp part SMS part that needs bit of tweaking. Basically, it depends on the SMS provider. We'll have to have the webhook and everything created. But yes, that is also one of the possibility even if, in case you are having, your customers are having your mobile app notifications via mobile app is also possible using customer inside journey? Okay? So you send or plan this entire journey design, it, execute it. And in real time, you get to see what exactly is happening. And since you are executing this journey, a lot of things come into picture how my journey is progressing? What is the benefit I'm getting out of it? How many conversions have happened? If, in case there are any new leads which got generated, everything can be tracked using this journey which we are designing. So essentially, this is, you know, customer insight marketing module or customer insight module of dynamics which consists of data and journey. I'll take a pause here and then, you know, yes, it.
+25:23 | Brian
+Seems like it's very easy for me to imagine this data and these journeys, especially the journeys for a consumer if I think of like Nike and I'm a Nike consumer and I use their app once in a while. Sometimes I use their websites, I get emails from them, open them or I don't open them, I place orders, I make a return. They've got all of that about me and my journey, it's harder for me to imagine how this looks for a distributor on, in the aed world. We have, you know, 99 percent of our product going through distributors. There's multiple people who are part of a distributorship. Maybe this shows it all together. But like, can you just describe and talk a little bit about people who distribute as customers? Sure.
+26:21 | Nitesh
+Sure. I'm sharing my screen. Probably, I'm not able to get the name. Who is it like?
+26:28 | Brian
+That was Brian speaking? Brian?
+26:31 | Nitesh
+Yeah, Brian. Okay. So, Brian, I get your, you know, question and a valid question in hardstream's world. Not everything is purely customer base, you know, most of your little, very little consumer very little.
+26:47 | Brian
+Yeah. I mean, we want to grow it. Of course, we want to grow it right now. Yeah. But yeah, okay.
+26:54 | Nitesh
+I'll explain, you see, we had, you know, few sessions, James was there in this session where we talked about customer or reseller, onboarding, your partners onboarding. Now, I'll explain you the concept, what exactly is a partner in the dynamics world or the ecosystem? Those are nothing but accounts and contacts. Only. Okay, the moment you have your account, say, for example, I work for abc corporation, and I get associated with heartstream as Nitesh working for abc corporation. And I am now your partner and Nitesh becomes your partner contact. So this contact information with category as partner will be available in dynamic CRM. Okay. With the tag partner, what you can do or what the system can do is it can fetch all such partners with what relevant information you want and whatever conditions you want. For example, you want to derive list of all partners who haven't completed a xyz training possible, you want to have list of all partner contacts who are serving a specific region. Is possible, you would like to have X number of people from a certain region or partners from a certain region or contacts from certain region who are partners with us and have done business amounting. So. And so that is possible, you would like to know list of all the partners based on their behavioral aspect, that they are not doing business at all or whatever trainings we have given. They are not even turning up or they are not even, you know, coming back to us or they are not executing the training that certifications are gone. Nothing is updated but they are not caring. They don't simply respond back to us. You will be able to derive all such insights and you can build segments. And once you have this segment, it is nothing but group of people whom you are in a position to target. You can, you know, consume and that particular data and have the journeys executed for sending them emailers, or sending them information with respect to, you know, whatever is upcoming in heartstream's world. That is one use case which I could think of. Yeah, but it could be more. I'm very sure we.
+29:04 | James
+Do a lot of segmentation around hospitals versus emergency medical services, versus kind of non healthcare vertical. My vertical markets like kindergarten to 12 schools or universities or, you know, electric companies, lifeguard organizations. So, we could segment our markets that way with the tool because that's something you can looking to do for a very long time, right? How, how much are we selling into? Yeah? What are we selling into ems? What are we selling into hospital? If we look at those channels and, we get these, we get these tracings back that say where these devices or shipped dentist office, for example, right? We can penetrate and see how we're doing with the dentist market with it using insights, correct?
+30:06 | Nitesh
+Yes. You will be able to, it all is about what data you are capturing. Now, the kindergarten or dentist which you talked about, dentist could be, a partner contact in your system with profession as dentist, kindergarten could be a account with the type as, you know, kindergarten. Okay. Very much possible. You'll be able to derive the segments and the beauty of the system is it not only caters to just the fields but the behavioral aspect as well. Okay. So we will delve into these areas. But what we would need as a takeaway from this is not immediately, but we can put in a task on the ado against the particular workshop id today which we are conducting asking about what are the different type of segments you would like to implement in the system? Give us whatever you think of probably whatever is possible. We can immediately work towards it and have that made available to you. Okay? Thank.
+31:02 | Brian
+You. So, so this, that was a good question. Jim, I have one more which is we have distributors, who will do business in more than one segment, right? So they may be both… you know, doing sales to schools, but also doing sales to ems services. So that's one question is, you know, is it, I don't know flexible enough or, can it help us distinguish that? And then the other one is we have distributors who are global sometimes. So not just regional, there's one called safelife, who are in Europe and in the us and Canada, and they behave differently in those places in some cases. And then they behave the same in those places. So it does the system, you know, it's like both, it's a mix. It just depends on what they're doing, whether they're behaving the same or different. So, so I guess, can the system handle that kind of insight? I guess it is.
+32:15 | Nitesh
+Subjective, I'll tell you, I'll be very front with telling you the capabilities and the limitation of the system. But as far as the question is concerned, it is very much possible you simply have to run a segment, a query, finding out all the distributors who are doing business with this kind of, you know, customers, provided the customer have that particular information with them. For example, I am the distributor abc corporation. Okay. How is that possible? How will it be possible for me to derive that, whether abc corp has done business with hospitals or no one? Good thing, one thing would be all the sales center which are lined up which are coming from abc corp for the customers, which are hospitals, right? So likewise, we'll have to find what information can be put together to have this segment identified and brought in. AI can help. Okay? AI can help with respect to obviously, these hospitals would be again another account record in the system. So having this matching condition and all will be able to figure that out. What we can do is, you know, all these condition, very much valuable information which you are, you know, calling out in the task which we are going to ask what all segments you would like to identify, just list them down in the manner which, you know, remember or recollect and then probably we can validate and give you the exact possibilities. Okay?
+33:44 | Brian
+Thanks. Thank you.
+33:46 | Nitesh
+So, apart from this, you know, we may.
+33:49 | James
+Have to change with how, we may have to change how we interact with our channel partners. If we're looking to get that type of information today, we don't get it. They buy 100 aeds, we ship them to them and they go to dentists and churches and schools and, you know, and ems and police. And we have no idea where they go, you know? So we have to wait for tracings to come back and.
+34:18 | Brian
+Oh, but we do get tracings. So then that's data that maybe it's after the fact, but that can help form the customer insight. Yep, we get that only from the us though we don't get from Europe anyway.
+34:31 | James
+I mean, we may have to change how we do things here. Yes, and have them categorize their orders or something like that. I'm buying 12 for police and I'm buying 80 for schools and I'm buying.
+34:42 | Brian
+You know, but then they may not know, they may.
+34:44 | James
+not know they're just stocking their shelves for the stocking distributors, all the subs and all the non.
+34:51 | Nitesh
+Stocking subs was going.
+34:53 | Brian
+To be another question, I had like, you know, you have companies that have their own name that have been bought by bigger distributors. And so, they have their own name and so we could treat them as their own customer. But we know they're being influenced by the fact that they've been bought, they're being influenced by top management. So they're actually part of a bigger company because either they're a sub or they've been bought, right?
+35:23 | James
+And still do business separately, right? Yeah.
+35:25 | Brian
+Yeah. So I presume we can share some of these nuances and you can decide how the tool could, you know, could help us get insights because we would love insights on all of these. It sounds pretty powerful. Yes, yes.
+35:44 | Nitesh
+It is surely do share that. It would be really helpful. And on the topic of, you know, tracking back the devices, did we discuss yesterday in couple of sessions? We had that once the distributor gets the products and they gives to the customer, they are liable to tell heartstream that, which location and which customer these devices were further shipped to or no?
+36:10 | James
+We have to ask about tracings Brian, okay. Because we don't require complete tracings anymore because we don't maintain the install base. Obviously, we do get tracings for purpose of paying people, and we may be able to use the tracings that we use to pay internal people to drive, what category those, you know, what market or segmentation those sales would be in. So we may have, a way to do that, but it would be very manual and it would be well after the fact from when an order was placed. So, if we had an order for 100 aeds, and, you know, three months later, we get a report from that channel partner and they say 10 of them went to police, and 80 of them went to ems, and 10 of them went to hospitals. Would we be able to go into those? I'll say orders and change the segmentation on those quantities or are they stuck based on what they were labeled at? When the order was placed on the system… you know what I'm saying? Yeah.
+37:15 | Nitesh
+Yeah. So.
+37:16 | James
+Abc distributor buys 100, got it.
+37:20 | Brian
+Yeah, understood.
+37:22 | Nitesh
+So, what I would say is we will not delve into the solutioning as of now immediately. But one thought which came to my mind very well, you were describing is first thing, what we ascertained was the moment the sales order is shipped or, you know, delivered based on the status install base is going to get created in the new world, that is dynamic system. These 100 records which you shipped, those will get created with exact serial numbers. They will be named or tagged to that particular distributor whom you are shipping. The moment you get this report or, you know, tracings back, it will be something in the system which will be, you know, devised for you to be able to update those particular devices so that you come to know which these devices belong to which customer and which location. Excel import could be one option. It could be manual entry. It could be opening the entire list in the system itself like an excel sheet. That is also one of the possibility where you can go ahead and update this. But we will solutionize this for sure. Using that particular methodology. Surely you'll be having exact tracing of each and every device. Now, totally depend on the heartstrings business. How you get this tracings from the distributors. They usually just come in spreadsheets to be honest. Yeah. Okay. So we do have import option as well import excel import. We can leverage that and we'll talk about the solutioning when we're actually designing it. Okay. Thank you. Any. Anything apart from that, like when it comes to customer inside marketing and the overview, we just, you know, spoke or we can, we are good to proceed.
+39:05 | Nitesh
+Okay. So I take this. Yeah, thanks. Thanks. Let us, you know, delve into the first topic as per the agenda, external analytics, data ingestion and unification. So we are really going to focus on the external data sources, data consolidation and unification. Now, we may not have the system entirely ready for you, but I'll give you the complete gist of how the system behaves, how the system looks like, what a unified profile looks like. And all. Okay. So before delving into that particular aspect, just wanted to give you, I'm not sure whether this is readable to few people, but this is a simple workflow which we had given in our pre read package for you to just, you know, observe as much as possible in which ways we are going to discuss about these topics and how exactly the system is going to be designed. This was our initial thought, not a hard stop or it is not confirmed that this is the only way we are going to have the system given to you. This was just something which we thought how this system should be configured for your line of business. The first swim Lane in the visio, what you see is the customer data coming in from multiple sources. Now, it could be customer data. It could be engagement data, customer data, is your CRM master data, demographic data, contact account, relationship information, engagement data could be your website data, your campaign interaction history, emails, events, digital engagement, whatever you could think of, it could be surveys as well. It could be purchases as well. And then the mass market data. That is if, in case you are engaging with external agencies for having market intelligence brought into your, you know, analytic platform. That also could be one of the source. All this data is combined together which becomes your unified customer profile. And that's how you in the second block, what you see is you unify this data in just everything from multiple sources, resolve all the duplicates. Go ahead and create a unified profile. You get a true 360 degree record, enrich this profile continuously and that's how you go ahead and create a segment and post that. It is just about, you know, you setting up a goal for yourself. Like with this newfound segment, how do I target them? Like you were saying, all the distributors who are doing business with hospitals. Okay? If, in case I wish to reach out to them for specific need, I have the possibility of system giving me that particular list, that target list and it is all up to me or as a marketeer to design and decide how exactly I'm going to make use of this particular segment. Okay? So on a high level, this was the gist when we talk about the actual system. I'm just going to showcase you few screens of the system which will give you a complete picture of what the system is capable of. We are not going into journeys as of now, but we will simply tell you what exactly is customer insight data. This is the, you know, the front screen or the home page of the customer inside data. You, you will have a dedicated URL, you will be as a user logging on to the system using your organization's user id and password, no separate user id password, just the organization's user id password, and you will be into the application. Now, once you have this system loaded, how do you get started? You simply click on data and say data sources, there are a lot of data sources like which you can bring it together. The system nearly caters to most of the data sources. It could be any external database. It could be your excel files. It could be some different system getting integrated, lot of connectors are there for example, if you want to bring data from sap, that also is one of the connector in this particular platform wherein you should be in a position to pull customer information from sap and bring it to this particular system as one of the data source. Once the data is brought in here, there are ways. Okay, I may not be able to open up each and every line item and explain, but I'll try to do whatever I could. Once you have this data, I mean, getting this data itself is a activity, you define the source, you connect to the source system, you get the data, then you transform that data, basically all the metadata and everything can be cleansed. A very powerful tool, you have to have this particular activity is done. Once everything is done, the data is successfully established as one of the source. Once you have the data source established, you go on to the next step with all the different table and sources. It is time for you to consolidate everything and make one unique profile, right? For example, if you are getting in partner contacts, all the partner contacts from various sources, how exactly you are going to, you know, map them. So it could be their partner id. It could be their email address. That one key will decide how you are going to have it. It is not just one key. It will be combination of various fields which will be deciding how a particular profile is to be created. In short, what I'm trying to say is in this particular platform, you'll be able to bring in data from multiple sources. Okay? Unify them, deduplicate them, consolidate them. And that's how you'll be able to set up a base that this system continuously keeps on. Updating whenever this data is updated, for example, sap, right? You have a customer in sap, which is, you know, already linked as one of the table as then when the update happens in sap at a regular interval, this data also refreshes. Now, you can imagine once this entire pipeline is set up and the data keeps on refreshing on regular intervals, you have the most updated profile which you have created. And it becomes very easy for your, for a marketeer to have the customer segments created once as a dynamic segment. And as and when the data gets an updated, if the trigger is hit that particular contact or that profile is ended into there or is added to that particular segment? And,
+45:28 | James
+is that, so, does that happen at order placement? So if we get an order from a dentist on our E store, either AI or someone within the company categorizes… it as a patient system. And that way the patient system category for data sources is automatically updated every time an order is entered. Or is this something we can manually do as I mentioned before with tracings, and these would automatically update as well. We can.
+45:58 | Nitesh
+Do it manually. The AI part which you talked about, that based on the sales order, identifying whether this is for patient or this is for hospital, that part is to be, you know, definitely looked at, but if at all, just to make our life easy while processing the order, if you are able to capture whether this is for this cause, it will be much easier for the system. AI definitely can help at some places. But if you talk about your sales order, I'm pretty sure not all the variation nuances of a particular order will be captured. There would be limitations, right?
+46:30 | James
+Okay. But yes, those limitations of our order system today are one of the things that kill us, right? We, we have no idea where we ship product to, unless we look at a ship history report and then filter it with AI or with our own eyes, right? So, okay. So the more detail, we can catch up front, yes, will.
+46:53 | Nitesh
+Be beneficial for you as a marketer for sure. Yeah. So once the data sources are established, you have the rest of the options which probably when we go into detail, we will explore how to unify this particular system. Will not be, it will be set up by us only for the first time for sure, but all the, you know, possibilities of the system, how you enrich how you have the activities, how you export it, how segments are created, that will be explained to you. Okay. But I'm just trying to give you some gist of this. Once you have this particular data and unification done, you come on to segments. You could see few sample segments are created. Ignore the error. What you see on screen, this is the trial system. You could see. Few of the very simple could be Houston. So if I edit this one, and if I try and show you, the rules are pretty simple customer where city is equal to Houston. Ignore the case. It will just fetch all the customer inside data for city as a field and value as Houston. And that's how you'll be able to have all the records. This was the simplest one I would say, and.
+48:02 | James
+that's looking at something like the ship to city, right? Not the order.
+48:07 | Nitesh
+See, you could see a customer inside. Let me just try to find out ship to okay, ship to as of now that I don't see an attribute which says ship to, but if at all, you are getting your sales order in this particular list, sales order. Surely, we will be having built to and ship to as one of the field. You'll be able to use that particular field and have that particular, you know, values applied or filters applied and build your segment. That is very much possible. On the right hand side, what you see is nothing but the attributes, right? You can also have these segments built on based on different segments like a few minutes back, Brian was talking about a particular set of people are catering to both the businesses, hospital as well, for example, retail as well. How do I try to find them out? This is the place where you have a segment called all the partners dealing with hospitals. All the partners dealing with retail, use them both and the unification or the intersection of the both will give you that segment where the partners are catering to both the regions or both the areas, right? So those kind of possibilities, you have conditions, you can select, you know, all what you can and have this segment built. If I go back to the segment, it is not only about selecting a particular field and creating a segment. You can also have the AI, you know, utilize AI models deployed to have this particular thing built like say, for example, if I have to talk about suggestions inside preview, let me just see. Okay. So it says inside preview, positive satisfaction versus mistake events. If I try to simply edit this one, it said satisfied customer is one of my prior primaries segment. And then another segment is patient with mistake that's how you'll be able to have this segments, build suggestions. This system also provides you suggestions with respect to how you can create different segments based on your data, you simply have to, you know, start this particular suggestions, this thing. However, I must warn you, this is a preview feature that means the Microsoft will be surely or shortly releasing this particular feature to production. But preview doesn't mean it is preventing you from utilizing that particular feature, right? So these segments can be built?
+50:33 | Ashwini
+Yes.
+50:35 | Nitesh
+Yes, please. Thanks. Yeah. If you could read out the question, please?
+50:41 | Ashwini
+We have a hand race, yeah, matrix, yes.
+50:44 | Nitesh
+Please, you can ask your question, can?
+50:47 | Mattias
+You, I was just pulled into this. So I'm just trying to understand here. Can you show how AI model here can support… us with the customer insights and how that actually looks in practice? Because now you're just clicking around and I have a bit of a hard time following apologies for that. Yeah. Understood.
+51:08 | Nitesh
+A very valid question. So AI model is to you purely based on the AI, you know, segmentation or the AI model which you will be using. It is not in this particular platform, you will be logging on to the power automate or power platform to have that particular model built for your data. Once you have that particular AI model built that can be deployed for creating segments for you. So I can understand your, you know, confusion. It is not like we open up a segment, select an AI model, define few queries, and then it immediately executes that. It doesn't work that way at least in this platform. So we will surely, you know, have that. Yeah. So how?
+51:52 | Mattias
+Will this work? Then, my sales team meets the customers. He sits in the meeting, he adds information that he gathers from the customer discussions into the system on site. Is that correct? If.
+52:04 | Nitesh
+you could come again, the sales?
+52:08 | Mattias
+Teams go out to the market, they may discuss with different customers, distributors, hospitals, whatever it can be. And then during those discussions, they have an easy way of entering information into the CRM system, correct? Correct? And then we have an external AI system that exports data from this system that you're showing here and then draw a conclusion on that, is that how it's supposed to work?
+52:35 | Nitesh
+No, no, no. So what you are capturing as nodes against a particular customer that stays in the, you know, different area for that particular customer. If you want to have something derived after that, we do have different methodology here. We are simply talking about what data has been brought into the platform already and working on that. So I get what you're trying to say, but customer inside segmentation, we are talking about data brought in from multiple sources and those are actual master data like your customer data, order data, your partner information, or partner contact, and all those kind of data, your sales orders and all which are actually system driven, not someone writing in notes when they're visiting a customer and then the system understand what notes are written and try to make that was.
+53:27 | Mattias
+Not my point. My point was, but my point was that they updated digitally into the system during the meeting. So let's say, I mean James was asking for deliveries, we were shipped to those for deliveries. So, how would that work? Then we want to, we want to analyze all the deliveries in the us market to understand which partners are performing better than expected and which partners are performing worse than expected. Would that also would that work?
+53:53 | Nitesh
+Perfect. That would work? Yes. So I'll show me down into, I may not be able to show you right away, but I'll tell you conceptually how that can be achieved. So when you talk about the delivery dates, this information is captured on the sales order. Okay? Once we have the delivery dates captured on sales order, the sales order will also have a field which tells which is the partner responsible for this particular sales order. Once you have the partner information brought in as one of the data source and the sales order also brought into the system as one of the data source, you can match these two saying which partner has done which, how much sales order with. So, and so delivery date, that is the kind of segment you will be able to derive out of the data which you have and you can, you know, expand on it as and when you have the enriched information, you can also have comparative analysis saying, tell me the difference between or give me the segments by partner who have done, you know, sales orders by at least 50 sales order in this particular period that also can be derived. Okay? Thank you.
+55:02 | James
+So, is this moving forward where we will get sales performance reporting out of, this portion of insights? Or is there something else that we will use for sales? Okay? So how are we doing to plan those types of things? Is that in, this element of.
+55:21 | Nitesh
+dynamics, can be leveraged but the sales performance that is purely based on the business which you are doing, sales order and invoicing, and the money collected that purely is your, you know, analytics capability which resides in the platform itself where you are doing these activities. Like if you do the ERP system, if you use fno, it is finance and operation system for having the sales order and invoices captured. You do have rich analytics in that particular system. You need not have to bring in that data in here just to have a look at what exactly I'm doing with respect to business Power, BI reports or Power BI dashboard are another sources where you can have this analytics achieved? Got.
+56:05 | James
+It, thanks. Yeah. Okay.
+56:09 | Nitesh
+So just, you know, but, to continue with the topic segments, you'll be able to create and just, you know, but to give you the gist of how a particular profile after unification looks like this is the screen. And now let me just try to go home and select. Okay, healthcare is by default selected. I… could see there are 2,600 customers. I can go ahead and open up any of the record to have a lick. I have a look at what exactly the customer record is all about. Let's say, for example, I'm opening this, these are.
+56:47 | James
+individual contacts? Yes?
+56:50 | Nitesh
+Yes, these are individual profiles basically which we have created. This could be your partner contact. It could be your customer. It could be, you know, anyone else. These are individual contacts with entire information. Now, whatever you see on screen is configurable, even the activity timeline you could see, say, for example, Ryan and chubb is one of the, you know, like a customer from united state linears, whose record you are seeing, you could see there is a patient log. If, in case you are able to bring in patient log as one of the data source, you'll be able to have that incorporated in the timeline. Say, for example, on cfms, he goes and gives one survey or a feedback. You'll be able to have a look at it. If, in case Ryan goes ahead and registers a complaint which is recorded in your service management system, you will be able to have a look at it. And then the beauty of the system is you will be able to figure out or carve out a segment saying all the people who have registered complaints in the last six months. Give me that list. You'll be able to derive a segment out of it as well.
+57:55 | James
+And I assume that it seems like this example is just looking at individuals, but we would be looking at accounts like st Vincent's hospital, right? And also have an account within st Vincent's hospital. So we would be able to look at this data against st Vincent's or against an individual contact within st Vincent's yes. Okay, great. Thanks. Yes. So.
+58:17 | Nitesh
+On that note, while we are discussing in detail, just one question. Out of curiosity, if you look at this system as a marketeer, what would you like to have? Would you like to have the profiles as a customer as an account or individual contacts?
+58:36 | James
+I kind of lean towards account but I would love to have the ability to dig deeper into contacts. One of the big problems we have with CRM today is when a sales rep resigns, they haven't entered contacts into the system. So if we have the opportunity either through CRM or at order entry point to get a contact name, gosh, that would be gold. I'm.
+59:05 | Nitesh
+old acknowledged actually. So what we can do, sorry, can I please? I.
+59:10 | Mattias
+would agree with James accounts and then possibility to add contacts list linked to that account, but also to have order history performance everything. So when you go into the account, you the key account manager have all the information up to date, live preferably so that in the meeting with the customer, they can just go through everything and then also make sure that the account is correctly updated together with the customer. And also in terms of, I mean there's obviously, I would assume there's a role to a contact. But also if you can, I don't know give some sort of which type of information should this contact actually receive.
+59:55 | Nitesh
+So, got the point. Two things we're talking here, the system, what you're seeing is meant for marketeers. This system will not be exposed to the sales team or people on ground. I'll tell you why as a sales representative, if in case I wish to have a look at the 360 degree record of a particular customer. I do have CRM as my system or go to system wherein I will be able to go ahead and search a particular account. 360 will be already available in CRM and it has everything in build associated contacts, all the sales order, all the complaints locked so far, all the transaction which are ongoing, any invoices pending, any payments, done, everything over there, this particular system, what you see on screen is specifically focused on marketeers activity, wherein they bring in this data. Although if you say this is to be extended to sales people as well. That's a different call altogether. But what I would suggest is dynamics 365 sales module itself is capable of catering to whatever you just said. You do not have to really come on to the customer inside or the marketing module for understanding? What about a particular contact? What about this contact or account and their sales pipeline? Or what exactly are the invoices raised? Or what exactly is happening with respect to a particular contact? This could be an addition. This could be an additional system. But dynamics CRM is very well capable of handling the ask which you just called out. It is, we have one more hand raised, Jessica, yes, please.
+1:01:41 | Jessica
+Yeah. I just, I was going to ask if the account manager could be prompted to keep that information up to date, but you're saying that they're not even able to access this portion, and that's gonna in my opinion create major friction because we don't… somebody like in my role who is a field marketer, we don't interface with accounts that way.
+1:02:06 | Nitesh
+Okay. We.
+1:02:07 | Jessica
+couldn't possibly keep that up. That would be a full time job. You can change my title to title updater.
+1:02:15 | Nitesh
+If you, and you can.
+1:02:18 | Jessica
+Pay me to do that. Okay? But, you know, that's not, we're not set up for success for that. So, I'm not sure if that's something we can talk about, but.
+1:02:29 | Mattias
+Well,
+1:02:31 | Nitesh
+yeah, maybe now.
+1:02:33 | James
+Sorry, keep going jess. I thought you were done today.
+1:02:35 | Mattias
+That's okay. I,
+1:02:36 | Jessica
+was just going to say we currently keep a master directory… excel by account and that's basically our distributor directory and everyone has access to that. And even, I mean, it's mostly up to date. Our contracts team interfaces with it. Our sales team interfaces with it. Whenever I encounter a change that needs to be made, I interface with it, but even that doesn't get quite kept up to date. But it's kind of the best we can do at this point. So, OK, surely.
+1:03:14 | Nitesh
+Acknowledged the problem. And on the same lines, just wanted to ask one more question out of curiosity, say, for example, you are working for a region, USA, are you also, you know… like are you also having access to the customers or partners from different countries or it is just USA?
+1:03:36 | Jessica
+My role is focused on us and Canada and sort of latam also, but, OK.
+1:03:45 | Brian
+So, this is a really great question and a good time to just… emphasize what you just said which I thought was a very good point that the call that we're on today is about marketing. I didn't quite realize this, but the call we're on today is about marketing, not about like the CRM system, which would be an entirely different call, right? So just make sure I got that, right? Yes. OK. Good. OK. So, and then in that case, for marketing, I'm you know, those of us in product marketing, absolutely need to see the worldwide picture because if we're coming out with some new product, we're coming up with some new… a new aed and we're thinking about features that we want to put in it and there could be regional differences in those features. So we would need to see that access. We would need to see… customer insights as to what they might want in the next product worldwide. OK.
+1:04:55 | Nitesh
+Noted noted. So, maybe.
+1:04:58 | Brian
+That's maybe that, sorry, maybe that's another distinction. Maybe I need to understand on this call people think of marketing as, you know, hey, here's a product. Let me, how do I get it into the hands of customers? That's an important part, of marketing that's downstream upstream marketing is what I was just talking about, which is different, which is… let's look at pulse, the customers out there and try to understand what they might want from a product. And then we're going to develop that product for them. So it, does this system do both upstream and downstream? It can, it can. OK, alright.
+1:05:40 | Nitesh
+Alright. So the analytics part of?
+1:05:41 | Brian
+It's talking about the same thing. Thanks. Yeah.
+1:05:44 | Nitesh
+The analytics part which I was talking about wherein you pull in the data from various sources and you do analytics on top of it. That is the, you know, crux of the entire activity which will be engaged in. So how do I get this to more and more people? What my data says, how do I improve? How do I make it more reachable and all those kind of stuff the system is capable enough?
+1:06:13 | Brian
+It is, we have one more hand Brian.
+1:06:15 | Mattias
+Brian, would we add data from the customer feedback process into this then? Is that because that's obviously an important process to gather feedback from customers? I mean, I.
+1:06:28 | Brian
+think we'd want complaints in there. We'd want, you know, like… even like the medical oriented complaints if there were any, because that's going to influence how we design the next products and what we need to think about for those. And then non complaint feedback too, like, hey, I would like to have another button, you know, that kind of thing has to be in there too.
+1:06:55 | Nitesh
+Sure. Would we be able to have?
+1:07:00 | Mattias
+Cfms data linked to the accounts because then the cfms process needs to have, I mean, how would the system link cfms information… into the correct account?
+1:07:17 | Brian
+So the cfms data means, OK, just making sure.
+1:07:23 | Nitesh
+the complaint feedback management system is what I gather. And then yesterday session… it was showcase that it's an individual feedback form. If you go to hard streams website today. And if you want to give a product feedback, you open up this particular form and you fill in the information based on the persona or based on the, you know, role which you're playing. And this particular information is received by hard stream and actioned upon. Now, when we talk about getting the cfms data… tied along in the customer insight, one question wanted to ask was this feedback? Is it given by a logged in customer only or it can be anonymous as well? I go ahead and I simply fill in the data. I put in some first name, last name, mobile number, and then I fill in the entire information. It's wide open. So then in that case, we'll have to figure out a way to tie that to a particular profile against which you are trying to see this insights. So these are the things which we surely will be, you know, delving into and will clearly call out what is possible, what is not possible?
+1:08:37 | Brian
+Okay, great. And then if there are best practices, like, if it, if we should change the form or the fields on that form, we can do that, right? So we're also flexible. We want to make sure we can capitalize on this product's you know, capabilities. So please help us there. Sure, sure.
+1:08:55 | Nitesh
+Okay. So… with respect to this particular profile, what you see on screen, I can go back this list of all the customers. This is something which you will be in a position to configure. Okay, you will be in a position to configure what field should be seen here so that if anyone who's having access to the system wishes to quickly look up a particular customer or a contact or a vendor, or a reseller or a partner, they should be able to do, it can be done using your mobile. The search can be set, the search index can be set up. It can be using your name, mobile number, whatever. Like if, in case I say… Randolph, okay. All the data with the name Randolph, the index has been set up is really searched. You don't have to wait entire data loads on screen and that's how it is, you know, as of now. So this was about the customer inside data and things which you could do using this particular platform. You do have a lot of other, you know, possibilities, like for a business, you would like to set up some measures. Measures are nothing but numbers. Basically, you would like to have some predictions. Predictions also can be created like say, for example, if I click on prediction, the system can give you customer churn model. These are a few models given by Microsoft. Okay, which can be used are not limited. You can still use more models like you want to do some analytics. Those models can be built in on the power platform and can be leveraged in this particular system. Okay. I go ahead and I fill in the data. Okay. How the measures and predictions and these numbers look like if you click on home and you scroll down, you get these numbers. This is, you know, as of now, I have loaded the healthcare demo. So it says, customer with 10 mile of 10 Miles of the azure maps, 100 customers or 100 members, average charge per visit, Houston customers, then recent business measures, everything is populated. If, in case I go ahead and say, let's say, for example, retail industry, then the particular thing or the inside changes. Now, this would be a separate customer altogether. And it will give me some different information. Okay? So these measures, what you see on the right hand side, these blocks are actually configurable elements which you would like to have on any profile. Okay? So we will help you with that. What exactly can be set up against the customer profile? But this is how you will be using the customer inside data module before moving on to the actual marketing execution and the campaign management part. Okay. Shall we go back to the presentation? And then we have lot of questions to ask on this knowledge? Which we even tried, you know, explaining you from our perspective, we would like to know more from heartstream perspective, what is applicable, what is not applicable? Although we will be asking you a lot of questions in the ado record. As I said, for the people who have namely joined the usual practices after the end of this session, we have a do record created for this particular workshop where minutes of meeting are updated at the same time all the tasks will be created. This task would be a question request for document, request for format some more, you know, information on a particular scenario, this kind of question. As of now, we are just capturing it. But as we go ahead when we are trying to solutionize the system and we identify exact user, these tasks will be assigned to you. And this idea is not our radio. It is in hard streams, you know, ecosystem in your environment and you will be in a position to receive notification and respond back to the ticket as well. So we are going to surely ask you lot of questions over there. And, and we would request you to provide answer as much as possible. So as to have this system built more effective for you. Okay. Can we go back to the PPT and continue with the rest of the session? Of… course. Thank you. So here is our first section which we are eyeing. So external platforms, we really have four different sections and external analytics sources and inscope. So, do you currently have any analytics platform using which the data is to be brought onto the system? Which we just showed any survey tools, any third party agencies helping you with the data, leads, data for marketing, you know, activities, anything of that sort, we have.
+1:13:45 | Mattias
+The lead data from different events where the trade show organizer provides a lead capturing system. Okay?
+1:13:56 | Nitesh
+Okay. Is it just the lead information that has been, you know, added to the system and then distributed against to the distributors. And the action upon it is that it or any other data?
+1:14:08 | Mattias
+I mean, at a trade show, you meet all kinds of people depending on the trade show. Some of them are very local regional, some of them are international, some of them wants just the information, some of them wants to get in contact with someone for this. All kinds of it's not all like a commercial lead. So to say, right?
+1:14:26 | Nitesh
+Okay. So just the trade show visitors who are interested in heartstream's product, that information is captured and that information is circled back or sent back to you and that's how the lead has been registered in the downstream system which we operate in. And how about these leads? Are these leads again assigned back to the distributors to action upon or it is taken care of by internal sales team as well?
+1:14:54 | Mattias
+Today, in Europe, at least it's managed by the sales team afterwards, but I don't know. I'm sure there is a better process to be applied in the future, okay?
+1:15:06 | Nitesh
+So what we will do is, you know, we will ask one of the question as please help us with the dummy data of the format of how this particular leads are received to you or any other data is received to you. And then probably we can guide you how it is to be leveraged. If it can be leveraged in the customer inside data model for segmentation. And all, surely we will help you with that. But if it is just leads which are to be actioned upon by sales team in Europe and for other region, if it is to be distributed to your resellers, then accordingly, we can tweak that information which we are going to share. Okay? So as I gather in order for you to build this particular platform or the profile, let's say, for example, first of all, I would like to get started with, although you called out, you would like to have this profile built based on account, you would like to have few said you would like to have this particular system profile built based on contacts agreed. Acknowledge. But… in order to have this built, what all sources you would be deploying? That is what we really, you know, are interested to know more, will it be just your CRM system, your E commerce system, your sales ordering system, or the invoices which you're raising orders, which are placed or inquiries coming in from the distributors, that is it? Or there is something more to it which can help build this particular platform? This?
+1:16:30 | Kaitie
+Is Katie, I, and I apologize, I just step away for a couple minutes. So this may have already been discussed regarding E commerce. There is going to be a number of available sources depending on what E commerce platform we're talking about, including external corporate customers like Amazon. So we'll have the sales data. But then with our media work on Amazon, there are also like customer segmentation and media KPIs and data that we'll be able to capture there as well. So those.
+1:17:05 | Nitesh
+will probably.
+1:17:06 | Kaitie
+the.
+1:17:08 | Nitesh
+most.
+1:17:10 | Kaitie
+recurring. I'd say consumer insights type data sources at least for now, but just want to make sure that was also captured. Sure.
+1:17:19 | Nitesh
+Sure. Okay. So what I gather is lead information is something as of now which is, you know, captured, we'll see what all data sources are available and what best we can, you know, bring out for the marketing platform. When we talk about customer inside data before going on to the second question, just wanted to, you know, circle back on question number three. What you see on screen, let us decide on what exactly you would like to be. It is going to be a unified profile based on whatever you just saw. Is it going to be for customers? Because what I understand is that particular segment is pretty low. Very rarely you interact with customers. So it is going to be your distributors and channel partners only. But you are the one who should be, you know, having that particular say, like what profiles do we build in the system? If you could give us that info would be really great.
+1:18:13 | Brian
+Just one thing you said though, you know, we need to build this for the future and we are moving very much toward consumer direct where we can. So we have to make sure we can have those insights as well for that. I just want to make sure that's clear that, yes, we will probably always have a vast majority of our sales through distributors, but we also need to grow our direct. Yeah, perfect.
+1:18:40 | Nitesh
+And.
+1:18:40 | Kaitie
+also, the customer insights from our direct channel in some ways can help influence how we interact with.
+1:18:48 | Nitesh
+Leads.
+1:18:49 | Kaitie
+That come through. We will have some consumer behavior learnings that we can apply to how we interact with leads that come across the desk so slightly.
+1:19:00 | James
+Different.
+1:19:01 | Kaitie
+But there can be crossover in how we utilize the data.
+1:19:06 | Nitesh
+Okay. So I get that customers are also intended, but at the same time for the current need, distributor profiles are also to be brought in very much possible. We can have that accommodated and any specific attribute which is a must have for this particular profile which you think, no matter what customer or distributor or any distributor contact or reseller contacts, any specific know fields information which you think are, must have on this particular system. When we open up a profile, anything that comes to mind even though we have a hand?
+1:19:47 | James
+Raised.
+1:19:48 | Nitesh
+yes, please go ahead.
+1:19:51 | Brian
+Matters we can.
+1:19:59 | Kaitie
+Mathias, you can go, I.
+1:20:01 | James
+was.
+1:20:02 | Mattias
+just looking at the KPIs and something that is obviously an experience from Philips is that it takes weeks for leads to circle through the system and actually reach the right source. And then that lead might be gone because the closer we move to consumers, the faster decision is needed. So, I think an important KPI is to make sure that the lead is within 24 hours at least in the right place inside the organization. OK?
+1:20:29 | Nitesh
+OK. So the conversion time frame is something as a KPI, you're thinking of capturing which the system should be providing you. And 24 hour is what you said. OK, that is as fast as possible. OK, understood. So conversion time, engagement rate, conversion rate, segment, growth, campaign, return on investment, anything of this sort. You?
+1:20:53 | Brian
+Delve.
+1:20:53 | Nitesh
+into as of now when it comes to marketing initiatives specifically.
+1:21:01 | James
+Like we said earlier, we don't have the ability to segment markets in our current tools, but we just don't if we want to go after dental offices, it's very difficult for us. We would have to buy a third party list and manually deal with emails. So we haven't been doing anything like that since we separated from Philips, but I certainly envision us doing it moving forward. I'm dropping some examples in the… chat, like I think that we would need high level segmentation.
+1:21:35 | Nitesh
+OK.
+1:21:36 | James
+OK. We need to know if it's hospital, you know, ems fire military or aed channels, right? And today, we just have this big catch all that we call aed channels, right? And we don't know where our aed channel partners are selling aeds until two four, six months later, right? So… so chat, I would think that early on we would just want, you know, hospital, ems, fire military and channels. And then we can grow into other vertical markets, where we start to categorize… future don't know how yet, but we start to categorize sales to school, K to 12 schools, universities, you know, airports, airlines, electric companies, there's so many vertical markets in the aed channels space, the non professional health care space. But I think for now, if we just got the big four, that would change how we're able to reach out to and engage our customers and segments future. And I don't know if people on the team, you know, feel differently, but we don't know where our distributors sell.
+1:22:51 | Brian
+Aeds today until many.
+1:22:53 | James
+Months later.
+1:22:55 | Brian
+Maybe what I feel differently about is maybe we need more than just the high level, like if there's a trend, in dentist offices where we start seeing more sales, you know, over the course of a week or two weeks, maybe that's a signal to us that something hot is going on. There's something about that market that we need to. Maybe we need to run a campaign directed at them, you know, like if we could get that signal early from a marketing perspective, then that would allow us to capitalize on the momentum that might already be in the market and be like you need to choose Philips instead of, you know, some other brand for your dentist office.
+1:23:38 | James
+Chat, I totally agree. But.
+1:23:39 | Brian
+Do you know? So like having it sooner and having it specified could really help our marketing campaigns be more successful and targeted if we see trends. I.
+1:23:49 | James
+Only mentioned the high level ones first because we.
+1:23:52 | Brian
+don't know anything right now.
+1:23:54 | James
+For six months where, you know, where these went and we, in North America, we have to work with Reid because he takes care of kind of most of the tracings and I know that those tracings were kind of moving towards AI to help us with tracings. But there's a lot of manual work. I mean, Reid spends, I don't want to tell you how many hours a month figuring out where abc company, you know, what segment abc company is. Because if it's police well, and we do this, and by the way, like to be clear today, we're doing these tracings so that we can pay people properly in North America, we are not doing tracings to update install base. We… have no up install base update requirements for our defibrillators, for our aeds, for our channel partners, right? We let them maintain install base on their own systems. So, Brian, you're talking about these segmentations, if we continue to have a business policy that says channel partners do not need to tell us where they sold. If they're aeds, then we will never know anything about trends in dental or in K to 12 schools, or universities, right? So we probably.
+1:25:02 | Brian
+Need to change that.
+1:25:03 | James
+Yeah, this is like part of this is system planning and part of this is changing business process, yes, and how we interact with our partners. And I think we're open to both. But that's why the only reason I said in the chat is if you, we go after the big, I only, I put three but there's really four, you know, hospital ems, fire, you know, all the different vertical markets that we can't figure out where they went today. And military, if we just get those four out of the box, it's a marked improvement from where we are today. And then we can work on labeling, you know, the top 20 vertical markets. And then eventually we change our process with our channel partners where they have to report on where they have sold a specific serial number to which would update our IB. And I guess Nitesh, the question for you is if we change our business process with our channel partners around the world to tell us where the heck they sold these things quickly, you know, within a few months, if we update that information… through the distributor portal and into dynamics and they categorize it as a dentist office sale, yes. Will that then show up in the customer?
+1:26:25 | Nitesh
+Insights.
+1:26:27 | James
+portion okay. All right. So, so Brian, that answers the question of… how can we possibly get to these, you know, dozens of vertical markets, the top kind of couple of 12 vertical markets around the world for aed sales and what we're doing in those spaces, you know, at least there's a way to get to that. I don't know if that's an out of box thing for day two and we change distributor contacts beginning, you know, contracts beginning in December, right? This December for next year or it's next December for the year. You know, we can talk about that as a team that's a big lift and changing how we interact with every distributor on earth. Yeah.
+1:27:09 | Nitesh
+This is just one.
+1:27:11 | Rajeev
+One comment. I think as we think about the future state and we require device registration from customers, we'll be able to collect this information and have it in the system… yes.
+1:27:25 | James
+But people, you know, many times people take registration forms or even they toss them in the trash, right? Especially if we're talking about consumers, they flip it in the garbage. You know, I mean, we do it every day when we buy.
+1:27:36 | Brian
+We're looking at QR Code. So we're working on getting to the 20 first century, Jim, putting a QR Code on the box, you scan, it takes you to the registration form. It's already got the serial number preloaded you just put in your name. Do you know? So we're trying to make that easy so that people because people are used to like registering and, you know, maybe we offer a year of warranty, if you register, you get an extra year, you know, something like that to motivate it, but I think we can start getting this data that way as well.
+1:28:09 | James
+But,
+1:28:10 | Brian
+bulk would be great, you know? Yeah, yeah.
+1:28:16 | Nitesh
+But in that scenario, just one while you were talking great ideas. Yeah. So having customer updating the install base information using QR Code, what I gather is one customer can have multiple devices at same.
+1:28:31 | Brian
+Time, right? So.
+1:28:32 | Nitesh
+Will they be really interested to scan each and every device and filling up all this information? Unless you offer them something else in return? Saying, hey, with this particular registration here's, your, you know, warranty activated or some support, you are the best judge for the business. But that was something which was running in back of my mind while you were discussing about getting this install. This is updated via feedback or registrations.
+1:29:01 | Shaik
+But certainly, we can run the campaigns, especially this type of campaigns. We can through marketing channel. You can create one thing and we can run.
+1:29:09 | Nitesh
+That, yes, yes, we.
+1:29:10 | Shaik
+Can capture as well. How many registered with that?
+1:29:13 | James
+Yes, yes.
+1:29:15 | Nitesh
+To be very Frank and short, the more data you bring in or capture against an install base. One thing, is 100 percent sure any sales order which is getting out of dynamics will have an install base created. How you update that information on the install base and how you leverage that information is all up to us. The system is pretty much capable to offer you all the options like install basis, updated with exact customer and the segment of customer. You'll be able to pull that information out, all the dealers or all the resellers selling those devices. You'll be able to pull the list from on that aspect as well. So endless possibilities we'll try to see what best can be offered for sure. And whatever you see on screen is not just one time activity. There would be super users, say, for example, James Brian, if you deal in marketing and you are the marketeers, the system will be owned by you, right? So once you know how a sample segment is to be created, you work on it day in day out. You'll be in better control of tweaking the system to extract the max out of it and tell your sales team saying, hey, this is what you could leverage. So possibilities are endless KPI reporting and requirement. We do understand as of now you need high level only conversion or the rate in which it got converted. That is something which we as of now look at. But whatever is out of box that will be straight away given, no questions asked when we come on the last topic, which is our approach to reporting and dashboard. Why assume it's pretty straightforward. You have Power BI, as one of the option to have the dashboards, customer insight platform itself, give you Power BI, you know, analytic reports with respect to what campaigns you are running and all? So anything apart from Power BI or the system driven reports, is there any audience which is really interested to look at these reports in some different manner and their intention is something else apart from what we just spoke.
+1:31:21 | Nitesh
+Like consumption report is looked up by someone else from the purchase department or procurement department, something of that sort. I mean there.
+1:31:31 | James
+Is one thing, for the internal team on the phone, we always like to know who is using our pads and who is using third party pads because there's a lot of money to be made in defibrillator pads for our business. And I'm talking specifically in the pro business, the aed biz there's really no third party pads out there for the current product anyway. So for monitor defibrillators though, there are a 1,000,000 third party providers around the world that steal our pads business. And so, I guess Nitesh, I'd like to be able to get to data that says, you know, if we click on an account, let's say my earlier example of st Vincent's hospital in Chicago, Illinois. And I want to go in and see everything that they have purchased from us in a specific time frame. And then I want to filter down that everything just to pets. So I want to see lifetime history st Vincent's from the day we ship them their hardware. I want to look at the consumables they're buying from us. And I know what those consumables are, right? I know what those consumables are. So I can search by part number or description or whatever that data. You know, has been very difficult to come by over the years. And if we could come in here and do, that tells us, hey, st Vincent's isn't st Vincent's is using our product. They've been using it for 10 years, but they haven't bought any pads from us for the last three years. That means they dumped us and they went to a new supplier for pads. Now we can go after them and say, what the heck are you doing? You don't want to do that? You know, here's why you want to stick with our pets. So that's something that I would is, I assume and then I want to assume that that's something easily available in this tool in 20 26. But yes, it is.
+1:33:26 | Nitesh
+Possible provided you have all the purchase data also tied into that particular hospital record. Vincent. And then obviously, as I showcased to you segmentation is pretty easy once you have the data in place. Okay. With that said probably we.
+1:33:45 | James
+Sorry, I have another one. I'm sorry, yeah, yeah, please. I know I'm slowing you down, no.
+1:33:49 | Nitesh
+No, not at all.
+1:33:52 | James
+Separate topic tied to this today in our systems for my st Vincent's hospital in Detroit, Michigan. We may have 11 different records on our system that say, you know, sold to st Vincent's hospital. One two, three main street, Detroit, Michigan, right? We may have 11 of them. So when we data migrate our customer records, we call them customer master data. Today. When we move those customer master records into customer records and dynamics, we want to be very… intelligent about kind of taking everything initially. So we don't shut our business down but narrowing down very quickly from 11 customer records for st Vincent's so like one right at Philips because they bought MRT machines, ct machines, ultrasound, defibrillators, cardiograph, supplies. They bought 12 different categories from us. Many times each business had a different ship to and therefore had to create a different customer master record. And so there's 13 of them. So, so, so, so if this is all based on customer, I'll say number in analytics… and we have 11 customer numbers for st Vincent's that could get messy. So, I guess I don't know if you're involved. So if you're involved in the data migration, we don't want to shut down our business on day one and get rid of every single customer number that we think we want to get rid of. And then all of a sudden we get a po that's on a customer number that we deleted. And now we're halted, right? So.
+1:35:38 | Nitesh
+No. So if.
+1:35:40 | James
+I don't want to destroy the abilities of customer insights due to the fact that we have multiple customer numbers for the same customer, same entity. If it's the same sold to one, two, three main street, but they're shipping it to 11 different places, then we have 11 different customer numbers. And I don't know if that's the case in dynamics. If we can vary the ship to, but keep the soul to the same and have one customer number. I don't know the dynamics of dynamics it.
+1:36:07 | Nitesh
+Is possible, it is possible it is possible maybe in the forthcoming sessions when we deal with sales orders and opportunities and quotations, we'll try and showcase it to you. It is very much possible. And even if you have your, you know, discussions around this topic, while the workshops are ongoing in the ERP space, this particular aspect which you talked about ship to build to having same customer, it is, this is the core of CRM. It is very much possible. However, the initial data load, we will be looking up to you for cleansing it like you like we cannot expect system to automatically identify these 11 different records with individual entries associated with them to be up to one record, right? So that we will, you know, cleansing thing. We will look, we'll be looking up to you, but we'll decide together how exactly that can be managed. It is all about putting in the master data today. If you are, you know, bringing in all these 11 records together. It is not only about these 11 records, it is about the associated orders, invoices, ledger entries, whatever goes against these 11 individual records. So how to manage that? That is to be taught once and then definitely that can be brought together as far as that, the ability of ship to build to that is possible.
+1:37:29 | James
+Okay. Yeah. I just, yeah, yeah. Sorry, go ahead, James. No, I just want to make sure that that's addressable. Otherwise, I think that will mess up our ability to pull accurate data out of the customer insights module of dynamics.
+1:37:45 | Nitesh
+Pankaj, you're having anything to say? Yeah.
+1:37:48 | Pankaj
+I had a different question. But before that, so since the way CRM model is that you can have a single customer record but 11 ship to address entries.
+1:38:00 | James
+So that, is, that if you had the same sold to one to three main street, Detroit, Michigan, st Vincent's hospital or health system or whatever. You could have that same record holding all of the data for multiple ship to locations?
+1:38:18 | Pankaj
+Is that what you just can have multiple address? Yeah, we can have multiple at the same.
+1:38:24 | James
+Time. So it,
+1:38:24 | Nitesh
+might be with shippers. Yes.
+1:38:27 | James
+Multiple ship, choose one. So.
+1:38:29 | Nitesh
+And.
+1:38:30 | James
+all of the data is tied to this old, yes, yes. And therefore, it wouldn't cripple our customer insights capabilities for marketing.
+1:38:39 | Nitesh
+So it don't it because we are dealing with two different things here, James, customer remains, same, what you are saying, build to ship to that comes on the sales order. Very easy to manage over there. Okay, specific fields, right? Okay. So, James, so.
+1:38:57 | Pankaj
+Moving on. So, before we go further, I just wanted to know James, we would like to know who would be the right person to contact to get the list of these… analytic sources?
+1:39:11 | James
+Oh, you mean all the customer master records, no?
+1:39:14 | Pankaj
+No, the analytic sources. Oh, they.
+1:39:16 | Nitesh
+Don't have as of now punkage, as of now, they have. Yeah. OK.
+1:39:27 | Nitesh
+If that's all Pankaj, we,
+1:39:30 | Pankaj
+can.
+1:39:31 | Nitesh
+what we can do is team, we had a healthy conversation and this was the first session which we had planned them. What we can do now is we can take a 10 minute break and come back and continue with the rest of the topics. Yeah, this particular topic we have, you know, spent the exact amount of time slightly overshot the time allocated. But, yeah, this is the right time for us to take a break, 10 minutes. We'll come back and we'll continue with the rest of the topics. Okay? Thanks. Thank you, right? Putting in a timer so that everyone knows.
+1:51:08 | Nitesh
+James, Brian, we are back. If I told you you're back as well, just nudge us and probably we can get started.
+1:51:15 | James
+I am here.
+1:51:17 | Nitesh
+Jim is here. Okay. All right. Thank you. So, let us, you know, delve into the yes, Ted you wanted to. Sorry? No, I.
+1:51:28 | Theodore
+was just saying I was back. That's all, I just raised my hand to let you know.
+1:51:32 | Nitesh
+All right. Thank you. So let us go ahead with the rest of the session. I'm sharing my screen again… let me know if it is visible… we can see it. All right. Thank you. So now the topic is like we do have in the agenda, a series of topics with respect to marketing initiatives. It is not like the system part. We have already seen. We had a healthy discussion on how the data is to be brought, what all data or what all segments are to be targeted. Everything is, you know, discussed acknowledged. We do have a lot of questions which will be conveying you via the task created in ado against today's, workshop. But here on the topics are more about understanding your world, heartstream's world. A lot of things may not be available or applicable for your business, but hear us out what the system is capable of. What are we asking? Whether that can be leveraged? And we'll try to, you know, see what best can be put to use. Okay? Now, when we talk about marketing research insights, then planning… what we're really looking at is the information on marketing research sources, insight, consolidation and analysis, and planning and decision support. If you talk about marketing research and insight planning… if at all, it is applicable, you could just tell us how are you getting? Like in the previous session, I do gather we do not have anything of this sort when we come to or when we talk about marketing insight. So essentially why we brought up this topic is when we talk about marketing, it is not only about bringing in data, you bringing all the research insights and you do planning accordingly, like research insights could be your customer service. You do have, you know, your feedback management system, that is one. Then when you have your competitor and industry intelligence, you have your internal sales CRM feedback given to you. You have your market studies. If these researchers are, you know, incorporated in the system, I'm not saying you will be, you know, utilizing them or there is a way in the system to record each and everything of it, but this will decide how you are looking at your segmentation, how you are supposed to leverage the existing platform? Just wanted to, you know, understand and we can be quick, if this is not something which is in scope or which is not something applicable as of now. But we can look at it later. That also is fine. Okay. But we are just trying to understand this topic from the system perspective. So that if we get this insight, we'll be in a position to put the current system in into good use. Okay? So, James Brian, the rest of the team members who have joined, please feel free to let us know. Do you delve into market studies or any competitor, no, right? The.
+1:54:52 | Brian
+Market studies, they confuse internal implantable defibrillators with external. They're really a mess. We've stopped buying market studies. Okay. Could we have in the past and they're just not they're terrible… customer surveys guys. Do we do customer surveys?
+1:55:17 | James
+We haven't in years. Yeah, we.
+1:55:19 | Brian
+should let's just say we should be doing that. Maybe we'd like to try. We'd like to start doing.
+1:55:25 | James
+satisfaction scoring all that kind of stuff. Yeah, we should be doing again. I think what I can say is in the last five years or so, the campaigns that we've done, we've simply worked with industry organizations and basically purchased contact lists, right? So that's that is one thing that we do, is, we go to the people who are experts in the space who have the contacts who have the databases. It's it's not giving us insights into that market, but it's giving us the actual… contacts in that market. And that's what we've been doing the last five years we've purchased for police. We've purchased for fire ems, and they've been reasonably successful programs.
+1:56:20 | Nitesh
+OK. And, and when you say you have purchased for police or you have for a specific segment in what form? Like what data is being, you know, procured from external sources and how is it used? Is it just the list of people prospective buyers or with contact details? Or what is it? It's perspective buyers?
+1:56:40 | James
+It's the you're buying and you're buying contacts in the market basically.
+1:56:45 | Nitesh
+OK.
+1:56:46 | Brian
+So, then you can run your campaign. Yeah. Okay.
+1:56:49 | James
+Okay. I would say where we gather the most data would be through sales rep and distributor communications, right? Our.
+1:56:57 | Nitesh
+Heartstream?
+1:56:58 | James
+Employees come to us and they say, my gosh, you know, there's a lot of activity in the dental space and, you know, we'll verify that with some distributors and, we'll go after dental, right? So we do rely on our channel partners and on our internal sales people who live this stuff all day every day, unlike we do in marketing and that, I think, you know, sadly, I think that's the majority of the source of market insights that we get. Okay.
+1:57:35 | Nitesh
+Okay. Yeah.
+1:57:38 | Brian
+Just on the next one competitor and industry intelligence, we have a… we have an agreement with the top five or six other just manufacturers of aeds and monitor defibrillators to share our shipment quantity data by region to a third party. I think it's PWC. I can't remember who we use now anyway, and then they consolidate the data and reflect back to you your market share among all shipments for that. For that, you know, quarter to the various regions. So we do have this consortium. It doesn't include one biggie nikon kodan but that is one of our sources of customer insights and it comes as a spreadsheet and it's just a percentage?
+1:58:40 | James
+Okay.
+1:58:43 | Nitesh
+Okay. Is it possible for us to get a glance on what kind of data you receive? OK. So what we can do is we'll put this also as one of the, you know, ask just for, you know, seeing the data so that we see where it can be leveraged. OK. And when we talked about customer surveys which you have not done, in a good while, when was this service triggered on each successful sale?
+1:59:13 | James
+For just.
+1:59:14 | Nitesh
+You know, existing customers, you tried reaching out to see what exactly is your feedback on the product which they are already using?
+1:59:27 | Nitesh
+If at all we are doing or we used to do customer surveys, what I understood is we haven't done customer surveys in a good amount of time? Five years? Is someone mentioned? So before five years, when, whenever we used to do customer surveys, was it based on a successful sale or it was just a random reach out to get customer sentiment?
+1:59:50 | James
+It was customers, it was more customer satisfaction. How was it dealing with our, how was the sales process? How was the training and the installation and the delivery? You know, how was quoting and invoicing? Are you satisfied with the product? Is it meeting your needs? Etc, it was not.
+2:00:08 | Nitesh
+Anything?
+2:00:09 | James
+Beyond that, it's really a customer satisfaction?
+2:00:14 | Brian
+OK.
+2:00:15 | Nitesh
+And now, if you talk about, you know, direct sales, will that be still applicable? Are you planning to have this customer feedback surveys to be sent after each and every successful sale? I.
+2:00:28 | James
+Would I would love to, after each direct sale ships, you know, you give them a number of months to install to pay their invoice, leave their invoice, you know, to have some experience with the product and then you send them a survey, hey, how was it dealing with our salesperson? And how was it dealing with our systems? And how was it, you know, how's the product doing and blah, blah, blah. So I would absolutely love that as a standard part of business, every direct sale that we do. OK.
+2:01:01 | Brian
+OK. Alright. It's a.
+2:01:03 | James
+Lofty goal, Brian, but I'd love to.
+2:01:07 | Brian
+OK. Alright. So.
+2:01:09 | Nitesh
+Moving on to question number two, the insights, what insights are the priority for planning? So basically, as I gather, it is just the data which has been bought, competitor and industry intelligence. Do you do have that aspect of surveys? We are, what are they actually looking at? But if, in case out of this entire research, you have to target, I believe competitor and industry intelligence is something which you'll be prioritizing for planning your marketing initiatives. Isn't it like let me know if, in case my understanding is wrong.
+2:01:46 | James
+I would say so. Yes… I.
+2:01:48 | Shaik
+Have one question, especially James. So while your team, the fields sales team actually on the field ground, right? They were selling the products, they capture any marketing insights… because they are the actual people who are in the field, right? They.
+2:02:07 | Nitesh
+Go to the sale. So that's what?
+2:02:09 | James
+That's.
+2:02:10 | Brian
+what Jim was saying? Those are the, those are the distributors. So for us, it's mostly distributors who are like our sales team and yeah, yeah, they're providing those insights all the time to us.
+2:02:21 | Shaik
+In which format, and then like the excel or any application they are entering this data.
+2:02:26 | Brian
+Voice conversations with, our reps, right? Jim, anything else?
+2:02:34 | James
+No, I would say that's the predominant. I mean, right now, the majority of our sales globally are indirect. But as we launch new products, we're going to have more direct. We have some direct today in Canada and the us. Yeah, I would say, yeah, it's conversations. It's informal communications, right? It's the people who deal with customers every day. And then that moves up to people who deal with customers at a higher level in the sales side. And that's why the field marketing side talk to those people daily.
+2:03:08 | Nitesh
+And we.
+2:03:08 | James
+kind of extract what's going on in the market. As you get further from the customer, you have less real time experience of what's going on. So, yeah, that's why we try. So.
+2:03:20 | Brian
+But Jim, we would want, I mean, if we like, we should be sending out a survey to these customers, you know, I mean, that's something. So we don't today. We're not doing that today. It's all voice conversations, correct? But we should be doing it in other ways as well to pulse that market.
+2:03:36 | Nitesh
+I would agree. We want.
+2:03:39 | James
+to pulse our end user salespeople, whether they're internal or external as to what's going on in the market trend, competitive. OK, thank you. OK. So customer?
+2:03:54 | Nitesh
+Inside priority, if you talk about obviously the segmentation, what you just talked about, that would be the main driver. You have lot of ideas when it comes to segments. So segment level demand signal is the thing which will be looking depending on the data, what system can support you will be having those segments carved out. And only then that will be the priority for planning that is understood. Now, the third question comes when we talk about this research inside and planning is our approach in capturing and consuming this insight. Now, you just said that our, you know, sales people are, you know, like giving the feedback, voice notes and all. But in order for system to utilize this particular insight information, it has to be, you know, properly captured, it could be a list of potential buyers that come in an excel stored in certain place which can be targeted for, you know, integrated within the integrating within the system or it could be giving it to the marketer who can, you know, manually upload this information like say, for example list or leads which are to be targeted, lead information can be straight away uploaded to the system. Segments can be created out of it and straight away initiative of marketing campaigns can be done. So.
+2:05:09 | James
+This particular.
+2:05:11 | Nitesh
+Thing or approach in your world. What do you think? What is the best approach you follow currently with respect to all such data which you received starting with the, to capture, the source data that is the data view by, I am pretty sure you receive excel sheets for the prospective buyers. That is something which has been worked upon by the sales team. Understood, what else do you receive? And how do you store that? If at all, anything can be leveraged from the customer inside data perspective, we can surely look at it, but open to forum for asking this question, how you receive and store this data list is something which we understood.
+2:05:54 | James
+I think we'll embarrass ourselves here as well.
+2:05:58 | Nitesh
+OK. I think.
+2:06:03 | James
+There are islands of information within our company.
+2:06:06 | Nitesh
+OK.
+2:06:08 | James
+We have, we have, you know, factory teams like Brian who do research on new products and they gather information. They keep it in a file. They use it for our, to design and build the latest and greatest products and they reach out to marketing and to sales on occasion to make sure they're on the right track, right? To make sure things track competitively and that's an island of information, right? Then you have the field marketing teams around the world, Asia, Europe, America, and we, from interacting with customers at trade shows, from talking to salespeople, from talking to distributors day in and day out constantly, we have an island of information. Oh, you know, this specific product has been seeing a lot of success and they've been saying this, right? And sure, we try to share that information, but we're not great at it. Like we all have our day jobs and what we get paid to do and focus on. And it's difficult to compare… to take and to write something down in order to share. So, I feel like today, we have islands of information in the different parts of the world and in the different parts of businesses that if the system offers us an opportunity to organize that in a place in a way that it can be extracted by all, I think that would be wonderful.
+2:07:32 | Nitesh
+Okay. While we are on the topic, got the entire information and like do not embarrass yourself. But this is usually, you know, the trend which is observed, with a limited set of, you know, stakeholders working for a huge organization, when there are lot of responsibilities, this is bound to happen for sure. So, we are open to, you know, help you there, all what we would do is or what we would suggest is centralized repository, something which will be, you know, established the information which can be, think of it as, you know, how do we make this system better? The information, what you are getting in whatever form, if it can be utilized by the system that is to be placed in a place placed in a, the central repository once established. Okay. And using the methodology or using the ability of the system, you should to be able to have this information imported into the system and have the segments or targeted audience created out of this information. That is the only goal. And surely we will help you have this achieved for now. Only thing, what you have to keep in mind is what information we're getting and who's curating and validating this information. And if it is to be consumed by the system, how that can be made possible? Yeah. So.
+2:08:49 | James
+My, so I have a comment and Brian will, well, I think agree with me, hey Jim.
+2:09:01 | Brian
+You're kind of breaking up for me. Is it me? Yeah.
+2:09:03 | Nitesh
+Me as well? No, me as well.
+2:09:05 | Brian
+So, Jim, yeah, you're maybe get closer to Mike or something?
+2:09:09 | James
+It's probably my airpods they, every so often, can you hear me better now? Yeah, better.
+2:09:15 | Nitesh
+Yes, okay.
+2:09:16 | James
+Good. I said, I think Brian will agree with this comment because we are not marketing and selling toothbrushes, we are marketing and selling one of the highly highest regulated medical devices there is right, very, highly regulated. We are very restricted as to what we can put in writing about ourselves and about our competitors anywhere. And so, when I think about gathering up, let's say competitive information, not so much market trends but competitive information. And when I think about gathering that and putting it in an essential repository if, but if I had a pie in the sky, what I would say is I'd like kind of an informal repository here's. What we're hearing, right? You know, the mindray, you know, D 30 is, you know, way too heavy and, you know, customers are having a tough time lifting it up and, right? But so, so we need to know that number one and we need to store it someplace and proliferate it and have it available to the organization everywhere. Anyone who wants to look at it inside the company, but we can't take comments like they're the heaviest and they're the hardest to use and they're the, you know, the longest to power on unless we have like we can't share that information unless it's been proven by either studies or technical documentation from a competitor's website. So, what I have on my computer that I share with salespeople that we hire is Jim's thoughts, right? I call it Jim's, thoughts on a certain product. This is not an official document that can be shared, right? But it's just me saying, God, this one is the hardest to use. Ours is the easiest to use. Like we can't make claims like that. So I wish what I would hope and what I would love to see here is kind of an informal repository for that type of information that we can put into insights. And then a formal repository for that information that we would probably put on zinfi, right? For our partners and sales people, for approved information that is shareable with customers. Does that make sense?
+2:11:46 | Nitesh
+Right. So, yep.
+2:11:47 | Brian
+I would just say Jim is absolutely right that you have to have this approved place for that information that we would share with customers. That said, I still want to have Jim's thoughts even if they're not approved in our marketing, like… in our database of information because that's going to help us design the next product to be, to meet more customers needs, right? So if you're saying this one's really heavy and four pounds is too heavy, I want to know that, right? Because, then that can be something served up to me later when we're thinking about making our own version of that product later. So, both, right? Both what you said plus, I still want that information, right? I mean, we need to have, that is an insight.
+2:12:45 | James
+Correct. But it's not an insight that has been validated by clinical research, right?
+2:12:49 | Brian
+That's correct?
+2:12:50 | James
+When we say there's no aed, you know, plus is horribly difficult to use, right? Yeah, that's just us like we've played with it. Our customers have played with it. We've had customers tell us it's horribly difficult to use, but we can't put that out as a claim.
+2:13:05 | Brian
+Right. Valid. It's valid feedback that we want, but it's also not something that we can publish as a claim. Yep, correct?
+2:13:13 | James
+Correct. So, so if zinfi is going to be the official.
+2:13:17 | Nitesh
+Approved shareable?
+2:13:18 | James
+Content, for our partners, then great. Then that's all the approved stuff, right? Maybe we utilized. Again, this is another business decision that has to be made about how we utilize dynamics, right? Maybe this is just a, an internal do not share… repository that we can utilize for marketing purposes, upstream and downstream.
+2:13:44 | Nitesh
+You? OK, great. Did?
+2:13:49 | James
+That make sense to you guys? I want to make sure you get where we're coming from there.
+2:13:54 | Nitesh
+Absolutely. So what you just spoke is the kind of actual marketing research and insights material is what you actually store in this system at a central repository. And that's how you drive your next action at least when it comes to marketing initiatives. OK? And obviously, when the approved content is to be published, you rightly pointed out only the approved ones will be published to zinfi. That is something to be, you know, thought about. But bringing the conversation back to the topic which we are at marketing, you know, customer inside data. Now, if that is something which you already have established and based on that, you will be, you know, trying we're going to target a few set of people, customer product. And accordingly, the segments do keep that in mind. We surely we will be able to, you know, make something out of it for you to consume the applications capability when it comes to marketing. OK? So the approach consuming insights sharepoint is a central repository is what we are thinking as of now without having any digital asset management platform involved into the ecosystem just to get started with. But yes, we will live with that. And obviously, you'll have to also think on if this information is readily consumable by the system like excel sheets, and all those are to be, you know, brought to our notice. In any case, I don't think so there is any connector based ingestion of data which is happening at least in the Philips or hard streams ecosystem. So that particular part still, I mean you are the one who should be, you know, able to comment on it. I don't think so there is any system as of now which has a connector which can be connected directly to customer insights and the data gets on ingested. So that particular part, if at all it is there, do point us out based on this. Your, your planning should be done. We'll move on to the next topic. If you know, this is all done. We come to the next one, it is tightly related to the earlier one. What we talked about. The earlier topic was all about.
+2:16:06 | James
+The content which you are,
+2:16:08 | Nitesh
+going to utilize the marketing research content which you will be utilizing for your initiative of marketing. Now, this particular part, what you see on screen global market content activation is all about the content which you will be using for marketing initiative. I'll be very open and transparent when we talk about marketing content. All that comes to my mind for you, it will be, you know, lot of things, when you talk about your business. But when it comes to the customer inside module, that is the marketing module in dynamics, you have this content which is to be sent to X, number of people or a particular segment. This content could be images. It could be video files, it could be an emailer consisting the product information. It could be your product brochure. OK, how do you have this content managed? That also is an important aspect. And if marketing team is involved. Obviously, there would be some checks and balances. So we'll delve into this particular area and let us hear you out what exactly you have, in hard stems ecosystem when this particular topic has been discussed. So I'll just give you a high level overview of what exactly we envisaged. Okay. So I'm pretty sure for few, this particular visual is not readable. But I'll just make it easy for you. What thinking is to have a centralized storage space for having all the marketing assets, campaign contents, guidelines, approved, marketing strategies, marketing plans, account based, marketing plans, and how to win documentation in place. Once these particular documents, it, there could be more categories as of now. I've just, you know, listed down few. So these particular documents can be stored at a central location. It could be sharepoint. As of now, we have envisaged that once you have this particular content posted over there or you added over there, there would be approval mechanisms in place unless and until the approver doesn't approve that particular content, you do not touch that particular content. Once that content is approved, it straight away goes to your external content management system. And during this particular process, if certain guidelines are, you know, acknowledge if certain marketing asset like images, videos, text, some product information, PDF documents, if those are approved only, then you allow the marketing team to utilize them for all your marketing initiatives. That means if, in case a image, I'll give you an example why I'm saying, so… for marketing email to be sent, there are series of activities to be done. First you open up a marketing email. It is not like you open up a marketing email in outlook, you write in some content, copy some, you know, image from elsewhere or from your marketing teams repository, paste it in the body of the email and send it. That's not how, you know, usually marketing assets work you to have the approved asset in place, you will be required to create that marketing template with proper format, heading, text images, links, buttons, navigation links, everything built, have this particular thing approved and only then be able to, you know, use in your marketing journey. That is the thought process. Okay? So… what we're thinking is having a global repository of, to a controlled repository. I mean to say to have all this content placed, have the approval mechanism in place, have them approved by respective team members, and only then be able to use in the marketing ecosystem or the marketing the world. Okay? Before I go to the system and showcase you this particular aspect, what I was just talking about? Any questions on this particular topic so far or any misalignment with respect to what you understand with global marketing, content activation versus what I just said, I.
+2:20:22 | Brian
+Guess I'm a little confused because, we… so we need to get our regulatory team to weigh in on this topic about having some sort of a global repository. Today. We have a global repository, it's called mediavalet. Mediavalet. Okay. Right. So, we have product images, we have brochures, tablets, we have tech specs, anything that we've published can go on to mediavalet. And that is a material that quality legal regulatory and clinical and marketing.
+2:21:09 | Nitesh
+Have all?
+2:21:10 | Brian
+Signed off on and it's been stored in our system edmr, meaning those electronic signatures have been recorded. So if there were any auditor to come by and say, well, who approved this, we would have that record. So therefore anything on mediavalet that is the global, the current global system that we use, you know, that our, even our sales reps and sorry, our distributors have access to it, so they can just grab those assets, what we do not have. And I don't know if we could have this. This is where we need to talk to regulatory would be, I'll call them like a snippet of a claim, like, if we say that we're 10 times better than that, you know, HS one is 10 times better than aed three in some, in this area. And therefore we're going to allow… distributors to just make that claim in their materials. Like that. Doesn't that doesn't exist. We, the way that we do it today is the whole thing has to be approved. The whole document. I like the idea that we would be able to take to break it down into smaller chunks and say this is already approved. I don't have to go back and get approval from these five departments. But so far that has not been the way our regulatory team sees it because there's context is important, right? And so they may say, well, if you put this claim next to this claim and the way you've got, the way you've laid it out on the page implies something that it shouldn't, and I don't like that. So… I guess, I like this discussion. I want to make sure the right people are here.
+2:23:11 | Nitesh
+Okay. Do.
+2:23:13 | James
+You know, because.
+2:23:13 | Brian
+Regulatory is going to have to agree because that's because our current process is, you finish the whole document and that's what gets and it might have 15 claims in it, but they've all been reviewed and that whole document is the thing that gets approved. Okay?
+2:23:32 | Nitesh
+Okay. One question, the media valley system, which you said which is a regulated system, everything, every content, every snippet, every image gets there approved. And only then it has been consumed, do we know for sure in day two, this system is going to be continued?
+2:23:52 | James
+Yeah. And just.
+2:23:53 | Brian
+To be clear, it's not a regulated system. The regulation, the regulated system is edmr, right? Okay. Right. We that, but then we don't we have our own process where, we don't post it to media valet until it's been through emr, right? So, that's our procedure. So the media valet has none of these safeguards or protocols at all in it. It's just a, it's just this beautiful fast way sharing yep content to be shared exactly. And, yes, we have a, we, I mean, that was one of the tools that we chose when we became heartstream. It was not a tool that existed in Phillips. It was one that, we chose. Yeah. Okay.
+2:24:37 | Nitesh
+So on this particular topic, when we talk about marketing content, if you could just, you know, run us through one sample flow like a scenario and what these systems will be used for. That would really give us good context. Any, any sample, like, any example, if we could pick up where these systems are involved for a particular cause. And if you could narrate us the entire scenario, it would really be helpful for us.
+2:25:07 | James
+Maybe we can Brian run through like a competitive comparison. So when we make a competitive comparison device, like we want to compare our, we make a table and its size and weight and, you know, cost and those types of things. And we compare all the features and functions with little checkbox in the different columns. We gather up all the information from a team of people inside the company. We create a draft of that document. We have to cite all of the user… guides or maintenance guides for the competitive products and for our products that support the claims that we make in the table, right? And we take that whole package and we send it through to legal and regulatory, it's marketing creating it. So… marketing creates the document, sends it through legal and regulatory for approval. It's formally signed off on the DMR as an approved document. And it goes through multiple edits, right? Because marketing, we want to say all these crazy things. And by the time it gets, yeah, through the approval process, it's kind of I'll say the sharp edges are taken off, right? So, okay. So we can only state things that are documented in written competitive published, documents. And so it gets approved in me, it gets approved in edmr today. And then we take a formal copy of it and we upload it into media valet and share it with the world. And we will do a marketing email that says we're very proud to bring you this new pet competitive conversion, please to download. Yeah, we may do translations for the languages around the world and upload the different languages into media valley. And that is how we share it with direct teams. It's how we share it with indirect teams, whether we're talking manufacturers reps, or we are talking distributors. Media valet is the central location for, everything, all of our latest brochures and competitive comparisons, etc. The only.
+2:27:22 | Brian
+thing you missed Jim is that it's quality, legal, regulatory, clinical. You, you have two of those. So don't forget about quality and clinical. Yeah.
+2:27:32 | James
+So, but anyway into regulatory, yeah, sometimes.
+2:27:36 | Brian
+It's the same person. But yeah, anyway, yep, that's a good overview. Thanks, Jim. Okay.
+2:27:41 | Nitesh
+So, if we keep that conversation to it, mediavalet will continue, that is certain and all the marketing content activation approvals that will continue to be like as you discussed. And then, okay, so we take that as the confirmation.
+2:28:02 | James
+So, let me pause for a quick second. We made a decision to go to mediavalet before we made a decision to go to dynamics dynamic. If dynamics has all of the functionality that we need in order to store and be a repository and give access to direct and incorrect indirect people. And it has all, you know, it may not be point five out of 10, but it might be a nine out of 10, right? In the, in the interest of kind of simplifying our business for our customers and our channel partners and, for ourselves. Like, if dynamics offers everything media valley offers… we hate to even say this, but like I guess you've heard what we do with media valley. It's just a sharing site. Yes. And, and if dynamics can be an upload storage and sharing site for direct and indirect people… then… because what you've described here… that's kind of the core of how media valley works. But when we spoken in calls earlier this week and I talked about getting a, you know, non employee access to dynamics, the answer was no, we don't do non employee, you know, non company access to dynamics. So, so we may need to, we either make a decision to stay with media valley or find a way to get contractors access to dynamics with limited access to limited sections within dynamics, as a contractor, right? So, yeah, I asked that question just from a high level because Eric o would kill me if I didn't ask that question. We're trying to reduce the number of systems that we have. And if dynamics can do for us what media reasonable? Unimaginably well, what media valley does for us, then it would be irresponsible for us not, to use dynamics. Yeah, we need to.
+2:30:14 | Kaitie
+Make sure that it's really a one to one because it's not just a storage and sharing. Media valley is also intended to allow… templatization and customization for our distributor partners on content that we create too. So there's a little bit more to it, but agreed if we can find the same capabilities here, absolutely. But I just that's probably a longer conversation, yeah.
+2:30:39 | James
+It is. And we don't know the details of what dynamics offers, right? But when you started going down this path that's where my head went is like, this just sounds pretty similar you know, to what we're doing elsewhere. Yeah. So.
+2:30:53 | Nitesh
+If you ask me as of now, the first layer, what you see this basically is the sharepoint section or the swim Lane, which we, you know, are calling out over here. So just a repository where this content can be put in and approval mechanisms can be triggered. And then obviously, once approved will be utilized for further, but got your, you know, point. Do you have any more content or any more information on this media valley application or the product and the intended uses of this day of the system? If so that has been, you know, given to us? Probably what we can do is what best can be done in dynamics, one to one mapping can be done and we can immediately tell you in no time saying, guys your decision of going ahead with media valley still remains intact, continue to use that. And then probably dynamics will be able to cater to some different area. So, what we will do is we will have that particular thing. Do we have, any documentation around this particular application? Media valley? Which is it?
+2:32:02 | Brian
+I mean, you can find it online. They've got. OK.
+2:32:04 | Nitesh
+I, we will in hard stems context, I mean to ask.
+2:32:08 | James
+With the workflow?
+2:32:10 | Nitesh
+Or anything of that sort, how you intend to use it and all, if no, we can do a research on it and surely we will come back to you.
+2:32:21 | Pankaj
+Yeah… just let me take a minute to explain the technical implication of this. Let's say.
+2:32:29 | Nitesh
+OK.
+2:32:30 | Pankaj
+Global content activation?
+2:32:32 | Nitesh
+Guys.
+2:32:34 | James
+So, consider you.
+2:32:36 | Pankaj
+Have prepared a banner advertising banner or marketing banner. So you would like to insert that in, within your let's say marketing email. So, would you like to insert a static image or you would like to refer it or insert a URL of that image from media valley, so that is the question. Overall, we are trying to get a,
+2:32:57 | Nitesh
+static.
+2:33:00 | Brian
+Katie, am I right?
+2:33:04 | Kaitie
+In terms of the content being static, so.
+2:33:06 | Brian
+If we, so if we create, yeah. So if.
+2:33:10 | James
+a, I don't.
+2:33:12 | Brian
+know, I'm not sure how this works, but.
+2:33:14 | James
+If I get.
+2:33:15 | Brian
+An email from… if a distributor wants to use one of our assets in media valley in an email that they're sending out like,
+2:33:27 | James
+a photo, they're not going.
+2:33:29 | Brian
+To put a link to media valet into that email, they're going to download the photo and then put it into that email, right? Correct?
+2:33:37 | Kaitie
+Correct.
+2:33:39 | James
+It.
+2:33:39 | Pankaj
+is similar for the journeys we execute from dynamics as well? I mean, I guess it will be same, then I mean, we will have a static image stored in dynamic? Yeah.
+2:33:51 | James
+Okay.
+2:33:53 | Nitesh
+Got it. Yeah, one.
+2:33:54 | James
+Question. Okay. One question. If you had a URL, would it render the image in that email… it?
+2:34:03 | Pankaj
+So, dynamics, does… it?
+2:34:06 | Nitesh
+Does, yes… it?
+2:34:09 | Pankaj
+Has some security implications as well at the destination, like the destination email browser might block it or all those things are there? Yeah. So.
+2:34:20 | Rajeev
+So, I think before answering the question, we just need to know the pros and cons between static and URL, and then, which is the most user friendly for a?
+2:34:30 | Brian
+Partner. Yeah, we want to adopt the latest best practices and maybe we don't know maybe URL is a better way to do it. We just, we need that we don't know.
+2:34:45 | Pankaj
+Not. OK.
+2:34:48 | Nitesh
+Alright. So… surely we will, you know, have a look at the media valley and the pros and cons of… the proposed system, which is, you know, dynamics along with sharepoint. But this particular topic remains open for discussion when we talk about global marketing, content activation and sharing it ahead. OK, it is, it was all about how you, yep. Good.
+2:35:15 | Brian
+And if you want to put an action down to like give it like have Lynn baker, who knows most about it to give you a demo of it, of how we use it, you know, sometimes when you go to these media like the media value website, there's a whole lot of fluff, and you don't actually see what it does. So exactly you could take, you could take an action and we would be happy to give you a demo of our, you know, share our screen.
+2:35:40 | Nitesh
+Do you said like we need to reach out or this action will be on Lynn baker?
+2:35:47 | Brian
+Yeah, Lynn baker?
+2:35:50 | Nitesh
+Okay. Lynn baker? Okay. All right.
+2:35:53 | Shaik
+Brian, I just posted the, in the chat group is the right system you got talking about the media ballot?
+2:36:05 | Ashwini
+We have a confirmation from Kt answer. Yeah, that is the correct. OK.
+2:36:10 | Shaik
+Thank you very much. OK. So.
+2:36:14 | Nitesh
+Essentially, this was the marketing content activation platform or the capability which we were talking about. Surely we will have a look at the media value system and will try to embed whatever is possible in dynamics, OK, moving on. But it really boils down to the campaign management. So although the name says brand reputation campaign management, it really boils down to what exactly you are going to use. So what is going to be your approved content source which will be used for campaigns, approved templates, legal compliance, cleared messaging, and regional and local marketing adaption. So if you talk about dynamics today, if you are supposed to use this approved content as we said repository, which is the approved repository for using all this content that will be referred for building your marketing campaigns, emails and all. So without you not talking about text, let me try and show you some of the screens and that will make more sense to you when I am talking about it. So.
+2:37:17 | Pankaj
+If in.
+2:37:18 | Nitesh
+case, I have to open the system.
+2:37:24 | Nitesh
+I'm opening the customer insight system. Now, this customer insight system is not the data one which you saw earlier, profiling, and segmentation, this is actually the customer insight journey part. So what you see on screen is the system which is getting loaded. What I'll do is I'll straight away, take you to emails, OK? And everything. We will surely come back. But since we are on the topic of the content utilization or the approved content utilization, let me try and open one demo, you know, draft email.
+2:38:10 | Nitesh
+This system specifically deals with having all this content prepared beforehand, your emails, your messages, your web pages, landing pages, I mean to say, and you are in a position to have them readily available with all the content, whatever you want. And then that's how they are being used in marketing. Journeys. Now, say, for example, I have opened up this email, I need to go ahead and add one image in the header. So this, there is some image. Let me just say delete this one. I'll have one additional element added. Let's say image I'm adding choose an image. Now, this repository, what you're seeing is something which we are going to upload to dynamics. And this is going to be from the authorized content repository. OK. So let's say, for example, I would like to use this particular banner, OK? And I am saying this banner has been added here. This is how it is going to be used. Now, how this particular image got in here is through the library which we are managing within dynamics, customer insight module. Here is the library. I am discarding the change for now, you could see all the approved content although it doesn't you know, go and checks the repository whether this particular content is approved or no, but that can be managed in a different manner. People will be having access to the approved content only for downloading the, you know, media files and all well, right?
+2:39:41 | Brian
+Well, we wouldn't I mean, we have processes and procedures too and we can… processes and procedures that only approved content can be loaded into the system. So, I don't think we need to ask the system to create a whole approval process. If we, you know, there's going to be something that replaces edmr. Well, so whatever that system is that where we approve things that's fine. You know, we can restrain ourselves like we have, we have procedures to do that.
+2:40:13 | Nitesh
+OK, understood. So this is the place where the library will be updated. And then that's how you'll be able to use for creating your marketing content. For example, this email which we talked about, the library which gets loaded, the approved content which is loaded and which is available, you'll be able to use it. OK? So I'll go back to the topic which we were on. So this asset library which we are going to use is something which we will be, you know, discussing after the decision taken on media valley because that is going to be your authorized content. And if I'm not wrong, it is not only about the brochure or the product information, even the banners images which is going to be used in your marketing, you know, emails. So we will be placed there. No, am.
+2:41:03 | Brian
+I right. So, no. So I, these are two different things. And, I mean, I, what I saw you just give a demo of is awesome. I would love to be able to do that. No, we do not have banners in media valet. We would have an image of the car. Like you saw, there was a picture of the car. Yes sure. The picture of the car would be a media valet, but our distributors, if they want to create a banner, they would have to take that image of the car and turn it into a banner themselves for.
+2:41:32 | Nitesh
+their campaigns. Okay. So that's.
+2:41:35 | Brian
+what mediavalet is? Now, what you just showed is awesome because we are going to start getting contact information for like let's say home users, where we would have their email address and they register. And now, I want to say, hey, did you know this about your aed? Or hey, maybe it's time to buy a pad or hey, maybe you should buy one for your neighbor for Christmas. So I would love to be able to create an email that I could send out direct to this new list of, you know, of people who have approved that they say, yes, I will accept marketing content. This is incredible. I would love this, but that's not what mediavalet does. Now, what you're showing me? Yeah. OK.
+2:42:22 | Nitesh
+OK. So while we were on this particular topic, fine understood. But when we are talking about campaign management in dynamics, it all really boils down to the content which you or marketing team will be, you know, sending. And the first step to have this particular campaign build is building in marketing content, like your emails, your marketing form, your SMSS, right? So we're talking about this. So… this will be, you know, the topic which we wanted to, you know, discuss about. So the asset library and everything that will still be sharepoint is then what I get, right? Sharepoint or your authorized content which will be loaded into dynamics for building an email templates and all which are to be targeted for sending it to the segments which you are going to target. Is that correct?
+2:43:19 | James
+Absolutely. Use it like that. If we load it up with the proper content? Yes. Okay.
+2:43:26 | Nitesh
+And the email templates which you just saw or the email template which I was just showcasing, it is not only about, you know, having anything to do with just one image, you can have a lot of other stuff added. You could have, a button can be added. This particular button could be one URL, you simply set it to URL. Let me just as of now see, set it to Google. Com.
+2:43:58 | Nitesh
+This way I save it. Next time this email reaches you, click in this particular email. The redirection will be done at the same time, the benefit of this particular initiatives or these emails. When you are reviewing your marketing campaign, you will be in a position to have a look at what exactly this means in your journey. For example, let me just try and show you one email which is the, you know, already been sent?
+2:44:28 | Rajeev
+Can I ask one question, please?
+2:44:30 | Nitesh
+Please, please. So, would.
+2:44:33 | Rajeev
+this would.
+2:44:36 | Nitesh
+Three six.
+2:44:37 | Rajeev
+Five be how we do all of our outreach campaigns. Therefore we wouldn't need additional CRM tools.
+2:44:46 | Nitesh
+Exactly. That's the idea. Can this?
+2:44:50 | Rajeev
+Automate. So, as an example, okay. So, I don't know customer purchased two years.
+2:44:57 | Nitesh
+Back and we.
+2:44:58 | Rajeev
+automatically send them a reminder and then follow up and then we can program that. OK, cool. That is the idea.
+2:45:05 | Nitesh
+See, so what we were trying to get at is the segment part. You create this segment only once condition would be all the customers who had purchased aed device, a particular model from the time period two years back. The segment is dynamic in nature gets updated. And the power you have is when you are actually defining the journey, which is this one that has the possibility of using or drafting this entire journey as you like. So, you don't have to do it. You know, every time you simply say start this journey with segment as, and when a particular contact gets added, see a repeating journey where all audience member repeats the journey or one time journey where newly added audience member can start anytime. That means anyone falling in that particular segment, this journey will immediately execute in an automated manner. That is the power, right? And, yeah. So that is what we are, and we can define, the triggers. Yes, you can absolutely. So we are digressing on the topic, but let me just show you something which is really interesting. So the moment you say new journey, the system gives you trigger base or segment base. If it is just a segment base which you have already automated, that can be used. If it is trigger base, you, say the moment any new purchase happen or the shipment is confirmed, you need to target that particular distributor with some content or some reach out. You.
+2:46:41 | James
+Can have that provided, right?
+2:46:43 | Nitesh
+You have that information added to your, you know, customer inside data, the moment of the sales order status, changes that gets added to customer inside data. And the segment is annoying that, yes, the sale has happened, this particular distributor is eligible for this particular segment, the trigger immediately activates. And then the email has been sent. So those kind of journeys are very much possible in this, you know, platform, you got it clear. Thank you. I just.
+2:47:12 | Shaik
+Want to give you some more information as well. For the, yes, business perspective, James, if you can go to the back screen Nitesh, yes. Yes, segments are nothing but the marketing list the.
+2:47:29 | Nitesh
+Category of.
+2:47:30 | Shaik
+People you design to have to run this campaign, it's called as a marketing list. You add 10 members to this marketing list and prepare this list that is nothing but a segment. The journey is nothing but the actual campaign, what you are running to this particular marketing list, people, you create a one campaign and you just design this campaign needs to be run only for particular people of contacts or accounts. That is, we are going to create in the segment. We call it as a marketing list. So just naming convention is different. CRM, especially the customer insights is nothing but a marketing module for your just understanding… this.
+2:48:07 | Nitesh
+May be a bit, you know, overwhelming or confusing at times but do not worry. We are, we are also, you know, trying to make an effort to take you to the system slowly and steadily so that the context is preserved. As of now, we are not delving into much of the details, but we are just trying to give you bits and pieces of the new system which is going to be used for marketing. Okay? So valid questions, whatever you see on screen, if, in case you have anything to be asked, do not shy away, please ask. Okay. So brand reputation and campaign management, what we thought was all these assets and images and materials which are approved, those will be brought into the system. Okay? You will be using the appropriate library for building these materials. Okay? Then, we wanted to understand if that particular thing has been brought as of now, you said, yes, approval mechanism is in place, media valley has been used, but that is for different process, this particular brand compliance checks and activation. Is there a team who will be taking care of this particular activities? Say, for example, you have this content, obviously approved content will be only used, but prior to the approval, this content surely goes through pair of eyes who approves them for the utilization of marketing activities. Isn't it? Yes. And we.
+2:49:36 | James
+we have very strict branding because we are licensing the Philips brand for some of our products for the next 15 years. So there's lots of brand compliance that we have to keep our eyes on. And we do have someone in marketing, Lynn who keeps her eye out for brand compliance and works with the Philips team and the hirestream team to ensure that everything we create and improve is in compliance. Yeah.
+2:49:59 | Brian
+And the Phillips team has their own system that Lynn has to submit the information through, right? But then she gets it back and makes it correct. And then she approves it basically. So. Yep.
+2:50:17 | James
+Okay.
+2:50:18 | Nitesh
+The third question, target audience and segmentation, we spoke about it on multiple occasions. So not like we would not like to delve into that particular question. We'll simply move on to the next one which is your success measures. So when you think of executing this marketing, you know, initiatives or marketing campaigns, one thing where what we got to know was the turnaround time after a sale, that was the customer inside data part. But when you are actually executing this kind of content or this kind of campaigns, what do you think is a success measure which you would like to, you know, measure out of this activity? Is it just the, you know, engagement reach or sale being achieved through it business being, you know, increased or for this particular kind of campaign? What exactly would be the success measure? As for you and what KPIs, does the marketing team track as of now, when these initiatives are executed? Well?
+2:51:17 | James
+First, it's very difficult for us to track today given the systems that we have. Okay, right? Like, we just, we can't what I think what we would, you know, some of the measures that we would, everything is out to go after more business, right? So we want to be able to tie business that is a result of a specific campaign. Okay. Right? So if we have a I'll use the same example. If we have a dental market campaign, right? And we, and we do an email blast to, you know, all of the dentists in the pacific northwest, we want to see what type of a connect rate we have on… landing page, let's say for that campaign. And then if we could, we'd love to follow that all the way through to a sale. It'll be very difficult because most of our sales in those markets go through channel partners, right? So we sell to the distributor. We don't sell to the end user. And we can't tell if a pallet of 100 aeds, if 10 of them were for the dental market, and we wouldn't know that for another nine months, six months after the sale, okay?
+2:52:20 | Nitesh
+Okay. So, on the same lines, let's take an example. When you are executing these email campaigns, with this dental or dentist basically, do you send, the specific form for them to, you know, visit, read the content and take action upon and which is nothing but you are one of the web pages.
+2:52:43 | James
+So first, we haven't done a campaign since we broke from Phillips, right? We're about to do one. Yeah, we're about to start one, in the us.
+2:52:50 | Nitesh
+Or sorry in Europe.
+2:52:51 | James
+Yep. Yeah. So, we haven't since we broke, but in the past, we would send phone numbers and email addresses for them to follow up with. In the, in the way past, we used to send a landing page as well that they could click on and, we could measure the number of hits clicks against that landing page, which was tied specifically to that campaign. Perfect? So.
+2:53:19 | Nitesh
+The current system also, you know, facility. We are not delving into detail. I'm very tempted to show you that particular screen but we'll keep it to the later. But yes, the current platform which you just saw the journey segregation and all are, the particular platform has the capability of creating landing pages. You don't have to have a professional, you know, content management system bought in. It is just drag and drop build your page, embed that in the journey, send out that as an email as a link. And then your, you will be in a position to also look who all people have clicked the link, how many of them in the email have clicked that particular button? How many of them have landed on that particular page? And on that page? The possibilities are endless. You can put in media, you can put in URL to your order management system, you can put in, you know, a link or a button to your feedback management system, so on and so forth. So that is a capability and this entire execution as and when the action is happening, you will be as a marketer in a position to have a look at what exactly is happening on ground. How many people have opened my email? How many of them have visited that particular page? How many of them have visited the page but never went on to the order management system? If a link is embedded on the landing page. So these all capabilities are there in place for sure. We will try and, you know, showcase that to you and we'll try to make good use of it while you are, you know, intending to have your first campaign executed. Yeah. So for us brand, campaign success measurement and KPIs, you very well summed it up the reach, the capabilities of the system, whatever it is offered is nearly, you know, meeting the requirement. I don't think so. We should be, you know, spending much time on deliberating on how to's and all the moment we are in a position of having a campaign executed, sure they will work together and have that particular thing sorted out. Okay with that said, I would like to, you know, move ahead on our last topic… asset governance and campaign readiness and marketing strategy and activation planning. So approved asset sources we will be using for campaign. So obviously the marketeers get campaign content from today. Was the question, basically, a lot of places you have your in house systems where the marketeers get their content. One such system could be dynamics where up approved users will be approving and uploading the content for utilization. Say, for example, Nitesh is the one who's working in the marketing space, and he is the one who should be creating marketing emails. Landing pages, what banner, what images will be used that will be taken from the library? Only that upload will be done by specific team only? Okay. So we are very clear. Do you have any other source with that said with this particular understanding that the system is capable of generating marketing pages, creating marketing emails? And all, do you see any other option where the marketer or the team will be looking out for content for building this repos, this marketing collaterals like emails or landing pages? Or it is just someone will be uploading in the library and that is only to be referred.
+2:56:39 | Brian
+Would be.
+2:56:44 | James
+I think it would just be a manageable number of people globally that would have access to create and upload approved sources, approved content, generate emails, landing pages and the marketing number. Yeah. The marketing person would be probably the one doing that. Yes, perfect. Perfect. And, you know, we're probably talking about less than four people globally guessing.
+2:57:11 | Nitesh
+Okay.
+2:57:14 | Brian
+Another question.
+2:57:17 | Nitesh
+Which we had with respect to governance and campaign readiness was before launching a particular campaign, let's say, for example, you're designing a email blast campaign, do you have any approval criteria in place? That particular campaign is to be reviewed approved? And only then it will be, you know, turned on for execution. Do you have anything of that sort as of now that's.
+2:57:41 | James
+a good question. Normally, that's usually approved right up through marketing because we do not make any claims in those statements, right? We do not attach any literature or web content that has not already been approved, right? So we're pulling from an I'll say an approved playbook of content. And as long as we don't do any crazy messaging, we review it through the marketing team and it goes out. Legal legal regulatory. I don't know Brian, we haven't done one in so long. I don't know if there would be a legal and regulatory Katie kind of requirement on an email blast campaign or if we're using approved content, we review it in marketing and send it. Yeah.
+2:58:30 | Kaitie
+I mean, if we're using already approved content, I don't think it would require additional review… unless we're making any new claims. But if we're just taking content that's been previously approved and placing it in a communication, I don't know Brian, what do you think? I mean? I wouldn't think so. And I think we should be pushing in the direction of, no, it would not be necessary.
+2:58:57 | James
+Yeah, need and agility purposes. Yes.
+2:58:59 | Kaitie
+So.
+2:58:59 | Brian
+We already got wiow, work construction o, to o to be modified that if we want to make a social media post for example, like we did for 911 where we don't know if you saw that post where we just said, hey, you know, in memory of the people who lost their lives that day, that had, that did not have to go through work construction. Two, two it's specifically carved out as this is something that has no, no claims, you know, no mention of our products and we were allowed to do that without going through the product. So, I think that, you know, an email marketing campaign where we're saying, hey buy more of this thing. Check out the, you know, this brochure on the top 10 reasons why you should upgrade. Well, that thing has already gone through these processes and been approved. So, but the email that is the container of it has nothing in it that is a claim. So, therefore, yeah, it can just go, yeah. Okay.
+3:00:07 | Nitesh
+Understood. And email is the only channel where you try executing these campaigns or there could be other channel as well like SMS, whatsapp or your notifications. I'd.
+3:00:21 | Brian
+love to get into SMS with our consumers. That's something we need to build for the future. We're not doing it today. And then of course, social media is another way that we get stuff out. Whatsapp sure would love to be able to build that in for the future. Okay. It's not happening today. Okay.
+3:00:47 | Nitesh
+The last question which we had was the consent management. Now in general, marketing consent management is a huge topic wherein you try to reach out to a few people you remember, like if, in case I receive a marketing email, it is mandatory for marketeer to send one link of preference center where the customer or the end recipient can click, open up the preference center and opt out of such kind of messages. Obviously commercial messages are separate, but consent management plays an important role. Do you have anything with respect to consent management in heartstream's ecosystem where you are supposed to manage these consents? And only the one who has approved the marketing reach out will be done. We do have, right? So.
+3:01:34 | Brian
+We, I'm not sure I have the answer to all of your questions, but we use a company called trustarc, TRUST a RC. And they are the ones who manage those buttons and security preferences when you get onto our websites. Okay? So for email, you know, again, we don't have emails of our customers today.
+3:01:58 | Ashwini
+And we're.
+3:01:59 | Brian
+starting to collect emails of our customers and starting to get permission from them to do marketing to them. But I have never done an email campaign. So we would need to have that capability to like, hey, opt out. Yes, of course, that needs to be part of it, okay?
+3:02:19 | Nitesh
+Okay. Understood one.
+3:02:22 | Pankaj
+Question.
+3:02:23 | James
+Philips had very strict rules around opting out. We couldn't opt anyone in unless they click a button saying, I want to be opted in for future email communications. And then they loosened up over the last year to two years.
+3:02:35 | Brian
+Yeah. Yep. We need to just do be, you know, state of the art, you know, that's where we need to be, okay, understood?
+3:02:45 | Pankaj
+Does it happen separately or differently in you?
+3:02:49 | Nitesh
+Know, do you?
+3:02:49 | Ashwini
+Have a project… the GDPR compliance wise, I think Pankaj that's the question, right? Is there any specific consent management being taken care in Europe region?
+3:03:04 | Nitesh
+Matthias has.
+3:03:04 | Brian
+Dropped off the phone because it's late for him. Yeah, he would be the right person to ask. Oh, Rajiv, you're still there? Hey, what?
+3:03:11 | Rajeev
+Do you think? I was just going to say we've got to be compliant with GDPR but there's nothing outside of like industry standard practice that we must follow, right?
+3:03:23 | Brian
+The usual laws. Yeah.
+3:03:25 | Rajeev
+But going back to the, I mean email campaigns are not something we've actually been doing. So we'll.
+3:03:33 | Nitesh
+be starting from the first base. Okay? Great. So that brings us to the end of this session. That's all we had for today. The right hand side part, what you see marketing strategy and activation planning, we've covered in the previous discussions, what segmentation requirements are, how campaign activation approach and ownership? Is that is understood, the volume is not that much. So, we do have, you know, handful of people, but yeah, that really sums up the entire session. We can have this session open up for question and answers if, in case you would like to question us with respect to the content we showed, and if, in case, anything with respect to what we spoke about and how it is to be done in the new world, if you have any questions, the forum is open or, and we can answer to that. We'll have we'll have this particular forum open for a while? And then probably we can conclude the session although I know the session is planned for another hour, but we can have it wrapped up as we have everything concluded and what we have needed, we have already captured.
+3:04:42 | Ashwini
+We have one hand raised, Pankaj? Yes.
+3:04:45 | Nitesh
+Yeah.
+3:04:46 | Brian
+So the.
+3:04:47 | Nitesh
+usual question. So, so,
+3:04:52 | Pankaj
+When it comes to heartstream, let's say day two working.
+3:04:55 | Nitesh
+So,
+3:04:55 | Pankaj
+will there be a single marketing team for across the globe and have a, yeah.
+3:05:07 | Brian
+Go ahead.
+3:05:08 | Nitesh
+James, that's a good question.
+3:05:09 | James
+We're a little fragmented right now.
+3:05:13 | Nitesh
+Huh.
+3:05:15 | Ashwini
+The four members? Yeah, sorry, go ahead Brent.
+3:05:20 | Nitesh
+You know, compared to.
+3:05:22 | Brian
+What Philips was, we're very consolidated. Okay. So, Philips had a marketing team in every country and they could do stuff that they wanted to do.
+3:05:34 | Nitesh
+We are.
+3:05:35 | Brian
+Too small for that. Now, we just don't have human beings to have a marketing team in every country. It's just not going to happen. It's more consolidated than it was before. Yet there's still, you know, we have people who are dedicated to North America only and who are making decisions, but, you know, it's a tighter team than it was before, yes.
+3:06:01 | James
+It's much tighter than it was, but we do not all report to one person. Yeah.
+3:06:05 | Brian
+Right. Yeah.
+3:06:07 | Pankaj
+And from the data visibility or accessibility point of view, within CRM, we are assuming that marketing team will have read only access to entire data.
+3:06:21 | Nitesh
+I mean, including.
+3:06:23 | Pankaj
+Install bases and customer sales order history, everything.
+3:06:28 | James
+Anything specific information that you should not see or our assumption is correct? I think everyone labeled marketing should see everything. Yeah, I think that's a good assumption. OK. Yeah, that is it from my side.
+3:06:48 | Nitesh
+Any more questions, Brian, or?
+3:06:53 | James
+James?
+3:06:55 | Nitesh
+Katie, Rajiv?
+3:07:00 | James
+I just hope I just hope you got what I said earlier about to get the maximum out of this marketing module, of dynamics, we have to work really hard on the data migration to make sure that what we move is what we need to put in work instructions for users to capture as much customer contact information, emails phone numbers, names, market segmentation as possible either in the CRM for sales or at time of order entry when orders are booked. Because if we miss that opportunity to get market segmentation upfront, it becomes infinitely more difficult… at it later and making sure that customer, I don't know what the terminology is in dynamics but the master data records the customer numbers to get them clean. So that when we start on day two, we are starting with clean data. I think those things play a big role as to how much, we in marketing will get out of this tool moving forward and we don't you know, garbage in garbage out. So I don't want to migrate data that causes us pain for the next 10 years. I'd rather invest the time now and do it, right? And it'll enable us in all the marketing efforts that we've talked about today just to get more out of this solution.
+3:08:46 | Nitesh
+Yes, yes, James. It will be a collaborative effort, James to be very open at this point of time. The data, what we are going to push into dynamics, it will be a collaborative effort between hard steam stakeholders and us to have its cleansed synced. And then only the correct one has been, you know, ported to the system. We'll try to leverage whatever information we have like to, you talked about, you know, various things when it comes to segmentation. We'll have a look at the data, whatever best is really needed for having segments created. We'll try to analyze it and we'll try to surely bring it into the system so that you can use it effectively. Okay? Very.
+3:09:28 | James
+Good. And, and designing the system for us, you know, segmentation at order entry, right? Yeah.
+3:09:40 | James
+I feel like every order that is entered in our system needs to be categorized into a market segment, right? Yeah. And if it's if and if it's if it's what I mentioned earlier, high level market segments. And great. If we know the lower level, like consumer or home or, you know, office building or schools, then great. Then that's great too. But I just want to make sure… that we thoughtfully design this to capture segmentation at the time of sale. Because if you don't do it, then sometimes you lose it forever. Yeah. So.
+3:10:16 | Nitesh
+We'll keep this in mind Jim.
+3:10:17 | James
+Can you repeat the top four high level? I put three of them in the chat. The one I left out was military but hospital ems, fire, military. And then… what I Nick, what some of us nickname is aed channels. That means all of the non professional healthcare markets, so K, to schools and airlines, and airports, and right people whose job it is, yes, not to save lives, right? Yeah. Right. Yeah. So, so, yes, all of those vertical markets that we would love to get detail on but will take more time to figure out how to do so. Given we are an indirect sales model in that space that's what I've lumped into the aed channels. So in, there is probably… we have about 20 top markets around the world, 20 top segments around the world that are probably in that bucket that we want to know what's going on with. So we can be proactive addressing those segments?
+3:11:27 | Nitesh
+Yes. So very well acknowledged, James. Only thing what we want to like to, you know, call out over here, is, it is all about the entire ecosystem. We are talking about marketing today. The sentiment is understood, acknowledge that you would like to have this particular things captured in order to support marketing initiatives. But that actually happens at a sales level. So it right straight away begins from opportunity. What you capture gets converted to a code, get converted to an order. So at that point of time, we'll have to keep in mind to capture these newer nuances, and that's how support marketing initiatives.
+3:12:08 | James
+But we'll.
+3:12:08 | Nitesh
+keep in mind. Thank you.
+3:12:13 | Shaik
+I have a question.
+3:12:15 | Nitesh
+Yes, I'm sorry, please go ahead. Yeah. So, James and.
+3:12:18 | Shaik
+Katie were in the previous conversation during the campaigns running, we had some conversation related to the approvals. So you guys had said we don't need any approvals when it is already approved content inside the emails, what we are going to trigger the customers. But my question is for example, if you're running a campaign especially for the North America region, what should not trigger the emails to the Europe region customers, then do you think we need a approval is not required or approval is mandatory?
+3:12:49 | Nitesh
+Because whoever?
+3:12:50 | Shaik
+Is designing the campaign may be a marketing person, but someone has to verify the content even if it is approved. So it is reaching to the right persons. And do you think any responsible marketing manager needs to be verified before the campaign is going to trigger?
+3:13:09 | James
+I mean, I think we should have a process within the company that says someone at a higher level in marketing needs to approve and we can name those people. But so, so, yes, yeah, I do. I don't think any marketing rep can just do willy nilly whatever they want as long as they use approved content. I think there has to be a process of approvals. Yeah.
+3:13:34 | Shaik
+Exactly. That's what I was referring to. So once the campaign is ready, so this campaign needs to be verified by some person, a regional head or a marketing manager of North America, someone has to verify, then they can put the approval. Then only the reps can directly trigger this output to every customer. I.
+3:13:53 | James
+Would think like a campaign could be something as simple as a sales promotion. A campaign could be something more advanced, like we make landing pages and we do email blasts and we go to trade shows with the same messaging. So, I think a campaign could be something very simple like just a promotion, buy 10, get one free or buy 20, get one free. Sorry, Brian… if I can't get one free, it would be bad. You know what I mean? You guys get the point. So there does need to be depending on the elements… of that campaign. So if the campaign is just, we got to do a promotion, we have too many frx trainers and we got to get rid of some. Then it's going to be buy five trainers, get one free, right? And so that would need to be approved by marketing, but it would also need to be approved by finance. Yeah, I think holistically.
+3:14:48 | Kaitie
+There's two different approval buckets that we're talking about. One is approvals that require regulatory and legal review, and that's the actual content creation. The other is campaign creation, campaign. Team creation, assumes that you're creating a campaign, whether it be an email, a flyer, a sales promotion, like Jim just said, anything else? It's taking previously approved content, but yes, that would still require oversight. But yeah, we'll.
+3:15:17 | James
+have to.
+3:15:18 | Shaik
+Pull together.
+3:15:19 | Kaitie
+What that workflow looks like. But yeah, there's two different buckets when we talk about things getting approved. One is where we're making content with claims in it, that is one workflow. And one is creating a campaign with that approved content.
+3:15:34 | James
+Yep. Go ahead. If one element of the campaign is a promotion, then you add finance to the approval, right? If there's no sales promotion involved where we give discounts, right? In one way or another, then finance doesn't need to be involved. It's just marketing. And we check a box that says, I understand that the content in this campaign is all made from approved documents, right? Content or something like, you know what I mean? There has to be some. Yeah, sorry, yeah.
+3:16:13 | Shaik
+Any other teams are required here. We just got to know that finance team is required for any claims perspective and a marketing approvers is required. Any other teams needs to be involved here, kind of depend upon the promotional campaign finance.
+3:16:28 | James
+On finance only, if there's discounts or promotions and regulatory only if there's new content that we're trying to get approved, which I would not think that we would ever try to bake in new content into a campaign like a campaign we want to pull from existing approved materials… for example.
+3:16:53 | Shaik
+If you're running a social media campaign, then do we need to involve any other person? Like as social marketing said, our general marketing team is fine enough.
+3:17:05 | James
+For the approvals… we want to bring that person or those people into the process. And I think that we have our internal procedures to make sure that the social media person is involved. If we're doing a campaign, right? Whether they have to be an approver, I don't know. Okay, I think approver would be if we had a single marketing leader, we kind of do right now… that person would say yes or no to sizable campaigns around the world.
+3:17:45 | Shaik
+Globally, only one person.
+3:17:48 | James
+I would think so Brian and Katie, if we're doing something right now, we would want Travis to say, yes… you don't want him to find out we're doing a campaign when he gets an email promoting our, yeah, that's right? Yeah, at.
+3:18:09 | Kaitie
+Least for now, I don't know if he, for perpetuity should be the person that everything has to go across his desk. Yes, he should be informed as to what the marketing organization is doing, but does he need to be the final approver or is someone, you know, not to volunteer you, Brian, but is it you, where it's content related? We'll have to work through that. But yes, I mean, I don't think we need to name a name today who's going to be the approval?
+3:18:38 | James
+Some kind of a marketing leader has to say, yes, correct. Yeah.
+3:18:44 | Shaik
+Thanks for clarification and it is, you can go ahead.
+3:18:51 | Nitesh
+So, that was it from my end team.
+3:18:55 | James
+And.
+3:18:55 | Nitesh
+if there is nothing else, probably, we can conclude we'll give you some time in your calendar back so that you can continue with the activities which you have planned for the day.
+3:19:05 | James
+And we can catch.
+3:19:05 | Nitesh
+up tomorrow again.
+3:19:08 | James
+Very good.
+3:19:09 | Nitesh
+Sounds great. Thank you all. Thank you. Bye. Thank you. Bye.
+3:19:15 | Shaik
+Bye.
+3:19:38 | James
+Call eight, seven, seven, four, zero, four, four, one, two nine.

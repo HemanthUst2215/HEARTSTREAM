@@ -1,0 +1,529 @@
+{
+  "meta": {
+    "source_excel": "Finance User Stories- Workshop -WS-02.xlsx",
+    "working_csv": "artifacts/intake/.pipeline/2026-10-14-finance-ws02-intake.csv",
+    "project_label": "E2E",
+    "pipeline_version": "business_process_e2e_v1",
+    "story_extract": "artifacts/intake/2026-10-14-msd-source-stories.json"
+  },
+  "cases": [
+    {
+      "scenario_id": 1,
+      "business_process": "Accrual & Deferral Management",
+      "test_case_id": "TC01-P01",
+      "test_case_title": "Post accruals, provisions, and prepaid releases through period close",
+      "test_type": "Positive E2E",
+      "priority": "High",
+      "preconditions": "Accrual schemes can be configured per Heartstream legal entity with start/end dates, frequency, and accrual/expense main accounts aligned to the agreed COA. Prepaid balance-sheet accounts and dedicated journal names for provisions (warranty, doubtful debt) and CONQ journals exist.",
+      "source_flow": "Finance User Stories- Workshop -WS-02.xlsx | 103808, 103810",
+      "coverage_focus": "Accrual schemes, provision and CONQ journals, prepaid release, and month-end reconciliation to trial balance",
+      "provenance": {
+        "behavior_id": "TC-01-P01",
+        "source_path": "Finance User Stories- Workshop -WS-02.xlsx",
+        "source_locator": "103808#row-4; 103810#row-5",
+        "confidence": "derived"
+      },
+      "steps": [
+        {
+          "step_number": 1,
+          "detailed_test_step": "Configure accrual schemes per Heartstream legal entity with start/end dates, frequency, and accrual/expense main accounts aligned to the agreed COA.",
+          "step_owner": "Finance",
+          "application_isv": "Dynamics 365 Finance",
+          "test_data": "Heartstream legal entity; agreed COA accrual and expense main accounts",
+          "expected_result": "The accrual scheme is stored with the cited dates, frequency, and main accounts for that legal entity."
+        },
+        {
+          "step_number": 2,
+          "detailed_test_step": "Post a vendor invoice or expense line with the accrual scheme attached.",
+          "step_owner": "Finance",
+          "application_isv": "Dynamics 365 Finance",
+          "test_data": "",
+          "expected_result": "D365 automatically generates the accrual entries for each period of the scheme."
+        },
+        {
+          "step_number": 3,
+          "detailed_test_step": "Post provision journals (warranty, doubtful debt) and CONQ journals using the dedicated journal names, entering financial dimensions for cost center, product, and legal entity.",
+          "step_owner": "Finance",
+          "application_isv": "Dynamics 365 Finance",
+          "test_data": "warranty; doubtful debt; dimensions: cost center, product, legal entity",
+          "expected_result": "The provision and CONQ journals post with the mandatory financial dimensions present."
+        },
+        {
+          "step_number": 4,
+          "detailed_test_step": "Set up recurring provision entries via recurring journal templates and post the monthly recurrence without re-keying the lines.",
+          "step_owner": "Finance",
+          "application_isv": "Dynamics 365 Finance",
+          "test_data": "",
+          "expected_result": "The monthly provision posts from the template without re-keying."
+        },
+        {
+          "step_number": 5,
+          "detailed_test_step": "Attach supporting calculation files to an accrual or provision journal and complete the journal approval workflow, then post.",
+          "step_owner": "Finance",
+          "application_isv": "Dynamics 365 Finance",
+          "test_data": "",
+          "expected_result": "The journal carries the calculation attachment, completes approval, and posts."
+        },
+        {
+          "step_number": 6,
+          "detailed_test_step": "Record prepaid expenses (insurance, software licences, or maintenance contracts) against a prepaid balance-sheet account with a defined release schedule.",
+          "step_owner": "Finance",
+          "application_isv": "Dynamics 365 Finance",
+          "test_data": "insurance, software licences, or maintenance contracts",
+          "expected_result": "The prepaid is recorded on the balance-sheet account with the release schedule stored."
+        },
+        {
+          "step_number": 7,
+          "detailed_test_step": "Run the period release of prepayments (accrual scheme or recurring journal) and confirm vendor prepayments on purchase orders are applied when the final vendor invoice is settled.",
+          "step_owner": "Finance",
+          "application_isv": "Dynamics 365 Finance",
+          "test_data": "",
+          "expected_result": "Release posts to the correct P&L account and dimensions; vendor prepayments are applied on settlement."
+        },
+        {
+          "step_number": 8,
+          "detailed_test_step": "View remaining prepaid balance and release schedule per document, then report accrual and provision balances by entity, account, and dimension and reconcile prepaid and accrual balances to the trial balance at month end.",
+          "step_owner": "Users",
+          "application_isv": "Dynamics 365 Finance",
+          "test_data": "",
+          "expected_result": "Remaining prepaid balance and schedule are visible per document; accrual, provision, and prepaid balances reconcile to the GL / trial balance."
+        }
+      ]
+    },
+    {
+      "scenario_id": 1,
+      "business_process": "Accrual & Deferral Management",
+      "test_case_id": "TC01-N01",
+      "test_case_title": "Block accrual or provision posting without mandatory dimensions or approval",
+      "test_type": "Negative / Control",
+      "priority": "High",
+      "preconditions": "Dedicated journal names for provision and CONQ journals exist. Financial dimensions cost center, product, and legal entity are mandatory on those journals. Journal approval workflow is required before posting.",
+      "source_flow": "Finance User Stories- Workshop -WS-02.xlsx | 103808, 103810",
+      "coverage_focus": "Accrual schemes, provision and CONQ journals, prepaid release, and month-end reconciliation to trial balance",
+      "provenance": {
+        "behavior_id": "TC-01-N01",
+        "source_path": "Finance User Stories- Workshop -WS-02.xlsx",
+        "source_locator": "103808#row-4 AC3, AC5",
+        "confidence": "derived"
+      },
+      "steps": [
+        {
+          "step_number": 1,
+          "detailed_test_step": "Attempt to post a provision journal (warranty or doubtful debt) or CONQ journal with cost center, product, or legal entity omitted.",
+          "step_owner": "Finance",
+          "application_isv": "Dynamics 365 Finance",
+          "test_data": "warranty or doubtful debt; omit a mandatory dimension",
+          "expected_result": "Posting is refused because financial dimensions (cost center, product, legal entity) are mandatory."
+        },
+        {
+          "step_number": 2,
+          "detailed_test_step": "Attempt to post an accrual or provision journal that has not completed the journal approval workflow.",
+          "step_owner": "Finance",
+          "application_isv": "Dynamics 365 Finance",
+          "test_data": "",
+          "expected_result": "The journal does not post until the journal approval workflow is completed."
+        }
+      ]
+    },
+    {
+      "scenario_id": 2,
+      "business_process": "Ledger Allocation",
+      "test_case_id": "TC02-P01",
+      "test_case_title": "Allocate enabling-function costs and post allocation journals",
+      "test_type": "Positive E2E",
+      "priority": "High",
+      "preconditions": "Ledger allocation rules can be configured for enabling-function costs. Statistical data such as headcount/FTE or sales is available from GL or statistical accounts. Journal approval workflow is in place for allocation journals.",
+      "source_flow": "Finance User Stories- Workshop -WS-02.xlsx | 103811",
+      "coverage_focus": "Ledger allocation rules (basis, fixed percentage, fixed weight, equal), batch close calendar, and net-to-zero postings",
+      "provenance": {
+        "behavior_id": "TC-02-P01",
+        "source_path": "Finance User Stories- Workshop -WS-02.xlsx",
+        "source_locator": "103811#row-7",
+        "confidence": "derived"
+      },
+      "steps": [
+        {
+          "step_number": 1,
+          "detailed_test_step": "Configure ledger allocation rules for enabling-function costs (IT, HR, Finance) using basis, fixed percentage, fixed weight, and equal methods.",
+          "step_owner": "Finance",
+          "application_isv": "Dynamics 365 Finance",
+          "test_data": "enabling-function costs: IT, HR, Finance; methods: basis, fixed percentage, fixed weight, equal",
+          "expected_result": "Allocation rules exist for each cited method and enabling-function cost."
+        },
+        {
+          "step_number": 2,
+          "detailed_test_step": "Configure a basis allocation that uses statistical data such as headcount/FTE or sales sourced from GL or statistical accounts.",
+          "step_owner": "Finance",
+          "application_isv": "Dynamics 365 Finance",
+          "test_data": "headcount/FTE or sales",
+          "expected_result": "The basis allocation uses the cited statistical data from GL or statistical accounts."
+        },
+        {
+          "step_number": 3,
+          "detailed_test_step": "Generate allocation journals via the allocation process, review them, and post through the journal approval workflow.",
+          "step_owner": "Finance",
+          "application_isv": "Dynamics 365 Finance",
+          "test_data": "",
+          "expected_result": "Allocation journals are generated, reviewed, approved, and posted."
+        },
+        {
+          "step_number": 4,
+          "detailed_test_step": "Schedule allocation runs as batch jobs on the month-end close calendar for all Heartstream legal entities.",
+          "step_owner": "Finance",
+          "application_isv": "Dynamics 365 Finance",
+          "test_data": "Heartstream legal entities; month-end close calendar",
+          "expected_result": "Allocation runs are scheduled as batch jobs for the cited legal entities and close calendar."
+        },
+        {
+          "step_number": 5,
+          "detailed_test_step": "Inspect posted allocations for source and destination accounts/dimensions and confirm results in management reporting (PR-006).",
+          "step_owner": "Finance",
+          "application_isv": "Dynamics 365 Finance",
+          "test_data": "",
+          "expected_result": "Posted allocations show source and destination accounts/dimensions, net to zero at the source, and are visible in management reporting (PR-006)."
+        }
+      ]
+    },
+    {
+      "scenario_id": 2,
+      "business_process": "Ledger Allocation",
+      "test_case_id": "TC02-N01",
+      "test_case_title": "Block allocation journal posting until approval workflow completes",
+      "test_type": "Negative / Control",
+      "priority": "High",
+      "preconditions": "An allocation journal has been generated via the allocation process. Journal approval workflow is required before posting.",
+      "source_flow": "Finance User Stories- Workshop -WS-02.xlsx | 103811",
+      "coverage_focus": "Ledger allocation rules (basis, fixed percentage, fixed weight, equal), batch close calendar, and net-to-zero postings",
+      "provenance": {
+        "behavior_id": "TC-02-N01",
+        "source_path": "Finance User Stories- Workshop -WS-02.xlsx",
+        "source_locator": "103811#row-7 AC3",
+        "confidence": "derived"
+      },
+      "steps": [
+        {
+          "step_number": 1,
+          "detailed_test_step": "Generate an allocation journal via the allocation process and attempt to post it without completing the journal approval workflow.",
+          "step_owner": "Finance",
+          "application_isv": "Dynamics 365 Finance",
+          "test_data": "",
+          "expected_result": "The allocation journal is not posted until it has been reviewed and posted through the journal approval workflow."
+        }
+      ]
+    },
+    {
+      "scenario_id": 3,
+      "business_process": "Journal Automation",
+      "test_case_id": "TC03-P01",
+      "test_case_title": "Configure posting policies, journal approval, and scheduled batch posting",
+      "test_type": "Positive E2E",
+      "priority": "High",
+      "preconditions": "Journal names can be defined by purpose with separate number sequences. Account structures and dimension rules are available. Heartstream close calendar and legal-entity time zones are known.",
+      "source_flow": "Finance User Stories- Workshop -WS-02.xlsx | 103819, 103820, 103821",
+      "coverage_focus": "Journal names and posting controls, amount-based approval workflow, and scheduled batch posting including DMF",
+      "provenance": {
+        "behavior_id": "TC-03-P01",
+        "source_path": "Finance User Stories- Workshop -WS-02.xlsx",
+        "source_locator": "103819#row-10; 103820#row-11; 103821#row-12",
+        "confidence": "derived"
+      },
+      "steps": [
+        {
+          "step_number": 1,
+          "detailed_test_step": "Define journal names by purpose (manual GL, accruals, allocations, reclass, intercompany, integrations) with separate number sequences.",
+          "step_owner": "Finance",
+          "application_isv": "Dynamics 365 Finance",
+          "test_data": "manual GL, accruals, allocations, reclass, intercompany, integrations",
+          "expected_result": "Each purpose has a journal name and a separate number sequence."
+        },
+        {
+          "step_number": 2,
+          "detailed_test_step": "Create a manual journal and complete mandatory fields (financial dimensions, description, and attachment where required).",
+          "step_owner": "Finance",
+          "application_isv": "Dynamics 365 Finance",
+          "test_data": "",
+          "expected_result": "Mandatory fields are enforced on the manual journal."
+        },
+        {
+          "step_number": 3,
+          "detailed_test_step": "Configure journal approval workflows for manual GL journals with amount-based approval thresholds, then submit a journal for approval.",
+          "step_owner": "Submitter",
+          "application_isv": "Dynamics 365 Finance",
+          "test_data": "",
+          "expected_result": "The workflow applies the amount-based threshold and routes the journal to an approver."
+        },
+        {
+          "step_number": 4,
+          "detailed_test_step": "As an approver, receive the notification and approve with comments (or delegate); confirm workflow history records who, when, action, and comments.",
+          "step_owner": "Approvers",
+          "application_isv": "Dynamics 365 Finance",
+          "test_data": "",
+          "expected_result": "Approvers can approve, reject, or delegate with comments; workflow history is retained and reportable for audit."
+        },
+        {
+          "step_number": 5,
+          "detailed_test_step": "Set up batch groups and recurring batch jobs for journal posting, invoice posting, integrations (DMF), and period-end processes, scheduled by legal entity and time zone to fit the Heartstream close calendar.",
+          "step_owner": "System administrators",
+          "application_isv": "Dynamics 365 Finance / DMF",
+          "test_data": "Heartstream close calendar; legal entity and time zone",
+          "expected_result": "Batch jobs exist for the cited processes and are scheduled by legal entity and time zone."
+        },
+        {
+          "step_number": 6,
+          "detailed_test_step": "Run a scheduled batch job and open batch job history for that run.",
+          "step_owner": "Finance",
+          "application_isv": "Dynamics 365 Finance",
+          "test_data": "",
+          "expected_result": "History shows start/end time, status, and records processed for the run. Posting policies remain documented and aligned to Heartstream's SOX control matrix."
+        }
+      ]
+    },
+    {
+      "scenario_id": 3,
+      "business_process": "Journal Automation",
+      "test_case_id": "TC03-N01",
+      "test_case_title": "Enforce segregation of duties, rejection, posting restrictions, and invalid combinations",
+      "test_type": "Negative / Control",
+      "priority": "High",
+      "preconditions": "Journal approval workflow is configured for manual GL journals. Posting restrictions by user/group apply to integration journals (payroll, subscription billing). Account structures and dimension rules are active. Batch job schedule changes are limited to system administrators/authorised roles.",
+      "source_flow": "Finance User Stories- Workshop -WS-02.xlsx | 103819, 103820, 103821",
+      "coverage_focus": "Journal names and posting controls, amount-based approval workflow, and scheduled batch posting including DMF",
+      "provenance": {
+        "behavior_id": "TC-03-N01",
+        "source_path": "Finance User Stories- Workshop -WS-02.xlsx",
+        "source_locator": "103819#row-10 AC2-AC4; 103820#row-11 AC2, AC4; 103821#row-12 AC3, AC5",
+        "confidence": "derived"
+      },
+      "steps": [
+        {
+          "step_number": 1,
+          "detailed_test_step": "Submit a manual GL journal and, as the same submitter, attempt to approve that journal.",
+          "step_owner": "Submitter",
+          "application_isv": "Dynamics 365 Finance",
+          "test_data": "",
+          "expected_result": "The submitter cannot approve their own journal (segregation of duties)."
+        },
+        {
+          "step_number": 2,
+          "detailed_test_step": "As an approver, reject the journal with a reason, then attempt to post the rejected journal without resubmission.",
+          "step_owner": "Approvers",
+          "application_isv": "Dynamics 365 Finance",
+          "test_data": "",
+          "expected_result": "The rejected journal returns to the submitter with reasons and cannot be posted until resubmitted."
+        },
+        {
+          "step_number": 3,
+          "detailed_test_step": "Attempt to post an integration journal (payroll or subscription billing) as a user who is neither the integration nor an authorised user.",
+          "step_owner": "authorised users",
+          "application_isv": "Dynamics 365 Finance",
+          "test_data": "payroll or subscription billing integration journal",
+          "expected_result": "Posting is refused; integration journals can only be posted by the integration or authorised users."
+        },
+        {
+          "step_number": 4,
+          "detailed_test_step": "Attempt to post a journal that uses an invalid account structure or dimension combination.",
+          "step_owner": "Finance",
+          "application_isv": "Dynamics 365 Finance",
+          "test_data": "",
+          "expected_result": "Account structures and dimension rules prevent posting the invalid combination."
+        },
+        {
+          "step_number": 5,
+          "detailed_test_step": "As a role that is not a system administrator or authorised role, attempt to create or modify a batch job schedule. Separately, inspect a failed batch job.",
+          "step_owner": "System administrators",
+          "application_isv": "Dynamics 365 Finance",
+          "test_data": "",
+          "expected_result": "Only system administrators/authorised roles can create or modify batch job schedules. Failed batch jobs generate alerts to the responsible team with error details."
+        }
+      ]
+    },
+    {
+      "scenario_id": 4,
+      "business_process": "Cost & Revenue Allocation",
+      "test_case_id": "TC04-P01",
+      "test_case_title": "Analyze costs and management P&L after allocations",
+      "test_type": "Positive E2E",
+      "priority": "High",
+      "preconditions": "Financial dimensions for product, sales team, distributor/customer, and cost center are available on relevant transactions. Statistical FTE/headcount data is available. Period close has completed so reports can refresh.",
+      "source_flow": "Finance User Stories- Workshop -WS-02.xlsx | 103822, 103823",
+      "coverage_focus": "Dimensional cost analysis, management P&L after allocations, and reconciliation to trial balance",
+      "provenance": {
+        "behavior_id": "TC-04-P01",
+        "source_path": "Finance User Stories- Workshop -WS-02.xlsx",
+        "source_locator": "103822#row-14; 103823#row-15",
+        "confidence": "derived"
+      },
+      "steps": [
+        {
+          "step_number": 1,
+          "detailed_test_step": "Confirm financial dimensions for product, sales team, distributor/customer, and cost center are available on relevant transactions, and that statistical FTE/headcount data is available for cost-per-FTE analysis.",
+          "step_owner": "Finance",
+          "application_isv": "Dynamics 365 Finance",
+          "test_data": "product; sales team; distributor/customer; cost center; FTE/headcount",
+          "expected_result": "The cited dimensions and FTE/headcount statistical data are available on relevant transactions."
+        },
+        {
+          "step_number": 2,
+          "detailed_test_step": "Analyze costs by a combination of those dimensions in Financial reporting and Power BI, then drill from summary to voucher level.",
+          "step_owner": "Users",
+          "application_isv": "Dynamics 365 Finance / Power BI",
+          "test_data": "",
+          "expected_result": "Costs can be analyzed by any combination of the cited dimensions; reports drill down from summary to voucher level."
+        },
+        {
+          "step_number": 3,
+          "detailed_test_step": "Open management P&L reports showing revenue, cost, and margin after allocations by product, market, channel (direct/indirect/D2C), and legal entity, including actual vs prior period.",
+          "step_owner": "Users",
+          "application_isv": "Dynamics 365 Finance / Power BI",
+          "test_data": "channel: direct/indirect/D2C",
+          "expected_result": "Management P&L shows revenue, cost, and margin after allocations by the cited slices; actual vs prior period comparison is available."
+        },
+        {
+          "step_number": 4,
+          "detailed_test_step": "After period close, refresh the reports and confirm they show the period status used and include agreed KPIs (gross margin %, subscription vs device revenue).",
+          "step_owner": "Finance",
+          "application_isv": "Dynamics 365 Finance / Power BI",
+          "test_data": "gross margin %; subscription vs device revenue",
+          "expected_result": "Reports refresh after period close, show the period status used, and include the cited KPIs agreed with Heartstream Finance."
+        },
+        {
+          "step_number": 5,
+          "detailed_test_step": "Reconcile cost analysis reports to the trial balance for the period.",
+          "step_owner": "Finance",
+          "application_isv": "Dynamics 365 Finance",
+          "test_data": "",
+          "expected_result": "Cost analysis reports reconcile to the trial balance for the period."
+        }
+      ]
+    },
+    {
+      "scenario_id": 4,
+      "business_process": "Cost & Revenue Allocation",
+      "test_case_id": "TC04-N01",
+      "test_case_title": "Restrict management reports to role-based access",
+      "test_type": "Negative / Control",
+      "priority": "High",
+      "preconditions": "Management P&L and cost analysis reports are published in Financial reporting and Power BI with role-based access.",
+      "source_flow": "Finance User Stories- Workshop -WS-02.xlsx | 103822, 103823",
+      "coverage_focus": "Dimensional cost analysis, management P&L after allocations, and reconciliation to trial balance",
+      "provenance": {
+        "behavior_id": "TC-04-N01",
+        "source_path": "Finance User Stories- Workshop -WS-02.xlsx",
+        "source_locator": "103823#row-15 AC3",
+        "confidence": "derived"
+      },
+      "steps": [
+        {
+          "step_number": 1,
+          "detailed_test_step": "Attempt to open management P&L or cost analysis reports in Financial reporting and Power BI using a user who is not granted the role-based access.",
+          "step_owner": "Users",
+          "application_isv": "Dynamics 365 Finance / Power BI",
+          "test_data": "",
+          "expected_result": "The reports are not available to that user; access is limited by role-based access."
+        }
+      ]
+    },
+    {
+      "scenario_id": 5,
+      "business_process": "Payroll Integration-Deel-Finance",
+      "test_case_id": "TC05-P01",
+      "test_case_title": "Import Deel payroll journals, map to GL, and reconcile clearing",
+      "test_type": "Positive E2E",
+      "priority": "High",
+      "preconditions": "Payroll pay-code mapping to main accounts and employee cost center/department mapping to D365 financial dimensions is maintained in a controlled table by Finance. Approved payroll results for a pay run are available from Deel. Feature Fit Gap Status on Payroll Integration-Deel-Finance is Gap; story Fit Gap Status is TBD pending provider confirmation.",
+      "source_flow": "Finance User Stories- Workshop -WS-02.xlsx | 111626, 111627, 111628",
+      "coverage_focus": "Deel payroll import to general journals, pay-code mapping, and payroll clearing reconciliation",
+      "provenance": {
+        "behavior_id": "TC-05-P01",
+        "source_path": "Finance User Stories- Workshop -WS-02.xlsx",
+        "source_locator": "111626#row-17; 111627#row-18; 111628#row-19",
+        "confidence": "derived"
+      },
+      "steps": [
+        {
+          "step_number": 1,
+          "detailed_test_step": "In the controlled mapping table maintained by Finance, map payroll pay codes (gross pay, net pay, taxes, deductions, employer costs) to main accounts and map employee cost center/department to D365 financial dimensions.",
+          "step_owner": "Finance",
+          "application_isv": "Dynamics 365 Finance / Deel",
+          "test_data": "gross pay, net pay, taxes, deductions, employer costs",
+          "expected_result": "Pay codes map to main accounts and employee cost center/department maps to D365 financial dimensions. Mapping changes are logged."
+        },
+        {
+          "step_number": 2,
+          "detailed_test_step": "Import approved payroll results for the pay run into D365 as general journals per legal entity.",
+          "step_owner": "Finance",
+          "application_isv": "Dynamics 365 Finance / Deel",
+          "test_data": "Deel approved payroll results; per legal entity",
+          "expected_result": "Salary, benefits, payroll provisions, and employer taxes post to the correct accounts as general journals per legal entity."
+        },
+        {
+          "step_number": 3,
+          "detailed_test_step": "Reconcile imported journal totals to the payroll provider register.",
+          "step_owner": "Finance",
+          "application_isv": "Dynamics 365 Finance / Deel",
+          "test_data": "",
+          "expected_result": "Imported totals reconcile to the payroll provider register."
+        },
+        {
+          "step_number": 4,
+          "detailed_test_step": "After the salary payment is reconciled with the bank, confirm net pay clearing clears; after payroll tax and deductions are paid to authorities/providers, confirm those liabilities clear.",
+          "step_owner": "Finance",
+          "application_isv": "Dynamics 365 Finance",
+          "test_data": "",
+          "expected_result": "Net pay clearing clears on bank reconciliation of the salary payment; tax and deduction liabilities clear when paid."
+        },
+        {
+          "step_number": 5,
+          "detailed_test_step": "Run the month-end payroll clearing reconciliation: report open balances on payroll clearing accounts per pay run and investigate and correct differences.",
+          "step_owner": "Finance",
+          "application_isv": "Dynamics 365 Finance",
+          "test_data": "",
+          "expected_result": "Open balances are reportable per pay run; reconciliation is part of month-end close; differences are investigated and corrected."
+        }
+      ]
+    },
+    {
+      "scenario_id": 5,
+      "business_process": "Payroll Integration-Deel-Finance",
+      "test_case_id": "TC05-N01",
+      "test_case_title": "Stop unmapped payroll codes and prevent duplicate pay-run posting",
+      "test_type": "Negative / Integration",
+      "priority": "High",
+      "preconditions": "Payroll mapping table is in use. An approved pay run can be imported. At least one pay code can be left unmapped for the negative path.",
+      "source_flow": "Finance User Stories- Workshop -WS-02.xlsx | 111626, 111627, 111628",
+      "coverage_focus": "Deel payroll import to general journals, pay-code mapping, and payroll clearing reconciliation",
+      "provenance": {
+        "behavior_id": "TC-05-N01",
+        "source_path": "Finance User Stories- Workshop -WS-02.xlsx",
+        "source_locator": "111626#row-17 AC3, AC4; 111627#row-18 AC4",
+        "confidence": "derived"
+      },
+      "steps": [
+        {
+          "step_number": 1,
+          "detailed_test_step": "Import approved payroll results that include a pay code not present in the mapping table.",
+          "step_owner": "Finance",
+          "application_isv": "Dynamics 365 Finance / Deel",
+          "test_data": "unmapped pay code",
+          "expected_result": "The import stops with a clear error for the unmapped code."
+        },
+        {
+          "step_number": 2,
+          "detailed_test_step": "After a successful import of a pay run, import the same pay run again.",
+          "step_owner": "Finance",
+          "application_isv": "Dynamics 365 Finance / Deel",
+          "test_data": "same pay run",
+          "expected_result": "The second import does not duplicate posting of that pay run (idempotent)."
+        },
+        {
+          "step_number": 3,
+          "detailed_test_step": "Trigger an import that fails for a logged error, then reprocess after correcting the error.",
+          "step_owner": "Finance",
+          "application_isv": "Dynamics 365 Finance / Deel",
+          "test_data": "",
+          "expected_result": "Import errors are logged with alerts and can be reprocessed."
+        }
+      ]
+    }
+  ]
+}

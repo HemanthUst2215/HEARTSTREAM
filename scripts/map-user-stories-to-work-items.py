@@ -1,17 +1,19 @@
 #!/usr/bin/env python3
-"""Map generated user stories to Epic / Feature / Workshop IDs.
+"""Map transcript user stories to catalog Epic/Feature rows (generic scoring).
 
 Used only by `/generate-user-stories-from-transcript` (work-item-mapping-agent).
-Reads artifacts/work-items/*.json. Writes one public Excel (stories + IDs) and an internal JSON mapping log. INVEST stays a separate CSV.
-Does not change Title, Description, Acceptance Criteria, or other source cells.
+Reads `artifacts/work-items/*.json` paths from `.cursor/config.yaml` →
+`work_item_mapping`. Writes one public Excel and an internal mapping log.
+INVEST stays a separate CSV. Does not change story narrative cells.
 
-Do not invent Epic/Feature titles from the transcript. Match each User Story
-to existing Features in feature.json (parent Epic in epic.json) using generic
-similarity only — thresholds and paths from `.cursor/config.yaml` →
-`work_item_mapping`. Never hardcode domain phrases, epic IDs, or topic tables.
-Catalog Epic and Feature rows keep their own ADO IDs in `ID`. Each matched User
-Story row uses a Feature workItemId in `ID` (up to max_related_features).
-No extra EPIC ID / FEATURE ID columns.
+Public Excel layout (any transcript / any catalog):
+  Workshop → Epic (catalog ID) → Feature (catalog ID) → User Stories under that
+  Feature (blank ID) → next Feature → next Epic → unmatched stories → Issue/Risk.
+
+Match User Stories to existing Features in `feature.json` (parent Epic in
+`epic.json`) using generic title/description similarity only — thresholds from
+config. Never hardcode domain phrases, epic ID lists, or topic hint tables.
+Do not invent Epic/Feature titles from the transcript.
 """
 from __future__ import annotations
 
@@ -20,20 +22,22 @@ import csv
 import json
 import re
 import sys
-import zipfile
 from difflib import SequenceMatcher
 from datetime import datetime, timezone
-from io import BytesIO
 from pathlib import Path
 from typing import Any
-from xml.sax.saxutils import escape
 
 ROOT = Path(__file__).resolve().parents[1]
 _SCRIPTS = Path(__file__).resolve().parent
 if str(_SCRIPTS) not in sys.path:
     sys.path.insert(0, str(_SCRIPTS))
 
-from ado_user_story_csv_layout import excel_safe_cell  # noqa: E402
+from ado_user_story_csv_layout import (  # noqa: E402
+    DEFAULT_TITLE_BY_TYPE,
+    excel_safe_cell,
+    row_title,
+    write_xlsx as write_styled_xlsx,
+)
 
 STOPWORDS = frozenset(
     """
@@ -249,7 +253,7 @@ def score_titles(query_title: str, candidates: list[dict[str, Any]]) -> list[tup
 def story_blob(row: dict[str, str]) -> str:
     return " ".join(
         [
-            row.get("Title") or "",
+            row_title(row),
             row.get("Description") or "",
             row.get("Acceptance Criteria") or "",
         ]
@@ -468,9 +472,52 @@ def catalog_item_row(keys: list[str], wit: str, item: dict[str, Any]) -> dict[st
     out = {k: "" for k in keys}
     out["Work Item Type"] = wit
     out["ID"] = str(item.get("id") or "")
-    out["Title"] = item.get("title") or ""
+    title = item.get("title") or ""
+    dest = DEFAULT_TITLE_BY_TYPE.get(wit, "Title 3")
+    if dest in keys:
+        out[dest] = title
+    if "Title" in keys:
+        out["Title"] = title
     out["Description"] = item.get("description") or ""
+    if "State" in keys and not (out.get("State") or "").strip():
+        out["State"] = "In Review" if wit == "Workshop" else "New"
     return out
+
+
+def _epic_sort_key(item: dict[str, Any]) -> tuple[str, str]:
+    return (item.get("title") or "", str(item.get("id") or ""))
+
+
+def _feature_sort_key(item: dict[str, Any]) -> tuple[str, str, str]:
+    return (str(item.get("parent_id") or ""), item.get("title") or "", str(item.get("id") or ""))
+
+
+def _build_epic_feature_story_hierarchy(
+    keys: list[str],
+    matched_epics: dict[str, dict[str, Any]],
+    matched_features: dict[str, dict[str, Any]],
+    stories_by_feature: dict[str, list[dict[str, str]]],
+) -> list[dict[str, str]]:
+    """Public Excel: Epic → its Features → User Stories under each Feature (stories have blank ID)."""
+    ordered: list[dict[str, str]] = []
+    epic_ids = sorted(matched_epics.keys(), key=lambda eid: _epic_sort_key(matched_epics[eid]))
+    for eid in epic_ids:
+        epic = matched_epics[eid]
+        child_feats = [
+            f
+            for f in matched_features.values()
+            if str(f.get("parent_id") or "") == str(eid)
+            and stories_by_feature.get(str(f.get("id") or ""))
+        ]
+        if not child_feats:
+            continue
+        ordered.append(catalog_item_row(keys, "Epic", epic))
+        for feat in sorted(child_feats, key=_feature_sort_key):
+            fid = str(feat.get("id") or "")
+            ordered.append(catalog_item_row(keys, "Feature", feat))
+            for story in stories_by_feature.get(fid, []):
+                ordered.append(story)
+    return ordered
 
 
 def map_stories(
@@ -483,9 +530,10 @@ def map_stories(
 ) -> tuple[list[dict[str, str]], list[dict[str, Any]]]:
     keys = _row_keys(rows)
     workshops: list[dict[str, str]] = []
-    stories: list[dict[str, str]] = []
+    unmatched_stories: list[dict[str, str]] = []
     trailing: list[dict[str, str]] = []
     log_entries: list[dict[str, Any]] = []
+    stories_by_feature: dict[str, list[dict[str, str]]] = {}
     workshop_pick: dict[str, Any] | None = None
     workshop_scores: list[tuple[float, dict[str, Any]]] = []
     workshop_why = "no_csv_workshop"
@@ -499,7 +547,7 @@ def map_stories(
         if wit in SKIP_AUTHORING_TYPES:
             continue
         out = {k: row.get(k) or "" for k in keys}
-        title = row.get("Title") or ""
+        title = row_title(row)
 
         if wit == "Workshop":
             last_workshop_title = title
@@ -547,8 +595,8 @@ def map_stories(
                     }
                 )
                 story_out = {k: out.get(k) or "" for k in keys}
-                story_out["ID"] = fid
-                stories.append(story_out)
+                story_out["ID"] = ""
+                stories_by_feature.setdefault(fid, []).append(story_out)
             first = story_matches[0]
             log_entries.append(
                 {
@@ -619,20 +667,12 @@ def map_stories(
                     },
                 }
             )
-            stories.append(out)
+            unmatched_stories.append(out)
 
-    epic_rows = [
-        catalog_item_row(keys, "Epic", e)
-        for e in sorted(matched_epics.values(), key=lambda x: (x.get("title") or "", x.get("id") or ""))
-    ]
-    feature_rows = [
-        catalog_item_row(keys, "Feature", f)
-        for f in sorted(
-            matched_features.values(),
-            key=lambda x: (x.get("parent_id") or "", x.get("title") or "", x.get("id") or ""),
-        )
-    ]
-    mapped = workshops + epic_rows + feature_rows + stories + trailing
+    hierarchy = _build_epic_feature_story_hierarchy(
+        keys, matched_epics, matched_features, stories_by_feature
+    )
+    mapped = workshops + hierarchy + unmatched_stories + trailing
     return mapped, log_entries
 
 
@@ -646,93 +686,47 @@ def write_csv(path: Path, headers: list[str], rows: list[dict[str, str]]) -> Non
             writer.writerow({h: excel_safe_cell(row.get(h) or "") for h in headers})
 
 
-def col_letter(n: int) -> str:
-    s = ""
-    while n:
-        n, r = divmod(n - 1, 26)
-        s = chr(65 + r) + s
-    return s
+USER_STORY_RULEBOOK = ROOT / "docs" / "intake" / "user-story-csv-rulebook.yaml"
 
 
-def write_xlsx(path: Path, headers: list[str], rows: list[dict[str, str]]) -> None:
-    """Minimal XLSX (no openpyxl). Shared strings + worksheet."""
-    path.parent.mkdir(parents=True, exist_ok=True)
-    strings: list[str] = []
-    index: dict[str, int] = {}
+def load_story_rulebook(path: Path | None = None) -> dict[str, Any]:
+    try:
+        import yaml
+    except ImportError:
+        return {}
+    rb_path = path or USER_STORY_RULEBOOK
+    if not rb_path.is_file():
+        return {}
+    data = yaml.safe_load(rb_path.read_text(encoding="utf-8"))
+    return data if isinstance(data, dict) else {}
 
-    def sid(value: str) -> int:
-        if value not in index:
-            index[value] = len(strings)
-            strings.append(value)
-        return index[value]
 
-    def cell_xml(ref: str, value: str) -> str:
-        i = sid(value)
-        return f'<c r="{ref}" t="s"><v>{i}</v></c>'
+def project_label_from_config(config_path: Path) -> str:
+    try:
+        import yaml
+    except ImportError:
+        return ""
+    if not config_path.is_file():
+        return ""
+    data = yaml.safe_load(config_path.read_text(encoding="utf-8")) or {}
+    return str(((data.get("project") or {}).get("name") or "")).strip()
 
-    sheet_rows = []
-    header_cells = "".join(cell_xml(f"{col_letter(i + 1)}1", h) for i, h in enumerate(headers))
-    sheet_rows.append(f'<row r="1">{header_cells}</row>')
-    for ridx, row in enumerate(rows, start=2):
-        cells = "".join(
-            cell_xml(f"{col_letter(cidx + 1)}{ridx}", excel_safe_cell(row.get(h) or ""))
-            for cidx, h in enumerate(headers)
-        )
-        sheet_rows.append(f'<row r="{ridx}">{cells}</row>')
 
-    last = f"{col_letter(len(headers))}{len(rows) + 1}"
-    sheet = (
-        '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>'
-        '<worksheet xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main">'
-        f'<dimension ref="A1:{last}"/>'
-        "<sheetData>"
-        + "".join(sheet_rows)
-        + "</sheetData></worksheet>"
+def write_xlsx(
+    path: Path,
+    headers: list[str],
+    rows: list[dict[str, str]],
+    rulebook: dict[str, Any] | None = None,
+    project_label: str | None = None,
+) -> None:
+    """Public User Story Excel using rulebook styling (Title 1/2/3 layout)."""
+    write_styled_xlsx(
+        path,
+        headers,
+        rows,
+        rulebook=rulebook if rulebook is not None else load_story_rulebook(),
+        project_label=project_label,
     )
-    sst_items = "".join(f"<si><t xml:space=\"preserve\">{escape(s)}</t></si>" for s in strings)
-    sst = (
-        '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>'
-        f'<sst xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main" '
-        f'count="{len(strings)}" uniqueCount="{len(strings)}">{sst_items}</sst>'
-    )
-    workbook = (
-        '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>'
-        '<workbook xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main" '
-        'xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships">'
-        '<sheets><sheet name="UserStories" sheetId="1" r:id="rId1"/></sheets></workbook>'
-    )
-    rels = (
-        '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>'
-        '<Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships">'
-        '<Relationship Id="rId1" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/officeDocument" Target="xl/workbook.xml"/>'
-        "</Relationships>"
-    )
-    wb_rels = (
-        '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>'
-        '<Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships">'
-        '<Relationship Id="rId1" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/worksheet" Target="worksheets/sheet1.xml"/>'
-        '<Relationship Id="rId2" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/sharedStrings" Target="sharedStrings.xml"/>'
-        "</Relationships>"
-    )
-    ctypes = (
-        '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>'
-        '<Types xmlns="http://schemas.openxmlformats.org/package/2006/content-types">'
-        '<Default Extension="rels" ContentType="application/vnd.openxmlformats-package.relationships+xml"/>'
-        '<Default Extension="xml" ContentType="application/xml"/>'
-        '<Override PartName="/xl/workbook.xml" ContentType="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet.main+xml"/>'
-        '<Override PartName="/xl/worksheets/sheet1.xml" ContentType="application/vnd.openxmlformats-officedocument.spreadsheetml.worksheet+xml"/>'
-        '<Override PartName="/xl/sharedStrings.xml" ContentType="application/vnd.openxmlformats-officedocument.spreadsheetml.sharedStrings+xml"/>'
-        "</Types>"
-    )
-    buf = BytesIO()
-    with zipfile.ZipFile(buf, "w", compression=zipfile.ZIP_DEFLATED) as z:
-        z.writestr("[Content_Types].xml", ctypes)
-        z.writestr("_rels/.rels", rels)
-        z.writestr("xl/workbook.xml", workbook)
-        z.writestr("xl/_rels/workbook.xml.rels", wb_rels)
-        z.writestr("xl/worksheets/sheet1.xml", sheet)
-        z.writestr("xl/sharedStrings.xml", sst)
-    path.write_bytes(buf.getvalue())
 
 
 def write_logs(
@@ -802,11 +796,13 @@ def main() -> int:
         headers.insert(0, "ID")
 
     write_logs(Path(args.log_json), source, log_entries, buckets, threshold, margin)
+    story_rb = load_story_rulebook()
+    project_label = project_label_from_config(Path(args.config))
     try:
-        write_xlsx(Path(args.out_xlsx), headers, mapped)
+        write_xlsx(Path(args.out_xlsx), headers, mapped, rulebook=story_rb, project_label=project_label)
     except PermissionError:
         fallback = Path(args.log_json).parent / Path(args.out_xlsx).name
-        write_xlsx(fallback, headers, mapped)
+        write_xlsx(fallback, headers, mapped, rulebook=story_rb, project_label=project_label)
         print(
             f"WARN: could not overwrite {args.out_xlsx} (file open). Wrote {fallback}. "
             "Close the workbook and re-run mapping.",

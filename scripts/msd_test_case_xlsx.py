@@ -26,8 +26,14 @@ if str(_SCRIPTS) not in sys.path:
     sys.path.insert(0, str(_SCRIPTS))
 
 from msd_test_case_xlsx_layout import (  # noqa: E402
+    area_path_leaf,
+    bind_aliases,
     cell_str,
+    html_unescape_cell,
     load_rulebook,
+    resolve_bound_field,
+    resolve_title,
+    strip_numbering_prefix,
     write_workbook,
 )
 
@@ -63,41 +69,48 @@ def _read_tabular(path: Path) -> list[list[str]]:
     raise SystemExit(f"FAIL: unsupported input suffix {suffix}")
 
 
-def _find_header_row(grid: list[list[str]], expected: list[str]) -> int:
+def _find_header_row(
+    grid: list[list[str]],
+    msd_rulebook: dict[str, Any],
+    source_rulebook: dict[str, Any],
+) -> tuple[int, list[str]]:
+    """Return (index, actual header cells). Extra columns kept; order is the source row."""
+    bind = msd_rulebook["input"]["field_bind"]
+    required = list(msd_rulebook["input"].get("required_bind_keys") or ["id", "work_item_type", "title"])
+    alias_sets = [bind_aliases(msd_rulebook, key, bind[key]) for key in required]
+
+    expected = list(source_rulebook.get("csv", {}).get("column_order") or [])
+    if expected:
+        for i, row in enumerate(grid):
+            sliced = [cell_str(c) for c in row[: len(expected)]]
+            if sliced == expected:
+                return i, [cell_str(c) for c in row]
     for i, row in enumerate(grid):
-        sliced = row[: len(expected)]
-        if sliced == expected:
-            return i
-    # Prefix match: header row contains all expected names in order as a subsequence
-    for i, row in enumerate(grid):
-        idx = 0
-        positions: list[int] = []
-        for cell in row:
-            if idx < len(expected) and cell == expected[idx]:
-                positions.append(0)
-                idx += 1
-        if idx == len(expected):
-            return i
+        present = {cell_str(c) for c in row if cell_str(c)}
+        if all(any(alias in present for alias in aliases) for aliases in alias_sets):
+            return i, [cell_str(c) for c in row]
+    needed = "; ".join(f"{k} ({' | '.join(a)})" for k, a in zip(required, alias_sets))
     raise SystemExit(
-        "FAIL: could not find a header row matching source rulebook csv.column_order"
+        "FAIL: could not find a header row with required bind fields: " + needed
     )
 
 
 def _row_dict(header: list[str], cells: list[str]) -> dict[str, str]:
-    out = {h: "" for h in header}
+    out: dict[str, str] = {}
     for i, h in enumerate(header):
-        if i < len(cells):
-            out[h] = cells[i]
+        name = cell_str(h)
+        if not name or name in out:
+            continue
+        out[name] = cells[i] if i < len(cells) else ""
     return out
 
 
 def extract_stories(source: Path, source_rulebook: dict[str, Any], msd_rulebook: dict[str, Any]) -> dict[str, Any]:
-    expected = list(source_rulebook.get("csv", {}).get("column_order") or [])
-    if not expected:
-        raise SystemExit("FAIL: source rulebook csv.column_order missing")
     grid = _read_tabular(source)
-    header_idx = _find_header_row(grid, expected)
-    header = expected
+    unescape = bool(((msd_rulebook.get("input") or {}).get("cell_normalize") or {}).get("html_unescape"))
+    if unescape:
+        grid = [[html_unescape_cell(c, True) for c in row] for row in grid]
+    header_idx, header = _find_header_row(grid, msd_rulebook, source_rulebook)
     type_col = msd_rulebook["input"]["row_filter"]["type_column"]
     include_key = msd_rulebook["input"]["row_filter"]["include_type_from_source"]
     include_type = source_rulebook.get("work_item_types", {}).get(include_key) or "User Story"
@@ -109,25 +122,29 @@ def extract_stories(source: Path, source_rulebook: dict[str, Any], msd_rulebook:
     stories: list[dict[str, Any]] = []
     context_rows: list[dict[str, Any]] = []
 
+    def _bound(row: dict[str, str], wit: str) -> dict[str, str]:
+        return {
+            "id": resolve_bound_field(row, msd_rulebook, "id", bind["id"]),
+            "title": resolve_title(row, wit, msd_rulebook, bind["title"]),
+            "description": resolve_bound_field(row, msd_rulebook, "description", bind["description"]),
+            "acceptance_criteria": resolve_bound_field(
+                row, msd_rulebook, "acceptance_criteria", bind["acceptance_criteria"]
+            ),
+            "area_path": resolve_bound_field(row, msd_rulebook, "area_path", bind["area_path"]),
+        }
+
     for offset, cells in enumerate(grid[header_idx + 1 :], start=header_idx + 2):
-        if all(c == "" for c in cells[: len(header)]):
+        if all(c == "" for c in cells):
             continue
         row = _row_dict(header, cells)
         wit = cell_str(row.get(type_col))
+        fields = _bound(row, wit)
         if wit == "Epic":
-            last_epic = {
-                "title": cell_str(row.get(bind["title"])),
-                "id": cell_str(row.get(bind["id"])),
-                "row": offset,
-            }
+            last_epic = {"title": fields["title"], "id": fields["id"], "row": offset}
             context_rows.append({"work_item_type": wit, "row": offset, **last_epic})
             continue
         if wit == feature_type:
-            last_feature = {
-                "title": cell_str(row.get(bind["title"])),
-                "id": cell_str(row.get(bind["id"])),
-                "row": offset,
-            }
+            last_feature = {"title": fields["title"], "id": fields["id"], "row": offset}
             context_rows.append({"work_item_type": wit, "row": offset, **last_feature})
             continue
         if wit != include_type:
@@ -135,12 +152,13 @@ def extract_stories(source: Path, source_rulebook: dict[str, Any], msd_rulebook:
         stories.append(
             {
                 "row": offset,
-                "id": cell_str(row.get(bind["id"])),
+                "id": fields["id"],
                 "work_item_type": wit,
-                "title": cell_str(row.get(bind["title"])),
-                "description": cell_str(row.get(bind["description"])),
-                "acceptance_criteria": cell_str(row.get(bind["acceptance_criteria"])),
-                "area_path": cell_str(row.get(bind["area_path"])),
+                "title": fields["title"],
+                "description": fields["description"],
+                "acceptance_criteria": fields["acceptance_criteria"],
+                "area_path": fields["area_path"],
+                "area_path_leaf": area_path_leaf(fields["area_path"]),
                 "nearest_feature_title": last_feature["title"],
                 "nearest_feature_id": last_feature["id"],
                 "nearest_epic_title": last_epic["title"],
@@ -166,6 +184,7 @@ def extract_stories(source: Path, source_rulebook: dict[str, Any], msd_rulebook:
             key = s["nearest_feature_title"] or s["area_path"] or s["title"]
         grouping_key.append(key)
         s["grouping_key"] = key
+        s["business_process"] = strip_numbering_prefix(msd_rulebook, key)
 
     return {
         "source": str(source),

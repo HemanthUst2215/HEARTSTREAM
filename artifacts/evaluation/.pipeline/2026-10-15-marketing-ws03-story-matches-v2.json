@@ -1,0 +1,128 @@
+{
+  "schema_version": "1.0",
+  "kind": "story-matches",
+  "owner": "story-matching-evaluator",
+  "confidence": "high",
+  "matches": [
+    {
+      "match_id": "M-001",
+      "manual_key": "manual-US-46",
+      "manual_title": "Create Strategic Customer and Account Segments",
+      "generated_keys": ["generated-US-17"],
+      "generated_titles": ["Create dynamic segments by vertical end-market"],
+      "match_type": "1:1",
+      "confidence": "medium",
+      "transcript_refs": [
+        {
+          "locator": "L177",
+          "excerpt": "Do a lot of segmentation around hospitals versus emergency medical services, versus kind of non healthcare vertical."
+        },
+        {
+          "locator": "L397",
+          "excerpt": "OK. We need to know if it's hospital, you know, ems fire military or aed channels, right?"
+        }
+      ]
+    }
+  ],
+  "unmatched_manual_keys": [
+    "manual-US-4",
+    "manual-US-5",
+    "manual-US-6",
+    "manual-US-7",
+    "manual-US-8",
+    "manual-US-9",
+    "manual-US-10",
+    "manual-US-11",
+    "manual-US-12",
+    "manual-US-13",
+    "manual-US-14",
+    "manual-US-17",
+    "manual-US-18",
+    "manual-US-19",
+    "manual-US-20",
+    "manual-US-21",
+    "manual-US-22",
+    "manual-US-23",
+    "manual-US-24",
+    "manual-US-25",
+    "manual-US-26",
+    "manual-US-27",
+    "manual-US-28",
+    "manual-US-29",
+    "manual-US-30",
+    "manual-US-32",
+    "manual-US-33",
+    "manual-US-34",
+    "manual-US-35",
+    "manual-US-36",
+    "manual-US-37",
+    "manual-US-38",
+    "manual-US-39",
+    "manual-US-41",
+    "manual-US-42",
+    "manual-US-43",
+    "manual-US-45",
+    "manual-US-47",
+    "manual-US-48",
+    "manual-US-49",
+    "manual-US-50",
+    "manual-US-51",
+    "manual-US-52"
+  ],
+  "unmatched_generated_keys": [
+    "generated-US-4",
+    "generated-US-5",
+    "generated-US-6",
+    "generated-US-7",
+    "generated-US-8",
+    "generated-US-9",
+    "generated-US-11",
+    "generated-US-12",
+    "generated-US-13",
+    "generated-US-15",
+    "generated-US-18",
+    "generated-US-19",
+    "generated-US-20"
+  ],
+  "metrics": [
+    {
+      "metric_id": "granularity",
+      "owner": "story-matching-evaluator",
+      "kind": "ratio",
+      "display": "93% (13/14)",
+      "score": 0.9286,
+      "numerator": 13,
+      "denominator": 14,
+      "evidence": [
+        {
+          "statement": "Packet structural.need_count is 1 for every generated User Story row (14/14).",
+          "source_path": "artifacts/evaluation/.pipeline/2026-10-15-marketing-ws03-evaluation-packet.json",
+          "source_locator": "generated_stories[*].structural.need_count",
+          "confidence": "explicit"
+        },
+        {
+          "statement": "Override: generated-US-5 stacks two ingest capabilities in one need (sales orders and digital engagement). Counted as a granularity miss.",
+          "source_path": "artifacts/evaluation/.pipeline/2026-10-15-marketing-ws03-evaluation-packet.json",
+          "source_locator": "generated_stories[generated-US-5].description",
+          "confidence": "derived"
+        },
+        {
+          "statement": "The remaining 13 generated rows each state one capability. M-001 is 1:1 and does not fragment a capability. generated-US-15 and generated-US-19 duplicate the same single capability under two Feature headers; duplication is not a stacked need, so both rows still pass granularity.",
+          "source_path": "artifacts/evaluation/.pipeline/2026-10-15-marketing-ws03-evaluation-packet.json",
+          "source_locator": "generated_stories[generated-US-15].description",
+          "confidence": "derived"
+        }
+      ]
+    }
+  ],
+  "open_items": [
+    {
+      "id": "OI-MATCH-001",
+      "statement": "generated-US-15 and generated-US-19 are identical (same title, description, and acceptance criteria) under Feature headers 38 and 60. They are the same transcript requirement (short-window vertical sales-trend detection; L403–L407), not two distinct capabilities. No manual User Story states that requirement, so both remain unmatched generated rows."
+    },
+    {
+      "id": "OI-MATCH-002",
+      "statement": "Jaccard candidate_pairs were not copied into matches (ASSUMPTION-USEVAL-003). Adjacent but different capabilities were left unmatched, including generated-US-4/5/9 versus stacked manual-US-29 internal ingest; generated-US-6 versus manual-US-8/9 unification; generated-US-20 versus broader manual-US-47 partner/distributor segments; generated-US-11 account-level profile view versus manual-US-29 AC5 only."
+    }
+  ]
+}

@@ -28,6 +28,7 @@ if str(_SCRIPTS) not in sys.path:
 
 from ado_user_story_csv_layout import (  # noqa: E402
     acceptance_criteria_cell,
+    apply_generation_defaults,
     blank_row,
     headers_from_rulebook,
     issue_description_cell,
@@ -61,6 +62,11 @@ def cmd_write(args: argparse.Namespace) -> int:
         for k, v in item.items():
             if k in base:
                 base[k] = "" if v is None else str(v)
+        if "Title" in item and "Title" not in headers:
+            base["Title"] = "" if item.get("Title") is None else str(item.get("Title"))
+        apply_generation_defaults(rulebook, base)
+        if "Title" not in headers:
+            base.pop("Title", None)
         rows.append(base)
     out = Path(args.out)
     write_csv(out, headers, rows)

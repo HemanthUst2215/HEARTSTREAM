@@ -14,7 +14,7 @@ Catalog lock: this is a mode of test-agent, not a new primary.
 - Must: Read the transcript and list requirements with a locator before any case is written.
 - Must: Match each requirement to `artifacts/work-items/feature.json`. Keep a Feature only when the score meets `work_item_mapping.strong_threshold`, beats the next Feature by `winner_margin`, and `parent.workItemId` exists in `artifacts/work-items/epic.json`.
 - Must: Write test cases only for those matched Features. Steps and expected results come from the transcript locator or that Feature's title and `description.plainText`.
-- Must: Write Epic rows, then Feature rows, then Test Case rows. Epic and Feature `ID`, Title, Description, and Area Path are copied from JSON. Test Case `ID` stays blank.
+- Must: Write Epic rows, then Feature rows, then Test Case rows. Epic and Feature `ID`, title (Title 1 / Title 2), Description, and Area Path are copied from JSON. Test Case title in Title 3; Test Case `ID` stays blank.
 - Must: Put traceability in the Test Case Description using the user-story rulebook `test_case.description_format`. Expected results go in Acceptance Criteria as ASCII `- ` bullets.
 - Must: Persist `artifacts/intake/<date>-test-case-rows.json`, then run `python scripts/ado_user_story_csv.py write` and `python scripts/validate-user-story-csv.py`. Validator exit 0 is required.
 - Must NOT: Invent Epic or Feature titles or IDs. Must NOT: Add or remove CSV columns. Must NOT: Write a test case for an unmatched requirement. Must NOT: Hand-author CSV text.
@@ -22,7 +22,8 @@ Catalog lock: this is a mode of test-agent, not a new primary.
 ### Mode `from-user-story-excel`
 - Must: Load `docs/intake/msd-test-case-rulebook.yaml` every run. Never read `E2E test execution plan.xlsx` or any bootstrap `setup_xlsx` when the rulebook exists.
 - Must: Run `python scripts/msd_test_case_xlsx.py extract-stories` on the User Story Excel, then `msd-test-case-extractor`, then persist case JSON and `python scripts/msd_test_case_xlsx.py write`, then `python scripts/validate-msd-test-case-xlsx.py`. Validator exit 0 is required.
-- Must: Group stories by nearest Feature title, else Area Path. One positive case per group; one exception/control case only when the stories evidence a constraint, negative, or boundary. Application / ISV tokens only when cited.
+- Must: After extract-stories, optionally run `scripts/enrich-msd-source-stories.py` when operator supplies consultant excel, clarification files, workshop KB, or transcript ref (intake-safety on untrusted paths first).
+- Must: Spawn **msd-test-case-business-process-author** then **msd-test-case-extractor** then **msd-test-case-precondition-aligner**. Group by Feature / Area Path. Positive E2E cases meet `business_process_e2e.min_steps_positive`; up to rulebook `max_cases` positive paths per group when evidenced. One exception/control case only when stories evidence constraint/negative/boundary. Application / ISV tokens only when cited.
 - Must NOT: Invent process names, Dynamics modules, ISVs, SKUs, or failure paths. Must NOT: Add sheets or columns. Must NOT: Hand-author xlsx. Must NOT: Copy bootstrap cell content. Must NOT: Fill Actual Result, Defect ID, or non-default Status.
 
 ### Mode `rulebook-bootstrap`
@@ -52,8 +53,11 @@ Plan → Act → Validate → Refine (max 3). Iteration 1 validator PASS → sto
 
 ### `from-user-story-excel`
 1. extract-stories (mechanical).
-2. msd-test-case-extractor (cases + steps from cited AC).
-3. msd-test-case-xlsx-writer + compliance validator.
+2. optional enrich-msd-source-stories (consultant / clarifications / KB / transcript ref).
+3. msd-test-case-business-process-author (E2E scenario plan per group).
+4. msd-test-case-extractor (cases + steps from cited AC and supplements).
+5. msd-test-case-precondition-aligner (preconditions vs Step 1).
+6. msd-test-case-xlsx-writer + compliance validator (layout + precondition coherence).
 
 ## Check gates
 Mode `from-transcript`: user-story rulebook `column_order`; `validate-user-story-csv.py` PASS; every Test Case cites transcript locator + Epic/Feature IDs in the file.
@@ -81,7 +85,7 @@ Write `artifacts/audit/<YYYY-MM-DD>-test-agent-<task>.md`. Call harness-updater 
 ## Delegates
 `from-transcript`: test-case-generator.
 
-`from-user-story-excel`: user-story-excel-analyzer, msd-test-case-extractor, msd-test-case-xlsx-writer, msd-test-case-compliance-validator.
+`from-user-story-excel`: user-story-excel-analyzer, msd-test-case-business-process-author, msd-test-case-extractor, msd-test-case-precondition-aligner, msd-test-case-xlsx-writer, msd-test-case-compliance-validator.
 
 `rulebook-bootstrap`: msd-test-case-rulebook-author.
 

@@ -12,59 +12,115 @@ provenance:
   behavior_id: RB-MSDTC-001
   statement: >
     Workbook layout, sheet taxonomy, column roles, ID patterns, case model, and
-    generation logic for Microsoft Dynamics E2E test cases produced from a
-    User Story Excel that itself follows the user-story CSV rulebook.
+    generation logic for Microsoft Dynamics E2E test cases produced from any
+    User Story Excel whose header satisfies input.required_bind_keys (canonical
+    names or aliases). Domain content always comes from that run's source file.
   source_path: "factory-setup"
   source_locator: "E2E test execution plan.xlsx (one-time bootstrap; not a runtime input)"
   confidence: explicit
 
 # ---------------------------------------------------------------------------
-# Input: generated (or rulebook-shaped) User Story Excel
+# Input: any equivalent User Story Excel (not one workshop's column layout)
 # ---------------------------------------------------------------------------
 input:
   source_rulebook: docs/intake/user-story-csv-rulebook.yaml
   accepted_suffixes: [".xlsx", ".csv"]
   header_match: >
-    Locate the first row whose cells equal source_rulebook csv.column_order
-    (order-sensitive). That row is the header; rows below are data.
-  row_filter:
-    type_column: Work Item Type
-    include_type_from_source: transcript_output_default
-  grouping:
-    statement: Identify the Feature first, then the stories in that group.
-    keys_in_order:
-      - mapped_feature_id
-      - nearest_preceding_feature_title
-      - area_path
-      - unmatched_singleton
-    mapped_feature_id:
-      rule: >
-        When a User Story ID matches a Feature row ID in the same workbook
-        (ADO mapping convention), group by that Feature title. This wins over
-        nearest-preceding Feature when the workbook lists all Features before
-        User Stories.
-    nearest_preceding_feature:
-      type_column: Work Item Type
-      type_value: Feature
-    area_path_column: Area Path
-    scenario_id: sequential_integers_from_1
-    business_process_name: >
-      Grouping key with numbering prefixes stripped (same strip rule as user-story
-      title_formats.feature / epic). Do not invent a process name the stories do not support.
+    Locate the first row that contains every required_bind_keys field under its
+    canonical field_bind name or any field_bind_aliases name. Extra columns are
+    ignored. Source column order does not need to equal source_rulebook
+    csv.column_order. A full column_order match is sufficient but not required.
+  required_bind_keys:
+    - id
+    - work_item_type
+    - title
+  optional_bind_keys:
+    - description
+    - acceptance_criteria
+    - area_path
+  supplemental_sources:
+    statement: >
+      When stakeholders have clarified workshop open items or functional consultants
+      have authored ADO stories, attach those sources before case extraction. Primary
+      User Story Excel remains required; supplements enrich — they do not replace it.
+    optional_paths:
+      - consultant_story_excel
+      - clarification_paths
+      - workshop_prerequisite_kb_json
+      - transcript_path
+    enrich_script: scripts/enrich-msd-source-stories.py
+    intake_safety: >
+      Scan consultant_story_excel and clarification_paths with intake-safety before enrich.
+    traceability: >
+      Extraction notes must list which cases cite consultant rows, clarification
+      files, or transcript locators versus AI-factory story rows only.
   field_bind:
-    # Maps source rulebook columns → extractor fields. Scripts read these keys, not literals.
+    # Canonical names. Scripts bind through aliases; they must not hardcode workshop headers.
     id: ID
     work_item_type: Work Item Type
     title: Title
     description: Description
     acceptance_criteria: Acceptance Criteria
     area_path: Area Path
+  field_bind_aliases:
+    id: [ID, Id]
+    work_item_type: [Work Item Type]
+    title: [Title, Title 3, Title 2, Title 1]
+    description: [Description]
+    acceptance_criteria: [Acceptance Criteria]
+    area_path: [Area Path]
+  title_resolution:
+    rule: >
+      First non-empty column in the type-specific list wins. Covers both a single
+      Title column (transcript Excel) and ADO-style Title 1/2/3 splits.
+    by_work_item_type:
+      User Story: [Title 3, Title, Title 2, Title 1]
+      Feature: [Title 2, Title, Title 1, Title 3]
+      Epic: [Title 1, Title, Title 2, Title 3]
+      Workshop: [Title 1, Title, Title 2, Title 3]
+    default: [Title, Title 3, Title 2, Title 1]
+  cell_normalize:
+    html_unescape: true
+  row_filter:
+    type_column: Work Item Type
+    include_type_from_source: transcript_output_default
+  grouping:
+    statement: Identify the Feature first, then the stories in that group.
+    keys_in_order:
+      - nearest_preceding_feature_title
+      - mapped_feature_id
+      - area_path
+      - unmatched_singleton
+    nearest_preceding_feature:
+      type_column: Work Item Type
+      type_value: Feature
+      rule: >
+        Default for public Excel from `/generate-user-stories-from-transcript`:
+        User Story ID is blank; each story sits immediately under its Feature row.
+        Walk workbook order and use the nearest preceding Feature (and Epic) for
+        grouping and traceability.
+    mapped_feature_id:
+      rule: >
+        Legacy fallback only: when a User Story ID equals a Feature row ID in the
+        same workbook, group by that Feature title. Prefer nearest_preceding_feature
+        when User Story ID is blank.
+    area_path_column: Area Path
+    scenario_id: sequential_integers_from_1
+    numbering_prefix_patterns:
+      - "^PR-\\d+\\s*[–—\\-]+\\s*"
+      - "^#\\d+:\\s*"
+      - "^[\\d.#]+(?:\\.\\d+)*\\s+"
+    business_process_name: >
+      Strip numbering_prefix_patterns from the grouping key (catalog IDs such as
+      PR-001, "1. Name", "12. Name", "#3:"). If stripping leaves nothing, keep
+      the original key. Do not invent a process name the stories do not support.
   story_parse:
     description_pattern_ref: user_story.description_format.pattern
     ac_bullet_prefix_ref: acceptance_criteria.format
     role_from_description: >
       Capture the <role> in "As a <role>, I need to <need>, so that <benefit>."
       Use that role as the default step owner when a step does not name another actor.
+      If the description is not in that shape, fall back per generation.ownership.
 
 # ---------------------------------------------------------------------------
 # Workbook (public Excel)
@@ -112,11 +168,20 @@ workbook:
       data_start_row: 2
       populate: derived_from_register
   styling:
-    reference_workbook: "2026-10-09-msd-e2e-test-cases-styled.xlsx"
+    # Static presentation contract only (fonts, colors, tables, row heights, column widths).
+    # May be hardcoded here and/or in scripts/msd_test_case_xlsx_layout.py fallbacks.
+    # Must NOT embed business data, sample steps, ISV lists, or execution-plan row content.
+    # Styling lives here and in layout-module fallbacks. Do not point at a dated xlsx.
     font_family: "Aptos Narrow"
     body_font_size: 12
     title_font_size: 18
     title_row_height: 24
+    metrics_header_row_height: 17
+    metrics_value_font_size: 14
+    metrics_value_bold: true
+    title_band_alignment:
+      wrap_text: false
+      vertical: center
     colors:
       title_band: "16324F"
       table_header: "2F75B5"
@@ -127,6 +192,17 @@ workbook:
     sheets:
       coverage:
         subtitle_font_size: 12
+        table_header_row_height: 17
+        data_row_height: 34
+        excel_table:
+          enabled: true
+          name: TestCoverage
+          display_name: TestCoverage
+          style: TableStyleMedium2
+          show_row_stripes: true
+          show_first_column: false
+          show_last_column: false
+          show_column_stripes: false
         wrap_roles:
           - primary_systems
           - source_flow
@@ -147,6 +223,19 @@ workbook:
           "Coverage Focus": 38.33203125
       register:
         subtitle_font_size: 10
+        auto_row_height:
+          min: 51
+          max: 119
+          line_height: 17
+        excel_table:
+          enabled: true
+          name: E2ETestCases
+          display_name: E2ETestCases
+          style: TableStyleMedium2
+          show_row_stripes: true
+          show_first_column: false
+          show_last_column: false
+          show_column_stripes: false
         table_header:
           mode: branded
           vertical: center
@@ -203,7 +292,7 @@ columns:
       - Test Type
       - Priority
       - Preconditions
-      - Step #
+      - "Step #"
       - Detailed Test Step
       - Step Owner
       - Application / ISV
@@ -221,7 +310,7 @@ columns:
       test_type: Test Type
       priority: Priority
       preconditions: Preconditions
-      step_number: Step #
+      step_number: "Step #"
       detailed_test_step: Detailed Test Step
       step_owner: Step Owner
       application_isv: Application / ISV
@@ -343,11 +432,20 @@ execution_columns:
 # ---------------------------------------------------------------------------
 generation:
   case_model:
-    statement: One positive case and one key exception/control case per grouped process.
+    statement: >
+      Per grouped business process: at least one positive E2E case that spans
+      trigger → cross-role/system handoffs → business outcome; plus one key
+      exception/control case when evidenced. Prefer business-process scenarios
+      over single-function checks.
     per_group:
       - polarity: positive
         test_type_key: positive_default
         source: happy_path_ac_and_description
+        min_cases: 1
+        max_cases: 3
+        extra_positive_when: >
+          Distinct end-to-end paths in grouped stories (different actors,
+          systems, or outcomes) each deserve a positive case up to max_cases.
       - polarity: exception
         test_type_key: exception_default
         source: negative_boundary_or_constraint_ac
@@ -355,11 +453,43 @@ generation:
       If the group has no constraint, negative, or boundary AC and the description
       states no control, do not invent a failure path. Emit the positive case,
       list the group under unmatched_exception, register Open DQ.
+  business_process_e2e:
+    statement: >
+      Scenarios describe how the business executes the process end-to-end across
+      roles and applications (including named ISVs), not isolated screen validations.
+    min_steps_positive: 3
+    step_shape:
+      - trigger: Business event or user action that starts the process (cited).
+      - orchestration: Handoffs across roles/systems mid-flow (cited).
+      - outcome: Observable business result and controls (reconciliation, approval, posting).
+    swimlane: >
+      Vary Step Owner across cited actors; composite Application / ISV when the
+      flow crosses apps named in stories or clarifications.
+    decompose_ac: >
+      Split each happy-path AC bullet into at least one register step when it
+      names a distinct action or verification; merge only when bullets are redundant.
+    anti_functional_only: >
+      Reject case designs whose steps only repeat one UI field check with no
+      cross-step business narrative; register Open DQ if stories lack E2E evidence.
+  precondition_step_coherence:
+    statement: >
+      Preconditions list every entity, status, and integration state Step 1
+      assumes. Setup that creates master data belongs in Preconditions or a
+      dedicated setup step — not as an unstated assumption in Step 1.
+    rules:
+      - If Step 1 updates, approves, or changes status on an entity, Preconditions
+        must state that entity exists in the required state (e.g. active contract,
+        partner onboarded in cited ISV).
+      - Do not start Step 1 with approval/posting actions unless Preconditions
+        cite prior workflow state or an earlier step creates it.
+      - Align Givens from user-story AC with Preconditions before numbering steps.
+    aligner_subagent: msd-test-case-precondition-aligner
   ownership:
     statement: Swimlane role; application ownership aligned to the ISV lookup sheet.
     step_owner_source:
       - actor named in the step or AC
-      - else role parsed from the user-story description
+      - else role parsed from the user-story description (As a <role>)
+      - else last non-empty Area Path segment from the source row
       - else blank (do not invent an organization name)
   steps:
     min_per_case: 1
@@ -377,7 +507,9 @@ generation:
       Positive: the happy-path capability. Exception: the control or failure condition.
     preconditions: >
       One or more setup facts that must be true before Step 1, cited from the
-      story description or AC Givens. Do not invent environment state.
+      story description, AC Givens, consultant stories, or dated clarification
+      notes. Must cover every entity/status Step 1 references. Do not invent
+      environment state.
   coverage_row:
     positive_case_id: Test Case ID of the group's positive case (blank if none)
     exception_case_id: Test Case ID of the group's exception case (blank if none)
@@ -393,12 +525,19 @@ generation:
 
 application_isv:
   platform: Microsoft Dynamics
+  platform_aliases:
+    - Microsoft Dynamics
+    - Dynamics 365
+    - D365
+    - Dynamics
   composite_separator: " / "
   rule: >
-    When the user story (Area Path, Title, Description, or AC) cites a Microsoft
-    Dynamics app or an integration, emit that token in Application / ISV.
+    Emit only tokens the source story Title, Description, AC, Area Path, or
+    nearest Feature title cites. If a platform_aliases token is cited, emit
+    `platform`. Named integrations emit as written in the source.
     Composite steps that span apps join tokens with composite_separator.
-    Do not emit a Dynamics module or ISV the source stories do not support.
+    If the group cites no app and no alias, emit `platform` and record
+    ASSUMPTION-MSDTC-APP in extraction notes. Do not copy bootstrap product catalogs.
 
 metrics:
   coverage_block:
@@ -470,6 +609,10 @@ formatting_standards:
   - RFC4180 if a working CSV of the register is written; public deliverable is xlsx.
 
 validation:
+  precondition_coherence:
+    enabled: true
+    severity: critical
+    module: scripts/msd_test_case_coherence.py
   script: scripts/validate-msd-test-case-xlsx.py
   writer_script: scripts/msd_test_case_xlsx.py
   layout_module: scripts/msd_test_case_xlsx_layout.py

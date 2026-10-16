@@ -1,0 +1,19 @@
+﻿UserStoryID,Title,IndependentScore,NegotiableScore,ValuableScore,EstimableScore,SmallScore,TestableScore,OverallScore,InvestStatus,Recommendations
+US-02,Sync authorized partner to D365 CE after ZINFI onboarding,9,7,9,5,8,9,7.8,Pass,Estimable: Concrete scope signals help estimation.
+US-03,Link ZINFI and CE partner account identifiers,9,7,9,5,8,4,7.0,Needs Refinement,Estimable: Concrete scope signals help estimation.; Testable: Add observable Given/When/Then criteria.
+US-04,Restrict partner visibility by legal entity,9,8,9,4,8,4,7.0,Needs Refinement,Estimable: Concrete scope signals help estimation.; Testable: Add observable Given/When/Then criteria.
+US-05,Expose synced partners to authorized CRM sales users,9,7,9,4,8,4,6.8,Needs Refinement,Estimable: Concrete scope signals help estimation.; Testable: Add observable Given/When/Then criteria.
+US-06,Capture partner training status in CE from ZINFI,9,7,9,5,8,4,7.0,Needs Refinement,Estimable: Concrete scope signals help estimation.; Testable: Add observable Given/When/Then criteria.
+US-07,Distinguish deal registration from standard opportunity,9,7,9,4,8,4,6.8,Needs Refinement,Estimable: Concrete scope signals help estimation.; Testable: Add observable Given/When/Then criteria.
+US-08,Check existing deal registration for end customer,9,8,9,4,8,9,7.8,Needs Refinement,Estimable: Concrete scope signals help estimation.
+US-09,Apply reseller contract pricing to quotations,9,7,9,4,8,4,6.8,Needs Refinement,Estimable: Concrete scope signals help estimation.; Testable: Add observable Given/When/Then criteria.
+US-10,Route non-contract quotation discounts through approval tiers,9,7,9,4,8,9,7.7,Needs Refinement,Estimable: Concrete scope signals help estimation.
+US-11,Notify approvers of pending quotation approvals,9,7,9,4,8,9,7.7,Needs Refinement,Estimable: Concrete scope signals help estimation.
+US-12,Skip re-approval for delivery date only changes,9,7,9,4,8,4,6.8,Needs Refinement,Estimable: Concrete scope signals help estimation.; Testable: Add observable Given/When/Then criteria.
+US-13,Re-approve quotation after pricing or configuration change,9,8,9,4,8,4,7.0,Needs Refinement,Estimable: Concrete scope signals help estimation.; Testable: Add observable Given/When/Then criteria.
+US-14,Synchronize fulfillment status from ERP to CRM and ZINFI,9,7,9,4,8,4,6.8,Needs Refinement,Estimable: Concrete scope signals help estimation.; Testable: Add observable Given/When/Then criteria.
+US-15,Control updates to install base device location,9,7,9,5,8,4,7.0,Needs Refinement,Estimable: Concrete scope signals help estimation.; Testable: Add observable Given/When/Then criteria.
+US-16,Raise partner support requests from ZINFI to CRM,9,7,9,5,8,4,7.0,Needs Refinement,Estimable: Concrete scope signals help estimation.; Testable: Add observable Given/When/Then criteria.
+US-17,Support direct and indirect sales quotation paths,9,7,9,4,8,9,7.7,Needs Refinement,Estimable: Concrete scope signals help estimation.
+US-18,Create CE customer record for record-to-report flow,9,7,9,5,8,4,7.0,Needs Refinement,Estimable: Concrete scope signals help estimation.; Testable: Add observable Given/When/Then criteria.
+US-19,Track open contract examples for fit-gap analysis,9,7,9,4,8,9,7.7,Needs Refinement,Estimable: Concrete scope signals help estimation.

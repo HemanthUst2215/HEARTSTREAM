@@ -1,0 +1,240 @@
+{
+  "schema_version": "1.0",
+  "kind": "acceptance-criteria",
+  "owner": "acceptance-criteria-evaluator",
+  "confidence": "high",
+  "per_story_quality": [
+    {
+      "story_key": "generated-US-4",
+      "score": 33.33,
+      "quality_bullets": 1,
+      "bullet_total": 3,
+      "notes": "Bullet 1 (CRM accounts/contacts as CI sources) is one observable, transcript-testable outcome (L219). Bullets 2–3 unsupported (org-credential data-source connection; documented refresh expectations)."
+    },
+    {
+      "story_key": "generated-US-5",
+      "score": 66.67,
+      "quality_bullets": 2,
+      "bullet_total": 3,
+      "notes": "Bullets 1–2 testable (sales orders L255; engagement sources L219). Bullet 3 unsupported (marketers verify profile metrics after refresh)."
+    },
+    {
+      "story_key": "generated-US-6",
+      "score": 66.67,
+      "quality_bullets": 2,
+      "bullet_total": 3,
+      "notes": "Bullets 1 and 3 testable (multi-field match keys; 360 unified profile, L219). Bullet 2 unsupported (duplicates surfaced under marketing data governance)."
+    },
+    {
+      "story_key": "generated-US-7",
+      "score": 33.33,
+      "quality_bullets": 1,
+      "bullet_total": 3,
+      "notes": "Bullet 1 testable (ship-to on ingested sales orders usable in segments, L231). Bullet 2 treats Houston city demo as ship-to. Bullet 3 invents gap documentation."
+    },
+    {
+      "story_key": "generated-US-8",
+      "score": 66.67,
+      "quality_bullets": 2,
+      "bullet_total": 3,
+      "notes": "Bullets 1–2 testable (Excel/manual tracing update; data forms Customer Insights, L217/L191). Bullet 3 unsupported (process documents manual vs automated timelines)."
+    },
+    {
+      "story_key": "generated-US-9",
+      "score": 66.67,
+      "quality_bullets": 2,
+      "bullet_total": 3,
+      "notes": "Bullets 1–2 testable (distributor portal sold-to/vertical; tagged to distributor, L417/L217). Bullet 3 unsupported (agreed refresh interval)."
+    },
+    {
+      "story_key": "generated-US-11",
+      "score": 100.0,
+      "quality_bullets": 3,
+      "bullet_total": 3,
+      "notes": "All three ASCII '- ' bullets are single observable outcomes testable from L273, L277, and L179."
+    },
+    {
+      "story_key": "generated-US-12",
+      "score": 0.0,
+      "quality_bullets": 0,
+      "bullet_total": 3,
+      "notes": "Worldwide access need is in the transcript (L305), but none of the three AC bullets is transcript-testable (role scoping, sales-only restriction overrides, documented regional access list)."
+    },
+    {
+      "story_key": "generated-US-13",
+      "score": 66.67,
+      "quality_bullets": 2,
+      "bullet_total": 3,
+      "notes": "Bullets 1–2 testable (purchase history by part; equipment with missing recent consumables, L453/L455). Bullet 3 unsupported (dependency must be documented)."
+    },
+    {
+      "story_key": "generated-US-15",
+      "score": 100.0,
+      "quality_bullets": 3,
+      "bullet_total": 3,
+      "notes": "All three bullets are single observable outcomes testable from L403, L397, and L407."
+    },
+    {
+      "story_key": "generated-US-17",
+      "score": 100.0,
+      "quality_bullets": 3,
+      "bullet_total": 3,
+      "notes": "All three bullets are single observable outcomes testable from L179, L397, and L219 (dynamic segment refresh)."
+    },
+    {
+      "story_key": "generated-US-18",
+      "score": 66.67,
+      "quality_bullets": 2,
+      "bullet_total": 3,
+      "notes": "Bullets 1–2 testable (capture vertical at E-store order; category updates data sources, L221/L223). Bullet 3 unsupported (limitation recorded as open design input)."
+    },
+    {
+      "story_key": "generated-US-19",
+      "score": 100.0,
+      "quality_bullets": 3,
+      "bullet_total": 3,
+      "notes": "Same AC as generated-US-15; all three bullets remain transcript-testable (L403, L397, L407)."
+    },
+    {
+      "story_key": "generated-US-20",
+      "score": 66.67,
+      "quality_bullets": 2,
+      "bullet_total": 3,
+      "notes": "Bullets 1–2 testable (per-vertical partner segments; intersection, L231). Bullet 3 unsupported (exportable for campaign audience selection)."
+    }
+  ],
+  "negative_boundary_rows": {
+    "denominator_keys": [
+      "generated-US-7",
+      "generated-US-13",
+      "generated-US-15",
+      "generated-US-18",
+      "generated-US-19"
+    ],
+    "numerator_keys": [
+      "generated-US-7",
+      "generated-US-13",
+      "generated-US-15",
+      "generated-US-19"
+    ],
+    "missed_keys": [
+      "generated-US-18"
+    ]
+  },
+  "metrics": [
+    {
+      "metric_id": "acceptance_criteria_count",
+      "name": "Acceptance Criteria Count",
+      "owner": "acceptance-criteria-evaluator",
+      "kind": "comparison",
+      "display": "Manual mean 1.02 · Generated mean 3.0",
+      "score": null,
+      "manual_mean": 1.02,
+      "generated_mean": 3.0,
+      "manual_total": 45,
+      "generated_total": 42,
+      "manual_story_count": 44,
+      "generated_story_count": 14,
+      "evidence": [
+        {
+          "statement": "Verified packet structural_summary: 44 manual User Story rows, ac_bullet_total 45, mean 1.02. A bullet is one non-empty Acceptance Criteria cell line, not an inner HTML numbered item. Forty-three rows have ac_count 1 (HTML lists stored as one line). manual-US-25 is the only split cell (ac_count 2). Extra inner <div> numbers were not counted.",
+          "source_path": "artifacts/evaluation/.pipeline/2026-10-15-marketing-ws03-evaluation-packet.json",
+          "source_locator": "structural_summary.manual.ac_bullet_mean",
+          "confidence": "explicit"
+        },
+        {
+          "statement": "Verified packet structural_summary: 14 generated User Story rows, ac_bullet_total 42, mean 3.0. Each generated row has three non-empty ASCII '- ' lines (structural.ac_count 3 and ac_hyphen_format_ok true on generated-US-4 through generated-US-20).",
+          "source_path": "artifacts/evaluation/.pipeline/2026-10-15-marketing-ws03-evaluation-packet.json",
+          "source_locator": "structural_summary.generated.ac_bullet_mean",
+          "confidence": "explicit"
+        },
+        {
+          "statement": "Rulebook: each Acceptance Criteria line starts with ASCII hyphen-space; one observable outcome per line. Count metric reports means and totals only; it has no 0–100 score.",
+          "source_path": "docs/intake/user-story-csv-rulebook.yaml",
+          "source_locator": "acceptance_criteria.format",
+          "confidence": "explicit"
+        }
+      ]
+    },
+    {
+      "metric_id": "acceptance_criteria_quality",
+      "name": "Acceptance Criteria Quality",
+      "owner": "acceptance-criteria-evaluator",
+      "kind": "score",
+      "display": "66.67",
+      "score": 66.67,
+      "numerator": 28,
+      "denominator": 42,
+      "evidence": [
+        {
+          "statement": "Mean of 14 generated per-story scores is 66.67. Every generated cell uses ASCII '- ' (rulebook). A bullet scores only when it is one observable outcome and testable from the transcript. Implementation-detail wording did not raise scores. Hallucinated AC bullets score 0. Quality bullets 28 of 42.",
+          "source_path": "artifacts/evaluation/.pipeline/2026-10-15-marketing-ws03-hallucination.json",
+          "source_locator": "stories[*].claims[field=acceptance_criteria]",
+          "confidence": "derived"
+        },
+        {
+          "statement": "Per-story scores: generated-US-4 33.33; generated-US-5 66.67; generated-US-6 66.67; generated-US-7 33.33; generated-US-8 66.67; generated-US-9 66.67; generated-US-11 100; generated-US-12 0; generated-US-13 66.67; generated-US-15 100; generated-US-17 100; generated-US-18 66.67; generated-US-19 100; generated-US-20 66.67.",
+          "source_path": "artifacts/evaluation/.pipeline/2026-10-15-marketing-ws03-evaluation-packet.json",
+          "source_locator": "generated_stories[*].acceptance_criteria",
+          "confidence": "derived"
+        },
+        {
+          "statement": "Full-score rows generated-US-11, generated-US-15, generated-US-17, and generated-US-19: hallucination marks all AC claims supported; each bullet is one observable outcome (account drill-down L273/L277; short-window vertical trend L403/L397/L407; dynamic vertical segments L179/L397/L219).",
+          "source_path": "artifacts/evaluation/.pipeline/2026-10-15-marketing-ws03-transcript.txt",
+          "source_locator": "L273",
+          "confidence": "explicit"
+        },
+        {
+          "statement": "generated-US-12 scores 0: L305 states product marketing needs a worldwide picture, but all three AC bullets invent role/audience scoping, sales-only restriction overrides, and a documented US/Canada/LATAM/Europe/Asia access approach.",
+          "source_path": "artifacts/evaluation/.pipeline/2026-10-15-marketing-ws03-transcript.txt",
+          "source_locator": "L305",
+          "confidence": "explicit"
+        }
+      ]
+    },
+    {
+      "metric_id": "negative_boundary_coverage",
+      "name": "Negative and Boundary Coverage",
+      "owner": "acceptance-criteria-evaluator",
+      "kind": "ratio",
+      "display": "80% (4/5)",
+      "score": 0.8,
+      "numerator": 4,
+      "denominator": 5,
+      "na": false,
+      "evidence": [
+        {
+          "statement": "Denominator is generated rows whose matched transcript span states a negative or boundary for that requirement (5 rows), not packet negative_boundary_signal_lines. Packet hints on generated-US-4 (without separate logins), generated-US-12 (do not block), and generated-US-17 (at least priority verticals) were not used as the denominator. Lexical 'not' in AC was not treated as proof the transcript required a negative test.",
+          "source_path": "artifacts/evaluation/.pipeline/2026-10-15-marketing-ws03-evaluation-packet.json",
+          "source_locator": "generated_stories[*].structural.negative_boundary_signal_lines",
+          "confidence": "derived"
+        },
+        {
+          "statement": "Denominator rows: generated-US-7 (L231 ship-to not currently an attribute; usable when sales orders are ingested); generated-US-13 (L453 accounts with equipment but no pads for three years); generated-US-15 and generated-US-19 (L397 two-to-six-month tracing lag vs L403 week-or-two-week trend window); generated-US-18 (L223 not all order nuances will be captured).",
+          "source_path": "artifacts/evaluation/.pipeline/2026-10-15-marketing-ws03-transcript.txt",
+          "source_locator": "L231",
+          "confidence": "explicit"
+        },
+        {
+          "statement": "Numerator 4/5: generated-US-7 AC includes ship-to as a segment attribute when order data is ingested. generated-US-13 AC includes filtering accounts with equipment history but missing recent consumable purchases. generated-US-15 and generated-US-19 AC include a trend signal without waiting six months for tracing consolidation.",
+          "source_path": "artifacts/evaluation/.pipeline/2026-10-15-marketing-ws03-evaluation-packet.json",
+          "source_locator": "generated_stories[generated-US-7].acceptance_criteria",
+          "confidence": "derived"
+        },
+        {
+          "statement": "Miss: generated-US-18. L223 states the limitation that not all order nuances will be captured. The AC records that limitation as open design input, which the transcript does not require, so the stated boundary is not included as a testable outcome.",
+          "source_path": "artifacts/evaluation/.pipeline/2026-10-15-marketing-ws03-transcript.txt",
+          "source_locator": "L223",
+          "confidence": "explicit"
+        }
+      ]
+    }
+  ],
+  "open_items": [
+    {
+      "id": "DQ-AC-001",
+      "statement": "generated-US-18 is in the negative/boundary denominator because L223 states capture limitations, but coverage was not awarded: the AC invents a documentation outcome instead of an observable incomplete-capture result.",
+      "owner": "user-story-evaluation-agent"
+    }
+  ]
+}

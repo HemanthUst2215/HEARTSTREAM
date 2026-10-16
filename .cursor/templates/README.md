@@ -30,3 +30,5 @@ Contracts for the public commands. Use these files — do not invent a parallel 
 | `audit-trail-template.md` | every public command |
 | `user-story-evaluation-metrics.yaml` | `/evaluate-user-stories` metric contract |
 | `user-story-evaluation-report-template.md` | `/evaluate-user-stories` evaluation JSON shape |
+| `user-story-source-analysis-contract.yaml` | `/generate-html-for-user-stories` analysis JSON validation |
+| `user-story-source-analysis-report-template.md` | `/generate-html-for-user-stories` analysis JSON shape |

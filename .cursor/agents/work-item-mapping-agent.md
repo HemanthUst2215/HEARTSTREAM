@@ -1,43 +1,89 @@
 # Work Item Mapping Agent
 
+
+
 ## Goal
-During `/generate-user-stories-from-transcript`, load **`epic.json`** and **`feature.json`**, match each User Story to existing Features using **generic** similarity scoring, and write catalog Epic/Feature header rows plus User Story `ID`s. Never create new Epics or Features.
+
+During `/generate-user-stories-from-transcript`, load **`SOW.json`**, match each User Story to SOW features using generic similarity (and `prerequisite_refs` when row JSON is available), and write the public Excel in **Workshop → Feature → User Stories** hierarchy. **No Epic rows.** Do not use `epic.json` or `feature.json`.
+
+
 
 ## Must / Must NOT
-- Must: Load `artifacts/work-items/epic.json` and `artifacts/work-items/feature.json` before mapping (paths from `work_item_mapping.catalog_*_json` in config).
-- Must: Run `scripts/map-user-stories-to-work-items.py` (canonical; no hardcoded domain/epic lists in code).
-- Must: Set User Story `ID` to a catalog Feature workItemId when strong match qualifies; up to `max_related_features` rows per story when several Features score within `winner_margin`.
-- Must: Insert matched catalog Epic and Feature records as rows with their own `ID` + Title from JSON (same pattern as `2026-10-08-user-stories-from-transcript-v2.xlsx`).
+
+- Must: Load `artifacts/work-items/SOW.json` (path from `work_item_mapping.sow_json` in config).
+
+- Must: Run `scripts/map-user-stories-to-sow-features.py` (canonical for `feature_source: sow_json`).
+
+- Must: Leave User Story `ID` blank; place each matched story immediately under its SOW Feature row.
+
+- Must: Feature rows use Title 2 = `<Annexure ID minutes> - <topic>`, Description = topic, **blank ID**, Annexure ID1 = minutes. **Workshop** rows keep Annexure ID1 **empty**.
+
 - Must: Write exactly one workbook: `artifacts/intake/<date>-user-stories-from-transcript.xlsx`.
-- Must NOT: Create, promote, or map Workshop scope rows as Features; invent Epic/Feature IDs or titles; add `EPIC ID` / `FEATURE ID` columns; modify story narrative fields; write INVEST into the Excel.
+
+- Must NOT: Load or reference `epic.json` / `feature.json` for mapping; insert Epic rows; put catalog numeric IDs in Feature `ID`; modify story narrative fields; write INVEST into the Excel.
+
+
 
 ## Input checklist
+
 - Internal working CSV (validator PASS)
-- `epic.json`, `feature.json`
+
+- `SOW.json`
+
+- Optional `user-story-rows.json` for `prerequisite_refs`
+
 - Thresholds: `.cursor/config.yaml` → `work_item_mapping`
 
+
+
 ## Output checklist
+
 - **Public:** `artifacts/intake/<date>-user-stories-from-transcript.xlsx`
+
 - **Internal:** `artifacts/intake/.pipeline/<date>-work-item-mapping-log.json`
 
+
+
 ## Clarification protocol
-Empty Feature catalog → write Excel with blank User Story IDs; register Open DQ.
+
+Missing or empty `SOW.json` → register Open DQ; write Excel without Feature hierarchy (stories only).
+
+
 
 ## Execution loop
+
 Plan → Act → Observe → Reflect (max 3). Iteration 1 Observe: script exit 0 → stop.
 
+
+
 ## Check gates
+
 - Output-path gate on the **one** xlsx
-- Mapping log entry count equals source User Story count (one log row per story; multiple Excel rows allowed when multiple Features qualify)
+
+- Mapping log entry count equals source User Story count
+
+
 
 ## Definition of Done
-- [ ] One Excel written
-- [ ] Catalog IDs only in rulebook `ID` column
-- [ ] No new Epic/Feature hierarchy items
+
+- [ ] One Excel written (Workshop → SOW Feature → User Stories)
+
+- [ ] Feature rows: blank `ID`, Annexure ID1 set, Title 2 / Description per SOW rulebook
+
+- [ ] No Epic rows
+
+
 
 ## Delegates
-`work-item-hierarchy-matcher`
+
+`work-item-hierarchy-matcher` (SOW mode)
+
+
 
 ## Modes
+
 - `map-transcript-csv` — after validator PASS
-- `remap` — when `epic.json` / `feature.json` refreshed
+
+- `remap` — when `SOW.json` is refreshed
+
+

@@ -1,0 +1,122 @@
+MSDynamics 365 Domain,MSDynamics 365 Application,MSDynamics 365 Business Entity
+CRM,Customer Insights,Lead to Opportunity
+CRM,Customer Insights,Service to Resolution
+CRM,Customer Insights,Record to Report
+CRM,Sales,Lead to Opportunity
+CRM,Sales,Opportunity to Order
+CRM,Sales,Quote to Cash
+CRM,Sales,Order to Cash
+CRM,Sales,Service to Resolution
+CRM,Sales,Record to Report
+CRM,Customer Service,Record to Report
+CRM,Customer Service,Service to Resolution
+CRM,Customer Service,Lead to Opportunity
+CRM,Customer Service,Order to Cash
+Finance,Acquire to Retire,Fixed Assets
+Finance,Customer and Channel Management,Omnichannel and Channel Management
+Finance,Customer and Channel Management,Product and Catalog Management
+Finance,Customer and Channel Management,Order Management and Fulfillment
+Finance,Customer and Channel Management,Customer and Account Management
+Finance,Customer and Channel Management,Partner and B2B Sales
+Finance,Hire to Retire,General Ledger
+Finance,Order to Cash,Accounts Receivable
+Finance,Order to Cash,Credit and Collections
+Finance,Order to Cash,Sales and Order Management
+Finance,Order to Cash,Order Management and Fulfillment
+Finance,Order to Cash,"Pricing, Promotions and Discounts"
+Finance,Order to Cash,Customer and Account Management
+Finance,Order to Cash,"Payment, Tax and Regulatory Compliance"
+Finance,Order to Cash,Partner and B2B Sales
+Finance,Order to Cash,Subscription and Licensing
+Finance,Procure to Pay,Accounts Payable
+Finance,Procure to Pay,Audit and Compliance
+Finance,Procure to Pay,Procurement and Sourcing
+Finance,Procure to Pay,Product and Catalog Management
+Finance,Record to Report,General Ledger
+Finance,Record to Report,Cash and Bank Management
+Finance,Record to Report,Tax Management
+Finance,Record to Report,Cost Accounting
+Finance,Record to Report,Project Management and Accounting
+Finance,Record to Report,Financial Consolidation and Reporting
+Finance,Record to Report,Intercompany Accounting
+Finance,Record to Report,"Analytics, Reporting and AI"
+Finance,Record to Report,Integration and Connectivity
+SCM,Design to Release (PLM),Engineering Change Requests
+SCM,Design to Release (PLM),Engineering Change Orders
+SCM,Design to Release (PLM),Product Version Management
+SCM,Design to Release (PLM),Product Configuration
+SCM,Design to Release (PLM),Product Lifecycle Management
+SCM,Design to Release (PLM),BOM and Route Management
+SCM,Design to Release (PLM),Product and Catalog Management
+SCM,Forecast to Stock,Master Planning and Demand Forecasting
+SCM,Plan-to-Produce,Production Control
+SCM,"Governance, Risk and Compliance",Tax Management
+SCM,"Governance, Risk and Compliance",Audit and Compliance
+SCM,"Governance, Risk and Compliance",Sales and Order Management
+SCM,"Governance, Risk and Compliance",Quality Management
+SCM,"Governance, Risk and Compliance",Service Management
+SCM,"Governance, Risk and Compliance",EHS and Sustainability
+SCM,"Governance, Risk and Compliance",Customer and Account Management
+SCM,"Governance, Risk and Compliance","Payment, Tax and Regulatory Compliance"
+SCM,"Governance, Risk and Compliance",Service and Aftersales
+SCM,Inventory,Inventory Management
+SCM,Fulfilment,Order Management and Fulfillment
+SCM,Warehouse-to-Ship,Warehouse and Transportation Management
+SCM,Master Data Management,Product Information Management
+SCM,Master Data Management,Product and Catalog Management
+SCM,Service to Resolution,Returns Management
+SCM,Service to Resolution,Service Management
+SCM,Service to Resolution,Service and Aftersales
+SCM,Customer and Channel Management,Omnichannel and Channel Management
+SCM,Customer and Channel Management,Product and Catalog Management
+SCM,Customer and Channel Management,Order Management and Fulfillment
+SCM,Customer and Channel Management,Customer and Account Management
+SCM,Customer and Channel Management,Partner and B2B Sales
+SCM,Order to Cash,Accounts Receivable
+SCM,Order to Cash,Credit and Collections
+SCM,Order to Cash,Sales and Order Management
+SCM,Order to Cash,Order Management and Fulfillment
+SCM,Order to Cash,"Pricing, Promotions and Discounts"
+SCM,Order to Cash,Customer and Account Management
+SCM,Order to Cash,"Payment, Tax and Regulatory Compliance"
+SCM,Order to Cash,Partner and B2B Sales
+SCM,Order to Cash,Subscription and Licensing
+SCM,Procure to Pay,Accounts Payable
+SCM,Procure to Pay,Audit and Compliance
+SCM,Procure to Pay,Procurement and Sourcing
+SCM,Procure to Pay,Product and Catalog Management
+Power Platform,Business Excellence,Manage business processes
+Power Platform,Business Excellence,Manage change
+Power Platform,Business Excellence,Manage continuous improvements
+Power Platform,Business Excellence,Manage enterprise knowledge
+Power Platform,Business Excellence,Manage Business System
+Power Platform,Business Excellence,"Manage portfolio, programs and projects"
+Power Platform,Business Excellence,Conduct Real Estate planning
+Power Platform,Business Excellence,Manage Enterprise Risk
+Power Platform,Business Excellence,Manage resilience and continuity
+Power Platform,Business Excellence,Perform strategic deep dives
+Power Platform,Commercial,Manage brand
+Power Platform,Commercial,Manage integrated communications
+Power Platform,Commercial,Product Management
+Power Platform,IT,IT Technology Selection
+Power Platform,IT,"Deliver, Manage and Support IT"
+Power Platform,Legal,Strategy to Integrated Roadmap
+Power Platform,Legal,Compliance Governance and Legal
+Power Platform,Legal,Manage Data Management
+Power Platform,Security,Third Party Management
+Power Platform,Security,Data Management
+Power Platform,Security,Business Continuity
+Power Platform,Security,Risk Management
+PLM,Engineering change management,Commercial
+PLM,Engineering change management,RandD
+ISV,DEEL,
+ISV,Docusign,
+ISV,PTC Arena,
+ISV,SKG,
+ISV,SPS Commerce,
+ISV,Veeva,
+ISV,Vertex,
+ISV,Zinfi,
+E2E Business Model,,
+Data Migration,,
+Infrastructure,,

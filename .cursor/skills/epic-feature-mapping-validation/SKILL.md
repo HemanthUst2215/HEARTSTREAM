@@ -12,7 +12,7 @@ user-story-evaluation-agent
 
 ## Inputs
 - Story matches
-- Packet epic and feature context on each story (nearest preceding Epic row and Feature row; User Story `ID` when it carries the Feature work item id)
+- Packet epic and feature context on each story (nearest preceding Epic and Feature rows in workbook order; User Story `ID` is usually blank — compare titles and catalog IDs on hierarchy rows, not story ID = Feature ID)
 
 ## Procedure
 Apply `epic_agreement` and `feature_agreement` exactly as written in `.cursor/templates/user-story-evaluation-metrics.yaml`.

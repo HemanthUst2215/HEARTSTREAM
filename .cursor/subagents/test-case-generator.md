@@ -7,7 +7,7 @@ Matched Features → Test Case rows in the user-story CSV rulebook, then the can
 test-agent (mode `from-transcript`)
 
 ## Must / Must NOT
-- Must: Load `docs/intake/user-story-csv-rulebook.yaml`. Emit Epic rows, then Feature rows, then Test Case rows. Copy Epic and Feature `ID`, Title, Description, and Area Path from `artifacts/work-items/epic.json` and `feature.json`.
+- Must: Load `docs/intake/user-story-csv-rulebook.yaml`. Emit Epic rows, then Feature rows, then Test Case rows. Copy Epic and Feature `ID`, title (Epic → Title 1, Feature → Title 2), Description, and Area Path from `artifacts/work-items/epic.json` and `feature.json`. Test Case title goes in Title 3.
 - Must: For each Test Case, set Description to the rulebook `test_case.description_format`: transcript path and locator, `Epic: <id> | <title>`, `Feature: <id> | <title>`, then numbered Steps. Set Acceptance Criteria to ASCII `- ` bullets. Leave Test Case `ID` blank.
 - Must: Persist `artifacts/intake/<date>-test-case-rows.json`, then `python scripts/ado_user_story_csv.py write --json <rows.json> --out artifacts/intake/<date>-test-cases.csv --rulebook docs/intake/user-story-csv-rulebook.yaml`, then `python scripts/validate-user-story-csv.py`.
 - Must NOT: Add columns. Invent Epic, Feature, or step text. Emit a Test Case whose Feature was not in the parent's strong-match list. Hand-write the CSV.

@@ -18,7 +18,7 @@ Load `.cursor/templates/user-story-evaluation-metrics.yaml`. Do not restate a fo
 | Metric | Subagent | Skill |
 |--------|----------|-------|
 | Granularity | story-matching-evaluator | `.cursor/skills/story-matching/SKILL.md` |
-| Hallucination Rate | hallucination-detection-evaluator | `.cursor/skills/hallucination-detection/SKILL.md` |
+| Hallucination Rate (Generated), Hallucination Rate (Manual) | hallucination-detection-evaluator | `.cursor/skills/hallucination-detection/SKILL.md` |
 | Recall, Precision, Manual-only Stories, Generated-only Stories | coverage-analysis-evaluator | `.cursor/skills/coverage-analysis/SKILL.md` |
 | Title and Description Format Compliance, Role Specificity | business-correctness-evaluator | `.cursor/skills/business-correctness/SKILL.md` |
 | Acceptance Criteria Count, Acceptance Criteria Quality, Negative and Boundary Coverage | acceptance-criteria-evaluator | `.cursor/skills/acceptance-criteria-evaluation/SKILL.md` |

@@ -19,7 +19,12 @@ SCRIPTS = ROOT / "scripts"
 if str(SCRIPTS) not in sys.path:
     sys.path.insert(0, str(SCRIPTS))
 
-from msd_test_case_xlsx_layout import load_rulebook, validate_workbook  # noqa: E402
+from msd_test_case_coherence import cases_from_register_rows, check_cases_coherence  # noqa: E402
+from msd_test_case_xlsx_layout import (  # noqa: E402
+    load_register_from_xlsx,
+    load_rulebook,
+    validate_workbook,
+)
 
 DEFAULT_RULEBOOK = ROOT / "docs" / "intake" / "msd-test-case-rulebook.yaml"
 
@@ -42,6 +47,18 @@ def main() -> int:
 
     rulebook = load_rulebook(rulebook_path)
     findings, critical = validate_workbook(rulebook, xlsx_path)
+
+    coherence_cfg = (rulebook.get("validation") or {}).get("precondition_coherence") or {}
+    if coherence_cfg.get("enabled", True) and critical == 0:
+        try:
+            _headers, reg_rows = load_register_from_xlsx(xlsx_path, rulebook)
+            cases = cases_from_register_rows(rulebook, reg_rows)
+            coh_findings, coh_critical = check_cases_coherence(cases, rulebook)
+            findings.extend(coh_findings)
+            critical += coh_critical
+        except Exception as exc:  # noqa: BLE001
+            findings.append(f"precondition coherence check error: {exc}")
+            critical += 1
     status = "FAIL" if critical else "PASS"
     result = {
         "status": status,

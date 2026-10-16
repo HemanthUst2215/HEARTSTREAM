@@ -74,28 +74,64 @@ local_stack:
 
 user_story_pipeline:
   story_command: generate-user-stories-from-transcript
+  required_inputs:
+    - transcript_path
+    - mom_paths
+    - prerequisite_paths
   draft_json: artifacts/user-stories/.pipeline/stories-draft.json
   export_script: scripts/generate-user-story-outputs.py
   out_dir: artifacts/user-stories
   work_items_dir: artifacts/work-items
   match_threshold: 50   # 0-100; calibrated on IDF-coverage scoring (see docs/user-story-generation/README.md)
   docx_extract_script: scripts/extract-docx-text.py
+  mom_analyzer: mom-analyzer
+  mom_normalized_text: artifacts/intake/.pipeline/<slug>-mom.txt
 
-# Strong-match mapping inside /generate-user-stories-from-transcript only.
+# Workshop prerequisite scope + MSD365 entity mapping for /generate-user-stories-from-transcript.
+workshop_prerequisite_scope:
+  rulebook: docs/intake/workshop-prerequisite-scope-rulebook.yaml
+  skill: .cursor/skills/workshop-prerequisite-analysis/SKILL.md
+  knowledge_base_json: artifacts/intake/<date>-workshop-prerequisite-knowledge-base.json
+  knowledge_base_md: artifacts/intake/<date>-workshop-prerequisite-knowledge-base.md
+  prerequisite_analyzer: workshop-prerequisite-analyzer
+  scope_validate_script: scripts/validate-user-story-workshop-scope.py
+  docx_extract_script: scripts/extract-docx-text.py
+  required_input: prerequisite_paths
+
+# MSD365 Business Entity allow-list for /generate-user-stories-from-transcript (Area Paths.xlsx → catalog JSON).
+msd365_business_entity_scope:
+  rulebook: docs/intake/msd365-business-entity-scope-rulebook.yaml
+  catalog_json: docs/intake/msd365-business-entity-catalog.json
+  bootstrap_xlsx: Area Paths.xlsx
+  bootstrap_sheet: Details
+  build_script: scripts/build-msd365-business-entity-catalog.py
+  validate_script: scripts/validate-user-story-business-entity-scope.py
+  regression_tests: scripts/test_msd365_business_entity_scope.py
+
+# Feature mapping inside /generate-user-stories-from-transcript (SOW.json — no epic.json / feature.json).
 work_item_mapping:
   command: generate-user-stories-from-transcript
   agent: work-item-mapping-agent
   work_items_dir: artifacts/work-items
-  catalog_epic_json: epic.json
-  catalog_feature_json: feature.json
+  feature_source: sow_json
+  sow_json: SOW.json
+  map_script: scripts/map-user-stories-to-sow-features.py
+  legacy_map_script: scripts/map-user-stories-to-work-items.py
+  catalog_epic_json: null
+  catalog_feature_json: null
   workshop_catalog_json: work-items.json
-  map_script: scripts/map-user-stories-to-work-items.py
-  strong_threshold: 62   # 0-100 similarity; below this, User Story ID stays blank
-  winner_margin: 8       # Features within this band of the top score may each get a row (up to max_related_features)
+  strong_threshold: 62
+  winner_margin: 8
+  public_excel_layout: sow_feature_story_hierarchy
   max_related_features: 3
-  workshop_context_min_overlap: 2  # min shared tokens (CSV workshop row vs feature+epic text); set 0 to disable
-  require_both_epic_and_feature: true
-  id_column: ID  # catalog Epic/Feature/Workshop IDs only; do not add EPIC ID / FEATURE ID columns
+  workshop_context_min_overlap: 0
+  require_both_epic_and_feature: false
+  feature_row:
+    title_2_format: "{annexure_minutes} - {topic}"
+    description: topic
+    id_column_blank: true
+    annexure_id_column: Annexure ID1
+    annexure_id_value: annexure_minutes
   public_xlsx: artifacts/intake/<date>-user-stories-from-transcript.xlsx
   invest_separate: artifacts/intake/<date>-invest-scorecard.csv
 
@@ -115,6 +151,28 @@ user_story_evaluation:
   public_json: artifacts/evaluation/<date>-user-story-evaluation[-slug][-vN].json
   # Jaccard floor proposes candidate pairs only (ASSUMPTION-USEVAL-003). It is not a match threshold.
   candidate_jaccard_floor: 0.28
+
+# Independent source traceability HTML for manual and AI CSVs (/generate-html-for-user-stories).
+user_story_source_analysis:
+  command: generate-html-for-user-stories
+  agent: user-story-evaluation-agent
+  mode: source-traceability-html
+  rulebook: docs/intake/user-story-csv-rulebook.yaml
+  analysis_contract: .cursor/templates/user-story-source-analysis-contract.yaml
+  report_template: .cursor/templates/user-story-source-analysis-report-template.md
+  script: scripts/generate_user_story_source_analysis.py
+  allocate_run_script: scripts/generate_user_story_source_analysis.py allocate-run
+  new_run_only: true
+  out_dir: artifacts/evaluation
+  pipeline_dir: artifacts/evaluation/.pipeline
+  sow_json: artifacts/work-items/SOW.json
+  public_manual_html: artifacts/evaluation/<date>-manual-user-story-analysis[-slug][-vN].html
+  public_manual_json: artifacts/evaluation/<date>-manual-user-story-analysis[-slug][-vN].json
+  public_ai_html: artifacts/evaluation/<date>-ai-user-story-analysis[-slug][-vN].html
+  public_ai_json: artifacts/evaluation/<date>-ai-user-story-analysis[-slug][-vN].json
+  subagents:
+    knowledge_base: source-knowledge-base-unifier
+    analyzer: user-story-source-traceability-analyzer
 
 # Transcript → matched Feature → rulebook test-case CSV (/expand-test-coverage).
 test_case_pipeline:
@@ -137,10 +195,21 @@ msd_test_case_pipeline:
   rulebook: docs/intake/msd-test-case-rulebook.yaml
   source_rulebook: docs/intake/user-story-csv-rulebook.yaml
   extract_script: scripts/msd_test_case_xlsx.py
+  enrich_script: scripts/enrich-msd-source-stories.py
+  coherence_module: scripts/msd_test_case_coherence.py
+  coherence_regression: scripts/test_msd_test_case_coherence.py
   validate_script: scripts/validate-msd-test-case-xlsx.py
   layout_module: scripts/msd_test_case_xlsx_layout.py
   regression_tests: scripts/test_msd_test_case_xlsx_layout.py
+  business_process_author: msd-test-case-business-process-author
+  precondition_aligner: msd-test-case-precondition-aligner
+  optional_inputs:
+    consultant_story_excel: null
+    clarification_paths: []
+    workshop_prerequisite_kb: artifacts/intake/<date>-workshop-prerequisite-knowledge-base.json
+    transcript_path: null
   out_dir: artifacts/intake
+  enriched_stories_json: artifacts/intake/<date>-msd-source-stories-enriched.json
   public_xlsx: artifacts/intake/<date>-msd-e2e-test-cases.xlsx
   bootstrap_xlsx_not_runtime: true
 

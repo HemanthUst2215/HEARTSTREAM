@@ -43,7 +43,7 @@ def _cases(rulebook: dict) -> list[dict]:
             "test_case_title": "Complete the alpha capability end to end",
             "test_type": rulebook["test_types"]["positive_default"],
             "priority": rulebook["priority"]["default"],
-            "preconditions": "Referenced master data from the user story is available.",
+            "preconditions": "Referenced master data from the user story is available; the cited Dynamics record exists.",
             "source_flow": "synthetic-user-stories.xlsx#US-1",
             "coverage_focus": "Alpha capability happy path",
             "steps": [
@@ -62,6 +62,14 @@ def _cases(rulebook: dict) -> list[dict]:
                     "application_isv": "Dynamics App A / Dynamics App B",
                     "test_data": "",
                     "expected_result": "The outcome in the story benefit is recorded.",
+                },
+                {
+                    "step_number": 3,
+                    "detailed_test_step": "Verify the end-to-end business outcome in the downstream system cited in the story.",
+                    "step_owner": "operations",
+                    "application_isv": "Dynamics App B",
+                    "test_data": "",
+                    "expected_result": "The business outcome is visible without manual reconciliation gaps.",
                 },
             ],
         },
@@ -114,11 +122,8 @@ def test_workbook_applies_rulebook_styling() -> None:
         assert title_fill == f"FF{colors['title_band']}"
         assert header_fill == f"FF{colors['table_header']}"
         assert reg.cell(1, 1).font.name == styling["font_family"]
-        result = {
-            "status": "FAIL" if critical else "PASS",
-            "findings": findings,
-        }
-        assert result["status"] == "PASS"
+        findings, critical = validate_workbook(rulebook, xlsx)
+        assert critical == 0, findings
 
 
 def test_id_pattern_and_denorm() -> None:
@@ -134,18 +139,18 @@ def test_id_pattern_and_denorm() -> None:
         _headers, rows = load_register_from_xlsx(xlsx, rulebook)
         expected_headers = rulebook["columns"]["register"]["order"]
         assert _headers == expected_headers
-        assert len(rows) == 3
+        assert len(rows) == 4
         id_col = rulebook["columns"]["register"]["roles"]["test_case_id"]
         title_col = rulebook["columns"]["register"]["roles"]["test_case_title"]
         step_col = rulebook["columns"]["register"]["roles"]["step_number"]
         status_col = rulebook["columns"]["register"]["roles"]["status"]
         actual_col = rulebook["columns"]["register"]["roles"]["actual_result"]
         p_rows = [r for r in rows if r[id_col] == "TC01-P01"]
-        assert [r[step_col] for r in p_rows] == ["1", "2"]
+        assert [r[step_col] for r in p_rows] == ["1", "2", "3"]
         assert len({r[title_col] for r in p_rows}) == 1
         assert all(r[status_col] == rulebook["status_field"]["generation_default"] for r in rows)
         assert all(r[actual_col] == "" for r in rows)
-        assert len(denormalize_register_rows(rulebook, cases)) == 3
+        assert len(denormalize_register_rows(rulebook, cases)) == 4
 
 
 def test_bad_status_fails() -> None:
@@ -178,7 +183,13 @@ def test_extract_stories_uses_source_rulebook_headers() -> None:
     msd_rb = load_rulebook(RB_PATH)
     cols = list(src_rb["csv"]["column_order"])
     type_col = msd_rb["input"]["row_filter"]["type_column"]
-    title_col = msd_rb["input"]["field_bind"]["title"]
+    title_by = ((src_rb.get("columns") or {}).get("stories") or {}).get("title_by_work_item_type") or {}
+    feat_title_col = title_by.get("Feature") or "Title 2"
+    story_title_col = title_by.get("User Story") or "Title 3"
+    if feat_title_col not in cols:
+        feat_title_col = msd_rb["input"]["field_bind"]["title"]
+    if story_title_col not in cols:
+        story_title_col = msd_rb["input"]["field_bind"]["title"]
     desc_col = msd_rb["input"]["field_bind"]["description"]
     ac_col = msd_rb["input"]["field_bind"]["acceptance_criteria"]
     wit_story = src_rb["work_item_types"]["transcript_output_default"]
@@ -191,10 +202,10 @@ def test_extract_stories_uses_source_rulebook_headers() -> None:
         # Feature then User Story
         feat = {h: "" for h in cols}
         feat[type_col] = "Feature"
-        feat[title_col] = "1. Process Alpha"
+        feat[feat_title_col] = "1. Process Alpha"
         story = {h: "" for h in cols}
         story[type_col] = wit_story
-        story[title_col] = "Capture the alpha record"
+        story[story_title_col] = "Capture the alpha record"
         story[desc_col] = "As an account manager, I need to capture the alpha record, so that downstream work can start."
         story[ac_col] = "- The record is saved.\n- A duplicate is rejected."
         for r_i, data in enumerate((feat, story), start=2):
@@ -205,6 +216,59 @@ def test_extract_stories_uses_source_rulebook_headers() -> None:
         assert payload["story_count"] == 1
         assert payload["stories"][0]["nearest_feature_title"] == "1. Process Alpha"
         assert payload["stories"][0]["grouping_key"] == "1. Process Alpha"
+        assert payload["stories"][0]["business_process"] == "Process Alpha"
+
+
+def test_strip_numbering_prefix_is_generic() -> None:
+    from msd_test_case_xlsx_layout import strip_numbering_prefix
+
+    rulebook = load_rulebook(RB_PATH)
+    assert strip_numbering_prefix(rulebook, "1. Process Alpha") == "Process Alpha"
+    assert strip_numbering_prefix(rulebook, "PR-001 – Accrual & Deferral Management") == "Accrual & Deferral Management"
+    assert strip_numbering_prefix(rulebook, "#3: Close the period") == "Close the period"
+    assert strip_numbering_prefix(rulebook, "Payroll Integration-Deel-Finance") == "Payroll Integration-Deel-Finance"
+
+
+def test_extract_stories_accepts_title_123_headers() -> None:
+    from openpyxl import Workbook
+
+    src_rb = load_rulebook(SRC_RB_PATH)
+    msd_rb = load_rulebook(RB_PATH)
+    headers = [
+        "State",
+        "ID",
+        "Work Item Type",
+        "Title 1",
+        "Title 2",
+        "Title 3",
+        "Area Path",
+        "Description",
+        "Acceptance Criteria",
+    ]
+    with tempfile.TemporaryDirectory() as tmp:
+        src = Path(tmp) / "workshop.xlsx"
+        wb = Workbook()
+        ws = wb.active
+        for i, h in enumerate(headers, start=1):
+            ws.cell(1, i, h)
+        ws.cell(2, 2, "90001")
+        ws.cell(2, 3, "Feature")
+        ws.cell(2, 5, "PR-001 – Process Alpha")
+        ws.cell(3, 2, "10001")
+        ws.cell(3, 3, "User Story")
+        ws.cell(3, 6, "Capture the alpha record")
+        ws.cell(3, 7, r"Day 2\Finance")
+        ws.cell(3, 8, "As an accountant, I need to capture the alpha record, so that close can start.")
+        ws.cell(3, 9, "1. The record is saved.\n2. A duplicate is rejected.")
+        wb.save(src)
+        payload = _cli.extract_stories(src, src_rb, msd_rb)
+        assert payload["story_count"] == 1
+        story = payload["stories"][0]
+        assert story["title"] == "Capture the alpha record"
+        assert story["nearest_feature_title"] == "PR-001 – Process Alpha"
+        assert story["business_process"] == "Process Alpha"
+        assert story["area_path_leaf"] == "Finance"
+        assert "duplicate is rejected" in story["acceptance_criteria"]
 
 
 def test_writer_cli_roundtrip() -> None:
@@ -241,6 +305,8 @@ def main() -> int:
         test_id_pattern_and_denorm,
         test_bad_status_fails,
         test_extract_stories_uses_source_rulebook_headers,
+        test_strip_numbering_prefix_is_generic,
+        test_extract_stories_accepts_title_123_headers,
         test_writer_cli_roundtrip,
     ]
     failed = 0

@@ -1,13 +1,15 @@
 ## Purpose
-Extracted User Stories → MSD case objects (role keys) for the canonical workbook writer. Applies the rulebook case model: one positive and one evidenced exception/control case per group.
+Extracted (optionally enriched) User Stories → MSD case objects (role keys) for the canonical workbook writer. Implements **msd-test-case-business-process-author** plans: business-process E2E positive case(s) per group (up to rulebook `max_cases`) and one evidenced exception/control case.
 
 ## Parent
 test-agent (mode `from-user-story-excel`)
 
 ## Must / Must NOT
 - Must: load `docs/intake/msd-test-case-rulebook.yaml` for grouping, ID pattern, allowed test types/priorities, step rules, and Application / ISV citation rules.
-- Must: group on `grouping_key` from extract-stories (Feature title, else Area Path). Assign Scenario ID sequentially from 1. Business process name = grouping key with numbering prefixes stripped — do not invent a name.
-- Must: author the positive case from happy-path AC and description need/benefit. Author the exception case only from constraint/negative/boundary AC (or an explicit control in the description). Steps are imperative, one action each, expected results observable, test data only when cited, owner from story role or named actor.
+- Must: group on `grouping_key` from extract-stories (Feature title, else Area Path). Assign Scenario ID sequentially from 1. Business process name = story `business_process` from extract-stories (numbering prefixes already stripped per the rulebook). Do not invent a name.
+- Must: author positive case(s) from happy-path AC and description need/benefit with `generation.business_process_e2e` (min steps, trigger/handoff/outcome, AC decomposition). Author the exception case only from constraint/negative/boundary AC (or an explicit control in the description). Steps are imperative, one action each, expected results observable, test data only when cited, owner from story role or named actor.
+- Must: consume `clarifications`, `workshop_prerequisite_kb`, and consultant-merged fields on source-stories JSON when present; cite locators in provenance.
+- Must: draft Preconditions that satisfy `generation.precondition_step_coherence` (hand off to **msd-test-case-precondition-aligner** for a second pass).
 - Must: assign Test Case IDs with `scripts/msd_test_case_xlsx_layout.py` `format_test_case_id` (or the same pattern string from the rulebook). Write extraction notes from `msd-test-case-extraction-template.md`.
 - Must NOT: copy bootstrap execution-plan cell content; invent Dynamics modules, ISVs, SKUs, or failure paths; add columns; emit xlsx (writer owns that).
 

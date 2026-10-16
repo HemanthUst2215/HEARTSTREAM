@@ -1,0 +1,1342 @@
+{
+  "schema_version": "1.0",
+  "status": "Draft \u2014 Pending Method Review",
+  "assumption_id": "ASSUMPTION-USEVAL-001",
+  "run_id": "2026-10-15-user-story-evaluation-marketing-ws03-v2",
+  "inputs": {
+    "manual_csv": "CRM - Workshop Stories.xlsx",
+    "generated_csv": "artifacts/intake/2026-10-13-marketing-ws03-user-stories-from-transcript.xlsx",
+    "transcript_path": "Transcript 03. Marketing - 1 - Workshop Meeting Transcript_30.09.2026.docx"
+  },
+  "matches": [
+    {
+      "match_id": "M-001",
+      "manual_key": "manual-US-46",
+      "manual_title": "Create Strategic Customer and Account Segments",
+      "generated_keys": [
+        "generated-US-17"
+      ],
+      "generated_titles": "Create dynamic segments by vertical end-market",
+      "match_type": "1:1",
+      "confidence": "medium",
+      "transcript_refs": [
+        {
+          "locator": "L177",
+          "excerpt": "Do a lot of segmentation around hospitals versus emergency medical services, versus kind of non healthcare vertical."
+        },
+        {
+          "locator": "L397",
+          "excerpt": "OK. We need to know if it's hospital, you know, ems fire military or aed channels, right?"
+        }
+      ]
+    }
+  ],
+  "manual_only": [
+    {
+      "story_key": "manual-US-4",
+      "title": "Define External Analytics Data Sources and Requirements",
+      "rationale": "Transcript states ingesting CRM, web, surveys, third-party, e-commerce, engagement, and market-intelligence sources into Customer Insights. No generated User Story matches this inventory/requirements story. Generated-US-4/5 remain unmatched generated (OI-MATCH-002).",
+      "transcript_refs": [
+        {
+          "locator": "L163",
+          "excerpt": "customer insight data is nothing but ingesting data from CRM web, surveys, third party"
+        },
+        {
+          "locator": "L219",
+          "excerpt": "customer data, is your CRM master data, demographic data, contact account, relationship information, engagement data could be your website data, your campaign interaction history, emails, events, digital engagement"
+        }
+      ]
+    },
+    {
+      "story_key": "manual-US-5",
+      "title": "Map External Analytics Data to the Customer Insights Data Model",
+      "rationale": "Transcript describes connecting sources, transforming/cleansing metadata, then consolidating tables into a unique profile. Formal source-to-target mapping and owner approval of analytics attributes are not a generated match.",
+      "transcript_refs": [
+        {
+          "locator": "L219",
+          "excerpt": "Once you have this data, I mean, getting this data itself is a activity, you define the source, you connect to the source system, you get the data, then you transform that data, basically all the metadata and everything can be cleansed."
+        }
+      ]
+    },
+    {
+      "story_key": "manual-US-6",
+      "title": "Configure Scheduled Batch Analytics Data Ingestion",
+      "rationale": "Transcript states a pipeline that refreshes profiles at regular intervals (SAP example). Generated rows do not match this scheduled-batch configuration story.",
+      "transcript_refs": [
+        {
+          "locator": "L219",
+          "excerpt": "when the update happens in sap at a regular interval, this data also refreshes. Now, you can imagine once this entire pipeline is set up and the data keeps on refreshing on regular intervals, you have the most updated profile which you have created"
+        }
+      ]
+    },
+    {
+      "story_key": "manual-US-7",
+      "title": "Implement Real-Time Behavioral Data Ingestion",
+      "rationale": "Workshop discusses journey execution in real time and later notes less real-time market experience as distance from the customer grows. It does not specify a real-time digital-event ingest integration as a distinct requirement; no generated match.",
+      "transcript_refs": [
+        {
+          "locator": "L163",
+          "excerpt": "you send or plan this entire journey design, it, execute it. And in real time, you get to see what exactly is happening"
+        },
+        {
+          "locator": "search: no span states a real-time behavioral-event ingest pipeline; nearest L589",
+          "excerpt": "As you get further from the customer, you have less real time experience of what's going on"
+        }
+      ]
+    },
+    {
+      "story_key": "manual-US-8",
+      "title": "Associate Identifiable Digital Behavior with Customer Profiles",
+      "rationale": "Transcript unifies engagement (web, campaign history, emails, events) into a 360 profile. Jaccard proposed generated-US-5; story-matching-evaluator left this unmatched (OI-MATCH-002).",
+      "transcript_refs": [
+        {
+          "locator": "L219",
+          "excerpt": "engagement data could be your website data, your campaign interaction history, emails, events, digital engagement, whatever you could think of, it could be surveys as well. It could be purchases as well"
+        }
+      ]
+    },
+    {
+      "story_key": "manual-US-9",
+      "title": "Unify External Analytics Data with Customer and Engagement Data",
+      "rationale": "Transcript states unify, resolve duplicates, and create a unified 360 profile. Adjacent generated-US-6 was not copied into matches.",
+      "transcript_refs": [
+        {
+          "locator": "L219",
+          "excerpt": "you unify this data in just everything from multiple sources, resolve all the duplicates. Go ahead and create a unified profile. You get a true 360 degree record"
+        }
+      ]
+    },
+    {
+      "story_key": "manual-US-10",
+      "title": "Create Customer Measures from External Analytics Data",
+      "rationale": "Demo shows configurable measures and predictions on Customer Insights profiles. No generated User Story covers reusable customer measures.",
+      "transcript_refs": [
+        {
+          "locator": "L333",
+          "excerpt": "for a business, you would like to set up some measures. Measures are nothing but numbers. Basically, you would like to have some predictions. Predictions also can be created"
+        }
+      ]
+    },
+    {
+      "story_key": "manual-US-11",
+      "title": "Make Unified Analytics Data Available for Journey Activation",
+      "rationale": "Transcript states segments from unified data are consumed in journeys/campaigns. No generated match; consent-before-activation is later at L879.",
+      "transcript_refs": [
+        {
+          "locator": "L163",
+          "excerpt": "Data is nothing but the data which we talked about bringing in data from multiple places, unifying them, making meaningful output of it and then targeting it for your marketing activities and journeys"
+        }
+      ]
+    },
+    {
+      "story_key": "manual-US-12",
+      "title": "Monitor Analytics Data Ingestion and Processing",
+      "rationale": "Search found pipeline/refresh language, not operations monitoring, alerts, or reprocess of failed ingest. Manual-only; capability not stated as a requirement.",
+      "transcript_refs": [
+        {
+          "locator": "search: no span states ingestion monitoring, alerts, or reprocess of failed analytics loads; nearest L219",
+          "excerpt": "once this entire pipeline is set up and the data keeps on refreshing on regular intervals, you have the most updated profile which you have created"
+        }
+      ]
+    },
+    {
+      "story_key": "manual-US-13",
+      "title": "Validate External Analytics Data Quality",
+      "rationale": "Transcript discusses transform/cleanse and deduplication as platform steps, not a data-quality validation/exception workflow. No generated match.",
+      "transcript_refs": [
+        {
+          "locator": "L219",
+          "excerpt": "then you transform that data, basically all the metadata and everything can be cleansed"
+        },
+        {
+          "locator": "search: no span states completeness/accuracy/timeliness validation of external analytics with owner exceptions",
+          "excerpt": "There are a lot of processes of deduplication enriching the data, removing the irrelevant information"
+        }
+      ]
+    },
+    {
+      "story_key": "manual-US-14",
+      "title": "Access External Analytics Data for Marketing Out of Box Reporting",
+      "rationale": "Transcript points sales-performance analytics to F&O and Power BI rather than OOB Customer Insights reporting of external analytics. No generated match.",
+      "transcript_refs": [
+        {
+          "locator": "L259",
+          "excerpt": "You do have rich analytics in that particular system. You need not have to bring in that data in here just to have a look at what exactly I'm doing with respect to business Power, BI reports or Power BI dashboard are another sources"
+        }
+      ]
+    },
+    {
+      "story_key": "manual-US-17",
+      "title": "Configure Access to Approved Marketing Assets from MediaValet",
+      "rationale": "Transcript states MediaValet is the current global approved-asset repository and will continue. Generated CSV has no MediaValet/DAM story.",
+      "transcript_refs": [
+        {
+          "locator": "L657",
+          "excerpt": "Today. We have a global repository, it's called mediavalet. Mediavalet. Okay. Right. So, we have product images, we have brochures, tablets, we have tech specs, anything that we've published can go on to mediavalet"
+        },
+        {
+          "locator": "L685",
+          "excerpt": "mediavalet will continue, that is certain and all the marketing content activation approvals that will continue"
+        }
+      ]
+    },
+    {
+      "story_key": "manual-US-18",
+      "title": "Create Marketing Email Templates Using Approved Assets",
+      "rationale": "Demo covers building emails from an authorized library and email templates. No generated User Story matches this capability.",
+      "transcript_refs": [
+        {
+          "locator": "L783",
+          "excerpt": "This system specifically deals with having all this content prepared beforehand, your emails, your messages, your web pages, landing pages"
+        },
+        {
+          "locator": "L799",
+          "excerpt": "And the email templates which you just saw or the email template which I was just showcasing"
+        }
+      ]
+    },
+    {
+      "story_key": "manual-US-19",
+      "title": "Create Campaign Landing Pages Using Approved Assets",
+      "rationale": "Transcript states Journeys can create landing pages, embed them in journeys, and measure clicks. No generated match.",
+      "transcript_refs": [
+        {
+          "locator": "L851",
+          "excerpt": "we used to send a landing page as well that they could click on and, we could measure the number of hits clicks against that landing page, which was tied specifically to that campaign"
+        },
+        {
+          "locator": "L853",
+          "excerpt": "the particular platform has the capability of creating landing pages"
+        }
+      ]
+    },
+    {
+      "story_key": "manual-US-20",
+      "title": "Create Marketing Forms for Campaign Responses",
+      "rationale": "Nitesh lists marketing forms with emails and SMS as campaign content. Website CFMS feedback forms are a related span, not campaign-response forms. No generated match.",
+      "transcript_refs": [
+        {
+          "locator": "L795",
+          "excerpt": "the first step to have this particular campaign build is building in marketing content, like your emails, your marketing form, your SMSS"
+        }
+      ]
+    },
+    {
+      "story_key": "manual-US-21",
+      "title": "Configure Personalized Marketing Content",
+      "rationale": "Search found audience/segment targeting and email content, not inserting profile attributes into email/SMS. Manual-only; personalization as specified is not stated.",
+      "transcript_refs": [
+        {
+          "locator": "search: no span states personalization fields from customer profiles in email or SMS; nearest L775",
+          "excerpt": "approved templates, legal compliance, cleared messaging, and regional and local marketing adaption"
+        }
+      ]
+    },
+    {
+      "story_key": "manual-US-22",
+      "title": "Configure Audience-Specific Content Variations",
+      "rationale": "Regional/local adaptation is named; per-audience content variations and default-content rules are not specified. No generated match.",
+      "transcript_refs": [
+        {
+          "locator": "L775",
+          "excerpt": "approved templates, legal compliance, cleared messaging, and regional and local marketing adaption"
+        }
+      ]
+    },
+    {
+      "story_key": "manual-US-23",
+      "title": "Support Product Launch Communications",
+      "rationale": "Hypothetical: segment buyers of AEDs from two years ago to email a newly launched product. Not a generated match; not a dedicated product-launch journey story.",
+      "transcript_refs": [
+        {
+          "locator": "L163",
+          "excerpt": "our marketing team wants to target them for sending in emails with respect to a new product which is recently launched"
+        }
+      ]
+    },
+    {
+      "story_key": "manual-US-24",
+      "title": "Support Service and Solution Communications",
+      "rationale": "Search found no service/solution communication journeys. Nearest spans are product/campaign emails and CFMS feedback.",
+      "transcript_refs": [
+        {
+          "locator": "search: no span states service or solution marketing communications; nearest L163",
+          "excerpt": "Are you going to send an email? Are you going to reach out via whatsapp are you going to reach out via SMS?"
+        }
+      ]
+    },
+    {
+      "story_key": "manual-US-25",
+      "title": "Support Multi-Region Marketing Communications",
+      "rationale": "Worldwide product-marketing visibility and regional teams are discussed; configuring multi-region campaign execution is not matched. Generated-US-12 is a valid extra on worldwide analytics access, not this activation story.",
+      "transcript_refs": [
+        {
+          "locator": "L305",
+          "excerpt": "those of us in product marketing, absolutely need to see the worldwide picture"
+        },
+        {
+          "locator": "L857",
+          "excerpt": "it would just be a manageable number of people globally that would have access to create and upload approved sources"
+        }
+      ]
+    },
+    {
+      "story_key": "manual-US-26",
+      "title": "Support Multi-Language Marketing Communications",
+      "rationale": "Search found no multi-language or preferred-language delivery requirement.",
+      "transcript_refs": [
+        {
+          "locator": "search: no span states multi-language marketing communications or language selection rules; nearest L775",
+          "excerpt": "approved templates, legal compliance, cleared messaging, and regional and local marketing adaption"
+        }
+      ]
+    },
+    {
+      "story_key": "manual-US-27",
+      "title": "Track Content Utilization Across Marketing Activities",
+      "rationale": "Workshop covers using approved library content in emails, not tracing which assets are reused across campaigns.",
+      "transcript_refs": [
+        {
+          "locator": "search: no span states tracking content utilization or frequently used assets; nearest L783",
+          "excerpt": "how this particular image got in here is through the library which we are managing within dynamics"
+        }
+      ]
+    },
+    {
+      "story_key": "manual-US-28",
+      "title": "Measure Content Engagement Performance",
+      "rationale": "Transcript states measuring opens, clicks, landing-page hits, and campaign connect rate. No generated User Story matches this measurement story.",
+      "transcript_refs": [
+        {
+          "locator": "L843",
+          "excerpt": "we want to see what type of a connect rate we have on\u2026 landing page, let's say for that campaign"
+        },
+        {
+          "locator": "L853",
+          "excerpt": "How many people have opened my email? How many of them have visited that particular page?"
+        }
+      ]
+    },
+    {
+      "story_key": "manual-US-29",
+      "title": "Ingest Internal Source Data into Customer Insights - Data",
+      "rationale": "Transcript states CRM, sales orders, partner, e-commerce, and related sources. Stacked internal-ingest capability; generated-US-4/5/9 were left unmatched (OI-MATCH-002).",
+      "transcript_refs": [
+        {
+          "locator": "L219",
+          "excerpt": "customer data, is your CRM master data, demographic data, contact account, relationship information"
+        },
+        {
+          "locator": "L255",
+          "excerpt": "Once you have the partner information brought in as one of the data source and the sales order also brought into the system as one of the data source"
+        },
+        {
+          "locator": "L347",
+          "excerpt": "regarding E commerce. There is going to be a number of available sources depending on what E commerce platform we're talking about, including external corporate customers like Amazon"
+        }
+      ]
+    },
+    {
+      "story_key": "manual-US-30",
+      "title": "Configure Branded Sender and Email Domain Authentication",
+      "rationale": "Philips brand licensing/compliance is discussed; branded sender names and authenticated email domains are not stated.",
+      "transcript_refs": [
+        {
+          "locator": "search: no span states branded sender or email domain authentication; nearest L835",
+          "excerpt": "we have very strict branding because we are licensing the Philips brand for some of our products for the next 15 years"
+        }
+      ]
+    },
+    {
+      "story_key": "manual-US-32",
+      "title": "Define Brand Campaign Audiences",
+      "rationale": "Transcript covers creating segments/marketing lists for campaigns. Broader than the one matched vertical-segment story (manual-US-46); left unmatched.",
+      "transcript_refs": [
+        {
+          "locator": "L163",
+          "excerpt": "what marketing audiences and segments are required? What customer journeys you will be implementing"
+        },
+        {
+          "locator": "L821",
+          "excerpt": "The journey is nothing but the actual campaign, what you are running to this particular marketing list"
+        }
+      ]
+    },
+    {
+      "story_key": "manual-US-33",
+      "title": "Execute Brand Awareness Communications",
+      "rationale": "Workshop defers how a campaign is created/executed but later demos journeys sending emails to segments. No generated match.",
+      "transcript_refs": [
+        {
+          "locator": "L163",
+          "excerpt": "We are not engaging into the discussions of how a campaign is created or how it is executed"
+        },
+        {
+          "locator": "L821",
+          "excerpt": "when you are actually defining the journey, which is this one that has the possibility of using or drafting this entire journey as you like"
+        }
+      ]
+    },
+    {
+      "story_key": "manual-US-34",
+      "title": "Configure Event Communication Journeys",
+      "rationale": "Trade-show lead capture is discussed as a data source, not event invitation/reminder/follow-up journeys.",
+      "transcript_refs": [
+        {
+          "locator": "search: no span states event invitation, reminder, or follow-up journeys; nearest L335",
+          "excerpt": "The lead data from different events where the trade show organizer provides a lead capturing system"
+        }
+      ]
+    },
+    {
+      "story_key": "manual-US-35",
+      "title": "Generate Leads from Brand Campaign Activities",
+      "rationale": "Platform overview says new leads from journeys can be tracked. Trade-show leads are intake, not brand-campaign lead generation. No generated match.",
+      "transcript_refs": [
+        {
+          "locator": "L163",
+          "excerpt": "If, in case there are any new leads which got generated, everything can be tracked using this journey which we are designing"
+        }
+      ]
+    },
+    {
+      "story_key": "manual-US-36",
+      "title": "Associate Campaign Responses to Customer Profiles",
+      "rationale": "Engagement includes campaign interaction history on the unified profile. Jaccard proposed generated-US-5; not copied into matches.",
+      "transcript_refs": [
+        {
+          "locator": "L219",
+          "excerpt": "engagement data could be your website data, your campaign interaction history, emails, events, digital engagement"
+        }
+      ]
+    },
+    {
+      "story_key": "manual-US-37",
+      "title": "Measure Brand Campaign Performance",
+      "rationale": "Key takeaway and later KPI discussion cover how marketing performance is measured (opens, clicks, connect rate, sale attribution difficulty). No generated match.",
+      "transcript_refs": [
+        {
+          "locator": "L163",
+          "excerpt": "how marketing performance are going to be measured"
+        },
+        {
+          "locator": "L843",
+          "excerpt": "we want to be able to tie business that is a result of a specific campaign"
+        }
+      ]
+    },
+    {
+      "story_key": "manual-US-38",
+      "title": "Provide Brand Campaign Performance Dashboards",
+      "rationale": "Power BI is named for analytics; in-journey viewing of campaign results is shown. A brand-campaign dashboard as a single view is not stated. No generated match.",
+      "transcript_refs": [
+        {
+          "locator": "L259",
+          "excerpt": "Power, BI reports or Power BI dashboard are another sources where you can have this analytics achieved"
+        },
+        {
+          "locator": "L853",
+          "excerpt": "you will be as a marketer in a position to have a look at what exactly is happening on ground"
+        }
+      ]
+    },
+    {
+      "story_key": "manual-US-39",
+      "title": "Configure Marketing Consent and Subscription Preferences",
+      "rationale": "Transcript states preference-center opt-out, TrustArc on websites, collecting permission, and GDPR. Generated CSV has no consent story.",
+      "transcript_refs": [
+        {
+          "locator": "L163",
+          "excerpt": "What would be the trigger consent? Say, for example, if some of the customers say, hey, heartstream, I don't wish to receive the marketing content"
+        },
+        {
+          "locator": "L879",
+          "excerpt": "it is mandatory for marketeer to send one link of preference center where the customer or the end recipient can click, open up the preference center and opt out"
+        },
+        {
+          "locator": "L891",
+          "excerpt": "Philips had very strict rules around opting out. We couldn't opt anyone in unless they click a button saying, I want to be opted in for future email communications"
+        }
+      ]
+    },
+    {
+      "story_key": "manual-US-41",
+      "title": "Verify Campaign Readiness Before Activation",
+      "rationale": "Agenda and later question cover campaign-readiness approval before an email blast is turned on. Heartstream answers marketing review using already-approved content. No generated match.",
+      "transcript_refs": [
+        {
+          "locator": "L163",
+          "excerpt": "marketing, asset governance and campaign readiness. That is one aspect we are going to cover"
+        },
+        {
+          "locator": "L863",
+          "excerpt": "before launching a particular campaign, let's say, for example, you're designing a email blast campaign, do you have any approval criteria in place? That particular campaign is to be reviewed approved? And only then it will be, you know, turned on for execution"
+        }
+      ]
+    },
+    {
+      "story_key": "manual-US-42",
+      "title": "Monitor Campaign Readiness and Deployment Status",
+      "rationale": "Campaign readiness is discussed as pre-launch approval, not monitoring planned/in-preparation/active/completed campaign status. No generated match.",
+      "transcript_refs": [
+        {
+          "locator": "search: no span states monitoring planned vs active vs completed campaign deployment status; nearest L863",
+          "excerpt": "do you have any approval criteria in place? That particular campaign is to be reviewed approved? And only then it will be, you know, turned on for execution"
+        }
+      ]
+    },
+    {
+      "story_key": "manual-US-43",
+      "title": "Provide Campaign Governance and Readiness Dashboards",
+      "rationale": "Search found no readiness/governance dashboard. Topic is verbal workshop coverage only.",
+      "transcript_refs": [
+        {
+          "locator": "search: no span states campaign governance or readiness dashboards; nearest L163",
+          "excerpt": "marketing, asset governance and campaign readiness"
+        }
+      ]
+    },
+    {
+      "story_key": "manual-US-45",
+      "title": "Define Marketing Strategy Target Audiences",
+      "rationale": "Strategy and activation planning plus required audiences/segments are stated. Broader than the matched vertical-segment story; left unmatched.",
+      "transcript_refs": [
+        {
+          "locator": "L163",
+          "excerpt": "finally the strategy and activation planning"
+        },
+        {
+          "locator": "L911",
+          "excerpt": "marketing strategy and activation planning, we've covered in the previous discussions, what segmentation requirements are, how campaign activation approach and ownership"
+        }
+      ]
+    },
+    {
+      "story_key": "manual-US-47",
+      "title": "Create Strategic Partner and Distributor Segments",
+      "rationale": "Partners as accounts/contacts, multi-vertical distributors, and partner segments are stated. Generated-US-20 is a narrower intersection extra, not a match (OI-MATCH-002).",
+      "transcript_refs": [
+        {
+          "locator": "L175",
+          "excerpt": "what the system can do is it can fetch all such partners with what relevant information you want and whatever conditions you want"
+        },
+        {
+          "locator": "L181",
+          "excerpt": "we have distributors, who will do business in more than one segment"
+        }
+      ]
+    },
+    {
+      "story_key": "manual-US-48",
+      "title": "Configure Strategy-Aligned Customer Journeys",
+      "rationale": "Transcript covers segment-based and trigger-based journeys (e.g. purchase two years ago; shipment confirmed). No generated match.",
+      "transcript_refs": [
+        {
+          "locator": "L821",
+          "excerpt": "the moment you say new journey, the system gives you trigger base or segment base"
+        },
+        {
+          "locator": "L163",
+          "excerpt": "What customer journeys you will be implementing or must be implemented?"
+        }
+      ]
+    },
+    {
+      "story_key": "manual-US-49",
+      "title": "Personalize Communications for Strategic Audiences",
+      "rationale": "Audience targeting is stated; profile-attribute personalization and conditional content are not. No generated match.",
+      "transcript_refs": [
+        {
+          "locator": "search: no span states personalizing strategy-aligned communications with profile attributes; nearest L175",
+          "excerpt": "once you have this segment, it is nothing but group of people whom you are in a position to target"
+        }
+      ]
+    },
+    {
+      "story_key": "manual-US-50",
+      "title": "Activate Marketing Programs Across Priority Markets",
+      "rationale": "Worldwide/regional marketing operating model is discussed (consolidated team, North America dedicated). Region-specific journey activation is not specified as a system requirement. No generated match.",
+      "transcript_refs": [
+        {
+          "locator": "L305",
+          "excerpt": "those of us in product marketing, absolutely need to see the worldwide picture"
+        },
+        {
+          "locator": "L941",
+          "excerpt": "we have people who are dedicated to North America only and who are making decisions"
+        }
+      ]
+    },
+    {
+      "story_key": "manual-US-51",
+      "title": "Measure Marketing Activation Plan Performance",
+      "rationale": "Same workshop measurement discussion as brand-campaign KPIs (opens, clicks, sale attribution). No generated match.",
+      "transcript_refs": [
+        {
+          "locator": "L163",
+          "excerpt": "how marketing performance are going to be measured"
+        },
+        {
+          "locator": "L843",
+          "excerpt": "we want to be able to tie business that is a result of a specific campaign"
+        }
+      ]
+    },
+    {
+      "story_key": "manual-US-52",
+      "title": "Refine Strategic Audiences Using Activation Insights",
+      "rationale": "Search found using insights to plan/improve reach, not refining segment criteria from responder vs non-responder journey data. No generated match.",
+      "transcript_refs": [
+        {
+          "locator": "search: no span states refining strategic audiences from journey engagement insights; nearest L311",
+          "excerpt": "How do I get this to more and more people? What my data says, how do I improve? How do I make it more reachable"
+        }
+      ]
+    }
+  ],
+  "generated_only": [
+    {
+      "story_key": "generated-US-4",
+      "title": "Connect CRM account and contact master data to Customer Insights",
+      "classification": "valid_extra",
+      "rationale": "Hallucination-detection-evaluator: transcript_states_requirement is true. Extra AC claims do not make the row noise. Manual CSV has related ingest (manual-US-29) but story-matching-evaluator left this unmatched.",
+      "transcript_refs": [
+        {
+          "locator": "L219",
+          "excerpt": "customer data, is your CRM master data, demographic data, contact account, relationship information"
+        },
+        {
+          "locator": "L163",
+          "excerpt": "customer insight data is nothing but ingesting data from CRM web, surveys, third party"
+        }
+      ]
+    },
+    {
+      "story_key": "generated-US-5",
+      "title": "Ingest sales order and engagement data for unified profiles",
+      "classification": "valid_extra",
+      "rationale": "Hallucination: transcript_states_requirement true. Sales orders, purchases, and digital engagement unify into a profile. Jaccard proposals vs manual-US-8/29/36 were not matches.",
+      "transcript_refs": [
+        {
+          "locator": "L219",
+          "excerpt": "it could be customer data. It could be engagement data"
+        },
+        {
+          "locator": "L255",
+          "excerpt": "the sales order also brought into the system as one of the data source"
+        }
+      ]
+    },
+    {
+      "story_key": "generated-US-6",
+      "title": "Define match rules for unified customer profiles",
+      "classification": "valid_extra",
+      "rationale": "Hallucination: transcript_states_requirement true. Match keys (partner id, email, field combinations) and duplicate resolution are stated. Adjacent to unmatched manual-US-9.",
+      "transcript_refs": [
+        {
+          "locator": "L219",
+          "excerpt": "it could be their partner id. It could be their email address. That one key will decide how you are going to have it. It is not just one key. It will be combination of various fields"
+        }
+      ]
+    },
+    {
+      "story_key": "generated-US-7",
+      "title": "Use ship-to attributes in Customer Insights segment rules",
+      "classification": "valid_extra",
+      "rationale": "Hallucination: transcript_states_requirement true. Ship-to on ingested sales orders can be used in segments. Extra Houston/headquarters claims are unsupported ACs only.",
+      "transcript_refs": [
+        {
+          "locator": "L231",
+          "excerpt": "if at all, you are getting your sales order in this particular list, sales order. Surely, we will be having built to and ship to as one of the field"
+        }
+      ]
+    },
+    {
+      "story_key": "generated-US-8",
+      "title": "Update install base segment after partner tracing import",
+      "classification": "valid_extra",
+      "rationale": "Hallucination: transcript_states_requirement true. Late partner tracings can update devices and inform Customer Insights segmentation.",
+      "transcript_refs": [
+        {
+          "locator": "L217",
+          "excerpt": "The moment you get this report or, you know, tracings back, it will be something in the system which will be, you know, devised for you to be able to update those particular devices"
+        },
+        {
+          "locator": "L191",
+          "excerpt": "we do get tracings. So then that's data that maybe it's after the fact, but that can help form the customer insight"
+        }
+      ]
+    },
+    {
+      "story_key": "generated-US-9",
+      "title": "Ingest distributor sold-to location from partner channel into CI",
+      "classification": "valid_extra",
+      "rationale": "Hallucination: transcript_states_requirement true. Distributor-portal reporting of where units were sold should appear in Customer Insights.",
+      "transcript_refs": [
+        {
+          "locator": "L417",
+          "excerpt": "if we update that information\u2026 through the distributor portal and into dynamics"
+        },
+        {
+          "locator": "L419",
+          "excerpt": "Insights."
+        }
+      ]
+    },
+    {
+      "story_key": "generated-US-11",
+      "title": "Provide account-level marketing profiles with contact drill-down",
+      "classification": "valid_extra",
+      "rationale": "Hallucination: transcript_states_requirement true. Account-centric profiles with linked contacts. Manual-US-29 AC5 only was not treated as a match.",
+      "transcript_refs": [
+        {
+          "locator": "L273",
+          "excerpt": "I kind of lean towards account but I would love to have the ability to dig deeper into contacts"
+        },
+        {
+          "locator": "L269",
+          "excerpt": "we would be looking at accounts like st Vincent's hospital, right? And also have an account within st Vincent's hospital"
+        }
+      ]
+    },
+    {
+      "story_key": "generated-US-12",
+      "title": "Enable worldwide marketing analytics visibility for product marketing",
+      "classification": "valid_extra",
+      "rationale": "Hallucination: transcript_states_requirement true. Product marketing needs worldwide Customer Insights. Role-scoping ACs are extra claims, not noise for the core requirement.",
+      "transcript_refs": [
+        {
+          "locator": "L305",
+          "excerpt": "those of us in product marketing, absolutely need to see the worldwide picture"
+        }
+      ]
+    },
+    {
+      "story_key": "generated-US-13",
+      "title": "Analyze account consumable purchase patterns for marketing outreach",
+      "classification": "valid_extra",
+      "rationale": "Hallucination: transcript_states_requirement true. Account-level hardware and consumable purchase analysis, including accounts that stopped buying pads.",
+      "transcript_refs": [
+        {
+          "locator": "L453",
+          "excerpt": "I want to look at the consumables they're buying from us"
+        }
+      ]
+    },
+    {
+      "story_key": "generated-US-15",
+      "title": "Detect vertical sales trends for targeted campaigns",
+      "classification": "valid_extra",
+      "rationale": "Hallucination: transcript_states_requirement true. Early vertical sales-trend signals for timely campaigns. Duplicate of generated-US-19 under a different Feature header (OI-MATCH-001); still a distinct unmatched generated row, not noise.",
+      "transcript_refs": [
+        {
+          "locator": "L403",
+          "excerpt": "if there's a trend, in dentist offices where we start seeing more sales, you know, over the course of a week or two weeks"
+        }
+      ]
+    },
+    {
+      "story_key": "generated-US-18",
+      "title": "Capture end-market segment at e-commerce order entry",
+      "classification": "valid_extra",
+      "rationale": "Hallucination: transcript_states_requirement true. Capture vertical/end-market at E-store order entry.",
+      "transcript_refs": [
+        {
+          "locator": "L221",
+          "excerpt": "if we get an order from a dentist on our E store, either AI or someone within the company categorizes\u2026 it as a patient system"
+        }
+      ]
+    },
+    {
+      "story_key": "generated-US-19",
+      "title": "Detect vertical sales trends for targeted campaigns",
+      "classification": "valid_extra",
+      "rationale": "Hallucination: transcript_states_requirement true (same requirement as generated-US-15). Duplicate Feature copy remains unmatched generated, classified valid_extra because the transcript states the requirement.",
+      "transcript_refs": [
+        {
+          "locator": "L403",
+          "excerpt": "if there's a trend, in dentist offices where we start seeing more sales, you know, over the course of a week or two weeks"
+        }
+      ]
+    },
+    {
+      "story_key": "generated-US-20",
+      "title": "Identify distributors serving multiple vertical markets",
+      "classification": "valid_extra",
+      "rationale": "Hallucination: transcript_states_requirement true. Intersecting partner segments for distributors in more than one vertical. Narrower than unmatched manual-US-47; not a match.",
+      "transcript_refs": [
+        {
+          "locator": "L181",
+          "excerpt": "we have distributors, who will do business in more than one segment"
+        },
+        {
+          "locator": "L231",
+          "excerpt": "the unification or the intersection of the both will give you that segment where the partners are catering to both the regions or both the areas"
+        }
+      ]
+    }
+  ],
+  "metrics": [
+    {
+      "metric_id": "recall",
+      "owner": "coverage-analysis-evaluator",
+      "kind": "ratio",
+      "display": "2% (1/44)",
+      "score": 0.0227,
+      "numerator": 1,
+      "denominator": 44,
+      "evidence": [
+        {
+          "statement": "One manual User Story has at least one generated match: M-001 manual-US-46 \u2190 generated-US-17. Recall = 1/44.",
+          "source_path": "artifacts/evaluation/.pipeline/2026-10-15-marketing-ws03-story-matches.json",
+          "source_locator": "matches[0]",
+          "confidence": "explicit"
+        },
+        {
+          "statement": "Packet structural_summary.manual.user_story_count is 44.",
+          "source_path": "artifacts/evaluation/.pipeline/2026-10-15-marketing-ws03-evaluation-packet.json",
+          "source_locator": "structural_summary.manual.user_story_count",
+          "confidence": "explicit"
+        }
+      ]
+    },
+    {
+      "metric_id": "precision",
+      "owner": "coverage-analysis-evaluator",
+      "kind": "ratio",
+      "display": "100% (1/1)",
+      "score": 1.0,
+      "numerator": 1,
+      "denominator": 1,
+      "evidence": [
+        {
+          "statement": "One generated User Story is matched to a manual story (generated-US-17 in M-001).",
+          "source_path": "artifacts/evaluation/.pipeline/2026-10-15-marketing-ws03-story-matches.json",
+          "source_locator": "matches[0].generated_keys",
+          "confidence": "explicit"
+        },
+        {
+          "statement": "All 13 unmatched generated keys are classified valid_extra because hallucination transcript_states_requirement is true for each and unsupported_requirement_keys is empty. Extra AC claims do not make a row noise. Precision denominator = 1 matched + 0 noise = 1.",
+          "source_path": "artifacts/evaluation/.pipeline/2026-10-15-marketing-ws03-hallucination.json",
+          "source_locator": "unsupported_requirement_keys",
+          "confidence": "explicit"
+        }
+      ]
+    },
+    {
+      "metric_id": "manual_only_stories",
+      "owner": "coverage-analysis-evaluator",
+      "kind": "count",
+      "display": "43",
+      "score": null,
+      "value": 43,
+      "evidence": [
+        {
+          "statement": "unmatched_manual_keys contains 43 keys; no generated match for those manual User Story rows.",
+          "source_path": "artifacts/evaluation/.pipeline/2026-10-15-marketing-ws03-story-matches.json",
+          "source_locator": "unmatched_manual_keys",
+          "confidence": "explicit"
+        }
+      ]
+    },
+    {
+      "metric_id": "generated_only_stories",
+      "owner": "coverage-analysis-evaluator",
+      "kind": "split",
+      "display": "13 valid extra / 0 noise",
+      "score": null,
+      "valid_extra": 13,
+      "noise": 0,
+      "evidence": [
+        {
+          "statement": "unmatched_generated_keys lists 13 generated User Story rows with no manual match.",
+          "source_path": "artifacts/evaluation/.pipeline/2026-10-15-marketing-ws03-story-matches.json",
+          "source_locator": "unmatched_generated_keys",
+          "confidence": "explicit"
+        },
+        {
+          "statement": "Each of those 13 rows has transcript_states_requirement true in hallucination.json; none appear in unsupported_requirement_keys. Classification is valid_extra for all 13; noise is 0. No BLOCKED_CONFLICT.",
+          "source_path": "artifacts/evaluation/.pipeline/2026-10-15-marketing-ws03-hallucination.json",
+          "source_locator": "stories[*].transcript_states_requirement",
+          "confidence": "explicit"
+        }
+      ]
+    },
+    {
+      "metric_id": "epic_agreement",
+      "owner": "epic-feature-mapping-evaluator",
+      "kind": "ratio",
+      "na": true,
+      "na_reason": "Zero comparable pairs: M-001 (manual-US-46, generated-US-17) has no epic context on either side (packet epic snapshots are null; manual CSV has no Epic rows). Do not invent Epic titles.",
+      "display": "n/a",
+      "score": null,
+      "numerator": 0,
+      "denominator": 0,
+      "evidence": [
+        {
+          "statement": "M-001 epic not comparable. Manual epic id=null title=null. Generated epic id=null title=null. Zero pairs where both sides have an epic context.",
+          "source_path": "artifacts/evaluation/.pipeline/2026-10-15-marketing-ws03-evaluation-packet.json",
+          "source_locator": "manual_stories[manual-US-46].epic; generated_stories[generated-US-17].epic",
+          "confidence": "explicit"
+        }
+      ]
+    },
+    {
+      "metric_id": "feature_agreement",
+      "owner": "epic-feature-mapping-evaluator",
+      "kind": "ratio",
+      "na": false,
+      "display": "0% (0/1)",
+      "score": 0,
+      "numerator": 0,
+      "denominator": 1,
+      "evidence": [
+        {
+          "statement": "M-001 disagree. Manual Feature ID=110486 title='60-Marketing Strategy & Activation Planning'. Generated Feature ID='' title='60 - Marketing Strategy & Activation Planning'. IDs not equal and non-blank; titles not identical.",
+          "source_path": "artifacts/evaluation/.pipeline/2026-10-15-marketing-ws03-evaluation-packet.json",
+          "source_locator": "manual_stories[manual-US-46].feature; generated_stories[generated-US-17].feature",
+          "confidence": "explicit"
+        }
+      ]
+    },
+    {
+      "metric_id": "title_description_format_compliance",
+      "name": "Title and Description Format Compliance",
+      "owner": "business-correctness-evaluator",
+      "kind": "ratio",
+      "display": "100% (14/14)",
+      "score": 1.0,
+      "numerator": 14,
+      "denominator": 14,
+      "na": false,
+      "overrides": [],
+      "evidence": [
+        {
+          "statement": "Packet structural_summary.generated.format_ok_count is 14 of 14 generated User Story rows. No row override: every Title is a short capability name that does not start with 'As a', and every Description matches generation.user_story.description_format / user_story.description_format pattern 'As a <role>, I need to <need>, so that <benefit>.'",
+          "source_path": "artifacts/evaluation/.pipeline/2026-10-15-marketing-ws03-evaluation-packet.json",
+          "source_locator": "structural_summary.generated.format_ok_count",
+          "confidence": "explicit"
+        },
+        {
+          "statement": "Rulebook pattern confirmed on generated-US-4 through generated-US-20: Title 3 is an imperative capability (title_formats.user_story); Description is a single As-a / I-need-to / so-that sentence ending with a period.",
+          "source_path": "docs/intake/user-story-csv-rulebook.yaml",
+          "source_locator": "title_formats.user_story; user_story.description_format",
+          "confidence": "explicit"
+        },
+        {
+          "statement": "Finding F-M-001 (evidence only; format score unchanged): match M-001 generated-US-17 does not break the rulebook sentence pattern, but it changes the transcript result. L177: vertical segmentation (hospitals versus EMS versus non-healthcare) to know sales into those markets from tracings of where devices shipped. generated-US-17 so-that: target campaigns by where products are sold or used. Actor remains a marketer; condition remains vertical end-market.",
+          "source_path": "artifacts/evaluation/.pipeline/2026-10-15-marketing-ws03-transcript.txt",
+          "source_locator": "L177",
+          "confidence": "derived"
+        }
+      ]
+    },
+    {
+      "metric_id": "role_specificity",
+      "name": "Role Specificity",
+      "owner": "business-correctness-evaluator",
+      "kind": "ratio",
+      "display": "100% (14/14)",
+      "score": 1.0,
+      "numerator": 14,
+      "denominator": 14,
+      "na": false,
+      "assumption_id": "ASSUMPTION-USEVAL-002",
+      "overrides": [],
+      "evidence": [
+        {
+          "statement": "ASSUMPTION-USEVAL-002: a role is specific when the Description captures a non-empty role and that role, compared case-insensitively, is not exactly 'user' or 'users'. Packet structural_summary.generated.role_specific_count is 14 of 14. Captured roles: marketing data steward, marketing analyst, marketer, global product marketer, field marketer, product marketer, marketing operations lead. None equal user or users. No row override.",
+          "source_path": ".cursor/templates/user-story-evaluation-metrics.yaml",
+          "source_locator": "metrics.role_specificity / ASSUMPTION-USEVAL-002",
+          "confidence": "assumption"
+        },
+        {
+          "statement": "Packet generated_stories[*].structural.role_specific is true on every generated User Story row (generated-US-4 through generated-US-20).",
+          "source_path": "artifacts/evaluation/.pipeline/2026-10-15-marketing-ws03-evaluation-packet.json",
+          "source_locator": "structural_summary.generated.role_specific_count",
+          "confidence": "explicit"
+        },
+        {
+          "statement": "Finding F-M-001 actor check (evidence only; role score unchanged): generated-US-17 role 'product marketer' is not generic under ASSUMPTION-USEVAL-002. L177/L397 do not name that job title; James speaks as Heartstream marketing requesting vertical segments. That is not a change of actor class (still a marketer creating segments), so role_specificity is not overridden.",
+          "source_path": "artifacts/evaluation/.pipeline/2026-10-15-marketing-ws03-story-matches.json",
+          "source_locator": "matches[M-001].generated_keys",
+          "confidence": "derived"
+        }
+      ]
+    },
+    {
+      "metric_id": "acceptance_criteria_count",
+      "name": "Acceptance Criteria Count",
+      "owner": "acceptance-criteria-evaluator",
+      "kind": "comparison",
+      "display": "Manual mean 1.02 \u00b7 Generated mean 3.0",
+      "score": null,
+      "manual_mean": 1.02,
+      "generated_mean": 3.0,
+      "manual_total": 45,
+      "generated_total": 42,
+      "manual_story_count": 44,
+      "generated_story_count": 14,
+      "evidence": [
+        {
+          "statement": "Verified packet structural_summary: 44 manual User Story rows, ac_bullet_total 45, mean 1.02. A bullet is one non-empty Acceptance Criteria cell line, not an inner HTML numbered item. Forty-three rows have ac_count 1 (HTML lists stored as one line). manual-US-25 is the only split cell (ac_count 2). Extra inner <div> numbers were not counted.",
+          "source_path": "artifacts/evaluation/.pipeline/2026-10-15-marketing-ws03-evaluation-packet.json",
+          "source_locator": "structural_summary.manual.ac_bullet_mean",
+          "confidence": "explicit"
+        },
+        {
+          "statement": "Verified packet structural_summary: 14 generated User Story rows, ac_bullet_total 42, mean 3.0. Each generated row has three non-empty ASCII '- ' lines (structural.ac_count 3 and ac_hyphen_format_ok true on generated-US-4 through generated-US-20).",
+          "source_path": "artifacts/evaluation/.pipeline/2026-10-15-marketing-ws03-evaluation-packet.json",
+          "source_locator": "structural_summary.generated.ac_bullet_mean",
+          "confidence": "explicit"
+        },
+        {
+          "statement": "Rulebook: each Acceptance Criteria line starts with ASCII hyphen-space; one observable outcome per line. Count metric reports means and totals only; it has no 0\u2013100 score.",
+          "source_path": "docs/intake/user-story-csv-rulebook.yaml",
+          "source_locator": "acceptance_criteria.format",
+          "confidence": "explicit"
+        }
+      ]
+    },
+    {
+      "metric_id": "acceptance_criteria_quality",
+      "name": "Acceptance Criteria Quality",
+      "owner": "acceptance-criteria-evaluator",
+      "kind": "score",
+      "display": "66.67",
+      "score": 66.67,
+      "numerator": 28,
+      "denominator": 42,
+      "evidence": [
+        {
+          "statement": "Mean of 14 generated per-story scores is 66.67. Every generated cell uses ASCII '- ' (rulebook). A bullet scores only when it is one observable outcome and testable from the transcript. Implementation-detail wording did not raise scores. Hallucinated AC bullets score 0. Quality bullets 28 of 42.",
+          "source_path": "artifacts/evaluation/.pipeline/2026-10-15-marketing-ws03-hallucination.json",
+          "source_locator": "stories[*].claims[field=acceptance_criteria]",
+          "confidence": "derived"
+        },
+        {
+          "statement": "Per-story scores: generated-US-4 33.33; generated-US-5 66.67; generated-US-6 66.67; generated-US-7 33.33; generated-US-8 66.67; generated-US-9 66.67; generated-US-11 100; generated-US-12 0; generated-US-13 66.67; generated-US-15 100; generated-US-17 100; generated-US-18 66.67; generated-US-19 100; generated-US-20 66.67.",
+          "source_path": "artifacts/evaluation/.pipeline/2026-10-15-marketing-ws03-evaluation-packet.json",
+          "source_locator": "generated_stories[*].acceptance_criteria",
+          "confidence": "derived"
+        },
+        {
+          "statement": "Full-score rows generated-US-11, generated-US-15, generated-US-17, and generated-US-19: hallucination marks all AC claims supported; each bullet is one observable outcome (account drill-down L273/L277; short-window vertical trend L403/L397/L407; dynamic vertical segments L179/L397/L219).",
+          "source_path": "artifacts/evaluation/.pipeline/2026-10-15-marketing-ws03-transcript.txt",
+          "source_locator": "L273",
+          "confidence": "explicit"
+        },
+        {
+          "statement": "generated-US-12 scores 0: L305 states product marketing needs a worldwide picture, but all three AC bullets invent role/audience scoping, sales-only restriction overrides, and a documented US/Canada/LATAM/Europe/Asia access approach.",
+          "source_path": "artifacts/evaluation/.pipeline/2026-10-15-marketing-ws03-transcript.txt",
+          "source_locator": "L305",
+          "confidence": "explicit"
+        }
+      ]
+    },
+    {
+      "metric_id": "negative_boundary_coverage",
+      "name": "Negative and Boundary Coverage",
+      "owner": "acceptance-criteria-evaluator",
+      "kind": "ratio",
+      "display": "80% (4/5)",
+      "score": 0.8,
+      "numerator": 4,
+      "denominator": 5,
+      "na": false,
+      "evidence": [
+        {
+          "statement": "Denominator is generated rows whose matched transcript span states a negative or boundary for that requirement (5 rows), not packet negative_boundary_signal_lines. Packet hints on generated-US-4 (without separate logins), generated-US-12 (do not block), and generated-US-17 (at least priority verticals) were not used as the denominator. Lexical 'not' in AC was not treated as proof the transcript required a negative test.",
+          "source_path": "artifacts/evaluation/.pipeline/2026-10-15-marketing-ws03-evaluation-packet.json",
+          "source_locator": "generated_stories[*].structural.negative_boundary_signal_lines",
+          "confidence": "derived"
+        },
+        {
+          "statement": "Denominator rows: generated-US-7 (L231 ship-to not currently an attribute; usable when sales orders are ingested); generated-US-13 (L453 accounts with equipment but no pads for three years); generated-US-15 and generated-US-19 (L397 two-to-six-month tracing lag vs L403 week-or-two-week trend window); generated-US-18 (L223 not all order nuances will be captured).",
+          "source_path": "artifacts/evaluation/.pipeline/2026-10-15-marketing-ws03-transcript.txt",
+          "source_locator": "L231",
+          "confidence": "explicit"
+        },
+        {
+          "statement": "Numerator 4/5: generated-US-7 AC includes ship-to as a segment attribute when order data is ingested. generated-US-13 AC includes filtering accounts with equipment history but missing recent consumable purchases. generated-US-15 and generated-US-19 AC include a trend signal without waiting six months for tracing consolidation.",
+          "source_path": "artifacts/evaluation/.pipeline/2026-10-15-marketing-ws03-evaluation-packet.json",
+          "source_locator": "generated_stories[generated-US-7].acceptance_criteria",
+          "confidence": "derived"
+        },
+        {
+          "statement": "Miss: generated-US-18. L223 states the limitation that not all order nuances will be captured. The AC records that limitation as open design input, which the transcript does not require, so the stated boundary is not included as a testable outcome.",
+          "source_path": "artifacts/evaluation/.pipeline/2026-10-15-marketing-ws03-transcript.txt",
+          "source_locator": "L223",
+          "confidence": "explicit"
+        }
+      ]
+    },
+    {
+      "metric_id": "granularity",
+      "owner": "story-matching-evaluator",
+      "kind": "ratio",
+      "display": "93% (13/14)",
+      "score": 0.9286,
+      "numerator": 13,
+      "denominator": 14,
+      "evidence": [
+        {
+          "statement": "Packet structural.need_count is 1 for every generated User Story row (14/14).",
+          "source_path": "artifacts/evaluation/.pipeline/2026-10-15-marketing-ws03-evaluation-packet.json",
+          "source_locator": "generated_stories[*].structural.need_count",
+          "confidence": "explicit"
+        },
+        {
+          "statement": "Override: generated-US-5 stacks two ingest capabilities in one need (sales orders and digital engagement). Counted as a granularity miss.",
+          "source_path": "artifacts/evaluation/.pipeline/2026-10-15-marketing-ws03-evaluation-packet.json",
+          "source_locator": "generated_stories[generated-US-5].description",
+          "confidence": "derived"
+        },
+        {
+          "statement": "The remaining 13 generated rows each state one capability. M-001 is 1:1 and does not fragment a capability. generated-US-15 and generated-US-19 duplicate the same single capability under two Feature headers; duplication is not a stacked need, so both rows still pass granularity.",
+          "source_path": "artifacts/evaluation/.pipeline/2026-10-15-marketing-ws03-evaluation-packet.json",
+          "source_locator": "generated_stories[generated-US-15].description",
+          "confidence": "derived"
+        }
+      ]
+    },
+    {
+      "metric_id": "hallucination_rate",
+      "owner": "hallucination-detection-evaluator",
+      "kind": "ratio",
+      "display": "71% (10/14)",
+      "score": 0.7143,
+      "numerator": 10,
+      "denominator": 14,
+      "evidence": [
+        {
+          "statement": "generated-US-4 claims org-credential data-source connections and documented refresh expectations the transcript does not state.",
+          "source_path": "artifacts/evaluation/.pipeline/2026-10-15-marketing-ws03-transcript.txt",
+          "source_locator": "search: no span states documented refresh expectations for marketing operations; nearest L219",
+          "confidence": "explicit"
+        },
+        {
+          "statement": "generated-US-5 claims marketers can verify profile metrics after source refresh; L219 states refresh, not verification.",
+          "source_path": "artifacts/evaluation/.pipeline/2026-10-15-marketing-ws03-transcript.txt",
+          "source_locator": "search: no span states marketers verify profile metrics after source refresh; nearest L219",
+          "confidence": "explicit"
+        },
+        {
+          "statement": "generated-US-6 claims duplicates are surfaced under marketing data governance; L219 only states resolve duplicates.",
+          "source_path": "artifacts/evaluation/.pipeline/2026-10-15-marketing-ws03-transcript.txt",
+          "source_locator": "search: no span states duplicates are surfaced for resolution under marketing data governance; nearest L219",
+          "confidence": "explicit"
+        },
+        {
+          "statement": "generated-US-7 treats the Houston city demo as a ship-to pattern; L227 is customer city and L231 says ship-to is not visible.",
+          "source_path": "artifacts/evaluation/.pipeline/2026-10-15-marketing-ws03-transcript.txt",
+          "source_locator": "L227",
+          "confidence": "explicit"
+        },
+        {
+          "statement": "generated-US-8 claims the process documents manual versus automated tracing timelines; L209 only discusses that they are manual and late.",
+          "source_path": "artifacts/evaluation/.pipeline/2026-10-15-marketing-ws03-transcript.txt",
+          "source_locator": "search: no span requires documenting tracing timelines; nearest L209",
+          "confidence": "explicit"
+        },
+        {
+          "statement": "generated-US-9 claims an agreed refresh interval for partner sold-to ingest; L417-L419 only ask whether portal updates show in Customer Insights.",
+          "source_path": "artifacts/evaluation/.pipeline/2026-10-15-marketing-ws03-transcript.txt",
+          "source_locator": "search: no span states an agreed refresh interval for partner sold-to location; nearest L417",
+          "confidence": "explicit"
+        },
+        {
+          "statement": "generated-US-12 invents role scoping, sales-only restriction overrides, and documented regional access; L305 only states the worldwide-access need.",
+          "source_path": "artifacts/evaluation/.pipeline/2026-10-15-marketing-ws03-transcript.txt",
+          "source_locator": "search: no span states role scoping or sales-only restriction overrides; nearest L305",
+          "confidence": "explicit"
+        },
+        {
+          "statement": "generated-US-13 claims the purchase-data dependency is documented; L455 only states the dependency.",
+          "source_path": "artifacts/evaluation/.pipeline/2026-10-15-marketing-ws03-transcript.txt",
+          "source_locator": "search: dependency is spoken, not required to be documented; nearest L455",
+          "confidence": "explicit"
+        },
+        {
+          "statement": "generated-US-18 claims the order-nuance limitation is recorded as open design input; L223 only states the limitation.",
+          "source_path": "artifacts/evaluation/.pipeline/2026-10-15-marketing-ws03-transcript.txt",
+          "source_locator": "search: limitation is spoken, not recorded as open design input; nearest L223",
+          "confidence": "explicit"
+        },
+        {
+          "statement": "generated-US-20 claims intersection results are exportable for campaign audiences; L227 only lists export as a later explanation topic.",
+          "source_path": "artifacts/evaluation/.pipeline/2026-10-15-marketing-ws03-transcript.txt",
+          "source_locator": "search: no span states exportable intersection results for campaign audience selection; nearest L227",
+          "confidence": "explicit"
+        }
+      ]
+    },
+    {
+      "metric_id": "manual_hallucination_rate",
+      "owner": "hallucination-detection-evaluator",
+      "kind": "ratio",
+      "display": "100% (44/44)",
+      "score": 1.0,
+      "numerator": 44,
+      "denominator": 44,
+      "evidence": [
+        {
+          "statement": "44 of 44 manual User Story rows contain at least one claim the transcript does not support (same method as generated: title, description, AC, feature).",
+          "source_path": "artifacts/evaluation/.pipeline/2026-10-15-marketing-ws03-manual-hallucination-batch-a.json",
+          "source_locator": "stories[*].has_unsupported_claim",
+          "confidence": "explicit"
+        },
+        {
+          "statement": "17 of 44 manual rows have a core title capability the transcript does not state: manual-US-7, manual-US-12, manual-US-13, manual-US-14, manual-US-21, manual-US-22, manual-US-24, manual-US-26, manual-US-27, manual-US-30, manual-US-34, manual-US-38, manual-US-42, manual-US-43, manual-US-49, manual-US-50, manual-US-52.",
+          "source_path": "artifacts/evaluation/.pipeline/2026-10-15-marketing-ws03-transcript.txt",
+          "source_locator": "search: core title unsupported on 17 manual rows",
+          "confidence": "explicit"
+        },
+        {
+          "statement": "manual-US-7 (Implement Real-Time Behavioral Data Ingestion): unsupported claim: Implement Real-Time Behavioral Data Ingestion",
+          "source_path": "artifacts/evaluation/.pipeline/2026-10-15-marketing-ws03-transcript.txt",
+          "source_locator": "search: no span states real-time behavioral-event ingestion; nearest L163",
+          "confidence": "explicit"
+        },
+        {
+          "statement": "manual-US-17 (Configure Access to Approved Marketing Assets from MediaValet): unsupported claim: As a Marketer, I should be able to access approved marketing assets from MediaValet while building marketing communications, so that only approved content is used in customer-facin",
+          "source_path": "artifacts/evaluation/.pipeline/2026-10-15-marketing-ws03-transcript.txt",
+          "source_locator": "search: MediaValet stores approved assets; no span states accessing MediaValet while building Dynamics communications; nearest L783",
+          "confidence": "explicit"
+        },
+        {
+          "statement": "manual-US-26 (Support Multi-Language Marketing Communications): unsupported claim: Support Multi-Language Marketing Communications",
+          "source_path": "artifacts/evaluation/.pipeline/2026-10-15-marketing-ws03-transcript.txt",
+          "source_locator": "search: no span states multi-language marketing communications; nearest L775",
+          "confidence": "explicit"
+        },
+        {
+          "statement": "manual-US-30 (Configure Branded Sender and Email Domain Authentication): unsupported claim: Configure Branded Sender and Email Domain Authentication",
+          "source_path": "artifacts/evaluation/.pipeline/2026-10-15-marketing-ws03-transcript.txt",
+          "source_locator": "search: no span states branded sender or email domain authentication; nearest L835",
+          "confidence": "explicit"
+        },
+        {
+          "statement": "manual-US-46 (Create Strategic Customer and Account Segments): unsupported claim: I should create reusable segments for customers and accounts prioritized by the marketing strategy",
+          "source_path": "artifacts/evaluation/.pipeline/2026-10-15-marketing-ws03-transcript.txt",
+          "source_locator": "search: create-once segments are stated; prioritized by marketing strategy is not; nearest L821",
+          "confidence": "explicit"
+        }
+      ]
+    }
+  ],
+  "open_items": [
+    "ASSUMPTION-USEVAL-001 pending method review (do not treat scores as Accepted).",
+    "ASSUMPTION-USEVAL-002 on role specificity remains Draft \u2014 Pending Method Review (generic roles are exactly user or users, case-insensitive).",
+    "Open DQ: manual Excel header does not match rulebook column_order (ID, State, Work Item Type, Area Level 2, Title 1\u20133, Description, Acceptance Criteria). Packet indexed User Story rows anyway.",
+    "generated-US-15 and generated-US-19 are duplicate rows of the same vertical-trend requirement under Features 38 and 60.",
+    "M-001 business-outcome finding: generated-US-17 so-that uses campaign targeting / sold-or-used vs transcript L177 sales-into-vertical from tracings.",
+    "Feature agreement 0/1 from hyphen spacing and Feature ID 110486 vs blank (SOW mapping leaves Feature ID blank).",
+    "v2: hallucination-detection-evaluator scored all 44 manual User Stories against the transcript (manual_hallucination_rate). Prior v1 report left the manual side unscored.",
+    "Manual hallucination 100% (44/44) under the any-unsupported-claim rule; 17/44 core titles are absent from this transcript."
+  ],
+  "comparison": [
+    {
+      "name": "User stories",
+      "manual": "44",
+      "ai": "14",
+      "better": "",
+      "note": "Count is not a quality score. Manual workbook is a broader BPM catalog; generated set tracks this workshop\u2019s CI/data/vertical discussion."
+    },
+    {
+      "name": "Title and description format",
+      "manual": "0/44",
+      "ai": "100% (14/14)",
+      "better": "ai",
+      "note": "Contract scores generated only. Manual figure is the packet structural signal (format_ok_count 0/44). AI titles are short capability names; descriptions match As a / I need to / so that."
+    },
+    {
+      "name": "Role specificity",
+      "manual": "0/44",
+      "ai": "100% (14/14)",
+      "better": "ai",
+      "note": "ASSUMPTION-USEVAL-002. Manual figure is the packet structural signal (role_specific_count 0/44). Every generated role is a business role, not user/users."
+    },
+    {
+      "name": "Acceptance criteria count",
+      "manual": "mean 1.02 (45 lines / 44 stories)",
+      "ai": "mean 3.0 (42 lines / 14 stories)",
+      "better": "ai",
+      "note": "Owner comparison metric. A bullet is one non-empty Acceptance Criteria cell line. Manual cells often store HTML numbered lists as one line."
+    },
+    {
+      "name": "Acceptance criteria quality",
+      "manual": "not scored (contract is generated-only)",
+      "ai": "66.67",
+      "better": "ai",
+      "note": "Mean of 14 generated per-story scores. 28 of 42 bullets are one observable, transcript-testable outcome with ASCII hyphen bullets."
+    },
+    {
+      "name": "Negative and boundary coverage",
+      "manual": "not scored (contract is generated-only)",
+      "ai": "80% (4/5)",
+      "better": "",
+      "note": "Owner ratio on generated rows whose transcript span states a negative or boundary. Miss: generated-US-18."
+    },
+    {
+      "name": "Granularity",
+      "manual": "not scored (contract is generated-only)",
+      "ai": "93% (13/14)",
+      "better": "ai",
+      "note": "One generated miss: generated-US-5 stacks sales-order and digital-engagement ingest. Duplicate US-15/US-19 still each state one capability."
+    },
+    {
+      "name": "Hallucination rate",
+      "manual": "100% (44/44)",
+      "ai": "71% (10/14)",
+      "better": "ai",
+      "note": "Lower is stronger. Same method on both sides: a row counts if any title, description, AC, or feature claim is unsupported. Manual: 44/44 have extra claims; 17/44 core titles are not in this transcript. Generated: 10/14 extra AC/description claims; 0/14 core needs unsupported."
+    },
+    {
+      "name": "Recall",
+      "manual": "44-story baseline",
+      "ai": "2% (1/44)",
+      "better": "",
+      "note": "One match: M-001 manual-US-46 \u2190 generated-US-17 (vertical/end-market segments). Adjacent Jaccard proposals were not rematched."
+    },
+    {
+      "name": "Precision",
+      "manual": "Baseline",
+      "ai": "100% (1/1)",
+      "better": "",
+      "note": "Denominator is matched generated stories plus noise. All 13 unmatched generated rows are valid extras (0 noise)."
+    },
+    {
+      "name": "Manual-only / AI-only",
+      "manual": "43 manual-only",
+      "ai": "13 valid extras, 0 noise",
+      "better": "",
+      "note": "Manual-only includes MediaValet, consent, campaign readiness, journeys, and other BPM catalog rows this transcript only partly states."
+    },
+    {
+      "name": "Epic agreement",
+      "manual": "no Epic rows",
+      "ai": "no Epic context",
+      "better": "",
+      "note": "n/a \u2014 zero comparable pairs. Packet epic snapshots are null on both sides of M-001."
+    },
+    {
+      "name": "Feature agreement",
+      "manual": "Feature ID 110486; title 60-Marketing Strategy & Activation Planning",
+      "ai": "Feature ID blank; title 60 - Marketing Strategy & Activation Planning",
+      "better": "",
+      "note": "0% (0/1). Disagree from hyphen spacing and Feature ID 110486 vs blank. SOW mapping leaves Feature ID blank."
+    }
+  ],
+  "conclusion": {
+    "headline": "Mixed draft: AI is stronger on form and has a lower hallucination rate (71% vs 100% manual); recall is still 2%.",
+    "winner_line": "Verdict is mixed / draft. Do not mark Accepted. After scoring both CSVs against the transcript, the generated set hallucinates less often than the manual set, and it still wins rulebook form. Coverage of the manual BPM catalog remains low.",
+    "reasons": [
+      "Hallucination Rate (Manual) is 100% (44/44); Hallucination Rate (Generated) is 71% (10/14). Lower is stronger. Generated extra claims sit on transcript-stated core needs (0/14 core unsupported). Manual extra claims include 17 rows whose core title is not in this transcript.",
+      "AI is stronger on rulebook form (format 100%, role 100%, AC mean 3.0 vs 1.02, AC quality 66.67, granularity 93%).",
+      "Recall 2% (1/44): one match (vertical/end-market segments). Precision 100% (1/1) because 13 unmatched generated are valid extras (0 noise).",
+      "Manual workbook is a broader BPM catalog (MediaValet, consent, campaign readiness, journeys) that this transcript only partly states; generated set tracks this workshop\u2019s CI/data/vertical discussion."
+    ],
+    "limit": "Draft until ASSUMPTION-USEVAL-001 is accepted. Both hallucination metrics use the any-unsupported-claim rule, so extra AC bullets count even when the core need is spoken."
+  }
+}

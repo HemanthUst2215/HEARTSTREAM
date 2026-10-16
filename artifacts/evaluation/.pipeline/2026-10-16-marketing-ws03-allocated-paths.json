@@ -1,0 +1,18 @@
+{
+  "run_id": "2026-10-16-user-story-source-analysis-marketing-ws03",
+  "date": "2026-10-16",
+  "output_slug": "marketing-ws03",
+  "version_suffix": null,
+  "policy": "new_run_only",
+  "public_manual_html": "C:\\Users\\308279\\Documents\\HEARTSTREAM-1\\artifacts\\evaluation\\2026-10-16-manual-user-story-analysis-marketing-ws03.html",
+  "public_manual_json": "C:\\Users\\308279\\Documents\\HEARTSTREAM-1\\artifacts\\evaluation\\2026-10-16-manual-user-story-analysis-marketing-ws03.json",
+  "public_ai_html": "C:\\Users\\308279\\Documents\\HEARTSTREAM-1\\artifacts\\evaluation\\2026-10-16-ai-user-story-analysis-marketing-ws03.html",
+  "public_ai_json": "C:\\Users\\308279\\Documents\\HEARTSTREAM-1\\artifacts\\evaluation\\2026-10-16-ai-user-story-analysis-marketing-ws03.json",
+  "kb_index": "C:\\Users\\308279\\Documents\\HEARTSTREAM-1\\artifacts\\evaluation\\.pipeline\\2026-10-16-marketing-ws03-source-kb-index.json",
+  "unified_kb": "C:\\Users\\308279\\Documents\\HEARTSTREAM-1\\artifacts\\evaluation\\.pipeline\\2026-10-16-marketing-ws03-source-knowledge-base.json",
+  "manual_packet": "C:\\Users\\308279\\Documents\\HEARTSTREAM-1\\artifacts\\evaluation\\.pipeline\\2026-10-16-marketing-ws03-source-manual-packet.json",
+  "ai_packet": "C:\\Users\\308279\\Documents\\HEARTSTREAM-1\\artifacts\\evaluation\\.pipeline\\2026-10-16-marketing-ws03-source-ai-packet.json",
+  "manual_analysis": "C:\\Users\\308279\\Documents\\HEARTSTREAM-1\\artifacts\\evaluation\\.pipeline\\2026-10-16-marketing-ws03-source-manual-analysis.json",
+  "ai_analysis": "C:\\Users\\308279\\Documents\\HEARTSTREAM-1\\artifacts\\evaluation\\.pipeline\\2026-10-16-marketing-ws03-source-ai-analysis.json",
+  "audit": "C:\\Users\\308279\\Documents\\HEARTSTREAM-1\\artifacts\\audit\\2026-10-16-generate-html-for-user-stories-marketing-ws03.md"
+}

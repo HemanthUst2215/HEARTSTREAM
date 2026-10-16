@@ -1,0 +1,80 @@
+State,ID,Work Item Type,Title 1,Title 2,Title 3,Assigned To,Area Path,Description,Acceptance Criteria,,Annexure ID1,Fit Gap Status,User Story Type
+In Review,68403,Workshop,"WS-02 -  Accrual & deferral management
+ Ledger allocation",,,"Jupudi, Anil Kumar (Partner) <partner.anilkumar.jupudi@philips.com>",Day 2\Finance,"General Ledger (GL) is the central accounting engine in Dynamics 365 Finance and serves as the foundation of the Record-to-Report (R2R) process. It collects financial transactions from all business processes, maintains the chart of accounts, supports financial close activities, and produces financial statements and management reports.Accrual &amp; Deferral Management
+
+Automates the recognition and timing of expenses and revenues through accrual and deferral processes, ensuring accurate financial reporting and compliance with accounting standards.
+
+Ledger Allocation
+ Distributes costs, revenues, and balances across business units, departments, or cost centers to support accurate financial analysis and reporting.",,,,,
+New,93651,Feature,,PR-001 – Accrual & Deferral Management,,"Jupudi, Anil Kumar (Partner) <partner.anilkumar.jupudi@philips.com>",Day 2\Finance\Record to Report,,,,167,Fit,
+New,103808,User Story,,,Manage accruals,"Jupudi, Anil Kumar (Partner) <partner.anilkumar.jupudi@philips.com>",Day 2\Finance\Record to Report\General Ledger,"Accrual schemes and accrual journals; provision journals (e.g., warranty, doubtful debt); CONQ journals. Showcased Accruals and Deferrals functionalities.","1. Accrual schemes are configured per Heartstream legal entity with start/end dates, frequency and accrual/expense main accounts aligned to the agreed COA.
+2. When a vendor invoice or expense line is posted with an accrual scheme, D365 automatically generates the accrual entries for each period of the scheme.
+3. Provision journals (warranty, doubtful debt) and CONQ journals can be posted through dedicated journal names, with financial dimensions (cost center, product, legal entity) mandatory.
+4. Recurring provision entries can be set up via recurring journal templates and posted monthly without re-keying.
+5. Each accrual/provision journal carries supporting calculation attachments and follows the journal approval workflow before posting.
+6. Accrual and provision balances can be reported by entity, account and dimension and reconcile to the trial balance at month end. ",,,Fit,
+New,103810,User Story,,,Manage deferrals,"Jupudi, Anil Kumar (Partner) <partner.anilkumar.jupudi@philips.com>",Day 2\Finance\Record to Report\General Ledger,Prepaid expense journals and release of prepayments over time ,"1. Prepaid expenses (e.g., insurance, software licences, maintenance contracts) can be recorded against a prepaid balance sheet account with a defined release schedule.
+2. Release of prepayments to expense runs automatically per period (accrual scheme or recurring journal) and posts to the correct P&amp;L account and dimensions.
+3. Vendor prepayments on purchase orders are tracked and automatically applied when the final vendor invoice is settled.
+4. Users can view the remaining prepaid balance and release schedule per document at any point in time.
+5. Prepaid balances reconcile to the GL as part of the month-end balance sheet reconciliation. ",,,Fit,
+New,93671,Feature,,PR-002 – Ledger Allocation,,"Jupudi, Anil Kumar (Partner) <partner.anilkumar.jupudi@philips.com>",Day 2\Finance\Record to Report\General Ledger,,,,170,Fit,
+New,103811,User Story,,,Process allocations,"Jupudi, Anil Kumar (Partner) <partner.anilkumar.jupudi@philips.com>",Day 2\Finance,"Allocation rules (basis, fixed %, fixed weight, equal) to allocate enabling-function costs","1. Ledger allocation rules are configured for enabling-function costs (e.g., IT, HR, Finance) using basis, fixed percentage, fixed weight and equal methods.
+2. Basis allocations can use statistical data such as headcount/FTE or sales, sourced from GL or statistical accounts
+3. Allocation journals are generated via the allocation process, reviewed and posted through the journal approval workflow.
+4. Allocation runs can be scheduled as batch jobs as part of the month-end close calendar for all Heartstream legal entities.
+5. Posted allocations show source and destination accounts/dimensions and net to zero at the source; results are visible in management reporting (PR-006).",,,Fit,
+In Review,68412,Workshop,WS-02 - Payroll integrationJornal automationCost & revenue allocation,,,"Jupudi, Anil Kumar (Partner) <partner.anilkumar.jupudi@philips.com>",Day 2\Finance,"General Ledger (GL) is the central accounting engine in Dynamics 365 Finance and serves as the foundation of the Record-to-Report (R2R) process. It collects financial transactions from all business processes, maintains the chart of accounts, supports financial close activities, and produces financial statements and management reports.
+
+Payroll Integration
+ Integrates payroll transactions with the general ledger to ensure accurate recording of employee compensation, taxes, benefits, and related financial postings.
+
+Journal Automation
+ Automates journal entry creation, validation, and posting processes to improve efficiency, reduce manual effort, and enhance financial controls.
+
+Cost &amp; Revenue Allocation
+ Allocates shared costs and revenues across organizational entities based on predefined rules, improving profitability analysis and financial transparency.",,,,,
+New,93680,Feature,,PR-005 – Journal Automation,,"Jupudi, Anil Kumar (Partner) <partner.anilkumar.jupudi@philips.com>",Day 2\Finance\Record to Report,,,,180,Fit,
+New,103819,User Story,,,Define posting policies,"Jupudi, Anil Kumar (Partner) <partner.anilkumar.jupudi@philips.com>",Day 2\Finance,"Journal names, posting setup and controls for manual and automated journal entries","1. Journal names are defined by purpose (manual GL, accruals, allocations, reclass, intercompany, integrations) with separate number sequences.
+2. Mandatory fields (financial dimensions, description, attachment where required) are enforced on manual journals.
+3. Posting restrictions by user/group are applied so that integration journals (e.g., payroll, subscription billing) can only be posted by the integration or authorised users.
+4. Account structures and dimension rules prevent posting invalid combinations.
+5. Posting policies are documented and aligned to Heartstream's SOX control matrix.",,,Fit,
+New,103820,User Story,,,Configure and administer workflows,"Jupudi, Anil Kumar (Partner) <partner.anilkumar.jupudi@philips.com>",Day 2\Finance,Journal approval workflows,"1. Journal approval workflows are configured for manual GL journals with amount-based approval thresholds.
+2. Submitter cannot approve their own journal (segregation of duties).
+3. Approvers receive notifications and can approve/reject/delegate with comments; escalation applies when an approval is overdue.
+4. Rejected journals return to the submitter with reasons and cannot be posted until resubmitted.
+5. Workflow history (who, when, action, comments) is retained and reportable for audit.",,,Fit,
+New,103821,User Story,,,Configure and run background jobs,"Jupudi, Anil Kumar (Partner) <partner.anilkumar.jupudi@philips.com>",Day 2\Finance,Batch posting and scheduled automated journal processing,"1. Batch groups and recurring batch jobs are set up for journal posting, invoice posting, integrations (DMF) and period-end processes
+2. Batch jobs can be scheduled by legal entity and time zone to fit the Heartstream close calendar.
+3. Failed batch jobs generate alerts to the responsible team with error details.
+4. Batch job history is available for each run (start/end time, status, records processed).
+5. Only system administrators/authorised roles can create or modify batch job schedules.",,,Fit,
+New,93685,Feature,,PR-006 – Cost & Revenue Allocation,,"Jupudi, Anil Kumar (Partner) <partner.anilkumar.jupudi@philips.com>",Day 2\Finance\Record to Report,,,,188,Fit,
+New,103822,User Story,,,Analyze costs,"Jupudi, Anil Kumar (Partner) <partner.anilkumar.jupudi@philips.com>",Day 2\Finance,"Management accounting by product, sales, sales teams, distributor/customer and FTE/headcoun","1. Financial dimensions for product, sales team, distributor/customer and cost center are available on all relevant transactions
+2. Statistical data for FTE/headcount is available to support cost-per-FTE analysis.
+3. Users can analyze costs by any combination of dimensions in Financial reporting and Power BI.
+4. Reports drill down from summary to voucher level.
+5. Cost analysis reports reconcile to the trial balance for the period.",,,Fit,
+New,103823,User Story,,,Monitor financial performance,"Jupudi, Anil Kumar (Partner) <partner.anilkumar.jupudi@philips.com>",Day 2\Finance,Management reporting of cost and revenue after allocation,"1. Management P&amp;L reports show revenue, cost and margin after allocations by product, market, channel (direct/indirect/D2C) and legal entity.
+2. Actual vs prior period (and budget when the Budgeting feature is in scope) comparisons are available.
+3. Reports are available in Financial reporting and Power BI with role-based access
+4. Reports refresh after each period close and show the period status used.
+5. Key KPIs (e.g., gross margin %, subscription vs device revenue) are agreed with Heartstream Finance and included.",,,Fit,
+New,93700,Feature,,Payroll Integration-Deel-Finance,,"Jupudi, Anil Kumar (Partner) <partner.anilkumar.jupudi@philips.com>",Day 2\Finance\Record to Report,,,,165,Gap,
+New,111626,User Story,,,Import payroll journals from Deel,"Jupudi, Anil Kumar (Partner) <partner.anilkumar.jupudi@philips.com>",Day 2\Finance\Record to Report,Approved payroll results posted as payroll cost journals per legal entity (Annexure 176 references Workday; Integrations deck references Deel – confirm provider),"1. Approved payroll results for each pay run are imported into D365 as general journals per legal entity.
+2. Salary, benefits, payroll provisions and employer taxes are posted to the correct accounts.
+3. Imports are idempotent (no duplicate posting of a pay run).
+4. Import errors are logged with alerts and can be reprocessed.
+5. Imported totals reconcile to the payroll provider register.
+6. Payroll provider (Deel vs Workday per Annexure 176) is confirmed.",,,TBD,
+New,111627,User Story,,,Map payroll to GL accounts and dimensions,"Jupudi, Anil Kumar (Partner) <partner.anilkumar.jupudi@philips.com>",Day 2\Finance\Record to Report,"Gross pay, net pay, tax and deduction mapping to main accounts and financial dimensions","1. Payroll pay codes (gross pay, net pay, taxes, deductions, employer costs) map to main accounts.
+2. Employee cost center/department maps to D365 financial dimensions.
+3. Mapping is maintained in a controlled table by Finance.
+4. Unmapped codes stop the import with a clear error.
+5. Mapping changes are logged.",,,TBD,
+New,111628,User Story,,,Reconcile payroll clearing accounts,"Jupudi, Anil Kumar (Partner) <partner.anilkumar.jupudi@philips.com>",Day 2\Finance\Record to Report,"Reconcile payroll clearing, tax and net pay liability accounts after each pay run","1. Net pay clearing clears when the salary payment is reconciled with the bank.
+2. Payroll tax and deduction liabilities clear when paid to authorities/providers.
+3. Open balances on payroll clearing accounts are reportable per pay run.
+4. Reconciliation is part of month-end close.
+5. Differences are investigated and corrected.",,,TBD,

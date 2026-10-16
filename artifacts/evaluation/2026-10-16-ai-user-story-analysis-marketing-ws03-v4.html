@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI-generated user story source analysis</title>
+<style>
+  :root {
+    --bg: #f3f0e8;
+    --paper: #fffcf7;
+    --ink: #1c1915;
+    --muted: #5e584e;
+    --line: #e3dcd0;
+    --accent: #1f6b4a;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 16px/1.5 "Segoe UI", sans-serif; }
+  header { background: #1c1915; color: #f6f1e7; padding: 2.5rem 1.5rem 2rem; }
+  header .wrap, main { max-width: 1100px; margin: 0 auto; }
+  main { padding: 1.5rem 1.5rem 3rem; }
+  h1 { font-family: Georgia, serif; font-weight: 500; font-size: 2.1rem; margin: 0 0 0.35rem; }
+  h2 { font-family: Georgia, serif; font-weight: 500; font-size: 1.45rem; margin: 2rem 0 0.75rem; }
+  h3 { font-size: 1.05rem; margin: 0 0 0.4rem; }
+  h4 { font-size: 0.9rem; margin: 0.75rem 0 0.35rem; color: var(--muted); }
+  .eyebrow { letter-spacing: 0.08em; text-transform: uppercase; font-size: 0.75rem; color: #d7c7a5; }
+  .status { display: inline-block; margin-top: 0.8rem; border: 1px solid #8d7344; color: #f3e6cf;
+    padding: 0.2rem 0.6rem; border-radius: 999px; font-size: 0.85rem; }
+  .meta { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 0.75rem; margin-top: 1.2rem; }
+  .meta div { background: #2a261f; border-radius: 8px; padding: 0.75rem 0.9rem; }
+  .meta span { display: block; color: #b7ab96; font-size: 0.75rem; text-transform: uppercase; }
+  .meta strong { font-weight: 500; word-break: break-word; font-size: 0.9rem; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 0.8rem; }
+  .kpi { background: var(--paper); border: 1px solid var(--line); border-top: 4px solid var(--accent);
+    border-radius: 10px; padding: 0.9rem 1rem; }
+  .kicker { margin: 0; color: var(--muted); font-size: 0.72rem; }
+  .score { margin: 0; font-family: Georgia, serif; font-size: 1.5rem; }
+  .story-card { background: var(--paper); border: 1px solid var(--line); border-radius: 10px;
+    padding: 1rem 1.1rem; margin: 0.75rem 0; }
+  .table-wrap { overflow-x: auto; border: 1px solid var(--line); border-radius: 10px; }
+  table { width: 100%; border-collapse: collapse; background: var(--paper); font-size: 0.92rem; }
+  th, td { border-bottom: 1px solid var(--line); text-align: left; vertical-align: top; padding: 0.55rem 0.6rem; }
+  th { font-size: 0.75rem; text-transform: uppercase; color: var(--muted); }
+  .muted { color: var(--muted); }
+  .src, .loc { color: var(--muted); font-size: 0.85rem; }
+  .refs { margin: 0.3rem 0 0.6rem; padding-left: 1.2rem; }
+  footer { color: var(--muted); font-size: 0.85rem; margin-top: 2rem; }
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <p class="eyebrow">/generate-html-for-user-stories</p>
+    <h1>AI-generated user story analysis</h1>
+    <p>Independent validation of ai-generated user stories against workshop source inputs only.</p>
+    <div class="status">Draft — Pending Method Review</div>
+    <div class="meta">
+      <div><span>User story CSV</span><strong>C:\Users\308279\Documents\HEARTSTREAM-1\artifacts\evaluation\.pipeline\2026-10-16-marketing-ws03-generated.csv</strong></div>
+      <div><span>Unified knowledge base</span><strong>C:\Users\308279\Documents\HEARTSTREAM-1\artifacts\evaluation\.pipeline\2026-10-16-marketing-ws03-source-knowledge-base-v4.json</strong></div>
+      <div><span>Side</span><strong>AI-generated</strong></div>
+    </div>
+  </div>
+</header>
+<main>
+  <h2>Executive summary</h2>
+  <div class="grid"><article class='kpi'><p class='kicker'>Total user stories</p><p class='score'>14</p></article><article class='kpi'><p class='kicker'>Exact matches</p><p class='score'>0</p></article><article class='kpi'><p class='kicker'>Partial matches</p><p class='score'>14</p></article><article class='kpi'><p class='kicker'>No matches</p><p class='score'>0</p></article><article class='kpi'><p class='kicker'>Fully supported</p><p class='score'>0</p></article><article class='kpi'><p class='kicker'>Traceability score</p><p class='score'>50.0</p></article></div>
+  <h2>Per user story</h2>
+  <article class='story-card'><h3> · Connect CRM account and contact master data to Customer Insights</h3><p><strong>Feature:</strong> 70 - External Analytics Data Ingestion &amp; Unification · <strong>Match:</strong> Partial Match</p><p><strong>Derived sources:</strong> Pre-read Materials, MoM</p><h4>Source references</h4><ul class='refs'><li><strong>Pre-read Materials</strong> <span class='loc'>Unified customer profile; transcript 58:17–1:02:06</span>: Account and contact 360 views in Customer Insights for marketing audiences (distinct from Sales CRM day-to-day).</li><li><strong>MoM</strong> <span class='loc'>lines 481-520</span>: Customer and partner 
+master data contains 
+duplicates and 
+Customer Insights 
+segmentation, reporting 
+and analytics may be 
+Perform data profiling, 
+cleansing, deduplication and 
+HeartStream 
+Business / Data 
+Team / UST 
+ 
+ 
+            
+fragmented account 
+structures 
+inaccura</li><li><strong>MoM</strong> <span class='loc'>lines 201-240</span>: • It was agreed that improved data capture processes would 
+directly impact the quality of segmentation and marketing 
+outcomes. 
+ 
+8 Customer master data and 
+migration considerations 
+• HeartStream highlighted concerns regarding duplicate customer 
+records, fragmented account s</li></ul><p><strong>Why generated:</strong> Workshop requirement reflected in cited source spans.</p><p><strong>Why mapped to feature:</strong> Story &quot;Connect CRM account and contact master data to Customer Insights&quot; aligns with SOW BPM topic WS-CE-02 — 70 - External Analytics Data Ingestion &amp; Unification. Pre-read Materials (Unified customer profile; transcript 58:17–1:02:06): Account and contact 360 views in Customer Insights for marketing audiences (distinct from Sales CRM day-to-day).</p><p><strong>Business context:</strong> Account and contact 360 views in Customer Insights for marketing audiences (distinct from Sales CRM day-to-day).</p><p><strong>Coverage:</strong> Partially Supported</p><p><strong>Confidence:</strong> 0.17 · <strong>Action:</strong> Clarify with workshop</p></article><article class='story-card'><h3> · Ingest sales order and engagement data for unified profiles</h3><p><strong>Feature:</strong> 70 - External Analytics Data Ingestion &amp; Unification · <strong>Match:</strong> Partial Match</p><p><strong>Derived sources:</strong> Pre-read Materials, MoM, Transcript</p><h4>Source references</h4><ul class='refs'><li><strong>Pre-read Materials</strong> <span class='loc'>Process Flow 1; transcript agenda external analytics focus</span>: D365 Customer Insights data sources, profile unification, and dynamic segmentation for distributor and vertical-market models.</li><li><strong>MoM</strong> <span class='loc'>lines 321-360</span>: through engagement metrics, landing page activity, click-through 
+rates and conversion indicators 
+ 
+• HeartStream highlighted the need to understand campaign 
+effectiveness and its contribution to downstream sales 
+outcomes. 
+ 
+• It was discussed that reporting should provide vi</li><li><strong>Transcript</strong> <span class='loc'>lines 481-520</span>: might be with shippers. Yes.
+1:38:27 | James
+Multiple ship, choose one. So.
+1:38:29 | Nitesh
+And.
+1:38:30 | James
+all of the data is tied to this old, yes, yes. And therefore, it wouldn&#x27;t cripple our customer insights capabilities for marketing.
+1:38:39 | Nitesh
+So it don&#x27;t it be</li></ul><p><strong>Why generated:</strong> Workshop requirement reflected in cited source spans.</p><p><strong>Why mapped to feature:</strong> Story &quot;Ingest sales order and engagement data for unified profiles&quot; aligns with SOW BPM topic WS-CE-02 — 70 - External Analytics Data Ingestion &amp; Unification. Pre-read Materials (Process Flow 1; transcript agenda external analytics focus): D365 Customer Insights data sources, profile unification, and dynamic segmentation for distributor and vertical-market models.</p><p><strong>Business context:</strong> D365 Customer Insights data sources, profile unification, and dynamic segmentation for distributor and vertical-market models.</p><p><strong>Coverage:</strong> Partially Supported</p><p><strong>Confidence:</strong> 0.11 · <strong>Action:</strong> Clarify with workshop</p></article><article class='story-card'><h3> · Define match rules for unified customer profiles</h3><p><strong>Feature:</strong> 70 - External Analytics Data Ingestion &amp; Unification · <strong>Match:</strong> Partial Match</p><p><strong>Derived sources:</strong> Pre-read Materials, MoM</p><h4>Source references</h4><ul class='refs'><li><strong>Pre-read Materials</strong> <span class='loc'>Process Flow 1; transcript agenda external analytics focus</span>: D365 Customer Insights data sources, profile unification, and dynamic segmentation for distributor and vertical-market models.</li><li><strong>Pre-read Materials</strong> <span class='loc'>Unified customer profile; transcript 58:17–1:02:06</span>: Account and contact 360 views in Customer Insights for marketing audiences (distinct from Sales CRM day-to-day).</li><li><strong>MoM</strong> <span class='loc'>lines 481-520</span>: Customer and partner 
+master data contains 
+duplicates and 
+Customer Insights 
+segmentation, reporting 
+and analytics may be 
+Perform data profiling, 
+cleansing, deduplication and 
+HeartStream 
+Business / Data 
+Team / UST 
+ 
+ 
+            
+fragmented account 
+structures 
+inaccura</li></ul><p><strong>Why generated:</strong> Workshop requirement reflected in cited source spans.</p><p><strong>Why mapped to feature:</strong> Story &quot;Define match rules for unified customer profiles&quot; aligns with SOW BPM topic WS-CE-02 — 70 - External Analytics Data Ingestion &amp; Unification. Pre-read Materials (Process Flow 1; transcript agenda external analytics focus): D365 Customer Insights data sources, profile unification, and dynamic segmentation for distributor and vertical-market models.</p><p><strong>Business context:</strong> D365 Customer Insights data sources, profile unification, and dynamic segmentation for distributor and vertical-market models.</p><p><strong>Coverage:</strong> Partially Supported</p><p><strong>Confidence:</strong> 0.13 · <strong>Action:</strong> Clarify with workshop</p></article><article class='story-card'><h3> · Use ship-to attributes in Customer Insights segment rules</h3><p><strong>Feature:</strong> 70 - External Analytics Data Ingestion &amp; Unification · <strong>Match:</strong> Partial Match</p><p><strong>Derived sources:</strong> Transcript, MoM, Pre-read Materials</p><h4>Source references</h4><ul class='refs'><li><strong>Transcript</strong> <span class='loc'>lines 481-520</span>: might be with shippers. Yes.
+1:38:27 | James
+Multiple ship, choose one. So.
+1:38:29 | Nitesh
+And.
+1:38:30 | James
+all of the data is tied to this old, yes, yes. And therefore, it wouldn&#x27;t cripple our customer insights capabilities for marketing.
+1:38:39 | Nitesh
+So it don&#x27;t it be</li><li><strong>MoM</strong> <span class='loc'>lines 481-520</span>: Customer and partner 
+master data contains 
+duplicates and 
+Customer Insights 
+segmentation, reporting 
+and analytics may be 
+Perform data profiling, 
+cleansing, deduplication and 
+HeartStream 
+Business / Data 
+Team / UST 
+ 
+ 
+            
+fragmented account 
+structures 
+inaccura</li><li><strong>Pre-read Materials</strong> <span class='loc'>Unified customer profile; transcript 58:17–1:02:06</span>: Account and contact 360 views in Customer Insights for marketing audiences (distinct from Sales CRM day-to-day).</li></ul><p><strong>Why generated:</strong> Workshop requirement reflected in cited source spans.</p><p><strong>Why mapped to feature:</strong> Story &quot;Use ship-to attributes in Customer Insights segment rules&quot; aligns with SOW BPM topic WS-CE-02 — 70 - External Analytics Data Ingestion &amp; Unification. Transcript (lines 481-520): might be with shippers. Yes.
+1:38:27 | James
+Multiple ship, choose one. So.
+1:38:29 | Nitesh
+And.
+1:38:30 | James
+all of the data is tied to this old, yes, yes.</p><p><strong>Business context:</strong> might be with shippers. Yes.
+1:38:27 | James
+Multiple ship, choose one. So.
+1:38:29 | Nitesh
+And.
+1:38:30 | James
+all of the data is tied to this old, yes, yes. And therefore, it wouldn&#x27;t cripple our </p><p><strong>Coverage:</strong> Partially Supported</p><p><strong>Confidence:</strong> 0.11 · <strong>Action:</strong> Clarify with workshop</p></article><article class='story-card'><h3> · Update install base segment after partner tracing import</h3><p><strong>Feature:</strong> 70 - External Analytics Data Ingestion &amp; Unification · <strong>Match:</strong> Partial Match</p><p><strong>Derived sources:</strong> Pre-read Materials, MoM</p><h4>Source references</h4><ul class='refs'><li><strong>Pre-read Materials</strong> <span class='loc'>Process Flow 1; transcript agenda external analytics focus</span>: D365 Customer Insights data sources, profile unification, and dynamic segmentation for distributor and vertical-market models.</li><li><strong>MoM</strong> <span class='loc'>lines 121-160</span>: within a unified view. 
+ 
+• HeartStream emphasized that global distributors operating 
+across multiple regions must be supported within the future-state 
+customer and partner profile model. 
+ 
+• HeartStream confirmed that future marketing activities must 
+support both distributor</li><li><strong>MoM</strong> <span class='loc'>lines 641-680</span>: 5 ACTION ITEMS 
+Sr Category Action Owner Tentative 
+Due Date 
+1 Segmentation 
+Provide the list of marketing segments and target 
+audiences that HeartStream would like to support 
+in Dynamics 365 Customer Insights, including 
+distributor, customer and market-based 
+segmentation re</li></ul><p><strong>Why generated:</strong> Workshop requirement reflected in cited source spans.</p><p><strong>Why mapped to feature:</strong> Story &quot;Update install base segment after partner tracing import&quot; aligns with SOW BPM topic WS-CE-02 — 70 - External Analytics Data Ingestion &amp; Unification. Pre-read Materials (Process Flow 1; transcript agenda external analytics focus): D365 Customer Insights data sources, profile unification, and dynamic segmentation for distributor and vertical-market models.</p><p><strong>Business context:</strong> D365 Customer Insights data sources, profile unification, and dynamic segmentation for distributor and vertical-market models.</p><p><strong>Coverage:</strong> Partially Supported</p><p><strong>Confidence:</strong> 0.12 · <strong>Action:</strong> Clarify with workshop</p></article><article class='story-card'><h3> · Ingest distributor sold-to location from partner channel into CI</h3><p><strong>Feature:</strong> 70 - External Analytics Data Ingestion &amp; Unification · <strong>Match:</strong> Partial Match</p><p><strong>Derived sources:</strong> Pre-read Materials, MoM, Transcript</p><h4>Source references</h4><ul class='refs'><li><strong>Pre-read Materials</strong> <span class='loc'>Process Flow 1; transcript agenda external analytics focus</span>: D365 Customer Insights data sources, profile unification, and dynamic segmentation for distributor and vertical-market models.</li><li><strong>MoM</strong> <span class='loc'>lines 481-520</span>: Customer and partner 
+master data contains 
+duplicates and 
+Customer Insights 
+segmentation, reporting 
+and analytics may be 
+Perform data profiling, 
+cleansing, deduplication and 
+HeartStream 
+Business / Data 
+Team / UST 
+ 
+ 
+            
+fragmented account 
+structures 
+inaccura</li><li><strong>Transcript</strong> <span class='loc'>lines 841-880</span>: The third question, target audience and segmentation, we spoke about it on multiple occasions. So not like we would not like to delve into that particular question. We&#x27;ll simply move on to the next one which is your success measures. So when you think of executing this marketing,</li></ul><p><strong>Why generated:</strong> Workshop requirement reflected in cited source spans.</p><p><strong>Why mapped to feature:</strong> Story &quot;Ingest distributor sold-to location from partner channel into CI&quot; aligns with SOW BPM topic WS-CE-02 — 70 - External Analytics Data Ingestion &amp; Unification. Pre-read Materials (Process Flow 1; transcript agenda external analytics focus): D365 Customer Insights data sources, profile unification, and dynamic segmentation for distributor and vertical-market models.</p><p><strong>Business context:</strong> D365 Customer Insights data sources, profile unification, and dynamic segmentation for distributor and vertical-market models.</p><p><strong>Coverage:</strong> Partially Supported</p><p><strong>Confidence:</strong> 0.14 · <strong>Action:</strong> Clarify with workshop</p></article><article class='story-card'><h3> · Provide account-level marketing profiles with contact drill-down</h3><p><strong>Feature:</strong> 61 - Marketing Research Insights Planning · <strong>Match:</strong> Partial Match</p><p><strong>Derived sources:</strong> Pre-read Materials, MoM</p><h4>Source references</h4><ul class='refs'><li><strong>Pre-read Materials</strong> <span class='loc'>Unified customer profile; transcript 58:17–1:02:06</span>: Account and contact 360 views in Customer Insights for marketing audiences (distinct from Sales CRM day-to-day).</li><li><strong>Pre-read Materials</strong> <span class='loc'>WS-CE-02</span>: Marketing research insights planning using Customer Insights audiences and analytics (WS-CE-02).</li><li><strong>MoM</strong> <span class='loc'>lines 361-400</span>: • HeartStream indicated that only a limited number of users are 
+expected to create and manage campaigns globally. 
+ 
+• It was confirmed that appropriate role-based access controls will 
+be required while still enabling global visibility for authorized 
+marketing users. 
+ 
+ 
+ 
+3 </li></ul><p><strong>Why generated:</strong> Workshop requirement reflected in cited source spans.</p><p><strong>Why mapped to feature:</strong> Story &quot;Provide account-level marketing profiles with contact drill-down&quot; aligns with SOW BPM topic WS-CE-02 — 61 - Marketing Research Insights Planning. Pre-read Materials (WS-CE-02): Marketing research insights planning using Customer Insights audiences and analytics (WS-CE-02).</p><p><strong>Business context:</strong> Account and contact 360 views in Customer Insights for marketing audiences (distinct from Sales CRM day-to-day).</p><p><strong>Coverage:</strong> Partially Supported</p><p><strong>Confidence:</strong> 0.11 · <strong>Action:</strong> Clarify with workshop</p></article><article class='story-card'><h3> · Enable worldwide marketing analytics visibility for product marketing</h3><p><strong>Feature:</strong> 61 - Marketing Research Insights Planning · <strong>Match:</strong> Partial Match</p><p><strong>Derived sources:</strong> MoM, Pre-read Materials</p><h4>Source references</h4><ul class='refs'><li><strong>MoM</strong> <span class='loc'>lines 361-400</span>: • HeartStream indicated that only a limited number of users are 
+expected to create and manage campaigns globally. 
+ 
+• It was confirmed that appropriate role-based access controls will 
+be required while still enabling global visibility for authorized 
+marketing users. 
+ 
+ 
+ 
+3 </li><li><strong>Pre-read Materials</strong> <span class='loc'>WS-CE-02</span>: Marketing research insights planning using Customer Insights audiences and analytics (WS-CE-02).</li><li><strong>MoM</strong> <span class='loc'>lines 41-80</span>: 2 KEY DISCUSSION POINTS 
+Sr Topic Discussion Summary 
+1 Workshop scope and 
+stakeholder alignment 
+• HeartStream highlighted that the workshop title created 
+confusion, resulting in key marketing stakeholders not attending 
+the session. 
+ 
+• It was agreed that future workshop tit</li></ul><p><strong>Why generated:</strong> Workshop requirement reflected in cited source spans.</p><p><strong>Why mapped to feature:</strong> Story &quot;Enable worldwide marketing analytics visibility for product marketing&quot; aligns with SOW BPM topic WS-CE-02 — 61 - Marketing Research Insights Planning. Pre-read Materials (WS-CE-02): Marketing research insights planning using Customer Insights audiences and analytics (WS-CE-02).</p><p><strong>Business context:</strong> • HeartStream indicated that only a limited number of users are 
+expected to create and manage campaigns globally. 
+ 
+• It was confirmed that appropriate role-based access controls will 
+be required w</p><p><strong>Coverage:</strong> Partially Supported</p><p><strong>Confidence:</strong> 0.16 · <strong>Action:</strong> Clarify with workshop</p></article><article class='story-card'><h3> · Analyze account consumable purchase patterns for marketing outreach</h3><p><strong>Feature:</strong> 61 - Marketing Research Insights Planning · <strong>Match:</strong> Partial Match</p><p><strong>Derived sources:</strong> Pre-read Materials, MoM</p><h4>Source references</h4><ul class='refs'><li><strong>Pre-read Materials</strong> <span class='loc'>Unified customer profile; transcript 58:17–1:02:06</span>: Account and contact 360 views in Customer Insights for marketing audiences (distinct from Sales CRM day-to-day).</li><li><strong>MoM</strong> <span class='loc'>lines 41-80</span>: 2 KEY DISCUSSION POINTS 
+Sr Topic Discussion Summary 
+1 Workshop scope and 
+stakeholder alignment 
+• HeartStream highlighted that the workshop title created 
+confusion, resulting in key marketing stakeholders not attending 
+the session. 
+ 
+• It was agreed that future workshop tit</li><li><strong>MoM</strong> <span class='loc'>lines 681-720</span>: feedback survey requirements, including target 
+audience, timing and expected reporting 
+requirements. 
+HeartStream 
+Marketing TBD 
+6 Data &amp; Migration 
+Analyze customer master data quality, duplicate 
+account scenarios and market segmentation 
+attributes required to support futur</li></ul><p><strong>Why generated:</strong> Workshop requirement reflected in cited source spans.</p><p><strong>Why mapped to feature:</strong> Story &quot;Analyze account consumable purchase patterns for marketing outreach&quot; aligns with SOW BPM topic WS-CE-02 — 61 - Marketing Research Insights Planning. Pre-read Materials (Unified customer profile; transcript 58:17–1:02:06): Account and contact 360 views in Customer Insights for marketing audiences (distinct from Sales CRM day-to-day).</p><p><strong>Business context:</strong> Account and contact 360 views in Customer Insights for marketing audiences (distinct from Sales CRM day-to-day).</p><p><strong>Coverage:</strong> Partially Supported</p><p><strong>Confidence:</strong> 0.08 · <strong>Action:</strong> Clarify with workshop</p></article><article class='story-card'><h3> · Detect vertical sales trends for targeted campaigns</h3><p><strong>Feature:</strong> 38 - Brand Reputation Campaign Management · <strong>Match:</strong> Partial Match</p><p><strong>Derived sources:</strong> Transcript, Pre-read Materials</p><h4>Source references</h4><ul class='refs'><li><strong>Transcript</strong> <span class='loc'>lines 401-440</span>: Months later.
+1:22:55 | Brian
+Maybe what I feel differently about is maybe we need more than just the high level, like if there&#x27;s a trend, in dentist offices where we start seeing more sales, you know, over the course of a week or two weeks, maybe that&#x27;s a signal to us that somet</li><li><strong>Pre-read Materials</strong> <span class='loc'>WS-CE-02</span>: Marketing research insights planning using Customer Insights audiences and analytics (WS-CE-02).</li><li><strong>Pre-read Materials</strong> <span class='loc'>Unified customer profile; transcript 58:17–1:02:06</span>: Account and contact 360 views in Customer Insights for marketing audiences (distinct from Sales CRM day-to-day).</li></ul><p><strong>Why generated:</strong> Workshop requirement reflected in cited source spans.</p><p><strong>Why mapped to feature:</strong> Story &quot;Detect vertical sales trends for targeted campaigns&quot; aligns with SOW BPM topic WS-CE-04 — 38 - Brand Reputation Campaign Management. Transcript (lines 401-440): Months later.
+1:22:55 | Brian
+Maybe what I feel differently about is maybe we need more than just the high level, like if there&#x27;s a trend, in dentist offices wh</p><p><strong>Business context:</strong> Months later.
+1:22:55 | Brian
+Maybe what I feel differently about is maybe we need more than just the high level, like if there&#x27;s a trend, in dentist offices where we start seeing more sales, you know</p><p><strong>Coverage:</strong> Partially Supported</p><p><strong>Confidence:</strong> 0.08 · <strong>Action:</strong> Clarify with workshop</p></article><article class='story-card'><h3> · Create dynamic segments by vertical end-market</h3><p><strong>Feature:</strong> 60 - Marketing Strategy &amp; Activation Planning · <strong>Match:</strong> Partial Match</p><p><strong>Derived sources:</strong> MoM, Pre-read Materials</p><h4>Source references</h4><ul class='refs'><li><strong>MoM</strong> <span class='loc'>lines 681-720</span>: feedback survey requirements, including target 
+audience, timing and expected reporting 
+requirements. 
+HeartStream 
+Marketing TBD 
+6 Data &amp; Migration 
+Analyze customer master data quality, duplicate 
+account scenarios and market segmentation 
+attributes required to support futur</li><li><strong>Pre-read Materials</strong> <span class='loc'>Process Flow 1; transcript agenda external analytics focus</span>: D365 Customer Insights data sources, profile unification, and dynamic segmentation for distributor and vertical-market models.</li><li><strong>MoM</strong> <span class='loc'>lines 641-680</span>: 5 ACTION ITEMS 
+Sr Category Action Owner Tentative 
+Due Date 
+1 Segmentation 
+Provide the list of marketing segments and target 
+audiences that HeartStream would like to support 
+in Dynamics 365 Customer Insights, including 
+distributor, customer and market-based 
+segmentation re</li></ul><p><strong>Why generated:</strong> Workshop requirement reflected in cited source spans.</p><p><strong>Why mapped to feature:</strong> Story &quot;Create dynamic segments by vertical end-market&quot; aligns with SOW BPM topic WS-CE-02 — 60 - Marketing Strategy &amp; Activation Planning. MoM (lines 681-720): feedback survey requirements, including target 
+audience, timing and expected reporting 
+requirements. 
+HeartStream 
+Marketing TBD 
+6 Data &amp; Migration 
+Analyze </p><p><strong>Business context:</strong> feedback survey requirements, including target 
+audience, timing and expected reporting 
+requirements. 
+HeartStream 
+Marketing TBD 
+6 Data &amp; Migration 
+Analyze customer master data quality, duplicate </p><p><strong>Coverage:</strong> Partially Supported</p><p><strong>Confidence:</strong> 0.12 · <strong>Action:</strong> Clarify with workshop</p></article><article class='story-card'><h3> · Capture end-market segment at e-commerce order entry</h3><p><strong>Feature:</strong> 60 - Marketing Strategy &amp; Activation Planning · <strong>Match:</strong> Partial Match</p><p><strong>Derived sources:</strong> MoM, Transcript, Pre-read Materials</p><h4>Source references</h4><ul class='refs'><li><strong>MoM</strong> <span class='loc'>lines 481-520</span>: Customer and partner 
+master data contains 
+duplicates and 
+Customer Insights 
+segmentation, reporting 
+and analytics may be 
+Perform data profiling, 
+cleansing, deduplication and 
+HeartStream 
+Business / Data 
+Team / UST 
+ 
+ 
+            
+fragmented account 
+structures 
+inaccura</li><li><strong>Transcript</strong> <span class='loc'>lines 961-1000</span>: Katie, Rajiv?
+3:07:00 | James
+I just hope I just hope you got what I said earlier about to get the maximum out of this marketing module, of dynamics, we have to work really hard on the data migration to make sure that what we move is what we need to put in work instructions for u</li><li><strong>Pre-read Materials</strong> <span class='loc'>Process Flow 1; transcript agenda external analytics focus</span>: D365 Customer Insights data sources, profile unification, and dynamic segmentation for distributor and vertical-market models.</li></ul><p><strong>Why generated:</strong> Workshop requirement reflected in cited source spans.</p><p><strong>Why mapped to feature:</strong> Story &quot;Capture end-market segment at e-commerce order entry&quot; aligns with SOW BPM topic WS-CE-02 — 60 - Marketing Strategy &amp; Activation Planning. MoM (lines 481-520): Customer and partner 
+master data contains 
+duplicates and 
+Customer Insights 
+segmentation, reporting 
+and analytics may be 
+Perform data profiling, 
+cleansing</p><p><strong>Business context:</strong> Customer and partner 
+master data contains 
+duplicates and 
+Customer Insights 
+segmentation, reporting 
+and analytics may be 
+Perform data profiling, 
+cleansing, deduplication and 
+HeartStream 
+Busine</p><p><strong>Coverage:</strong> Partially Supported</p><p><strong>Confidence:</strong> 0.14 · <strong>Action:</strong> Clarify with workshop</p></article><article class='story-card'><h3> · Detect vertical sales trends for targeted campaigns</h3><p><strong>Feature:</strong> 60 - Marketing Strategy &amp; Activation Planning · <strong>Match:</strong> Partial Match</p><p><strong>Derived sources:</strong> Transcript, Pre-read Materials</p><h4>Source references</h4><ul class='refs'><li><strong>Transcript</strong> <span class='loc'>lines 401-440</span>: Months later.
+1:22:55 | Brian
+Maybe what I feel differently about is maybe we need more than just the high level, like if there&#x27;s a trend, in dentist offices where we start seeing more sales, you know, over the course of a week or two weeks, maybe that&#x27;s a signal to us that somet</li><li><strong>Pre-read Materials</strong> <span class='loc'>WS-CE-02</span>: Marketing research insights planning using Customer Insights audiences and analytics (WS-CE-02).</li><li><strong>Pre-read Materials</strong> <span class='loc'>Unified customer profile; transcript 58:17–1:02:06</span>: Account and contact 360 views in Customer Insights for marketing audiences (distinct from Sales CRM day-to-day).</li></ul><p><strong>Why generated:</strong> Workshop requirement reflected in cited source spans.</p><p><strong>Why mapped to feature:</strong> Story &quot;Detect vertical sales trends for targeted campaigns&quot; aligns with SOW BPM topic WS-CE-02 — 60 - Marketing Strategy &amp; Activation Planning. Pre-read Materials (WS-CE-02): Marketing research insights planning using Customer Insights audiences and analytics (WS-CE-02).</p><p><strong>Business context:</strong> Months later.
+1:22:55 | Brian
+Maybe what I feel differently about is maybe we need more than just the high level, like if there&#x27;s a trend, in dentist offices where we start seeing more sales, you know</p><p><strong>Coverage:</strong> Partially Supported</p><p><strong>Confidence:</strong> 0.08 · <strong>Action:</strong> Clarify with workshop</p></article><article class='story-card'><h3> · Identify distributors serving multiple vertical markets</h3><p><strong>Feature:</strong> 60 - Marketing Strategy &amp; Activation Planning · <strong>Match:</strong> Partial Match</p><p><strong>Derived sources:</strong> Transcript, MoM</p><h4>Source references</h4><ul class='refs'><li><strong>Transcript</strong> <span class='loc'>lines 801-840</span>: This way I save it. Next time this email reaches you, click in this particular email. The redirection will be done at the same time, the benefit of this particular initiatives or these emails. When you are reviewing your marketing campaign, you will be in a position to have a loo</li><li><strong>MoM</strong> <span class='loc'>lines 121-160</span>: within a unified view. 
+ 
+• HeartStream emphasized that global distributors operating 
+across multiple regions must be supported within the future-state 
+customer and partner profile model. 
+ 
+• HeartStream confirmed that future marketing activities must 
+support both distributor</li><li><strong>Transcript</strong> <span class='loc'>lines 401-440</span>: Months later.
+1:22:55 | Brian
+Maybe what I feel differently about is maybe we need more than just the high level, like if there&#x27;s a trend, in dentist offices where we start seeing more sales, you know, over the course of a week or two weeks, maybe that&#x27;s a signal to us that somet</li></ul><p><strong>Why generated:</strong> Workshop requirement reflected in cited source spans.</p><p><strong>Why mapped to feature:</strong> Story &quot;Identify distributors serving multiple vertical markets&quot; aligns with SOW BPM topic WS-CE-02 — 60 - Marketing Strategy &amp; Activation Planning. Transcript (lines 801-840): This way I save it. Next time this email reaches you, click in this particular email. The redirection will be done at the same time, the benefit of this particu</p><p><strong>Business context:</strong> This way I save it. Next time this email reaches you, click in this particular email. The redirection will be done at the same time, the benefit of this particular initiatives or these emails. When yo</p><p><strong>Coverage:</strong> Partially Supported</p><p><strong>Confidence:</strong> 0.07 · <strong>Action:</strong> Clarify with workshop</p></article>
+  <h2>Feature traceability matrix</h2>
+  <div class="table-wrap"><table><thead><tr><th>Feature</th><th>Mapped user stories</th><th>Coverage %</th><th>Missing requirements</th></tr></thead><tbody><tr><td>70 - External Analytics Data Ingestion &amp; Unification</td><td>Connect CRM account and contact master data to Customer Insights, Ingest sales order and engagement data for unified profiles, Define match rules for unified customer profiles, Use ship-to attributes in Customer Insights segment rules, Update install base segment after partner tracing import, Ingest distributor sold-to location from partner channel into CI</td><td>42.9</td><td></td></tr><tr><td>61 - Marketing Research Insights Planning</td><td>Provide account-level marketing profiles with contact drill-down, Enable worldwide marketing analytics visibility for product marketing, Analyze account consumable purchase patterns for marketing outreach</td><td>21.4</td><td></td></tr><tr><td>54 - Global Marketing Content Activation</td><td></td><td>0.0</td><td>54 - Global Marketing Content Activation</td></tr><tr><td>38 - Brand Reputation Campaign Management</td><td>Detect vertical sales trends for targeted campaigns</td><td>7.1</td><td></td></tr><tr><td>58 - Marketing Asset Governance &amp; Campaign Readiness</td><td></td><td>0.0</td><td>58 - Marketing Asset Governance &amp; Campaign Readiness</td></tr><tr><td>60 - Marketing Strategy &amp; Activation Planning</td><td>Create dynamic segments by vertical end-market, Capture end-market segment at e-commerce order entry, Detect vertical sales trends for targeted campaigns, Identify distributors serving multiple vertical markets</td><td>28.6</td><td></td></tr></tbody></table></div>
+  <h2>Source coverage summary</h2>
+  <div class="grid">
+    <article class="kpi"><p class="kicker">Transcript</p><p class="score">50.0%</p></article>
+    <article class="kpi"><p class="kicker">MoM</p><p class="score">85.7%</p></article>
+    <article class="kpi"><p class="kicker">Pre-read</p><p class="score">92.9%</p></article>
+    <article class="kpi"><p class="kicker">Feature list</p><p class="score">100.0%</p></article>
+  </div>
+  <h2>Coverage and gap analysis</h2>
+  <h3>Feature requirements not converted into user stories</h3>
+  <ul><li>54 - Global Marketing Content Activation <span class='src'>(Feature List · C:\Users\308279\Documents\HEARTSTREAM-1\artifacts\work-items\SOW.json · SOW.rows[2])</span></li><li>58 - Marketing Asset Governance &amp; Campaign Readiness <span class='src'>(Feature List · C:\Users\308279\Documents\HEARTSTREAM-1\artifacts\work-items\SOW.json · SOW.rows[4])</span></li></ul>
+  <h3>Source requirements discussed but not captured</h3>
+  <p class='muted'>None identified.</p>
+  <h3>Unmapped user stories</h3>
+  <p class='muted'>None identified.</p>
+  <h3>Missing business scenarios</h3>
+  <p class='muted'>None identified.</p>
+  <h2>Open items</h2>
+  <ul><li>ASSUMPTION-USHTML-001 pending method review.</li><li>MoM PDF intake-safety exit 1 (card-number-shaped false positives); run used normalized mom .txt.</li></ul>
+  <footer>
+    Method ASSUMPTION-USHTML-001.
+    This report does not compare manual and AI user stories.
+    HTML written only by scripts/generate_user_story_source_analysis.py render.
+  </footer>
+</main>
+</body>
+</html>

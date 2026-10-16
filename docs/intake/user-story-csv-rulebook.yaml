@@ -1,40 +1,248 @@
-# ADO User Story CSV Rulebook (permanent runtime contract)
-# Bootstrap: derived once from workshop export WS-68405 during /generate-user-stories-from-transcript factory setup.
-# Runtime agents MUST load this file only — never read or require the original bootstrap CSV.
+# User Story workbook rulebook (permanent runtime contract)
+# Layout bootstrap: derived from a workshop User Story Excel (Title 1/2/3 split).
+# Runtime agents MUST load this file only — never read or require the bootstrap workbook.
+# Do not copy bootstrap cell content (process names, owners, legal entities, titles) into generated output.
 
-schema_version: "1.0"
-rulebook_id: "ado-user-story-csv-v1"
+schema_version: "2.0"
+rulebook_id: "ado-user-story-xlsx-v2"
 status: Active
 
 provenance:
   behavior_id: RB-USCSV-001
-  statement: Column layout, work item taxonomy, and narrative formats for ADO-compatible user story CSV export.
+  statement: >
+    Workbook layout, column roles, title-split by work item type, narrative formats,
+    and generation logic for ADO-compatible user stories produced from any transcript.
+    Domain content always comes from that run's source file. Column names and styling
+    are a factory contract; they are not story content.
   source_path: "factory-setup"
-  source_locator: "WS-68405.csv (one-time bootstrap; not a runtime input)"
+  source_locator: "<representative User Story Excel with Title 1/2/3 layout — one-time bootstrap only>"
   confidence: explicit
 
+# ---------------------------------------------------------------------------
+# Runtime contract (every /generate-user-stories-from-transcript run)
+# ---------------------------------------------------------------------------
+runtime_contract:
+  statement: >
+    Domain content (titles, descriptions, AC, Area Path, Fit Gap) comes only from
+    the current transcript and approved catalogs — never from a bootstrap workbook,
+    a prior workshop export, or hardcoded examples in factory scripts.
+  bootstrap_inputs:
+    - setup_xlsx
+    - setup_csv
+  rule: Bootstrap files are used once to author or refresh this rulebook. Agents must not read them at runtime.
+  public_excel_layout_ref: generation.row_order.hierarchy
+  catalog_sources:
+    sow_json: artifacts/work-items/SOW.json
+    epic_json: null
+    feature_json: null
+    workshop_catalog_json: artifacts/work-items/work-items.json
+  feature_mapping_mode: sow_json
+  anti_patterns:
+    - Copying bootstrap cell values into generated rows
+    - Hardcoding product, partner, legal-entity, or module names in agents or the mapper
+    - Putting Feature workItemId on User Story ID (stories use blank ID; grouping is by row order)
+
+# ---------------------------------------------------------------------------
+# Input: any transcript (not one workshop's domain content)
+# ---------------------------------------------------------------------------
+input:
+  accepted_suffixes: [".txt", ".md", ".docx"]
+  catalogs:
+    sow_json: artifacts/work-items/SOW.json
+  header_match: >
+    Generated working CSV and public Excel MUST use columns.stories.order exactly.
+    Downstream consumers (MSD extract, evaluation) may bind via field_bind names
+    or field_bind_aliases. Extra columns on an *inbound* User Story Excel are ignored.
+  field_bind:
+    state: State
+    id: ID
+    work_item_type: Work Item Type
+    title: Title 3
+    description: Description
+    acceptance_criteria: Acceptance Criteria
+    area_path: Area Path
+    annexure_id: Annexure ID1
+    fit_gap_status: Fit Gap Status
+    assigned_to: Assigned To
+    user_story_type: User Story Type
+  field_bind_aliases:
+    state: [State]
+    id: [ID, Id]
+    work_item_type: [Work Item Type]
+    title: [Title 3, Title, Title 2, Title 1]
+    description: [Description]
+    acceptance_criteria: [Acceptance Criteria]
+    area_path: [Area Path]
+    annexure_id: [Annexure ID1]
+    fit_gap_status: [Fit Gap Status]
+    assigned_to: [Assigned To]
+    user_story_type: [User Story Type]
+  title_resolution:
+    rule: >
+      First non-empty column in the type-specific list wins. Covers the Title 1/2/3
+      split (this rulebook) and a legacy single Title column.
+    by_work_item_type:
+      Workshop: [Title 1, Title]
+      Epic: [Title 1, Title]
+      Feature: [Title 2, Title]
+      User Story: [Title 3, Title]
+      Test Case: [Title 3, Title]
+      Task: [Title 3, Title]
+      Issue: [Title 3, Title]
+      Risk: [Title 3, Title]
+    default: [Title 3, Title, Title 2, Title 1]
+  cell_normalize:
+    html_unescape: true
+
+# ---------------------------------------------------------------------------
+# Workbook (public Excel)
+# ---------------------------------------------------------------------------
+workbook:
+  encoding: utf-8
+  engine: openpyxl
+  include_header_row: true
+  project_label:
+    source: ".cursor/config.yaml project.name"
+    placeholder_tokens: ["<project-name>", ""]
+    fallback: "User Stories- Workshop"
+  sheets:
+    stories:
+      key: stories
+      name_template: "{project_label} User Stories- Workshop"
+      fallback_name: "User Stories- Workshop"
+      visible: true
+      title_row: 1
+      table_header_row: 1
+      data_start_row: 2
+      freeze_panes: null
+      max_name_length: 31
+  styling:
+    # Static presentation contract only (fonts, fills, row heights, column widths).
+    # May be hardcoded here and/or in scripts/ado_user_story_csv_layout.py fallbacks.
+    # Must NOT embed business data, sample titles, owner names, or bootstrap cell content.
+    font_family: "Aptos Narrow"
+    body_font_size: 9
+    header_font_size: 9
+    header_bold: false
+    header_row_height: 24
+    wrap_text: true
+    vertical: top
+    colors:
+      workshop_highlight: "FFFF00"
+    sheets:
+      stories:
+        auto_row_height:
+          min: 15
+          max: 280
+          line_height: 12
+        hidden_columns:
+          - Assigned To
+        highlight:
+          when_work_item_type: Workshop
+          fill_columns:
+            - Work Item Type
+            - Title 1
+          fill: workshop_highlight
+        column_widths_by_header:
+          "State": 7.08984375
+          "ID": 8.0
+          "Work Item Type": 8.7265625
+          "Assigned To": 0.0
+          "Area Path": 13.26953125
+          "Description": 38.0
+          "Acceptance Criteria": 52.08984375
+          "Annexure ID1": 11.453125
+          "Fit Gap Status": 8.7265625
+
+# ---------------------------------------------------------------------------
+# Working CSV (internal validator input) — same headers as the public sheet
+# ---------------------------------------------------------------------------
 csv:
   encoding: utf-8
   delimiter: ","
   quote_char: '"'
   line_ending: "\n"
   include_header_row: true
+  # Keep in lockstep with columns.stories.order. Writers and validators read either key.
   column_order:
+    - State
     - ID
     - Work Item Type
-    - Title
-    - Description
-    - Task Type1
-    - MoM updated and attached
-    - Action items identified and Tasks created
-    - Related Feature identified and linked in ADO
-    - SOW Annexure ID identified
-    - Annexure ID1
-    - Data Migration needs identified and Tasks created
+    - Title 1
+    - Title 2
+    - Title 3
+    - Assigned To
     - Area Path
-    - Start Date
+    - Description
     - Acceptance Criteria
+    - Annexure ID1
     - Fit Gap Status
+    - User Story Type
+
+# ---------------------------------------------------------------------------
+# Column contract (layout only — names come from bootstrap headers)
+# ---------------------------------------------------------------------------
+columns:
+  stories:
+    order:
+      - State
+      - ID
+      - Work Item Type
+      - Title 1
+      - Title 2
+      - Title 3
+      - Assigned To
+      - Area Path
+      - Description
+      - Acceptance Criteria
+      - Annexure ID1
+      - Fit Gap Status
+      - User Story Type
+    roles:
+      state: State
+      id: ID
+      work_item_type: Work Item Type
+      title_1: Title 1
+      title_2: Title 2
+      title_3: Title 3
+      assigned_to: Assigned To
+      area_path: Area Path
+      description: Description
+      acceptance_criteria: Acceptance Criteria
+      annexure_id: Annexure ID1
+      fit_gap_status: Fit Gap Status
+      user_story_type: User Story Type
+    title_by_work_item_type:
+      Workshop: Title 1
+      Epic: Title 1
+      Feature: Title 2
+      User Story: Title 3
+      Test Case: Title 3
+      Task: Title 3
+      Issue: Title 3
+      Risk: Title 3
+    wrap_roles:
+      - title_1
+      - title_2
+      - title_3
+      - description
+      - acceptance_criteria
+      - area_path
+      - assigned_to
+    do_not_add:
+      - Priority
+      - Story Points
+      - Rank
+      - MoSCoW
+      - Task Type1
+      - Start Date
+      - MoM updated and attached
+      - Action items identified and Tasks created
+      - Related Feature identified and linked in ADO
+      - SOW Annexure ID identified
+      - Data Migration needs identified and Tasks created
+      - EPIC ID
+      - FEATURE ID
 
 work_item_types:
   allowed:
@@ -54,29 +262,193 @@ work_item_types:
       Task, Issue, and Risk are supporting ADO types when cited in transcript; do not invent them without transcript evidence.
     parent_linking:
       user_story_parent: Feature
-      feature_parent: Epic
-      note: "Mapping copies matched catalog Epic/Feature rows (with existing IDs) into the public Excel. Do not invent titles from the transcript."
+      feature_parent: SOW.json
+      note: "Mapping inserts SOW Feature rows (no Epic). Feature ID blank; Annexure ID1 carries SOW minutes."
 
 title_formats:
-  workshop: 'NN. <Domain> - <Workshop IDs> - <DD>/Mon/YYYY'
-  epic: 'NN. <Epic name>'
-  feature: 'N. <Feature name>'
-  user_story: '<Short imperative capability title; no "As a user" prefix in Title>'
+  workshop: 'WS-<id> - <topic summary>'
+  workshop_legacy: 'NN. <Domain> - <Workshop IDs> - <DD>/Mon/YYYY'
+  epic: '(not used — SOW mapping)'
+  feature: '<Annexure ID minutes> - <SOW BPM session topic>'
+  user_story: '<Short imperative capability title; no "As a user" prefix in Title 3>'
   task: '<Action item text>'
   issue: '<Issue short name>'
   risk: '<Risk short name>'
+  placement:
+    rule: >
+      Put the title ONLY in the type-specific column from columns.stories.title_by_work_item_type.
+      Leave the other Title 1/2/3 cells empty. Do not also emit a legacy "Title" header.
 
+# ---------------------------------------------------------------------------
+# Generation logic (preserved narrative / mapping / anti-invention rules)
+# ---------------------------------------------------------------------------
+generation:
+  user_story:
+    description_format:
+      pattern: "As a <role>, I need to <need>, so that <benefit>."
+      rules:
+        - Role uses business language from the current transcript (not a prior workshop).
+        - Need states one testable capability; avoid stacking unrelated needs in one story.
+        - Benefit states outcome for the business or user; cite transcript phrasing when possible.
+        - May include HTML fragments only when transcript or approved glossary uses rich text; prefer plain text for new stories.
+    title_vs_description:
+      title: Capability headline only, in Title 3.
+      description: Full user-story sentence(s) in Description; never duplicate Title-only content without the As-a/I-need/so-that structure.
+  acceptance_criteria:
+    column: Acceptance Criteria
+    format:
+      - Use ASCII hyphen bullets: each line starts with "- " (hyphen + space).
+      - Do not use Unicode bullet U+2022 (•) in new output.
+      - One observable outcome per bullet; testable without implementation detail.
+      - Prefer plain text; inbound Excel may use numbered "1. 2. 3." lists — generated output still uses "- " only.
+    placement: Acceptance Criteria column only — not embedded in Description for User Story rows.
+    multiline_in_cell: true
+    rule: >
+      Put each criterion on its own line prefixed with "- " inside the Acceptance Criteria cell (RFC4180 quoted field).
+      Do not concatenate all bullets into one line separated only by spaces.
+  transcript_authoring:
+    create_from_transcript:
+      - Workshop
+      - User Story
+      - Task
+      - Issue
+      - Risk
+    do_not_create:
+      - Epic
+      - Feature
+    note: >
+      Identify the related SOW feature (session topic) from the transcript before authoring User Stories.
+      Do not invent Feature titles. On the public Excel, User Story `ID` stays blank; grouping is by row order under each Feature.
+      Feature rows come from SOW.json only: Title 2 = "<Annexure ID minutes> - <topic>", Description = topic, ID blank, Annexure ID1 = minutes.
+      Do not use epic.json or feature.json. No EPIC ID / FEATURE ID columns.
+  sow_feature_mapping:
+    source: artifacts/work-items/SOW.json
+    map_script: scripts/map-user-stories-to-sow-features.py
+    feature_row:
+      work_item_type: Feature
+      title_2: "{Annexure ID} - {BPM}"
+      description_field: BPM
+      id: blank
+      annexure_id1: Annexure ID minutes from SOW row
+    public_xlsx_order:
+      - Workshop
+      - Feature
+      - User Story
+      - Issue
+      - Risk
+      - Task
+    exclude:
+      - Epic
+  row_order:
+    working_csv:
+      - Workshop
+      - User Story
+      - Issue
+      - Risk
+      - Task
+    public_xlsx:
+      - Workshop
+      - Epic
+      - Feature
+      - User Story
+      - Issue
+      - Risk
+      - Task
+    hierarchy:
+      statement: >
+        After the Workshop row(s), for each SOW feature that has matched stories: one Feature row (Title 2 per sow_feature_mapping,
+        blank ID, Annexure ID1 set), then immediately all User Stories for that feature (Title 3, blank ID), in SOW.json row order.
+        Unmatched User Stories and Issue/Risk rows follow after all Feature blocks. No Epic rows.
+      feature_block:
+        - Feature
+        - User Story
+    workshop_row:
+      rule: First data row of a workshop block; Title 1 matches workshop naming pattern; Area Path populated when known.
+    epic_feature_rows:
+      rule: >
+        Transcript working CSV has no Epic/Feature rows. The public Excel inserts matched catalog Epic and Feature
+        rows (ID = workItemId; title in Title 1 / Title 2) in hierarchy order — not as separate Epic-then-all-Features sections.
+    user_story_rows:
+      title_column: Title 3
+      id: leave blank on public Excel and working CSV
+      area_path: populate when the transcript or mapped Feature assigns an ADO area; otherwise leave blank
+      description: Full As-a / I-need-to / so-that sentence only in Description
+      acceptance_criteria: Bulleted lines in Acceptance Criteria column only
+    issue_risk_rows:
+      title_column: Title 3
+      description: "Risk / Impact / Mitigation as separate lines in Description"
+      acceptance_criteria: leave blank
+      area_path: populate when workshop area is known
+  state_field:
+    column: State
+    allowed: [New, In Review, ""]
+    defaults:
+      Workshop: In Review
+      Epic: New
+      Feature: New
+      User Story: New
+      Test Case: New
+      Task: New
+      Issue: New
+      Risk: New
+    rule: >
+      Use defaults when the source does not state a workflow state. Do not invent states
+      outside allowed. Leave blank rather than guessing.
+  assigned_to:
+    column: Assigned To
+    hidden: true
+    rule: >
+      Leave blank unless the current transcript names an owner. Do not copy person names
+      or email addresses from a bootstrap workbook.
+  user_story_type:
+    column: User Story Type
+    rule: Leave blank unless the current source classifies the story. Do not invent a type enum.
+  fit_gap:
+    column: Fit Gap Status
+    allowed: [Fit, Gap, TBD, ""]
+    usage: Populate when transcript or workshop notes state fit/gap disposition; otherwise leave empty.
+  annexure_id:
+    column: Annexure ID1
+    usage: >
+      Populate on SOW Feature rows only (Annexure ID minutes from SOW.json). Leave empty on Workshop, User Story,
+      Issue, Risk, and Task rows. Never put annexure codes or minutes on the Workshop row.
+    by_work_item_type:
+      Workshop: empty
+      Feature: SOW Annexure ID minutes (mapping phase)
+      User Story: empty
+      Issue: empty
+      Risk: empty
+      Task: empty
+  area_path:
+    format: '<Iteration>\\<Area> or <Iteration>\\<Area>\\<Subarea>'
+    rule: Use backslash as in ADO Area Path; match transcript module/workstream when stated. Do not hardcode a day or module from a prior workshop.
+  id_column:
+    column: ID
+    rule: >
+      User Story rows: leave ID blank on working CSV and public Excel. Traceability to catalog Features is by
+      row order (stories immediately follow their Feature row). Epic and Feature rows use catalog workItemIds.
+      Never fabricate an ID.
+  priority_conventions:
+    present_in_column_contract: false
+    rule: >
+      Do not add Priority, MoSCoW, or Rank columns. Prioritization is expressed via workshop sequencing, Epic/Feature numbering,
+      and human review — not via extra CSV columns.
+  story_point_conventions:
+    present_in_column_contract: false
+    rule: Do not add Story Points or Effort columns unless the rulebook is superseded by an approved harness decision.
+
+# Backward-compatible aliases (same rules as generation.*). Validators may read either path.
 user_story:
   description_format:
     pattern: "As a <role>, I need to <need>, so that <benefit>."
     rules:
-      - Role uses business language (e.g., account manager, user, partner operations).
+      - Role uses business language from the current transcript (not a prior workshop).
       - Need states one testable capability; avoid stacking unrelated needs in one story.
       - Benefit states outcome for the business or user; cite transcript phrasing when possible.
       - May include HTML fragments only when transcript or approved glossary uses rich text; prefer plain text for new stories.
   title_vs_description:
-    title: Capability headline only.
-    description: Full user-story sentence(s); never duplicate Title-only content without the As-a/I-need/so-that structure.
+    title: Capability headline only, in Title 3.
+    description: Full user-story sentence(s) in Description; never duplicate Title-only content without the As-a/I-need/so-that structure.
 
 acceptance_criteria:
   column: Acceptance Criteria
@@ -84,7 +456,7 @@ acceptance_criteria:
     - Use ASCII hyphen bullets: each line starts with "- " (hyphen + space).
     - Do not use Unicode bullet U+2022 (•) in new output.
     - One observable outcome per bullet; testable without implementation detail.
-    - Prefer plain text; legacy bootstrap exports may have shown • or HTML; new output uses "- " only.
+    - Prefer plain text; inbound Excel may use numbered "1. 2. 3." lists — generated output still uses "- " only.
   placement: Acceptance Criteria column only — not embedded in Description for User Story rows.
   multiline_in_cell: true
   rule: >
@@ -102,12 +474,9 @@ transcript_authoring:
     - Epic
     - Feature
   note: >
-    Identify the related catalog Feature from the transcript before authoring User Stories
-    (AI Factory meeting 2026-10-07, Rajesh/Rajeev: the challenge is identifying the related feature,
-    then each update to that workflow is a user story). Do not invent Feature titles.
-    On the public Excel, every User Story `ID` is a catalog Feature workItemId.
-    Leave it blank only when no catalog Feature title relates.
-    Epic and Feature rows still carry their own catalog IDs. No EPIC ID / FEATURE ID columns.
+    Identify the related catalog Feature from the transcript before authoring User Stories.
+    Do not invent Feature titles. Public Excel groups User Stories under each matched Feature; User Story ID stays blank.
+    Epic and Feature rows carry catalog IDs. No EPIC ID / FEATURE ID columns.
 
 ado_export_layout:
   row_order:
@@ -120,30 +489,25 @@ ado_export_layout:
     - Risk
     - Task
   workshop_row:
-    rule: First data row; Title matches workshop naming pattern; Area Path and Start Date populated when known.
+    rule: First data row of a workshop block; Title 1 matches workshop naming pattern; Area Path populated when known.
   epic_feature_rows:
     rule: >
-      Transcript working CSV has no Epic/Feature rows. The public Excel inserts matched catalog
-      Epic then Feature rows (ID = workItemId, Title/Description from JSON) before User Stories.
+      Public Excel uses Epic → Feature → User Stories hierarchy per generation.row_order.hierarchy.
+      Catalog Epic/Feature IDs in `ID`; User Story ID blank.
   user_story_rows:
-    area_path: leave blank unless transcript assigns a specific ADO area to the story
+    id: leave blank
+    area_path: populate when the transcript or mapped Feature assigns an ADO area; otherwise leave blank
     description: Full As-a / I-need-to / so-that sentence only in Description
     acceptance_criteria: Bulleted lines in Acceptance Criteria column only
   issue_risk_rows:
     description: "Risk / Impact / Mitigation as separate lines in Description"
     acceptance_criteria: leave blank
-    area_path: populate when workshop area is known (e.g. Day 2\CRM)
+    area_path: populate when workshop area is known
 
-epic_and_feature:
-  epic:
-    description: Multi-line narrative of end-to-end process scope; may use newlines in Description cell (CSV-quoted).
-  feature:
-    description: >
-      Structured narrative: Input / Activities / Output sections separated by semicolons or newlines as in reference export.
-      Annexure ID1 populated when SOW annexure is cited.
-    area_path_examples:
-      - "Day 2\\Business E2E flow"
-      - "Day 2\\CRM"
+id_column:
+  column: ID
+  rule: >
+    User Story ID blank everywhere. Epic and Feature rows use catalog workItemIds. Stories sit under their Feature in row order.
 
 priority_conventions:
   present_in_reference_export: false
@@ -157,62 +521,22 @@ story_point_conventions:
 
 fit_gap:
   column: Fit Gap Status
+  allowed: [Fit, Gap, TBD, ""]
   usage: Populate when transcript or workshop notes state fit/gap disposition; otherwise leave empty.
-  workshop_tasks: Action items may reference fit-gap updates in ADO; capture disposition in this column when stated.
-
-workshop_governance_columns:
-  yes_no_values: ["Yes", ""]
-  columns:
-    - MoM updated and attached
-    - Action items identified and Tasks created
-    - Related Feature identified and linked in ADO
-    - SOW Annexure ID identified
-    - Data Migration needs identified and Tasks created
-  rule: Populate Yes only on Workshop rows when transcript explicitly confirms; leave blank for User Story rows unless transcript states otherwise.
-
-task_type1:
-  allowed_values:
-    - Workshop Action item
-    - QA
-  rule: Populate only for Task rows when transcript classifies the action; leave blank for User Story rows.
 
 area_path:
-  format: 'Day 2\\<Area> or Day 2\\<Area>\\<Subarea>'
-  examples:
-    - "Day 2\\CRM"
-    - "Day 2\\Business E2E flow"
-    - "Day 2\\Testing\\CRM"
-  rule: Use backslash as in ADO Area Path; match transcript module/workstream when stated.
+  format: '<Iteration>\\<Area> or <Iteration>\\<Area>\\<Subarea>'
+  rule: Use backslash as in ADO Area Path; match transcript module/workstream when stated. Do not hardcode a day or module from a prior workshop.
 
-start_date:
-  format: "DD-MM-YYYY HH:MM"
-  example: "28-09-2026 08:00"
-  rule: Populate when transcript provides workshop or task schedule; otherwise leave blank.
-
-required_fields:
-  User Story:
-    required: [Work Item Type, Title, Description, Acceptance Criteria]
-    optional: [ID, Area Path, Fit Gap Status]
-    area_path_default: empty
-  Epic:
-    required: [Work Item Type, Title, Description]
-  Feature:
-    required: [Work Item Type, Title, Description]
-    optional: [Annexure ID1, Area Path]
-  Test Case:
-    required: [Work Item Type, Title, Description, Acceptance Criteria]
-    optional: []
-    id: leave blank
-  Workshop:
-    required: [Work Item Type, Title, Description, Area Path]
-    optional: [Start Date, workshop_governance_columns]
-  Task:
-    required: [Work Item Type, Title]
-    optional: [Task Type1, Area Path, Start Date, Description]
-  Issue:
-    required: [Work Item Type, Title, Description]
-  Risk:
-    required: [Work Item Type, Title, Description]
+epic_and_feature:
+  epic:
+    title_column: Title 1
+    description: Multi-line narrative of end-to-end process scope; may use newlines in Description cell (CSV-quoted).
+  feature:
+    title_column: Title 2
+    description: >
+      Structured narrative copied from the catalog when present. Annexure ID1 populated when SOW annexure is cited.
+      Feature rows in an inbound ADO Excel may leave Description empty — do not invent one.
 
 test_case:
   behavior_id: RB-TC-001
@@ -221,9 +545,9 @@ test_case:
     Feature records in artifacts/work-items/feature.json. A case is written only for a strong unique
     Feature match whose parent.workItemId exists in artifacts/work-items/epic.json. The CSV uses this
     rulebook's column_order. Traceability Transcript → Epic → Feature → Test Case is stored in the
-    Test Case Description. No new columns.
+    Test Case Description. No new columns. Epic title in Title 1; Feature title in Title 2; Test Case title in Title 3.
   source_path: operator-instruction
-  source_locator: "2026-10-08 test-agent: transcript match then CSV"
+  source_locator: "operator-instruction: transcript match then CSV (any catalog)"
   confidence: explicit
   catalogs:
     epic_json: artifacts/work-items/epic.json
@@ -233,7 +557,7 @@ test_case:
     Use work_item_mapping.strong_threshold and winner_margin from .cursor/config.yaml.
     Below threshold, ambiguous winner, or missing parent Epic → no Test Case for that requirement.
   row_rules:
-    epic_feature: Copy ID, Title, Description, and Area Path from the matched JSON records. Do not invent titles or IDs.
+    epic_feature: Copy ID, Title (into Title 1 / Title 2), Description, and Area Path from the matched JSON records. Do not invent titles or IDs.
     test_case_id: Leave ID blank.
     section_order: All Epic rows, then all matched Feature rows, then Test Case rows.
   description_format:
@@ -251,27 +575,48 @@ test_case:
     format: Same ASCII "- " bullets as acceptance_criteria above. One expected outcome per line.
     placement: Acceptance Criteria column only.
 
-id_column:
-  column: ID
-  rule: >
-    Working CSV: leave User Story ID blank (ADO assigns a story id on import).
-    Public Excel after mapping: set every User Story `ID` to a catalog Feature workItemId
-    identified from the transcript. Leave it blank only when no catalog Feature title relates.
-    Never fabricate an ID. Epic and Feature rows use their own catalog IDs.
+required_fields:
+  User Story:
+    required: [Work Item Type, Title 3, Description, Acceptance Criteria]
+    optional: [ID, State, Area Path, Fit Gap Status, Assigned To, User Story Type]
+    area_path_default: optional
+  Epic:
+    required: [Work Item Type, Title 1, Description]
+    optional: [ID, State, Area Path]
+  Feature:
+    required: [Work Item Type, Title 2]
+    optional: [ID, State, Description, Annexure ID1, Area Path, Fit Gap Status]
+  Test Case:
+    required: [Work Item Type, Title 3, Description, Acceptance Criteria]
+    optional: [State]
+    id: leave blank
+  Workshop:
+    required: [Work Item Type, Title 1, Description, Area Path]
+    optional: [ID, State]
+  Task:
+    required: [Work Item Type, Title 3]
+    optional: [State, Area Path, Description]
+  Issue:
+    required: [Work Item Type, Title 3, Description]
+    optional: [State, Area Path]
+  Risk:
+    required: [Work Item Type, Title 3, Description]
+    optional: [State, Area Path]
 
 formatting_standards:
-  - RFC4180 CSV quoting; escape internal double quotes by doubling.
-  - Preserve exact header spelling and column order from column_order.
-  - No BOM on output unless operator import tool requires it (default no BOM).
+  - Preserve exact header spelling and column order from columns.stories.order (csv.column_order is an alias).
+  - Apply workbook.styling via scripts/ado_user_story_csv_layout.py on the public xlsx (font, wrap, hidden Assigned To, workshop highlight).
+  - RFC4180 CSV quoting on the working CSV; escape internal double quotes by doubling.
+  - No BOM on working CSV unless operator import tool requires it (default no BOM).
   - Do not add or remove columns at runtime.
+  - Do not copy bootstrap workbook cell values into generated output.
 
 business_terminology:
-  glossary_refs:
-    - Partner / channel / PRM / ZINFI when cited in transcript
-    - D365 CE and D365 F&O (Finance and Operations) for CRM/ERP boundaries
-    - HeartStream region and legal entity
-    - Fit-gap, MoM, SOW Annexure, WS-CE workshop identifiers
-  rule: Use domain terms only when supported by transcript or approved glossary; register ASSUMPTION-xxx when inferring a term.
+  glossary_refs: []
+  rule: >
+    Use domain terms only when the current source (transcript, User Story Excel, or
+    approved glossary) cites them. Do not carry product, partner, or legal-entity
+    names from a prior workshop. Register ASSUMPTION-xxx when inferring a term.
 
 validation:
   script: scripts/validate-user-story-csv.py
@@ -280,9 +625,10 @@ validation:
   regression_tests: scripts/test_ado_user_story_csv_layout.py
   rulebook_pointer: docs/intake/user-story-csv-rulebook.yaml
   mandatory_flow: >
-    Agents must not hand-author CSV text. Persist row objects to JSON, then run
+    Agents must not hand-author CSV or xlsx text. Persist row objects to JSON, then run
     `python scripts/ado_user_story_csv.py write --json <rows.json> --out <out.csv>`,
-    then `python scripts/validate-user-story-csv.py --csv <out.csv>`. Exit non-zero blocks Done.
+    then `python scripts/validate-user-story-csv.py --csv <out.csv>`. Mapping writes the
+    public Excel through the layout writer. Exit non-zero blocks Done.
 
 output_paths:
   working_csv: "artifacts/intake/.pipeline/<YYYY-MM-DD>-user-stories-working.csv"
@@ -292,3 +638,4 @@ output_paths:
   test_case_rows_json: "artifacts/intake/<YYYY-MM-DD>-test-case-rows.json"
   extraction_notes: "artifacts/intake/<YYYY-MM-DD>-transcript-story-extraction.md"
   validation_report: "artifacts/intake/<YYYY-MM-DD>-user-story-csv-validation.json"
+  rows_json: "artifacts/intake/<YYYY-MM-DD>-user-story-rows.json"

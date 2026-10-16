@@ -1,0 +1,953 @@
+{
+  "generatedAt": "2026-10-13T08:28:29.897141+00:00",
+  "sourceCsv": "artifacts\\intake\\.pipeline\\2026-10-13-user-stories-working.csv",
+  "threshold": 62.0,
+  "margin": 8.0,
+  "requireBothEpicAndFeature": true,
+  "catalogCounts": {
+    "Epic": 17,
+    "Feature": 221,
+    "Workshop": 119
+  },
+  "userStoryCount": 18,
+  "matched": 18,
+  "unmatched": 0,
+  "stories": [
+    {
+      "csvRow": 3,
+      "title": "Sync authorized partner to D365 CE after ZINFI onboarding",
+      "status": "matched",
+      "pair": "matched",
+      "catalogFeatureTitle": "6. Partner Data Available in CRM & synchronization with FnO",
+      "catalogEpicTitle": "02. B2B Direct Through Reseller",
+      "epicId": "67462",
+      "featureId": "67510",
+      "featureIds": [
+        "67510",
+        "67520",
+        "67643"
+      ],
+      "matches": [
+        {
+          "featureId": "67510",
+          "epicId": "67462",
+          "catalogFeatureTitle": "6. Partner Data Available in CRM & synchronization with FnO",
+          "catalogEpicTitle": "02. B2B Direct Through Reseller",
+          "score": 100.0,
+          "rationale": "strong (100.0)"
+        },
+        {
+          "featureId": "67520",
+          "epicId": "67462",
+          "catalogFeatureTitle": "15. Customer Contracting & Contract Synchronization with FnO",
+          "catalogEpicTitle": "02. B2B Direct Through Reseller",
+          "score": 100.0,
+          "rationale": "strong (100.0)"
+        },
+        {
+          "featureId": "67643",
+          "epicId": "67635",
+          "catalogFeatureTitle": "7. Sales Order Synchronization (Finance)",
+          "catalogEpicTitle": "09. Software Upgrade",
+          "score": 95.0,
+          "rationale": "strong (95.0)"
+        }
+      ],
+      "workshopId": "",
+      "feature": {
+        "id": "67510",
+        "title": "6. Partner Data Available in CRM & synchronization with FnO",
+        "score": 0.0,
+        "rationale": "multi_strong (3 features within margin 8.0)"
+      },
+      "epic": {
+        "id": "67462",
+        "title": "02. B2B Direct Through Reseller",
+        "score": 100.0,
+        "rationale": "parent of feature 67510"
+      },
+      "workshop": {
+        "id": "",
+        "title": "01. Sales - CE Record to Report UST Led Workshop-20260928",
+        "score": 19.8,
+        "rationale": "below_threshold (19.8 < 62.0)"
+      }
+    },
+    {
+      "csvRow": 4,
+      "title": "Link ZINFI and CE partner account identifiers",
+      "status": "matched",
+      "pair": "matched",
+      "catalogFeatureTitle": "6. Partner Data Available in CRM & synchronization with FnO",
+      "catalogEpicTitle": "02. B2B Direct Through Reseller",
+      "epicId": "67462",
+      "featureId": "67510",
+      "featureIds": [
+        "67510",
+        "67509",
+        "67562"
+      ],
+      "matches": [
+        {
+          "featureId": "67510",
+          "epicId": "67462",
+          "catalogFeatureTitle": "6. Partner Data Available in CRM & synchronization with FnO",
+          "catalogEpicTitle": "02. B2B Direct Through Reseller",
+          "score": 83.0,
+          "rationale": "strong (83.0)"
+        },
+        {
+          "featureId": "67509",
+          "epicId": "67462",
+          "catalogFeatureTitle": "5. Partner Onboarding & Enablement with Partner data synchronization",
+          "catalogEpicTitle": "02. B2B Direct Through Reseller",
+          "score": 83.0,
+          "rationale": "strong (83.0)"
+        },
+        {
+          "featureId": "67562",
+          "epicId": "67557",
+          "catalogFeatureTitle": "4. Install Base Management",
+          "catalogEpicTitle": "03. B2B Direct Service & Solution Delivery",
+          "score": 83.0,
+          "rationale": "strong (83.0)"
+        }
+      ],
+      "workshopId": "",
+      "feature": {
+        "id": "67510",
+        "title": "6. Partner Data Available in CRM & synchronization with FnO",
+        "score": 0.0,
+        "rationale": "multi_strong (3 features within margin 8.0)"
+      },
+      "epic": {
+        "id": "67462",
+        "title": "02. B2B Direct Through Reseller",
+        "score": 100.0,
+        "rationale": "parent of feature 67510"
+      },
+      "workshop": {
+        "id": "",
+        "title": "01. Sales - CE Record to Report UST Led Workshop-20260928",
+        "score": 19.8,
+        "rationale": "below_threshold (19.8 < 62.0)"
+      }
+    },
+    {
+      "csvRow": 5,
+      "title": "Restrict partner visibility by legal entity",
+      "status": "matched",
+      "pair": "matched",
+      "catalogFeatureTitle": "6. Partner Data Available in CRM & synchronization with FnO",
+      "catalogEpicTitle": "02. B2B Direct Through Reseller",
+      "epicId": "67462",
+      "featureId": "67510",
+      "featureIds": [
+        "67510",
+        "67508",
+        "67520"
+      ],
+      "matches": [
+        {
+          "featureId": "67510",
+          "epicId": "67462",
+          "catalogFeatureTitle": "6. Partner Data Available in CRM & synchronization with FnO",
+          "catalogEpicTitle": "02. B2B Direct Through Reseller",
+          "score": 71.0,
+          "rationale": "strong (71.0)"
+        },
+        {
+          "featureId": "67508",
+          "epicId": "67462",
+          "catalogFeatureTitle": "4. Commercial Terms Synchronization",
+          "catalogEpicTitle": "02. B2B Direct Through Reseller",
+          "score": 71.0,
+          "rationale": "strong (71.0)"
+        },
+        {
+          "featureId": "67520",
+          "epicId": "67462",
+          "catalogFeatureTitle": "15. Customer Contracting & Contract Synchronization with FnO",
+          "catalogEpicTitle": "02. B2B Direct Through Reseller",
+          "score": 71.0,
+          "rationale": "strong (71.0)"
+        }
+      ],
+      "workshopId": "",
+      "feature": {
+        "id": "67510",
+        "title": "6. Partner Data Available in CRM & synchronization with FnO",
+        "score": 0.0,
+        "rationale": "multi_strong (3 features within margin 8.0)"
+      },
+      "epic": {
+        "id": "67462",
+        "title": "02. B2B Direct Through Reseller",
+        "score": 100.0,
+        "rationale": "parent of feature 67510"
+      },
+      "workshop": {
+        "id": "",
+        "title": "01. Sales - CE Record to Report UST Led Workshop-20260928",
+        "score": 19.8,
+        "rationale": "below_threshold (19.8 < 62.0)"
+      }
+    },
+    {
+      "csvRow": 6,
+      "title": "Expose synced partners to authorized CRM sales users",
+      "status": "matched",
+      "pair": "matched",
+      "catalogFeatureTitle": "6. Partner Data Available in CRM & synchronization with FnO",
+      "catalogEpicTitle": "02. B2B Direct Through Reseller",
+      "epicId": "67462",
+      "featureId": "67510",
+      "featureIds": [
+        "67510",
+        "67509"
+      ],
+      "matches": [
+        {
+          "featureId": "67510",
+          "epicId": "67462",
+          "catalogFeatureTitle": "6. Partner Data Available in CRM & synchronization with FnO",
+          "catalogEpicTitle": "02. B2B Direct Through Reseller",
+          "score": 95.0,
+          "rationale": "strong (95.0)"
+        },
+        {
+          "featureId": "67509",
+          "epicId": "67462",
+          "catalogFeatureTitle": "5. Partner Onboarding & Enablement with Partner data synchronization",
+          "catalogEpicTitle": "02. B2B Direct Through Reseller",
+          "score": 95.0,
+          "rationale": "strong (95.0)"
+        }
+      ],
+      "workshopId": "",
+      "feature": {
+        "id": "67510",
+        "title": "6. Partner Data Available in CRM & synchronization with FnO",
+        "score": 0.0,
+        "rationale": "multi_strong (2 features within margin 8.0)"
+      },
+      "epic": {
+        "id": "67462",
+        "title": "02. B2B Direct Through Reseller",
+        "score": 100.0,
+        "rationale": "parent of feature 67510"
+      },
+      "workshop": {
+        "id": "",
+        "title": "01. Sales - CE Record to Report UST Led Workshop-20260928",
+        "score": 19.8,
+        "rationale": "below_threshold (19.8 < 62.0)"
+      }
+    },
+    {
+      "csvRow": 7,
+      "title": "Capture partner training status in CE from ZINFI",
+      "status": "matched",
+      "pair": "matched",
+      "catalogFeatureTitle": "7. Partner Training & Enablement",
+      "catalogEpicTitle": "02. B2B Direct Through Reseller",
+      "epicId": "67462",
+      "featureId": "67512",
+      "featureIds": [
+        "67512",
+        "67510"
+      ],
+      "matches": [
+        {
+          "featureId": "67512",
+          "epicId": "67462",
+          "catalogFeatureTitle": "7. Partner Training & Enablement",
+          "catalogEpicTitle": "02. B2B Direct Through Reseller",
+          "score": 100.0,
+          "rationale": "strong (100.0)"
+        },
+        {
+          "featureId": "67510",
+          "epicId": "67462",
+          "catalogFeatureTitle": "6. Partner Data Available in CRM & synchronization with FnO",
+          "catalogEpicTitle": "02. B2B Direct Through Reseller",
+          "score": 95.0,
+          "rationale": "strong (95.0)"
+        }
+      ],
+      "workshopId": "",
+      "feature": {
+        "id": "67512",
+        "title": "7. Partner Training & Enablement",
+        "score": 0.0,
+        "rationale": "multi_strong (2 features within margin 8.0)"
+      },
+      "epic": {
+        "id": "67462",
+        "title": "02. B2B Direct Through Reseller",
+        "score": 100.0,
+        "rationale": "parent of feature 67512"
+      },
+      "workshop": {
+        "id": "",
+        "title": "01. Sales - CE Record to Report UST Led Workshop-20260928",
+        "score": 19.8,
+        "rationale": "below_threshold (19.8 < 62.0)"
+      }
+    },
+    {
+      "csvRow": 8,
+      "title": "Distinguish deal registration from standard opportunity",
+      "status": "matched",
+      "pair": "matched",
+      "catalogFeatureTitle": "Joint Marketing & Demand Generation",
+      "catalogEpicTitle": "16. Ecommerce (B2B & B2C)",
+      "epicId": "67476",
+      "featureId": "67532",
+      "featureIds": [
+        "67532",
+        "67516"
+      ],
+      "matches": [
+        {
+          "featureId": "67532",
+          "epicId": "67476",
+          "catalogFeatureTitle": "Joint Marketing & Demand Generation",
+          "catalogEpicTitle": "16. Ecommerce (B2B & B2C)",
+          "score": 95.0,
+          "rationale": "strong (95.0)"
+        },
+        {
+          "featureId": "67516",
+          "epicId": "67462",
+          "catalogFeatureTitle": "11. Opportunity Management",
+          "catalogEpicTitle": "02. B2B Direct Through Reseller",
+          "score": 95.0,
+          "rationale": "strong (95.0)"
+        }
+      ],
+      "workshopId": "",
+      "feature": {
+        "id": "67532",
+        "title": "Joint Marketing & Demand Generation",
+        "score": 71.0,
+        "rationale": "multi_strong (2 features within margin 8.0)"
+      },
+      "epic": {
+        "id": "67476",
+        "title": "16. Ecommerce (B2B & B2C)",
+        "score": 100.0,
+        "rationale": "parent of feature 67532"
+      },
+      "workshop": {
+        "id": "",
+        "title": "01. Sales - CE Record to Report UST Led Workshop-20260928",
+        "score": 19.8,
+        "rationale": "below_threshold (19.8 < 62.0)"
+      }
+    },
+    {
+      "csvRow": 9,
+      "title": "Check existing deal registration for end customer",
+      "status": "matched",
+      "pair": "matched",
+      "catalogFeatureTitle": "Joint Marketing & Demand Generation",
+      "catalogEpicTitle": "16. Ecommerce (B2B & B2C)",
+      "epicId": "67476",
+      "featureId": "67532",
+      "featureIds": [
+        "67532",
+        "67505"
+      ],
+      "matches": [
+        {
+          "featureId": "67532",
+          "epicId": "67476",
+          "catalogFeatureTitle": "Joint Marketing & Demand Generation",
+          "catalogEpicTitle": "16. Ecommerce (B2B & B2C)",
+          "score": 83.0,
+          "rationale": "strong (83.0)"
+        },
+        {
+          "featureId": "67505",
+          "epicId": "67462",
+          "catalogFeatureTitle": "1. Channel Partner Strategy",
+          "catalogEpicTitle": "02. B2B Direct Through Reseller",
+          "score": 80.0,
+          "rationale": "strong (80.0)"
+        }
+      ],
+      "workshopId": "",
+      "feature": {
+        "id": "67532",
+        "title": "Joint Marketing & Demand Generation",
+        "score": 59.0,
+        "rationale": "multi_strong (2 features within margin 8.0)"
+      },
+      "epic": {
+        "id": "67476",
+        "title": "16. Ecommerce (B2B & B2C)",
+        "score": 100.0,
+        "rationale": "parent of feature 67532"
+      },
+      "workshop": {
+        "id": "",
+        "title": "01. Sales - CE Record to Report UST Led Workshop-20260928",
+        "score": 19.8,
+        "rationale": "below_threshold (19.8 < 62.0)"
+      }
+    },
+    {
+      "csvRow": 10,
+      "title": "Apply reseller contract pricing to quotations",
+      "status": "matched",
+      "pair": "matched",
+      "catalogFeatureTitle": "9. Contract Management",
+      "catalogEpicTitle": "01. B2B Direct Sales",
+      "epicId": "67461",
+      "featureId": "67494",
+      "featureIds": [
+        "67494",
+        "67492",
+        "67507"
+      ],
+      "matches": [
+        {
+          "featureId": "67494",
+          "epicId": "67461",
+          "catalogFeatureTitle": "9. Contract Management",
+          "catalogEpicTitle": "01. B2B Direct Sales",
+          "score": 100.0,
+          "rationale": "strong (100.0)"
+        },
+        {
+          "featureId": "67492",
+          "epicId": "67461",
+          "catalogFeatureTitle": "7. Quotation & Pricing",
+          "catalogEpicTitle": "01. B2B Direct Sales",
+          "score": 100.0,
+          "rationale": "strong (100.0)"
+        },
+        {
+          "featureId": "67507",
+          "epicId": "67462",
+          "catalogFeatureTitle": "3. Partner Contracting & Commercial Setup",
+          "catalogEpicTitle": "02. B2B Direct Through Reseller",
+          "score": 100.0,
+          "rationale": "strong (100.0)"
+        }
+      ],
+      "workshopId": "",
+      "feature": {
+        "id": "67494",
+        "title": "9. Contract Management",
+        "score": 59.0,
+        "rationale": "multi_strong (3 features within margin 8.0)"
+      },
+      "epic": {
+        "id": "67461",
+        "title": "01. B2B Direct Sales",
+        "score": 100.0,
+        "rationale": "parent of feature 67494"
+      },
+      "workshop": {
+        "id": "",
+        "title": "01. Sales - CE Record to Report UST Led Workshop-20260928",
+        "score": 19.8,
+        "rationale": "below_threshold (19.8 < 62.0)"
+      }
+    },
+    {
+      "csvRow": 11,
+      "title": "Route non-contract quotation discounts through approval tiers",
+      "status": "matched",
+      "pair": "matched",
+      "catalogFeatureTitle": "3. Partner Contracting & Commercial Setup",
+      "catalogEpicTitle": "02. B2B Direct Through Reseller",
+      "epicId": "67462",
+      "featureId": "67507",
+      "featureIds": [
+        "67507",
+        "67559",
+        "67494"
+      ],
+      "matches": [
+        {
+          "featureId": "67507",
+          "epicId": "67462",
+          "catalogFeatureTitle": "3. Partner Contracting & Commercial Setup",
+          "catalogEpicTitle": "02. B2B Direct Through Reseller",
+          "score": 100.0,
+          "rationale": "strong (100.0)"
+        },
+        {
+          "featureId": "67559",
+          "epicId": "67557",
+          "catalogFeatureTitle": "1. Service Contract Quotation",
+          "catalogEpicTitle": "03. B2B Direct Service & Solution Delivery",
+          "score": 98.0,
+          "rationale": "strong (98.0)"
+        },
+        {
+          "featureId": "67494",
+          "epicId": "67461",
+          "catalogFeatureTitle": "9. Contract Management",
+          "catalogEpicTitle": "01. B2B Direct Sales",
+          "score": 95.0,
+          "rationale": "strong (95.0)"
+        }
+      ],
+      "workshopId": "",
+      "feature": {
+        "id": "67507",
+        "title": "3. Partner Contracting & Commercial Setup",
+        "score": 0.0,
+        "rationale": "multi_strong (3 features within margin 8.0)"
+      },
+      "epic": {
+        "id": "67462",
+        "title": "02. B2B Direct Through Reseller",
+        "score": 100.0,
+        "rationale": "parent of feature 67507"
+      },
+      "workshop": {
+        "id": "",
+        "title": "01. Sales - CE Record to Report UST Led Workshop-20260928",
+        "score": 19.8,
+        "rationale": "below_threshold (19.8 < 62.0)"
+      }
+    },
+    {
+      "csvRow": 12,
+      "title": "Notify approvers of pending quotation approvals",
+      "status": "matched",
+      "pair": "matched",
+      "catalogFeatureTitle": "8. Quotation Approval",
+      "catalogEpicTitle": "01. B2B Direct Sales",
+      "epicId": "67461",
+      "featureId": "67493",
+      "featureIds": [
+        "67493",
+        "67517"
+      ],
+      "matches": [
+        {
+          "featureId": "67493",
+          "epicId": "67461",
+          "catalogFeatureTitle": "8. Quotation Approval",
+          "catalogEpicTitle": "01. B2B Direct Sales",
+          "score": 100.0,
+          "rationale": "strong (100.0)"
+        },
+        {
+          "featureId": "67517",
+          "epicId": "67462",
+          "catalogFeatureTitle": "12. Quotation & Pricing",
+          "catalogEpicTitle": "02. B2B Direct Through Reseller",
+          "score": 95.0,
+          "rationale": "strong (95.0)"
+        }
+      ],
+      "workshopId": "",
+      "feature": {
+        "id": "67493",
+        "title": "8. Quotation Approval",
+        "score": 0.0,
+        "rationale": "multi_strong (2 features within margin 8.0)"
+      },
+      "epic": {
+        "id": "67461",
+        "title": "01. B2B Direct Sales",
+        "score": 100.0,
+        "rationale": "parent of feature 67493"
+      },
+      "workshop": {
+        "id": "",
+        "title": "01. Sales - CE Record to Report UST Led Workshop-20260928",
+        "score": 19.8,
+        "rationale": "below_threshold (19.8 < 62.0)"
+      }
+    },
+    {
+      "csvRow": 13,
+      "title": "Skip re-approval for delivery date only changes",
+      "status": "matched",
+      "pair": "matched",
+      "catalogFeatureTitle": "12. Quotation & Pricing",
+      "catalogEpicTitle": "02. B2B Direct Through Reseller",
+      "epicId": "67462",
+      "featureId": "67517",
+      "featureIds": [
+        "67517"
+      ],
+      "matches": [
+        {
+          "featureId": "67517",
+          "epicId": "67462",
+          "catalogFeatureTitle": "12. Quotation & Pricing",
+          "catalogEpicTitle": "02. B2B Direct Through Reseller",
+          "score": 95.0,
+          "rationale": "strong (95.0)"
+        }
+      ],
+      "workshopId": "",
+      "feature": {
+        "id": "67517",
+        "title": "12. Quotation & Pricing",
+        "score": 0.0,
+        "rationale": "strong (95.0)"
+      },
+      "epic": {
+        "id": "67462",
+        "title": "02. B2B Direct Through Reseller",
+        "score": 100.0,
+        "rationale": "parent of feature 67517"
+      },
+      "workshop": {
+        "id": "",
+        "title": "01. Sales - CE Record to Report UST Led Workshop-20260928",
+        "score": 19.8,
+        "rationale": "below_threshold (19.8 < 62.0)"
+      }
+    },
+    {
+      "csvRow": 14,
+      "title": "Re-approve quotation after pricing or configuration change",
+      "status": "matched",
+      "pair": "matched",
+      "catalogFeatureTitle": "Sales Order Approval",
+      "catalogEpicTitle": "16. Ecommerce (B2B & B2C)",
+      "epicId": "67476",
+      "featureId": "67535",
+      "featureIds": [
+        "67535"
+      ],
+      "matches": [
+        {
+          "featureId": "67535",
+          "epicId": "67476",
+          "catalogFeatureTitle": "Sales Order Approval",
+          "catalogEpicTitle": "16. Ecommerce (B2B & B2C)",
+          "score": 95.0,
+          "rationale": "strong (95.0)"
+        }
+      ],
+      "workshopId": "",
+      "feature": {
+        "id": "67535",
+        "title": "Sales Order Approval",
+        "score": 0.0,
+        "rationale": "multi_strong (3 features within margin 8.0)"
+      },
+      "epic": {
+        "id": "67476",
+        "title": "16. Ecommerce (B2B & B2C)",
+        "score": 100.0,
+        "rationale": "parent of feature 67535"
+      },
+      "workshop": {
+        "id": "",
+        "title": "01. Sales - CE Record to Report UST Led Workshop-20260928",
+        "score": 19.8,
+        "rationale": "below_threshold (19.8 < 62.0)"
+      }
+    },
+    {
+      "csvRow": 15,
+      "title": "Synchronize fulfillment status from ERP to CRM and ZINFI",
+      "status": "matched",
+      "pair": "matched",
+      "catalogFeatureTitle": "6. Partner Data Available in CRM & synchronization with FnO",
+      "catalogEpicTitle": "02. B2B Direct Through Reseller",
+      "epicId": "67462",
+      "featureId": "67510",
+      "featureIds": [
+        "67510"
+      ],
+      "matches": [
+        {
+          "featureId": "67510",
+          "epicId": "67462",
+          "catalogFeatureTitle": "6. Partner Data Available in CRM & synchronization with FnO",
+          "catalogEpicTitle": "02. B2B Direct Through Reseller",
+          "score": 95.0,
+          "rationale": "strong (95.0)"
+        }
+      ],
+      "workshopId": "",
+      "feature": {
+        "id": "67510",
+        "title": "6. Partner Data Available in CRM & synchronization with FnO",
+        "score": 0.0,
+        "rationale": "strong (95.0)"
+      },
+      "epic": {
+        "id": "67462",
+        "title": "02. B2B Direct Through Reseller",
+        "score": 100.0,
+        "rationale": "parent of feature 67510"
+      },
+      "workshop": {
+        "id": "",
+        "title": "01. Sales - CE Record to Report UST Led Workshop-20260928",
+        "score": 19.8,
+        "rationale": "below_threshold (19.8 < 62.0)"
+      }
+    },
+    {
+      "csvRow": 16,
+      "title": "Control updates to install base device location",
+      "status": "matched",
+      "pair": "matched",
+      "catalogFeatureTitle": "8. Outcome and Record Update",
+      "catalogEpicTitle": "04. Service Support",
+      "epicId": "67572",
+      "featureId": "67581",
+      "featureIds": [
+        "67581",
+        "67562",
+        "67637"
+      ],
+      "matches": [
+        {
+          "featureId": "67581",
+          "epicId": "67572",
+          "catalogFeatureTitle": "8. Outcome and Record Update",
+          "catalogEpicTitle": "04. Service Support",
+          "score": 100.0,
+          "rationale": "strong (100.0)"
+        },
+        {
+          "featureId": "67562",
+          "epicId": "67557",
+          "catalogFeatureTitle": "4. Install Base Management",
+          "catalogEpicTitle": "03. B2B Direct Service & Solution Delivery",
+          "score": 100.0,
+          "rationale": "strong (100.0)"
+        },
+        {
+          "featureId": "67637",
+          "epicId": "67635",
+          "catalogFeatureTitle": "1. Upgrade Eligibility & Recommendation",
+          "catalogEpicTitle": "09. Software Upgrade",
+          "score": 100.0,
+          "rationale": "strong (100.0)"
+        }
+      ],
+      "workshopId": "",
+      "feature": {
+        "id": "67581",
+        "title": "8. Outcome and Record Update",
+        "score": 0.0,
+        "rationale": "multi_strong (3 features within margin 8.0)"
+      },
+      "epic": {
+        "id": "67572",
+        "title": "04. Service Support",
+        "score": 100.0,
+        "rationale": "parent of feature 67581"
+      },
+      "workshop": {
+        "id": "",
+        "title": "01. Sales - CE Record to Report UST Led Workshop-20260928",
+        "score": 19.8,
+        "rationale": "below_threshold (19.8 < 62.0)"
+      }
+    },
+    {
+      "csvRow": 17,
+      "title": "Raise partner support requests from ZINFI to CRM",
+      "status": "matched",
+      "pair": "matched",
+      "catalogFeatureTitle": "16. Order Capture / Management & Order processing by order sync between F&O and CRM",
+      "catalogEpicTitle": "02. B2B Direct Through Reseller",
+      "epicId": "67462",
+      "featureId": "67521",
+      "featureIds": [
+        "67521",
+        "67574",
+        "67604"
+      ],
+      "matches": [
+        {
+          "featureId": "67521",
+          "epicId": "67462",
+          "catalogFeatureTitle": "16. Order Capture / Management & Order processing by order sync between F&O and CRM",
+          "catalogEpicTitle": "02. B2B Direct Through Reseller",
+          "score": 100.0,
+          "rationale": "strong (100.0)"
+        },
+        {
+          "featureId": "67574",
+          "epicId": "67572",
+          "catalogFeatureTitle": "1. Case Intake & Classification",
+          "catalogEpicTitle": "04. Service Support",
+          "score": 100.0,
+          "rationale": "strong (100.0)"
+        },
+        {
+          "featureId": "67604",
+          "epicId": "67596",
+          "catalogFeatureTitle": "7. Spare Parts Consumption",
+          "catalogEpicTitle": "06. B2B Service Support ALS",
+          "score": 95.0,
+          "rationale": "strong (95.0)"
+        }
+      ],
+      "workshopId": "",
+      "feature": {
+        "id": "67521",
+        "title": "16. Order Capture / Management & Order processing by order sync between F&O and CRM",
+        "score": 0.0,
+        "rationale": "multi_strong (3 features within margin 8.0)"
+      },
+      "epic": {
+        "id": "67462",
+        "title": "02. B2B Direct Through Reseller",
+        "score": 100.0,
+        "rationale": "parent of feature 67521"
+      },
+      "workshop": {
+        "id": "",
+        "title": "01. Sales - CE Record to Report UST Led Workshop-20260928",
+        "score": 19.8,
+        "rationale": "below_threshold (19.8 < 62.0)"
+      }
+    },
+    {
+      "csvRow": 18,
+      "title": "Support direct and indirect sales quotation paths",
+      "status": "matched",
+      "pair": "matched",
+      "catalogFeatureTitle": "12. Quotation & Pricing",
+      "catalogEpicTitle": "02. B2B Direct Through Reseller",
+      "epicId": "67462",
+      "featureId": "67517",
+      "featureIds": [
+        "67517"
+      ],
+      "matches": [
+        {
+          "featureId": "67517",
+          "epicId": "67462",
+          "catalogFeatureTitle": "12. Quotation & Pricing",
+          "catalogEpicTitle": "02. B2B Direct Through Reseller",
+          "score": 95.0,
+          "rationale": "strong (95.0)"
+        }
+      ],
+      "workshopId": "",
+      "feature": {
+        "id": "67517",
+        "title": "12. Quotation & Pricing",
+        "score": 59.0,
+        "rationale": "strong (95.0)"
+      },
+      "epic": {
+        "id": "67462",
+        "title": "02. B2B Direct Through Reseller",
+        "score": 100.0,
+        "rationale": "parent of feature 67517"
+      },
+      "workshop": {
+        "id": "",
+        "title": "01. Sales - CE Record to Report UST Led Workshop-20260928",
+        "score": 19.8,
+        "rationale": "below_threshold (19.8 < 62.0)"
+      }
+    },
+    {
+      "csvRow": 19,
+      "title": "Create CE customer record for record-to-report flow",
+      "status": "matched",
+      "pair": "matched",
+      "catalogFeatureTitle": "7. Sales Order Synchronization (Finance)",
+      "catalogEpicTitle": "09. Software Upgrade",
+      "epicId": "67635",
+      "featureId": "67643",
+      "featureIds": [
+        "67643",
+        "67645"
+      ],
+      "matches": [
+        {
+          "featureId": "67643",
+          "epicId": "67635",
+          "catalogFeatureTitle": "7. Sales Order Synchronization (Finance)",
+          "catalogEpicTitle": "09. Software Upgrade",
+          "score": 100.0,
+          "rationale": "strong (100.0)"
+        },
+        {
+          "featureId": "67645",
+          "epicId": "67635",
+          "catalogFeatureTitle": "12. Work Order Generation (Automation)",
+          "catalogEpicTitle": "09. Software Upgrade",
+          "score": 95.0,
+          "rationale": "strong (95.0)"
+        }
+      ],
+      "workshopId": "",
+      "feature": {
+        "id": "67643",
+        "title": "7. Sales Order Synchronization (Finance)",
+        "score": 0.0,
+        "rationale": "multi_strong (2 features within margin 8.0)"
+      },
+      "epic": {
+        "id": "67635",
+        "title": "09. Software Upgrade",
+        "score": 100.0,
+        "rationale": "parent of feature 67643"
+      },
+      "workshop": {
+        "id": "",
+        "title": "01. Sales - CE Record to Report UST Led Workshop-20260928",
+        "score": 19.8,
+        "rationale": "below_threshold (19.8 < 62.0)"
+      }
+    },
+    {
+      "csvRow": 20,
+      "title": "Track open contract examples for fit-gap analysis",
+      "status": "matched",
+      "pair": "matched",
+      "catalogFeatureTitle": "3. Partner Contracting & Commercial Setup",
+      "catalogEpicTitle": "02. B2B Direct Through Reseller",
+      "epicId": "67462",
+      "featureId": "67507",
+      "featureIds": [
+        "67507"
+      ],
+      "matches": [
+        {
+          "featureId": "67507",
+          "epicId": "67462",
+          "catalogFeatureTitle": "3. Partner Contracting & Commercial Setup",
+          "catalogEpicTitle": "02. B2B Direct Through Reseller",
+          "score": 95.0,
+          "rationale": "strong (95.0)"
+        }
+      ],
+      "workshopId": "",
+      "feature": {
+        "id": "67507",
+        "title": "3. Partner Contracting & Commercial Setup",
+        "score": 0.0,
+        "rationale": "strong (95.0)"
+      },
+      "epic": {
+        "id": "67462",
+        "title": "02. B2B Direct Through Reseller",
+        "score": 100.0,
+        "rationale": "parent of feature 67507"
+      },
+      "workshop": {
+        "id": "",
+        "title": "01. Sales - CE Record to Report UST Led Workshop-20260928",
+        "score": 19.8,
+        "rationale": "below_threshold (19.8 < 62.0)"
+      }
+    }
+  ]
+}

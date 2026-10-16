@@ -18,11 +18,33 @@
 |---------|----------------|-------|---------------------|------------|------------|
 | | | | | | |
 
+## Supplemental inputs
+
+| Source type | Path | Used for (locators) | Post-workshop clarification? |
+|-------------|------|---------------------|------------------------------|
+| Primary User Story Excel | | | |
+| Consultant story excel | | | |
+| Clarification file(s) | | | |
+| Workshop prerequisite KB | | | |
+| Transcript | | | |
+
+## E2E scenario plan (business-process author)
+
+| Scenario ID | Business Process | Trigger | Handoffs (roles / systems) | Outcome | Positive case count | Consultant traceability |
+|-------------|------------------|---------|----------------------------|---------|---------------------|-------------------------|
+| 1 | | | | | | |
+
 ## Scenario groups
 
 | Scenario ID | Business Process | Story locators | Positive Case | Exception Case | Notes |
 |-------------|------------------|----------------|---------------|----------------|-------|
 | 1 | | | | | |
+
+## Precondition alignment
+
+| Test Case ID | Step 1 summary | Gap (if any) | Fix applied | Source locator |
+|--------------|----------------|--------------|-------------|----------------|
+| | | | | |
 
 ## Provenance table
 
